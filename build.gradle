@@ -50,6 +50,18 @@ loom.runs.configureEach { run ->
     }
 }
 
+loom.runs {
+    r1Client {
+        client()
+        source sourceSets.gametest
+        runDirectory.set(layout.buildDirectory.dir('run/r1-client'))
+        vmArg '-Dwildcraft.r1.native=true'
+        vmArg '-Dwildcraft.r1.frameRelease=true'
+        programArg '--quickPlaySingleplayer'
+        programArg 'R1Realtime'
+    }
+}
+
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(25)
     withSourcesJar()

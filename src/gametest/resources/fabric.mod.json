@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "name": "Wildcraft runtime verification and isolated research",
   "environment": "*",
+  "mixins": ["wildcraft-research.mixins.json"],
   "entrypoints": {
     "main": ["dev.wildcraft.test.research.ResearchFixtures"],
     "client": ["dev.wildcraft.test.research.ResearchClient"],
@@ -18,7 +19,8 @@
       "dev.wildcraft.test.research.ResearchClientSmokeTest",
       "dev.wildcraft.test.PlayerStaminaClientSmokeTest",
       "dev.wildcraft.test.ClimbingClientSmokeTest",
-      "dev.wildcraft.test.GlidingClientSmokeTest"
+      "dev.wildcraft.test.GlidingClientSmokeTest",
+      "dev.wildcraft.test.research.time.TimeResearchClientSmokeTest"
     ]
   }
 }

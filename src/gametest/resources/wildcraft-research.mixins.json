@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "package": "dev.wildcraft.test.research.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": ["TimeEpochMixin", "UsingItemResearchMixin", "TimeExitResearchMixin", "TimePacketResearchMixin"],
+  "client": ["IntegratedTimeResearchMixin", "BackAnchorResearchMixin", "NativeFrameResearchMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

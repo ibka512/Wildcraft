@@ -1,0 +1,9 @@
+{
+  "targets": {"swap": {}},
+  "passes": [
+    {"vertex_shader": "minecraft:core/screenquad", "fragment_shader": "wildcraft-test:post/focus_probe",
+      "inputs": [{"sampler_name": "In", "target": "minecraft:main"}], "output": "swap"},
+    {"vertex_shader": "minecraft:core/screenquad", "fragment_shader": "wildcraft-test:post/copy",
+      "inputs": [{"sampler_name": "In", "target": "swap"}], "output": "minecraft:main"}
+  ]
+}
