@@ -4,7 +4,7 @@ Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P3 攀爬与滑�
 
 当前可用：独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
 
-完整开发顺序见 [开发路线](docs/ROADMAP.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，滑翔操作见 [P3 规则](docs/P3-RULES.md)，本次验证见 [P3 验证记录](docs/P3-VERIFICATION.md)。历史验证保留为 [P2](docs/P2-VERIFICATION.md)、[P1](docs/P1-VERIFICATION.md) 与 [P0](docs/VERIFICATION.md)。
+完整开发顺序见 [开发路线](docs/ROADMAP.md)，三项新设计的范围、衔接和验收见 [开发规划 v2](docs/DEVELOPMENT-PLAN-V2.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，滑翔操作见 [P3 规则](docs/P3-RULES.md)，本次验证见 [P3 验证记录](docs/P3-VERIFICATION.md)。历史验证保留为 [P2](docs/P2-VERIFICATION.md)、[P1](docs/P1-VERIFICATION.md) 与 [P0](docs/VERIFICATION.md)。
 
 攀爬与滑翔已接入实际精力消耗；R0 机械与 Fuse 样例继续只在测试模组中运行。料理、温度、正式机械与 Fuse 按后续路线推进。
 
@@ -156,7 +156,7 @@ macOS 运行目录位于 `~/Library/Caches/Wildcraft/builds/<项目路径标识>
 
 ## 后续工作
 
-P3 形成精力、攀爬与滑翔的探索循环。接下来进入 P4 料理与温度，完整范围继续按 `docs/ROADMAP.md` 开发。
+P3 形成精力、攀爬与滑翔的探索循环。新的规划加入林克时间与背负装备，并将温度明确为低干扰的环境反馈。下一步建议先做 R1 时间边界验证，再做 P3.1 背负装备/融合 HUD 和 P3.2 单人林克时间；P4 拆成环境温度、料理与细雪辅助两步。原有能源、机械、制造机、Fuse 和天气继续保留，完整顺序见 [开发规划 v2](docs/DEVELOPMENT-PLAN-V2.md)。这些是规划目标，当前游戏仍是 P3。
 
 运行依赖只有 Fabric Loader 与 Fabric API。公开发行许可证尚未选择；模板与第三方工具来源见 `NOTICE.md`。
 

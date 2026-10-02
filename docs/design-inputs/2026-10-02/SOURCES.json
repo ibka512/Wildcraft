@@ -1,0 +1,27 @@
+{
+  "received": "2026-10-02",
+  "archive": "开发文档.zip",
+  "archive_sha256": "0b09859675cd7b0fa024532a389c433d42f563f5bf7957d9b83f71a9516ab61c",
+  "files": [
+    {
+      "file": "Wildcraft 温度与环境适应系统设计文档 v0.1.md",
+      "bytes": 12759,
+      "sha256": "f27e3e31e10c0ef016c272fe428f0e7b391951f66655a31c232f8b002c644d1a"
+    },
+    {
+      "file": "Wildcraft 背负装备显示系统设计文档 v0.1.md",
+      "bytes": 12110,
+      "sha256": "fbc13e80d204b482f73d69e01af8f5f699f09ad40faf07f71a1fa2cb73f0a8d4"
+    },
+    {
+      "file": "Wildcraft「林克时间」机制设计文档 v0.1.md",
+      "bytes": 13322,
+      "sha256": "e92c8156b62a8f4ee9a514113d1971b7d88dc903f1e2b941c364a64d3036b1d3"
+    },
+    {
+      "file": "初版规划.md",
+      "bytes": 24488,
+      "sha256": "d9875ad784408fd9d01b12fb32ca3fbb00814defef24a714050e78f7ce631fd2"
+    }
+  ]
+}
