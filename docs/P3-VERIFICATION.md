@@ -72,14 +72,14 @@
 
 `verification/p3/` 保存最终构建、资源生成、完整开发客户端、成品客户端、独立服务端日志、20 项 GameTest XML 与五张 P3 游戏截图。
 
-- [最终构建日志](../../verification/p3/build-final.log)
-- [成品客户端日志](../../verification/p3/packaged-client-test.log)
-- [独立服务端日志](../../verification/p3/packaged-server.log)
-- [GameTest XML](../../verification/p3/gametest-results.xml)
-- [生存装备位](../../verification/p3/paraglider-equipment-slot-zh.png)
-- [创造装备位](../../verification/p3/paraglider-creative-slot-zh.png)
-- [中文滑翔画面](../../verification/p3/paraglider-gliding-zh.png)
-- [攀爬接滑翔](../../verification/p3/climb-to-glide.png)
-- [本机 TCP 滑翔](../../verification/p3/gliding-tcp-en.png)
+- [最终构建日志](../development-assets/verification/p3/build-final.log)
+- [成品客户端日志](../development-assets/verification/p3/packaged-client-test.log)
+- [独立服务端日志](../development-assets/verification/p3/packaged-server.log)
+- [GameTest XML](../development-assets/verification/p3/gametest-results.xml)
+- [生存装备位](../development-assets/verification/p3/paraglider-equipment-slot-zh.png)
+- [创造装备位](../development-assets/verification/p3/paraglider-creative-slot-zh.png)
+- [中文滑翔画面](../development-assets/verification/p3/paraglider-gliding-zh.png)
+- [攀爬接滑翔](../development-assets/verification/p3/climb-to-glide.png)
+- [本机 TCP 滑翔](../development-assets/verification/p3/gliding-tcp-en.png)
 
 本轮仅建立本地提交与标签 `v0.1.0-dev.4+mc26.3`。旧产物和历史验证保留，未推送或公开发布。产物哈希及提交信息见输出目录 `manifest.json` 和 `SHA256SUMS.txt`。

@@ -1,0 +1,32 @@
+Calculating task graph as configuration cache cannot be reused because file 'build.gradle' has changed.
+
+> Configure project :
+Fabric Loom: 1.18.2
+
+> Task :validateAccessWidener NO-SOURCE
+> Task :clean
+> Task :processClientResources NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :processIncludeJars
+> Task :processGametestResources
+> Task :processResources
+> Task :sourcesJar
+> Task :compileJava
+> Task :classes
+> Task :compileClientJava
+> Task :clientClasses
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :exportMod
+> Task :build
+> Task :compileGametestJava
+> Task :gametestClasses
+> Task :gameTestJar
+
+BUILD SUCCESSFUL in 1s
+11 actionable tasks: 11 executed
+Configuration cache entry stored.

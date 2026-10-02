@@ -1,0 +1,1422 @@
+Reusing configuration cache.
+> Task :processClientResources NO-SOURCE
+> Task :processGametestResources UP-TO-DATE
+> Task :processIncludeJars UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :deleteGameTestRunDir
+> Task :acceptGameTestEula
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileClientJava UP-TO-DATE
+> Task :clientClasses UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :compileGametestJava UP-TO-DATE
+> Task :gametestClasses UP-TO-DATE
+> Task :gameTestJar UP-TO-DATE
+> Task :acceptPackagedClientTestEula UP-TO-DATE
+
+> Task :runPackagedClientTest
+[16:58:18] [main/INFO]: Loading Minecraft 26.3 with Fabric Loader 0.19.5
+[16:58:18] [main/INFO]: Mappings not present!
+[16:58:18] [main/INFO]: Loading 53 mods:
+	- fabric-advancement-api-v1 1.0.0+38c7a2d55d
+	- fabric-api 0.161.0+26.3
+	- fabric-api-base 2.0.6+fcdff87f5d
+	- fabric-api-lookup-api-v1 2.0.24+3434d6d95d
+	- fabric-biome-api-v1 20.0.9+74ed1ea55d
+	- fabric-block-api-v1 3.1.0+0ae6f9115d
+	- fabric-block-getter-api-v2 2.0.9+3434d6d95d
+	- fabric-client-gametest-api-v1 6.0.7+4be74c3f5d
+	- fabric-command-api-v2 3.1.2+fcdff87f5d
+	- fabric-content-registries-v0 15.0.4+74ed1ea55d
+	- fabric-convention-tags-v2 4.10.3+6b5b47fd5d
+	- fabric-crash-report-info-v1 1.0.7+fcdff87f5d
+	- fabric-creative-tab-api-v1 5.0.21+fcdff87f5d
+	- fabric-data-attachment-api-v1 2.2.30+3434d6d95d
+	- fabric-data-generation-api-v1 27.2.4+427eab975d
+	- fabric-debug-api-v1 1.0.4+3434d6d95d
+	- fabric-dimensions-v1 5.1.19+47f74c985d
+	- fabric-entity-events-v1 6.0.4+3434d6d95d
+	- fabric-events-interaction-v0 5.3.6+3434d6d95d
+	- fabric-game-rule-api-v1 4.0.10+3434d6d95d
+	- fabric-gametest-api-v1 4.0.32+3434d6d95d
+	- fabric-item-api-v1 14.7.0+cf6bc2db5d
+	- fabric-key-mapping-api-v1 2.0.8+3434d6d95d
+	- fabric-lifecycle-events-v1 4.1.9+ffef5f675d
+	- fabric-loot-api-v3 4.0.8+4068fd645d
+	- fabric-menu-api-v1 2.0.27+ed66f0a35d
+	- fabric-message-api-v1 7.0.10+3434d6d95d
+	- fabric-model-loading-api-v1 8.0.35+fcdff87f5d
+	- fabric-networking-api-v1 6.3.8+fcdff87f5d
+	- fabric-object-builder-api-v1 24.1.9+3434d6d95d
+	- fabric-particles-v1 5.0.24+3434d6d95d
+	- fabric-permission-api-v1 1.0.8+fcdff87f5d
+	- fabric-recipe-api-v1 10.0.8+fcdff87f5d
+	- fabric-registry-sync-v0 8.0.1+fcdff87f5d
+	- fabric-renderer-api-v1 17.0.15+79385d0b5d
+	- fabric-renderer-indigo 9.1.23+b9d63e335d
+	- fabric-rendering-fluids-v1 6.0.6+3434d6d95d
+	- fabric-rendering-v1 27.0.14+901a437c5d
+	- fabric-resource-conditions-api-v1 6.1.5+3434d6d95d
+	- fabric-resource-loader-v0 3.3.26+4fc5413f5d
+	- fabric-resource-loader-v1 3.0.4+fcdff87f5d
+	- fabric-screen-api-v1 5.2.4+48607d035d
+	- fabric-serialization-api-v1 2.0.7+74ed1ea55d
+	- fabric-sound-api-v1 2.0.7+3434d6d95d
+	- fabric-tag-api-v1 2.1.10+fcdff87f5d
+	- fabric-transfer-api-v1 8.0.25+fcdff87f5d
+	- fabric-transitive-access-wideners-v1 8.1.16+52268a0e5d
+	- fabricloader 0.19.5
+	   \-- mixinextras 0.5.5
+	- java 25
+	- minecraft 26.3
+	- wildcraft 0.1.0-dev.3
+	- wildcraft-test 1.0.0
+[16:58:18] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/zhou/Library/Caches/Wildcraft/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/5f66cc9f59b8efaa942155a3d5a30599bf6640dd/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.lwjgl.system.Library$$Lambda/0x00000e000129d800 in an unnamed module (file:/Users/zhou/Library/Caches/Wildcraft/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.3/7ab5265a73d8a959ed62332d546536ae6be2f0d5/lwjgl-3.4.3.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.lwjgl.system.MemoryBackendUnsafeLegacy (file:/Users/zhou/Library/Caches/Wildcraft/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.3/7ab5265a73d8a959ed62332d546536ae6be2f0d5/lwjgl-3.4.3.jar)
+WARNING: Please consider reporting this to the maintainers of class org.lwjgl.system.MemoryBackendUnsafeLegacy
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[16:58:19] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[16:58:20] [Datafixer Bootstrap #0/INFO]: 307 Datafixer optimizations took 172 milliseconds
+[16:58:20] [main/WARN]: Unable to parse version 27.0 to a codename.
+[16:58:22] [Render thread/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[16:58:22] [Render thread/INFO]: Setting user: Player595
+[16:58:22] [Render thread/INFO]: Wildcraft P2 common initialization complete; stamina and climbing registered.
+[16:58:22] [Render thread/INFO]: [Indigo] Registering Indigo renderer!
+[16:58:22] [Render thread/INFO]: Wildcraft P2 client initialization complete; HUD and climbing controls registered.
+[16:58:22] [Render thread/ERROR]: Illegal option value 0 for Anisotropic Filtering
+[16:58:22] [Render thread/INFO]: Backend library: LWJGL version 3.4.3-snapshot
+[16:58:22] [Render thread/INFO]: SDL [SYSTEM]: App name: Minecraft
+[16:58:22] [Render thread/INFO]: SDL [SYSTEM]: App version: 26.3
+[16:58:22] [Render thread/INFO]: SDL [SYSTEM]: App ID: com.mojang.minecraft
+[16:58:22] [Render thread/INFO]: SDL [SYSTEM]: SDL revision: SDL-3.4.14-62f10da
+[16:58:23] [Render thread/WARN]: Device [Apple M4] supports all extensions from FeatureSet [Vulkan Portability Subset], making required
+[16:58:23] [Render thread/INFO]: Using graphics backend OpenGL, using drivers: 4.1 Metal - 91.7
+[16:58:23] [Render thread/INFO]: Using graphics device: Apple M4 (Apple)
+[16:58:23] [Render thread/INFO]: Using graphics device extensions: GL_ARB_draw_indirect, GL_EXT_texture_filter_anisotropic
+[16:58:23] [Render thread/INFO]: Created window using SDL video driver: cocoa
+[16:58:23] [Download-2/ERROR]: Failed to fetch user properties
+com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
+	at knot//com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:70)
+	at knot//com.mojang.authlib.services.MinecraftServicesUserApiService.fetchProperties(MinecraftServicesUserApiService.java:168)
+	at knot//net.minecraft.client.Minecraft.lambda$new$1(Minecraft.java:451)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: MinecraftClientHttpException[type=HTTP_ERROR, status=401, response=ErrorResponse[path=/player/attributes, error=null, errorMessage=null, details=null]]
+	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.buildHttpException(MinecraftClient.java:170)
+	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.readServiceResponse(MinecraftClient.java:147)
+	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.getWithEtag(MinecraftClient.java:81)
+	at knot//com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:65)
+	at knot//com.mojang.authlib.services.MinecraftServicesUserApiService.fetchProperties(MinecraftServicesUserApiService.java:118)
+	... 5 more
+[16:58:24] [Render thread/INFO]: Reloading ResourceManager: vanilla, vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, wildcraft
+UNSUPPORTED (log once): gldCopyBufferSubData: NEEDS IMPLEMENTATION
+[16:58:24] [Download-2/INFO]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[16:58:24] [Download-2/ERROR]: Failed to fetch Realms feature flags
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC'
+	at knot//com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:625)
+	at knot//com.mojang.realmsclient.client.RealmsClient.fetchFeatureFlags(RealmsClient.java:204)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[16:58:24] [Worker-Main-8/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[16:58:24] [Worker-Main-4/INFO]: Found unifont_pua-17.0.01.hex, loading
+[16:58:24] [Worker-Main-8/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_composite. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/integrate_depth. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/animate_sprite, FRAGMENT minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_depth_bounds_cull. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:24] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:25] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:27] [Render thread/INFO]: OpenAL initialized on device Mac mini扬声器
+[16:58:27] [Render thread/INFO]: Sound engine started
+[16:58:27] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:58:27] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[16:58:27] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[16:58:27] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:58:27] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:58:27] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:58:27] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[16:58:28] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[16:58:28] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[16:58:28] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[16:58:28] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[16:58:28] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:58:28] [Download-2/INFO]: Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[16:58:28] [Download-2/ERROR]: Couldn't connect to realms
+com.mojang.realmsclient.exception.RealmsServiceException: Realms authentication error with message 'java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC'
+	at knot//com.mojang.realmsclient.client.RealmsClient.execute(RealmsClient.java:625)
+	at knot//com.mojang.realmsclient.client.RealmsClient.clientCompatible(RealmsClient.java:354)
+	at knot//com.mojang.realmsclient.RealmsAvailability.lambda$check$0(RealmsAvailability.java:48)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+[16:58:30] [Worker-Main-5/INFO]: Loaded 1866 advancements
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@44bb33a4
+[16:58:31] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 622.6 μs
+[16:58:31] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:58:31] [Server thread/INFO]: Generating keypair
+[16:58:31] [Server thread/INFO]: Selecting global world spawn...
+[16:58:31] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:31] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Server thread/INFO]: Loading 48 chunks for player spawn...
+[16:58:31] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Server thread/INFO]: Time elapsed: 655 ms
+[16:58:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:31] [Server thread/INFO]: Player595[local:E:6ad20043] logged in with entity id 1 at (0.5, -60.0, 0.5)
+[16:58:31] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:32] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:58:32] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/WARN]: Requested post effect does not exist: minecraft:end_of_frame
+[16:58:32] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 2 reached during a single frame. New capacity will be 4.
+[16:58:32] [Render thread/INFO]: Loaded 2 advancements
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 4 reached during a single frame. New capacity will be 8.
+[16:58:32] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 2 reached during a single frame. New capacity will be 8.
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 8 reached during a single frame. New capacity will be 16.
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@43995813
+[16:58:32] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:32] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 32 reached during a single frame. New capacity will be 64.
+[16:58:33] [Server thread/INFO]: System chat: Set Player595's game mode to Creative Mode
+[16:58:33] [Server thread/INFO]: System chat: Set minecraft:overworld to time marker minecraft:day
+[16:58:33] [Server thread/INFO]: System chat: Gave 2 [Wildcraft Test Core] to Player595
+[16:58:33] [Render thread/INFO]: [System] [CHAT] Your game mode has been updated to Creative Mode
+[16:58:33] [Render thread/INFO]: Resizing Chunk Sections UBO, capacity limit of 64 reached during a single frame. New capacity will be 128.
+[16:58:33] [Render thread/INFO]: Resizing Dynamic Transforms UBO, capacity limit of 16 reached during a single frame. New capacity will be 32.
+[16:58:33] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:58:33] [Server thread/INFO]: System chat: Player595 left the game
+[16:58:33] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:58:33] [Server thread/INFO]: Stopping server
+[16:58:33] [Server thread/INFO]: Saving players
+[16:58:33] [Server thread/INFO]: Saving worlds
+[16:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:33] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@3e8e0a50
+[16:58:33] [Worker-Main-1/INFO]: Loaded 1866 advancements
+[16:58:33] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 240.5 μs
+[16:58:33] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:58:33] [Server thread/INFO]: Generating keypair
+[16:58:33] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:33] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:33] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:33] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Server thread/INFO]: Loading 49 chunks for player spawn...
+[16:58:34] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:34] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Server thread/INFO]: Time elapsed: 335 ms
+[16:58:34] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Server thread/INFO]: Player595[local:E:45b7e5aa] logged in with entity id 3 at (0.5, -60.0, 0.5)
+[16:58:34] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:34] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:58:34] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:58:34] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: Loaded 2 advancements
+[16:58:34] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@66b8b861
+[16:58:34] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:34] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:58:34] [Server thread/INFO]: System chat: Player595 left the game
+[16:58:34] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:58:34] [Server thread/INFO]: Stopping server
+[16:58:34] [Server thread/INFO]: Saving players
+[16:58:34] [Server thread/INFO]: Saving worlds
+[16:58:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:35] [Worker-Main-1/INFO]: Loaded 1866 advancements
+[16:58:35] [Thread-2/WARN]: Unable to parse version 27.0 to a codename.
+[16:58:35] [Thread-2/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[16:58:35] [Worker-Main-4/INFO]: Loaded 1866 advancements
+[16:58:35] [Thread-2/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 216.7 μs
+[16:58:35] [Server thread/INFO]: Starting minecraft server version 26.3
+[16:58:35] [Server thread/INFO]: Loading properties
+[16:58:35] [Server thread/INFO]: Default game type: CREATIVE
+[16:58:35] [Server thread/INFO]: Generating keypair
+[16:58:35] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:50975
+[16:58:36] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:58:36] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:58:36] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:58:36] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:58:36] [Server thread/INFO]: Preparing level "world"
+[16:58:36] [Server thread/INFO]: Selecting global world spawn...
+[16:58:36] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:36] [Server thread/INFO]: Preparing spawn area: 100%
+[16:58:36] [Server thread/INFO]: Time elapsed: 65 ms
+[16:58:36] [Server thread/INFO]: Done (0.066s)! For help, type "help"
+[16:58:36] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:36] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:36] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:36] [Render thread/INFO]: Connecting to localhost, 50975
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:36] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@37ae958
+[16:58:37] [Server thread/INFO]: Player595[/127.0.0.1:50994] logged in with entity id 4 at (0.5, -60.0, 0.5)
+[16:58:37] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:37] [Render thread/INFO]: Loaded 2 advancements
+[16:58:37] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@182193c4
+[16:58:37] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@182193c4
+[16:58:37] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:38] [Server thread/INFO]: System chat: Gave 2 [Wildcraft Test Core] to Player595
+[16:58:38] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:58:38] [Server thread/INFO]: System chat: Player595 left the game
+[16:58:38] [Server thread/INFO]: Stopping server
+[16:58:38] [Server thread/INFO]: Saving players
+[16:58:38] [Server thread/INFO]: Saving worlds
+[16:58:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:38] [Worker-Main-6/INFO]: Loaded 1866 advancements
+[16:58:38] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@32e3deca
+[16:58:38] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 232.4 μs
+[16:58:38] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:58:38] [Server thread/INFO]: Generating keypair
+[16:58:38] [Server thread/INFO]: Selecting global world spawn...
+[16:58:38] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:38] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:38] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:38] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Server thread/INFO]: Loading 48 chunks for player spawn...
+[16:58:39] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Server thread/INFO]: Time elapsed: 357 ms
+[16:58:39] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Server thread/INFO]: Player595[local:E:14bee984] logged in with entity id 6 at (0.5, -60.0, 0.5)
+[16:58:39] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:39] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:58:39] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: Loaded 2 advancements
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:39] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@7a0b2f0a
+[16:58:40] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:40] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:58:40] [Server thread/INFO]: System chat: Player595 left the game
+[16:58:40] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:58:40] [Server thread/INFO]: Stopping server
+[16:58:40] [Server thread/INFO]: Saving players
+[16:58:40] [Server thread/INFO]: Saving worlds
+[16:58:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:40] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@e9c8d49
+[16:58:41] [Worker-Main-7/INFO]: Loaded 1866 advancements
+[16:58:41] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 187.5 μs
+[16:58:41] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:58:41] [Server thread/INFO]: Generating keypair
+[16:58:41] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:41] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Server thread/INFO]: Loading 49 chunks for player spawn...
+[16:58:41] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:41] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Server thread/INFO]: Time elapsed: 264 ms
+[16:58:41] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Server thread/INFO]: Player595[local:E:2421820a] logged in with entity id 11 at (0.5, -60.0, 0.5)
+[16:58:41] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:41] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:58:41] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:58:41] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: Loaded 2 advancements
+[16:58:41] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@357f60fd
+[16:58:41] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:41] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:58:41] [Server thread/INFO]: System chat: Player595 left the game
+[16:58:41] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:58:42] [Server thread/INFO]: Stopping server
+[16:58:42] [Server thread/INFO]: Saving players
+[16:58:42] [Server thread/INFO]: Saving worlds
+[16:58:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:42] [Test thread/INFO]: [STDOUT]: WILDCRAFT R0 real cross-chunk/save/reload/container/drop checks passed
+[16:58:42] [Worker-Main-2/INFO]: Loaded 1866 advancements
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@5161127f
+[16:58:42] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 196.4 μs
+[16:58:42] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:58:42] [Server thread/INFO]: Generating keypair
+[16:58:42] [Server thread/INFO]: Selecting global world spawn...
+[16:58:42] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:42] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:42] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Server thread/INFO]: Loading 48 chunks for player spawn...
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Server thread/INFO]: Time elapsed: 422 ms
+[16:58:42] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Server thread/INFO]: Player595[local:E:4a6707dc] logged in with entity id 12 at (0.5, -60.0, 0.5)
+[16:58:42] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:42] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:58:42] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:58:42] [Render thread/INFO]: Loaded 2 advancements
+[16:58:42] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:42] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3ba15182
+[16:58:43] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:43] [Server thread/INFO]: System chat: Set 15 experience levels on Player595
+[16:58:43] [Server thread/INFO]: System chat: Set 30 experience levels on Player595
+[16:58:43] [Server thread/INFO]: System chat: Set 5 experience levels on Player595
+[16:58:43] [Server thread/INFO]: System chat: Stamina refilled
+[16:58:43] [Server thread/INFO]: System chat: Consumed 118.0 stamina
+[16:58:43] [Render thread/INFO]: Reloading ResourceManager: vanilla, vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, wildcraft
+[16:58:43] [Worker-Main-8/INFO]: Found unifont_pua-17.0.01.hex, loading
+[16:58:43] [Worker-Main-2/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[16:58:43] [Server thread/INFO]: Saving and pausing game...
+[16:58:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Worker-Main-2/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_composite. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/integrate_depth. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/animate_sprite, FRAGMENT minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_depth_bounds_cull. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:43] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:44] [Render thread/INFO]: OpenAL initialized on device Mac mini扬声器
+[16:58:44] [Render thread/INFO]: Sound engine started
+[16:58:44] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[16:58:44] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:58:44] [Render thread/WARN]: Requested post effect does not exist: minecraft:end_of_frame
+[16:58:46] [Render thread/INFO]: Reloading ResourceManager: vanilla, vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, wildcraft
+[16:58:46] [Worker-Main-2/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[16:58:46] [Worker-Main-7/INFO]: Found unifont_pua-17.0.01.hex, loading
+[16:58:46] [Server thread/INFO]: Saving and pausing game...
+[16:58:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Worker-Main-2/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_composite. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/integrate_depth. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:46] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/animate_sprite, FRAGMENT minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_depth_bounds_cull. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:58:47] [Render thread/INFO]: OpenAL initialized on device Mac mini扬声器
+[16:58:47] [Render thread/INFO]: Sound engine started
+[16:58:47] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[16:58:47] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:58:47] [Render thread/WARN]: Requested post effect does not exist: minecraft:end_of_frame
+[16:58:51] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:58:51] [Server thread/INFO]: System chat: Player595 left the game
+[16:58:51] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:58:51] [Server thread/INFO]: Stopping server
+[16:58:51] [Server thread/INFO]: Saving players
+[16:58:51] [Server thread/INFO]: Saving worlds
+[16:58:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:51] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@7b5f06a7
+[16:58:51] [Worker-Main-1/INFO]: Loaded 1866 advancements
+[16:58:51] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 173.4 μs
+[16:58:51] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:58:51] [Server thread/INFO]: Generating keypair
+[16:58:51] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:58:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:58:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:58:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:58:51] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:51] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:51] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:51] [Server thread/INFO]: Loading 49 chunks for player spawn...
+[16:58:51] [Server thread/INFO]: Preparing spawn area: 16%
+[16:58:51] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:51] [Server thread/INFO]: Time elapsed: 221 ms
+[16:58:51] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:51] [Server thread/INFO]: Player595[local:E:5e110532] logged in with entity id 13 at (0.5, -48.190513258107906, 0.5)
+[16:58:51] [Server thread/INFO]: System chat: Player595 joined the game
+[16:58:51] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:58:51] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:58:51] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:51] [Render thread/INFO]: Loaded 2 advancements
+[16:58:51] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:52] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1cdd7a67
+[16:58:52] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:58:52] [Server thread/INFO]: System chat: Player595 has made the advancement [We Need to Go Deeper]
+[16:58:52] [Render thread/INFO]: [System] [CHAT] Player595 has made the advancement [We Need to Go Deeper]
+[16:58:52] [Render thread/INFO]: Loaded 29 advancements
+[16:58:52] [Server thread/INFO]: System chat: Killed Player595
+[16:58:57] [Server thread/INFO]: System chat: Player595 fell from a high place
+[16:58:57] [Render thread/INFO]: [System] [CHAT] Player595 fell from a high place
+[16:58:57] [Server thread/INFO]: System chat: Consumed 40.0 stamina
+[16:59:00] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:59:00] [Server thread/INFO]: System chat: Player595 left the game
+[16:59:00] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:59:00] [Server thread/INFO]: Stopping server
+[16:59:00] [Server thread/INFO]: Saving players
+[16:59:00] [Server thread/INFO]: Saving worlds
+[16:59:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:00] [Worker-Main-2/INFO]: Loaded 1866 advancements
+[16:59:00] [Thread-3/WARN]: Unable to parse version 27.0 to a codename.
+[16:59:00] [Thread-3/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[16:59:01] [Worker-Main-6/INFO]: Loaded 1866 advancements
+[16:59:01] [Thread-3/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 169.3 μs
+[16:59:01] [Server thread/INFO]: Starting minecraft server version 26.3
+[16:59:01] [Server thread/INFO]: Loading properties
+[16:59:01] [Server thread/INFO]: Default game type: SURVIVAL
+[16:59:01] [Server thread/INFO]: Generating keypair
+[16:59:01] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:51010
+[16:59:01] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:59:01] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:59:01] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:59:01] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:59:01] [Server thread/INFO]: Preparing level "world"
+[16:59:01] [Server thread/INFO]: Selecting global world spawn...
+[16:59:01] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:59:01] [Server thread/INFO]: Preparing spawn area: 100%
+[16:59:01] [Server thread/INFO]: Time elapsed: 58 ms
+[16:59:01] [Server thread/INFO]: Done (0.060s)! For help, type "help"
+[16:59:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:01] [Render thread/INFO]: Connecting to localhost, 51010
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@594ee218
+[16:59:01] [Server thread/INFO]: Player595[/127.0.0.1:51013] logged in with entity id 18 at (0.5, -60.0, 0.5)
+[16:59:01] [Server thread/INFO]: System chat: Player595 joined the game
+[16:59:01] [Render thread/INFO]: Loaded 2 advancements
+[16:59:01] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1bb8884a
+[16:59:01] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@1bb8884a
+[16:59:01] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:59:02] [Server thread/INFO]: System chat: Set 30 experience levels on Player595
+[16:59:02] [Server thread/INFO]: System chat: Set 5 experience levels on Player595
+[16:59:02] [Server thread/INFO]: System chat: Stamina refilled
+[16:59:02] [Server thread/INFO]: System chat: Consumed 118.0 stamina
+[16:59:02] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:59:02] [Server thread/INFO]: System chat: Player595 left the game
+[16:59:02] [Render thread/INFO]: Connecting to localhost, 51010
+[16:59:02] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@5f70a11e
+[16:59:02] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@5f70a11e
+[16:59:02] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@5f70a11e
+[16:59:02] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@5f70a11e
+[16:59:02] [Server thread/INFO]: Player595[/127.0.0.1:51021] logged in with entity id 19 at (0.5, -48.0, 0.5)
+[16:59:02] [Server thread/INFO]: System chat: Player595 joined the game
+[16:59:02] [Render thread/INFO]: Loaded 2 advancements
+[16:59:02] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@11cd665f
+[16:59:02] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@11cd665f
+[16:59:02] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:59:03] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:59:03] [Server thread/INFO]: System chat: Player595 left the game
+[16:59:03] [Server thread/INFO]: Stopping server
+[16:59:03] [Server thread/INFO]: Saving players
+[16:59:03] [Server thread/INFO]: Saving worlds
+[16:59:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:03] [Test thread/INFO]: [STDOUT]: WILDCRAFT P1 real HUD/XP/save/restart/dimension/death/TCP reconnect checks passed
+[16:59:04] [Worker-Main-6/INFO]: Loaded 1866 advancements
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.GenericMessageScreen@582518cc
+[16:59:04] [Render thread/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 193.8 μs
+[16:59:04] [Server thread/INFO]: Starting integrated minecraft server version 26.3
+[16:59:04] [Server thread/INFO]: Generating keypair
+[16:59:04] [Server thread/INFO]: Selecting global world spawn...
+[16:59:04] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:59:04] [Server thread/INFO]: Preparing spawn area: 16%
+[16:59:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Server thread/INFO]: Loading 48 chunks for player spawn...
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Server thread/INFO]: Time elapsed: 351 ms
+[16:59:04] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Server thread/INFO]: Player595[local:E:230a14ee] logged in with entity id 20 at (0.5, -60.0, 0.5)
+[16:59:04] [Server thread/INFO]: System chat: Player595 joined the game
+[16:59:04] [Server thread/INFO]: Changing view distance to 5, from 10
+[16:59:04] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[16:59:04] [Render thread/INFO]: Loaded 2 advancements
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:04] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:05] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:05] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:05] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:05] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@3a79d1ca
+[16:59:05] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:59:05] [Server thread/INFO]: System chat: Set minecraft:overworld to time marker minecraft:day
+[16:59:05] [Render thread/INFO]: Reloading ResourceManager: vanilla, vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, wildcraft
+[16:59:05] [Worker-Main-6/INFO]: Found unifont_pua-17.0.01.hex, loading
+[16:59:05] [Worker-Main-2/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[16:59:05] [Server thread/INFO]: Saving and pausing game...
+[16:59:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Worker-Main-2/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_composite. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/integrate_depth. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/animate_sprite, FRAGMENT minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_depth_bounds_cull. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:05] [Render thread/INFO]: OpenAL initialized on device Mac mini扬声器
+[16:59:05] [Render thread/INFO]: Sound engine started
+[16:59:05] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[16:59:05] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:59:06] [Render thread/WARN]: Requested post effect does not exist: minecraft:end_of_frame
+[16:59:17] [Server thread/INFO]: System chat: 已将1.0伤害施加于Player595
+[16:59:19] [Server thread/INFO]: System chat: Player595被杀死了
+[16:59:19] [Server thread/INFO]: System chat: 杀死了Player595
+[16:59:19] [Render thread/INFO]: [System] [CHAT] Player595被杀死了
+[16:59:20] [Server thread/INFO]: System chat: Player595取得了进度[勇往直下]
+[16:59:20] [Render thread/INFO]: [System] [CHAT] Player595取得了进度[勇往直下]
+[16:59:20] [Render thread/INFO]: Loaded 29 advancements
+[16:59:20] [Render thread/INFO]: Reloading ResourceManager: vanilla, vanilla, fabric-advancement-api-v1, fabric-api, fabric-api-base, fabric-api-lookup-api-v1, fabric-biome-api-v1, fabric-block-api-v1, fabric-block-getter-api-v2, fabric-client-gametest-api-v1, fabric-command-api-v2, fabric-content-registries-v0, fabric-convention-tags-v2, fabric-crash-report-info-v1, fabric-creative-tab-api-v1, fabric-data-attachment-api-v1, fabric-data-generation-api-v1, fabric-debug-api-v1, fabric-dimensions-v1, fabric-entity-events-v1, fabric-events-interaction-v0, fabric-game-rule-api-v1, fabric-gametest-api-v1, fabric-item-api-v1, fabric-key-mapping-api-v1, fabric-lifecycle-events-v1, fabric-loot-api-v3, fabric-menu-api-v1, fabric-message-api-v1, fabric-model-loading-api-v1, fabric-networking-api-v1, fabric-object-builder-api-v1, fabric-particles-v1, fabric-permission-api-v1, fabric-recipe-api-v1, fabric-registry-sync-v0, fabric-renderer-api-v1, fabric-renderer-indigo, fabric-rendering-fluids-v1, fabric-rendering-v1, fabric-resource-conditions-api-v1, fabric-resource-loader-v0, fabric-resource-loader-v1, fabric-screen-api-v1, fabric-serialization-api-v1, fabric-sound-api-v1, fabric-tag-api-v1, fabric-transfer-api-v1, fabric-transitive-access-wideners-v1, fabricloader, wildcraft
+[16:59:20] [Worker-Main-3/INFO]: Found unifont_all_no_pua-17.0.01.hex, loading
+[16:59:20] [Worker-Main-5/INFO]: Found unifont_pua-17.0.01.hex, loading
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Server thread/INFO]: Saving and pausing game...
+[16:59:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:20] [Worker-Main-3/INFO]: Found unifont_jp_patch-17.0.01.hex, loading
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_composite. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/integrate_depth. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/animate_sprite, FRAGMENT minecraft:core/animate_sprite_blit. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/screenquad, FRAGMENT minecraft:core/oit_depth_bounds_cull. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/block, FRAGMENT minecraft:core/block. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/terrain, FRAGMENT minecraft:core/terrain. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_04' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/clouds, FRAGMENT minecraft:core/clouds. Log output: WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_lines, FRAGMENT minecraft:core/rendertype_lines. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_entity_shadow, FRAGMENT minecraft:core/rendertype_entity_shadow. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/particle, FRAGMENT minecraft:core/particle. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/rendertype_crumbling, FRAGMENT minecraft:core/rendertype_crumbling. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/entity, FRAGMENT minecraft:core/entity. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: Info log when linking program containing VERTEX minecraft:core/text, FRAGMENT minecraft:core/text. Log output: WARNING: Output of vertex shader '_interface_variable_01' not read by fragment shader
+WARNING: Output of vertex shader '_interface_variable_00' not read by fragment shader
+
+[16:59:20] [Render thread/INFO]: OpenAL initialized on device Mac mini扬声器
+[16:59:20] [Render thread/INFO]: Sound engine started
+[16:59:20] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 256x128x0 minecraft:textures/atlas/celestials.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/decorated_pot.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 2048x2048x4 minecraft:textures/atlas/blocks.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 1024x512x0 minecraft:textures/atlas/items.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 1024x1024x0 minecraft:textures/atlas/gui.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 128x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/chest.png-atlas
+[16:59:20] [Render thread/INFO]: Created: 512x512x0 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:59:21] [Render thread/WARN]: Requested post effect does not exist: minecraft:end_of_frame
+[16:59:23] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:59:23] [Server thread/INFO]: System chat: Player595 left the game
+[16:59:23] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[16:59:23] [Server thread/INFO]: Stopping server
+[16:59:23] [Server thread/INFO]: Saving players
+[16:59:23] [Server thread/INFO]: Saving worlds
+[16:59:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:23] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:24] [Worker-Main-6/INFO]: Loaded 1866 advancements
+[16:59:24] [Thread-4/WARN]: Unable to parse version 27.0 to a codename.
+[16:59:24] [Thread-4/INFO]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[16:59:24] [Worker-Main-4/INFO]: Loaded 1866 advancements
+[16:59:24] [Thread-4/INFO]: Applied 0 biome modifications to 0 of 67 new biomes in 146.7 μs
+[16:59:24] [Server thread/INFO]: Starting minecraft server version 26.3
+[16:59:24] [Server thread/INFO]: Loading properties
+[16:59:24] [Server thread/INFO]: Default game type: SURVIVAL
+[16:59:24] [Server thread/INFO]: Generating keypair
+[16:59:24] [Server thread/INFO]: Starting Minecraft server on 127.0.0.1:51030
+[16:59:24] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:59:24] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:59:24] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:59:24] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:59:24] [Server thread/INFO]: Preparing level "world"
+[16:59:24] [Server thread/INFO]: Selecting global world spawn...
+[16:59:24] [Server thread/INFO]: Loading 0 persistent chunks...
+[16:59:24] [Server thread/INFO]: Preparing spawn area: 100%
+[16:59:24] [Server thread/INFO]: Time elapsed: 35 ms
+[16:59:24] [Server thread/INFO]: Done (0.037s)! For help, type "help"
+[16:59:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:24] [Render thread/INFO]: Connecting to localhost, 51030
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@3353d34a
+[16:59:24] [Server thread/INFO]: Player595[/127.0.0.1:51037] logged in with entity id 22 at (0.5, 71.0, 0.5)
+[16:59:24] [Server thread/INFO]: System chat: Player595 joined the game
+[16:59:24] [Render thread/INFO]: Loaded 2 advancements
+[16:59:25] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@6975ac1d
+[16:59:25] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@6975ac1d
+[16:59:25] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:59:31] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:59:31] [Server thread/INFO]: System chat: Player595 left the game
+[16:59:31] [Render thread/INFO]: Connecting to localhost, 51030
+[16:59:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@38086fc2
+[16:59:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@38086fc2
+[16:59:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@38086fc2
+[16:59:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@38086fc2
+[16:59:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@38086fc2
+[16:59:31] [Render thread/INFO]: World loading finished: null screen: net.minecraft.client.gui.screens.ConnectScreen@38086fc2
+[16:59:31] [Server thread/INFO]: Player595[/127.0.0.1:51056] logged in with entity id 23 at (1.7, 73.40000000000009, 0.5)
+[16:59:31] [Server thread/INFO]: System chat: Player595 joined the game
+[16:59:31] [Render thread/INFO]: Loaded 2 advancements
+[16:59:31] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@713a124c
+[16:59:31] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@713a124c
+[16:59:32] [Render thread/INFO]: World loading finished: ClientLevel screen: net.minecraft.client.gui.screens.LevelLoadingScreen@713a124c
+[16:59:32] [Render thread/INFO]: World loading finished: ClientLevel screen: null
+[16:59:32] [Server thread/INFO]: Player595 lost connection: Disconnected
+[16:59:32] [Server thread/INFO]: System chat: Player595 left the game
+[16:59:32] [Server thread/INFO]: Stopping server
+[16:59:32] [Server thread/INFO]: Saving players
+[16:59:32] [Server thread/INFO]: Saving worlds
+[16:59:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:59:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:59:32] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:59:32] [Test thread/INFO]: [STDOUT]: WILDCRAFT P2 real keys/hold/sideways/descent/ledge/inner-outer-corners/ceiling/damage/exhaustion/death/dimension/TCP reconnect checks passed
+[16:59:32] [Render thread/INFO]: Stopping!
+
+BUILD SUCCESSFUL in 1m 15s
+13 actionable tasks: 3 executed, 10 up-to-date
+Configuration cache entry reused.

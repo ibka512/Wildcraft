@@ -1,0 +1,45 @@
+# 全部开发资产与历史证据
+
+归档日期：2026-10-03。这里镜像原有交付文件，保存其原始字节、哈希和当时的验证状态，不覆盖原版本。当前源码在仓库根目录；最新交接见 [AI-HANDOFF](../docs/AI-HANDOFF.md)。
+
+## 可运行包与源码快照
+
+| 阶段 | 安装 JAR | 原始源码 ZIP |
+| --- | --- | --- |
+| P0 | [dev.1](wildcraft-0.1.0-dev.1+mc26.3.jar) | [P0](Wildcraft-P0-source.zip) |
+| R0 / P1 | [dev.2](wildcraft-0.1.0-dev.2+mc26.3.jar) | [P1](Wildcraft-P1-source.zip) |
+| P2 | [dev.3](wildcraft-0.1.0-dev.3+mc26.3.jar) | [P2](Wildcraft-P2-source.zip) |
+| P3 | [dev.4](wildcraft-0.1.0-dev.4+mc26.3.jar) | [P3](Wildcraft-P3-source.zip) |
+| R1 | 沿用 P3 正式 JAR，研究不进运行包 | [R1](Wildcraft-R1-source.zip) |
+| P3.1 | [dev.5，当前](wildcraft-0.1.0-dev.5+mc26.3.jar) | [P3.1](Wildcraft-P3.1-source.zip) |
+
+所有游戏包使用 Minecraft 26.3 和对应 Loader/Fabric API。旧源码 ZIP 是当时快照，不含本次新增交接说明；最新源码及完整历史用主仓库获取。不能把研究模组当正式功能安装。
+
+## 报告、规划与美术
+
+- 原始导出报告：[R1](Wildcraft-R1-验证报告.md)、[P3.1](Wildcraft-P3.1-验证报告.md)。按当前仓库布局阅读的版本：[R1 结论](../docs/R1-FINDINGS.md)、[P3.1 验收](../docs/P3.1-VERIFICATION.md)。
+- 原始规划导出：[Markdown](Wildcraft-开发规划-v2.md)、[ZIP](Wildcraft-开发规划-v2.zip) 与 [当时副本](Wildcraft-开发规划-v2_副本.zip)；当前执行状态以 [根目录规划](../docs/DEVELOPMENT-PLAN-V2.md) 为准。
+- 用户原始输入：[开发文档.zip](inputs/开发文档.zip)；已整理的四份 Markdown 和接收哈希在 [design-inputs](../docs/design-inputs/2026-10-02/SOURCES.json)。ZIP 原样保留，包括输入时的文件名编码和 macOS 元数据；工作时优先读整理后的 Markdown。
+- 可编辑原创源稿：[art](../art/README.md)；实际贴图、配方、语言、模型和研究着色器在 `src/`，不重复生成新的来源。
+
+## 验证资产
+
+| 目录 | 内容与当前可读记录 |
+| --- | --- |
+| [verification/p1](verification/p1) | 精力与 R0 构建、客户端/服务端、XML、3 张截图；[记录](../docs/P1-VERIFICATION.md) |
+| [verification/p2](verification/p2) | 攀爬与碰撞/网络证据、4 张截图；[记录](../docs/P2-VERIFICATION.md) |
+| [verification/p3](verification/p3) | 装备槽/滑翔/保存与网络、5 张截图；[记录](../docs/P3-VERIFICATION.md) |
+| [verification/r1](verification/r1) | 普通客户端计时、结构化测量、后处理与挂点、3 张截图；[记录](../docs/R1-FINDINGS.md) |
+| [verification/p31](verification/p31) | 25 项 GameTest、7 客户端测试类、真正双客户端、独立服、22 张截图；[记录](../docs/P3.1-VERIFICATION.md) |
+| [debug-history](debug-history) | 原工作目录的诊断/失败尝试日志与导出辅助脚本；不是最终验收，旧脚本只作资料读取 |
+
+原始报告、manifest 和历史源码 ZIP 使用原交付布局的 `wildcraft/` 与 `verification/` 相对路径，可能包含当时机器路径；这里保留原字节供对照。上表所链接的当前 `docs/` 报告已适配 GitHub 布局。不要直接执行归档脚本来覆盖当前目录。
+
+## 清单与完整性
+
+- [原交付 SHA256SUMS](SHA256SUMS.txt)、[原交付 manifest](manifest.json)
+- [R1 原校验](Wildcraft-R1-SHA256SUMS.txt)、[R1 原 manifest](Wildcraft-R1-manifest.json)
+- [公开归档清单](PUBLIC-ASSET-MANIFEST.json)：逐文件大小、哈希、原始来源相对路径；外部原交付副本必须逐字节相同。
+- [公开归档校验](PUBLIC-ASSET-SHA256SUMS.txt)：在本目录执行 `shasum -a 256 -c PUBLIC-ASSET-SHA256SUMS.txt`。
+
+游戏下载文件、Minecraft 反编译源码、Gradle/IDE 缓存、个人世界、账号凭据、运行 EULA 文件和可重建的临时世界没有归档。自动测试源码和生成场景的方法已提供，其他 AI 可以自行重现。原始日志的成功/失败均保留，最终状态以对应验收记录的明确结果为准。

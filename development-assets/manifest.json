@@ -1,0 +1,496 @@
+{
+  "project": "Wildcraft",
+  "phase": "P3.1",
+  "mod_version": "0.1.0-dev.5",
+  "minecraft": "26.3",
+  "git_commit": "18602f8e7d80693731d795046d6b9eb47203b9c2",
+  "git_tag": "v0.1.0-dev.5+mc26.3",
+  "git_branch": "feature/equipment-visuals",
+  "publication": "local only",
+  "artifacts": [
+    {
+      "file": "wildcraft-0.1.0-dev.5+mc26.3.jar",
+      "bytes": 113231,
+      "sha256": "237025586233ce69418ab8e7ebc99d08e79344b29df3c8732d1cf259339949dd"
+    },
+    {
+      "file": "Wildcraft-P3.1-source.zip",
+      "bytes": 291515,
+      "sha256": "c1be223c991f622e360db3a1938b32b7f0ece0a5fbba08f09365df078a11f446"
+    },
+    {
+      "file": "Wildcraft-P3.1-验证报告.md",
+      "bytes": 8096,
+      "sha256": "8ccf29493cc3a8f6437a545e513bed6265af0f32bcb99e499678eb21207678f9"
+    }
+  ],
+  "verification": {
+    "date": "2026-10-02",
+    "directory": "verification/p31",
+    "numerical_examples": 13,
+    "numerical_bound_monotonicity_cases": 1000,
+    "project_gametests_passed": 24,
+    "builtin_gametests_passed": 1,
+    "final_packaged_client_passed": true,
+    "packaged_client_test_classes": 7,
+    "independent_graphical_clients": 2,
+    "independent_graphical_clients_use_fabric_gametest_scheduler": false,
+    "separate_packaged_server_passed": true,
+    "separate_packaged_server_has_test_mod": false,
+    "loopback_tcp_allow_flight": false,
+    "separate_packaged_server_allow_flight": false,
+    "remote_ci_run": false,
+    "manual_hand_feel_acceptance": false,
+    "saved_stamina_schema_version": 1,
+    "saved_glider_equipment_schema_version": 1,
+    "saved_back_equipment_schema_version": 1,
+    "production_dependencies_added": [],
+    "screenshots": 22,
+    "files": [
+      {
+        "file": "verification/p31/back-equipment-crouching.png",
+        "bytes": 152090,
+        "sha256": "3779c01675a8c9ff82a61bceb910638c8fd59175ed6c95f2b58999a1f5aed28f"
+      },
+      {
+        "file": "verification/p31/back-equipment-swimming.png",
+        "bytes": 165635,
+        "sha256": "58170ec829b451f1efb348d15f06a9b7b9f1b9b390c9b357e73453c781349c35"
+      },
+      {
+        "file": "verification/p31/back-equipment-third-person.png",
+        "bytes": 82280,
+        "sha256": "58cbb69fcce5887d888d0bad2538422def987d18d48cfde63df27b03b72f035a"
+      },
+      {
+        "file": "verification/p31/bow-draw-shield-stowed.png",
+        "bytes": 84097,
+        "sha256": "1ac9d6011e99591f797ee7281173770e8627fa07835144ba21f34708913aeb94"
+      },
+      {
+        "file": "verification/p31/build-final.log",
+        "bytes": 20741,
+        "sha256": "86705bbbcaabbe1a35af7e425adfb0374b977f5064315b05793f6e8d3c86ebed"
+      },
+      {
+        "file": "verification/p31/datagen.log",
+        "bytes": 5870,
+        "sha256": "bc707866a82109ef52e652e1efad4799994f7a5b3923fba77257648979cfa074"
+      },
+      {
+        "file": "verification/p31/elytra-priority.png",
+        "bytes": 88929,
+        "sha256": "83f31cb7e7702a70ca108faad7cd39f47441bd11110944e6d92baa5467656abf"
+      },
+      {
+        "file": "verification/p31/first-person-no-own-back.png",
+        "bytes": 84853,
+        "sha256": "5bc79d7be4a6f858e3a375718091244634c57ac59604f44e9b8611610d5fb8a9"
+      },
+      {
+        "file": "verification/p31/gametest-results.xml",
+        "bytes": 3743,
+        "sha256": "8c4ee4a717dbc5282b2bd692c232de74da9413ca70e6a0d98cc12b78d6f56215"
+      },
+      {
+        "file": "verification/p31/gliding-upper-left-hud.png",
+        "bytes": 238582,
+        "sha256": "7c765c288c4dbdbf1b1365b34b8ea0cb0c6149f091d1a0ce0386faee42a9ec6a"
+      },
+      {
+        "file": "verification/p31/hidden-hud.png",
+        "bytes": 69900,
+        "sha256": "6e6e717e847233f04403b4f6de00e56145b53dcd94f26b43322eb817eee78d42"
+      },
+      {
+        "file": "verification/p31/lab-prepare.log",
+        "bytes": 550,
+        "sha256": "1988cda9cea5aa0ca80535e6592247ebf7be4ca3f6c870b8e8a5c9472b12c4e5"
+      },
+      {
+        "file": "verification/p31/native-mount-bar.png",
+        "bytes": 85701,
+        "sha256": "4bcf7449d7ab53d1f1f93fe8532089ceb79c48a85c88e727e35bcc2789fbb8cc"
+      },
+      {
+        "file": "verification/p31/native-xp-level5.png",
+        "bytes": 34837,
+        "sha256": "67392c861253d640015a2c2cfbbab6c709b68db2bfe4642801831f7e323d7781"
+      },
+      {
+        "file": "verification/p31/packaged-client-test.log",
+        "bytes": 239350,
+        "sha256": "2773359755cb7a47eece775b27c252d12c197ee976bba6e5af2ce59b6b0c53ac"
+      },
+      {
+        "file": "verification/p31/standalone-server.log",
+        "bytes": 6106,
+        "sha256": "5e5094eb0c063efc413193b3ea82f574fd253a224bb3c9acf9f43c502997ffcb"
+      },
+      {
+        "file": "verification/p31/two-client-actor.log",
+        "bytes": 28138,
+        "sha256": "ccdb17e74a650cfdc90247d17b46eea2c29a7bc887941640b4654df6a3351ac5"
+      },
+      {
+        "file": "verification/p31/two-client-back-equipment.png",
+        "bytes": 605426,
+        "sha256": "34a4f3291225ddd227e8783cf093ee34309eab025f8af2e99b2b548a0ec43ad6"
+      },
+      {
+        "file": "verification/p31/two-client-dimension-away.png",
+        "bytes": 489175,
+        "sha256": "d63a0b6e29eff5f1c3a3cad9c1af8c44fc0b17fc52909546869b8d45629d782e"
+      },
+      {
+        "file": "verification/p31/two-client-dimension-return.png",
+        "bytes": 468132,
+        "sha256": "c3e82d2f324962c2a0669da85222a9faf50b2e7d7a1aad55e9000f0307eca53a"
+      },
+      {
+        "file": "verification/p31/two-client-gliding.png",
+        "bytes": 218891,
+        "sha256": "173891acb0c74c299d95b9018e590f2c2e96646508549e5c689db86465d50e40"
+      },
+      {
+        "file": "verification/p31/two-client-held-exclusion.png",
+        "bytes": 565446,
+        "sha256": "6a1319cc09ca901307dc054d848c325611978c96148ead17229de4f7e23aa140"
+      },
+      {
+        "file": "verification/p31/two-client-observer.log",
+        "bytes": 30204,
+        "sha256": "290f3558b013492f3b76ccb1c63cf6e4261dd7165416e4825484951b0c36a10e"
+      },
+      {
+        "file": "verification/p31/two-client-reconnected.png",
+        "bytes": 458378,
+        "sha256": "610e837738c24349ff3523cba4b385a70e6272442c8d3965ccc84faf86e3a43b"
+      },
+      {
+        "file": "verification/p31/two-client-server.log",
+        "bytes": 8317,
+        "sha256": "c4701b0e3dd050cad3f497f02779c9556bd9793231f75735968b32023917eebe"
+      },
+      {
+        "file": "verification/p31/two-client-shield-in-chest.png",
+        "bytes": 496843,
+        "sha256": "3f129c2dd28c806855cb301ad5210f93973e6b955570667a695001d2a1930f5f"
+      },
+      {
+        "file": "verification/p31/two-client-sword-dropped.png",
+        "bytes": 510493,
+        "sha256": "a32c5f28c85fd6113d4e92d745657a3b60d0dce257c2e62630a374f044865615"
+      },
+      {
+        "file": "verification/p31/upper-left-large-capacity.png",
+        "bytes": 84577,
+        "sha256": "aa82e55fe5c9110dd8a6c06e1e8233539ad65ad073047f33a0dd9c4bc5841bac"
+      },
+      {
+        "file": "verification/p31/upper-left-multiple-hearts.png",
+        "bytes": 84556,
+        "sha256": "f66c60dfd7efb7c5e835fdc634894260e7bb494ff799df234e99f26abb8c6058"
+      },
+      {
+        "file": "verification/p31/upper-left-stamina-en.png",
+        "bytes": 84943,
+        "sha256": "06957e7a3d3dbcf91eaf90e84ef009c2ee66272ad5a0dd34ef758f32dc118e9d"
+      },
+      {
+        "file": "verification/p31/upper-left-stamina-zh.png",
+        "bytes": 85953,
+        "sha256": "d61a9f4d1e1e8e5984ab1817413de9c27967a718565af9f5dfd2cded50248df6"
+      }
+    ]
+  },
+  "history": [
+    {
+      "project": "Wildcraft",
+      "phase": "P2",
+      "mod_version": "0.1.0-dev.3",
+      "minecraft": "26.3",
+      "git_commit": "077b80ef116007ca6b1262fbe437d583eeba82fe",
+      "git_tag": "v0.1.0-dev.3+mc26.3",
+      "publication": "local only",
+      "artifacts": [
+        {
+          "file": "wildcraft-0.1.0-dev.3+mc26.3.jar",
+          "bytes": 49452,
+          "sha256": "1a65eb90ca81b6105299cc20d210b83b9d2e853cd053017ac8126a24f48c596a"
+        },
+        {
+          "file": "Wildcraft-P2-source.zip",
+          "bytes": 131107,
+          "sha256": "e1be376c54eb62a975915e127386442a27c05518d3f136b240474149ec9ee914"
+        }
+      ],
+      "verification": {
+        "date": "2026-10-02",
+        "directory": "verification/p2",
+        "numerical_examples": 13,
+        "numerical_bound_monotonicity_cases": 1000,
+        "project_gametests_passed": 13,
+        "builtin_gametests_passed": 1,
+        "development_client_baseline_passed": true,
+        "final_packaged_client_passed": true,
+        "separate_packaged_server_passed": true,
+        "loopback_tcp_allow_flight": false,
+        "remote_ci_run": false,
+        "saved_stamina_schema_version": 1,
+        "files": [
+          {
+            "file": "verification/p2/build-final.log",
+            "bytes": 11042,
+            "sha256": "f91afaf339677cea77d67600d480071809b22c5b6e73b64c49de4d60fa4f08d0"
+          },
+          {
+            "file": "verification/p2/client-dev-test.log",
+            "bytes": 157414,
+            "sha256": "1d5531cd0c54e671fc48fe5674272c8f321b963b019b3beb39a90f80337a3e18"
+          },
+          {
+            "file": "verification/p2/climbing-outer-corner.png",
+            "bytes": 76348,
+            "sha256": "297ab9e824a593b212b73989edd3486a9506fd91d1602e99c1c26e7d74dc8810"
+          },
+          {
+            "file": "verification/p2/climbing-over-ledge.png",
+            "bytes": 146274,
+            "sha256": "7b738c0c2a3c704cbdc5d8592f9dcea1759594c4cf392856f71cf330f22e6ffc"
+          },
+          {
+            "file": "verification/p2/climbing-tcp.png",
+            "bytes": 99236,
+            "sha256": "5667cf4da25f84563c6fece557e78549826dcb0775345feee23aed7e94bf1432"
+          },
+          {
+            "file": "verification/p2/climbing-wall-zh.png",
+            "bytes": 131153,
+            "sha256": "f57c400dfdbc793658b129728c6127ef4e591955d305ed013066f4fd4be815f1"
+          },
+          {
+            "file": "verification/p2/datagen.log",
+            "bytes": 5307,
+            "sha256": "4b24a9dddf96deea8c7c65800a35ee9a1d01d0809752585c6fd758c99cf354eb"
+          },
+          {
+            "file": "verification/p2/gametest-results.xml",
+            "bytes": 2159,
+            "sha256": "ec463e13ff7348d500185905e7741cea3dc986c41f086cd1a5ecde02a9287aa7"
+          },
+          {
+            "file": "verification/p2/packaged-client-test.log",
+            "bytes": 147223,
+            "sha256": "324335d0d6ef7577f3f6d25f8047bedcd1840787de597f61f06108ea27c61324"
+          },
+          {
+            "file": "verification/p2/packaged-server.log",
+            "bytes": 6684,
+            "sha256": "7d88f0fc486deaf56c8dbe03ff79743c8cb41d3fc858c6e3ab10b9ec8da4aef0"
+          }
+        ]
+      },
+      "history": [
+        {
+          "project": "Wildcraft",
+          "phase": "R0 + P1",
+          "mod_version": "0.1.0-dev.2",
+          "minecraft": "26.3",
+          "git_commit": "061dcfca1c538ef0fa3f264e49322493ec3e9540",
+          "git_tag": "v0.1.0-dev.2+mc26.3",
+          "publication": "local only",
+          "artifacts": [
+            {
+              "file": "wildcraft-0.1.0-dev.2+mc26.3.jar",
+              "bytes": 27874,
+              "sha256": "1e6eab6b6a3b833221b22bc510d35ea28a016691c2f529cf1dac5a91e17d06b0"
+            },
+            {
+              "file": "Wildcraft-P1-source.zip",
+              "bytes": 109997,
+              "sha256": "fc98acc5def4326c052e6cccd77664481e3d819ea1d6ed5315dc3377c9b52514"
+            }
+          ],
+          "verification": {
+            "date": "2026-10-02",
+            "directory": "verification/p1",
+            "numerical_examples": 13,
+            "numerical_bound_monotonicity_cases": 1000,
+            "project_gametests_passed": 8,
+            "builtin_gametests_passed": 1,
+            "development_client_passed": true,
+            "packaged_client_passed": true,
+            "separate_packaged_server_passed": true,
+            "remote_ci_run": false,
+            "files": [
+              {
+                "file": "verification/p1/build-final.log",
+                "bytes": 11410,
+                "sha256": "0b5d21c441c594ad096c9f73a1668fbc58be7810e567fbb7dc68d4415d601da7"
+              },
+              {
+                "file": "verification/p1/client-dev-test.log",
+                "bytes": 110182,
+                "sha256": "c350a9a36ef5f3d32493ace139cbc7d0de9a86bdd89584c51aa174ffe3ddc2bf"
+              },
+              {
+                "file": "verification/p1/datagen-compile.log",
+                "bytes": 7514,
+                "sha256": "e2e96fa4adefde5d0a50c22872a6116f8c253835ea151036ec1e423999027200"
+              },
+              {
+                "file": "verification/p1/gametest-results.xml",
+                "bytes": 1437,
+                "sha256": "c8afcc0ccea078e3494bce3a2cc8f0d9fdaaf7e7ba0bf8b6d0e65a655f1fcabf"
+              },
+              {
+                "file": "verification/p1/packaged-client-test.log",
+                "bytes": 103596,
+                "sha256": "234327b02ce1bc5089f05aedfe326d7f7e6a07a0020f4d11ec6cd6859e794e73"
+              },
+              {
+                "file": "verification/p1/packaged-server.log",
+                "bytes": 15365,
+                "sha256": "9b77312fd47e1d4b82a5de1c298e0a6560772f203d4b38a5278c3ae594376117"
+              },
+              {
+                "file": "verification/p1/stamina-en.png",
+                "bytes": 260987,
+                "sha256": "9b289a4a71d462c353a6bd5e46f5160d177be705893d17503ec47f226c9b355f"
+              },
+              {
+                "file": "verification/p1/stamina-reconnect.png",
+                "bytes": 222175,
+                "sha256": "6ed79f9e2b2be307d48934723ca6b45fc04f8928be538f212426bf3f09e93e7d"
+              },
+              {
+                "file": "verification/p1/stamina-zh.png",
+                "bytes": 270870,
+                "sha256": "644ec69c5b06a45a836e78be8ad87a7d7f7611044759fe6fcc04bd9669c9ed5a"
+              }
+            ]
+          },
+          "history": [
+            {
+              "project": "Wildcraft",
+              "phase": "P0",
+              "mod_version": "0.1.0-dev.1",
+              "minecraft": "26.3",
+              "git_commit": "4b847a8f5aa7742acfc2a35b9390819e63a1fd6e",
+              "git_tag": "v0.1.0-dev.1+mc26.3",
+              "publication": "local only",
+              "artifacts": [
+                {
+                  "file": "wildcraft-0.1.0-dev.1+mc26.3.jar",
+                  "bytes": 11117,
+                  "sha256": "a610fe8f953923d9c4294e5d0c537faa318f7a5d4456db1a0b8ad14c8e25825f"
+                },
+                {
+                  "file": "Wildcraft-P0-source.zip",
+                  "bytes": 84131,
+                  "sha256": "6a75be9bbf1f3af029f7591d24d115ba2d3123ba0f81d31982a77f2e11ae695a"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "project": "Wildcraft",
+      "phase": "P3",
+      "mod_version": "0.1.0-dev.4",
+      "minecraft": "26.3",
+      "git_commit": "2b58bfd0ef8e638ddf2290686b3c3a6472a03a13",
+      "git_tag": "v0.1.0-dev.4+mc26.3",
+      "publication": "local only",
+      "artifacts": [
+        {
+          "file": "wildcraft-0.1.0-dev.4+mc26.3.jar",
+          "bytes": 88522,
+          "sha256": "3360c6d5368c22c062feca88b7204a58089a07e33dd4b1bc285fca8bcd251ce4"
+        },
+        {
+          "file": "Wildcraft-P3-source.zip",
+          "bytes": 166330,
+          "sha256": "87702712cd7f63ef8457a6e2e3dbb38a41805e613cb5aed205308dc34d1a6989"
+        }
+      ],
+      "verification": {
+        "date": "2026-10-02",
+        "directory": "verification/p3",
+        "numerical_examples": 13,
+        "numerical_bound_monotonicity_cases": 1000,
+        "project_gametests_passed": 19,
+        "builtin_gametests_passed": 1,
+        "development_client_passed": true,
+        "final_packaged_client_passed": true,
+        "separate_packaged_server_passed": true,
+        "loopback_tcp_allow_flight": false,
+        "separate_packaged_server_allow_flight": false,
+        "remote_ci_run": false,
+        "saved_stamina_schema_version": 1,
+        "saved_glider_equipment_schema_version": 1,
+        "production_dependencies_added": [],
+        "files": [
+          {
+            "file": "verification/p3/build-final.log",
+            "bytes": 16269,
+            "sha256": "c69459102bd1ff27c1ff626663b6f133f69c0c8b5bf22f611171326636bea158"
+          },
+          {
+            "file": "verification/p3/client-dev-test.log",
+            "bytes": 249851,
+            "sha256": "dcc84e413e49e59705a1f27615bfc8d71c3d4920608f9a0007ef85d83a3b309c"
+          },
+          {
+            "file": "verification/p3/climb-to-glide.png",
+            "bytes": 166222,
+            "sha256": "4ded46ab5bbfe71e00d23452c4aa82fec54d883456fa8aa9f271c57301f3560a"
+          },
+          {
+            "file": "verification/p3/datagen.log",
+            "bytes": 6063,
+            "sha256": "70a21cc9b031bb4049fed9e004e41fe2f3fb97a2af1f0771793f4ea989c76a5f"
+          },
+          {
+            "file": "verification/p3/gametest-results.xml",
+            "bytes": 2998,
+            "sha256": "96e654a919d428ba63ccf250ac506ff479926a3d38b2991c091f55d52b90e3af"
+          },
+          {
+            "file": "verification/p3/gliding-tcp-en.png",
+            "bytes": 75750,
+            "sha256": "8c062ed3f5a77d88533c88f24822099826f3ace72834a4b82fe621e608b49e65"
+          },
+          {
+            "file": "verification/p3/packaged-client-test.log",
+            "bytes": 198002,
+            "sha256": "01f27998fd9c8da1c58d06f37c0415d5b5b5df9ef0f86c86e0738ec5014f9be3"
+          },
+          {
+            "file": "verification/p3/packaged-server.log",
+            "bytes": 6543,
+            "sha256": "afeb7c1d8b93e207731deba7dfc7f8adecfb8e762239d9ded52945d1a45360dd"
+          },
+          {
+            "file": "verification/p3/paraglider-creative-slot-zh.png",
+            "bytes": 76918,
+            "sha256": "e0fb01c33c4f70520233466b91139fd5054ffff7e97ac8c2cef5b4433e92b00a"
+          },
+          {
+            "file": "verification/p3/paraglider-equipment-slot-zh.png",
+            "bytes": 67325,
+            "sha256": "ec113b75fe5cd990d0beef7c5dd73f9a51d585d1ed9b0d4fe5edb40d615b949b"
+          },
+          {
+            "file": "verification/p3/paraglider-gliding-zh.png",
+            "bytes": 55609,
+            "sha256": "d16468601468fa3b8dafa8156d4334cd2d26bef038503e2f64b4428b3cc368a7"
+          }
+        ]
+      }
+    }
+  ]
+}

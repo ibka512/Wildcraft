@@ -1,0 +1,42 @@
+Starting a Gradle Daemon, 1 busy Daemon could not be reused, use --status for details
+Calculating task graph as configuration cache cannot be reused because file 'build.gradle' has changed.
+
+> Configure project :
+Fabric Loom: 1.18.2
+
+> Task :processClientResources NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileClientJava UP-TO-DATE
+> Task :clientClasses UP-TO-DATE
+
+> Task :compileGametestJava
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:55: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer first = helper.makeMockServerPlayerInLevel();
+                                   ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:56: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer second = helper.makeMockServerPlayerInLevel();
+                                    ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:78: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer player = helper.makeMockServerPlayerInLevel();
+                                    ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/ResearchGameTests.java:75: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        var player = helper.makeMockServerPlayerInLevel();
+                           ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/ResearchGameTests.java:101: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        var rider = helper.makeMockServerPlayerInLevel();
+                          ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/ClimbingGameTests.java:128: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+                          ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/GlidingGameTests.java:171: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+                          ^
+7 个警告
+
+[Incubating] Problems report is available at: file:///Users/zhou/Library/Caches/Wildcraft/builds/260a5f2b3758/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 6s
+4 actionable tasks: 1 executed, 3 up-to-date
+Configuration cache entry stored.

@@ -1,0 +1,87 @@
+Reusing configuration cache.
+> Task :generateLog4jConfig UP-TO-DATE
+> Task :processClientResources NO-SOURCE
+> Task :downloadAssets UP-TO-DATE
+> Task :processGametestResources UP-TO-DATE
+> Task :generateDLIConfig UP-TO-DATE
+> Task :configureLaunch UP-TO-DATE
+> Task :configureClientLaunch UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileClientJava UP-TO-DATE
+> Task :clientClasses UP-TO-DATE
+
+> Task :compileGametestJava FAILED
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:55: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer first = helper.makeMockServerPlayerInLevel();
+                                   ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:56: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer second = helper.makeMockServerPlayerInLevel();
+                                    ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:78: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer player = helper.makeMockServerPlayerInLevel();
+                                    ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/ResearchGameTests.java:75: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        var player = helper.makeMockServerPlayerInLevel();
+                           ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/ResearchGameTests.java:101: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        var rider = helper.makeMockServerPlayerInLevel();
+                          ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/time/NativeTimeProbe.java:67: 错误: 找不到符号
+            client.options.hideGui = index == 1;
+                          ^
+  符号:   变量 hideGui
+  位置: 类型为Options的变量 options
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/ClimbingGameTests.java:128: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+                          ^
+/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/GlidingGameTests.java:171: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+                          ^
+1 个错误
+7 个警告
+
+[Incubating] Problems report is available at: file:///Volumes/%E4%BB%95%E4%BA%8B/%E5%BC%80%E5%8F%91/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileGametestJava' (registered by plugin class 'org.gradle.api.plugins.JavaBasePlugin').
+> Compilation failed; see the compiler output below.
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/time/NativeTimeProbe.java:67: 错误: 找不到符号
+              client.options.hideGui = index == 1;
+                            ^
+    符号:   变量 hideGui
+    位置: 类型为Options的变量 options
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:55: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          ServerPlayer first = helper.makeMockServerPlayerInLevel();
+                                     ^
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:56: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          ServerPlayer second = helper.makeMockServerPlayerInLevel();
+                                      ^
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/PlayerStaminaGameTests.java:78: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          ServerPlayer player = helper.makeMockServerPlayerInLevel();
+                                      ^
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/ResearchGameTests.java:75: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          var player = helper.makeMockServerPlayerInLevel();
+                             ^
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/research/ResearchGameTests.java:101: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          var rider = helper.makeMockServerPlayerInLevel();
+                            ^
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/ClimbingGameTests.java:128: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          ServerPlayer p = h.makeMockServerPlayerInLevel();
+                            ^
+  /Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an/outputs/wildcraft/src/gametest/java/dev/wildcraft/test/GlidingGameTests.java:171: 警告: [removal] GameTestHelper 中的 makeMockServerPlayerInLevel() 已过时, 且标记为待删除
+          ServerPlayer p = h.makeMockServerPlayerInLevel();
+                            ^
+  1 个错误
+  7 个警告
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 851ms
+8 actionable tasks: 1 executed, 7 up-to-date
+Configuration cache entry reused.

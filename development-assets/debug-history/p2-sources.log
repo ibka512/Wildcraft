@@ -1,0 +1,21 @@
+Calculating task graph as no cached configuration is available for tasks: genSources
+
+> Configure project :
+Fabric Loom: 1.18.2
+
+> Task :validateAccessWidener NO-SOURCE
+
+> Task :genCommonSourcesWithVineflower
+Decompile cache stats: 0 hits, 5037 misses
+
+> Task :genCommonSources
+
+> Task :genClientOnlySourcesWithVineflower
+Decompile cache stats: 0 hits, 2264 misses
+
+> Task :genClientOnlySources
+> Task :genSources
+
+BUILD SUCCESSFUL in 40s
+2 actionable tasks: 2 executed
+Configuration cache entry stored.

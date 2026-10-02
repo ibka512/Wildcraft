@@ -1,0 +1,9 @@
+IntelliJ IDEA 2026.2.3
+Gradle sync completed on 2026-10-02
+Project SDK: 25
+Language level: JDK_25
+Gradle JVM: 25
+Gradle user home: ~/Library/Caches/Wildcraft/gradle
+Loom run directories: ~/Library/Caches/Wildcraft/builds/<project-key>/run/
+Native UI and saved project settings verified.
+Verified generated IDE launches: runClient, runServer, runDatagen, runClientGameTest.

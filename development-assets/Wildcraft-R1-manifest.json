@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Shanghai",
+  "sourceCommit": "7354fdb2bedb8d6760368e4e124abd6cf0645c63",
+  "branch": "spike/focus-time",
+  "gameModVersion": "0.1.0-dev.4",
+  "gameSha256": "3360c6d5368c22c062feca88b7204a58089a07e33dd4b1bc285fca8bcd251ce4",
+  "stage": "R1 isolated research complete; P3.1 registration rule confirmed, formal feature not implemented",
+  "baseline": "22c2cce069aab0a8ec807bf822b8f13b1baf0a15",
+  "tests": {
+    "nativeClientCases": 6,
+    "clockCases": 10,
+    "headlessGameTests": 20,
+    "staminaExamples": 13,
+    "staminaBoundaryCases": 1000,
+    "packagedClient": "P0/R0/P1/P2/P3/R1 passed"
+  },
+  "artifacts": {
+    "Wildcraft-R1-验证报告.md": {
+      "bytes": 8799,
+      "sha256": "dfc56dea34ff4fab28c2b1a450f50f995d2bf2898506c9b94d58979aad8e8ebf"
+    },
+    "Wildcraft-R1-source.zip": {
+      "bytes": 965796,
+      "sha256": "525182d9348601b9116fb7219f9e631000900d25966e2aedff6c0bf1c4732604"
+    },
+    "verification/r1/back-anchor.png": {
+      "bytes": 211792,
+      "sha256": "a762a239b9d54e1ec30e1a075b093ec2b7f924d52b0ab714aa42344af6525303"
+    },
+    "verification/r1/build-headless-verification.log": {
+      "bytes": 218163,
+      "sha256": "eeef420834e21c6f245fe73a8cccacae4bf709b7ec22b9df1f91b66226a0650a"
+    },
+    "verification/r1/color-desaturated.png": {
+      "bytes": 225620,
+      "sha256": "18be591140839cf79930feffe8a86bdf63c3582b19be2a34e1ff4d484f6b673d"
+    },
+    "verification/r1/color-normal.png": {
+      "bytes": 230822,
+      "sha256": "b0137b7cded94202253f1648aee39fbc7d465fd59efba6efce99a531ec2e2c81"
+    },
+    "verification/r1/development-verification.log": {
+      "bytes": 238216,
+      "sha256": "a8d187b17a311d05c9da0c595fcd68d04698868c937005e0607d7311542549d2"
+    },
+    "verification/r1/gametest-results.xml": {
+      "bytes": 2995,
+      "sha256": "486c041234bbe38748fe55137ab9f9a1c56e8dda16a0b072118cda73df446ac6"
+    },
+    "verification/r1/measurements.json": {
+      "bytes": 3378,
+      "sha256": "22c44b2f1c633d7792f9d7156e00b6eee8551c62b47d7ba7ea47f0da326b8f61"
+    },
+    "verification/r1/native-client.log": {
+      "bytes": 31421,
+      "sha256": "9d6ecd8b5a3a6bd0e9306e2260604ca2bdf974ef29073aee5c184c8b2ca6c58e"
+    },
+    "verification/r1/packaged-verification.log": {
+      "bytes": 206151,
+      "sha256": "09797be4a4821b3012eab7a103feb0326b1ed346e57095b9b8978a5cb9fa58a4"
+    }
+  }
+}

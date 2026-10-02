@@ -83,10 +83,10 @@ P1 服务端规则、命令和格式见 [P1-RULES.md](P1-RULES.md)。正式攀�
 
 输出目录的 `verification/p1/` 保存本轮构建、编译、开发客户端、成品客户端、独立服务端日志、GameTest XML 和三张精力截图。成品客户端截图经过实际查看；中文截图显示“精力 42 / 160”“历史最高等级 30”，同时原版经验等级为 5。
 
-- [最终构建日志](../../verification/p1/build-final.log)
-- [成品客户端日志](../../verification/p1/packaged-client-test.log)
-- [独立服务端日志](../../verification/p1/packaged-server.log)
-- [GameTest 结果](../../verification/p1/gametest-results.xml)
-- [中文游戏截图](../../verification/p1/stamina-zh.png)
+- [最终构建日志](../development-assets/verification/p1/build-final.log)
+- [成品客户端日志](../development-assets/verification/p1/packaged-client-test.log)
+- [独立服务端日志](../development-assets/verification/p1/packaged-server.log)
+- [GameTest 结果](../development-assets/verification/p1/gametest-results.xml)
+- [中文游戏截图](../development-assets/verification/p1/stamina-zh.png)
 
 源码包不包含 Minecraft 游戏文件、下载依赖、缓存、世界、个人身份信息或 EULA 接受文件。P0 历史产物保留；本轮只在本地建立提交和版本标签。运行与测试命令见 [README.md](../README.md)。

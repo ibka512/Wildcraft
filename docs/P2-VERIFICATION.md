@@ -66,13 +66,13 @@
 
 输出目录的 `verification/p2/` 保存最终构建、资源生成、开发客户端、最终成品客户端、独立服务端日志、14 项 GameTest XML 和四张 P2 游戏截图。
 
-- [最终构建日志](../../verification/p2/build-final.log)
-- [成品客户端日志](../../verification/p2/packaged-client-test.log)
-- [独立服务端日志](../../verification/p2/packaged-server.log)
-- [GameTest XML](../../verification/p2/gametest-results.xml)
-- [中文攀爬截图](../../verification/p2/climbing-wall-zh.png)
-- [墙顶截图](../../verification/p2/climbing-over-ledge.png)
-- [外墙角截图](../../verification/p2/climbing-outer-corner.png)
-- [本机 TCP 攀爬截图](../../verification/p2/climbing-tcp.png)
+- [最终构建日志](../development-assets/verification/p2/build-final.log)
+- [成品客户端日志](../development-assets/verification/p2/packaged-client-test.log)
+- [独立服务端日志](../development-assets/verification/p2/packaged-server.log)
+- [GameTest XML](../development-assets/verification/p2/gametest-results.xml)
+- [中文攀爬截图](../development-assets/verification/p2/climbing-wall-zh.png)
+- [墙顶截图](../development-assets/verification/p2/climbing-over-ledge.png)
+- [外墙角截图](../development-assets/verification/p2/climbing-outer-corner.png)
+- [本机 TCP 攀爬截图](../development-assets/verification/p2/climbing-tcp.png)
 
 本轮只建立本地提交与标签 `v0.1.0-dev.3+mc26.3`。旧产物与历史验证保留，未推送或公开发布。完整产物哈希与提交信息见输出目录的 `manifest.json` 和 `SHA256SUMS.txt`。

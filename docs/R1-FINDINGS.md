@@ -75,7 +75,7 @@
 
 六组普通客户端测量全部通过。构建、13 个精力数值示例、1000 组边界检查、20 项无图形 GameTest，以及 P0/R0/P1/P2/P3/R1 的成品客户端流程另有日志。研究新增源码、Mixin、着色器只在 `src/gametest` 和独立测试 JAR 中；运行版 JAR 没有研究类，哈希与原 P3 一致。未新增生产依赖、修改个人世界、迁移已有保存字段或发布。
 
-证据见 [普通客户端计时日志](../../verification/r1/native-client.log)、[成品与服务端测试日志](../../verification/r1/packaged-verification.log)、[实测数据](../../verification/r1/measurements.json) 与 [GameTest XML](../../verification/r1/gametest-results.xml)。图像见 [背负挂点](../../verification/r1/back-anchor.png)、[原色](../../verification/r1/color-normal.png)、[降饱和](../../verification/r1/color-desaturated.png)。
+证据见 [普通客户端计时日志](../development-assets/verification/r1/native-client.log)、[成品与服务端测试日志](../development-assets/verification/r1/packaged-verification.log)、[实测数据](../development-assets/verification/r1/measurements.json) 与 [GameTest XML](../development-assets/verification/r1/gametest-results.xml)。图像见 [背负挂点](../development-assets/verification/r1/back-anchor.png)、[原色](../development-assets/verification/r1/color-normal.png)、[降饱和](../development-assets/verification/r1/color-desaturated.png)。
 
 ## 重现
 
