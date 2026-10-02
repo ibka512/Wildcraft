@@ -3,7 +3,7 @@
   "id": "wildcraft",
   "version": "${version}",
   "name": "Wildcraft",
-  "description": "Wildcraft development version: persistent stamina, wall climbing and HUD.",
+  "description": "Wildcraft development version: persistent stamina, wall climbing and paraglider exploration.",
   "license": "All-Rights-Reserved",
   "icon": "assets/wildcraft/icon.png",
   "environment": "*",

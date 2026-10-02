@@ -3,6 +3,8 @@ package dev.wildcraft.client;
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.client.hud.StaminaHud;
 import dev.wildcraft.client.input.ClimbControls;
+import dev.wildcraft.client.input.GlideControls;
+import dev.wildcraft.client.render.ParagliderLayer;
 import net.fabricmc.api.ClientModInitializer;
 
 public final class WildcraftClient implements ClientModInitializer {
@@ -10,6 +12,8 @@ public final class WildcraftClient implements ClientModInitializer {
     public void onInitializeClient() {
         StaminaHud.initialize();
         ClimbControls.initialize();
-        Wildcraft.LOGGER.info("Wildcraft P2 client initialization complete; HUD and climbing controls registered.");
+        GlideControls.initialize();
+        ParagliderLayer.initialize();
+        Wildcraft.LOGGER.info("Wildcraft P3 client initialization complete; HUD, traversal controls and paraglider layer registered.");
     }
 }

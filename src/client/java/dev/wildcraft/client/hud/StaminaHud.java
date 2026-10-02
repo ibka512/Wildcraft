@@ -4,6 +4,7 @@ import dev.wildcraft.Wildcraft;
 import dev.wildcraft.network.StaminaView;
 import dev.wildcraft.player.PlayerStamina;
 import dev.wildcraft.traversal.Climbing;
+import dev.wildcraft.traversal.Gliding;
 import dev.wildcraft.client.input.ClimbControls;
 import java.util.Locale;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
@@ -69,6 +70,9 @@ public final class StaminaHud {
         graphics.text(client.font, Component.translatable("hud.wildcraft.peak_level", view.highestLevel()), x, y + 10, 0xFFD5E3D7);
         if (Climbing.active(player)) {
             graphics.text(client.font, Component.translatable("hud.wildcraft.climbing", ClimbControls.CLIMB.getTranslatedKeyMessage()),
+                    x, y + 22, 0xFFD5E3D7);
+        } else if (Gliding.active(player)) {
+            graphics.text(client.font, Component.translatable("hud.wildcraft.gliding", client.options.keyJump.getTranslatedKeyMessage()),
                     x, y + 22, 0xFFD5E3D7);
         }
     }

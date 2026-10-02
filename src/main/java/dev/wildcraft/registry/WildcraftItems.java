@@ -17,6 +17,10 @@ public final class WildcraftItems {
             TEST_CORE_KEY,
             new Item(new Item.Properties().setId(TEST_CORE_KEY))
     );
+    public static final ResourceKey<Item> PARAGLIDER_KEY =
+            ResourceKey.create(Registries.ITEM, Wildcraft.id("paraglider"));
+    public static final Item PARAGLIDER = Registry.register(BuiltInRegistries.ITEM, PARAGLIDER_KEY,
+            new Item(new Item.Properties().setId(PARAGLIDER_KEY).stacksTo(1)));
 
     private WildcraftItems() {
     }
@@ -24,5 +28,7 @@ public final class WildcraftItems {
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
                 .register(items -> items.accept(TEST_CORE));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .register(items -> items.accept(PARAGLIDER));
     }
 }

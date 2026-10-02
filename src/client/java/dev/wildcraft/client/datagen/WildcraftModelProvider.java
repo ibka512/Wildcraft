@@ -20,6 +20,7 @@ public final class WildcraftModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators generator) {
         generator.generateFlatItem(WildcraftItems.TEST_CORE, ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(WildcraftItems.PARAGLIDER, ModelTemplates.FLAT_ITEM);
     }
 
     @Override

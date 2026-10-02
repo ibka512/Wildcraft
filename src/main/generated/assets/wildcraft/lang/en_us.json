@@ -3,9 +3,12 @@
   "command.wildcraft.stamina.filled": "Stamina refilled",
   "command.wildcraft.stamina.status": "Stamina %s / %s; peak level %s",
   "hud.wildcraft.climbing": "Climbing · release %s",
+  "hud.wildcraft.gliding": "Gliding · press %s to close",
   "hud.wildcraft.peak_level": "Peak level %s",
   "hud.wildcraft.stamina": "Stamina %s / %s",
+  "item.wildcraft.paraglider": "Paraglider",
   "item.wildcraft.test_core": "Wildcraft Test Core",
   "key.category.wildcraft.controls": "Wildcraft",
-  "key.wildcraft.climb": "Hold to climb / release to let go"
+  "key.wildcraft.climb": "Hold to climb / release to let go",
+  "slot.wildcraft.paraglider": "Paraglider slot · paraglider only"
 }

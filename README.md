@@ -1,12 +1,12 @@
 # Wildcraft Java Edition
 
-Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P2 攀爬与精力**，版本 `0.1.0-dev.3`。
+Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P3 攀爬与滑翔探索**，版本 `0.1.0-dev.4`。
 
-当前可用：按住专用键攀爬、横移、下降、墙角与墙顶处理、耗尽及受击放手，以及历史最高等级、精力保存与恢复、本人状态同步、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
+当前可用：独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
 
-完整开发顺序见 [开发路线](docs/ROADMAP.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，本次验证见 [P2 验证记录](docs/P2-VERIFICATION.md)。历史验证保留为 [P1 记录](docs/P1-VERIFICATION.md) 与 [P0 记录](docs/VERIFICATION.md)。
+完整开发顺序见 [开发路线](docs/ROADMAP.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，滑翔操作见 [P3 规则](docs/P3-RULES.md)，本次验证见 [P3 验证记录](docs/P3-VERIFICATION.md)。历史验证保留为 [P2](docs/P2-VERIFICATION.md)、[P1](docs/P1-VERIFICATION.md) 与 [P0](docs/VERIFICATION.md)。
 
-P2 攀爬已接入真实精力消耗。滑翔伞将在 P3 完成；R0 机械与 Fuse 样例继续只在测试模组中运行。
+攀爬与滑翔已接入实际精力消耗；R0 机械与 Fuse 样例继续只在测试模组中运行。料理、温度、正式机械与 Fuse 按后续路线推进。
 
 ## 固定环境
 
@@ -40,7 +40,7 @@ P2 攀爬已接入真实精力消耗。滑翔伞将在 P3 完成；R0 机械与 
 
 `./gradlew` 是标准入口；直接使用它时，需要先让 `JAVA_HOME` 指向 JDK 25。Windows 使用 `gradlew.bat`。
 
-资源生成输出在 `src/main/generated`。物品模型与语言文件由生成器维护，不手改生成文件。原始像素图保存在 `art/source/test_core.json`。
+资源生成输出在 `src/main/generated`。物品模型与语言文件由生成器维护，不手改生成文件。测试核心的原始像素图保存在 `art/source/test_core.json`；滑翔伞的源稿和模型贴图说明见 [art/README.md](art/README.md)。
 
 资源生成与构建按上面的顺序分两次执行，保证生成后的资源被打入成品包。
 
@@ -62,6 +62,10 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 创建一份独立测试世界。面向墙体、靠近后按住 **G**，用 **W/S** 上下移动，**A/D** 沿墙横移，松开 G 放手。停留和移动都消耗精力，耗尽或受击会下落；再次抓墙需要先松开键。开放墙顶会在碰撞允许时辅助翻上去。
 
 默认 G 可在按键设置的 Wildcraft 分类中修改。普通生存玩家即可攀爬，不需要管理员权限；梯子和藤蔓仍按原版操作。初版尚无雨天打滑和专用攀爬动画，完整边界见 [P2 规则](docs/P2-RULES.md)。
+
+用 3 个皮革和 4 个木棍合成滑翔伞，或在测试世界执行 `/give @s wildcraft:paraglider`。打开物品栏，把伞放进人物预览右上方的独立伞槽；Shift 快捷移动也可装备。放在背包中不算装备。
+
+装备后，在空中重新按跳跃键开伞，再按一次收伞。默认空格会跟随原版跳跃键改绑。视角控制方向，W/S 调整前进速度，A/D 侧移。开伞时剑、盾等物品暂时收起并保留原来的堆栈；切换快捷栏、攻击或使用物品会收伞。精力耗尽、受击、落地、卸下装备也会收伞，详见 [P3 规则](docs/P3-RULES.md)。
 
 启用命令后，可继续验证精力历史：
 
@@ -91,7 +95,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 ## 安装构建结果
 
-构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.3.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
+构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.4.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
 
 在独立的 Minecraft 26.3 实例中安装 Fabric Loader 0.19.5，将 Wildcraft 游戏 JAR 与 Fabric API 0.161.0+26.3 放进该实例的 `mods` 目录。客户端和服务端都需要安装。
 
@@ -104,6 +108,8 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 游戏测试覆盖精力编码、经验峰值、两名嵌入式连接玩家隔离、真实玩家保存和复活，以及 R0 部件回收、碰撞、乘坐和材料保存。攀爬测试覆盖碰撞形状、墙角与墙顶、消耗、重复输入和过期输入。客户端测试额外覆盖实际按键、升降与横移、开放墙顶、内外转角、天花板、实际伤害、耗尽，以及关闭飞行许可的回环 TCP 攀爬；P0/P1/R0 的显示、存档、复活和物品检查继续回归。移动手感和多人长期运行仍需后续游玩验证。
 
 测试代码在 `src/gametest` 和 `src/rulesTest`，不进入游戏 Mod。
+
+P3 检查还覆盖专用槽装卸、满背包、原版配方、未装备拒绝、手中物品收起、取用物品收伞、按键开收伞、缓降与转向、攀爬衔接、落地、死亡掉落及保留物品、跨维度、世界重开和禁止飞行的本机 TCP 重连。装备保存新增独立格式 1，精力数据格式保持不变；降级使用对应世界备份。
 
 先阅读 [Minecraft EULA](https://www.minecraft.net/en-us/eula)。同意协议后，可以明确添加以下参数，允许工具在临时测试目录写入 `eula=true`：
 
@@ -144,10 +150,13 @@ macOS 运行目录位于 `~/Library/Caches/Wildcraft/builds/<项目路径标识>
 - `docs/P1-VERIFICATION.md`：R0/P1 的历史运行证据。
 - `docs/P2-RULES.md`：当前攀爬操作、参数与保存边界。
 - `docs/P2-VERIFICATION.md`：P2 的运行证据与尚未覆盖事项。
+- `docs/P3-RULES.md`：滑翔伞装备、双手、操作与保存规则。
+- `docs/P3-VERIFICATION.md`：P3 的实际检查与限制。
+- `art/`：原创图标源文件与模型、贴图说明。
 
 ## 后续工作
 
-接下来进入 P3 滑翔伞，与已完成的精力和攀爬组成首个探索可玩版本。完整范围继续按 `docs/ROADMAP.md` 开发。
+P3 形成精力、攀爬与滑翔的探索循环。接下来进入 P4 料理与温度，完整范围继续按 `docs/ROADMAP.md` 开发。
 
 运行依赖只有 Fabric Loader 与 Fabric API。公开发行许可证尚未选择；模板与第三方工具来源见 `NOTICE.md`。
 

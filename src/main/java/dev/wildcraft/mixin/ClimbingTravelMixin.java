@@ -1,6 +1,7 @@
 package dev.wildcraft.mixin;
 
 import dev.wildcraft.traversal.Climbing;
+import dev.wildcraft.traversal.Gliding;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.Vec3;
@@ -14,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class ClimbingTravelMixin {
     @Inject(method = "travel", at = @At("HEAD"), cancellable = true)
     private void wildcraft$climbTravel(Vec3 input, CallbackInfo info) {
-        if ((Object) this instanceof Player player && Climbing.movePredicted(player)) {
+        if ((Object) this instanceof Player player && (Gliding.movePredicted(player, input) || Climbing.movePredicted(player))) {
             info.cancel();
         }
     }

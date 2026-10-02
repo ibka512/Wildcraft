@@ -2,8 +2,10 @@ package dev.wildcraft;
 
 import dev.wildcraft.registry.WildcraftItems;
 import dev.wildcraft.player.PlayerStamina;
+import dev.wildcraft.player.GliderEquipment;
 import dev.wildcraft.player.StaminaCommands;
 import dev.wildcraft.traversal.Climbing;
+import dev.wildcraft.traversal.Gliding;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.Event;
@@ -24,9 +26,11 @@ public final class Wildcraft implements ModInitializer {
     public void onInitialize() {
         ServerPlayerEvents.AFTER_RESPAWN.addPhaseOrdering(Event.DEFAULT_PHASE, AFTER_ATTACHMENT_TRANSFER);
         WildcraftItems.initialize();
+        GliderEquipment.initialize();
         Climbing.initialize();
+        Gliding.initialize();
         PlayerStamina.initialize();
         StaminaCommands.initialize();
-        LOGGER.info("Wildcraft P2 common initialization complete; stamina and climbing registered.");
+        LOGGER.info("Wildcraft P3 common initialization complete; stamina, climbing and paraglider registered.");
     }
 }

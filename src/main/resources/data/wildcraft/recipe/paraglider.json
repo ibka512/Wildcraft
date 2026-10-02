@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "L": "minecraft:leather",
+    "S": "minecraft:stick"
+  },
+  "pattern": ["LLL", "S S", "S S"],
+  "result": {"id": "wildcraft:paraglider", "count": 1}
+}

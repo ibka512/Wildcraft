@@ -3,6 +3,7 @@ package dev.wildcraft.player;
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.network.StaminaView;
 import dev.wildcraft.traversal.Climbing;
+import dev.wildcraft.traversal.Gliding;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentSyncPredicate;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
@@ -76,7 +77,7 @@ public final class PlayerStamina {
     }
 
     public static boolean canRecover(ServerPlayer player) {
-        return player.isAlive() && !player.isSpectator() && player.onGround() && !Climbing.active(player)
+        return player.isAlive() && !player.isSpectator() && player.onGround() && !Climbing.active(player) && !Gliding.active(player)
                 && !player.isInWater() && !player.getAbilities().flying && !player.isFallFlying();
     }
 

@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_leather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {"items": [{"items": "minecraft:leather"}]}
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {"recipes": "wildcraft:paraglider"}
+    }
+  },
+  "requirements": [["has_the_recipe", "has_leather"]],
+  "rewards": {"recipes": ["wildcraft:paraglider"]}
+}

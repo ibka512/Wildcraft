@@ -96,7 +96,7 @@ public final class Climbing {
 
     private static void updateEligibility(ServerPlayer player, Session state) {
         ClimbInput input = intent(player);
-        if (!input.held() || state.blocked || player.level().getGameTime() < state.cooldownUntil || !eligible(player)) {
+        if (!input.held() || state.blocked || player.level().getGameTime() < state.cooldownUntil || !eligible(player) || Gliding.active(player)) {
             state.active = false;
             return;
         }
@@ -134,7 +134,7 @@ public final class Climbing {
         ClimbInput input = intent(player);
         ClimbView view = player.getAttached(VIEW);
         StaminaView stamina = player.getAttached(PlayerStamina.VIEW);
-        if (!input.held() || !eligible(player) || stamina == null || stamina.stamina() <= 0 || view != null && view.blocked()) {
+        if (!input.held() || !eligible(player) || Gliding.canPredict(player) || stamina == null || stamina.stamina() <= 0 || view != null && view.blocked()) {
             state.active = false;
             state.wall = null;
             return false;
