@@ -1,0 +1,24 @@
+name: Build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: gradle/actions/wrapper-validation@v6
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Generate resources
+        run: |
+          chmod +x gradlew
+          ./gradlew runDatagen
+          git diff --exit-code -- src/main/generated
+      - name: Build
+        run: ./gradlew build gameTestJar
+      - uses: actions/upload-artifact@v7
+        with:
+          name: wildcraft-mc26.3
+          path: build/libs/*.jar

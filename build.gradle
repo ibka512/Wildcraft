@@ -1,0 +1,118 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+if (System.getProperty('os.name').startsWith('Mac')) {
+    // ExFAT creates AppleDouble files which Minecraft mistakes for resources.
+    def projectKey = java.security.MessageDigest.getInstance('SHA-256')
+            .digest(projectDir.absolutePath.getBytes('UTF-8')).encodeHex().toString().substring(0, 12)
+    layout.buildDirectory = new File(System.getProperty('user.home'),
+            "Library/Caches/Wildcraft/builds/${projectKey}")
+}
+
+loom {
+    splitEnvironmentSourceSets()
+    mods {
+        wildcraft {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    productionRuntimeMods "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+}
+
+def acceptTestEula = providers.gradleProperty('acceptMinecraftEula')
+        .map { it.toBoolean() }.getOrElse(false)
+
+fabricApi {
+    configureDataGeneration {
+        client = true
+    }
+    configureTests {
+        createSourceSet = true
+        modId = 'wildcraft-test'
+        enableGameTests = false
+        enableClientGameTests = true
+        eula = acceptTestEula
+    }
+}
+
+loom.runs.configureEach { run ->
+    run.runDirectory.set(layout.buildDirectory.dir("run/${run.name}"))
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(ProcessResources).configureEach {
+    exclude '**/._*', '**/.DS_Store'
+}
+
+def modVersion = project.version
+processResources {
+    inputs.property 'version', modVersion
+    filesMatching('fabric.mod.json') {
+        expand version: modVersion
+    }
+}
+
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+    exclude '**/._*', '**/.DS_Store'
+}
+
+jar {
+    from('LICENSE', 'NOTICE.md')
+}
+
+def exportMod = tasks.register('exportMod', Copy) {
+    dependsOn tasks.named('jar')
+    from tasks.named('jar', Jar).flatMap { it.archiveFile }
+    into layout.projectDirectory.dir('dist')
+}
+
+tasks.named('build') {
+    dependsOn exportMod
+}
+
+def gameTestJar = tasks.register('gameTestJar', Jar) {
+    archiveClassifier = 'gametest'
+    from sourceSets.gametest.output
+}
+
+tasks.register('runPackagedClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    mods.from(gameTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/packaged-client-test')
+}
+
+if (acceptTestEula) {
+    def acceptPackagedTestEula = tasks.register('acceptPackagedClientTestEula', Copy) {
+        dependsOn tasks.named('acceptGameTestEula')
+        from layout.buildDirectory.file('run/clientGameTest/eula.txt')
+        into layout.buildDirectory.dir('run/packaged-client-test')
+    }
+    tasks.named('runPackagedClientTest') {
+        dependsOn acceptPackagedTestEula
+    }
+}
+
+tasks.register('runPackagedServer', net.fabricmc.loom.task.prod.ServerProductionRunTask) {
+    jvmArgs.add('-Xmx1G')
+    runDir = layout.buildDirectory.dir('run/packaged-server')
+}

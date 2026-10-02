@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "wildcraft",
+  "version": "${version}",
+  "name": "Wildcraft",
+  "description": "Wildcraft Java Edition development foundation. P0 includes one test item.",
+  "license": "All-Rights-Reserved",
+  "icon": "assets/wildcraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.wildcraft.Wildcraft"],
+    "client": ["dev.wildcraft.client.WildcraftClient"],
+    "fabric-datagen": ["dev.wildcraft.client.datagen.WildcraftDataGenerator"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25",
+    "fabric-api": ">=0.161.0"
+  }
+}

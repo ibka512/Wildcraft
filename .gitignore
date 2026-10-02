@@ -1,0 +1,17 @@
+.gradle/
+build/
+out/
+run/
+run-*/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+._*
+*.hprof
+*.jfr
+hs_err_*.log
+replay_*.log
+.env.local
+dist/
+src/main/generated/.cache/

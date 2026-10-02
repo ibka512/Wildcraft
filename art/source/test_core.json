@@ -1,0 +1,29 @@
+{
+  "description": "Original 16-pixel Wildcraft P0 test core. Transparent dots; teal casing, brass frame, redstone center.",
+  "palette": {
+    ".": [0, 0, 0, 0],
+    "g": [28, 57, 60, 255],
+    "t": [72, 124, 119, 255],
+    "w": [201, 165, 101, 255],
+    "r": [185, 35, 56, 255],
+    "h": [249, 123, 89, 255]
+  },
+  "pixels": [
+    "................",
+    ".......gg.......",
+    "......gttg......",
+    ".....gttttg.....",
+    "....gttttttg....",
+    "...gttwwwwttg...",
+    "..gttwrrrrwttg..",
+    ".gttwrrrrrrwttg.",
+    ".gttwrrhhrrwttg.",
+    "..gttwrrrrwttg..",
+    "...gttwwwwttg...",
+    "....gttttttg....",
+    ".....gttttg.....",
+    "......gttg......",
+    ".......gg.......",
+    "................"
+  ]
+}
