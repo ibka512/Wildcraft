@@ -2,7 +2,10 @@
   "command.wildcraft.stamina.consumed": "已消耗 %s 精力",
   "command.wildcraft.stamina.filled": "精力已补满",
   "command.wildcraft.stamina.status": "精力 %s / %s；历史最高等级 %s",
+  "hud.wildcraft.climbing": "攀爬中 · 松开%s放手",
   "hud.wildcraft.peak_level": "历史最高等级 %s",
   "hud.wildcraft.stamina": "精力 %s / %s",
-  "item.wildcraft.test_core": "Wildcraft 测试核心"
+  "item.wildcraft.test_core": "Wildcraft 测试核心",
+  "key.category.wildcraft.controls": "Wildcraft",
+  "key.wildcraft.climb": "按住攀爬 / 松开放手"
 }

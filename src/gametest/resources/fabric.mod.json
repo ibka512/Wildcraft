@@ -9,12 +9,14 @@
     "client": ["dev.wildcraft.test.research.ResearchClient"],
     "fabric-gametest": [
       "dev.wildcraft.test.research.ResearchGameTests",
-      "dev.wildcraft.test.PlayerStaminaGameTests"
+      "dev.wildcraft.test.PlayerStaminaGameTests",
+      "dev.wildcraft.test.ClimbingGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
       "dev.wildcraft.test.research.ResearchClientSmokeTest",
-      "dev.wildcraft.test.PlayerStaminaClientSmokeTest"
+      "dev.wildcraft.test.PlayerStaminaClientSmokeTest",
+      "dev.wildcraft.test.ClimbingClientSmokeTest"
     ]
   }
 }

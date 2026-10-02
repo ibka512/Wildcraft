@@ -3,6 +3,8 @@ package dev.wildcraft.client.hud;
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.network.StaminaView;
 import dev.wildcraft.player.PlayerStamina;
+import dev.wildcraft.traversal.Climbing;
+import dev.wildcraft.client.input.ClimbControls;
 import java.util.Locale;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements;
@@ -22,7 +24,7 @@ public final class StaminaHud {
     }
 
     public static void initialize() {
-        HudElementRegistry.attachElementAfter(VanillaHudElements.EXPERIENCE_LEVEL, Wildcraft.id("stamina"), StaminaHud::extract);
+        HudElementRegistry.attachElementAfter(VanillaHudElements.HOTBAR, Wildcraft.id("stamina"), StaminaHud::extract);
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
             observedPlayer = null;
             previous = null;
@@ -65,6 +67,10 @@ public final class StaminaHud {
         graphics.fill(x + 1, y + 1, x + 1 + fill, y + 6, color);
         graphics.outline(x, y, width, 7, 0xFFB5C8B7);
         graphics.text(client.font, Component.translatable("hud.wildcraft.peak_level", view.highestLevel()), x, y + 10, 0xFFD5E3D7);
+        if (Climbing.active(player)) {
+            graphics.text(client.font, Component.translatable("hud.wildcraft.climbing", ClimbControls.CLIMB.getTranslatedKeyMessage()),
+                    x, y + 22, 0xFFD5E3D7);
+        }
     }
 
     private static String number(double value) {

@@ -1,12 +1,12 @@
 # Wildcraft Java Edition
 
-Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P1 玩家数据与精力**，版本 `0.1.0-dev.2`。
+Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P2 攀爬与精力**，版本 `0.1.0-dev.3`。
 
-当前可用：历史最高经验等级记录、精力上限、保存与恢复、本人状态同步、中英精力显示，以及管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
+当前可用：按住专用键攀爬、横移、下降、墙角与墙顶处理、耗尽及受击放手，以及历史最高等级、精力保存与恢复、本人状态同步、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
 
-完整开发顺序见 [开发路线](docs/ROADMAP.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。本次验证见 [P1 验证记录](docs/P1-VERIFICATION.md)，工程初始化的历史记录见 [P0 验证记录](docs/VERIFICATION.md)。
+完整开发顺序见 [开发路线](docs/ROADMAP.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，本次验证见 [P2 验证记录](docs/P2-VERIFICATION.md)。历史验证保留为 [P1 记录](docs/P1-VERIFICATION.md) 与 [P0 记录](docs/VERIFICATION.md)。
 
-攀爬和滑翔将在 P2/P3 接入精力消耗。本版通过测试命令体验精力变化；R0 机械与 Fuse 样例仅在测试模组中运行。
+P2 攀爬已接入真实精力消耗。滑翔伞将在 P3 完成；R0 机械与 Fuse 样例继续只在测试模组中运行。
 
 ## 固定环境
 
@@ -59,7 +59,11 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 ## 在游戏中验证
 
-创建一份独立测试世界，启用命令。先尝试精力：
+创建一份独立测试世界。面向墙体、靠近后按住 **G**，用 **W/S** 上下移动，**A/D** 沿墙横移，松开 G 放手。停留和移动都消耗精力，耗尽或受击会下落；再次抓墙需要先松开键。开放墙顶会在碰撞允许时辅助翻上去。
+
+默认 G 可在按键设置的 Wildcraft 分类中修改。普通生存玩家即可攀爬，不需要管理员权限；梯子和藤蔓仍按原版操作。初版尚无雨天打滑和专用攀爬动画，完整边界见 [P2 规则](docs/P2-RULES.md)。
+
+启用命令后，可继续验证精力历史：
 
 ```mcfunction
 /experience set @s 30 levels
@@ -87,7 +91,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 ## 安装构建结果
 
-构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.2.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
+构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.3.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
 
 在独立的 Minecraft 26.3 实例中安装 Fabric Loader 0.19.5，将 Wildcraft 游戏 JAR 与 Fabric API 0.161.0+26.3 放进该实例的 `mods` 目录。客户端和服务端都需要安装。
 
@@ -97,7 +101,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 `build` 包含无额外测试依赖的精力数值检查：13 个示例和 1000 组边界/单调性检查，并自动运行无图形服务端 GameTest。普通 `test` 任务仍无测试来源，不把它算作验证通过。
 
-游戏测试覆盖精力编码、经验峰值、两名嵌入式连接玩家隔离、真实玩家保存和复活，以及 R0 部件回收、碰撞、乘坐和材料保存。客户端测试额外覆盖实际窗口、中英显示、世界重开、跨维度、死亡复活、回环 TCP 重连，以及 R0 主体跨区块后的真实存档重载。移动手感和多人长期运行仍需后续游玩验证。
+游戏测试覆盖精力编码、经验峰值、两名嵌入式连接玩家隔离、真实玩家保存和复活，以及 R0 部件回收、碰撞、乘坐和材料保存。攀爬测试覆盖碰撞形状、墙角与墙顶、消耗、重复输入和过期输入。客户端测试额外覆盖实际按键、升降与横移、开放墙顶、内外转角、天花板、实际伤害、耗尽，以及关闭飞行许可的回环 TCP 攀爬；P0/P1/R0 的显示、存档、复活和物品检查继续回归。移动手感和多人长期运行仍需后续游玩验证。
 
 测试代码在 `src/gametest` 和 `src/rulesTest`，不进入游戏 Mod。
 
@@ -137,11 +141,13 @@ macOS 运行目录位于 `~/Library/Caches/Wildcraft/builds/<项目路径标识>
 - `docs/VERIFICATION.md`：工程初始化的历史验证记录。
 - `docs/P1-RULES.md`：当前精力行为、保存格式与回退规则。
 - `docs/R0-FINDINGS.md`：机械与 Fuse 的实际可行范围。
-- `docs/P1-VERIFICATION.md`：R0/P1 的运行证据与尚未覆盖事项。
+- `docs/P1-VERIFICATION.md`：R0/P1 的历史运行证据。
+- `docs/P2-RULES.md`：当前攀爬操作、参数与保存边界。
+- `docs/P2-VERIFICATION.md`：P2 的运行证据与尚未覆盖事项。
 
 ## 后续工作
 
-接下来进入 P2 攀爬，再完成 P3 滑翔伞，形成首个探索可玩版本。完整范围继续按 `docs/ROADMAP.md` 开发。
+接下来进入 P3 滑翔伞，与已完成的精力和攀爬组成首个探索可玩版本。完整范围继续按 `docs/ROADMAP.md` 开发。
 
 运行依赖只有 Fabric Loader 与 Fabric API。公开发行许可证尚未选择；模板与第三方工具来源见 `NOTICE.md`。
 

@@ -21,6 +21,9 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("key.wildcraft.climb", chinese ? "按住攀爬 / 松开放手" : "Hold to climb / release to let go");
+        translations.add("key.category.wildcraft.controls", "Wildcraft");
+        translations.add("hud.wildcraft.climbing", chinese ? "攀爬中 · 松开%s放手" : "Climbing · release %s");
         translations.add("hud.wildcraft.stamina", chinese ? "精力 %s / %s" : "Stamina %s / %s");
         translations.add("hud.wildcraft.peak_level", chinese ? "历史最高等级 %s" : "Peak level %s");
         translations.add("command.wildcraft.stamina.status", chinese ? "精力 %s / %s；历史最高等级 %s" : "Stamina %s / %s; peak level %s");

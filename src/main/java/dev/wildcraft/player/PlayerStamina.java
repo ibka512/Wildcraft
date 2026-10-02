@@ -2,6 +2,7 @@ package dev.wildcraft.player;
 
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.network.StaminaView;
+import dev.wildcraft.traversal.Climbing;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentSyncPredicate;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentType;
@@ -27,9 +28,10 @@ public final class PlayerStamina {
             StaminaData copied = get(oldPlayer).observeLevel(newPlayer.experienceLevel);
             newPlayer.setAttached(DATA, copied);
         });
-        ServerPlayerEvents.AFTER_RESPAWN.register((oldPlayer, newPlayer, alive) -> {
+        ServerPlayerEvents.AFTER_RESPAWN.register(Wildcraft.AFTER_ATTACHMENT_TRANSFER, (oldPlayer, newPlayer, alive) -> {
             // Fabric's automatic attachment transfer happens in AFTER_RESPAWN,
-            // after COPY_FROM. Apply the death rule after that transfer finishes.
+            // after COPY_FROM. The explicit event phase runs after that transfer,
+            // independently of Fabric/Mod initializer registration order.
             StaminaData copied = get(oldPlayer).observeLevel(newPlayer.experienceLevel);
             newPlayer.setAttached(DATA, alive ? copied : copied.filled());
             publish(newPlayer);
@@ -74,7 +76,7 @@ public final class PlayerStamina {
     }
 
     public static boolean canRecover(ServerPlayer player) {
-        return player.isAlive() && !player.isSpectator() && player.onGround()
+        return player.isAlive() && !player.isSpectator() && player.onGround() && !Climbing.active(player)
                 && !player.isInWater() && !player.getAbilities().flying && !player.isFallFlying();
     }
 
