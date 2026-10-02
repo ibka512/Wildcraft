@@ -1,14 +1,14 @@
 # Wildcraft Java Edition
 
-Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P3 攀爬与滑翔探索**，版本 `0.1.0-dev.4`。
+Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P3.1 背负装备与探索界面**，版本 `0.1.0-dev.5`。
 
-当前可用：独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
+当前可用：按实际使用登记的近战/盾/弓背负、左上角红心与其下方精力显示、独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
 
-完整开发顺序见 [开发路线](docs/ROADMAP.md)，三项新设计的范围、衔接和验收见 [开发规划 v2](docs/DEVELOPMENT-PLAN-V2.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，滑翔操作见 [P3 规则](docs/P3-RULES.md)，本次验证见 [P3 验证记录](docs/P3-VERIFICATION.md)。历史验证保留为 [P2](docs/P2-VERIFICATION.md)、[P1](docs/P1-VERIFICATION.md) 与 [P0](docs/VERIFICATION.md)。
+完整开发顺序见 [开发路线](docs/ROADMAP.md)，三项新设计的范围、衔接和验收见 [开发规划 v2](docs/DEVELOPMENT-PLAN-V2.md)，系统边界见 [架构计划](docs/ARCHITECTURE.md)，精力规则见 [P1 规则](docs/P1-RULES.md)，研究结论见 [R0 结论](docs/R0-FINDINGS.md)。攀爬操作见 [P2 规则](docs/P2-RULES.md)，滑翔操作见 [P3 规则](docs/P3-RULES.md)，背负与界面见 [P3.1 规则](docs/P3.1-RULES.md)，本次验证见 [P3.1 验证记录](docs/P3.1-VERIFICATION.md)。历史验证保留为 [P3](docs/P3-VERIFICATION.md)、[P2](docs/P2-VERIFICATION.md)、[P1](docs/P1-VERIFICATION.md) 与 [P0](docs/VERIFICATION.md)。
 
 攀爬与滑翔已接入实际精力消耗；R0 机械与 Fuse 样例继续只在测试模组中运行。料理、温度、正式机械与 Fuse 按后续路线推进。
 
-新版路线已开始执行：R1 单人时间边界实验完成，见 [R1 结论与证据](docs/R1-FINDINGS.md)。用户已确认背负装备按实际使用登记，见 [P3.1 规格](docs/P3.1-SPEC.md)。研究与运行版隔离，游戏版本仍为 `0.1.0-dev.4`。
+新版路线的 R1 单人时间边界实验和 P3.1 正式背负/界面均已完成本机验证，见 [R1 结论与证据](docs/R1-FINDINGS.md) 与 [P3.1 规格](docs/P3.1-SPEC.md)。林克时间仍只在隔离研究模块中存在，正式实现安排在 P3.2。
 
 ## 固定环境
 
@@ -69,6 +69,8 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 装备后，在空中重新按跳跃键开伞，再按一次收伞。默认空格会跟随原版跳跃键改绑。视角控制方向，W/S 调整前进速度，A/D 侧移。开伞时剑、盾等物品暂时收起并保留原来的堆栈；切换快捷栏、攻击或使用物品会收伞。精力耗尽、受击、落地、卸下装备也会收伞，详见 [P3 规则](docs/P3-RULES.md)。
 
+使用剑/斧实际击中目标、举盾或拉弓/装弩后，该类别登记最近使用的装备。只切换快捷栏不会改记录；换成空手或其他物品后可在第三人称看到背负，其他玩家也能看到。掉落、放入箱子或损坏会清除对应记录。拉弓时盾暂时显示在背上，滑翔时双手仍抓伞，真实物品留在原库存。首版显示披风时隐藏背负，鞘翅隐藏冲突的盾/弓；完整腰侧和收取动画留到后续。
+
 启用命令后，可继续验证精力历史：
 
 ```mcfunction
@@ -79,7 +81,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 /wildcraft stamina consume @s 80
 ```
 
-历史峰值为 30，上限为 160。消费 80 后，左下显示精力和峰值；落地停止消耗 1 秒后，每秒恢复 20，补满后显示短暂保留再隐藏。原版经验条仍显示当前 5 级。数值是开发参数，尚未进行完整游玩平衡。
+历史峰值为 30，上限为 160。消费 80 后，左上角红心下方显示精力数值与短条；落地停止消耗 1 秒后，每秒恢复 20，补满后保留约 2 秒再隐藏。红心沿用原版状态图案，额外红心向下排成多行；原版经验条仍在底部显示当前 5 级。数值是开发参数，尚未进行完整游玩平衡。
 
 可用命令：`/wildcraft stamina status [玩家]`、`/wildcraft stamina consume <玩家> <数值>`、`/wildcraft stamina fill <玩家>`。要求游戏管理员权限；控制台使用明确的玩家目标，例如 `@p`。普通客户端不能通过自定义消息改变精力。
 
@@ -97,7 +99,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 ## 安装构建结果
 
-构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.4.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
+构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.5.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
 
 在独立的 Minecraft 26.3 实例中安装 Fabric Loader 0.19.5，将 Wildcraft 游戏 JAR 与 Fabric API 0.161.0+26.3 放进该实例的 `mods` 目录。客户端和服务端都需要安装。
 
@@ -112,6 +114,8 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 测试代码在 `src/gametest` 和 `src/rulesTest`，不进入游戏 Mod。
 
 P3 检查还覆盖专用槽装卸、满背包、原版配方、未装备拒绝、手中物品收起、取用物品收伞、按键开收伞、缓降与转向、攀爬衔接、落地、死亡掉落及保留物品、跨维度、世界重开和禁止飞行的本机 TCP 重连。装备保存新增独立格式 1，精力数据格式保持不变；降级使用对应世界备份。
+
+P3.1 新增 5 项服务端测试，当前共 25 项 GameTest（24 项项目测试 + 1 项原版测试）。成品客户端执行 7 个测试类，覆盖同款装备、手背互斥、存档、潜行/游泳、红心多行、界面缩放和原版骑乘条；另用两个独立图形客户端连接独立服务端，验证观察者看到装备变化、滑翔收纳、丢弃、放箱子、跨维度与断线重连。详见 [P3.1 验证](docs/P3.1-VERIFICATION.md)。
 
 先阅读 [Minecraft EULA](https://www.minecraft.net/en-us/eula)。同意协议后，可以明确添加以下参数，允许工具在临时测试目录写入 `eula=true`：
 
@@ -153,12 +157,15 @@ macOS 运行目录位于 `~/Library/Caches/Wildcraft/builds/<项目路径标识>
 - `docs/P2-RULES.md`：当前攀爬操作、参数与保存边界。
 - `docs/P2-VERIFICATION.md`：P2 的运行证据与尚未覆盖事项。
 - `docs/P3-RULES.md`：滑翔伞装备、双手、操作与保存规则。
-- `docs/P3-VERIFICATION.md`：P3 的实际检查与限制。
+- `docs/P3-VERIFICATION.md`：P3 的历史检查与限制。
+- `docs/P3.1-SPEC.md`：用户确认的登记、背负和左上角 HUD 合同。
+- `docs/P3.1-RULES.md`：背负实际行为、保存与回退。
+- `docs/P3.1-VERIFICATION.md`：P3.1 成品和真实双客户端的证据与限制。
 - `art/`：原创图标源文件与模型、贴图说明。
 
 ## 后续工作
 
-P3 形成精力、攀爬与滑翔的探索循环。新的规划加入林克时间与背负装备，并将温度明确为低干扰的环境反馈。下一步建议先做 R1 时间边界验证，再做 P3.1 背负装备/融合 HUD 和 P3.2 单人林克时间；P4 拆成环境温度、料理与细雪辅助两步。原有能源、机械、制造机、Fuse 和天气继续保留，完整顺序见 [开发规划 v2](docs/DEVELOPMENT-PLAN-V2.md)。这些是规划目标，当前游戏仍是 P3。
+P3.1 补齐三类背负，并按用户最新决定把红心和精力放在左上角。下一阶段为 P3.2 单人林克时间：提取 R1 已验证的时间、输入、弓和费用边界，接入已有攀爬/滑翔循环；联机不启用全服减速。之后 P4A/P4B 分别完成环境温度和料理/细雪辅助。原有能源、机械、制造机、Fuse 和天气继续保留，完整顺序见 [开发规划 v2](docs/DEVELOPMENT-PLAN-V2.md)。
 
 运行依赖只有 Fabric Loader 与 Fabric API。公开发行许可证尚未选择；模板与第三方工具来源见 `NOTICE.md`。
 

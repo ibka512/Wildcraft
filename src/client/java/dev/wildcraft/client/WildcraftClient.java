@@ -14,6 +14,7 @@ public final class WildcraftClient implements ClientModInitializer {
         ClimbControls.initialize();
         GlideControls.initialize();
         ParagliderLayer.initialize();
-        Wildcraft.LOGGER.info("Wildcraft P3 client initialization complete; HUD, traversal controls and paraglider layer registered.");
+        dev.wildcraft.client.render.BackEquipmentLayer.initialize();
+        Wildcraft.LOGGER.info("Wildcraft P3.1 client initialization complete; HUD, traversal controls and paraglider layer registered.");
     }
 }

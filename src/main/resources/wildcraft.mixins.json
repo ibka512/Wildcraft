@@ -2,7 +2,27 @@
   "required": true,
   "package": "dev.wildcraft.mixin",
   "compatibilityLevel": "JAVA_25",
-  "mixins": ["ServerPlayerExperienceMixin", "ClimbingTravelMixin", "ClimbingMovementMixin", "GliderInventoryMixin", "GliderCreativeSlotMixin"],
-  "client": ["client.ParagliderAvatarMixin", "client.ParagliderPoseMixin", "client.ParagliderHandsMixin", "client.GliderSlotScreenMixin", "client.GliderCreativeScreenMixin"],
-  "injectors": { "defaultRequire": 1 }
+  "mixins": [
+    "ServerPlayerExperienceMixin",
+    "ClimbingTravelMixin",
+    "ClimbingMovementMixin",
+    "GliderInventoryMixin",
+    "GliderCreativeSlotMixin",
+    "BackUseMixin",
+    "BackItemUseMixin",
+    "BackCrossbowMixin",
+    "BackInventoryMixin"
+  ],
+  "client": [
+    "client.ParagliderAvatarMixin",
+    "client.ParagliderPoseMixin",
+    "client.ParagliderHandsMixin",
+    "client.GliderSlotScreenMixin",
+    "client.GliderCreativeScreenMixin",
+    "client.BackAvatarMixin",
+    "client.UpperLeftHeartsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

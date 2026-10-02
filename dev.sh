@@ -37,7 +37,7 @@ if [ "$(uname -s)" = Darwin ]; then
     # Keep Gradle's mutable caches on APFS even when the source lives on ExFAT.
     export GRADLE_USER_HOME="${GRADLE_USER_HOME:-$HOME/Library/Caches/Wildcraft/gradle}"
     task_project_id="$(printf '%s' "$task_root" | cksum | awk '{print $1}')"
-    task_project_cache="$HOME/Library/Caches/Wildcraft/projects/$task_project_id"
+    task_project_cache="${WILDCRAFT_PROJECT_CACHE:-$HOME/Library/Caches/Wildcraft/projects/$task_project_id}"
     exec ./gradlew --project-cache-dir "$task_project_cache" "$@"
 fi
 exec ./gradlew "$@"

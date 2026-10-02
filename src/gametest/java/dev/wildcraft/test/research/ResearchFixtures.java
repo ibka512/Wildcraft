@@ -46,6 +46,7 @@ public final class ResearchFixtures implements ModInitializer {
     @Override
     public void onInitialize() {
         dev.wildcraft.test.research.time.WorldTimeResearch.initialize();
+        dev.wildcraft.test.equipment.BackMultiplayerProbe.initialize();
         // Static registration initializes this test-only registry.
     }
 }

@@ -19,6 +19,13 @@ public abstract class ParagliderHandsMixin {
             state.mainHandRenderState.clear();
             state.offHandRenderState.clear();
             state.handRenderSelection = null;
+        } else if (dev.wildcraft.equipment.BackEquipment.holstersShield(player)) {
+            if (state.mainHandItem.is(net.minecraft.world.item.Items.SHIELD)) {
+                state.mainHandItem = ItemStack.EMPTY; state.mainHandRenderState.clear();
+            }
+            if (state.offHandItem.is(net.minecraft.world.item.Items.SHIELD)) {
+                state.offHandItem = ItemStack.EMPTY; state.offHandRenderState.clear();
+            }
         }
     }
 }

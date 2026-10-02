@@ -27,10 +27,11 @@ public final class Wildcraft implements ModInitializer {
         ServerPlayerEvents.AFTER_RESPAWN.addPhaseOrdering(Event.DEFAULT_PHASE, AFTER_ATTACHMENT_TRANSFER);
         WildcraftItems.initialize();
         GliderEquipment.initialize();
+        dev.wildcraft.equipment.BackEquipment.initialize();
         Climbing.initialize();
         Gliding.initialize();
         PlayerStamina.initialize();
         StaminaCommands.initialize();
-        LOGGER.info("Wildcraft P3 common initialization complete; stamina, climbing and paraglider registered.");
+        LOGGER.info("Wildcraft P3.1 common initialization complete; stamina, climbing and paraglider registered.");
     }
 }

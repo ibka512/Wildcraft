@@ -1,0 +1,154 @@
+package dev.wildcraft.test;
+
+import dev.wildcraft.equipment.BackEquipment;
+import dev.wildcraft.player.GliderEquipment;
+import dev.wildcraft.player.PlayerStamina;
+import dev.wildcraft.registry.WildcraftItems;
+import java.util.List;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.fabricmc.fabric.api.gametest.v1.GameTest;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.gametest.framework.GameTestHelper;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.ProblemReporter;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.inventory.ChestMenu;
+import net.minecraft.world.inventory.ContainerInput;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.component.ItemContainerContents;
+import net.minecraft.world.level.storage.TagValueInput;
+import net.minecraft.world.level.storage.TagValueOutput;
+
+public final class BackEquipmentGameTests {
+    @GameTest public void actualUseAndInvalidBow(GameTestHelper h) {
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+        p.getAbilities().instabuild = false;
+        ItemStack sword = new ItemStack(Items.IRON_SWORD);
+        p.getInventory().setItem(0, sword);
+        BackEquipment.tick(p);
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().isEmpty(), "Holding/switching does not register");
+        var victim = h.makeMockServerPlayerInLevel();
+        ServerLivingEntityEvents.AFTER_DAMAGE.invoker().afterDamage(victim, p.damageSources().thorns(p), 2, 2, false);
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().isEmpty(), "Reflected armor damage is not a weapon attack");
+        ServerLivingEntityEvents.AFTER_DAMAGE.invoker().afterDamage(victim, p.damageSources().playerAttack(p), 2, 2, false);
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().is(Items.IRON_SWORD), "Confirmed melee registers");
+        h.assertTrue(BackEquipment.view(p).melee().isEmpty(), "Held sword is not duplicated on the back");
+        p.getInventory().setSelectedSlot(1);
+        BackEquipment.tick(p);
+        h.assertTrue(BackEquipment.view(p).melee().is(Items.IRON_SWORD), "Switching away displays last used sword");
+        p.getInventory().setItem(1, new ItemStack(Items.BOW));
+        p.getMainHandItem().use(p.level(), p, InteractionHand.MAIN_HAND);
+        h.assertTrue(BackEquipment.data(p).references().get(2).signature().isEmpty(), "No ammunition means no registration");
+        p.getInventory().setItem(2, new ItemStack(Items.ARROW));
+        p.getMainHandItem().use(p.level(), p, InteractionHand.MAIN_HAND);
+        h.assertTrue(BackEquipment.data(p).references().get(2).signature().is(Items.BOW), "Actual draw registers");
+        p.stopUsingItem();
+        p.getInventory().setItem(1, new ItemStack(Items.SHIELD));
+        p.getMainHandItem().use(p.level(), p, InteractionHand.MAIN_HAND);
+        h.assertTrue(BackEquipment.data(p).references().get(1).signature().is(Items.SHIELD), "Actual shield use registers");
+        p.stopUsingItem();
+        ItemStack shield = p.getInventory().removeItemNoUpdate(1);
+        p.getInventory().setItem(40, shield); p.getInventory().setItem(1, new ItemStack(Items.BOW));
+        p.getMainHandItem().use(p.level(), p, InteractionHand.MAIN_HAND); BackEquipment.tick(p);
+        h.assertTrue(BackEquipment.view(p).shield().is(Items.SHIELD), "Both hands drawing bow stow the owned shield on back");
+        h.assertTrue(p.getOffhandItem() == shield, "Visual holster preserves actual offhand stack");
+        p.discard(); victim.discard(); h.succeed();
+    }
+    @GameTest public void axeBlockActionAndPreloadedCrossbow(GameTestHelper h) {
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+        ItemStack axe = new ItemStack(Items.IRON_AXE);
+        p.getInventory().setItem(0, axe);
+        var pos = h.absolutePos(new net.minecraft.core.BlockPos(1, 1, 1));
+        h.getLevel().setBlock(pos, net.minecraft.world.level.block.Blocks.OAK_LOG.defaultBlockState(), 3);
+        var hit = new net.minecraft.world.phys.BlockHitResult(net.minecraft.world.phys.Vec3.atCenterOf(pos), net.minecraft.core.Direction.UP, pos, false);
+        axe.useOn(new net.minecraft.world.item.context.UseOnContext(p, InteractionHand.MAIN_HAND, hit));
+        h.assertTrue(h.getLevel().getBlockState(pos).is(net.minecraft.world.level.block.Blocks.STRIPPED_OAK_LOG), "Native axe actually strips log");
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().is(Items.IRON_AXE), "Successful axe action registers");
+        ItemStack bow = new ItemStack(Items.CROSSBOW);
+        bow.set(DataComponents.CHARGED_PROJECTILES, net.minecraft.world.item.component.ChargedProjectiles.ofNonEmpty(List.of(new ItemStack(Items.ARROW))));
+        p.getInventory().setItem(0, bow);
+        bow.use(p.level(), p, InteractionHand.MAIN_HAND);
+        h.assertTrue(BackEquipment.data(p).references().get(2).signature().is(Items.CROSSBOW), "Native preloaded crossbow shot registers");
+        h.assertTrue(bow.get(DataComponents.CHARGED_PROJECTILES).isEmpty(), "Actual loaded projectile fired");
+        p.discard(); h.succeed();
+    }
+    @GameTest public void identicalStacksOwnershipAndNativeMove(GameTestHelper h) {
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+        ItemStack used = new ItemStack(Items.DIAMOND_SWORD), spare = used.copy();
+        p.getInventory().setItem(0, used); p.getInventory().setItem(1, spare);
+        BackEquipment.register(p, used);
+        p.getInventory().setItem(9, used); p.getInventory().setItem(0, ItemStack.EMPTY);
+        BackEquipment.tick(p);
+        h.assertValueEqual(BackEquipment.data(p).references().get(0).slot(), 9, "Identity follows a real move despite identical spare");
+        p.getInventory().setItem(9, ItemStack.EMPTY);
+        BackEquipment.tick(p);
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().isEmpty(), "Dropping used sword never binds spare");
+        p.getInventory().setItem(0, new ItemStack(Items.IRON_AXE));
+        BackEquipment.register(p, p.getInventory().getItem(0));
+        p.inventoryMenu.clicked(36, 0, ContainerInput.PICKUP, p);
+        h.assertValueEqual(BackEquipment.data(p).references().get(0).slot(), -1, "Native cursor transaction preserves reference");
+        p.inventoryMenu.clicked(10, 0, ContainerInput.PICKUP, p);
+        h.assertValueEqual(BackEquipment.data(p).references().get(0).slot(), 10, "Native placement follows copied stack");
+        ItemStack axe = p.getInventory().getItem(10);
+        axe.setDamageValue(33); BackEquipment.tick(p);
+        h.assertValueEqual(BackEquipment.view(p).melee().getDamageValue(), 33, "Current durability is displayed");
+        axe.shrink(1); BackEquipment.tick(p);
+        h.assertTrue(BackEquipment.view(p).melee().isEmpty(), "Breaking/consuming invalidates reference");
+        p.discard(); h.succeed();
+    }
+    @GameTest public void chestAndAmbiguousCopiesNeverRebind(GameTestHelper h) {
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+        p.getInventory().setItem(9, new ItemStack(Items.IRON_SWORD));
+        BackEquipment.register(p, p.getInventory().getItem(9));
+        SimpleContainer chest = new SimpleContainer(27);
+        p.containerMenu = ChestMenu.threeRows(1, p.getInventory(), chest);
+        p.containerMenu.clicked(27, 0, ContainerInput.QUICK_MOVE, p);
+        h.assertTrue(chest.getItem(0).is(Items.IRON_SWORD), "Sword actually enters chest");
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().isEmpty(), "Chest loses ownership");
+        p.containerMenu = p.inventoryMenu;
+        ItemStack first = new ItemStack(Items.GOLDEN_SWORD);
+        p.getInventory().setItem(0, first); p.getInventory().setItem(1, first.copy());
+        BackEquipment.register(p, first);
+        var t = BackEquipment.beforeTransaction(p);
+        p.getInventory().setItem(0, ItemStack.EMPTY); p.getInventory().setItem(9, first.copy());
+        BackEquipment.afterTransaction(p, t);
+        h.assertTrue(BackEquipment.data(p).references().get(0).signature().isEmpty(), "Ambiguous copied stack is cleared rather than guessed");
+        p.discard(); h.succeed();
+    }
+    @GameTest public void privateComponentsAndNativeSave(GameTestHelper h) {
+        ServerPlayer p = h.makeMockServerPlayerInLevel();
+        ItemStack sword = new ItemStack(Items.NETHERITE_SWORD);
+        CompoundTag secret = new CompoundTag(); secret.putString("secret", "private fixture");
+        sword.set(DataComponents.CUSTOM_DATA, CustomData.of(secret));
+        sword.set(DataComponents.CONTAINER, ItemContainerContents.fromItems(List.of(new ItemStack(Items.DIAMOND, 64))));
+        sword.set(DataComponents.CUSTOM_NAME, Component.literal("private name"));
+        sword.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true);
+        sword.setDamageValue(11);
+        p.getInventory().setItem(9, sword); BackEquipment.register(p, sword);
+        ItemStack display = BackEquipment.view(p).melee();
+        h.assertFalse(display.has(DataComponents.CUSTOM_DATA) || display.has(DataComponents.CONTAINER) || display.has(DataComponents.CUSTOM_NAME), "Observer view contains no private payload");
+        h.assertTrue(display.hasFoil() && display.getDamageValue() == 11, "Glint/durability preserved");
+        GliderEquipment.set(p, new ItemStack(WildcraftItems.PARAGLIDER));
+        PlayerStamina.experienceChanged(p);
+        var stamina = PlayerStamina.get(p);
+        var output = TagValueOutput.createWithContext(ProblemReporter.DISCARDING, h.getLevel().registryAccess());
+        p.saveWithoutId(output);
+        h.assertTrue(output.buildResult().toString().contains("wildcraft:back_equipment"), "Independent attachment saves");
+        h.assertFalse(output.buildResult().toString().contains("back_equipment_view") || output.buildResult().toString().contains("back_equipment_session"), "Display/session are transient");
+        ServerPlayer restored = new ServerPlayer(h.getLevel().getServer(), h.getLevel(), p.getGameProfile(), p.clientInformation());
+        restored.load(TagValueInput.create(ProblemReporter.DISCARDING, h.getLevel().registryAccess(), output.buildResult()));
+        BackEquipment.tick(restored);
+        h.assertTrue(BackEquipment.view(restored).melee().is(Items.NETHERITE_SWORD), "Exact owned stack restored");
+        h.assertTrue(GliderEquipment.equipped(restored), "Existing glider format preserved");
+        h.assertValueEqual(PlayerStamina.get(restored), stamina, "Existing stamina format preserved");
+        restored.getInventory().setItem(9, new ItemStack(Items.NETHERITE_SWORD));
+        BackEquipment.tick(restored);
+        h.assertTrue(BackEquipment.view(restored).melee().isEmpty(), "Replacement after load never inherits reference");
+        p.discard(); h.succeed();
+    }
+}

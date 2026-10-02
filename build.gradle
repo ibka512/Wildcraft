@@ -152,3 +152,50 @@ tasks.register('runPackagedServer', net.fabricmc.loom.task.prod.ServerProduction
     jvmArgs.add('-Xmx1G')
     runDir = layout.buildDirectory.dir('run/packaged-server')
 }
+
+
+// Freeze the two mod jars before starting concurrent processes; no process rebuilds an open jar.
+def p31Lab = new File(System.getProperty('user.home'), 'Library/Caches/Wildcraft/labs/p31')
+tasks.register('prepareP31Lab') {
+    dependsOn tasks.named('jar'), gameTestJar
+    doLast {
+        if (!acceptTestEula) throw new GradleException('Local lab requires the previously authorized -PacceptMinecraftEula=true flag.')
+        def modsDir = new File(p31Lab, 'mods')
+        modsDir.mkdirs()
+        java.nio.file.Files.copy(tasks.named('jar', Jar).get().archiveFile.get().asFile.toPath(), new File(modsDir, 'wildcraft.jar').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        java.nio.file.Files.copy(gameTestJar.get().archiveFile.get().asFile.toPath(), new File(modsDir, 'wildcraft-test.jar').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        def serverDir = new File(p31Lab, 'server')
+        serverDir.mkdirs()
+        new File(serverDir, 'eula.txt').text = 'eula=true\n'
+        new File(serverDir, 'server.properties').text = 'server-ip=127.0.0.1\nserver-port=25631\nonline-mode=false\nenforce-secure-profile=false\nwhite-list=false\nmax-players=2\nview-distance=4\nsimulation-distance=4\nallow-flight=false\nlevel-name=P31Lab\nlevel-type=minecraft:flat\nspawn-protection=0\n'
+        def standaloneDir = new File(p31Lab, 'standalone')
+        standaloneDir.mkdirs()
+        new File(standaloneDir, 'eula.txt').text = 'eula=true\n'
+        new File(standaloneDir, 'server.properties').text = 'server-ip=127.0.0.1\nserver-port=25632\nonline-mode=false\nenforce-secure-profile=false\nwhite-list=false\nmax-players=2\nview-distance=4\nsimulation-distance=4\nallow-flight=false\nlevel-name=P31StandaloneLab\nspawn-protection=0\n'
+        ['actor', 'observer'].each { role ->
+            def clientDir = new File(p31Lab, role)
+            clientDir.mkdirs()
+            new File(clientDir, 'options.txt').text = 'onboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:30\nrenderDistance:4\nlang:zh_cn\n'
+        }
+    }
+}
+tasks.register('runP31Server', net.fabricmc.loom.task.prod.ServerProductionRunTask) {
+    mods.setFrom(new File(p31Lab, 'mods/wildcraft.jar'), new File(p31Lab, 'mods/wildcraft-test.jar'), configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Xmx1G', '-Dwildcraft.p31.server=true')
+    runDir = new File(p31Lab, 'server')
+}
+['actor', 'observer'].each { role ->
+    tasks.register("runP31${role.capitalize()}", net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+        mods.setFrom(new File(p31Lab, 'mods/wildcraft.jar'), new File(p31Lab, 'mods/wildcraft-test.jar'), configurations.productionRuntimeMods)
+        jvmArgs.addAll('-Xmx2G', "-Dwildcraft.p31.role=${role}")
+        programArgs.addAll('--username', "WC${role.capitalize()}", '--quickPlayMultiplayer', '127.0.0.1:25631')
+        useXVFB = false
+        runDir = new File(p31Lab, role)
+    }
+}
+// Same frozen production jar, with no test mod present.
+tasks.register('runP31StandaloneServer', net.fabricmc.loom.task.prod.ServerProductionRunTask) {
+    mods.setFrom(new File(p31Lab, 'mods/wildcraft.jar'), configurations.productionRuntimeMods)
+    jvmArgs.add('-Xmx1G')
+    runDir = new File(p31Lab, 'standalone')
+}
