@@ -37,7 +37,7 @@ fabricApi {
     configureTests {
         createSourceSet = true
         modId = 'wildcraft-test'
-        enableGameTests = false
+        enableGameTests = true
         enableClientGameTests = true
         eula = acceptTestEula
     }
@@ -45,11 +45,35 @@ fabricApi {
 
 loom.runs.configureEach { run ->
     run.runDirectory.set(layout.buildDirectory.dir("run/${run.name}"))
+    if (run.name == 'gameTest') {
+        run.vmArg '-Dfabric-api.gametest.report-file=reports/gametest-results.xml'
+    }
 }
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(25)
     withSourcesJar()
+}
+
+sourceSets {
+    rulesTest {
+        java.srcDir 'src/rulesTest/java'
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += output + compileClasspath
+    }
+}
+
+def verifyRules = tasks.register('verifyRules', JavaExec) {
+    dependsOn tasks.named('rulesTestClasses')
+    classpath = sourceSets.rulesTest.runtimeClasspath
+    mainClass = 'dev.wildcraft.test.StaminaRulesCheck'
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+tasks.named('check') {
+    dependsOn verifyRules
 }
 
 tasks.withType(JavaCompile).configureEach {

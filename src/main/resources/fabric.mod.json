@@ -3,10 +3,11 @@
   "id": "wildcraft",
   "version": "${version}",
   "name": "Wildcraft",
-  "description": "Wildcraft Java Edition development foundation. P0 includes one test item.",
+  "description": "Wildcraft development version: persistent highest experience level, stamina and HUD.",
   "license": "All-Rights-Reserved",
   "icon": "assets/wildcraft/icon.png",
   "environment": "*",
+  "mixins": ["wildcraft.mixins.json"],
   "entrypoints": {
     "main": ["dev.wildcraft.Wildcraft"],
     "client": ["dev.wildcraft.client.WildcraftClient"],

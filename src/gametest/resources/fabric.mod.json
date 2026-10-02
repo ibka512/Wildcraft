@@ -2,9 +2,19 @@
   "schemaVersion": 1,
   "id": "wildcraft-test",
   "version": "1.0.0",
-  "name": "Wildcraft P0 runtime verification",
-  "environment": "client",
+  "name": "Wildcraft runtime verification and isolated research",
+  "environment": "*",
   "entrypoints": {
-    "fabric-client-gametest": ["dev.wildcraft.test.WildcraftClientSmokeTest"]
+    "main": ["dev.wildcraft.test.research.ResearchFixtures"],
+    "client": ["dev.wildcraft.test.research.ResearchClient"],
+    "fabric-gametest": [
+      "dev.wildcraft.test.research.ResearchGameTests",
+      "dev.wildcraft.test.PlayerStaminaGameTests"
+    ],
+    "fabric-client-gametest": [
+      "dev.wildcraft.test.WildcraftClientSmokeTest",
+      "dev.wildcraft.test.research.ResearchClientSmokeTest",
+      "dev.wildcraft.test.PlayerStaminaClientSmokeTest"
+    ]
   }
 }

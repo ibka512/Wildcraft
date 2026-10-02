@@ -1,6 +1,8 @@
 package dev.wildcraft;
 
 import dev.wildcraft.registry.WildcraftItems;
+import dev.wildcraft.player.PlayerStamina;
+import dev.wildcraft.player.StaminaCommands;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
@@ -17,6 +19,8 @@ public final class Wildcraft implements ModInitializer {
     @Override
     public void onInitialize() {
         WildcraftItems.initialize();
-        LOGGER.info("Wildcraft P0 common initialization complete; test core registered.");
+        PlayerStamina.initialize();
+        StaminaCommands.initialize();
+        LOGGER.info("Wildcraft P1 common initialization complete; player stamina registered.");
     }
 }

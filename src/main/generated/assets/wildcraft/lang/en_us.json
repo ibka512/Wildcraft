@@ -1,3 +1,8 @@
 {
+  "command.wildcraft.stamina.consumed": "Consumed %s stamina",
+  "command.wildcraft.stamina.filled": "Stamina refilled",
+  "command.wildcraft.stamina.status": "Stamina %s / %s; peak level %s",
+  "hud.wildcraft.peak_level": "Peak level %s",
+  "hud.wildcraft.stamina": "Stamina %s / %s",
   "item.wildcraft.test_core": "Wildcraft Test Core"
 }
