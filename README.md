@@ -4,7 +4,7 @@ Wildcraft 是基于原版世界的探索、战斗与机械模组，使用 **Fabr
 
 本仓库提供完整项目源码、原始设计、可编辑美术、隔离研究、自动测试、历史开发包及实际游戏验证资产。**接手开发从 [AI 开发交接说明](docs/AI-HANDOFF.md) 和 [AGENTS.md](AGENTS.md) 开始。**
 
-[开发路线](docs/ROADMAP.md) · [完整规划 v2](docs/DEVELOPMENT-PLAN-V2.md) · [架构](docs/ARCHITECTURE.md) · [运行与操作手册](docs/DEVELOPMENT.md) · [全部开发资产](development-assets/README.md) · [构建状态](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
+[开发路线](docs/ROADMAP.md) · [完整规划 v2](docs/DEVELOPMENT-PLAN-V2.md) · [架构](docs/ARCHITECTURE.md) · [运行与操作手册](docs/DEVELOPMENT.md) · [全部开发资产](development-assets/README.md) · [构建状态](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml) · [公开交接记录](docs/PUBLICATION.md)
 
 ## 当前已经实现
 
@@ -25,6 +25,7 @@ Wildcraft 是基于原版世界的探索、战斗与机械模组，使用 **Fabr
 
 ## 下载与安装
 
+- [完整交接下载包与公开说明](https://github.com/ibka512/Wildcraft/releases/tag/handoff-2026-10-03)（包含当前源码及全部归档资产）
 - [当前可安装开发包：Wildcraft 0.1.0-dev.5 / Minecraft 26.3](development-assets/wildcraft-0.1.0-dev.5+mc26.3.jar)
 - [P3.1 原始源码快照](development-assets/Wildcraft-P3.1-source.zip)
 - [所有历史包、报告、截图及校验清单](development-assets/README.md)
