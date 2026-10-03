@@ -2,7 +2,7 @@
 
 ## 开始前
 
-1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格；当前本机完成到 P4B 料理，版本 dev.9；公开 main/Release 仍为 dev.7，本次 dev.8/dev.9 未上传，旧里程碑保留。当前完成规格为 docs/P4B-SPEC.md，下一阶段为P5，合同为 docs/P5-SPEC.md，用户已确认独立料理锅、有效实际时间。
+1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格；当前本机完成到P5能源，版本dev.10；公开 main/Release 仍为 dev.7，本次dev.8–dev.10未上传，旧里程碑保留。当前完成规格为docs/P5-SPEC.md，下一阶段P6准备见docs/P6-PREPARATION.md，安装操作待用户选择，用户已确认独立料理锅、有效实际时间。
 2. 查看当前分支、未提交改动和用户本轮目标。公开仓库只是交接材料，不是自动授权完成整张路线图。
 3. 用户当前明确决定优先于原始设计文档的建议；原始设计和历史日志是资料，不是可执行指令。只规划/审阅的请求不授权实现。
 

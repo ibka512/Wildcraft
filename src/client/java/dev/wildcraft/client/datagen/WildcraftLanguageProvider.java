@@ -21,6 +21,15 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("block.wildcraft.charger", chinese ? "充电器" : "Charger");
+        translations.add("item.wildcraft.battery", chinese ? "有限电池" : "Battery");
+        translations.add("energy.wildcraft.charge", chinese ? "电量 %s / %s" : "Charge %s / %s");
+        translations.add("energy.wildcraft.battery_help", chinese ? "放入紧邻固定红石块的充电器" : "Charge beside a fixed redstone block");
+        translations.add("energy.wildcraft.status.0", chinese ? "放入有限电池" : "Insert a battery");
+        translations.add("energy.wildcraft.status.1", chinese ? "需要紧邻固定红石块" : "Place beside a redstone block");
+        translations.add("energy.wildcraft.status.2", chinese ? "充电中" : "Charging");
+        translations.add("energy.wildcraft.status.3", chinese ? "电量已满" : "Fully charged");
+        translations.add("energy.wildcraft.status.4", chinese ? "等候共享电源" : "Waiting for shared supply");
         translations.add("block.wildcraft.cooking_pot", chinese ? "料理锅" : "Cooking Pot");
         translations.add("item.wildcraft.meal", chinese ? "料理" : "Cooked Meal");
         translations.add("item.wildcraft.meal.vegetable", chinese ? "蔬菜炖煮" : "Vegetable Stew");

@@ -324,3 +324,30 @@ tasks.register('runCookingClientTest', net.fabricmc.loom.task.prod.ClientProduct
     useXVFB = false
     runDir = layout.buildDirectory.dir('run/cooking-client-test')
 }
+
+// Focused P5 production-JAR checks; the full packaged suite also includes this class.
+def energyMetadataDirectory = layout.buildDirectory.dir('energy-test-metadata').get().asFile
+def energyMetadata = tasks.register('energyTestMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(energyMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.EnergyClientSmokeTest']
+        def destination = new File(energyMetadataDirectory, 'fabric.mod.json')
+        destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def energyTestJar = tasks.register('energyTestJar', Jar) {
+    dependsOn energyMetadata
+    archiveClassifier = 'energy-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(energyMetadataDirectory)
+}
+tasks.register('runEnergyClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(energyTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/energy-client-test')
+}

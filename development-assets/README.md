@@ -65,3 +65,7 @@ P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SH
 ## P4B 本机新增
 
 [dev.9](wildcraft-0.1.0-dev.9+mc26.3.jar)、[源码](Wildcraft-P4B-source.zip)、[验证证据](verification/p4b)、[校验](Wildcraft-P4B-SHA256SUMS.txt)。公开仓库仍dev.7，此阶段未上传。
+
+## P5 本机新增
+
+[dev.10](wildcraft-0.1.0-dev.10+mc26.3.jar)、[源码](Wildcraft-P5-source.zip)、[证据](verification/p5)、[校验](Wildcraft-P5-SHA256SUMS.txt)。公开main/Release仍dev.7，本次未上传。

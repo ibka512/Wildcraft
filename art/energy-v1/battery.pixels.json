@@ -1,0 +1,31 @@
+{
+  "width": 16,
+  "height": 16,
+  "palette": {
+    " ": "00000000",
+    "d": "394A43FF",
+    "m": "586E62FF",
+    "h": "9FC5A5FF",
+    "c": "B27F51FF",
+    "r": "B34939FF",
+    "g": "6CA17CFF"
+  },
+  "rows": [
+    "                ",
+    "      cccc      ",
+    "     ddddd d    ",
+    "    dhhhhhhd    ",
+    "    dhmmm h d   ",
+    "    dhmmr m d   ",
+    "    dhmrrrm d   ",
+    "    dhmmr m d   ",
+    "    dhmmm h d   ",
+    "    dhgggggd    ",
+    "    dhgggggd    ",
+    "    dhmmm h d   ",
+    "    dhhhhhhd    ",
+    "     dddddd     ",
+    "                ",
+    "                "
+  ]
+}

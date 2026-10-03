@@ -22,7 +22,8 @@
       "dev.wildcraft.test.BackEquipmentGameTests",
       "dev.wildcraft.test.FocusGameTests",
       "dev.wildcraft.test.TemperatureGameTests",
-      "dev.wildcraft.test.CookingGameTests"
+      "dev.wildcraft.test.CookingGameTests",
+      "dev.wildcraft.test.EnergyGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
@@ -35,7 +36,8 @@
       "dev.wildcraft.test.FocusClientSmokeTest",
       "dev.wildcraft.test.CoreArtClientSmokeTest",
       "dev.wildcraft.test.TemperatureClientSmokeTest",
-      "dev.wildcraft.test.CookingClientSmokeTest"
+      "dev.wildcraft.test.CookingClientSmokeTest",
+      "dev.wildcraft.test.EnergyClientSmokeTest"
     ]
   }
 }

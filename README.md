@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.9 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B 料理。能源、机械及正式 Fuse 尚未实现。公开 main 与最新 Release 仍为 dev.7，本次 dev.8/dev.9 尚未上传。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.10 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。正式机械及Fuse尚未实现。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.10尚未上传。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -20,6 +20,8 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 | 单人林克时间 | 未开放 LAN 的单人生存世界，空中实际拉弓自动真减速；共享精力，保持原版射箭语义，有限缓降且保留摔落伤害；F8 调整画面 |
 | 环境温度 P4A | 群系、当地雨雪、浸水和可见热源影响七档读数；左上角平滑显示；F8 关闭边缘色调；普通冷热无额外惩罚，原版细雪/皮革规则保留 |
 | 料理 P4B | 独立料理锅与七条原版食材配方，吃完返还空碗；三类有限效果、有效实际计时；暂停/离线停止，死亡清除，保暖不能完全免疫细雪 |
+| 红石能源 P5 | 固定红石块无限储量、每源/每充电器20能量/世界刻上限；相邻充电器共享并轮流供电，信号和随身红石块不产生电量 |
+| 有限电池 P5 | 空电池容量1000，充电器显示进度；实际堆栈存余量，取出消费、掉落或重载不回满；机械动力留到P6 |
 | 核心美术 v1 | 原创滑翔伞网格、标准/细手臂握持和攀爬姿态、五类背负挂点与短落定、精力图集、专注画面/音效及设置页 |
 
 ![第三人称滑翔](development-assets/verification/core-art-v1/glider-third-person-front.png)
@@ -32,7 +34,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 ## 下载与安装
 
-- **本机最新开发包：[wildcraft-0.1.0-dev.9+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.9+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
+- **本机最新开发包：[wildcraft-0.1.0-dev.10+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.10+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
 - [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
 - [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
 
@@ -99,12 +101,12 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-P4A 与 P4B 已完成本机开发，料理规则见 [P4B规格](docs/P4B-SPEC.md)，验证见 [P4B验收](docs/P4B-VERIFICATION.md)。下一步 **P5 红石能源与有限电池**，方案见 [P5规格](docs/P5-SPEC.md)。普通冷热仍无普遍惩罚；保暖仅减缓细雪，耐热只减弱热色调且不抗火。
+P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。下一步P6机械主体、风扇/电池和安装回收；[准备与测试矩阵](docs/P6-PREPARATION.md)已整理，安装交互待用户选择。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
 
 | 顺序 | 后续范围 |
 | --- | --- |
 | P4B（已完成） | 独立料理锅、七条配方、有效实际时长、有限细雪与恢复辅助 |
-| P5 | 红石信号与电量分离、固定无限能源限速、充电器和有限电池 |
+| P5（已完成） | 红石信号与电量分离、固定无限能源限速、充电器和有限电池 |
 | P6 / P7 | 主体、有限安装节点、吸附/拆卸回收；翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置 |
 | P8 | 古代装置制造机；投入一次、确定结果保存、中断恢复 |
 | P9 / P9.1 | 正式 Fuse 与背负/空中箭整合；任意物品 Fuse 的保存、通用规则、专属效果和外观分别研究 |
@@ -144,3 +146,5 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 本机 P4B：37 项服务端、11 类成品客户端候选回归及无测试模组服务端通过；原型美术可编辑，详见 P4B-VERIFICATION。当前未发布，长期多人争抢与最终生存平衡仍待后续验收。
 
 本机dev.9安装包 SHA-256：`37cd31c0e716edb07e4d7d14c6d5d25e2357addb53bda500e1e2daf1598c566d`。
+
+本机dev.10：40项服务端、12类候选客户端回归、最终能源专项和独立服务端通过；SHA-256：`1e7a0ec8e3fb6b630b62f071fb660771a8d816fa454a6a418163864f3986ca39`。验证和限制见P5-VERIFICATION。

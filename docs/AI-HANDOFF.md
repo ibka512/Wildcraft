@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-04。当前本机游戏版本 **0.1.0-dev.9 / Minecraft 26.3**，完成到 **P4B 料理**。料理合同和验证见P4B-SPEC/VERIFICATION；公开 `main` 与最新 Release `handoff-dev7-2026-10-03` 仍为 dev.7，本次 dev.8 未上传。保留旧游戏标签和所有历史交接。本次新增环境反馈和料理，没有新增生产依赖或真实存档迁移。
+更新：2026-10-04。当前本机游戏版本 **0.1.0-dev.10 / Minecraft 26.3**，完成到 **P5能源**。料理合同和验证见P4B-SPEC/VERIFICATION；公开 `main` 与最新 Release `handoff-dev7-2026-10-03` 仍为 dev.7，本次dev.8–dev.10未上传。保留旧游戏标签和所有历史交接。本次新增环境反馈和料理，没有新增生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -47,9 +47,10 @@
 | 核心美术 v1 | 交付的 14 编号资源已接入；[规格](CORE-ART-INTEGRATION.md)、[验收](CORE-ART-VERIFICATION.md) |
 | P4A | 本机环境温度完成；[规格](P4A-SPEC.md)、[验证](P4A-VERIFICATION.md)；dev.8 尚未上传 |
 | P4B | 本机料理完成，见 [规格](P4B-SPEC.md) / [验收](P4B-VERIFICATION.md) |
-| P5 及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
+| P5 | 本机能源与有限电池完成，见P5-SPEC/VERIFICATION |
+| P6及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
 
-当前没有多人林克时间、红石能源、机械、制造机或 Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
+当前没有多人林克时间、正式机械、制造机或Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
 
 ## 固定环境与构建入口
 
@@ -113,7 +114,7 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 - `FocusItemMixin` 只校准使用剩余时间并走一次原版 release；缓降不清零摔落距离。客户端新同步样本修正预测，避免卡顿后永久超前。
 - GPU 原创后处理和独立有效开关；关闭画面保留技能、费用和 HUD。默认不启用轻闪/纹理/FOV；核心美术提供两份原创提示音。
 
-P4A和P4B均已完成。独立料理锅、有效实际时间、三类效果与有限细雪辅助见P4B-SPEC/VERIFICATION。下一计划P5：按照P5-SPEC实现固定源共享限速、充电器、真实电池组件与电量显示，验证保存/取出/有限消耗，再继续P6。
+P4A和P4B均已完成。独立料理锅、有效实际时间、三类效果与有限细雪辅助见P4B-SPEC/VERIFICATION。P5也已完成，见P5-SPEC/VERIFICATION。下一计划P6安装交互尚待用户答复，其余准备见P6-PREPARATION。
 
 R1 保持独立研究代码；实验开始时主动退出并阻止当前正式拉弓会话，防止两个控制器争夺同一次使用，历史 R1 全套仍回归。普通客户端测量在 [FocusNativeProbe](../src/gametest/java/dev/wildcraft/test/research/time/FocusNativeProbe.java)，`fabric.client.gametest` 必须为 null。静态 NoGravity 场景只测时钟、世界/实体速率、蓄力与原版射箭；真正下降、反复拉弓与落地伤害在独立生命周期场景测。
 
@@ -152,10 +153,16 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## 可以交给下一位 AI 的起始任务
 
-> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P4A-SPEC/VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 本机版本dev.9已完成P4A环境温度和P4B料理；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段P5按P5-SPEC实现能源和电池，再继续P6。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。
+> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P4A-SPEC/VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 本机版本dev.9已完成P4A环境温度和P4B料理；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段P6按P6-PREPARATION继续，先接收安装操作答复。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。
 
 ## P4B 完成检查点
 
 七条固定配方、原版容器协议、成品组件与有限效果见 P4B-SPEC.md。当前源码已实现 CookingContent / CookingPotEntity / CookingMenu / MealItem / CookingEffects；MealEffects格式1与旧精力/伞槽/背负格式分开。时钟复用ActivePlayClock，但只服务端持有锚点。暂停入口在IntegratedFocusMixin，原版细雪仅由MealFreezeMixin包装FREEZE增加；不修改原版伤害或皮革保护。PlayerStamina仅接入合格恢复倍率。37项服务端、11类候选客户端和独立服务端通过，见P4B-VERIFICATION。当前下一步为P5。
 
-用户已授权连续完成阶段；接下来在feature/energy实现P5-SPEC.md并验收，额度任一有效窗口剩余≤5%时保存交接并停止。新增依赖/真实数据迁移/公开发布仍需对应授权，不自动重置额度。公开main/Release保持dev.7。
+用户已授权连续完成阶段；P5已完成，接下来在授权范围内继续P6，额度任一有效窗口剩余≤5%时保存交接并停止。新增依赖/真实数据迁移/公开发布仍需对应授权，不自动重置额度。公开main/Release保持dev.7。
+
+## P5完成与当前下一任务
+
+EnergyContent注册电池/充电器/菜单/组件；Batteries只操作调用者持有的真实堆栈，consume原子整笔拒绝，charge返回实际入量。FixedEnergy只识别已加载世界中的红石块，按Level/gameTime清空源和充电器的当刻领取集合；每源20、每充电器20，邻接候选轮转，停止服务器清缓存。ChargerEntity保存原版库存，不保存无限源权限；菜单与客户端仅显示。电池组件格式1严格0..1000、实际物品最多一件，不改旧玩家附件。没有正式机械，R0仍是测试。
+
+当前P5已通过40服务端检查、能源专项客户端、12类候选全套客户端和独立服务端。完整边界复验及哈希见P5-VERIFICATION。下一阶段P6已询问“直指节点安装/蹲下空手拆卸”或“专用工具节点菜单”，尚未收到答案，不可默认选择。已整理P6-PREPARATION，先读取答复；连续开发与5%额度停线仍生效，生产依赖/真实迁移/公开发布仍需对应明确授权。
