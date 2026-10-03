@@ -21,7 +21,8 @@
       "dev.wildcraft.test.GlidingGameTests",
       "dev.wildcraft.test.BackEquipmentGameTests",
       "dev.wildcraft.test.FocusGameTests",
-      "dev.wildcraft.test.TemperatureGameTests"
+      "dev.wildcraft.test.TemperatureGameTests",
+      "dev.wildcraft.test.CookingGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
