@@ -73,7 +73,7 @@ public final class CoreArtClientSmokeTest implements FabricClientGameTest {
                 var container=(net.minecraft.client.gui.components.AbstractContainerWidget)client.gui.screen().children().stream()
                         .filter(net.minecraft.client.gui.components.AbstractContainerWidget.class::isInstance).findFirst().orElseThrow();
                 var controls=container.children().stream().filter(Button.class::isInstance).map(Button.class::cast).toList();
-                check(controls.size()==6,"All six existing preferences remain present");
+                check(controls.size()==7,"Six focus preferences and independent temperature preference remain present");
                 for (var b:controls) check(b.getX()>=0 && b.getRight()<=320,"Compact controls fit the viewport");
                 container.setScrollAmount(1000);
                 var last=controls.getLast();

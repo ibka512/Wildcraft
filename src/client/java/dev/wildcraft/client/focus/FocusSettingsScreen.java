@@ -12,7 +12,7 @@ import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
 import dev.wildcraft.Wildcraft;
 
-/** Native controls and focus-aware scrolling; only the six existing preferences are edited. */
+/** Native controls and focus-aware scrolling; the six focus preferences and independent temperature tint. */
 public final class FocusSettingsScreen extends Screen {
     private final Screen parent;
     private int panelX, panelY, panelWidth, panelHeight;
@@ -36,6 +36,12 @@ public final class FocusSettingsScreen extends Screen {
         second.addChild(toggle("pattern", () -> o.pattern, v -> o.pattern = v, half));
         second.addChild(toggle("pulse", () -> o.lowStaminaPulse, v -> o.lowStaminaPulse = v, half)); content.addChild(second);
         content.addChild(toggle("fov", () -> o.fov, v -> o.fov = v, contentWidth));
+        var temperature = Button.builder(temperatureLabel(), b -> {
+            var settings = dev.wildcraft.client.temperature.TemperatureOptions.get();
+            settings.edgeTint = !settings.edgeTint; dev.wildcraft.client.temperature.TemperatureOptions.save(); b.setMessage(temperatureLabel());
+        }).size(contentWidth, 20).build();
+        temperature.setTooltip(Tooltip.create(Component.translatable("temperature.wildcraft.help.tint")));
+        content.addChild(temperature);
         int top = panelY + (compact ? 46 : 66);
         int doneY = panelY + panelHeight - 30;
         var scroll = new ScrollableLayout(minecraft, content, Math.max(20, doneY - top - (compact ? 5 : height >= 270 ? 43 : 8)), ScrollableLayout.ReserveStrategy.RIGHT);
@@ -43,6 +49,10 @@ public final class FocusSettingsScreen extends Screen {
         scroll.visitWidgets(this::addRenderableWidget);
         addRenderableWidget(Button.builder(Component.translatable("gui.done"), b -> onClose())
                 .bounds(panelX + 14, doneY, panelWidth - 28, 20).build());
+    }
+    private Component temperatureLabel() {
+        return Component.translatable("temperature.wildcraft.tint", Component.translatable(
+                dev.wildcraft.client.temperature.TemperatureOptions.get().edgeTint ? "options.on" : "options.off"));
     }
     private Component strengthLabel() {
         return Component.translatable("focus.wildcraft.strength", Component.translatable("focus.wildcraft.strength." + FocusOptions.get().strength));

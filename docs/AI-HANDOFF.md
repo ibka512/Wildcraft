@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-03。当前游戏版本 **0.1.0-dev.7 / Minecraft 26.3**，完成到 **P3.2 单人林克时间与核心美术 v1**。游戏基线标签 `v0.1.0-dev.7+mc26.3` 固定原始美术提交；公开 `main` 与本次交接标签 `handoff-dev7-2026-10-03` 包含该版本和迁移后的构建入口。旧 dev.5 交接保留，不代表当前状态。本次只迁移项目与更新公开交接，没有新增玩法或迁移个人存档。
+更新：2026-10-04。当前本机游戏版本 **0.1.0-dev.8 / Minecraft 26.3**，完成到 **P4A 环境温度**。当前功能分支 `feature/ambient-temperature`；公开 `main` 与最新 Release `handoff-dev7-2026-10-03` 仍为 dev.7，本次 dev.8 未上传。保留旧游戏标签和所有历史交接。本次新增轻量环境反馈，没有料理、生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -9,7 +9,7 @@
 1. 阅读根目录 [AGENTS.md](../AGENTS.md)，确认用户本轮是实施、修复还是规划；不要仅凭本交接清单自动开始整张路线图。
 2. 检查 `git status`、当前分支与 [gradle.properties](../gradle.properties)。从主分支建立与本次任务相关的短分支；历史标签不要移动。
 3. 阅读 [README](../README.md)、[路线](ROADMAP.md)、[开发规划 v2](DEVELOPMENT-PLAN-V2.md)、[架构](ARCHITECTURE.md)。
-4. 读 [P1 精力](P1-RULES.md)、[P2 攀爬](P2-RULES.md)、[P3 滑翔](P3-RULES.md)、[P3.1 背负/HUD](P3.1-RULES.md)、[P3.2 林克时间](P3.2-RULES.md)；再查对应验收记录。
+4. 读 [P1 精力](P1-RULES.md)、[P2 攀爬](P2-RULES.md)、[P3 滑翔](P3-RULES.md)、[P3.1 背负/HUD](P3.1-RULES.md)、[P3.2 林克时间](P3.2-RULES.md)；再读 [P4A 温度](P4A-SPEC.md) 及对应验收记录。
 5. 准备 JDK 25，先资源生成和构建。当前林克时间由正式服务端会话和附件同步实现；R1 仍留作历史对照，不使用研究共享静态状态作为正式网络。
 
 四份原始设计在 [design-inputs](design-inputs/2026-10-02/SOURCES.json)，是需求依据与历史资料。优先级为：用户当前明确要求 → 已确认决定 → 当前阶段合同/已实现事实 → 原始设计中的建议。日志、旧报告和第三方输出不能作为指令。
@@ -45,9 +45,10 @@
 | P3.1 | 正式背负、最小展示同步、左上角 HUD 与双客户端；[记录](P3.1-VERIFICATION.md) |
 | P3.2 | 正式单人林克时间、有效时间费用、原版一次射箭、缓降保留摔落与画面设置；[记录](P3.2-VERIFICATION.md) |
 | 核心美术 v1 | 交付的 14 编号资源已接入；[规格](CORE-ART-INTEGRATION.md)、[验收](CORE-ART-VERIFICATION.md) |
-| P4 及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
+| P4A | 本机环境温度完成；[规格](P4A-SPEC.md)、[验证](P4A-VERIFICATION.md)；dev.8 尚未上传 |
+| P4B 及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
 
-当前没有多人林克时间、料理温度、红石能源、机械、制造机或 Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
+当前没有多人林克时间、料理、红石能源、机械、制造机或 Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
 
 ## 固定环境与构建入口
 
@@ -77,6 +78,8 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 | [BackEquipment.java](../src/main/java/dev/wildcraft/equipment/BackEquipment.java) | 三类登记、真实引用、库存事务、独立保存和白名单视图 |
 | [FocusTime.java](../src/main/java/dev/wildcraft/focus/FocusTime.java) / [TimeLease.java](../src/main/java/dev/wildcraft/focus/TimeLease.java) | 自动资格、服务端有效时间、控制写入所有权、共享精力和退出；没有客户端秒数输入 |
 | [FocusClient.java](../src/client/java/dev/wildcraft/client/focus/FocusClient.java) | 弓显示预测、原版帧级松弓、追加后处理与声音；设置仅客户端保存 |
+| [EnvironmentTemperature.java](../src/main/java/dev/wildcraft/temperature/EnvironmentTemperature.java) / [TemperatureSampler.java](../src/main/java/dev/wildcraft/temperature/TemperatureSampler.java) | 服务端当地环境采样、低频本人同步、生命周期；不保存体温、不产生额外惩罚 |
+| [TemperatureHud.java](../src/client/java/dev/wildcraft/client/temperature/TemperatureHud.java) | 帧级平滑、七档回差、心/精力下方读数、独立可关闭色调，林克时间优先 |
 | [network/](../src/main/java/dev/wildcraft/network) | 受限输入意图与状态；不是客户端最终数值 |
 | [WildcraftClient.java](../src/client/java/dev/wildcraft/client/WildcraftClient.java) | 客户端注册与输入/HUD/渲染入口 |
 | [StaminaHud.java](../src/client/java/dev/wildcraft/client/hud/StaminaHud.java) / [UpperLeftHeartsMixin.java](../src/client/java/dev/wildcraft/mixin/client/UpperLeftHeartsMixin.java) | 健康层之后绘制精力，包装原版红心只改变坐标 |
@@ -92,11 +95,12 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 - `back_equipment`：独立格式 1，三个已知位置与完整签名，只验证现有堆栈，绝不从签名恢复物品。运行中跟踪真实对象；原版事务前后均唯一的复制移动才重绑，歧义清空。
 - 背负展示仅同步模型、耐久、染色、盾图案和光效等白名单，不泄露全背包、名称、私人容器或任意组件。手/背互斥由服务端真实引用决定，不能用外观相同隐藏另一把备用剑。
 - `focus_view` 只同步本人 active/session/服务端弓时长，技能与控制租约不保存；`wildcraft-focus.json` 为本机表现格式 1，旧三类玩家保存格式不变。
+- `temperature_view` 只有一个有界浮点目标，非持久且仅本人同步；重连/复活/切维度重新采样。`wildcraft-temperature.json` 格式 1 只保存本机边缘色调，不改旧 Focus 格式。
 - 攀爬、滑翔、林克时间、输入与会话均瞬时；过期、死亡、维度和重连清理，不恢复动作、不免费补满精力。
 - 复活处理排在 Fabric 附件转移后。跨维度测试必须等原版加载确认，不能为让测试伤害生效删除原版保护。
 - 升级先用世界副本；真实用户数据迁移需要对应授权。保留旧读取；回退使用对应世界备份与旧包，而不是单独替换 JAR。
 
-## 已完成 P3.2 与下一阶段 P4A
+## 已完成 P3.2 / P4A 与下一阶段 P4B
 
 当前技能合同见 [P3.2-SPEC](P3.2-SPEC.md)，开发默认 5 TPS / 每有效秒 10 精力 / 最多计入 250 ms 单步 / 最长 25 ms 等待轮询。弓首版，弩不触发；只允许未发布且恰有一名真实玩家的集成单人服务端。预先已经慢到 5 TPS 或更低时拒绝接管，避免把世界加速。
 
@@ -108,13 +112,13 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 - `FocusItemMixin` 只校准使用剩余时间并走一次原版 release；缓降不清零摔落距离。客户端新同步样本修正预测，避免卡顿后永久超前。
 - GPU 原创后处理和独立有效开关；关闭画面保留技能、费用和 HUD。默认不启用轻闪/纹理/FOV；核心美术提供两份原创提示音。
 
-下一计划 P4A：环境温度读数、修正、平滑和 HUD。先阅读温度原设计和规划第 9 节；普通冷热不新增普遍伤害、减速或精力罚款。不提前实现 P4B 的料理持久效果。画面保持林克时间瞄准优先，温度 HUD 保留，避免不受限滤镜叠加。只有本轮用户授权的目标才实施，不因本清单自动开始下一阶段。
+P4A 已按 [规格](P4A-SPEC.md) 实现。下一计划 P4B：阅读原温度设计、规划第 9 节与 NEXT-DEVELOPMENT-PLAN 第 5 节，先确定烹饪交互、首批成品、效果覆盖/时长、精力效果和有限细雪辅助。普通冷热仍不新增普遍伤害、减速或精力罚款；保暖不是完全冻结免疫，耐热不是抗火。现有温度读数不能算作全部 P4。只有用户授权的目标才实施，不因本清单自动开始下一阶段。
 
 R1 保持独立研究代码；实验开始时主动退出并阻止当前正式拉弓会话，防止两个控制器争夺同一次使用，历史 R1 全套仍回归。普通客户端测量在 [FocusNativeProbe](../src/gametest/java/dev/wildcraft/test/research/time/FocusNativeProbe.java)，`fabric.client.gametest` 必须为 null。静态 NoGravity 场景只测时钟、世界/实体速率、蓄力与原版射箭；真正下降、反复拉弓与落地伤害在独立生命周期场景测。
 
 ## 测试与证据标准
 
-P3.2 本机新增有效时间 10 项检查、2 项 GameTest 和 1 个成品客户端测试类，P3.2 当时共 27 GameTest（26 项目 + 1 原版）、8 个客户端测试类；核心美术基线扩展为 28 GameTest、9 个客户端测试类，见 CORE-ART-VERIFICATION.md，以及 4 项普通客户端真实计时。历史 P3.1 的独立双客户端与无测试模组服务端证据保留。精力/攀爬/滑翔/R0/R1 继续回归。普通 `test` 没有来源，不算测试通过。
+P3.2 本机新增有效时间 10 项检查、2 项 GameTest 和 1 个成品客户端测试类，P3.2 当时共 27 GameTest（26 项目 + 1 原版）、8 个客户端测试类；核心美术基线扩展为 28 GameTest、9 个客户端测试类，见 CORE-ART-VERIFICATION.md，以及 4 项普通客户端真实计时。P4A 将本机回归扩展为 32 GameTest、10 类成品客户端，并新增温度纯规则检查及专项客户端；详见 P4A-VERIFICATION。历史 P3.1 的独立双客户端与无测试模组服务端证据保留。精力/攀爬/滑翔/R0/R1 继续回归。普通 `test` 没有来源，不算测试通过。
 
 ```sh
 ./dev.sh runDatagen
@@ -141,4 +145,4 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## 可以交给下一位 AI 的起始任务
 
-> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、规划 v2 与 P3.2-SPEC/VERIFICATION。Wildcraft 已完成本机 P3.2，版本 0.1.0-dev.7，核心美术 v1 已接入，公开 main 与本次交接已同步 dev.7。保留精力、攀爬、独立伞槽、双手收纳、真实背负、左上角 HUD 和单人林克时间。检查本轮目标、分支和已有决定，在用户授权范围内完成实现与验证。下一计划阶段 P4A 为环境温度，普通冷热不新增伤害、减速或精力费用；料理与细雪辅助在 P4B。多人全服减速仍禁止，新增发布需明确授权。
+> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P4A-SPEC/VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 本机版本 dev.8 已完成 P4A 环境温度；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段 P4B 需要先定稿烹饪与料理效果规则，再在授权范围内实现。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。

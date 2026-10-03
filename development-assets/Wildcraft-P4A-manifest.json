@@ -1,0 +1,93 @@
+{
+  "stage": "P4A",
+  "date": "2026-10-04",
+  "version": "0.1.0-dev.8+mc26.3",
+  "branch": "feature/ambient-temperature",
+  "base_commit": "55f72ee7105decd9dca8a424e19b96f0c38fb2e7",
+  "publication": "local_only_not_uploaded",
+  "source_snapshot_files": 281,
+  "checks": {
+    "server_gametests": 32,
+    "packaged_client_classes": 10,
+    "focused_temperature_client": "passed",
+    "standalone_production_server": "passed",
+    "temperature_rules": "passed"
+  },
+  "files": [
+    {
+      "path": "wildcraft-0.1.0-dev.8+mc26.3.jar",
+      "bytes": 237175,
+      "sha256": "8207d202de9a6375057b046cf497d6fd377043dcaa22cfe53149e2238caee1fa"
+    },
+    {
+      "path": "Wildcraft-P4A-source.zip",
+      "bytes": 1765487,
+      "sha256": "bff4b899d3c7268ec2e504b5b264742c07625938b19453b42c566a79c27b1557"
+    },
+    {
+      "path": "verification/p4a/build.log",
+      "bytes": 26441,
+      "sha256": "9fbdd7480fef5cccc6654fa515cc427cb850c8939143da523873d13a58eb6d5f"
+    },
+    {
+      "path": "verification/p4a/campfire-warm.png",
+      "bytes": 140178,
+      "sha256": "c9d359783d00a3b97fc9a20f31e9108ed20d4f79957858c13ed543f6aab2aac3"
+    },
+    {
+      "path": "verification/p4a/datagen.log",
+      "bytes": 6468,
+      "sha256": "bc5f3e9b9932308f53186bf7820e9ab659eb6da51592e1135163abacc1387490"
+    },
+    {
+      "path": "verification/p4a/desert-hot.png",
+      "bytes": 128987,
+      "sha256": "7aa88f479f9076c321a21fff52f949d3523a90dc2fe27470fdd05fd8030f7c44"
+    },
+    {
+      "path": "verification/p4a/focus-priority.png",
+      "bytes": 89130,
+      "sha256": "28fff178859b17ddd9bc902374babb898ed54c8a687d4d3e80d7dc443bda1418"
+    },
+    {
+      "path": "verification/p4a/gametest-results.xml",
+      "bytes": 4788,
+      "sha256": "5544a8deaff4e6423babb490409224a2f2b57088e4f59525848b393cc95b7b1e"
+    },
+    {
+      "path": "verification/p4a/multiple-hearts-stamina.png",
+      "bytes": 109623,
+      "sha256": "e7e1c919b7aceec0afeb30cc6f2da844832b6138fb2896c0d14a3ef271f67fe8"
+    },
+    {
+      "path": "verification/p4a/native-leather-boots.png",
+      "bytes": 60281,
+      "sha256": "adf8f1d67bb94ab073a99a3f239ec6e23055aee2d7797661059cea344370020b"
+    },
+    {
+      "path": "verification/p4a/packaged-client.log",
+      "bytes": 299304,
+      "sha256": "2b9eb9403706be244acff8a30ca4a8aacf186f4e7c39f70fcc3b5dbc8b00e67d"
+    },
+    {
+      "path": "verification/p4a/snow-cold.png",
+      "bytes": 159260,
+      "sha256": "a5cf48bc2d04c18df941999209e9af3f4a3c5c743e1c32e8eb29f97742f94a2e"
+    },
+    {
+      "path": "verification/p4a/standalone-server.log",
+      "bytes": 6723,
+      "sha256": "53bb1726312005fc05fd33a4a1241c9ce0874e1cc2e0a031bf638941ac4cd102"
+    },
+    {
+      "path": "verification/p4a/temperature-client.log",
+      "bytes": 78808,
+      "sha256": "4c98d8f0da4fe8f93a72f16f8b8afff3b654f421b2619177fd1d20c546804695"
+    },
+    {
+      "path": "verification/p4a/temperature-gliding.png",
+      "bytes": 57318,
+      "sha256": "2c0cc7e1650eef957b0e30bc2ba519e89c664b597fd2171209569dc8ca0fb043"
+    }
+  ]
+}

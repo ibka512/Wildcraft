@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前可运行版本为 **0.1.0-dev.7 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间和核心美术 v1。温度、料理、能源、机械及正式 Fuse 尚未实现。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.8 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1 和 P4A 环境温度。料理、能源、机械及正式 Fuse 尚未实现。公开 main 与最新 Release 仍为 dev.7，本次 dev.8 尚未上传。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -18,6 +18,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 | 背负装备 | 剑/斧、盾、弓/弩实际使用后登记；仅切快捷栏不登记；三个视觉引用不增加容量，失去真实物品后清除 |
 | 探索界面 | 原版红心在左上角，精力数值与短条在下方；多行红心自动适配；底部保留原版经验、饥饿和骑乘显示 |
 | 单人林克时间 | 未开放 LAN 的单人生存世界，空中实际拉弓自动真减速；共享精力，保持原版射箭语义，有限缓降且保留摔落伤害；F8 调整画面 |
+| 环境温度 P4A | 群系、当地雨雪、浸水和可见热源影响七档读数；左上角平滑显示；F8 关闭边缘色调；普通冷热无额外惩罚，原版细雪/皮革规则保留 |
 | 核心美术 v1 | 原创滑翔伞网格、标准/细手臂握持和攀爬姿态、五类背负挂点与短落定、精力图集、专注画面/音效及设置页 |
 
 ![第三人称滑翔](development-assets/verification/core-art-v1/glider-third-person-front.png)
@@ -30,17 +31,19 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 ## 下载与安装
 
-- **当前正式游戏包：[wildcraft-0.1.0-dev.7+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)**。
+- **本机最新开发包：[wildcraft-0.1.0-dev.8+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.8+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
 - [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
 - [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
 
 在独立 Minecraft **26.3** 实例安装 Fabric Loader **0.19.5**，将 Wildcraft 正式 JAR 与 Fabric API **0.161.0+26.3** 放入 `mods/`；客户端与服务端均需安装。不要安装 `-gametest.jar` 或 `-sources.jar`。开发阶段使用专用测试世界，升级前保留世界备份。
 
-当前 dev.7 JAR SHA-256：
+已公开 dev.7 JAR SHA-256（历史包保持不变）：
 
 ```text
 91b8a92e9eb69119b8a663c29d0f259e9a0bff4fd98ba2d1a6ad87305af6232a
 ```
+
+本机 dev.8 JAR SHA-256：`8207d202de9a6375057b046cf497d6fd377043dcaa22cfe53149e2238caee1fa`。本阶段 [验证](docs/P4A-VERIFICATION.md)、[资产校验](development-assets/Wildcraft-P4A-SHA256SUMS.txt) 随开发分支保存。
 
 `v0.1.0-dev.*+mc26.3` 标签固定游戏里程碑；`handoff-dev7-2026-10-03` 固定本次交接文档与构建入口。旧交接 [handoff-2026-10-03](https://github.com/ibka512/Wildcraft/releases/tag/handoff-2026-10-03) 仍对应 dev.5，不代表当前版本。
 
@@ -75,7 +78,7 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 验证与可信范围
 
-核心美术基线已在 macOS 实际通过：精力 **13 个示例 + 1000 组边界检查**、有效时钟 **10 项检查**、**28 项服务端 GameTest**、**9 类成品客户端回归**、两个独立普通客户端观察，以及无测试模组独立服务端启动和保存退出。另有 120fps、30fps、附魔及服务端阻塞四种普通客户端真实计时。证据见 [核心美术验收](docs/CORE-ART-VERIFICATION.md)；本次迁移验证单独记录在 [迁移与交接记录](docs/MIGRATION-HANDOFF-2026-10-03.md)。
+核心美术基线已在 macOS 实际通过：精力 **13 个示例 + 1000 组边界检查**、有效时钟 **10 项检查**、**28 项服务端 GameTest**、**9 类成品客户端回归**、两个独立普通客户端观察，以及无测试模组独立服务端启动和保存退出。本机 P4A 已扩展到 **32 项服务端 / 10 类成品客户端回归**，新增温度规则、专项客户端与生命周期检查，见 [P4A 验证](docs/P4A-VERIFICATION.md)。另有 120fps、30fps、附魔及服务端阻塞四种普通客户端真实计时。证据见 [核心美术验收](docs/CORE-ART-VERIFICATION.md)；本次迁移验证单独记录在 [迁移与交接记录](docs/MIGRATION-HANDOFF-2026-10-03.md)。
 
 ```sh
 ./dev.sh runDatagen
@@ -95,11 +98,11 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-近期按 **P4A 环境温度 → P4B 料理** 推进。普通冷热主要提供环境信息；不新增普遍伤害、减速或精力费用。保暖辅助原版细雪且有限，耐热不等于抗火。P4A 与 P4B 合起来才完成这一玩法范围。
+P4A 环境温度已完成本机开发与验收，见 [规格](docs/P4A-SPEC.md) 和 [验证](docs/P4A-VERIFICATION.md)。下一步 **P4B 料理与有限细雪辅助**：先明确烹饪载体、首批成品、效果及计时规则，再实现完整烹饪循环。普通冷热主要提供环境信息；不新增普遍伤害、减速或精力费用。保暖辅助原版细雪且有限，耐热不等于抗火。P4A 与 P4B 合起来才完成这一玩法范围。
 
 | 顺序 | 后续范围 |
 | --- | --- |
-| P4A / P4B | 群系/天气/水/热源、平滑 HUD；烹饪、效果时长、细雪与精力辅助 |
+| P4B | 烹饪、效果时长、有限细雪与精力辅助；P4A 环境读数已完成 |
 | P5 | 红石信号与电量分离、固定无限能源限速、充电器和有限电池 |
 | P6 / P7 | 主体、有限安装节点、吸附/拆卸回收；翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置 |
 | P8 | 古代装置制造机；投入一次、确定结果保存、中断恢复 |
@@ -117,7 +120,7 @@ src/main/                  服务端可加载的公共逻辑与运行资源
 src/client/                输入、HUD、渲染、界面和数据生成
 src/main/generated/        生成模型与中英文资源
 src/gametest/              服务端/客户端检查及隔离研究
-src/rulesTest/             精力和有效时钟规则检查
+src/rulesTest/             精力、有效时钟和温度平滑/回差规则检查
 art/approved-v1/           当前采用的 Blender、像素、配置等源稿
 art/tools/                 网格和角色姿态转换工具
 art/production-docs/       美术制作进度、资产清单与后续制作规划

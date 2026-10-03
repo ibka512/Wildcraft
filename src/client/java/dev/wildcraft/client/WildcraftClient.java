@@ -11,6 +11,7 @@ public final class WildcraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         StaminaHud.initialize();
+        dev.wildcraft.client.temperature.TemperatureHud.initialize();
         dev.wildcraft.client.render.CharacterPoses.initialize();
         dev.wildcraft.client.focus.FocusClient.initialize();
         ClimbControls.initialize();

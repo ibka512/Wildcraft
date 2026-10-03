@@ -162,3 +162,10 @@ R1 已在隔离测试模块验证单人世界减速、弓计时、独立费用�
 等待世界刻期间只处理已有输入队列和费用；原版弓释放路径执行一次，使用剩余时间由服务端校准。客户端帧只做显示预测、松弓响应与视效；新服务端样本校正预测。下降不重设累计距离、不授予飞行。`TimeLease` 用每次速率写入修订判断所有权，外部同值写入也保留，原来已低于/等于目标速度时拒绝接管。
 
 表现追加自身后处理，不重写其他效果列表。原版 GPU 管线运行原创 GLSL，13 个组合配置由 `FocusEffectProvider` 生成；本机 JSON 只存表现。没有新生产依赖或玩家数据迁移。R1 用例明确交还正式控制后才开始研究，仍不进入正式 JAR。
+
+
+## P4A 已实施边界（2026-10-04）
+
+`temperature/TemperatureRules` 定义有界相对指数、插值和档位回差；`TemperatureSampler` 只访问已加载的附近区块并沿用原版当地降水；`EnvironmentTemperature` 每 10 世界刻错峰采样与生命周期发布。`network/TemperatureView` 只承载一个浮点目标，以 `AttachmentSyncPredicate.targetOnly()` 给本人，不持久化、不死亡转移，没有客户端上报最终值接口。
+
+客户端 `temperature/TemperatureHud` 在现有精力层之后显示，按真实帧时间平滑并尊重单人暂停；`TemperatureOptions` 独立本机格式 1。F8 原生设置页保留六项 Focus 控制，增加一项温度控制。公共代码不引用客户端。原精力、伞槽、背负保存格式与 Focus 设置保持兼容；本阶段没有存档数据迁移。详见 [P4A-SPEC](P4A-SPEC.md)。

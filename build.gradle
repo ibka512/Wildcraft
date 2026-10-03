@@ -91,8 +91,14 @@ def verifyRules = tasks.register('verifyRules', JavaExec) {
     }
 }
 
+def verifyTemperatureRules = tasks.register('verifyTemperatureRules', JavaExec) {
+    dependsOn tasks.named('rulesTestClasses')
+    classpath = sourceSets.rulesTest.runtimeClasspath
+    mainClass = 'dev.wildcraft.test.TemperatureRulesCheck'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }
+}
 tasks.named('check') {
-    dependsOn verifyRules
+    dependsOn verifyRules, verifyTemperatureRules
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -263,4 +269,31 @@ tasks.register('runCoreArtClientTest', net.fabricmc.loom.task.prod.ClientProduct
     jvmArgs.add('-Dfabric.client.gametest')
     useXVFB = false
     runDir = layout.buildDirectory.dir('run/core-art-client-test')
+}
+
+// Focused P4A production-JAR checks; the full packaged suite also includes this class.
+def temperatureMetadataDirectory = layout.buildDirectory.dir('temperature-test-metadata').get().asFile
+def temperatureMetadata = tasks.register('temperatureTestMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(temperatureMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.TemperatureClientSmokeTest']
+        def destination = new File(temperatureMetadataDirectory, 'fabric.mod.json')
+        destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def temperatureTestJar = tasks.register('temperatureTestJar', Jar) {
+    dependsOn temperatureMetadata
+    archiveClassifier = 'temperature-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(temperatureMetadataDirectory)
+}
+tasks.register('runTemperatureClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(temperatureTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/temperature-client-test')
 }

@@ -13,7 +13,9 @@
 | R1 | 沿用 P3 正式 JAR，研究不进运行包 | [R1](Wildcraft-R1-source.zip) |
 | P3.1 | [dev.5，已公开](wildcraft-0.1.0-dev.5+mc26.3.jar) | [P3.1](Wildcraft-P3.1-source.zip) |
 | P3.2 | [dev.6，历史阶段](wildcraft-0.1.0-dev.6+mc26.3.jar) | [P3.2](Wildcraft-P3.2-source.zip) |
-| 核心美术 v1 | [dev.7，当前交接](wildcraft-0.1.0-dev.7+mc26.3.jar) | [核心美术](Wildcraft-核心美术-v1-source.zip) |
+| 核心美术 v1 | [dev.7，已公开交接](wildcraft-0.1.0-dev.7+mc26.3.jar) | [核心美术](Wildcraft-核心美术-v1-source.zip) |
+
+| P4A 环境温度 | [dev.8，本机未上传](wildcraft-0.1.0-dev.8+mc26.3.jar) | [P4A](Wildcraft-P4A-source.zip) |
 
 所有游戏包使用 Minecraft 26.3 和对应 Loader/Fabric API。旧源码 ZIP 是当时快照，不含本次新增交接说明；最新源码及完整历史用主仓库获取。不能把研究模组当正式功能安装。
 
@@ -35,6 +37,7 @@
 | [verification/p31](verification/p31) | 25 项 GameTest、7 客户端测试类、真正双客户端、独立服、22 张截图；[记录](../docs/P3.1-VERIFICATION.md) |
 | [verification/core-art-v1](verification/core-art-v1) | 28 GameTest、9 类客户端、原版标准/细手臂握点、真实双客户端攀爬/背负、独立服、4 种普通计时；[记录](../docs/CORE-ART-VERIFICATION.md) |
 | [verification/p32](verification/p32) | 27 GameTest、8 类客户端、4 次真实计时、无测试模组服、5 张截图；[记录](../docs/P3.2-VERIFICATION.md) |
+| [verification/p4a](verification/p4a) | 32 GameTest、温度规则、专项/完整客户端、无测试模组独立服及温度截图；[记录](../docs/P4A-VERIFICATION.md) |
 | [debug-history](debug-history) | 原工作目录的诊断/失败尝试日志与导出辅助脚本；不是最终验收，旧脚本只作资料读取 |
 
 原始报告、manifest 和历史源码 ZIP 使用原交付布局的 `wildcraft/` 与 `verification/` 相对路径，可能包含当时机器路径；这里保留原字节供对照。上表所链接的当前 `docs/` 报告已适配 GitHub 布局。不要直接执行归档脚本来覆盖当前目录。
@@ -53,3 +56,8 @@ P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SH
 ## dev.7 交接更新
 
 当前公开版本已同步核心美术 v1；完整美术交付及桌面制作资料见 [大文件下载索引](../docs/ASSET-DOWNLOADS.md)。最新后续计划见 [NEXT-DEVELOPMENT-PLAN](../docs/NEXT-DEVELOPMENT-PLAN.md)，迁移验证见 [MIGRATION-HANDOFF](../docs/MIGRATION-HANDOFF-2026-10-03.md)。旧清单的历史基线字段保持来源语义，不等于当前游戏版本。
+
+
+## dev.8 P4A 本机追加
+
+开发分支新增环境温度；公开 main/Release 仍为 dev.7，本次未上传。校验见 [P4A SHA256](Wildcraft-P4A-SHA256SUMS.txt)，机器清单见 [P4A manifest](Wildcraft-P4A-manifest.json)。P4A 源码 ZIP 包含当前源码、运行资源、美术源稿、构建入口与文档；不递归打包历史 ZIP、安装包、运行世界或缓存。完整历史继续由 Git 仓库与已有 Release 保存。

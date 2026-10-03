@@ -1,8 +1,8 @@
 # 开发环境、运行与操作手册
 
-Minecraft Java Edition 的 Fabric Mod。当前开发版本为 **P3.2 单人林克时间**，当前版本 `0.1.0-dev.7`，包含核心美术 v1，公开主分支已同步。
+Minecraft Java Edition 的 Fabric Mod。当前本机开发版本为 **P4A 环境温度**，版本 `0.1.0-dev.8`，包含核心美术 v1；公开 main/Release 仍为 dev.7，本次尚未上传。
 
-当前可用：空中拉弓自动单人慢动作、有效实际时间扣精力、原版一次射箭与保留摔落、F8 画面设置；按实际使用登记的近战/盾/弓背负、左上角红心与其下方精力显示、独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
+当前可用：七档环境温度、当地雨雪/水/热源修正、平滑读数及独立可关闭边缘色调；空中拉弓自动单人慢动作、有效实际时间扣精力、原版一次射箭与保留摔落、F8 画面设置；按实际使用登记的近战/盾/弓背负、左上角红心与其下方精力显示、独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
 
 完整开发顺序见 [开发路线](ROADMAP.md)，三项新设计的范围、衔接和验收见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)，系统边界见 [架构计划](ARCHITECTURE.md)，精力规则见 [P1 规则](P1-RULES.md)，研究结论见 [R0 结论](R0-FINDINGS.md)。攀爬操作见 [P2 规则](P2-RULES.md)，滑翔操作见 [P3 规则](P3-RULES.md)，背负与界面见 [P3.1 规则](P3.1-RULES.md)，本次验证见 [P3.1 验证记录](P3.1-VERIFICATION.md)。历史验证保留为 [P3](P3-VERIFICATION.md)、[P2](P2-VERIFICATION.md)、[P1](P1-VERIFICATION.md) 与 [P0](VERIFICATION.md)。
 
@@ -101,7 +101,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 ## 安装构建结果
 
-构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.7.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
+构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.8.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
 
 在独立的 Minecraft 26.3 实例中安装 Fabric Loader 0.19.5，将 Wildcraft 游戏 JAR 与 Fabric API 0.161.0+26.3 放进该实例的 `mods` 目录。客户端和服务端都需要安装。
 
@@ -167,10 +167,24 @@ macOS 运行目录位于 `~/Library/Caches/Wildcraft/builds/<项目路径标识>
 
 ## 后续工作
 
-P3.1 已补齐背负与左上角 HUD，P3.2 完成正式单人林克时间，与共享精力、攀爬和滑翔衔接；联机不启用全服减速。下一计划 P4A/P4B 分别完成环境温度和料理/细雪辅助。原有能源、机械、制造机、Fuse 和天气继续保留，完整顺序见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。
+P3.1 已补齐背负与左上角 HUD，P3.2 完成正式单人林克时间，与共享精力、攀爬和滑翔衔接；联机不启用全服减速。P4A 已完成环境温度，下一计划 P4B 完成料理与有限细雪辅助。原有能源、机械、制造机、Fuse 和天气继续保留，完整顺序见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。
 
 运行依赖只有 Fabric Loader 与 Fabric API。公开发行许可证尚未选择；模板与第三方工具来源见 `NOTICE.md`。
 
 版本固定在 `gradle.properties`。不跟随快照或每日构建自动升级；Minecraft 升级在独立分支中完成，确认存档、联网与资源兼容后再合并。
 
 P3.2 当前共 27 项 GameTest、8 个成品客户端类，另有 4 项普通客户端计时，见 [P3.2 验证](P3.2-VERIFICATION.md)。技能控制不保存，旧玩家格式保持；设置为本机 `config/wildcraft-focus.json`。
+
+
+## P4A 环境温度操作
+
+左上角精力下方显示极冷到极热七档环境状态。原版群系、当前位置实际雨雪、浸水、可见营火/火/岩浆影响读数；遮蔽、距离与点燃状态生效。普通冷热不额外扣血、减速或增加精力费用，原版细雪冻结及皮革防护照常。状态会逐渐过渡，读数是环境相对冷热而非摄氏度。
+
+按 F8 在 Wildcraft 画面设置中切换“温度边缘色调”；关闭不隐藏温度读数，也不影响玩法。林克时间主动暂停该色调，保留温度状态。偏好保存在本机 `config/wildcraft-temperature.json`，旧 Focus 偏好保持原格式。
+
+管理员只读诊断：`/wildcraft temperature status`，或指定玩家。温度不保存为体温，进入/复活/切维度重新取样。详见 [规格](P4A-SPEC.md) 和 [验证](P4A-VERIFICATION.md)。专项真实客户端：
+
+```sh
+# 仅操作者已阅读并接受 Minecraft EULA 后使用参数
+./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runTemperatureClientTest
+```

@@ -24,10 +24,10 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add("subtitles.wildcraft.focus.enter", chinese ? "进入专注" : "Enter focus");
         translations.add("subtitles.wildcraft.focus.exit", chinese ? "退出专注" : "Leave focus");
         translations.add(WildcraftItems.PARAGLIDER, chinese ? "滑翔伞" : "Paraglider");
-        translations.add("key.wildcraft.focus_settings", chinese ? "林克时间画面设置" : "Focus presentation settings");
+        translations.add("key.wildcraft.focus_settings", chinese ? "Wildcraft 画面设置" : "Wildcraft presentation settings");
         translations.add("key.category.wildcraft.focus_settings", chinese ? "Wildcraft · 画面" : "Wildcraft \u00b7 Presentation");
-        translations.add("focus.wildcraft.settings", chinese ? "林克时间 · 画面设置" : "Focus \u00b7 Presentation");
-        translations.add("focus.wildcraft.settings.hint", chinese ? "只调整画面，时间、精力与提示音保持生效" : "Presentation only; skill and stamina stay active");
+        translations.add("focus.wildcraft.settings", chinese ? "Wildcraft · 画面设置" : "Wildcraft \u00b7 Presentation");
+        translations.add("focus.wildcraft.settings.hint", chinese ? "仅调整表现，技能、精力与环境读数保持生效" : "Presentation only; skill, stamina and environment readings stay active");
         translations.add("focus.wildcraft.strength", chinese ? "效果强度：%s" : "Effect strength: %s");
         translations.add("focus.wildcraft.strength.0", chinese ? "关闭" : "Off");
         translations.add("focus.wildcraft.strength.1", chinese ? "弱" : "Weak");
@@ -44,6 +44,12 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add("focus.wildcraft.help.pattern", chinese ? "仅在画面外围显示静态细纹。" : "Static contour lines at the periphery only.");
         translations.add("focus.wildcraft.help.pulse", chinese ? "可选低精力轻闪；默认关闭。" : "Optional gentle low-stamina pulse; off by default.");
         translations.add("focus.wildcraft.help.fov", chinese ? "可选轻微视野收窄；默认关闭。" : "Optional slight FOV reduction; off by default.");
+        String[] thermalNames = chinese ? new String[]{"极冷", "寒冷", "偏冷", "舒适", "偏暖", "炎热", "极热"}
+                : new String[]{"Very cold", "Cold", "Cool", "Comfortable", "Warm", "Hot", "Very hot"};
+        for (int i = 0; i < thermalNames.length; i++) translations.add("hud.wildcraft.temperature." + dev.wildcraft.temperature.TemperatureRules.STATES[i], thermalNames[i]);
+        translations.add("command.wildcraft.temperature.status", chinese ? "环境 %s；指数 %s（非摄氏度）；群系 %s / 天气 %s / 水 %s / 热源 %s；读取 %s / 射线 %s" : "Environment %s; index %s (not Celsius); biome %s / weather %s / water %s / heat %s; reads %s / rays %s");
+        translations.add("temperature.wildcraft.tint", chinese ? "温度边缘色调：%s" : "Temperature edge tint: %s");
+        translations.add("temperature.wildcraft.help.tint", chinese ? "轻微冷热边缘提示；专注时暂停，关闭后温度读数仍保留。" : "Subtle warm/cold edges; suppressed during focus. Readout remains when disabled.");
         translations.add("slot.wildcraft.paraglider", chinese ? "滑翔伞装备位 · 仅放滑翔伞" : "Paraglider slot · paraglider only");
         translations.add("hud.wildcraft.gliding", chinese ? "滑翔中 · 再按%s收伞" : "Gliding · press %s to close");
         translations.add("key.wildcraft.climb", chinese ? "按住攀爬 / 松开放手" : "Hold to climb / release to let go");

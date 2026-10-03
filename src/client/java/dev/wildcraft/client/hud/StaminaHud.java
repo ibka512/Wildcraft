@@ -22,6 +22,7 @@ public final class StaminaHud {
     private static int visibleUntil;
     private static int heartBottom = 21;
     private static boolean recovering;
+    public static int heartBottom() { return heartBottom; }
     public static void setHeartBottom(int bottom) { heartBottom = bottom; }
     private StaminaHud() { }
     public static void initialize() {

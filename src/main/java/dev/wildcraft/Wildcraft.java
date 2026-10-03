@@ -34,6 +34,8 @@ public final class Wildcraft implements ModInitializer {
         PlayerStamina.initialize();
         dev.wildcraft.focus.FocusTime.initialize();
         StaminaCommands.initialize();
-        LOGGER.info("Wildcraft P3.2 common initialization complete; stamina, climbing and paraglider registered.");
+        dev.wildcraft.temperature.EnvironmentTemperature.initialize();
+        dev.wildcraft.temperature.TemperatureCommands.initialize();
+        LOGGER.info("Wildcraft P4A initialization complete; environment temperature and traversal registered.");
     }
 }
