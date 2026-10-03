@@ -10,8 +10,10 @@ import net.fabricmc.api.ClientModInitializer;
 public final class WildcraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        net.minecraft.client.gui.screens.MenuScreens.register(dev.wildcraft.cooking.CookingContent.MENU, dev.wildcraft.client.cooking.CookingScreen::new);
         StaminaHud.initialize();
         dev.wildcraft.client.temperature.TemperatureHud.initialize();
+        dev.wildcraft.client.cooking.MealHud.initialize();
         dev.wildcraft.client.render.CharacterPoses.initialize();
         dev.wildcraft.client.focus.FocusClient.initialize();
         ClimbControls.initialize();

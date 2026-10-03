@@ -14,7 +14,8 @@
     "BackInventoryMixin",
     "FocusEpochMixin",
     "FocusItemMixin",
-    "FocusPacketMixin"
+    "FocusPacketMixin",
+    "MealFreezeMixin"
   ],
   "client": [
     "client.ParagliderAvatarMixin",

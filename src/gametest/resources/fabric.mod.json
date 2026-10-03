@@ -34,7 +34,8 @@
       "dev.wildcraft.test.BackEquipmentClientSmokeTest",
       "dev.wildcraft.test.FocusClientSmokeTest",
       "dev.wildcraft.test.CoreArtClientSmokeTest",
-      "dev.wildcraft.test.TemperatureClientSmokeTest"
+      "dev.wildcraft.test.TemperatureClientSmokeTest",
+      "dev.wildcraft.test.CookingClientSmokeTest"
     ]
   }
 }

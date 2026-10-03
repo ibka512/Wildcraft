@@ -14,11 +14,13 @@ public final class WildcraftModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators generator) {
-        // P0 does not register blocks.
+        generator.createNonTemplateModelBlock(dev.wildcraft.cooking.CookingContent.POT);
+        generator.registerSimpleItemModel(dev.wildcraft.cooking.CookingContent.POT, net.minecraft.client.data.models.model.ModelLocationUtils.getModelLocation(dev.wildcraft.cooking.CookingContent.POT));
     }
 
     @Override
     public void generateItemModels(ItemModelGenerators generator) {
+        generator.generateFlatItem(dev.wildcraft.cooking.CookingContent.MEAL, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(WildcraftItems.TEST_CORE, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(WildcraftItems.PARAGLIDER, ModelTemplates.FLAT_ITEM);
     }

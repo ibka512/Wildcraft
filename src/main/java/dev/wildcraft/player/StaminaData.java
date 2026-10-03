@@ -49,7 +49,9 @@ public record StaminaData(int schemaVersion, int highestLevel, double stamina, i
         return new StaminaData(SCHEMA_VERSION, highestLevel, capacity(), 0);
     }
 
-    public StaminaData tick(boolean canRecover) {
+    public StaminaData tick(boolean canRecover) { return tick(canRecover, 1); }
+
+    public StaminaData tick(boolean canRecover, double multiplier) {
         if (stamina == capacity()) {
             return recoveryDelay == 0 ? this : new StaminaData(SCHEMA_VERSION, highestLevel, stamina, 0);
         }
@@ -60,6 +62,6 @@ public record StaminaData(int schemaVersion, int highestLevel, double stamina, i
         if (recoveryDelay > 0) {
             return new StaminaData(SCHEMA_VERSION, highestLevel, stamina, recoveryDelay - 1);
         }
-        return new StaminaData(SCHEMA_VERSION, highestLevel, StaminaRules.recover(stamina, capacity()), 0);
+        return new StaminaData(SCHEMA_VERSION, highestLevel, Math.min(capacity(), stamina + StaminaRules.RECOVERY_PER_TICK * (Double.isFinite(multiplier) ? Math.clamp(multiplier, 1, 2) : 1)), 0);
     }
 }

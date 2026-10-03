@@ -66,7 +66,7 @@ public final class PlayerStamina {
 
     public static void tick(ServerPlayer player) {
         StaminaData before = get(player);
-        StaminaData after = before.observeLevel(player.experienceLevel).tick(canRecover(player));
+        StaminaData after = before.observeLevel(player.experienceLevel).tick(canRecover(player), dev.wildcraft.cooking.CookingEffects.recoveryMultiplier(player));
         if (!after.equals(before)) {
             player.setAttached(DATA, after);
         }

@@ -21,6 +21,26 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("block.wildcraft.cooking_pot", chinese ? "料理锅" : "Cooking Pot");
+        translations.add("item.wildcraft.meal", chinese ? "料理" : "Cooked Meal");
+        translations.add("item.wildcraft.meal.vegetable", chinese ? "蔬菜炖煮" : "Vegetable Stew");
+        translations.add("item.wildcraft.meal.warming", chinese ? "保暖料理" : "Warming Stew");
+        translations.add("item.wildcraft.meal.cooling", chinese ? "耐热料理" : "Cooling Fruit Bowl");
+        translations.add("item.wildcraft.meal.recovery", chinese ? "精力料理" : "Restorative Mushroom Stew");
+        translations.add("meal.wildcraft.details", chinese ? "效果 %s 级 · %s 秒" : "Level %s \u00b7 %s seconds");
+        translations.add("meal.wildcraft.help.1", chinese ? "减缓细雪冻结；不会阻止完全冻结后的伤害" : "Slows powder-snow freezing; does not prevent freezing damage");
+        translations.add("meal.wildcraft.help.2", chinese ? "减弱热色调；不提供抗火或岩浆免疫" : "Softens heat tint; no fire or lava protection");
+        translations.add("meal.wildcraft.help.3", chinese ? "在原有条件下加快精力恢复；不提高上限" : "Faster eligible stamina recovery; capacity unchanged");
+        translations.add("cooking.wildcraft.ingredients", chinese ? "食材" : "Ingredients");
+        translations.add("cooking.wildcraft.bowl", chinese ? "空碗" : "Bowl");
+        translations.add("cooking.wildcraft.status.0", chinese ? "放入匹配食材" : "Add matching ingredients");
+        translations.add("cooking.wildcraft.status.1", chinese ? "锅下需要点燃的营火" : "Light a campfire below");
+        translations.add("cooking.wildcraft.status.2", chinese ? "烹饪中" : "Cooking");
+        translations.add("cooking.wildcraft.status.3", chinese ? "放入空碗" : "Add an empty bowl");
+        translations.add("cooking.wildcraft.status.4", chinese ? "请先取走成品" : "Take the finished meal");
+        translations.add("hud.wildcraft.meal.1", chinese ? "保暖 %s · %s秒" : "Warmth %s \u00b7 %ss");
+        translations.add("hud.wildcraft.meal.2", chinese ? "耐热 %s · %s秒" : "Cooling %s \u00b7 %ss");
+        translations.add("hud.wildcraft.meal.3", chinese ? "恢复 %s · %s秒" : "Recovery %s \u00b7 %ss");
         translations.add("subtitles.wildcraft.focus.enter", chinese ? "进入专注" : "Enter focus");
         translations.add("subtitles.wildcraft.focus.exit", chinese ? "退出专注" : "Leave focus");
         translations.add(WildcraftItems.PARAGLIDER, chinese ? "滑翔伞" : "Paraglider");

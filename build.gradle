@@ -297,3 +297,30 @@ tasks.register('runTemperatureClientTest', net.fabricmc.loom.task.prod.ClientPro
     useXVFB = false
     runDir = layout.buildDirectory.dir('run/temperature-client-test')
 }
+
+// Focused P4B production-JAR checks; the full packaged suite also includes this class.
+def cookingMetadataDirectory = layout.buildDirectory.dir('cooking-test-metadata').get().asFile
+def cookingMetadata = tasks.register('cookingTestMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(cookingMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.CookingClientSmokeTest']
+        def destination = new File(cookingMetadataDirectory, 'fabric.mod.json')
+        destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def cookingTestJar = tasks.register('cookingTestJar', Jar) {
+    dependsOn cookingMetadata
+    archiveClassifier = 'cooking-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(cookingMetadataDirectory)
+}
+tasks.register('runCookingClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(cookingTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/cooking-client-test')
+}

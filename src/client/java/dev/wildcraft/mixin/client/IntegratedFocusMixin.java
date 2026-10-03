@@ -16,7 +16,10 @@ public abstract class IntegratedFocusMixin implements FocusPauseSource {
     @Override public boolean wildcraft$focusPaused() { return Minecraft.getInstance().isPaused(); }
     @Inject(method = "tickServer", at = @At("HEAD"))
     private void wildcraft$focusPause(CallbackInfo ci) {
-        if (wildcraft$focusPaused()) FocusTime.close((MinecraftServer)(Object)this, false, false);
+        if (wildcraft$focusPaused()) {
+            dev.wildcraft.cooking.CookingEffects.paused((MinecraftServer)(Object)this);
+            FocusTime.close((MinecraftServer)(Object)this, false, false);
+        }
     }
     @Inject(method = "publishServer(Lnet/minecraft/server/MinecraftServer$MultiplayerScope;I)Z", at = @At("HEAD"))
     private void wildcraft$focusLan(CallbackInfoReturnable<Boolean> ci) {

@@ -61,3 +61,7 @@ P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SH
 ## dev.8 P4A 本机追加
 
 开发分支新增环境温度；公开 main/Release 仍为 dev.7，本次未上传。校验见 [P4A SHA256](Wildcraft-P4A-SHA256SUMS.txt)，机器清单见 [P4A manifest](Wildcraft-P4A-manifest.json)。P4A 源码 ZIP 包含当前源码、运行资源、美术源稿、构建入口与文档；不递归打包历史 ZIP、安装包、运行世界或缓存。完整历史继续由 Git 仓库与已有 Release 保存。
+
+## P4B 本机新增
+
+[dev.9](wildcraft-0.1.0-dev.9+mc26.3.jar)、[源码](Wildcraft-P4B-source.zip)、[验证证据](verification/p4b)、[校验](Wildcraft-P4B-SHA256SUMS.txt)。公开仓库仍dev.7，此阶段未上传。

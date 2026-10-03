@@ -50,7 +50,9 @@ public final class TemperatureHud {
         int color = band < 3 ? 0xFFAACFE0 : band > 3 ? 0xFFE9BF85 : 0xFFCCD8C2;
         if (edgeTintVisible()) {
             int rgb = displayed < 0 ? 0x78ACD0 : 0xD49A62;
-            int alpha = (int)Math.round(Math.min(14, Math.abs(displayed) * 5));
+            var food=p.getAttached(dev.wildcraft.cooking.CookingEffects.VIEW);
+            int level=food==null?0:displayed<0?food.warmth():food.cooling();
+            int alpha = (int)Math.round(Math.min(14, Math.abs(displayed) * 5)/(level+1.0));
             // Only four pixels along the outside edge; no shader, FOV change, flash or centre overlay.
             g.fill(0, 0, 4, g.guiHeight(), alpha << 24 | rgb);
             g.fill(g.guiWidth() - 4, 0, g.guiWidth(), g.guiHeight(), alpha << 24 | rgb);
