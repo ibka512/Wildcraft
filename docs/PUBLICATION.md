@@ -1,5 +1,7 @@
 # GitHub 公开交接记录
 
+> 当前公开主分支已更新到 dev.7，最新交接为 [handoff-dev7-2026-10-03](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)。下面初次发布内容保留为 dev.5 历史；本次记录见 [迁移与交接](MIGRATION-HANDOFF-2026-10-03.md)。
+
 日期：2026-10-03（Asia/Shanghai）。项目所有者明确授权建立公开 GitHub 仓库、上传接手说明、源码及全部当前开发资产，并完善 README。本次不改变游戏玩法、技术栈、保存格式或许可证。
 
 ## 仓库与入口
@@ -35,3 +37,7 @@
 ## 后续本机阶段（未发布）
 
 P3.2 单人林克时间在 feature/focus-singleplayer 完成本机 dev.6 验收，见 [P3.2](P3.2-VERIFICATION.md)。本轮没有更新公开 main、GitHub Release 或远程 CI；本页以上记录仍描述初次公开交接 dev.5。
+
+## dev.7 迁移与第二次公开交接
+
+用户本轮明确授权迁移、更新仓库与重写 README。已将 dev.6 单人林克时间、dev.7 核心美术和本次可运行构建入口纳入公开交接，保留所有旧里程碑。最新后续计划、AI 接手状态、可编辑源稿、制作资料、成品包和本机迁移证据均已整理；完整美术大文件使用新 Release 资产分发，校验与来源见 ASSET-DOWNLOADS。初次 dev.5 发布及其 CI 事实不追溯改写。

@@ -1,6 +1,15 @@
 #!/bin/sh
 set -eu
 
+task_root="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+task_runtime="$(dirname -- "$task_root")"
+if [ -f "$task_runtime/.wildcraft-runtime" ]; then
+    export WILDCRAFT_CACHE_HOME="${WILDCRAFT_CACHE_HOME:-$task_runtime/cache}"
+    if [ -z "${WILDCRAFT_JAVA_HOME:-}" ] && [ -x "$task_runtime/tools/openjdk-25.jdk/Contents/Home/bin/javac" ]; then
+        export WILDCRAFT_JAVA_HOME="$task_runtime/tools/openjdk-25.jdk/Contents/Home"
+    fi
+fi
+
 task_java_home="${WILDCRAFT_JAVA_HOME:-}"
 if [ -z "$task_java_home" ] && [ -x /usr/libexec/java_home ]; then
     task_java_home="$(/usr/libexec/java_home -v 25 2>/dev/null || true)"
@@ -24,7 +33,6 @@ esac
 
 export JAVA_HOME="$task_java_home"
 export PATH="$JAVA_HOME/bin:$PATH"
-task_root="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 cd "$task_root"
 if [ "$(uname -s)" = Darwin ]; then
     # IntelliJ scans these directories directly and can mistake AppleDouble
@@ -34,10 +42,11 @@ if [ "$(uname -s)" = Darwin ]; then
             rm -f "$task_metadata"
         fi
     done
-    # Keep Gradle's mutable caches on APFS even when the source lives on ExFAT.
-    export GRADLE_USER_HOME="${GRADLE_USER_HOME:-$HOME/Library/Caches/Wildcraft/gradle}"
+    # The optional cache root must be on APFS, including an external APFS image.
+    task_cache_root="${WILDCRAFT_CACHE_HOME:-$HOME/Library/Caches/Wildcraft}"
+    export GRADLE_USER_HOME="${GRADLE_USER_HOME:-$task_cache_root/gradle}"
     task_project_id="$(printf '%s' "$task_root" | cksum | awk '{print $1}')"
-    task_project_cache="${WILDCRAFT_PROJECT_CACHE:-$HOME/Library/Caches/Wildcraft/projects/$task_project_id}"
+    task_project_cache="${WILDCRAFT_PROJECT_CACHE:-$task_cache_root/projects/$task_project_id}"
     exec ./gradlew --project-cache-dir "$task_project_cache" "$@"
 fi
 exec ./gradlew "$@"

@@ -1,6 +1,8 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-03。当前本机游戏版本 **0.1.0-dev.7 / Minecraft 26.3**，完成到 **P3.2 单人林克时间与核心美术 v1**。本阶段在 `feature/core-art`，本地标签 `v0.1.0-dev.7+mc26.3`。公开 main 与交接发布仍为 `083b93f` / dev.5；本轮没有上传新版本或迁移个人存档。旧功能基线 `18602f8` 与 dev.5 标签保持不动。
+更新：2026-10-03。当前游戏版本 **0.1.0-dev.7 / Minecraft 26.3**，完成到 **P3.2 单人林克时间与核心美术 v1**。游戏基线标签 `v0.1.0-dev.7+mc26.3` 固定原始美术提交；公开 `main` 与本次交接标签 `handoff-dev7-2026-10-03` 包含该版本和迁移后的构建入口。旧 dev.5 交接保留，不代表当前状态。本次只迁移项目与更新公开交接，没有新增玩法或迁移个人存档。
+
+当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
 ## 接手前十分钟
 
@@ -58,7 +60,7 @@ Minecraft 26.3 / JDK 25 / Loader 0.19.5 / Fabric API 0.161.0+26.3 / Loom 1.18.2 
 ./dev.sh runClient
 ```
 
-macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可设置 `JAVA_HOME` 后使用 `./gradlew`，Windows 使用 `gradlew.bat`。macOS 输出目录按项目路径计算在 `~/Library/Caches/Wildcraft/builds/<路径标识>`，不要照搬历史日志中的 `260a5f2b3758`。`build` 另导出安装包到 `dist/`。
+macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可设置 `JAVA_HOME` 后使用 `./gradlew`，Windows 使用 `gradlew.bat`。macOS 默认输出在 `~/Library/Caches/Wildcraft/builds/<路径标识>`；设置 `WILDCRAFT_CACHE_HOME` 或检测到本机运行标记后，使用所选 APFS 缓存根下的 `builds/<路径标识>`，不要照搬历史日志中的 `260a5f2b3758`。`build` 另导出安装包到 `dist/`。
 
 正式 JAR 与测试 JAR 分开。日常实例只安装正式 JAR 和 Fabric API；不可把研究实体或时间 Mixin 加进正式包。完整 IDE、命令、普通服务端入口与游戏操作在 [开发手册](DEVELOPMENT.md)。
 
@@ -104,7 +106,7 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 - `focus/TimeLease` 记录进入前速率和每次写入版本，外部同值/不同值控制不覆盖。入口拒绝冻结/步进/冲刺，不嵌套。
 - `FocusPacketMixin` 只在等待下一世界刻时处理输入/费用，不额外 tick 玩家或世界；`IntegratedFocusMixin` 在暂停 tick 入口和 LAN 发布入口撤销。
 - `FocusItemMixin` 只校准使用剩余时间并走一次原版 release；缓降不清零摔落距离。客户端新同步样本修正预测，避免卡顿后永久超前。
-- GPU 原创后处理和独立有效开关；关闭画面保留技能、费用和 HUD。默认无轻闪/纹理/FOV，音效只引用原版。
+- GPU 原创后处理和独立有效开关；关闭画面保留技能、费用和 HUD。默认不启用轻闪/纹理/FOV；核心美术提供两份原创提示音。
 
 下一计划 P4A：环境温度读数、修正、平滑和 HUD。先阅读温度原设计和规划第 9 节；普通冷热不新增普遍伤害、减速或精力罚款。不提前实现 P4B 的料理持久效果。画面保持林克时间瞄准优先，温度 HUD 保留，避免不受限滤镜叠加。只有本轮用户授权的目标才实施，不因本清单自动开始下一阶段。
 
@@ -112,7 +114,7 @@ R1 保持独立研究代码；实验开始时主动退出并阻止当前正式�
 
 ## 测试与证据标准
 
-P3.2 本机新增有效时间 10 项检查、2 项 GameTest 和 1 个成品客户端测试类，当前共 27 GameTest（26 项目 + 1 原版）、8 个客户端测试类，以及 4 项普通客户端真实计时。历史 P3.1 的独立双客户端与无测试模组服务端证据保留。精力/攀爬/滑翔/R0/R1 继续回归。普通 `test` 没有来源，不算测试通过。
+P3.2 本机新增有效时间 10 项检查、2 项 GameTest 和 1 个成品客户端测试类，P3.2 当时共 27 GameTest（26 项目 + 1 原版）、8 个客户端测试类；核心美术基线扩展为 28 GameTest、9 个客户端测试类，见 CORE-ART-VERIFICATION.md，以及 4 项普通客户端真实计时。历史 P3.1 的独立双客户端与无测试模组服务端证据保留。精力/攀爬/滑翔/R0/R1 继续回归。普通 `test` 没有来源，不算测试通过。
 
 ```sh
 ./dev.sh runDatagen
@@ -139,4 +141,4 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## 可以交给下一位 AI 的起始任务
 
-> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、规划 v2 与 P3.2-SPEC/VERIFICATION。Wildcraft 已完成本机 P3.2，版本 0.1.0-dev.7，核心美术 v1 已接入，公开仓库发布仍为 dev.5。保留精力、攀爬、独立伞槽、双手收纳、真实背负、左上角 HUD 和单人林克时间。检查本轮目标、分支和已有决定，在用户授权范围内完成实现与验证。下一计划阶段 P4A 为环境温度，普通冷热不新增伤害、减速或精力费用；料理与细雪辅助在 P4B。多人全服减速仍禁止，新增发布需明确授权。
+> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、规划 v2 与 P3.2-SPEC/VERIFICATION。Wildcraft 已完成本机 P3.2，版本 0.1.0-dev.7，核心美术 v1 已接入，公开 main 与本次交接已同步 dev.7。保留精力、攀爬、独立伞槽、双手收纳、真实背负、左上角 HUD 和单人林克时间。检查本轮目标、分支和已有决定，在用户授权范围内完成实现与验证。下一计划阶段 P4A 为环境温度，普通冷热不新增伤害、减速或精力费用；料理与细雪辅助在 P4B。多人全服减速仍禁止，新增发布需明确授权。

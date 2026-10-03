@@ -2,12 +2,19 @@ plugins {
     id 'net.fabricmc.fabric-loom' version "${loom_version}"
 }
 
+def localRuntime = projectDir.parentFile
+def defaultCacheHome = new File(System.getProperty('user.home'), 'Library/Caches/Wildcraft')
+if (new File(localRuntime, '.wildcraft-runtime').isFile()) {
+    defaultCacheHome = new File(localRuntime, 'cache')
+}
+def wildcraftCacheHome = new File(providers.environmentVariable('WILDCRAFT_CACHE_HOME')
+        .getOrElse(defaultCacheHome.absolutePath))
+
 if (System.getProperty('os.name').startsWith('Mac')) {
     // ExFAT creates AppleDouble files which Minecraft mistakes for resources.
     def projectKey = java.security.MessageDigest.getInstance('SHA-256')
             .digest(projectDir.absolutePath.getBytes('UTF-8')).encodeHex().toString().substring(0, 12)
-    layout.buildDirectory = new File(System.getProperty('user.home'),
-            "Library/Caches/Wildcraft/builds/${projectKey}")
+    layout.buildDirectory = new File(wildcraftCacheHome, "builds/${projectKey}")
 }
 
 loom {
@@ -155,7 +162,7 @@ tasks.register('runPackagedServer', net.fabricmc.loom.task.prod.ServerProduction
 
 
 // Freeze the two mod jars before starting concurrent processes; no process rebuilds an open jar.
-def p31Lab = new File(System.getProperty('user.home'), 'Library/Caches/Wildcraft/labs/p31')
+def p31Lab = new File(wildcraftCacheHome, 'labs/p31')
 tasks.register('prepareP31Lab') {
     dependsOn tasks.named('jar'), gameTestJar
     doLast {

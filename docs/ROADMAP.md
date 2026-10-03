@@ -1,10 +1,10 @@
 # Wildcraft 开发路线（规划 v2）
 
-更新：2026-10-03。完整的范围、设计衔接、技术约束、每阶段验收和第一批任务见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。本页为执行索引，旧路线保存在 [历史快照](ROADMAP-before-plan-v2.md)。
+更新：2026-10-03。最新执行顺序、阶段验收和第一批任务见 [后续开发计划](NEXT-DEVELOPMENT-PLAN.md)；完整设计背景见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。本页为执行索引，旧路线保存在 [历史快照](ROADMAP-before-plan-v2.md)。
 
 ## 当前基线
 
-P0、R0、P1、P2、P3、P3.1 与 P3.2 已完成本机验收；R1 已完成隔离实验，见 [研究结论](R1-FINDINGS.md)。当前本机游戏版本为 `0.1.0-dev.7`，公开发布仍为 dev.5。P3.1 交付三类背负和左上角红心/精力，见 [本阶段验证](P3.1-VERIFICATION.md)。保留 Minecraft 26.3 / Fabric / JDK 25 / macOS 开发环境。单人林克时间见 [P3.2 规格](P3.2-SPEC.md) 与 [验证](P3.2-VERIFICATION.md)；新版温度仍在后续阶段。
+P0、R0、P1、P2、P3、P3.1 与 P3.2 已完成本机验收；R1 已完成隔离实验，见 [研究结论](R1-FINDINGS.md)。当前本机游戏版本为 `0.1.0-dev.7`，公开 main 与本次交接同步 dev.7，历史 dev.5 包保留。P3.1 交付三类背负和左上角红心/精力，见 [本阶段验证](P3.1-VERIFICATION.md)。保留 Minecraft 26.3 / Fabric / JDK 25 / macOS 开发环境。单人林克时间见 [P3.2 规格](P3.2-SPEC.md) 与 [验证](P3.2-VERIFICATION.md)；新版温度仍在后续阶段。
 
 ## 调整方向
 

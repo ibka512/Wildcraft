@@ -7,8 +7,8 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 4742,
-      "sha256": "0f217b3a658601284786850493495443f01ed476bb75694562b76cd4ccd16092",
+      "bytes": 5512,
+      "sha256": "f1e3446566029b1284120ddd376c2bc5dd55bd971234f060ceb70d3a263b2fb0",
       "kind": "publication_index",
       "original_relative_path": null
     },
@@ -62,6 +62,27 @@
       "original_relative_path": "outputs/Wildcraft-P3.1-验证报告.md"
     },
     {
+      "file": "Wildcraft-P3.2-SHA256SUMS.txt",
+      "bytes": 1342,
+      "sha256": "a8c94a21e218a47a19a12127bb00bcd37511fe5689c2f531fc29be85fbc0cea3",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "Wildcraft-P3.2-source.zip",
+      "bytes": 12692730,
+      "sha256": "dd5dda89b0b1fac633ab0b780771069aa95901c668a0a5dfaf9c5d86c02cca0d",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "Wildcraft-P3.2-验证报告.md",
+      "bytes": 7098,
+      "sha256": "3e634d1b655b35b01b233955ce6f59621b03188a9937abc3510eeb52b192ed3b",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
       "file": "Wildcraft-R1-SHA256SUMS.txt",
       "bytes": 1215,
       "sha256": "909cb5edbfe24f962e2e05f832f0268a6b73bbe8487c316551f866968cb03d4f",
@@ -90,6 +111,20 @@
       "original_relative_path": "outputs/Wildcraft-R1-验证报告.md"
     },
     {
+      "file": "Wildcraft-art-workspace-2026-10-03-MANIFEST.json",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 201275,
+      "sha256": "0b25d26a2963c6d450c88d5d07b3341bd6fe2586be788b9c8d84184c1ddd13fb"
+    },
+    {
+      "file": "Wildcraft-core-art-full-delivery-2026-10-03-MANIFEST.json",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 202278,
+      "sha256": "a6cd08af40f3e190abf19d3c9a527c4bbac10ab624b5c017c7b2ce6d3b9df3e0"
+    },
+    {
       "file": "Wildcraft-开发规划-v2.md",
       "bytes": 38304,
       "sha256": "f2bf8cde5f55f161e50e6ecfbb1ebc6e11e6dca610b4c021175f9d514aa5d9f8",
@@ -109,6 +144,34 @@
       "sha256": "2c828666cf6c7f856cf4b533ec10a251259ac4f848a367535c60544d2f710c53",
       "kind": "original_deliverable",
       "original_relative_path": "outputs/Wildcraft-开发规划-v2_副本.zip"
+    },
+    {
+      "file": "Wildcraft-核心美术-v1-SHA256SUMS.txt",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 3135,
+      "sha256": "2c63b3926a20ca815d2d836a9f8a7f3d05680966727efed66939bf75a426818e"
+    },
+    {
+      "file": "Wildcraft-核心美术-v1-manifest.json",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 5691,
+      "sha256": "f8f3662d089d3b23ef07806a22b7bba829d7cb2f3aa69f36c1ebeb47bd29d4fd"
+    },
+    {
+      "file": "Wildcraft-核心美术-v1-source.zip",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 1702648,
+      "sha256": "f233507680e80936cd43361f03eeb95c224c1e367380e1d8747325bd8cc08372"
+    },
+    {
+      "file": "Wildcraft-核心美术-v1-验证报告.md",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 5916,
+      "sha256": "19d00d62e05e74da968ac6e6384bf2d48c800e49ced7d136521f1bf0f172f824"
     },
     {
       "file": "debug-history/export-p3.py",
@@ -454,6 +517,181 @@
       "original_relative_path": "outputs/verification/client-dev-test.log"
     },
     {
+      "file": "verification/core-art-v1/art-checks.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 56356,
+      "sha256": "9920047b9c3164aa8cd205f4435d87eab558fcc02e582efedf8e5437d2cfd1a7"
+    },
+    {
+      "file": "verification/core-art-v1/back-equipment.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 85543,
+      "sha256": "3ed7abcc53293cbd4c6a945a5003098bd6056186170d7610e7746a4b908eee2b"
+    },
+    {
+      "file": "verification/core-art-v1/climbing-wall.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 128215,
+      "sha256": "6f853ba23b14bdb6a5c092cc65c9a142a182ca36ab3b8c7dcdb413c4b2f13515"
+    },
+    {
+      "file": "verification/core-art-v1/compact-checks.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 56356,
+      "sha256": "9920047b9c3164aa8cd205f4435d87eab558fcc02e582efedf8e5437d2cfd1a7"
+    },
+    {
+      "file": "verification/core-art-v1/equipment-slot.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 64863,
+      "sha256": "e20ab58e73bed596b8567b9aa8beba253e83b7a5495854f19ed5de7203018be2"
+    },
+    {
+      "file": "verification/core-art-v1/focus-first-person.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 219145,
+      "sha256": "2b6acba3766840214287f4fe4b7a89623f05d8461e184338dfa0fe417eee8745"
+    },
+    {
+      "file": "verification/core-art-v1/full-regression.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 275285,
+      "sha256": "b155711ed64ac52a1e4a70bfb9596fb14711d5758fb014f11d49d76267c39d0e"
+    },
+    {
+      "file": "verification/core-art-v1/gametest-results.xml",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 4173,
+      "sha256": "117ffffe38a2ad223c3fad235653d72dffb3eb32e9d9c23d21ad95409fa358a6"
+    },
+    {
+      "file": "verification/core-art-v1/glider-first-person.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 198688,
+      "sha256": "30bfdaa6416addf9a73647720824c8218940506373d635092ab9a54a86eaf82c"
+    },
+    {
+      "file": "verification/core-art-v1/glider-third-person-front.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 234373,
+      "sha256": "4fe905ebeb1149a8095855ad79765e191945c04f321c34fba771591aa79d8b55"
+    },
+    {
+      "file": "verification/core-art-v1/hud-low-stamina.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 88284,
+      "sha256": "630c474c1d78214352d67cd29eecade57866986b55eaecedf04146fbc353d9e0"
+    },
+    {
+      "file": "verification/core-art-v1/hud-multiple-heart-rows.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 86319,
+      "sha256": "cbf96de5f2b5a85fdf86c0f3734f58698dd27cd15a9e7ce063d279e22269101d"
+    },
+    {
+      "file": "verification/core-art-v1/native-focus.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 30715,
+      "sha256": "1093176af2e8c8ad33ee8c1d855aaa68dea5e036718323ffd1dc4cfa8fddb70b"
+    },
+    {
+      "file": "verification/core-art-v1/native-measurements.txt",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 1696,
+      "sha256": "92077960bdb1b56ef98d50da61e9f8b86c8d14cf3879d15a521efe0de7853283"
+    },
+    {
+      "file": "verification/core-art-v1/observer-back-equipment.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 439252,
+      "sha256": "e7cec4811e9ed8c466d2a668ec47c68067d762d99d4c9c8cd9aed18d36f6b640"
+    },
+    {
+      "file": "verification/core-art-v1/observer-climb-release.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 759710,
+      "sha256": "cf42e58f60270de04ebed0fc86cef264060d0f699f82651991759127f5f494d2"
+    },
+    {
+      "file": "verification/core-art-v1/observer-climbing.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 296800,
+      "sha256": "7137790f7529e03a38af24dabd4fa9b81b756bf8a52730bcf986f677d36511f5"
+    },
+    {
+      "file": "verification/core-art-v1/observer-gliding.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 163866,
+      "sha256": "46ff1ba6598799742625b5350385da9e9847c293bc1a6a3aa2b1768c46e7f51c"
+    },
+    {
+      "file": "verification/core-art-v1/settings-compact-scrolled.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 200734,
+      "sha256": "0046a9965a4a5de54612b8ca9229f6d83bc48ff80e39638b10c1aaabeae29c41"
+    },
+    {
+      "file": "verification/core-art-v1/settings-normal.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 133013,
+      "sha256": "91202e688581ae23665538a102f14851ac4130ca93463271b9a25d4623c0d5ce"
+    },
+    {
+      "file": "verification/core-art-v1/settings-zh.png",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 79438,
+      "sha256": "60d6499de8df43ebbe0a387ba74393a7de470e28f96a1fd77624ef1c76260e55"
+    },
+    {
+      "file": "verification/core-art-v1/standalone-server.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 5958,
+      "sha256": "da6e02d262067829457a6adf6b47a05f139927c7bf2c1801599e138df1e00df4"
+    },
+    {
+      "file": "verification/core-art-v1/two-client-actor.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 28405,
+      "sha256": "aa8a1b4be8f048d9f57a1ebdcb6effdf104a260027905932716cd34e66f6841f"
+    },
+    {
+      "file": "verification/core-art-v1/two-client-observer.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 30972,
+      "sha256": "14cc1441b6926804be31771e94d3cc3785b6213ea7c1feecdc7f6a8208662f96"
+    },
+    {
+      "file": "verification/core-art-v1/two-client-server.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 8768,
+      "sha256": "2a89a7564d37c6db381db82fd0e43dfff0b43a2b55d93e2f865dfd865d4e0a78"
+    },
+    {
       "file": "verification/datagen-final.log",
       "bytes": 5296,
       "sha256": "899ae8840cd51acfb044d0da73c3ad5640f44e472060dd948cf2cfb244d96832",
@@ -494,6 +732,34 @@
       "sha256": "78cbafc925f6175355ec071e46f3676aa9a0f259f07fc6a2fac1a5a3ebb9371a",
       "kind": "original_deliverable",
       "original_relative_path": "outputs/verification/ide-environment.txt"
+    },
+    {
+      "file": "verification/migration-20261003/gametest-results.xml",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 4173,
+      "sha256": "23ef12f3bb989345d1624d424ec42bfefd96895d3ec39d16b006f1607d2189f4"
+    },
+    {
+      "file": "verification/migration-20261003/migration-build.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 23966,
+      "sha256": "56b9f7cb76197a72e5ed5200404c0b65256b9a2aebe5008ed2cbe250402da2e9"
+    },
+    {
+      "file": "verification/migration-20261003/migration-core-art-client.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 34001,
+      "sha256": "2f31097f96b9864460b45af8a6c26938b2ae6936ab2a92be8bd5e69406e30bb0"
+    },
+    {
+      "file": "verification/migration-20261003/migration-datagen.log",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 6119,
+      "sha256": "879cab343db54f53e689e1f15b78e68bc118d6b412bb74fcf9c6d526110ba917"
     },
     {
       "file": "verification/p1/build-final.log",
@@ -930,6 +1196,76 @@
       "original_relative_path": "outputs/verification/p31/upper-left-stamina-zh.png"
     },
     {
+      "file": "verification/p32/build-and-client.log",
+      "bytes": 267351,
+      "sha256": "1c669cbf19a2bb64a16ac1df3f569b38b499779511d6dba46bafbceb1d4230b2",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/gametest-results.xml",
+      "bytes": 4021,
+      "sha256": "8291a73d798360745676e342076e14205a052ab3635e24759eca59ae31a9abda",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/measurements.json",
+      "bytes": 2165,
+      "sha256": "a5e4b1e342097bb97895847bba63b81b794b31a047143f6a39e88ddca27831dd",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/native-client.log",
+      "bytes": 30852,
+      "sha256": "ef89c6e41d381f0af7648cdf8f8025674afbcc4156780a7e290d4d4a19e06f7a",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/p32-color-normal.png",
+      "bytes": 187664,
+      "sha256": "75c27badd84702eff4a1860785e36333ce1845f7674b7d1ac5c2b51702c1e692",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/p32-focus-effects-off.png",
+      "bytes": 154198,
+      "sha256": "cdbd643422246553c2e83479609b2f6bd181b5a3c07b9a280bc9e3b64d23e248",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/p32-focus-first-person.png",
+      "bytes": 224198,
+      "sha256": "5392a047f4199bc5ea6afff0dad5ac565c1f416edd088617bc4cdcbabeac7237",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/p32-focus-settings.png",
+      "bytes": 121496,
+      "sha256": "0ee5125ff9672357035bd55916cd684da77736ed96a5d8b3192ec0b8024ce7c8",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/p32-focus-third-person.png",
+      "bytes": 119313,
+      "sha256": "df70617a2feb942019dfc187c43b89cf7104919cd41bf92c0da5f32a9db38321",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
+      "file": "verification/p32/standalone-server.log",
+      "bytes": 6518,
+      "sha256": "2a8629296107a58ea165844e2e2f76c15e6f800799bb7db206985ae6e0a4b7b0",
+      "kind": "p32_local_append",
+      "original_relative_path": null
+    },
+    {
       "file": "verification/packaged-0000_p0-test-core-in-world.png",
       "bytes": 340031,
       "sha256": "3e0d837c3b7c2dd563200dae387377fc1e414814005349f9eb33dcd08ab4c8a9",
@@ -1063,106 +1399,24 @@
       "original_relative_path": "outputs/wildcraft-0.1.0-dev.5+mc26.3.jar"
     },
     {
-      "file": "Wildcraft-P3.2-SHA256SUMS.txt",
-      "bytes": 1342,
-      "sha256": "a8c94a21e218a47a19a12127bb00bcd37511fe5689c2f531fc29be85fbc0cea3",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "Wildcraft-P3.2-source.zip",
-      "bytes": 12692730,
-      "sha256": "dd5dda89b0b1fac633ab0b780771069aa95901c668a0a5dfaf9c5d86c02cca0d",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "Wildcraft-P3.2-验证报告.md",
-      "bytes": 7098,
-      "sha256": "3e634d1b655b35b01b233955ce6f59621b03188a9937abc3510eeb52b192ed3b",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/build-and-client.log",
-      "bytes": 267351,
-      "sha256": "1c669cbf19a2bb64a16ac1df3f569b38b499779511d6dba46bafbceb1d4230b2",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/gametest-results.xml",
-      "bytes": 4021,
-      "sha256": "8291a73d798360745676e342076e14205a052ab3635e24759eca59ae31a9abda",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/measurements.json",
-      "bytes": 2165,
-      "sha256": "a5e4b1e342097bb97895847bba63b81b794b31a047143f6a39e88ddca27831dd",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/native-client.log",
-      "bytes": 30852,
-      "sha256": "ef89c6e41d381f0af7648cdf8f8025674afbcc4156780a7e290d4d4a19e06f7a",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/p32-color-normal.png",
-      "bytes": 187664,
-      "sha256": "75c27badd84702eff4a1860785e36333ce1845f7674b7d1ac5c2b51702c1e692",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/p32-focus-effects-off.png",
-      "bytes": 154198,
-      "sha256": "cdbd643422246553c2e83479609b2f6bd181b5a3c07b9a280bc9e3b64d23e248",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/p32-focus-first-person.png",
-      "bytes": 224198,
-      "sha256": "5392a047f4199bc5ea6afff0dad5ac565c1f416edd088617bc4cdcbabeac7237",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/p32-focus-settings.png",
-      "bytes": 121496,
-      "sha256": "0ee5125ff9672357035bd55916cd684da77736ed96a5d8b3192ec0b8024ce7c8",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/p32-focus-third-person.png",
-      "bytes": 119313,
-      "sha256": "df70617a2feb942019dfc187c43b89cf7104919cd41bf92c0da5f32a9db38321",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
-      "file": "verification/p32/standalone-server.log",
-      "bytes": 6518,
-      "sha256": "2a8629296107a58ea165844e2e2f76c15e6f800799bb7db206985ae6e0a4b7b0",
-      "kind": "p32_local_append",
-      "original_relative_path": null
-    },
-    {
       "file": "wildcraft-0.1.0-dev.6+mc26.3.jar",
       "bytes": 152295,
       "sha256": "8a820b5fef63eb0ba52c26b4acf9e70b286e17141c77da9b2cc9500334cb4560",
       "kind": "p32_local_append",
       "original_relative_path": null
+    },
+    {
+      "file": "wildcraft-0.1.0-dev.7+mc26.3.jar",
+      "kind": "dev7_handoff_append",
+      "original_relative_path": null,
+      "bytes": 215112,
+      "sha256": "91b8a92e9eb69119b8a663c29d0f259e9a0bff4fd98ba2d1a6ad87305af6232a"
     }
   ],
   "notes": "All original deliverable/diagnostic files retain exact original bytes. Publication index is new; this manifest and its checksum list exclude themselves.",
   "local_next_phase_version": "0.1.0-dev.6",
   "local_next_phase_tag": "v0.1.0-dev.6+mc26.3",
-  "local_append_note": "P3.2 local stage; original dev.5 public baseline and all original asset bytes preserved; this branch has not been uploaded."
+  "local_append_note": "Historical dev.6 local append is now public as part of dev.7 handoff; original dev.5 baseline metadata retained.",
+  "current_public_game_version": "0.1.0-dev.7",
+  "current_handoff_tag": "handoff-dev7-2026-10-03"
 }

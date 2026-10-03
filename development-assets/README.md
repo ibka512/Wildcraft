@@ -12,8 +12,8 @@
 | P3 | [dev.4](wildcraft-0.1.0-dev.4+mc26.3.jar) | [P3](Wildcraft-P3-source.zip) |
 | R1 | 沿用 P3 正式 JAR，研究不进运行包 | [R1](Wildcraft-R1-source.zip) |
 | P3.1 | [dev.5，已公开](wildcraft-0.1.0-dev.5+mc26.3.jar) | [P3.1](Wildcraft-P3.1-source.zip) |
-| P3.2 | [dev.6，本机未发布](wildcraft-0.1.0-dev.6+mc26.3.jar) | [P3.2](Wildcraft-P3.2-source.zip) |
-| 核心美术 v1 | [dev.7，本机未发布](wildcraft-0.1.0-dev.7+mc26.3.jar) | [核心美术](Wildcraft-核心美术-v1-source.zip) |
+| P3.2 | [dev.6，历史阶段](wildcraft-0.1.0-dev.6+mc26.3.jar) | [P3.2](Wildcraft-P3.2-source.zip) |
+| 核心美术 v1 | [dev.7，当前交接](wildcraft-0.1.0-dev.7+mc26.3.jar) | [核心美术](Wildcraft-核心美术-v1-source.zip) |
 
 所有游戏包使用 Minecraft 26.3 和对应 Loader/Fabric API。旧源码 ZIP 是当时快照，不含本次新增交接说明；最新源码及完整历史用主仓库获取。不能把研究模组当正式功能安装。
 
@@ -49,3 +49,7 @@
 游戏下载文件、Minecraft 反编译源码、Gradle/IDE 缓存、个人世界、账号凭据、运行 EULA 文件和可重建的临时世界没有归档。自动测试源码和生成场景的方法已提供，其他 AI 可以自行重现。原始日志的成功/失败均保留，最终状态以对应验收记录的明确结果为准。
 
 P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SHA256](Wildcraft-P3.2-SHA256SUMS.txt)。公开归档清单的原始 dev.5 基线字段保留，local_next_phase_version 明确追加阶段。源码 ZIP 保存当时完整源码与资源；为避免递归，排除当前 P3.2 源码 ZIP 自身及外层校验索引。
+
+## dev.7 交接更新
+
+当前公开版本已同步核心美术 v1；完整美术交付及桌面制作资料见 [大文件下载索引](../docs/ASSET-DOWNLOADS.md)。最新后续计划见 [NEXT-DEVELOPMENT-PLAN](../docs/NEXT-DEVELOPMENT-PLAN.md)，迁移验证见 [MIGRATION-HANDOFF](../docs/MIGRATION-HANDOFF-2026-10-03.md)。旧清单的历史基线字段保持来源语义，不等于当前游戏版本。
