@@ -1,0 +1,139 @@
+{
+  "coordinateSystem": "X right / Y up / Z back; 1 unit = 1/16 block",
+  "wallPlaneDesignZ": -6.4,
+  "armWidths": {
+    "standard": 4,
+    "slim": 3
+  },
+  "armPivotY": 22,
+  "armLocalExtent": [
+    -2,
+    10
+  ],
+  "legLength": 12,
+  "fps": 30,
+  "clips": [
+    {
+      "id": "hold",
+      "name": "抓墙静止",
+      "start": 1,
+      "end": 24,
+      "loop": true,
+      "authoredKeys": 2,
+      "designPoseFrames": [
+        1,
+        24
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    },
+    {
+      "id": "up",
+      "name": "向上攀爬",
+      "start": 33,
+      "end": 57,
+      "loop": true,
+      "authoredKeys": 5,
+      "designPoseFrames": [
+        33,
+        39,
+        45,
+        51,
+        57
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    },
+    {
+      "id": "down",
+      "name": "向下攀爬",
+      "start": 65,
+      "end": 89,
+      "loop": true,
+      "authoredKeys": 0,
+      "reuse": "up phase reversed",
+      "designPoseFrames": [
+        65,
+        71,
+        77,
+        83,
+        89
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    },
+    {
+      "id": "left",
+      "name": "向左横移",
+      "start": 97,
+      "end": 121,
+      "loop": true,
+      "authoredKeys": 5,
+      "designPoseFrames": [
+        97,
+        103,
+        109,
+        115,
+        121
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    },
+    {
+      "id": "right",
+      "name": "向右横移",
+      "start": 129,
+      "end": 153,
+      "loop": true,
+      "authoredKeys": 0,
+      "reuse": "left mirrored with side swap",
+      "designPoseFrames": [
+        129,
+        135,
+        141,
+        147,
+        153
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    },
+    {
+      "id": "release",
+      "name": "放手退出",
+      "start": 161,
+      "end": 179,
+      "loop": false,
+      "authoredKeys": 3,
+      "designPoseFrames": [
+        161,
+        170,
+        179
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    },
+    {
+      "id": "mantle",
+      "name": "登顶越沿",
+      "start": 187,
+      "end": 211,
+      "loop": false,
+      "authoredKeys": 5,
+      "designPoseFrames": [
+        187,
+        193,
+        199,
+        205,
+        211
+      ],
+      "reuseNote": "These frames are sampling positions; reversed/mirrored variants do not add authored poses."
+    }
+  ],
+  "authoredKeyposeCount": 20,
+  "denseSourceBake": "Each frame keyed linearly to preserve reference wall clearance; two arm widths, reversed down loop and mirrored sideways loop share parameters.",
+  "referenceContactClearanceUnits": 0.12,
+  "previewRootMotion": "Only EntityTrajectory_PREVIEW_ONLY object moves for release/mantle; do not apply to game physics or duplicate entity movement. Other loops are in-place.",
+  "mantleBehavior": "Existing collision-assisted forward/up movement at open ledge; lower arms and step over. No ledge grab, vault jump or new ability.",
+  "orientation": "Body faces actual wall normal. Keep player camera free. Blend wall normals across existing corners; do not orient solely from camera yaw.",
+  "phaseDriver": "Drive moving phase from actual displacement along the wall. Freeze/reset on hold, zero motion or blocked input. Do not run a moving loop just because a key is held.",
+  "timing": "Reference 30 fps and lengths are art samples. Keep existing immediate gameplay activation and release; no animation gates.",
+  "stateEvidence": "ClimbView currently only active/blocked target-only. Face, tangent, displacement, mantle and other-player state are not available in this packet. Actual integration needs extracted render state; no state or network implementation is included.",
+  "gameIntegrated": false,
+  "scope": "six movement types; right is mirrored horizontal variation, down reverses vertical loop; no new first-person camera effect, skin, tool, climbing jump, rain slipping or environment asset.",
+  "contactLimit": "Rigid limb extrema follow the proxy plane at source frames; production contact anchors and arbitrary block shapes need actual renderer integration. References do not prove world-space planted grip locking.",
+  "mantleReferenceFootClearanceUnits": 0.03
+}

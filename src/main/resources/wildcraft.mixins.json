@@ -27,7 +27,9 @@
     "client.IntegratedFocusMixin",
     "client.FocusFrameMixin",
     "client.FocusPostMixin",
-    "client.FocusCameraMixin"
+    "client.FocusCameraMixin",
+    "client.GliderHandsRendererMixin",
+    "client.BackHandSettleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

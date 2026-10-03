@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class ParagliderHandsMixin {
     @Inject(method = "extractRenderState", at = @At("TAIL"))
     private void wildcraft$holster(LocalPlayer player, float partialTicks, FirstPersonHandsAndItemsRenderState state, CallbackInfo info) {
+        state.setData(dev.wildcraft.client.render.GliderHands.OPEN, Gliding.active(player));
         if (Gliding.active(player)) {
             state.mainHandItem = state.offHandItem = ItemStack.EMPTY;
             state.mainHandRenderState.clear();

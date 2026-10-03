@@ -12,12 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class ParagliderPoseMixin {
     @Inject(method = "setupAnim(Lnet/minecraft/client/renderer/entity/state/AvatarRenderState;)V", at = @At("TAIL"))
     private void wildcraft$holdCanopy(AvatarRenderState state, CallbackInfo info) {
-        if (state.getDataOrDefault(ParagliderLayer.OPEN, false)) {
-            PlayerModel model = (PlayerModel) (Object) this;
-            model.leftArm.xRot = model.rightArm.xRot = -2.6F;
-            model.leftArm.zRot = -0.12F;
-            model.rightArm.zRot = 0.12F;
-            model.leftLeg.xRot = model.rightLeg.xRot = -0.08F;
-        }
+        dev.wildcraft.client.render.CharacterPoses.apply((PlayerModel) (Object) this, state);
     }
 }

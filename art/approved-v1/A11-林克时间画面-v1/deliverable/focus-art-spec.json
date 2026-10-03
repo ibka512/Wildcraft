@@ -1,0 +1,56 @@
+{
+  "asset": "A11",
+  "status": "draft_pending_review",
+  "strengths": {
+    "off": 0,
+    "weak": 0.1,
+    "standard": 0.15,
+    "strong": 0.2
+  },
+  "default": {
+    "strength": "standard",
+    "vignette": true,
+    "pattern": false,
+    "lowStaminaPulse": false,
+    "fov": false
+  },
+  "edge": {
+    "radius": "length(uv*2-1)",
+    "vignetteStart": 0.55,
+    "vignetteEnd": 1.38,
+    "darkeningCoefficient": 0.38,
+    "shadowGateMinimum": 0.35,
+    "shadowGateLuminance": [
+      0.04,
+      0.28
+    ],
+    "edgeTintMultiplier": [
+      0.93,
+      1.01,
+      1.03
+    ],
+    "edgeTintWeightCoefficient": 0.35
+  },
+  "pattern": {
+    "default": false,
+    "start": 0.9,
+    "end": 1.18,
+    "frequency": 90,
+    "power": 24,
+    "amplitudeCoefficient": 0.035,
+    "static": true
+  },
+  "centerSafety": {
+    "zeroEdgeEffectAtRadiusBelow": 0.55,
+    "zeroPatternAtRadiusBelow": 0.9,
+    "globalMildDesaturationRemains": true
+  },
+  "exposureReferences": {
+    "bright": 1.0,
+    "darkSimulation": 0.28
+  },
+  "previewScope": "GPU postprocess on one existing screenshot. HUD is already baked into the historical screenshot, so this preview cannot validate actual HUD render order. Native integration should process scene then render HUD.",
+  "extraProductionTextures": 0,
+  "gameIntegrated": false,
+  "nativeGPUVerified": false
+}

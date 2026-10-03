@@ -1,0 +1,40 @@
+{
+  "asset": "A14",
+  "status": "draft_pending_review",
+  "main": {
+    "png": "deliverable/wildcraft-brand-128.png",
+    "source": "source/wildcraft-brand-128.aseprite",
+    "width": 128,
+    "height": 128,
+    "colorMode": "indexed",
+    "paletteEntries": 10,
+    "solidColors": 9,
+    "alpha": [
+      0,
+      255
+    ],
+    "layers": 1
+  },
+  "thumbnailChecks": {
+    "sizes": [
+      32,
+      16
+    ],
+    "method": "nearest",
+    "independentRedraw": false,
+    "productionTargets": false
+  },
+  "brandMotif": "cream/sage paraglider with oak frame over stepped grass terrain and pale trail; simplified brand interpretation",
+  "textInIcon": false,
+  "gameResourceTarget": "assets/wildcraft/icon.png",
+  "scope": "mod-list brand only; existing A03-A05 glider assets and A16 test core unchanged; no game replacement applied",
+  "pipeline": [
+    "built-in image_gen concepts1254x1254",
+    "Aseprite128x128 nearest/indexed conversion",
+    "typed palette/runs clean alpha artifacts",
+    "same128 source thumbnail checks",
+    "source andPNG reopen pixel-hash verification"
+  ],
+  "nativeGameValidated": false,
+  "gameIntegrated": false
+}

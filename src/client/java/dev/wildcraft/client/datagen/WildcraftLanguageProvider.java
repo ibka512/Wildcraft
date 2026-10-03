@@ -21,11 +21,13 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("subtitles.wildcraft.focus.enter", chinese ? "进入专注" : "Enter focus");
+        translations.add("subtitles.wildcraft.focus.exit", chinese ? "退出专注" : "Leave focus");
         translations.add(WildcraftItems.PARAGLIDER, chinese ? "滑翔伞" : "Paraglider");
         translations.add("key.wildcraft.focus_settings", chinese ? "林克时间画面设置" : "Focus presentation settings");
         translations.add("key.category.wildcraft.focus_settings", chinese ? "Wildcraft · 画面" : "Wildcraft \u00b7 Presentation");
         translations.add("focus.wildcraft.settings", chinese ? "林克时间 · 画面设置" : "Focus \u00b7 Presentation");
-        translations.add("focus.wildcraft.settings.hint", chinese ? "只调整画面，精力计费与技能保持生效" : "Presentation only; skill and stamina stay active");
+        translations.add("focus.wildcraft.settings.hint", chinese ? "只调整画面，时间、精力与提示音保持生效" : "Presentation only; skill and stamina stay active");
         translations.add("focus.wildcraft.strength", chinese ? "效果强度：%s" : "Effect strength: %s");
         translations.add("focus.wildcraft.strength.0", chinese ? "关闭" : "Off");
         translations.add("focus.wildcraft.strength.1", chinese ? "弱" : "Weak");
@@ -36,6 +38,12 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add("focus.wildcraft.pattern", chinese ? "边缘纹理：%s" : "Edge pattern: %s");
         translations.add("focus.wildcraft.pulse", chinese ? "低精力轻闪：%s" : "Low stamina pulse: %s");
         translations.add("focus.wildcraft.fov", chinese ? "轻微视野收窄：%s" : "Slight FOV: %s");
+        translations.add("focus.wildcraft.help.strength", chinese ? "关闭/弱/标准/强；各开关偏好独立保留。" : "Off/weak/standard/strong; toggle preferences are retained.");
+        translations.add("focus.wildcraft.help.vignette", chinese ? "轻微压暗画面边缘，保持瞄准中心清晰。" : "Gently shades the edges, keeping the aiming centre clear.");
+        translations.add("focus.wildcraft.help.reticle", chinese ? "专注时增强准星，低精力用颜色与刻度提示。" : "Focus reticle; low stamina changes both colour and ticks.");
+        translations.add("focus.wildcraft.help.pattern", chinese ? "仅在画面外围显示静态细纹。" : "Static contour lines at the periphery only.");
+        translations.add("focus.wildcraft.help.pulse", chinese ? "可选低精力轻闪；默认关闭。" : "Optional gentle low-stamina pulse; off by default.");
+        translations.add("focus.wildcraft.help.fov", chinese ? "可选轻微视野收窄；默认关闭。" : "Optional slight FOV reduction; off by default.");
         translations.add("slot.wildcraft.paraglider", chinese ? "滑翔伞装备位 · 仅放滑翔伞" : "Paraglider slot · paraglider only");
         translations.add("hud.wildcraft.gliding", chinese ? "滑翔中 · 再按%s收伞" : "Gliding · press %s to close");
         translations.add("key.wildcraft.climb", chinese ? "按住攀爬 / 松开放手" : "Hold to climb / release to let go");

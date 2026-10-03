@@ -1,0 +1,226 @@
+{
+  "archiveSha256": "96e8411fd0e68133fff7c242e2152207811c777159d8c6ba6070172fa932405a",
+  "sourceFiles": [
+    {
+      "file": "art/approved-v1/00-当前采用状态索引.json",
+      "sha256": "be77967aee25330a5e118957fe5dd5019068a074d4e41d72eed1e3319a066a91"
+    },
+    {
+      "file": "art/approved-v1/00-统一接入清单.md",
+      "sha256": "fd47731e35e5a1f8fb68b941243378182138527cacf88b2959dcaa4fa1a26436"
+    },
+    {
+      "file": "art/approved-v1/00-资产入口清单.csv",
+      "sha256": "feae8147ea06ae6c1bc204702a72dadfc3d2990c2dcbfecd1b49f7e031bef2fb"
+    },
+    {
+      "file": "art/approved-v1/A01-精力HUD-v1/deliverable/stamina-hud-spec.json",
+      "sha256": "af35d363c9735dc87b1797a239b844ffe22e565009887e9f8a68a9eebfbaf2ad"
+    },
+    {
+      "file": "art/approved-v1/A01-精力HUD-v1/source/stamina-hud-atlas.aseprite",
+      "sha256": "ca6d7ab4424829a0a8a051772e26fdee086769cf53db932feb6eb6db89d7d41c"
+    },
+    {
+      "file": "art/approved-v1/A01-精力HUD-v1/source/stamina-hud-layout.svg",
+      "sha256": "631492d65eecdfa495882c82cdbaea12a488d1f423a4a6be8cb0bb7d072450e1"
+    },
+    {
+      "file": "art/approved-v1/A03-A04-展开滑翔伞-v1/deliverable/grip-and-coordinate-spec.json",
+      "sha256": "c311bf94de4424126043ee22e1d4f9b006e7b941e3349c52bb9b9190c55f7177"
+    },
+    {
+      "file": "art/approved-v1/A03-A04-展开滑翔伞-v1/source/geometry-and-uv.json",
+      "sha256": "2390f1f952edad188384f6506ffc47bcc5a1e79c77638421e6514321e0af68d5"
+    },
+    {
+      "file": "art/approved-v1/A03-A04-展开滑翔伞-v1/source/material-atlas-layout.svg",
+      "sha256": "20f0833547dc1986767ebb291020fda7ebc1b6bb7a015065fbd11c9484a48ca3"
+    },
+    {
+      "file": "art/approved-v1/A03-A04-展开滑翔伞-v1/source/paraglider-open.bbmodel",
+      "sha256": "1f4dfe099a86f2a47351b4dd94a5554048ec8462995f63bae51ea0dc3a038c94"
+    },
+    {
+      "file": "art/approved-v1/A03-A04-展开滑翔伞-v1/source/paraglider-open.blend",
+      "sha256": "544a4387e0e8de9b72894c4c3b82add996688144bc0065b6d755630539f78fed"
+    },
+    {
+      "file": "art/approved-v1/A03-A04-展开滑翔伞-v1/source/paraglider-texture-128x64.aseprite",
+      "sha256": "f61b40660d7a69951cc409ca6a898777b3599f133dd333ef521ce7317adda11e"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/deliverable/slot-state-spec.json",
+      "sha256": "bda5349af74d45622ad3d69a9a35ca341fb9b3c0b624962225ea485263e4bff5"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/source/a05-32-at-16-display-sample.aseprite",
+      "sha256": "5f287ce7de2c06a3e9b4f5582c3b7e725ad6b7798c9366c7a4e6f65a29a21f0f"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/source/approved-paraglider-16.aseprite",
+      "sha256": "83fe33d467fbc0a5960fb8e65a77a523b3ac0b01b83a2550970d7780e6c50471"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/source/approved-paraglider-32.aseprite",
+      "sha256": "1fd47cd7b87e9aba951b394e3092d60d02d1050b17e6da656120eeb638bd0b65"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/source/empty-slot-zoom.aseprite",
+      "sha256": "6169645d2f0121f46c6d6ccd7937c70160d89a5e3276db61dc7812455d2420a1"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/source/grayscale-palette-mapping.json",
+      "sha256": "ac578480375d42c8705394566bf7a1355b3023cd6359c0a443bbecc067272e5d"
+    },
+    {
+      "file": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1/source/paraglider-empty-slot-16.aseprite",
+      "sha256": "91c5f8fc3142b14f31aae91ae9ff280948ac3ac0e3044a3a0f5d449cbab3ba01"
+    },
+    {
+      "file": "art/approved-v1/A07-滑翔握持与姿态-v1/deliverable/grip-pose-spec.json",
+      "sha256": "f2e4f2f1a4a9db117c83200cec886f4e0afc7d2d973b557ac6ca7e1249afd7b8"
+    },
+    {
+      "file": "art/approved-v1/A07-滑翔握持与姿态-v1/source/gliding-pose-rig.blend",
+      "sha256": "aedaa1685e257c2f677f3f69a213535348f5e279b603f032f35521f08f23a63a"
+    },
+    {
+      "file": "art/approved-v1/A08-攀爬动作-v1/deliverable/climbing-motion-spec.json",
+      "sha256": "c3711fb75ac0a4c7ddea1024dba29df4bbb39e991e8ea5849a33701a29d8e215"
+    },
+    {
+      "file": "art/approved-v1/A08-攀爬动作-v1/source/climbing-motion-rig.blend",
+      "sha256": "867f2332b474ed118be6b64a2c7b9875383345f3609bc097b7f36ab3a57467f0"
+    },
+    {
+      "file": "art/approved-v1/A09-背负装备挂点-v1/deliverable/attachment-layout-spec.json",
+      "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104"
+    },
+    {
+      "file": "art/approved-v1/A09-背负装备挂点-v1/source/back-equipment-placement.blend",
+      "sha256": "bbb8981f581747cc4b1104857061a956c008aa610547aa0f7fd35e012f4037e4"
+    },
+    {
+      "file": "art/approved-v1/A10-背负装备收取过渡-v1/deliverable/transition-spec.json",
+      "sha256": "23fdb85bf18261bbcbf43bd973f872c9a3b6b69689f11d5deac6d330cbb52fda"
+    },
+    {
+      "file": "art/approved-v1/A10-背负装备收取过渡-v1/source/equipment-transition-rig.blend",
+      "sha256": "cc985835336ac92454cf72cc10fa27602b5131410ddd273b150b9c98ab0a7dca"
+    },
+    {
+      "file": "art/approved-v1/A11-林克时间画面-v1/deliverable/focus-art-spec.json",
+      "sha256": "761608546a2a79a2d170a0a8d614aab18c1c68360d2209cc7d77aa535f13fae7"
+    },
+    {
+      "file": "art/approved-v1/A11-林克时间画面-v1/source/focus-proposal.fsh",
+      "sha256": "be01c86033b68664f31bb320e6e2e361fdbf11fda4572e7776546c50668d5e3f"
+    },
+    {
+      "file": "art/approved-v1/A11-林克时间画面-v1/source/focus-shade.glsl",
+      "sha256": "0cb1a21971388997c9ece058db1853e0f4cf17baa0b44ac1a3b49977bc64e5fc"
+    },
+    {
+      "file": "art/approved-v1/A12-专注准星与低精力提示-v1/deliverable/reticle-draw-spec.json",
+      "sha256": "e31e42d2b67d24acf3582db8fbd955bacde877154f7932121e1f2f32bf311a36"
+    },
+    {
+      "file": "art/approved-v1/A12-专注准星与低精力提示-v1/source/center-safety.svg",
+      "sha256": "b9e8d26c46ede7702cea1e2d468f679b315e27addab2f9cd4263093c3a3c1894"
+    },
+    {
+      "file": "art/approved-v1/A12-专注准星与低精力提示-v1/source/reticle-geometry.json",
+      "sha256": "e31e42d2b67d24acf3582db8fbd955bacde877154f7932121e1f2f32bf311a36"
+    },
+    {
+      "file": "art/approved-v1/A12-专注准星与低精力提示-v1/source/reticle-low.svg",
+      "sha256": "e85b60aad53688b054ccaef6b7cf5d711420ebe843b5649add01fcb7e9e9378a"
+    },
+    {
+      "file": "art/approved-v1/A12-专注准星与低精力提示-v1/source/reticle-normal.svg",
+      "sha256": "6008b39c29e5522c95cbe08915293da0810cd1c1082a2bd3688c3abee14fa2a8"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus-enter-waveform.svg",
+      "sha256": "7181617e51b8148fdc0fe81d2c40e66deddf384643f12cc228b6f727db6db205"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus-exit-waveform.svg",
+      "sha256": "05c39f13f4f39c8f99baa9888a55ecf40f0eb09b4213480a1e4a8db2632bacdc"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus-paired-preview.wav",
+      "sha256": "9c32b9139d85bacbe5c4e9078fd39b8b39e8fcd1a98b77af0fbcc2d54670bcd2"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus-sound-spec.json",
+      "sha256": "16b370fef3340bf4954bdd1df6ee1014bf9ebdc30ddbd136c56124f58918eb92"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus_enter.ogg",
+      "sha256": "a819c1a006a93af80e59bb712e23886e7e19c8c7d200f14e4a19fe160e590021"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus_exit.ogg",
+      "sha256": "5668f8ef538dd0e0f8dbeb84cbd4acd6559b563fbd4e4a3c525926b5669950ae"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/sounds-proposal.json",
+      "sha256": "0469ed75830971d2b25cf282ce540032833ad741390a231f39c779f5bbfbe5cb"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/subtitles-proposal.json",
+      "sha256": "b012a9d79b1db3c72f92448f8915df54adf8241c62f75c5e182a9bc832f18d0f"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/source/focus-enter-master.wav",
+      "sha256": "4e8252e50f68946b92a38d15a19351e1b1282cbfd0314cd195329f08f27ba925"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/source/focus-exit-master.wav",
+      "sha256": "994bea3ef737e449a2869aa8b488ec67840c102628b811ebc29600bd6bffc68d"
+    },
+    {
+      "file": "art/approved-v1/A13-专注进入退出音效-v1/source/sound-design.json",
+      "sha256": "5a0478e9b7ea666ef3ca0931be1511b70549aa5104cdbf4aa92251618b557198"
+    },
+    {
+      "file": "art/approved-v1/A14-模组品牌图标-v1/deliverable/brand-icon-spec.json",
+      "sha256": "7e96c4e40a9f0a3fc6f2075a6b7f91380b2384e603e6ae686e80622971647d52"
+    },
+    {
+      "file": "art/approved-v1/A14-模组品牌图标-v1/source/alpha-cleanup-runs.json",
+      "sha256": "27f589c9efffb9b2f089b06263c7f8235712656eae8f6c0a04965b5f25a7dbc0"
+    },
+    {
+      "file": "art/approved-v1/A14-模组品牌图标-v1/source/thumbnail-check-16.aseprite",
+      "sha256": "8a234e02e07cc8edb00a97935897d2a912076f999279dd530b90efc3b54db547"
+    },
+    {
+      "file": "art/approved-v1/A14-模组品牌图标-v1/source/thumbnail-check-32.aseprite",
+      "sha256": "8c3c642ae1b978aa65bf207a06374481cad2eee715ab5ab39a9ec6332e99817e"
+    },
+    {
+      "file": "art/approved-v1/A14-模组品牌图标-v1/source/wildcraft-brand-128.aseprite",
+      "sha256": "02c808b5e2f8f4e02245a4be0979fa4f1b51ed60b71e842d6d28867408258d72"
+    },
+    {
+      "file": "art/approved-v1/A15-表现设置页-v1/deliverable/settings-page-spec.json",
+      "sha256": "175b8fa47442abf4b0272acae36dc54ead1671586d0a6615cbf276ec61b76d9c"
+    },
+    {
+      "file": "art/approved-v1/A15-表现设置页-v1/deliverable/ui-copy-proposal.json",
+      "sha256": "ae460a4353dd2b2ee9952078692f33e23a9e752b67f1670f9b0a3a342f99f9fe"
+    },
+    {
+      "file": "art/approved-v1/A15-表现设置页-v1/source/default-options-reference.json",
+      "sha256": "366f468f29cc4a143f1aa4d7897b3283975cbc94fd92be3e874f97918d5cabc4"
+    },
+    {
+      "file": "art/approved-v1/A15-表现设置页-v1/source/layout-guide.svg",
+      "sha256": "099cdbba86d6d950a8b12d48f191a96df2a59cc0e5fcc903a8f929472022c9fd"
+    }
+  ],
+  "note": "Approved art data only; original full archive remains unchanged outside repository. Preview scripts are not production code."
+}

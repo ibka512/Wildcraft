@@ -17,7 +17,8 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.resources.Identifier;
-import net.minecraft.sounds.SoundEvents;
+import dev.wildcraft.registry.WildcraftSounds;
+import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.world.item.BowItem;
 
 public final class FocusClient {
@@ -28,6 +29,7 @@ public final class FocusClient {
     private static FocusView previous = FocusView.OFF;
     private static double bowSeconds;
     private static boolean audibleActive;
+    private static SoundInstance currentSound;
     private FocusClient() { }
     public static void initialize() {
         FocusOptions.load();
@@ -39,12 +41,19 @@ public final class FocusClient {
             var client = Minecraft.getInstance(); var options = FocusOptions.get();
             if (!visible() || options.strength == 0 || !options.reticle || client.gui.hud.isHidden()) return;
             int x = g.guiWidth() / 2, y = g.guiHeight() / 2;
-            int color = lowStamina() ? 0xDDF0B84D : 0xCCAFE5DC;
-            g.fill(x - 10, y - 1, x - 7, y, color); g.fill(x + 7, y - 1, x + 10, y, color);
-            g.fill(x - 1, y - 10, x, y - 7, color); g.fill(x - 1, y + 7, x, y + 10, color);
+            int color = lowStamina() ? 0xEDF0B84D : 0xE6B6EB91;
+            int[][] lines = lowStamina()
+                    ? new int[][]{{-10,-1,3,1},{7,-1,3,1},{-1,-10,1,3},{-1,7,1,3},
+                                  {-13,-1,2,1},{11,-1,2,1},{-1,-13,1,2},{-1,11,1,2}}
+                    : new int[][]{{-10,-1,3,1},{7,-1,3,1},{-1,-10,1,3},{-1,7,1,3}};
+            for (int[] r : lines) g.fill(x+r[0]-1, y+r[1]-1, x+r[0]+r[2]+1, y+r[1]+r[3]+1, 0xB818271C);
+            for (int[] r : lines) g.fill(x+r[0], y+r[1], x+r[0]+r[2], y+r[1]+r[3], color);
         });
     }
-    private static void reset() { previous = FocusView.OFF; audibleActive = false; bowSeconds = 0; clock = new ActivePlayClock(); }
+    private static void reset() {
+        if (currentSound != null) Minecraft.getInstance().getSoundManager().stop(currentSound);
+        currentSound = null; previous = FocusView.OFF; audibleActive = false; bowSeconds = 0; clock = new ActivePlayClock();
+    }
     public static boolean visible() {
         var c = Minecraft.getInstance();
         return c.player != null && c.gui.screen() == null && !c.isPaused() && FocusTime.active(c.player) && FocusTime.eligible(c.player);
@@ -67,9 +76,15 @@ public final class FocusClient {
         }
         previous = view;
         boolean active = visible();
-        if (active != audibleActive) {
-            if (!c.isPaused()) c.getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.AMETHYST_BLOCK_CHIME, active ? 1.35F : 0.85F, 0.22F));
-            audibleActive = active;
+        boolean audible = view.active();
+        if (audible != audibleActive) {
+            if (currentSound != null) c.getSoundManager().stop(currentSound);
+            currentSound = null;
+            if (!c.isPaused() && c.gui.screen() == null && c.player.isAlive()) {
+                currentSound = SimpleSoundInstance.forUI(audible ? WildcraftSounds.FOCUS_ENTER : WildcraftSounds.FOCUS_EXIT, 1, 0.22F);
+                c.getSoundManager().play(currentSound);
+            }
+            audibleActive = audible;
         }
         if (active && c.player.isUsingItem() && c.player.getUseItem().getItem() instanceof BowItem) {
             FocusTime.compensate(c.player, bowSeconds);

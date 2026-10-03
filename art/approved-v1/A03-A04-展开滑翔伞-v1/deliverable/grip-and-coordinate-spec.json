@@ -1,0 +1,51 @@
+{
+  "coordinateSystem": "Blockbench free source: X right, Y up, Z back; feet origin [0,0,0]",
+  "unit": "1 source unit = 1/16 Minecraft block",
+  "playerGuide": {
+    "feetY": 0,
+    "body": [
+      [
+        -4,
+        12,
+        -2
+      ],
+      [
+        4,
+        24,
+        2
+      ]
+    ],
+    "head": [
+      [
+        -4,
+        24,
+        -4
+      ],
+      [
+        4,
+        32,
+        4
+      ]
+    ]
+  },
+  "gripLeft": [
+    -7.5,
+    31,
+    -7
+  ],
+  "gripRight": [
+    7.5,
+    31,
+    -7
+  ],
+  "root": [
+    0,
+    24,
+    0
+  ],
+  "canopySpan": 40,
+  "canopyDepth": 20,
+  "canopyTopY": 47.45,
+  "javaMapping": "xJava=xSource; yJava=24-ySource; zJava=zSource",
+  "note": "Original grip yJava=-7 retained; dedicated actual hand pose deferred to A07. This generic mesh source is not a drop-in Java ModelPart or item JSON."
+}

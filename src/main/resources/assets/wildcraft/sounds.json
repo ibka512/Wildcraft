@@ -1,0 +1,10 @@
+{
+  "focus.enter": {
+    "subtitle": "subtitles.wildcraft.focus.enter",
+    "sounds": ["wildcraft:focus_enter"]
+  },
+  "focus.exit": {
+    "subtitle": "subtitles.wildcraft.focus.exit",
+    "sounds": ["wildcraft:focus_exit"]
+  }
+}

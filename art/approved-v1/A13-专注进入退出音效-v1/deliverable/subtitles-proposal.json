@@ -1,0 +1,10 @@
+{
+  "zh_cn": {
+    "subtitles.wildcraft.focus.enter": "进入专注",
+    "subtitles.wildcraft.focus.exit": "退出专注"
+  },
+  "en_us": {
+    "subtitles.wildcraft.focus.enter": "Focus begins",
+    "subtitles.wildcraft.focus.exit": "Focus ends"
+  }
+}

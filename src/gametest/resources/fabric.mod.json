@@ -30,7 +30,8 @@
       "dev.wildcraft.test.GlidingClientSmokeTest",
       "dev.wildcraft.test.research.time.TimeResearchClientSmokeTest",
       "dev.wildcraft.test.BackEquipmentClientSmokeTest",
-      "dev.wildcraft.test.FocusClientSmokeTest"
+      "dev.wildcraft.test.FocusClientSmokeTest",
+      "dev.wildcraft.test.CoreArtClientSmokeTest"
     ]
   }
 }

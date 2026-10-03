@@ -13,6 +13,7 @@
 | R1 | 沿用 P3 正式 JAR，研究不进运行包 | [R1](Wildcraft-R1-source.zip) |
 | P3.1 | [dev.5，已公开](wildcraft-0.1.0-dev.5+mc26.3.jar) | [P3.1](Wildcraft-P3.1-source.zip) |
 | P3.2 | [dev.6，本机未发布](wildcraft-0.1.0-dev.6+mc26.3.jar) | [P3.2](Wildcraft-P3.2-source.zip) |
+| 核心美术 v1 | [dev.7，本机未发布](wildcraft-0.1.0-dev.7+mc26.3.jar) | [核心美术](Wildcraft-核心美术-v1-source.zip) |
 
 所有游戏包使用 Minecraft 26.3 和对应 Loader/Fabric API。旧源码 ZIP 是当时快照，不含本次新增交接说明；最新源码及完整历史用主仓库获取。不能把研究模组当正式功能安装。
 
@@ -32,6 +33,7 @@
 | [verification/p3](verification/p3) | 装备槽/滑翔/保存与网络、5 张截图；[记录](../docs/P3-VERIFICATION.md) |
 | [verification/r1](verification/r1) | 普通客户端计时、结构化测量、后处理与挂点、3 张截图；[记录](../docs/R1-FINDINGS.md) |
 | [verification/p31](verification/p31) | 25 项 GameTest、7 客户端测试类、真正双客户端、独立服、22 张截图；[记录](../docs/P3.1-VERIFICATION.md) |
+| [verification/core-art-v1](verification/core-art-v1) | 28 GameTest、9 类客户端、原版标准/细手臂握点、真实双客户端攀爬/背负、独立服、4 种普通计时；[记录](../docs/CORE-ART-VERIFICATION.md) |
 | [verification/p32](verification/p32) | 27 GameTest、8 类客户端、4 次真实计时、无测试模组服、5 张截图；[记录](../docs/P3.2-VERIFICATION.md) |
 | [debug-history](debug-history) | 原工作目录的诊断/失败尝试日志与导出辅助脚本；不是最终验收，旧脚本只作资料读取 |
 

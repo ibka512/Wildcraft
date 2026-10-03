@@ -62,7 +62,7 @@ public final class BackMultiplayerProbe {
                 if (!p.getGameProfile().name().equals("WCActor")) return 0;
                 advance(p); return 1;
             }));
-            d.register(Commands.literal("p31observe").then(Commands.argument("stage", IntegerArgumentType.integer(0, 12)).executes(ctx -> {
+            d.register(Commands.literal("p31observe").then(Commands.argument("stage", IntegerArgumentType.integer(0, 14)).executes(ctx -> {
                 var source = ctx.getSource().getPlayerOrException();
                 if (!source.getGameProfile().name().equals("WCObserver")) return 0;
                 var actor = ctx.getSource().getServer().getPlayerList().getPlayerByName("WCActor");
@@ -105,6 +105,14 @@ public final class BackMultiplayerProbe {
         } else if (stage == 9) {
             p.teleportTo(p.level().getServer().overworld(), 0.5, 80, 0.5, Set.of(), 0, 0, true);
         } else if (stage == 12) {
+            for (int y=80;y<=95;y++) for (int z=-3;z<=3;z++) p.level().setBlock(new BlockPos(2,y,z),Blocks.STONE.defaultBlockState(),3);
+            p.teleportTo(p.level(),1.7,85,.5,Set.of(),-90,0,true);p.setOnGround(false);PlayerStamina.fill(p);
+            var observer=p.level().getServer().getPlayerList().getPlayerByName("WCObserver");
+            observer.teleportTo(p.level(),-2.5,85,.5,Set.of(),-90,0,true);
+        } else if (stage == 13) {
+            dev.wildcraft.traversal.Climbing.reset(p,false);
+        } else if (stage == 14) {
+            System.out.println("WILDCRAFT CORE ART independent observer received public back ownership and climbing direction; private attachments absent; release cleared");
             System.out.println("WILDCRAFT P3.1 TWO INDEPENDENT GRAPHICAL CLIENTS PASSED: actual attack/shield/bow, held/back exclusion, native glide, drop, chest, dimension tracking and observer TCP reconnect");
         }
         p.setAttached(STAGE, stage); p.setAttached(ACK, -1);

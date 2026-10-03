@@ -1,0 +1,91 @@
+{
+  "asset": "A01",
+  "version": "v1",
+  "status": "draft_pending_review",
+  "guiUnits": "Minecraft logical GUI pixels",
+  "layout": {
+    "x": 12,
+    "trackWidth": 112,
+    "trackHeight": 7,
+    "interior": {
+      "x": 2,
+      "y": 2,
+      "width": 108,
+      "height": 3
+    },
+    "labelY": "heartBottom+6",
+    "trackY": "heartBottom+17",
+    "heartBottom": "actual vanilla heart bounds including rows and absorption",
+    "minimumGapToHearts": 6
+  },
+  "atlas": {
+    "width": 112,
+    "height": 32,
+    "track": [
+      0,
+      0,
+      112,
+      7
+    ],
+    "normalFill": [
+      0,
+      8,
+      108,
+      3
+    ],
+    "lowFill": [
+      0,
+      16,
+      108,
+      3
+    ],
+    "recoveryTip": [
+      0,
+      24,
+      2,
+      3
+    ]
+  },
+  "states": {
+    "normal": "fraction > 0.2",
+    "low": "fraction <= 0.2; value and amber color remain readable",
+    "empty": "fraction=0; no fill or tip",
+    "recovering": "when fraction>0.2, 2px tip stays inside filled region; low recovery keeps amber fill with no green tip",
+    "full": "existing auto-hide timing remains; full review card demonstrates visible hold period"
+  },
+  "calculation": {
+    "fraction": "clamp(current/capacity,0,1); requires capacity>0",
+    "fillWidth": "round(108*fraction)",
+    "tipWidth": "min(2,fillWidth)",
+    "tipX": "x+2+fillWidth-tipWidth",
+    "outlineDrawOrder": "track, clipped fill, optional recovery tip; low takes color priority"
+  },
+  "colors": {
+    "label": "#dce8d0",
+    "lowLabel": "#f0b84d",
+    "normal": [
+      "#b6eb91",
+      "#72d77e",
+      "#45965d"
+    ],
+    "low": [
+      "#ffe39f",
+      "#f0b84d",
+      "#ae792d"
+    ]
+  },
+  "behaviorPreserved": [
+    "upper-left vanilla hearts",
+    "vanilla bottom XP bar",
+    "existing show/hide conditions and 40 tick full hold",
+    "existing capacity and regeneration rules",
+    "20 percent low threshold"
+  ],
+  "overflow": {
+    "width": "min(112,max(40,guiWidth-24)) preserving current limit; shrink track and clip fill to width-4",
+    "label": "use existing k/M abbreviation; align left; shrink gap or split numeric portion only when real font width exceeds available room",
+    "height": "label and track move as one block; check fit below heartBottom before applying any bottom clamp; fallback on unusually short viewport requires developer review, do not claim arbitrary rows fit"
+  },
+  "fontNote": "ASCII numerals in preview sample original Minecraft bitmap; Chinese label is layout approximation; actual client uses existing Minecraft font",
+  "reviewBoundary": "browser composition and native export validated; no Minecraft code modified or game runtime verified"
+}

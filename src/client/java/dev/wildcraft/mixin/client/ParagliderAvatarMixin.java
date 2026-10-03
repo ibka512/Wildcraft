@@ -18,6 +18,7 @@ public abstract class ParagliderAvatarMixin {
     private void wildcraft$canopyState(Avatar entity, AvatarRenderState state, float partialTicks, CallbackInfo info) {
         boolean open = entity instanceof Player player && Gliding.active(player);
         state.setData(ParagliderLayer.OPEN, open);
+        if (entity instanceof Player player) dev.wildcraft.client.render.CharacterPoses.extract(player, state, partialTicks);
         if (open) {
             state.rightHandItemState.clear();
             state.leftHandItemState.clear();

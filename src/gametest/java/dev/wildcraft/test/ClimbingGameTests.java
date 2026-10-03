@@ -69,6 +69,9 @@ public final class ClimbingGameTests {
         Climbing.acceptMovement(p, p.getX(), p.getY() + 0.12, p.getZ());
         Climbing.tick(p);
         h.assertTrue(Math.abs(PlayerStamina.get(p).stamina() - (before - 0.9)) < 1e-6, "Moving cannot claim cheaper idle cost");
+        h.assertTrue(p.getAttached(Climbing.VISUAL).motion()==1,"Accepted movement direction is published before clearing the per-tick sample");
+        Climbing.tick(p);
+        h.assertTrue(p.getAttached(Climbing.VISUAL).motion()==0,"No additional displacement returns to hold");
         Climbing.receive(p, ClimbInput.RELEASED);
         h.assertFalse(Climbing.active(p), "Release ends authorization");
         h.assertTrue(PlayerStamina.canRecover(p), "Ground recovery resumes");

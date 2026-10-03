@@ -1,6 +1,6 @@
 # Wildcraft — Minecraft Java Edition Mod
 
-Wildcraft 是基于原版世界的探索、战斗与机械模组，使用 **Fabric + Java** 开发。当前本机开发阶段为 **P3.2 单人林克时间**，版本 **`0.1.0-dev.6`**（公开交接发布仍为 dev.5）；主要开发环境为 macOS。
+Wildcraft 是基于原版世界的探索、战斗与机械模组，使用 **Fabric + Java** 开发。当前本机已完成 **P3.2 单人林克时间与核心美术 v1 接入**，版本 **`0.1.0-dev.7`**（公开交接发布仍为 dev.5）；主要开发环境为 macOS。
 
 本仓库提供完整项目源码、原始设计、可编辑美术、隔离研究、自动测试、历史开发包及实际游戏验证资产。**接手开发从 [AI 开发交接说明](docs/AI-HANDOFF.md) 和 [AGENTS.md](AGENTS.md) 开始。**
 
@@ -18,16 +18,17 @@ Wildcraft 是基于原版世界的探索、战斗与机械模组，使用 **Fabr
 | 探索界面 | 左上角原版红心，精力数值与短条在下方；多行/吸收红心自动下移，底部保留原版经验和等级 |
 | 保存与联机 | 服务端管理所有权与数值；本人和附近观察者正确接收允许的状态；存档、复活、维度与重连已有验证 |
 
-![左上角红心与精力](development-assets/verification/p31/gliding-upper-left-hud.png)
+![左上角红心与精力](development-assets/verification/core-art-v1/glider-third-person-front.png)
 
-![独立观察者看到三类背负](development-assets/verification/p31/two-client-back-equipment.png)
+![独立观察者看到三类背负](development-assets/verification/core-art-v1/back-equipment.png)
 
-当前精力样式是数值加短条。首版披风显示时隐藏背负，鞘翅隐藏中央盾/弓；腰侧布局与收取动画尚在后续阶段。
+当前精力样式是数值加短条。首版披风显示时隐藏背负，鞘翅隐藏中央盾/弓；腰侧披风布局仍在后续阶段。核心美术 v1 已接入新的伞网格、双手/攀爬姿态、五种背负挂点、短收取动作、精力图集、专注效果与设置页；见 [接入记录](docs/CORE-ART-INTEGRATION.md)。
 
 ## 下载与安装
 
 - [完整交接下载包与公开说明](https://github.com/ibka512/Wildcraft/releases/tag/handoff-2026-10-03)（包含当前源码及全部归档资产）
 - [已公开开发包：Wildcraft 0.1.0-dev.5 / Minecraft 26.3](development-assets/wildcraft-0.1.0-dev.5+mc26.3.jar)
+- [本机核心美术开发包：dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)（本轮尚未上传 GitHub）
 - [本机 P3.2 开发包：dev.6](development-assets/wildcraft-0.1.0-dev.6+mc26.3.jar)（本阶段尚未上传 GitHub）
 - [P3.2 源码快照](development-assets/Wildcraft-P3.2-source.zip)
 - [P3.1 原始源码快照](development-assets/Wildcraft-P3.1-source.zip)

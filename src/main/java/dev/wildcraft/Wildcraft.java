@@ -26,6 +26,7 @@ public final class Wildcraft implements ModInitializer {
     public void onInitialize() {
         ServerPlayerEvents.AFTER_RESPAWN.addPhaseOrdering(Event.DEFAULT_PHASE, AFTER_ATTACHMENT_TRANSFER);
         WildcraftItems.initialize();
+        dev.wildcraft.registry.WildcraftSounds.initialize();
         GliderEquipment.initialize();
         dev.wildcraft.equipment.BackEquipment.initialize();
         Climbing.initialize();

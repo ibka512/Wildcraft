@@ -25,6 +25,23 @@ import net.minecraft.world.level.storage.TagValueInput;
 import net.minecraft.world.level.storage.TagValueOutput;
 
 public final class BackEquipmentGameTests {
+    @GameTest public void visualOwnershipTracksActualReference(GameTestHelper h) {
+        ServerPlayer p=h.makeMockServerPlayerInLevel();
+        ItemStack original=new ItemStack(Items.IRON_SWORD);
+        p.getInventory().setItem(0,original);p.getInventory().setItem(1,original.copy());p.getInventory().setSelectedSlot(0);
+        BackEquipment.register(p,original);
+        var first=p.getAttached(BackEquipment.VISUAL).melee();
+        h.assertTrue(first.owner()==1 && first.reference()!=0,"Recorded reference is in the main hand");
+        p.getInventory().setSelectedSlot(1);BackEquipment.tick(p);
+        var back=p.getAttached(BackEquipment.VISUAL).melee();
+        h.assertTrue(back.owner()==3 && back.reference()==first.reference(),"Identical spare does not hide or adopt the actual reference");
+        BackEquipment.register(p,p.getMainHandItem());
+        var spare=p.getAttached(BackEquipment.VISUAL).melee();
+        h.assertTrue(spare.owner()==1 && spare.reference()!=first.reference(),"Using spare creates a different reference token");
+        p.getInventory().setItem(1,ItemStack.EMPTY);BackEquipment.tick(p);
+        h.assertTrue(p.getAttached(BackEquipment.VISUAL).melee().owner()==0,"Lost reference has no outgoing ghost");
+        p.discard();h.succeed();
+    }
     @GameTest public void actualUseAndInvalidBow(GameTestHelper h) {
         ServerPlayer p = h.makeMockServerPlayerInLevel();
         p.getAbilities().instabuild = false;

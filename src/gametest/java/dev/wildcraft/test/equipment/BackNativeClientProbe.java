@@ -41,6 +41,8 @@ public final class BackNativeClientProbe {
             localStage = stage; due = now + 1_600_000_000L; sent = false; actionDone = false;
             if (role.equals("actor")) {
                 if (stage <= 4) c.player.getInventory().setSelectedSlot(stage == 1 ? 1 : stage == 2 ? 2 : stage == 3 ? 3 : 0);
+                if (stage == 12) { dev.wildcraft.client.input.ClimbControls.CLIMB.setDown(true); c.options.keyUp.setDown(true); }
+                if (stage == 13) { dev.wildcraft.client.input.ClimbControls.CLIMB.setDown(false); c.options.keyUp.setDown(false); }
                 if (stage == 5) { c.player.setOnGround(false); c.options.keyJump.setDown(true); }
             }
             System.out.println("WILDCRAFT P3.1 native " + role + " stage=" + stage + " fabric.client.gametest=" + System.getProperty("fabric.client.gametest"));
@@ -57,7 +59,7 @@ public final class BackNativeClientProbe {
             if (stage == 5 && now > due - 1_400_000_000L) c.options.keyJump.setDown(false);
             if (stage == 8) {
                 if (c.level.dimension().equals(net.minecraft.world.level.Level.NETHER) && actor.getAttachedOrElse(BackMultiplayerProbe.ACK, -1) == stage && now >= due && !sent) { c.getConnection().sendCommand("p31next"); sent = true; }
-            } else if (stage == 12) {
+            } else if (stage == 14) {
                 if (now >= due) c.stop();
             } else if (!sent && now >= due && (stage <= 2 && actionDone || actor.getAttachedOrElse(BackMultiplayerProbe.ACK, -1) == stage)) {
                 c.options.keyUse.setDown(false); if (c.player.isUsingItem()) c.gameMode.releaseUsingItem(c.player);
@@ -75,23 +77,36 @@ public final class BackNativeClientProbe {
                 c.disconnect(new TitleScreen(), false); return;
             }
             boolean correct = stage < 3 || actor == null && stage == 8 || actor != null && expected(actor, stage);
-            if (stage <= 11 && correct && now >= due && !sent) {
-                if (actor != null) check(!actor.hasAttached(BackEquipment.DATA), "Observer never receives persistent private signatures");
-                if (stage >= 3 && stage <= 11) screenshot(c, "observer-" + stage);
+            if (stage <= 13 && correct && now >= due && !sent) {
+                if (actor != null) check(!actor.hasAttached(BackEquipment.DATA) && !actor.hasAttached(dev.wildcraft.traversal.Climbing.VIEW) && !actor.hasAttached(dev.wildcraft.player.PlayerStamina.VIEW), "Observer never receives persistent private signatures");
+                if (stage >= 3 && stage <= 13) screenshot(c, "observer-" + stage);
                 c.getConnection().sendCommand("p31observe " + stage); sent = true; seen = stage;
                 System.out.println("WILDCRAFT P3.1 observer acknowledged=" + stage + " reconnected=" + reconnected);
             }
-            if (stage == 12 && now >= due) { check(seen == 11 && reconnected, "Observer completed reconnect and final tracking"); c.stop(); }
+            if (stage == 14 && now >= due) { check(seen == 13 && reconnected, "Observer completed reconnect and final tracking"); c.stop(); }
         }
     }
     private static boolean expected(Player p, int s) {
         var v = BackEquipment.view(p);
+        var ownership=p.getAttached(BackEquipment.VISUAL);
+        if (s==12 && p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL)!=null && p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL).active()) {
+            var client=Minecraft.getInstance();
+            var state=(net.minecraft.client.renderer.entity.state.AvatarRenderState)client.getEntityRenderDispatcher().getRenderer(p).createRenderState(p,1);
+            check(Math.abs(state.yRot)<10,"Looking toward the east wall preserves straight head alignment across -90/270 yaw");
+        }
+        if (s>=3 && ownership==null) return false;
+        if (s==3 && (ownership.melee().owner()!=3 || ownership.shield().owner()!=3 || ownership.ranged().owner()!=3)) return false;
+        if (s==4 && ownership.melee().owner()!=1 || s==5 && ownership.melee().owner()!=3 || s>=6 && ownership.melee().owner()!=0) return false;
         return switch (s) {
             case 3 -> v.melee().is(Items.DIAMOND_SWORD) && v.shield().is(Items.SHIELD) && v.ranged().is(Items.BOW);
             case 4 -> v.melee().isEmpty() && !v.shield().isEmpty() && !v.ranged().isEmpty();
             case 5 -> Gliding.active(p) && !v.melee().isEmpty() && !v.shield().isEmpty() && !v.ranged().isEmpty();
             case 6 -> v.melee().isEmpty() && !v.shield().isEmpty() && !v.ranged().isEmpty();
             case 7, 9, 10, 11 -> v.melee().isEmpty() && v.shield().isEmpty() && v.ranged().is(Items.BOW);
+            case 12 -> p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL)!=null && p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL).active()
+                    && p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL).face()==net.minecraft.core.Direction.EAST.ordinal()
+                    && p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL).motion()==1;
+            case 13 -> p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL)!=null && !p.getAttached(dev.wildcraft.traversal.Climbing.VISUAL).active();
             default -> true;
         };
     }

@@ -5,3 +5,4 @@
 - Fabric Loader and Fabric API remain external dependencies and retain their licenses. Their nested libraries retain their own notices.
 - Minecraft game files are downloaded by the development tools; they are not part of the Wildcraft source distribution.
 - The test core pixel artwork is original project artwork.
+- Core art v1 was supplied by the project owner in `Wildcraft-核心美术成果-2026-10-03.zip` (2026-10-03); source provenance and byte hashes are in `art/approved-v1/SOURCE-MANIFEST.json`. Blender reference scenes do not replace or distribute Minecraft item models; runtime uses the installed game models.

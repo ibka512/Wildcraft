@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "strength": 2,
+  "vignette": true,
+  "reticle": true,
+  "pattern": false,
+  "lowStaminaPulse": false,
+  "fov": false
+}

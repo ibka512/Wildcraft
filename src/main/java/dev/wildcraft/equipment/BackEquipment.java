@@ -53,10 +53,14 @@ public final class BackEquipment {
     }
     private static final class Session {
         final ItemStack[] stacks = new ItemStack[3];
+        final ItemStack[] seen = new ItemStack[3];
+        final long[] tokens = new long[3];
     }
     public record Transaction(List<ItemStack> signatures, List<Boolean> unique) { }
     public static final AttachmentType<Data> DATA = AttachmentRegistry.create(Wildcraft.id("back_equipment"), b -> b.persistent(Data.CODEC).copyOnDeath());
     public static final AttachmentType<View> VIEW = AttachmentRegistry.create(Wildcraft.id("back_equipment_view"), b -> b.syncWith(View.CODEC, AttachmentSyncPredicate.all()));
+    private static final java.util.concurrent.atomic.AtomicLong TOKENS = new java.util.concurrent.atomic.AtomicLong();
+    public static final AttachmentType<BackVisual> VISUAL = AttachmentRegistry.create(Wildcraft.id("back_equipment_visual"), b -> b.syncWith(BackVisual.CODEC, AttachmentSyncPredicate.all()));
     private static final AttachmentType<Session> SESSION = AttachmentRegistry.create(Wildcraft.id("back_equipment_session"));
     private BackEquipment() { }
 
@@ -139,6 +143,7 @@ public final class BackEquipment {
         p.removeAttached(SESSION);
         p.setAttached(DATA, new Data(1, List.of(Reference.EMPTY, Reference.EMPTY, Reference.EMPTY)));
         p.setAttached(VIEW, View.EMPTY);
+        p.setAttached(VISUAL, BackVisual.EMPTY);
     }
     /** Copying is allowed only inside a verified native inventory transaction with one unambiguous match. */
     public static Transaction beforeTransaction(ServerPlayer p) {
@@ -178,15 +183,23 @@ public final class BackEquipment {
     }
     private static void publish(ServerPlayer p, Session s) {
         ItemStack[] visible = new ItemStack[3];
+        BackVisual.Entry[] owners = new BackVisual.Entry[3];
         boolean glide = Gliding.active(p);
         boolean wings = p.getItemBySlot(EquipmentSlot.CHEST).is(Items.ELYTRA);
         boolean bowUse = holstersShield(p);
         for (int c = 0; c < 3; c++) {
             ItemStack stack = s.stacks[c];
+            if (stack != s.seen[c]) { s.seen[c] = stack; s.tokens[c] = stack == null ? 0 : TOKENS.incrementAndGet(); }
             boolean held = (stack == p.getMainHandItem() || stack == p.getOffhandItem()) && !(bowUse && c == SHIELD);
             visible[c] = stack == null || !p.isAlive() || p.isSpectator() || held && !glide || wings && c != MELEE
                     ? ItemStack.EMPTY : displayStack(stack);
+            int owner = stack == null || !p.isAlive() || p.isSpectator() ? 0
+                    : !visible[c].isEmpty() ? 3
+                    : held && !glide ? (stack == p.getMainHandItem() ? 1 : 2) : 0;
+            owners[c] = new BackVisual.Entry(s.tokens[c], owner);
         }
+        BackVisual visual = new BackVisual(owners[0], owners[1], owners[2]);
+        if (!visual.equals(p.getAttached(VISUAL))) p.setAttached(VISUAL, visual);
         View next = new View(visible[0], visible[1], visible[2]), old = view(p);
         if (!ItemStack.matches(next.melee(), old.melee()) || !ItemStack.matches(next.shield(), old.shield()) || !ItemStack.matches(next.ranged(), old.ranged())) p.setAttached(VIEW, next);
     }

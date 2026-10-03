@@ -1,0 +1,139 @@
+{
+  "asset": "A13",
+  "version": 1,
+  "status": "draft_pending_review",
+  "origin": "Original deterministic oscillator and filtered-noise synthesis; no sampled audio",
+  "sampleRate": 48000,
+  "channels": 1,
+  "masterFormat": "PCM24 WAV",
+  "runtimeFormat": "Ogg Vorbis, quality 5",
+  "events": {
+    "focus.enter": {
+      "file": "focus_enter.ogg",
+      "durationSeconds": 0.48,
+      "purpose": "进入专注，一次短上行提示"
+    },
+    "focus.exit": {
+      "file": "focus_exit.ogg",
+      "durationSeconds": 0.44,
+      "purpose": "退出专注，一次短下行提示"
+    }
+  },
+  "suggestedClientPlayback": {
+    "pitch": 1.0,
+    "startingVolume": 0.22,
+    "category": "retain existing UI sound category and settings routing",
+    "loop": false,
+    "spatialAttenuation": false,
+    "volumeStatus": "Provisional based on current FocusClient, must balance in actual game",
+    "note": "Do not retain the old 1.35/0.85 pitch change; the files already encode enter/exit contrast."
+  },
+  "transitionContract": {
+    "enter": "Once on confirmed inactive-to-active transition",
+    "exit": "Once on confirmed active-to-inactive transition; manual release/landing/exhaustion/eligibility loss share this asset",
+    "pauseDisconnect": "Do not play on pause/teardown; preserve current silent reset intent; pause/resume behavior must be verified during integration",
+    "graphicsOff": "Sound still follows focus state when visual filter disabled",
+    "lowStamina": "No extra sound in this delivery",
+    "rapidTransitions": "If testing reveals overlapping tails, stop or fade previous focus sound only; proposed integration handling, not implemented"
+  },
+  "resourceProposal": {
+    "focus.enter": "assets/wildcraft/sounds/focus_enter.ogg",
+    "focus.exit": "assets/wildcraft/sounds/focus_exit.ogg",
+    "registry": "Register custom SoundEvents and subtitles through project conventions/datagen",
+    "soundsJson": "sounds-proposal.json is an isolated reference fragment, not a replacement for generated resources"
+  },
+  "gameIntegrated": false,
+  "gameRuntimeVerified": false,
+  "measurements": {
+    "enter": {
+      "master": {
+        "sampleCount": 23040,
+        "durationSeconds": 0.48,
+        "peakDbfs": -8.0,
+        "wholeFileRmsDbfs": -21.182,
+        "dcOffset": 1.74829943312539e-07,
+        "clippedSamples": 0,
+        "finite": true,
+        "firstSample": 0.0,
+        "lastSample": 0.0,
+        "first5msPeakDbfs": -45.951,
+        "last5msPeakDbfs": -240.0,
+        "energyAbove8kHzPercent": 0.0
+      },
+      "oggDecoded": {
+        "sampleCount": 22912,
+        "durationSeconds": 0.47733333333333333,
+        "peakDbfs": -7.843,
+        "wholeFileRmsDbfs": -21.104,
+        "dcOffset": 1.6414749083627273e-05,
+        "clippedSamples": 0,
+        "finite": true,
+        "firstSample": -2.85726264337427e-06,
+        "lastSample": 1.406546061843983e-06,
+        "first5msPeakDbfs": -45.125,
+        "last5msPeakDbfs": -85.683,
+        "energyAbove8kHzPercent": 0.0
+      },
+      "loudness": {
+        "integratedLufs": -20.75,
+        "truePeakDbtp": -7.84,
+        "method": "ffmpeg loudnorm input analysis only; no normalization applied",
+        "note": "Very short transients: whole-file RMS/true peak are primary; LUFS depends on gating."
+      },
+      "codec": "vorbis",
+      "oggSampleRate": 48000,
+      "oggChannels": 1,
+      "oggDeclaredDuration": 0.48,
+      "oggDecodedSampleDifference": -128,
+      "oggMasterCorrelation": 0.9997426319932484,
+      "oggSignalToErrorDb": 32.545,
+      "stemSumMaximumError": 1.1920928955078125e-07,
+      "sha256": "a819c1a006a93af80e59bb712e23886e7e19c8c7d200f14e4a19fe160e590021"
+    },
+    "exit": {
+      "master": {
+        "sampleCount": 21120,
+        "durationSeconds": 0.44,
+        "peakDbfs": -10.0,
+        "wholeFileRmsDbfs": -23.452,
+        "dcOffset": -1.9679088709932384e-05,
+        "clippedSamples": 0,
+        "finite": true,
+        "firstSample": 0.0,
+        "lastSample": 0.0,
+        "first5msPeakDbfs": -47.764,
+        "last5msPeakDbfs": -240.0,
+        "energyAbove8kHzPercent": 0.0
+      },
+      "oggDecoded": {
+        "sampleCount": 22080,
+        "durationSeconds": 0.46,
+        "peakDbfs": -9.895,
+        "wholeFileRmsDbfs": -23.585,
+        "dcOffset": -2.503227785929369e-05,
+        "clippedSamples": 0,
+        "finite": true,
+        "firstSample": -9.471019666307257e-07,
+        "lastSample": 7.841503054523136e-13,
+        "first5msPeakDbfs": -45.429,
+        "last5msPeakDbfs": -131.053,
+        "energyAbove8kHzPercent": 0.0
+      },
+      "loudness": {
+        "integratedLufs": -23.55,
+        "truePeakDbtp": -9.89,
+        "method": "ffmpeg loudnorm input analysis only; no normalization applied",
+        "note": "Very short transients: whole-file RMS/true peak are primary; LUFS depends on gating."
+      },
+      "codec": "vorbis",
+      "oggSampleRate": 48000,
+      "oggChannels": 1,
+      "oggDeclaredDuration": 0.44,
+      "oggDecodedSampleDifference": 960,
+      "oggMasterCorrelation": 0.9996900031598397,
+      "oggSignalToErrorDb": 31.722,
+      "stemSumMaximumError": 1.1920928955078125e-07,
+      "sha256": "5668f8ef538dd0e0f8dbeb84cbd4acd6559b563fbd4e4a3c525926b5669950ae"
+    }
+  }
+}

@@ -42,6 +42,7 @@ public final class ClimbingClientSmokeTest implements FabricClientGameTest {
             c.getInput().holdKey(options -> options.keyUp);
             c.waitTicks(20);
             check(c.computeOnClient(client -> Climbing.active(client.player) && client.player.getY() > 72.5), "Keys climb the actual wall");
+            c.waitFor(client -> client.player.getAttached(Climbing.VISUAL)!=null && client.player.getAttached(Climbing.VISUAL).motion()==1);
             c.getInput().releaseKey(options -> options.keyUp);
             double heldY = c.computeOnClient(client -> client.player.getY());
             double heldCost = world.getServer().computeOnServer(server -> PlayerStamina.get(server.getPlayerList().getPlayers().getFirst()).stamina());

@@ -3,6 +3,7 @@ package dev.wildcraft.traversal;
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.network.ClimbInput;
 import dev.wildcraft.network.ClimbView;
+import dev.wildcraft.network.ClimbVisual;
 import dev.wildcraft.network.StaminaView;
 import dev.wildcraft.player.PlayerStamina;
 import net.fabricmc.fabric.api.attachment.v1.AttachmentRegistry;
@@ -27,6 +28,8 @@ public final class Climbing {
     public static final AttachmentType<ClimbInput> INTENT = AttachmentRegistry.create(Wildcraft.id("climb_intent"));
     public static final AttachmentType<ClimbView> VIEW = AttachmentRegistry.create(Wildcraft.id("climb_view"),
             builder -> builder.syncWith(ClimbView.CODEC, AttachmentSyncPredicate.targetOnly()));
+    public static final AttachmentType<ClimbVisual> VISUAL = AttachmentRegistry.create(Wildcraft.id("climb_visual"),
+            builder -> builder.syncWith(ClimbVisual.CODEC, AttachmentSyncPredicate.all()));
     private static final AttachmentType<Session> SESSION = AttachmentRegistry.create(Wildcraft.id("climb_session"));
     private static final int INPUT_TIMEOUT = 20;
 
@@ -40,6 +43,9 @@ public final class Climbing {
         boolean active;
         boolean blocked;
         boolean moved;
+        int motion;
+        boolean mantle;
+        Direction visualFace;
     }
 
     public static void initialize() {
@@ -90,8 +96,9 @@ public final class Climbing {
                 state.blocked = true;
             }
         }
-        state.moved = false;
         publish(player, state);
+        state.moved = false;
+        state.motion = 0;
     }
 
     private static void updateEligibility(ServerPlayer player, Session state) {
@@ -107,6 +114,8 @@ public final class Climbing {
         }
         ClimbSurface.Contact contact = ClimbSurface.find(player, state.wall, state.active, input.vertical() > 0, input.sideways());
         state.active = contact != null;
+        state.mantle = contact != null && contact.mantle();
+        state.visualFace = contact == null ? null : contact.face();
         state.wall = contact == null ? null : contact.cornerFrom() == null ? contact.face() : contact.cornerFrom();
     }
 
@@ -188,6 +197,10 @@ public final class Climbing {
         }
         if (Math.abs(y - player.getY()) > 0.01 || Math.hypot(x - player.getX(), z - player.getZ()) > 0.01) {
             session(player).moved = true;
+            Session s = session(player);
+            double dy = y - player.getY();
+            double side = s.wall == null ? 0 : (x-player.getX()) * s.wall.getStepZ() - (z-player.getZ()) * s.wall.getStepX();
+            s.motion = s.mantle ? 5 : Math.abs(dy) > 0.015 ? dy > 0 ? 1 : 2 : Math.abs(side) > 0.015 ? side > 0 ? 4 : 3 : 0;
         }
         player.resetFallDistance();
         return true;
@@ -219,5 +232,8 @@ public final class Climbing {
         if (!view.equals(player.getAttached(VIEW))) {
             player.setAttached(VIEW, view);
         }
+        ClimbVisual visual = state.active && state.visualFace != null
+                ? new ClimbVisual(true, state.visualFace.ordinal(), state.motion) : ClimbVisual.IDLE;
+        if (!visual.equals(player.getAttached(VISUAL))) player.setAttached(VISUAL, visual);
     }
 }

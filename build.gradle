@@ -229,3 +229,31 @@ tasks.register('runP32NativeClient', net.fabricmc.loom.task.prod.ClientProductio
         java.nio.file.Files.writeString(nativeDirectory.resolve('options.txt'), 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n')
     }
 }
+
+// Repeat the art integration checks without replaying unrelated gameplay tests.
+def coreArtMetadataSource = file('src/gametest/resources/fabric.mod.json')
+def coreArtMetadataDirectory = layout.buildDirectory.dir('core-art-test-metadata').get().asFile
+def coreArtMetadata = tasks.register('coreArtTestMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(coreArtMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.CoreArtClientSmokeTest']
+        def destination = new File(coreArtMetadataDirectory, 'fabric.mod.json')
+        destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def coreArtTestJar = tasks.register('coreArtTestJar', Jar) {
+    dependsOn coreArtMetadata
+    archiveClassifier = 'core-art-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(layout.buildDirectory.dir('core-art-test-metadata'))
+}
+tasks.register('runCoreArtClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(coreArtTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/core-art-client-test')
+}

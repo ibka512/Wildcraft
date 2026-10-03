@@ -1,0 +1,50 @@
+{
+  "asset": "A06",
+  "version": "v1",
+  "status": "draft_pending_review",
+  "sprite": {
+    "file": "paraglider-empty-slot-16.png",
+    "width": 16,
+    "height": 16,
+    "colors": [
+      "#4f4f4f",
+      "#626262",
+      "#767676",
+      "#aaaaaa"
+    ],
+    "alphaValues": [
+      0,
+      255
+    ],
+    "derivedFrom": "user-approved paraglider-16-v4; alpha/silhouette preserved"
+  },
+  "slot": {
+    "frame": [
+      18,
+      18
+    ],
+    "content": [
+      16,
+      16
+    ],
+    "iconOffset": [
+      1,
+      1
+    ],
+    "frameDark": "#373737",
+    "background": "#8b8b8b",
+    "frameLight": "#ffffff"
+  },
+  "coordinates": {
+    "survival": "leftPos+77,topPos+8 for icon; frame at icon-1",
+    "creativeInventory": "leftPos+152,topPos+20 for icon; frame at icon-1"
+  },
+  "states": {
+    "empty": "draw only gray sprite over existing frame",
+    "occupied": "hide gray sprite; draw actual item using existing item renderer",
+    "hover": "preserve vanilla hover and tooltip; preview uses white alpha 0.3 as visual approximation"
+  },
+  "itemSource": "Keep approved32 as existing flat-item resource-size candidate; retain approved native16. No new runtime variant-selection rule is introduced. Occupied preview shows approved32 sampled at16 with nearest neighbor.",
+  "integrationPath": "assets/wildcraft/textures/gui/sprites/container/slot/paraglider.png",
+  "gameIntegrated": false
+}

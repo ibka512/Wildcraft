@@ -1,0 +1,159 @@
+{
+  "project": "Wildcraft",
+  "phase": "core-art-v1",
+  "mod_version": "0.1.0-dev.7",
+  "minecraft": "26.3",
+  "branch": "feature/core-art",
+  "local_tag": "v0.1.0-dev.7+mc26.3",
+  "publication": "local only; this update has not been pushed",
+  "input_archive_sha256": "96e8411fd0e68133fff7c242e2152207811c777159d8c6ba6070172fa932405a",
+  "original_sources_verified": 55,
+  "game_tests_passed": 28,
+  "client_test_classes_passed": 9,
+  "two_real_graphical_clients_passed": true,
+  "native_focus_cases_passed": 4,
+  "persistent_schema_changed": false,
+  "production_dependencies_added": false,
+  "artifacts": [
+    {
+      "file": "wildcraft-0.1.0-dev.7+mc26.3.jar",
+      "bytes": 215112,
+      "sha256": "91b8a92e9eb69119b8a663c29d0f259e9a0bff4fd98ba2d1a6ad87305af6232a"
+    },
+    {
+      "file": "Wildcraft-核心美术-v1-source.zip",
+      "bytes": 1702648,
+      "sha256": "f233507680e80936cd43361f03eeb95c224c1e367380e1d8747325bd8cc08372"
+    },
+    {
+      "file": "Wildcraft-核心美术-v1-验证报告.md",
+      "bytes": 5916,
+      "sha256": "19d00d62e05e74da968ac6e6384bf2d48c800e49ced7d136521f1bf0f172f824"
+    },
+    {
+      "file": "verification/core-art-v1/art-checks.log",
+      "bytes": 56356,
+      "sha256": "9920047b9c3164aa8cd205f4435d87eab558fcc02e582efedf8e5437d2cfd1a7"
+    },
+    {
+      "file": "verification/core-art-v1/back-equipment.png",
+      "bytes": 85543,
+      "sha256": "3ed7abcc53293cbd4c6a945a5003098bd6056186170d7610e7746a4b908eee2b"
+    },
+    {
+      "file": "verification/core-art-v1/climbing-wall.png",
+      "bytes": 128215,
+      "sha256": "6f853ba23b14bdb6a5c092cc65c9a142a182ca36ab3b8c7dcdb413c4b2f13515"
+    },
+    {
+      "file": "verification/core-art-v1/compact-checks.log",
+      "bytes": 56356,
+      "sha256": "9920047b9c3164aa8cd205f4435d87eab558fcc02e582efedf8e5437d2cfd1a7"
+    },
+    {
+      "file": "verification/core-art-v1/equipment-slot.png",
+      "bytes": 64863,
+      "sha256": "e20ab58e73bed596b8567b9aa8beba253e83b7a5495854f19ed5de7203018be2"
+    },
+    {
+      "file": "verification/core-art-v1/focus-first-person.png",
+      "bytes": 219145,
+      "sha256": "2b6acba3766840214287f4fe4b7a89623f05d8461e184338dfa0fe417eee8745"
+    },
+    {
+      "file": "verification/core-art-v1/full-regression.log",
+      "bytes": 275285,
+      "sha256": "b155711ed64ac52a1e4a70bfb9596fb14711d5758fb014f11d49d76267c39d0e"
+    },
+    {
+      "file": "verification/core-art-v1/gametest-results.xml",
+      "bytes": 4173,
+      "sha256": "117ffffe38a2ad223c3fad235653d72dffb3eb32e9d9c23d21ad95409fa358a6"
+    },
+    {
+      "file": "verification/core-art-v1/glider-first-person.png",
+      "bytes": 198688,
+      "sha256": "30bfdaa6416addf9a73647720824c8218940506373d635092ab9a54a86eaf82c"
+    },
+    {
+      "file": "verification/core-art-v1/glider-third-person-front.png",
+      "bytes": 234373,
+      "sha256": "4fe905ebeb1149a8095855ad79765e191945c04f321c34fba771591aa79d8b55"
+    },
+    {
+      "file": "verification/core-art-v1/hud-low-stamina.png",
+      "bytes": 88284,
+      "sha256": "630c474c1d78214352d67cd29eecade57866986b55eaecedf04146fbc353d9e0"
+    },
+    {
+      "file": "verification/core-art-v1/hud-multiple-heart-rows.png",
+      "bytes": 86319,
+      "sha256": "cbf96de5f2b5a85fdf86c0f3734f58698dd27cd15a9e7ce063d279e22269101d"
+    },
+    {
+      "file": "verification/core-art-v1/native-focus.log",
+      "bytes": 30715,
+      "sha256": "1093176af2e8c8ad33ee8c1d855aaa68dea5e036718323ffd1dc4cfa8fddb70b"
+    },
+    {
+      "file": "verification/core-art-v1/native-measurements.txt",
+      "bytes": 1696,
+      "sha256": "92077960bdb1b56ef98d50da61e9f8b86c8d14cf3879d15a521efe0de7853283"
+    },
+    {
+      "file": "verification/core-art-v1/observer-back-equipment.png",
+      "bytes": 439252,
+      "sha256": "e7cec4811e9ed8c466d2a668ec47c68067d762d99d4c9c8cd9aed18d36f6b640"
+    },
+    {
+      "file": "verification/core-art-v1/observer-climb-release.png",
+      "bytes": 759710,
+      "sha256": "cf42e58f60270de04ebed0fc86cef264060d0f699f82651991759127f5f494d2"
+    },
+    {
+      "file": "verification/core-art-v1/observer-climbing.png",
+      "bytes": 296800,
+      "sha256": "7137790f7529e03a38af24dabd4fa9b81b756bf8a52730bcf986f677d36511f5"
+    },
+    {
+      "file": "verification/core-art-v1/observer-gliding.png",
+      "bytes": 163866,
+      "sha256": "46ff1ba6598799742625b5350385da9e9847c293bc1a6a3aa2b1768c46e7f51c"
+    },
+    {
+      "file": "verification/core-art-v1/settings-compact-scrolled.png",
+      "bytes": 200734,
+      "sha256": "0046a9965a4a5de54612b8ca9229f6d83bc48ff80e39638b10c1aaabeae29c41"
+    },
+    {
+      "file": "verification/core-art-v1/settings-normal.png",
+      "bytes": 133013,
+      "sha256": "91202e688581ae23665538a102f14851ac4130ca93463271b9a25d4623c0d5ce"
+    },
+    {
+      "file": "verification/core-art-v1/settings-zh.png",
+      "bytes": 79438,
+      "sha256": "60d6499de8df43ebbe0a387ba74393a7de470e28f96a1fd77624ef1c76260e55"
+    },
+    {
+      "file": "verification/core-art-v1/standalone-server.log",
+      "bytes": 5958,
+      "sha256": "da6e02d262067829457a6adf6b47a05f139927c7bf2c1801599e138df1e00df4"
+    },
+    {
+      "file": "verification/core-art-v1/two-client-actor.log",
+      "bytes": 28405,
+      "sha256": "aa8a1b4be8f048d9f57a1ebdcb6effdf104a260027905932716cd34e66f6841f"
+    },
+    {
+      "file": "verification/core-art-v1/two-client-observer.log",
+      "bytes": 30972,
+      "sha256": "14cc1441b6926804be31771e94d3cc3785b6213ea7c1feecdc7f6a8208662f96"
+    },
+    {
+      "file": "verification/core-art-v1/two-client-server.log",
+      "bytes": 8768,
+      "sha256": "2a89a7564d37c6db381db82fd0e43dfff0b43a2b55d93e2f865dfd865d4e0a78"
+    }
+  ]
+}

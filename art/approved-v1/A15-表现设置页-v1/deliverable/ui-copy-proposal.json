@@ -1,0 +1,15 @@
+{
+  "zh_cn": {
+    "focus.wildcraft.settings": "林克时间 · 画面设置",
+    "focus.wildcraft.settings.hint": "只调整画面，时间、精力与提示音保持生效",
+    "additional_effects": "附加效果",
+    "visuals_off_hint": "附加画面已关闭；时间、精力与提示音仍生效。"
+  },
+  "en_us": {
+    "focus.wildcraft.settings": "Focus · Presentation",
+    "focus.wildcraft.settings.hint": "Visuals only; time, stamina and sounds stay active",
+    "additional_effects": "Additional effects",
+    "visuals_off_hint": "Visuals are off; time, stamina and sounds stay active."
+  },
+  "note": "Isolated prose proposal only. Preserve project translation keys and generated-resource workflow."
+}

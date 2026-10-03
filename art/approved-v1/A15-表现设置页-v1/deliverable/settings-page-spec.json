@@ -1,0 +1,191 @@
+{
+  "asset": "A15",
+  "version": 1,
+  "status": "draft_pending_review",
+  "title": "林克时间 · 画面设置",
+  "settingsCount": 6,
+  "schema": 1,
+  "controls": {
+    "strength": {
+      "default": 2,
+      "states": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "labels": [
+        "关闭",
+        "弱",
+        "标准",
+        "强"
+      ],
+      "behavior": "cycle on activation; immediate native save at integration"
+    },
+    "vignette": {
+      "default": true
+    },
+    "reticle": {
+      "default": true
+    },
+    "pattern": {
+      "default": false
+    },
+    "lowStaminaPulse": {
+      "default": false
+    },
+    "fov": {
+      "default": false
+    }
+  },
+  "defaultOptions": {
+    "schema": 1,
+    "strength": 2,
+    "vignette": true,
+    "reticle": true,
+    "pattern": false,
+    "lowStaminaPulse": false,
+    "fov": false
+  },
+  "layout": {
+    "unit": "Minecraft logical GUI pixels",
+    "standardCanvas": [
+      480,
+      270
+    ],
+    "defaultRectangles": [
+      {
+        "id": "settings",
+        "x": 80,
+        "y": 8,
+        "width": 320,
+        "height": 254
+      },
+      {
+        "id": "screen-header",
+        "x": 93,
+        "y": 21,
+        "width": 294,
+        "height": 28
+      },
+      {
+        "id": "global-hint",
+        "x": 93,
+        "y": 56,
+        "width": 294,
+        "height": 10
+      },
+      {
+        "id": "strength",
+        "x": 94,
+        "y": 74,
+        "width": 292,
+        "height": 20
+      },
+      {
+        "id": "vignette",
+        "x": 94,
+        "y": 116,
+        "width": 143,
+        "height": 20
+      },
+      {
+        "id": "reticle",
+        "x": 243,
+        "y": 116,
+        "width": 143,
+        "height": 20
+      },
+      {
+        "id": "pattern",
+        "x": 94,
+        "y": 141,
+        "width": 143,
+        "height": 20
+      },
+      {
+        "id": "pulse",
+        "x": 243,
+        "y": 141,
+        "width": 143,
+        "height": 20
+      },
+      {
+        "id": "fov",
+        "x": 94,
+        "y": 166,
+        "width": 292,
+        "height": 20
+      },
+      {
+        "id": "help",
+        "x": 93,
+        "y": 195,
+        "width": 294,
+        "height": 26
+      },
+      {
+        "id": "done",
+        "x": 93,
+        "y": 229,
+        "width": 294,
+        "height": 20
+      }
+    ],
+    "buttonHeight": 20,
+    "rowGap": 5,
+    "columnGap": 6,
+    "panelWidth": "min(320, guiWidth-24)",
+    "panelMaxHeight": "guiHeight-16",
+    "compact": "guiHeight<270: 8-unit padding and compact header/help",
+    "heightStress": "guiHeight<210: hide optional contextual help, scroll only options; header/global hint/Done remain available",
+    "nativeRounding": "Use integer bounds and native font metrics; tested preview uses integer button widths in target modes",
+    "firstTabOrder": [
+      "strength",
+      "vignette",
+      "reticle",
+      "pattern",
+      "lowStaminaPulse",
+      "fov",
+      "done"
+    ]
+  },
+  "palette": {
+    "panel": "#18271c",
+    "accent": "#b6eb91",
+    "muted": "#bbc7b0",
+    "frame": "#607658",
+    "buttonPreview": "#595959",
+    "buttonHoverPreview": "#606060",
+    "offText": "#dedede",
+    "text": "#ffffff"
+  },
+  "nativeReuse": {
+    "font": "Minecraft default font; browser substitutes system font",
+    "buttons": "Existing native Button/CycleButton behavior and normal widget appearance; browser uses beveled flat approximation",
+    "brand": "Reuse adopted A14 PNG as header identifier",
+    "newProductionIcons": 0,
+    "newProductionTextures": 0,
+    "procedural": "Panel fill, thin border, labels, state text and dividers",
+    "layoutGuideSvg": "Editable geometry reference; not a production raster asset"
+  },
+  "behaviorContract": {
+    "entry": "Existing F8 binding and original key-rebind route",
+    "save": "Preserve current immediate update/save; do not add save/cancel semantics",
+    "close": "Done/Esc returns to parent; preview shows placeholder only",
+    "strengthOff": "All five toggles remain editable and preferences retained; visual output suppressed; time/stamina/sounds unaffected",
+    "defaults": "Standard + vignette/reticle on; pattern/pulse/fov off",
+    "scope": "Six existing fields only; no equipment-transition toggle, sound slider or gameplay controls",
+    "help": "Static descriptive help on hover/focus; no flashing/animated demo",
+    "prototypeStorage": "Memory only; no actual game config writes or persistent local storage"
+  },
+  "localization": "Existing labels retained; short help/overview prose supplied in ui-copy-proposal.json; use project language provider/datagen on integration",
+  "referenceLimits": {
+    "historicalBackground": "Unmodified A11 historical world frame; background composition not runtime screenshot",
+    "dark": "Brightness 0.28 simulation on backdrop only",
+    "previewDoesNotApplyFocusEffects": "Settings page interaction illustrates stored preferences, not a running effect or skill",
+    "prototypeSizeStress": "320x180 is a layout stress reference, not a claim about native Minecraft minimum GUI size"
+  },
+  "gameIntegrated": false,
+  "gameRuntimeVerified": false
+}

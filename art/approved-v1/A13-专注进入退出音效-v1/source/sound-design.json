@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "sample_rate": 48000,
+  "seed": 1303,
+  "notes": {"lower_hz": 523.251131, "upper_hz": 783.990872},
+  "partial_ratios": [1.0, 2.01, 2.79],
+  "partial_levels": [1.0, 0.105, 0.043],
+  "enter": {
+    "duration_seconds": 0.48,
+    "peak_dbfs": -8.0,
+    "tones": [
+      {"note": "lower_hz", "start": 0.025, "level": 0.16, "decay": 0.092},
+      {"note": "upper_hz", "start": 0.095, "level": 0.25, "decay": 0.108}
+    ],
+    "air": {"level": 0.022, "center_start_hz": 850, "center_end_hz": 2200, "duration": 0.20},
+    "body": {"frequency_hz": 174.614116, "level": 0.023, "decay": 0.085}
+  },
+  "exit": {
+    "duration_seconds": 0.44,
+    "peak_dbfs": -10.0,
+    "tones": [
+      {"note": "upper_hz", "start": 0.012, "level": 0.13, "decay": 0.068},
+      {"note": "lower_hz", "start": 0.070, "level": 0.23, "decay": 0.088}
+    ],
+    "air": {"level": 0.018, "center_start_hz": 2100, "center_end_hz": 850, "duration": 0.19},
+    "body": {"frequency_hz": 174.614116, "level": 0.020, "decay": 0.073}
+  },
+  "render": {
+    "tone_attack_seconds": 0.010,
+    "tone_pitch_settle": 0.008,
+    "edge_fade_seconds": 0.008,
+    "tail_fade_seconds": 0.035,
+    "silent_tail_seconds": 0.012,
+    "ogg_quality": 5,
+    "paired_preview_gap_seconds": 1.10
+  }
+}

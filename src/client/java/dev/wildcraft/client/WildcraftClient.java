@@ -11,11 +11,12 @@ public final class WildcraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         StaminaHud.initialize();
+        dev.wildcraft.client.render.CharacterPoses.initialize();
         dev.wildcraft.client.focus.FocusClient.initialize();
         ClimbControls.initialize();
         GlideControls.initialize();
         ParagliderLayer.initialize();
         dev.wildcraft.client.render.BackEquipmentLayer.initialize();
-        Wildcraft.LOGGER.info("Wildcraft P3.2 client initialization complete; HUD, traversal controls and paraglider layer registered.");
+        Wildcraft.LOGGER.info("Wildcraft core art v1 client initialization complete; HUD, authored poses, traversal and equipment layers registered.");
     }
 }
