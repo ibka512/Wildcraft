@@ -12,7 +12,7 @@ public abstract class NativeFrameResearchMixin {
     @Inject(method = "runTick", at = @At("HEAD"))
     private void wildcraftResearch$release(CallbackInfo info) {
         Minecraft client = (Minecraft) (Object) this;
-        if (NativeTimeProbe.holdingUse() || dev.wildcraft.test.equipment.BackNativeClientProbe.holdingUse()) client.options.keyUse.setDown(true);
+        if (NativeTimeProbe.holdingUse() || dev.wildcraft.test.equipment.BackNativeClientProbe.holdingUse() || dev.wildcraft.test.research.time.FocusNativeProbe.holdingUse()) client.options.keyUse.setDown(true);
         if (Boolean.getBoolean("wildcraft.r1.frameRelease") && client.player != null && client.gameMode != null
                 && dev.wildcraft.test.research.time.WorldTimeResearch.active(client.player)
                 && dev.wildcraft.test.research.time.WorldTimeResearch.compensated
@@ -25,8 +25,8 @@ public abstract class NativeFrameResearchMixin {
 
     @Inject(method = "handleKeybinds", at = @At("HEAD"))
     private void wildcraftResearch$heldInput(CallbackInfo info) {
-        if (NativeTimeProbe.holdingUse() || dev.wildcraft.test.equipment.BackNativeClientProbe.holdingUse()) ((Minecraft) (Object) this).options.keyUse.setDown(true);
+        if (NativeTimeProbe.holdingUse() || dev.wildcraft.test.equipment.BackNativeClientProbe.holdingUse() || dev.wildcraft.test.research.time.FocusNativeProbe.holdingUse()) ((Minecraft) (Object) this).options.keyUse.setDown(true);
     }
     @Inject(method = "runTick", at = @At("TAIL"))
-    private void wildcraftResearch$frame(CallbackInfo info) { NativeTimeProbe.frame((Minecraft) (Object) this); dev.wildcraft.test.equipment.BackNativeClientProbe.frame((Minecraft) (Object)this); }
+    private void wildcraftResearch$frame(CallbackInfo info) { NativeTimeProbe.frame((Minecraft) (Object) this); dev.wildcraft.test.research.time.FocusNativeProbe.frame((Minecraft)(Object)this); dev.wildcraft.test.equipment.BackNativeClientProbe.frame((Minecraft) (Object)this); }
 }

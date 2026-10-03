@@ -40,7 +40,7 @@ public final class StaminaHud {
             previous = view;
         }
         return view != null && p.isAlive() && !p.isSpectator() && !client.gui.hud.isHidden()
-                && (Climbing.active(p) || Gliding.active(p)
+                && (Climbing.active(p) || Gliding.active(p) || dev.wildcraft.focus.FocusTime.active(p)
                 || view.stamina() < view.capacity() || p.tickCount < visibleUntil);
     }
     private static void extract(GuiGraphicsExtractor graphics) {

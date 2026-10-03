@@ -31,7 +31,8 @@ public final class Wildcraft implements ModInitializer {
         Climbing.initialize();
         Gliding.initialize();
         PlayerStamina.initialize();
+        dev.wildcraft.focus.FocusTime.initialize();
         StaminaCommands.initialize();
-        LOGGER.info("Wildcraft P3.1 common initialization complete; stamina, climbing and paraglider registered.");
+        LOGGER.info("Wildcraft P3.2 common initialization complete; stamina, climbing and paraglider registered.");
     }
 }

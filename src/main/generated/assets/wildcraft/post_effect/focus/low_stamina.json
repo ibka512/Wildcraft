@@ -1,0 +1,29 @@
+{
+  "passes": [
+    {
+      "fragment_shader": "wildcraft:post/focus_pulse",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "minecraft:main"
+        }
+      ],
+      "output": "swap",
+      "vertex_shader": "minecraft:core/screenquad"
+    },
+    {
+      "fragment_shader": "wildcraft:post/focus_copy",
+      "inputs": [
+        {
+          "sampler_name": "In",
+          "target": "swap"
+        }
+      ],
+      "output": "minecraft:main",
+      "vertex_shader": "minecraft:core/screenquad"
+    }
+  ],
+  "targets": {
+    "swap": {}
+  }
+}

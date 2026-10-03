@@ -11,7 +11,10 @@
     "BackUseMixin",
     "BackItemUseMixin",
     "BackCrossbowMixin",
-    "BackInventoryMixin"
+    "BackInventoryMixin",
+    "FocusEpochMixin",
+    "FocusItemMixin",
+    "FocusPacketMixin"
   ],
   "client": [
     "client.ParagliderAvatarMixin",
@@ -20,7 +23,11 @@
     "client.GliderSlotScreenMixin",
     "client.GliderCreativeScreenMixin",
     "client.BackAvatarMixin",
-    "client.UpperLeftHeartsMixin"
+    "client.UpperLeftHeartsMixin",
+    "client.IntegratedFocusMixin",
+    "client.FocusFrameMixin",
+    "client.FocusPostMixin",
+    "client.FocusCameraMixin"
   ],
   "injectors": {
     "defaultRequire": 1

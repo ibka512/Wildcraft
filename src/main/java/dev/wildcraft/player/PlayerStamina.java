@@ -77,7 +77,7 @@ public final class PlayerStamina {
     }
 
     public static boolean canRecover(ServerPlayer player) {
-        return player.isAlive() && !player.isSpectator() && player.onGround() && !Climbing.active(player) && !Gliding.active(player)
+        return player.isAlive() && !player.isSpectator() && player.onGround() && !Climbing.active(player) && !Gliding.active(player) && !dev.wildcraft.focus.FocusTime.active(player)
                 && !player.isInWater() && !player.getAbilities().flying && !player.isFallFlying();
     }
 

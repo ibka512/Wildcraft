@@ -199,3 +199,33 @@ tasks.register('runP31StandaloneServer', net.fabricmc.loom.task.prod.ServerProdu
     jvmArgs.add('-Xmx1G')
     runDir = new File(p31Lab, 'standalone')
 }
+
+// P3.2 uses ordinary frame/tick scheduling, with no fabric.client.gametest flag.
+tasks.register('runP32NativeClient', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    mods.from(gameTestJar)
+    jvmArgs.add('-Dwildcraft.p32.native=true')
+    programArgs.addAll('--quickPlaySingleplayer', 'P32Realtime')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/p32-native-client')
+    def fixtureSource = layout.buildDirectory.dir('run/r1-client/saves/R1Realtime').get().asFile.toPath()
+    def nativeDirectory = layout.buildDirectory.dir('run/p32-native-client').get().asFile.toPath()
+    doFirst {
+        def fixtureTarget = nativeDirectory.resolve('saves/P32Realtime')
+        if (!java.nio.file.Files.exists(fixtureTarget.resolve('level.dat'))) {
+            if (!java.nio.file.Files.exists(fixtureSource.resolve('level.dat'))) throw new GradleException('Prepare a disposable R1Realtime test world first; never use a personal save.')
+            java.nio.file.Files.walk(fixtureSource).withCloseable { paths ->
+                paths.forEach { source ->
+                    def relative = fixtureSource.relativize(source)
+                    def name = source.fileName.toString()
+                    if (!name.startsWith('._') && name != 'session.lock' && name != '.DS_Store') {
+                        def target = fixtureTarget.resolve(relative)
+                        if (java.nio.file.Files.isDirectory(source)) java.nio.file.Files.createDirectories(target)
+                        else java.nio.file.Files.copy(source, target, java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+                    }
+                }
+            }
+        }
+        // Version is required: a versionless options file runs migrations which reset onboarding.
+        java.nio.file.Files.writeString(nativeDirectory.resolve('options.txt'), 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n')
+    }
+}

@@ -19,7 +19,8 @@
       "dev.wildcraft.test.PlayerStaminaGameTests",
       "dev.wildcraft.test.ClimbingGameTests",
       "dev.wildcraft.test.GlidingGameTests",
-      "dev.wildcraft.test.BackEquipmentGameTests"
+      "dev.wildcraft.test.BackEquipmentGameTests",
+      "dev.wildcraft.test.FocusGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
@@ -28,7 +29,8 @@
       "dev.wildcraft.test.ClimbingClientSmokeTest",
       "dev.wildcraft.test.GlidingClientSmokeTest",
       "dev.wildcraft.test.research.time.TimeResearchClientSmokeTest",
-      "dev.wildcraft.test.BackEquipmentClientSmokeTest"
+      "dev.wildcraft.test.BackEquipmentClientSmokeTest",
+      "dev.wildcraft.test.FocusClientSmokeTest"
     ]
   }
 }

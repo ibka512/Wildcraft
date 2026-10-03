@@ -6,6 +6,7 @@ import java.util.Random;
 /** Dependency-free numerical checks executed by verifyRules as part of check/build. */
 public final class StaminaRulesCheck {
     public static void main(String[] arguments) {
+        FocusClockCheck.main(arguments);
         equal(StaminaRules.capacity(0), 100);
         equal(StaminaRules.capacity(15), 130);
         equal(StaminaRules.capacity(30), 160);

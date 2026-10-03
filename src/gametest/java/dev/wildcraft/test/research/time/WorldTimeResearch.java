@@ -61,6 +61,7 @@ public final class WorldTimeResearch {
     public static boolean begin(ServerPlayer p, float rate, boolean compensation) {
         MinecraftServer server = p.level().getServer();
         close(server);
+        dev.wildcraft.focus.FocusTime.interrupt(p); // Explicit research takes over this bow use.
         if (p.onGround() || !p.isAlive() || !p.isUsingItem() || !(p.getUseItem().getItem() instanceof BowItem)
                 || PlayerStamina.get(p).stamina() <= 0) return false;
         TimeLease lease = TimeLease.acquire(server, rate);
