@@ -1,5 +1,7 @@
-# P6 原创机械原型美术
+# Wildcraft 原创机械原型美术
 
-本阶段新增原创 16×16 机械主体/风扇图标和 8×8 白色材质。像素源为本目录 JSON，执行 `python3 art/tools/generate_mechanics_art.py` 导出游戏 PNG。沿用原版低分辨率材质，不使用任天堂图片或外部库。
+P6–P7：16×16 主体、风扇、翼、轮子、火箭/空壳、弹簧、稳定器、浮力装置图标，和 8×8 白色实体材质。可编辑像素源为本目录 JSON，执行 `python3 art/tools/generate_mechanics_art.py` 导出游戏 PNG；电池源稿在 energy-v1。没有外部图像或新增图像库。
 
-实体几何的可编辑源为 `src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java`：1.4×0.65 主体、六个节点、外壳与旋转风叶、动态电量条。各节点朝向使用与服务端一致的 MachineNodes 坐标。视觉部件伸出主体，碰撞仍是单一轴对齐主体，复杂复合碰撞暂缓。美术可后续替换，当前为可辨认的游戏原型。
+实体几何在 `src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java`：1.4×0.65 主体、六节点、所有部件、按各节点工作状态转动的风叶/轮辐、动态电量、外向尾焰和有限弹簧伸展。稳定器供电时保持展示水平。节点坐标与服务端共用 MachineNodes，旋转后的安装预览沿用同一坐标。
+
+这些是当前可玩的原创原型，便于后续替换美术。视觉部件伸出主体，碰撞仍是单一轴对齐主体盒；展示倾斜不增加复杂刚体物理。没有复制任天堂模型或贴图，最终造型、材质和人工手感待后续制作验收。

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " P ",
+    "CFC",
+    " P "
+  ],
+  "key": {
+    "P": "minecraft:paper",
+    "C": "minecraft:copper_ingot",
+    "F": "minecraft:fire_charge"
+  },
+  "result": {
+    "id": "wildcraft:rocket",
+    "count": 1
+  }
+}

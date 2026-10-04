@@ -10,7 +10,7 @@ root = Path(__file__).resolve().parents[2]
 def chunk(tag, data):
     return struct.pack('!I', len(data)) + tag + data + struct.pack('!I', zlib.crc32(tag + data) & 0xffffffff)
 
-for name, folder in [('fan', 'item'), ('machine_body', 'item'), ('machine', 'entity'), ('wing', 'item'), ('wheel', 'item')]:
+for name, folder in [('fan', 'item'), ('machine_body', 'item'), ('machine', 'entity'), ('wing', 'item'), ('wheel', 'item'), ('rocket', 'item'), ('spent_rocket', 'item'), ('spring', 'item'), ('stabilizer', 'item'), ('buoyancy', 'item')]:
     grid = json.loads((root / 'art/mechanics-v1' / (name + '.pixels.json')).read_text())
     width, height = grid['width'], grid['height']
     assert len(grid['rows']) == height and all(len(row) == width for row in grid['rows'])

@@ -59,7 +59,7 @@ public final class MechanicsClientSmokeTest implements FabricClientGameTest {
         nativeInput(c);
         System.out.println("WILDCRAFT P6 core tracking/model, native passenger, finite motion across chunk, real world save/reload and API recovery passed; input is a separate check");
     }
-    private static MachineEntity find(net.minecraft.world.level.Level level) {
+    static MachineEntity find(net.minecraft.world.level.Level level) {
         return level.getEntitiesOfClass(MachineEntity.class,new AABB(-20,110,-20,60,140,20)).stream().findFirst().orElse(null);
     }
     private static void nativeInput(ClientGameTestContext c) {
@@ -137,13 +137,13 @@ public final class MechanicsClientSmokeTest implements FabricClientGameTest {
         }
         System.out.println("WILDCRAFT P6 native placement, snap preview, actual clicks/replay, malformed intent, riding/steering/R, disk reload and native recovery passed");
     }
-    private static void select(ClientGameTestContext c,int slot){c.runOnClient(client -> client.player.getInventory().setSelectedSlot(slot));c.waitTicks(3);}
-    private static void aim(ClientGameTestContext c,net.minecraft.world.phys.Vec3 local){
+    static void select(ClientGameTestContext c,int slot){c.runOnClient(client -> client.player.getInventory().setSelectedSlot(slot));c.waitTicks(3);}
+    static void aim(ClientGameTestContext c,net.minecraft.world.phys.Vec3 local){
         c.runOnClient(client -> {var b=find(client.level);var delta=b.position().add(MachineNodes.rotate(local,b.getYRot())).subtract(client.player.getEyePosition());
             client.player.setYRot((float)Math.toDegrees(Math.atan2(-delta.x,delta.z)));client.player.setXRot((float)-Math.toDegrees(Math.atan2(delta.y,Math.sqrt(delta.horizontalDistanceSqr()))));});
         c.waitTicks(5);c.waitFor(client -> client.hitResult instanceof net.minecraft.world.phys.EntityHitResult hit && hit.getEntity()==find(client.level));
     }
-    private static void sneakClick(ClientGameTestContext c,net.minecraft.world.phys.Vec3 local){c.getInput().holdKey(o -> o.keyShift);c.waitTicks(3);aim(c,local);click(c);c.getInput().releaseKey(o -> o.keyShift);c.waitTicks(3);}
-    private static void click(ClientGameTestContext c){c.getInput().holdKeyFor(o -> o.keyUse,1);c.waitTicks(4);}
-    private static void check(boolean value,String message){if(!value)throw new AssertionError(message);}
+    static void sneakClick(ClientGameTestContext c,net.minecraft.world.phys.Vec3 local){c.getInput().holdKey(o -> o.keyShift);c.waitTicks(3);aim(c,local);click(c);c.getInput().releaseKey(o -> o.keyShift);c.waitTicks(3);}
+    static void click(ClientGameTestContext c){c.getInput().holdKeyFor(o -> o.keyUse,1);c.waitTicks(4);}
+    static void check(boolean value,String message){if(!value)throw new AssertionError(message);}
 }

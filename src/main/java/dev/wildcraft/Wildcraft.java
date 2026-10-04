@@ -40,6 +40,6 @@ public final class Wildcraft implements ModInitializer {
         StaminaCommands.initialize();
         dev.wildcraft.temperature.EnvironmentTemperature.initialize();
         dev.wildcraft.temperature.TemperatureCommands.initialize();
-        LOGGER.info("Wildcraft P6 initialization complete; mechanics, energy, cooking, temperature and traversal registered.");
+        LOGGER.info("Wildcraft P7 initialization complete; mechanics, energy, cooking, temperature and traversal registered.");
     }
 }

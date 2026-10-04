@@ -27,7 +27,7 @@ public final class MachinePresentation {
     }
     public static boolean canPreview(MachineEntity body, int node) {
         var p = Minecraft.getInstance().player;
-        return p != null && node >= 0 && !body.enabled() && body.kind(node) == 0 && MachineEntity.accepts(p.getMainHandItem())
+        return p != null && node >= 0 && !body.enabled() && body.kind(node) == 0 && MachineEntity.accepts(p.getMainHandItem()) && !p.getMainHandItem().is(MechanicsContent.SPENT_ROCKET)
                 && (!p.getMainHandItem().is(EnergyContent.BATTERY) || body.batteryNode() < 0);
     }
     public static void initialize() {
@@ -47,6 +47,8 @@ public final class MachinePresentation {
             Component label = Component.translatable("machine.wildcraft.status", body.energy(), body.enabled()
                     ? Component.translatable(body.working() ? "machine.wildcraft.running" : "machine.wildcraft.waiting")
                     : Component.translatable("machine.wildcraft.off"));
+            if(node>=0 && body.kind(node)==4) label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.fuel",body.rocketFuel(node),RocketData.DURATION));
+            if(node>=0 && body.kind(node)==5) label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.cooldown",body.springCooldown(node)));
             Component hint = Component.translatable("machine.wildcraft." + help, TOGGLE.getTranslatedKeyMessage());
             if (node >= 0) hint = Component.translatable("machine.wildcraft.node_hint", Component.translatable("machine.wildcraft.node." + node), hint);
             int maxWidth = Math.max(40, g.guiWidth() - 24);

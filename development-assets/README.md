@@ -79,3 +79,7 @@ P6完整本机交付：wildcraft-0.1.0-dev.11+mc26.3.jar、Wildcraft-P6-source.z
 P6最终截图按verification/p6/README.md中的10文件索引核对；Wildcraft-P6-handoff-source.zip与Wildcraft-P6-handoff-SHA256SUMS.txt为截图来源澄清后的交接补充，原冻结P6-source及清单不覆盖。
 
 P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-source.zip与校验清单；仅构建和51服务端检查通过，新增客户端/物理矩阵未验收。完整安装包仍P6/dev.11，见docs/P7-CHECKPOINT.md。
+
+## P7 完整本机交付
+
+[dev.12正式JAR](wildcraft-0.1.0-dev.12+mc26.3.jar)、[源码](Wildcraft-P7-source.zip)、[最终证据](verification/p7/README.md)、[校验](Wildcraft-P7-SHA256SUMS.txt)与[机器清单](Wildcraft-P7-manifest.json)。56服务端、14类成品客户端、两个普通客户端和独立服务端为同一正式包，见P7-VERIFICATION。上方旧停线检查点和wing-wheel先行包均保留其历史状态，完整最新已为dev.12；公开GitHub仍dev.7。

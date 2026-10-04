@@ -1,0 +1,165 @@
+{
+  "stage": "P7",
+  "stage_complete": true,
+  "version": "0.1.0-dev.12",
+  "public_version": "0.1.0-dev.7",
+  "date": "2026-10-04",
+  "server_tests": 56,
+  "project_server_tests": 55,
+  "client_classes": 14,
+  "ordinary_clients": 2,
+  "production_jar_entries": 301,
+  "jar_sha256": "986706154f0ead68ea57a1a22177ab1a23cd0cde8b8c4c2751298c2da66d3568",
+  "files": [
+    {
+      "path": "wildcraft-0.1.0-dev.12+mc26.3.jar",
+      "size": 357201,
+      "sha256": "986706154f0ead68ea57a1a22177ab1a23cd0cde8b8c4c2751298c2da66d3568"
+    },
+    {
+      "path": "Wildcraft-P7-source.zip",
+      "size": 1905359,
+      "sha256": "ff975aa25644756b02f7727310dba6ea302fb42daabee0d862bff9ab60f872c9"
+    },
+    {
+      "path": "verification/p7/README.md",
+      "size": 1091,
+      "sha256": "23c07a043dff799cf53bda607a6b222798beed7bbc8b86b23dd1230e8e03e729"
+    },
+    {
+      "path": "verification/p7/build-server-tests.log",
+      "size": 49855,
+      "sha256": "f7d228ae68bdb7df4c50e3c5bf9f09282c9bb59bf86004c4cc3197957a5fd784"
+    },
+    {
+      "path": "verification/p7/datagen.log",
+      "size": 6339,
+      "sha256": "10b536a629cca94f8fcc365eb539a756a681b50006baa021d8ecad337dc85fd4"
+    },
+    {
+      "path": "verification/p7/full-client.log",
+      "size": 425108,
+      "sha256": "f9ac5c8b3b12cebe18bbb331e01c66aef329c6dac638ddec3a650a036c03a1bb"
+    },
+    {
+      "path": "verification/p7/gametest-results.xml",
+      "size": 8349,
+      "sha256": "b37145c1481cf2fe0895a0d1f0dfc7c20207838511a6a431cf0f6a3b549978a3"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-0.png",
+      "size": 829256,
+      "sha256": "dafd3d5932d639fc8919d145ffef71dd78b763873f4ef14bd06e767e7723818b"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-1.png",
+      "size": 897178,
+      "sha256": "9644253aa1445fb20bccff193b86c4363176c9a6104b2f07ce8a5272721940e5"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-2.png",
+      "size": 827410,
+      "sha256": "e3e23bff93c33fef14aed2cb77ae9107d6040b630acb7bca1f5e2d3c1e435404"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-3.png",
+      "size": 820863,
+      "sha256": "a548ee48cc2f40c30f210e83c23a6450ca644d264e589e6b43b1f8f632087ccb"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-4.png",
+      "size": 753863,
+      "sha256": "67a9d6f3509b761cd8f1d58ac5f2b4ca46c1905764e0f5251071333686e2fa96"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-5.png",
+      "size": 836382,
+      "sha256": "c4cde95d7540ef1469fa4e818a56ca443603a482e5101557ef34895efabacb68"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-6.png",
+      "size": 770604,
+      "sha256": "eb1ddbfd8756c0dcd735a7671baa92ddcb3a416478aea3d49a2a966cd30544d5"
+    },
+    {
+      "path": "verification/p7/ordinary-observer/p7-observer-7.png",
+      "size": 741591,
+      "sha256": "85d3fdd9f0145ca72f01954339d14edf615ccef16eca5607e262ab29e2da9556"
+    },
+    {
+      "path": "verification/p7/p7-buoyancy-front-preview.png",
+      "size": 175895,
+      "sha256": "42e0d96bbc284e55a2f63e44625b8dcb85e14313ea0ee3080ce5208a94fc6e9d"
+    },
+    {
+      "path": "verification/p7/p7-native-one-block-step.png",
+      "size": 73398,
+      "sha256": "74048420f372b86d272d2fa0d22b7eb4225293b1224e288592ef1490eef4995b"
+    },
+    {
+      "path": "verification/p7/p7-native-rocket-burning-off.png",
+      "size": 127208,
+      "sha256": "ef81295db41287fe14d0143385da41f915a7cf7763162f7a84b374b5704182c0"
+    },
+    {
+      "path": "verification/p7/p7-native-spring-launch.png",
+      "size": 217657,
+      "sha256": "21292dda2af17e8bb9c038d3f14f216c3221b9516403604f1ddd727e3c56ae17"
+    },
+    {
+      "path": "verification/p7/p7-rocket-rear-preview.png",
+      "size": 181531,
+      "sha256": "b57ea65ad7e4bc1af98c2e822628af9e599d40ada516490f2bda4705b04fb6c1"
+    },
+    {
+      "path": "verification/p7/p7-rocket-spring-stabilizer-powered.png",
+      "size": 68595,
+      "sha256": "acbe7421ca006c8a8cc321e14dba62572e0d21d8c9da3317f0a5cc8c3fb34258"
+    },
+    {
+      "path": "verification/p7/p7-spring-bottom-preview.png",
+      "size": 64201,
+      "sha256": "af2782c8766fadfd12674728a642ed13fe8c4ac6e1f9cc822b8aad57a03aeb89"
+    },
+    {
+      "path": "verification/p7/p7-water-float-loaded-parts.png",
+      "size": 279790,
+      "sha256": "069a4d762625b43ecd175893d4c125ed990186679bfc049b7b15b26746f08164"
+    },
+    {
+      "path": "verification/p7/p7-wing-preview.png",
+      "size": 241583,
+      "sha256": "df7af59bd6f602d5050df34614a742b2bdd70a9ba8bab95b818cca765665e068"
+    },
+    {
+      "path": "verification/p7/p7-wing-wheel-loaded-glide.png",
+      "size": 171864,
+      "sha256": "5ffb2871a7609b31b4b8737ef598b0aa9700ab467520a5219dbfde69810a0aed"
+    },
+    {
+      "path": "verification/p7/parts-client.log",
+      "size": 60452,
+      "sha256": "7d0d991906804f9298665c8cf266aa06caad7bde6fd11723bab3f07fd9d6d869"
+    },
+    {
+      "path": "verification/p7/standalone-server.log",
+      "size": 6533,
+      "sha256": "9288b0a2cbbf784237856adfe1d73edd1eb264b7cf7bf78e4b082a822179c673"
+    },
+    {
+      "path": "verification/p7/two-client-actor.log",
+      "size": 27588,
+      "sha256": "33b2e8b2ec817faea4b3b622765370d162de55bf8ffbe8802f00b5653c21f984"
+    },
+    {
+      "path": "verification/p7/two-client-observer.log",
+      "size": 28314,
+      "sha256": "bede82e4f1b9bd3b2fe4f1c777cc6adaf5bafaeb6db86deb86d4a8a97b6ae562"
+    },
+    {
+      "path": "verification/p7/two-client-server.log",
+      "size": 16417,
+      "sha256": "6a073a53c292a241f31dd13ae5226082e7071522da36405801623d033869843e"
+    }
+  ]
+}

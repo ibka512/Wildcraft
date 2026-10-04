@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.11 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6主体、风扇/电池、实际节点安装与拆卸回收已经实现；剩余六类机械部件按P7继续，Fuse尚未实现。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.11尚未上传。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.12 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机下一阶段继续；Fuse尚未实现。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.12尚未上传。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -23,6 +23,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 | 红石能源 P5 | 固定红石块无限储量、每源/每充电器20能量/世界刻上限；相邻充电器共享并轮流供电，信号和随身红石块不产生电量 |
 | 有限电池 P5 | 空电池容量1000，充电器显示进度；实际堆栈存余量，取出消费、掉落或重载不回满；机械动力留到P6 |
 | 机械安装 P6 | 六个固定节点；手持部件右键安装、吸附预览；蹲下空手右键拆下；顶部控制板启停；空手乘坐、A/D转向、R启停；拆空后蹲下空手攻击回收主体 |
+| 八类部件 P7 | 被动翼、接地轮子、一次性火箭、冷却弹簧、有限稳定器、水中浮力，以及已有风扇/电池；W/S驱动、载重限制、真实资源保存 |
 | 核心美术 v1 | 原创滑翔伞网格、标准/细手臂握持和攀爬姿态、五类背负挂点与短落定、精力图集、专注画面/音效及设置页 |
 
 ![第三人称滑翔](development-assets/verification/core-art-v1/glider-third-person-front.png)
@@ -35,7 +36,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 ## 下载与安装
 
-- **本机最新开发包：[wildcraft-0.1.0-dev.11+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.11+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
+- **本机最新开发包：[wildcraft-0.1.0-dev.12+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.12+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
 - [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
 - [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
 
@@ -102,13 +103,13 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。接下来按[P7准备](docs/P7-PREPARATION.md)补齐其余六类部件。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
+P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；接下来按[P8准备](docs/P8-PREPARATION.md)实现古代装置制造机。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
 
 | 顺序 | 后续范围 |
 | --- | --- |
 | P4B（已完成） | 独立料理锅、七条配方、有效实际时长、有限细雪与恢复辅助 |
 | P5（已完成） | 红石信号与电量分离、固定无限能源限速、充电器和有限电池 |
-| P6 / P7 | 主体、有限安装节点、吸附/拆卸回收；翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置 |
+| P6 / P7（本机已完成） | 主体、有限安装节点、吸附/拆卸回收；翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置 |
 | P8 | 古代装置制造机；投入一次、确定结果保存、中断恢复 |
 | P9 / P9.1 | 正式 Fuse 与背负/空中箭整合；任意物品 Fuse 的保存、通用规则、专属效果和外观分别研究 |
 | R2 / P10 / P10.1 | 多人局部时间研究、风与天气、通过研究后实现多人林克时间 |
@@ -150,4 +151,4 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 
 本机dev.10：40项服务端、12类候选客户端回归、最终能源专项和独立服务端通过；SHA-256：`1e7a0ec8e3fb6b630b62f071fb660771a8d816fa454a6a418163864f3986ca39`。验证和限制见P5-VERIFICATION。
 
-当前连续开发检查点：源码dev.12已开始P7翼/轮子，尚未完成，最新完整玩法仍dev.11。进度、实际验证与下一任务见[停线交接](docs/P7-CHECKPOINT.md)。
+当前完整本机阶段P7/dev.12：56项服务端、14类成品客户端、两个普通独立客户端及无测试Mod服务端通过。JAR SHA-256：`986706154f0ead68ea57a1a22177ab1a23cd0cde8b8c4c2751298c2da66d3568`。原翼/轮子停线检查点保留其历史状态，最新入口见[P7验收](docs/P7-VERIFICATION.md)。公开GitHub仍dev.7，当前没有上传新发布。

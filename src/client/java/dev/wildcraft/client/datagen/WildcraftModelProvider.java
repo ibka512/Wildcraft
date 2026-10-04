@@ -24,6 +24,7 @@ public final class WildcraftModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators generator) {
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.BODY, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.FAN, ModelTemplates.FLAT_ITEM);
+        for(var part:java.util.List.of(dev.wildcraft.mechanics.MechanicsContent.ROCKET,dev.wildcraft.mechanics.MechanicsContent.SPENT_ROCKET,dev.wildcraft.mechanics.MechanicsContent.SPRING,dev.wildcraft.mechanics.MechanicsContent.STABILIZER,dev.wildcraft.mechanics.MechanicsContent.BUOYANCY))generator.generateFlatItem(part,ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.WING, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.WHEEL, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.energy.EnergyContent.BATTERY, ModelTemplates.FLAT_ITEM);

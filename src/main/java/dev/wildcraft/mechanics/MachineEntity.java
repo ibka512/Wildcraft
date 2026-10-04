@@ -18,7 +18,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.*;
 import net.minecraft.world.phys.Vec3;
 
-/** Server owns movement and full stacks; tracking exposes only kind, charge and switch. */
+/** Server owns movement and full stacks; tracking exposes bounded visual state only. */
 public final class MachineEntity extends Entity {
     private static final EntityDataAccessor<Integer> FANS = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Integer> BATTERY = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.INT);
@@ -26,13 +26,16 @@ public final class MachineEntity extends Entity {
     private static final EntityDataAccessor<Boolean> ENABLED = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Boolean> WORKING = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.BOOLEAN);
     private static final EntityDataAccessor<Integer> KINDS = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> ACTIVE = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Long> FUELS = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.LONG);
+    private static final EntityDataAccessor<Long> COOLDOWNS = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.LONG);
     private final NonNullList<ItemStack> parts = NonNullList.withSize(MachineNodes.COUNT, ItemStack.EMPTY);
     private UUID owner;
     private long lastAction = Long.MIN_VALUE;
 
     public MachineEntity(EntityType<? extends MachineEntity> type, Level level) { super(type, level); }
     @Override protected void defineSynchedData(SynchedEntityData.Builder b) {
-        b.define(KINDS, 0); b.define(FANS, 0); b.define(BATTERY, -1); b.define(CHARGE, 0); b.define(ENABLED, false); b.define(WORKING, false);
+        b.define(ACTIVE,0);b.define(FUELS,0L);b.define(COOLDOWNS,0L); b.define(KINDS, 0); b.define(FANS, 0); b.define(BATTERY, -1); b.define(CHARGE, 0); b.define(ENABLED, false); b.define(WORKING, false);
     }
     public void setOwner(UUID value) { if (owner == null) owner = value; }
     public UUID owner() { return owner; }
@@ -41,6 +44,12 @@ public final class MachineEntity extends Entity {
     public int energy() { return entityData.get(CHARGE); }
     public boolean enabled() { return entityData.get(ENABLED); }
     public boolean working() { return entityData.get(WORKING); }
+    public boolean active(int node) { return MachineNodes.valid(node) && (entityData.get(ACTIVE) & 1 << node)!=0; }
+    public int activeMask() { return entityData.get(ACTIVE); }
+    public int rocketFuel(int node) { return MachineNodes.valid(node)?(int)(entityData.get(FUELS) >>> (7*node) & 127):0; }
+    public int springCooldown(int node) { return MachineNodes.valid(node)?(int)(entityData.get(COOLDOWNS) >>> (6*node) & 63):0; }
+    public double mass() { int count=0;for(int n=0;n<6;n++)if(kind(n)!=0)count++;return 1 + .1*count + .25*getPassengers().size(); }
+    private boolean activeKind(int kind) { for(int n=0;n<6;n++)if(kind(n)==kind && active(n))return true;return false; }
     public int kinds() { return entityData.get(KINDS); }
     public int kind(int node) { return MachineNodes.valid(node) ? kinds() >>> (node * 4) & 15 : 0; }
     private int countKind(int kind) { int count=0;for(int n=0;n<6;n++)if(kind(n)==kind)count++;return count; }
@@ -52,7 +61,7 @@ public final class MachineEntity extends Entity {
     public static boolean accepts(ItemStack stack) { return MechanicsContent.kind(stack) != 0; }
     public boolean install(ServerPlayer p, int node, InteractionHand hand) {
         var source = p.getItemInHand(hand);
-        if (!canModify(p) || enabled() || !MachineNodes.valid(node) || !parts.get(node).isEmpty() || !accepts(source)
+        if (!canModify(p) || enabled() || !MachineNodes.valid(node) || !parts.get(node).isEmpty() || !accepts(source) || source.is(MechanicsContent.SPENT_ROCKET)
                 || source.is(EnergyContent.BATTERY) && batteryNode() >= 0) return false;
         parts.set(node, source.copyWithCount(1)); source.shrink(1);
         // Player.interactOn restores a shrunken creative stack if its identity is unchanged.
@@ -61,6 +70,8 @@ public final class MachineEntity extends Entity {
     }
     public boolean recover(ServerPlayer p, int node) {
         if (!canModify(p) || enabled() || !MachineNodes.valid(node) || parts.get(node).isEmpty()) return false;
+        var rocket=parts.get(node).get(MechanicsContent.ROCKET_DATA);
+        if(rocket!=null && rocket.ignited() && rocket.ticks()>0)return false;
         ItemStack copy = parts.get(node).copy(); var inventory = p.getInventory();
         // Even creative mode must have real room before native add can consume a copy.
         if (inventory.getFreeSlot() < 0 && inventory.getSlotWithRemainingSpace(copy) < 0) return false;
@@ -70,7 +81,7 @@ public final class MachineEntity extends Entity {
     }
     public boolean setEnabled(ServerPlayer p, boolean on) {
         if (!canModify(p)) return false;
-        entityData.set(ENABLED, on); if (!on) entityData.set(WORKING, false); return true;
+        entityData.set(ENABLED, on); if (!on) {entityData.set(WORKING, false);entityData.set(ACTIVE,0);} return true;
     }
     public void toggleFromRider(ServerPlayer p) {
         if (p.getVehicle() != this || !canModify(p)) return;
@@ -85,13 +96,15 @@ public final class MachineEntity extends Entity {
         inventory.add(stack); if (!stack.isEmpty()) return false; discard(); return true;
     }
     private void syncParts() {
-        int mask = 0, battery = -1, kinds = 0;
+        int mask = 0, battery = -1, kinds = 0;long fuels=0,cooldowns=0;
         for (int n = 0; n < parts.size(); n++) {
+            var rocket=MechanicsContent.kind(parts.get(n))==4?parts.get(n).get(MechanicsContent.ROCKET_DATA):null;if(rocket!=null)fuels|=(long)rocket.ticks()<<(7*n);
+            var spring=MechanicsContent.kind(parts.get(n))==5?parts.get(n).get(MechanicsContent.SPRING_DATA):null;if(spring!=null)cooldowns|=(long)spring.cooldown()<<(6*n);
             kinds |= MechanicsContent.kind(parts.get(n)) << (4 * n);
             if (parts.get(n).is(MechanicsContent.FAN)) mask |= 1 << n;
             if (parts.get(n).is(EnergyContent.BATTERY)) battery = n;
         }
-        entityData.set(KINDS, kinds); entityData.set(FANS, mask); entityData.set(BATTERY, battery);
+        entityData.set(FUELS,fuels);entityData.set(COOLDOWNS,cooldowns);entityData.set(KINDS, kinds); entityData.set(FANS, mask); entityData.set(BATTERY, battery);
         entityData.set(CHARGE, battery < 0 ? 0 : Batteries.energy(parts.get(battery)));
     }
     /** Recompute the visible face from server eyes; packet coordinates are only a hint. */
@@ -146,39 +159,53 @@ public final class MachineEntity extends Entity {
     @Override public void tick() {
         super.tick();
         if (level().isClientSide()) return;
-        // Passenger movement packets never become authoritative: no controlling passenger.
-        if (getFirstPassenger() instanceof ServerPlayer p && canModify(p)) {
-            var input = p.getLastClientInput();
-            if (input.left() != input.right()) setYRot(getYRot() + (input.left() ? -3F : 3F));
-        }
-        int wheels=countKind(6), wings=countKind(3), drive=1;
-        if(getFirstPassenger() instanceof ServerPlayer rider) {
+        int wheels=countKind(6), wings=countKind(3), stabilizers=countKind(7), floats=countKind(8), drive=1, turn=0;
+        if(getFirstPassenger() instanceof ServerPlayer rider && canModify(rider)) {
             var input=rider.getLastClientInput();drive=input.forward()==input.backward()?0:input.forward()?1:-1;
+            turn=input.left()==input.right()?0:input.left()?-1:1;
         }
-        int poweredWheels=onGround() && drive!=0?wheels:0;
-        int cost = Integer.bitCount(fanMask()) + poweredWheels;
-        boolean paid = enabled() && cost > 0 && batteryNode() >= 0 && Batteries.consume(parts.get(batteryNode()), cost);
-        entityData.set(WORKING, paid);
-        Vec3 thrust = Vec3.ZERO;
-        if (paid) for (int n = 0; n < MachineNodes.COUNT; n++) if (kind(n) == 1) thrust = thrust.add(MachineNodes.thrust(n).scale(.06));
+        int poweredWheels=onGround() && drive!=0?wheels:0, readySprings=0;
+        RocketData[] rockets=new RocketData[6];SpringData[] springs=new SpringData[6];
+        for(int n=0;n<6;n++) {
+            if(kind(n)==4){var r=parts.get(n).getOrDefault(MechanicsContent.ROCKET_DATA,RocketData.EMPTY);
+                if(r.ticks()>0 && (enabled() || r.ignited()))rockets[n]=new RocketData(1,r.ticks()-1,true);}
+            if(kind(n)==5){var st=parts.get(n).getOrDefault(MechanicsContent.SPRING_DATA,SpringData.FRESH);
+                springs[n]=new SpringData(1,Math.max(0,st.cooldown()-1),st.armed() || !enabled() && onGround() && st.cooldown()==0);
+                if(enabled() && onGround() && springs[n].armed() && springs[n].cooldown()==0)readySprings++;}
+        }
+        int cost=Integer.bitCount(fanMask())+poweredWheels+2*stabilizers+20*readySprings;
+        boolean paid=enabled() && cost>0 && batteryNode()>=0 && Batteries.consume(parts.get(batteryNode()),cost);
+        int active=0;Vec3 thrust=Vec3.ZERO;boolean rocketBurning=false,springFired=false;
+        for(int n=0;n<6;n++) {
+            if(paid && kind(n)==1){thrust=thrust.add(MachineNodes.thrust(n).scale(.06));active|=1<<n;}
+            if(paid && kind(n)==6 && poweredWheels>0)active|=1<<n;
+            if(paid && kind(n)==7)active|=1<<n;
+            if(rockets[n]!=null){thrust=thrust.add(MachineNodes.thrust(n).scale(.18));active|=1<<n;rocketBurning=true;}
+            if(paid && springs[n]!=null && springs[n].armed() && springs[n].cooldown()==0 && onGround()){
+                thrust=thrust.add(MachineNodes.thrust(n).scale(.65));springs[n]=new SpringData(1,SpringData.COOLDOWN,false);active|=1<<n;springFired=true;}
+        }
         if(paid && poweredWheels>0)thrust=thrust.add(0,0,.05*poweredWheels*drive);
-        Vec3 velocity = getDeltaMovement().add(MachineNodes.rotate(thrust, getYRot())).add(0, -.04, 0);
-        double mass=1 + .1 * parts.stream().filter(stack -> !stack.isEmpty()).count() + .25 * getPassengers().size();
-        if(wings>0 && velocity.y<0 && velocity.horizontalDistanceSqr()>.12*.12)
-            velocity=new Vec3(velocity.x,Math.max(velocity.y,-.12*mass/wings),velocity.z);
-        double horizontal = Math.sqrt(velocity.horizontalDistanceSqr());
-        if (horizontal > .4) velocity = new Vec3(velocity.x * .4 / horizontal, velocity.y, velocity.z * .4 / horizontal);
-        velocity = new Vec3(velocity.x, Math.clamp(velocity.y, -.8, .3), velocity.z);
-        // Do not force-load chunks. A body waits at an unloaded boundary without burning charge.
-        var next = getBoundingBox().move(velocity);
-        if (!level().hasChunkAt(net.minecraft.core.BlockPos.containing(next.minX, getY(), next.minZ))
-                || !level().hasChunkAt(net.minecraft.core.BlockPos.containing(next.maxX, getY(), next.maxZ))) {
-            if (paid) Batteries.charge(parts.get(batteryNode()), cost);
-            entityData.set(WORKING, false); setDeltaMovement(Vec3.ZERO); syncParts(); return;
+        float previousYaw=getYRot();setYRot(previousYaw+turn*(paid && stabilizers>0?2F:3F));
+        double mass=mass();Vec3 velocity=getDeltaMovement().add(MachineNodes.rotate(thrust.scale(1/mass),getYRot())).add(0,-.04,0);
+        if(paid && stabilizers>0){var local=MachineNodes.rotate(velocity,-getYRot());velocity=MachineNodes.rotate(new Vec3(local.x*Math.pow(.78,stabilizers),local.y,local.z),getYRot());}
+        if(wings>0 && velocity.y<0 && velocity.horizontalDistanceSqr()>.12*.12){velocity=new Vec3(velocity.x,Math.max(velocity.y,-.12*mass/wings),velocity.z);for(int n=0;n<6;n++)if(kind(n)==3)active|=1<<n;}
+        double water=getFluidHeight(net.minecraft.tags.FluidTags.WATER);
+        if(floats>0 && water>0 && mass<=1.75*floats){velocity=velocity.add(0,.07*floats/mass*Math.min(1,water/.4),0);velocity=new Vec3(velocity.x,Math.min(.15,velocity.y),velocity.z);for(int n=0;n<6;n++)if(kind(n)==8)active|=1<<n;}
+        double horizontal=Math.sqrt(velocity.horizontalDistanceSqr());
+        if(horizontal>.4)velocity=new Vec3(velocity.x*.4/horizontal,velocity.y,velocity.z*.4/horizontal);
+        velocity=new Vec3(velocity.x,Math.clamp(velocity.y,-.8,rocketBurning||springFired||countKind(5)>0?.6:.3),velocity.z);
+        var next=getBoundingBox().move(velocity);
+        if(!level().hasChunkAt(net.minecraft.core.BlockPos.containing(next.minX,getY(),next.minZ)) || !level().hasChunkAt(net.minecraft.core.BlockPos.containing(next.maxX,getY(),next.maxZ))){
+            if(paid)Batteries.charge(parts.get(batteryNode()),cost);setYRot(previousYaw);entityData.set(WORKING,false);entityData.set(ACTIVE,0);setDeltaMovement(Vec3.ZERO);syncParts();return;
         }
-        move(MoverType.SELF, velocity);
-        setDeltaMovement(new Vec3(horizontalCollision ? 0 : velocity.x * (onGround() ? .8 : wings>0 ? .98 : .94),
-                verticalCollision ? 0 : velocity.y * .98, horizontalCollision ? 0 : velocity.z * (onGround() ? .8 : wings>0 ? .98 : .94)));
+        // Commit finite resource changes only after validating the destination is simulated.
+        for(int n=0;n<6;n++) {
+            if(rockets[n]!=null){parts.get(n).set(MechanicsContent.ROCKET_DATA,rockets[n]);if(rockets[n].ticks()==0)parts.set(n,parts.get(n).transmuteCopy(MechanicsContent.SPENT_ROCKET));}
+            if(springs[n]!=null)parts.get(n).set(MechanicsContent.SPRING_DATA,springs[n]);
+        }
+        entityData.set(WORKING,paid || rocketBurning);entityData.set(ACTIVE,active);
+        move(MoverType.SELF,velocity);
+        setDeltaMovement(new Vec3(horizontalCollision?0:velocity.x*(onGround()?.8:wings>0?.98:.94),verticalCollision?0:velocity.y*.98,horizontalCollision?0:velocity.z*(onGround()?.8:wings>0?.98:.94)));
         syncParts();
     }
     @Override protected void addAdditionalSaveData(ValueOutput out) {
@@ -203,7 +230,7 @@ public final class MachineEntity extends Entity {
         }
         syncParts(); entityData.set(ENABLED, owner != null && in.getBooleanOr("wildcraft_enabled", false));
     }
-    @Override public float maxUpStep() { return enabled() && working() && countKind(6)>0 && onGround() ? 1F : 0F; }
+    @Override public float maxUpStep() { return enabled() && working() && activeKind(6) && onGround() ? 1F : 0F; }
     @Override public boolean isPickable() { return true; }
     @Override public boolean canBeCollidedWith(Entity other) { return true; }
     @Override public boolean hurtServer(ServerLevel level, DamageSource source, float amount) {

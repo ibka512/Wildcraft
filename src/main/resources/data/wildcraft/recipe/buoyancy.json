@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " L ",
+    "LBL",
+    " L "
+  ],
+  "key": {
+    "L": "minecraft:leather",
+    "B": "minecraft:oak_boat"
+  },
+  "result": {
+    "id": "wildcraft:buoyancy",
+    "count": 1
+  }
+}
