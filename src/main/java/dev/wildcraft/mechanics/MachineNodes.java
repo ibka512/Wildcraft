@@ -19,6 +19,11 @@ public final class MachineNodes {
     public static Vec3 point(int node) { return POINTS[node]; }
     public static Vec3 thrust(int node) { return THRUST[node]; }
     public static Vec3 rotate(Vec3 local, float yaw) { return local.yRot((float)Math.toRadians(-yaw)); }
+    public static boolean panel(Vec3 bodyRelative, float yaw) {
+        if (!bodyRelative.isFinite()) return false;
+        Vec3 local = rotate(bodyRelative, -yaw);
+        return local.y >= .55 && local.y <= .72 && Math.abs(local.x) <= .25 && local.z >= .32 && local.z <= .5;
+    }
     public static int nearest(Vec3 bodyRelative, float yaw) {
         if (!bodyRelative.isFinite() || Math.abs(bodyRelative.x) > .76 || Math.abs(bodyRelative.z) > .76
                 || bodyRelative.y < -.06 || bodyRelative.y > .71) return -1;

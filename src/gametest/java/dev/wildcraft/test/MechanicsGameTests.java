@@ -16,6 +16,67 @@ import net.minecraft.world.level.storage.*;
 import net.minecraft.world.phys.Vec3;
 
 public final class MechanicsGameTests {
+    @GameTest public void nativeCreativeInteractionTransfersAllSixNodesOnce(GameTestHelper h) {
+        for(int node=0;node<6;node++)for(float yaw:new float[]{0,33,90}) {
+            var body=h.spawn(MechanicsContent.MACHINE,new Vec3(2,4,2),EntitySpawnReason.COMMAND);body.setYRot(yaw);
+            var p=h.makeMockServerPlayerInLevel();body.setOwner(p.getUUID());p.setGameMode(net.minecraft.world.level.GameType.CREATIVE);
+            var local=MachineNodes.point(node);var outward=MachineNodes.thrust(node).scale(node==0?-1.2:-2);
+            var origin=body.blockPosition();for(int x=-3;x<=3;x++)for(int y=-3;y<=5;y++)for(int z=-3;z<=3;z++)h.getLevel().setBlockAndUpdate(origin.offset(x,y,z),Blocks.AIR.defaultBlockState());
+            p.setPos(body.position().add(MachineNodes.rotate(outward,yaw)));
+            look(p,body.position().add(MachineNodes.rotate(local,yaw)));
+            p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.FAN,2));
+            p.interactOn(body,InteractionHand.MAIN_HAND,MachineNodes.rotate(local,yaw));
+            h.assertTrue(body.kind(node)==1 && p.getMainHandItem().getCount()==1,"Native creative wrapper transfers one fan at node "+node+" yaw "+yaw+" kind="+body.kind(node)+" count="+p.getMainHandItem().getCount()+" modify="+body.canModify(p)+" ray="+body.verifiedHit(p,MachineNodes.rotate(local,yaw))+" eye="+p.getEyePosition()+" target="+body.position());
+            p.interactOn(body,InteractionHand.MAIN_HAND,MachineNodes.rotate(local,yaw));
+            h.assertTrue(p.getMainHandItem().getCount()==1,"Same-tick replay cannot consume a second part");
+            body.discard();p.discard();
+        }
+        h.succeed();
+    }
+    @GameTest public void nativeIntentCannotSelectHiddenNodeOrBypassOwner(GameTestHelper h) {
+        var body=h.spawn(MechanicsContent.MACHINE,new Vec3(2,4,2),EntitySpawnReason.COMMAND);
+        var p=h.makeMockServerPlayerInLevel();body.setOwner(p.getUUID());p.setPos(body.position().add(0,0,-2));look(p,body.position().add(MachineNodes.point(2)));
+        p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.FAN,2));
+        p.interactOn(body,InteractionHand.MAIN_HAND,MachineNodes.point(3));
+        p.interactOn(body,InteractionHand.MAIN_HAND,new Vec3(Double.NaN,0,0));
+        p.interactOn(body,InteractionHand.OFF_HAND,MachineNodes.point(2));
+        h.assertTrue(body.fanMask()==0 && p.getMainHandItem().getCount()==2,"Hidden side, malformed hit and offhand cannot mutate nodes");
+        var guest=h.makeMockServerPlayerInLevel();guest.setPos(p.position());look(guest,body.position().add(MachineNodes.point(2)));
+        guest.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.FAN));
+        guest.interactOn(body,InteractionHand.MAIN_HAND,MachineNodes.point(2));
+        h.assertTrue(body.fanMask()==0 && guest.getMainHandItem().getCount()==1,"Second actor's real interaction leaves inventory unchanged");
+        p.interactOn(body,InteractionHand.MAIN_HAND,MachineNodes.point(2));
+        h.assertTrue(body.kind(2)==1 && p.getMainHandItem().getCount()==1,"Creator retains actual installation permission");
+        p.setPos(body.position().add(0,0,-4));look(p,body.position().add(MachineNodes.point(3)));
+        h.assertTrue(body.verifiedHit(p,MachineNodes.point(3))==null,"Server enforces vanilla interaction reach despite broader packet acceptance");
+        guest.discard();p.discard();body.discard();h.succeed();
+    }
+    private static void look(net.minecraft.server.level.ServerPlayer p,Vec3 target) {
+        var d=target.subtract(p.getEyePosition());p.setYRot((float)Math.toDegrees(Math.atan2(-d.x,d.z)));
+        p.setXRot((float)-Math.toDegrees(Math.atan2(d.y,Math.sqrt(d.horizontalDistanceSqr()))));
+    }
+    @GameTest(maxTicks=50) public void nativePanelReplayAndNonRiderIntent(GameTestHelper h) {
+        for(int x=0;x<5;x++)for(int z=0;z<5;z++)h.setBlock(new BlockPos(x,1,z),Blocks.STONE);
+        var body=h.spawn(MechanicsContent.MACHINE,new Vec3(2,2,2),EntitySpawnReason.COMMAND);
+        var p=h.makeMockServerPlayerInLevel();body.setOwner(p.getUUID());
+        p.setPos(body.position().add(0,0,-2));p.setItemInHand(InteractionHand.MAIN_HAND,ItemStack.EMPTY);
+        body.toggleFromRider(p);h.assertTrue(!body.enabled(),"Unmounted player cannot toggle by rider intent");
+        h.runAfterDelay(4,() -> {
+            p.setPos(body.position().add(0,0,-2));p.setShiftKeyDown(true);
+            var panel=new Vec3(0,.65,.42);look(p,body.position().add(panel));
+            p.interactOn(body,InteractionHand.MAIN_HAND,panel);p.interactOn(body,InteractionHand.MAIN_HAND,panel);
+            h.assertTrue(body.enabled() && !body.working(),"Native panel enables once; same-tick replay cannot switch it off");
+        });
+        h.runAfterDelay(8,() -> {
+            p.setPos(body.position().add(0,0,-2));p.setShiftKeyDown(true);var panel=new Vec3(0,.65,.42);look(p,body.position().add(panel));
+            p.interactOn(body,InteractionHand.MAIN_HAND,panel);h.assertTrue(!body.enabled(),"Next distinct panel click stops machinery");
+            p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.FAN));look(p,body.position().add(MachineNodes.point(2)));
+            var eye=p.getEyePosition();var target=body.position().add(MachineNodes.point(2));
+            var obstruction=BlockPos.containing(eye.add(target).scale(.5));h.getLevel().setBlockAndUpdate(obstruction,Blocks.STONE.defaultBlockState());
+            h.assertTrue(body.verifiedHit(p,MachineNodes.point(2))==null,"Block between eye and selected face rejects hidden installation");
+            body.discard();p.discard();h.succeed();
+        });
+    }
     @GameTest public void bodyPlacementChecksCollisionAndTransfersOnce(GameTestHelper h) {
         h.setBlock(new BlockPos(1,1,1),Blocks.STONE);
         var p=h.makeMockServerPlayerInLevel();var target=h.absolutePos(new BlockPos(1,1,1));

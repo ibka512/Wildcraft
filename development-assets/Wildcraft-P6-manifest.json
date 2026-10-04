@@ -1,0 +1,177 @@
+{
+  "stage": "P6",
+  "stage_complete": true,
+  "version": "0.1.0-dev.11",
+  "public_version": "0.1.0-dev.7",
+  "server_tests": 49,
+  "full_candidate_client_classes": 13,
+  "final_targeted_client_classes": 1,
+  "candidate_jar_sha256": "e43572733e63e3064f57b5950cb602e36cccf3ab3e4c6b53ba9c4a650111102a",
+  "files": [
+    {
+      "path": "wildcraft-0.1.0-dev.11+mc26.3.jar",
+      "size": 336382,
+      "sha256": "e9fa015671e19b663901a93c05c4afc8c328d0c9bd1cd045cd8ad17d53c43c6f"
+    },
+    {
+      "path": "Wildcraft-P6-source.zip",
+      "size": 1863381,
+      "sha256": "f011ec0e1272ff6ae4c31f2c41b6fe541e077c3d3201c03efaa4011daf29eee0"
+    },
+    {
+      "path": "verification/p6/0000_p6-core-installed-model.png",
+      "size": 243910,
+      "sha256": "75ab7a9b8312ef69c62062e35c1dc9ca2839a6daeb01056a1cd6cd3770c8fc28"
+    },
+    {
+      "path": "verification/p6/0001_p6-core-fan-model.png",
+      "size": 288475,
+      "sha256": "63556f8e5b84df8b023b51f7aecfdbd856961b7c0f168c42012794dd08965bf4"
+    },
+    {
+      "path": "verification/p6/0001_p6-core-riding.png",
+      "size": 219187,
+      "sha256": "fb0e176a1fcdee5826b9a14734b4aa966e83894af5629bac37fd3292b261469a"
+    },
+    {
+      "path": "verification/p6/0002_p6-core-reloaded.png",
+      "size": 189857,
+      "sha256": "fa58d1834030803f8bbf7cdb0bc849cfa81b828fcaa12b8a0512688b9b3b91af"
+    },
+    {
+      "path": "verification/p6/0002_p6-core-riding.png",
+      "size": 311149,
+      "sha256": "0af741bad9c7bd5e323af1d285f33f9f54dd1eb89172125b6255f21b62fb48de"
+    },
+    {
+      "path": "verification/p6/0003_p6-core-recovered.png",
+      "size": 167821,
+      "sha256": "c69f6b29ccc06c48ca5e2f87646cf1bd2c51f73d4e9f430385121ae5265bf192"
+    },
+    {
+      "path": "verification/p6/0003_p6-core-reloaded.png",
+      "size": 246633,
+      "sha256": "52524fc555f9723f974773e382fb39c08605806ffb72d64125e838f9089822b7"
+    },
+    {
+      "path": "verification/p6/0004_p6-core-recovered.png",
+      "size": 264349,
+      "sha256": "98dd66aadc9c120224ef6c568373f1a5ae0f0fe44570062902212908ba604c0c"
+    },
+    {
+      "path": "verification/p6/0005_p6-control-panel.png",
+      "size": 222621,
+      "sha256": "1c01079eb4860b23561c4ffed12d0ff3a28c6d38772e0f0dd7558e91e61876c4"
+    },
+    {
+      "path": "verification/p6/0005_p6-fan-snap-preview.png",
+      "size": 204350,
+      "sha256": "f50be75d2b8bcc0088d9861f823cdeaf3330257c250ef99dde0de06aeb623291"
+    },
+    {
+      "path": "verification/p6/0006_p6-battery-preview.png",
+      "size": 227339,
+      "sha256": "54dfec779774768e59ae105ca2fab1de42691f94520257a749c70010b11e7118"
+    },
+    {
+      "path": "verification/p6/0006_p6-fan-snap-preview.png",
+      "size": 200553,
+      "sha256": "da9a0c1d79c0cf8579f66c7190b78bb010dc52cf8c6926e9047671e4db101a5f"
+    },
+    {
+      "path": "verification/p6/0007_p6-battery-preview.png",
+      "size": 220628,
+      "sha256": "0ba5a50ff3352dd8651b17b88747214eb2d469385f7bb6c4ea2ea56410dfa730"
+    },
+    {
+      "path": "verification/p6/0007_p6-native-rider-control.png",
+      "size": 213713,
+      "sha256": "f2235a9315dc0eea0a48a299c86154b4c146645432de3470c45b68f0a39bfe64"
+    },
+    {
+      "path": "verification/p6/0008_p6-native-rider-control.png",
+      "size": 211245,
+      "sha256": "aecac23e61b8af9e5e7279779a7fb2061d3259d378a57cf0be1582751ceac690"
+    },
+    {
+      "path": "verification/p6/0009_p6-native-recovered.png",
+      "size": 277512,
+      "sha256": "ecb08ce3b7008616933d4cd440e3d8187271a7f3423f1dc4b86f3f187371cf87"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/README.md",
+      "size": 239,
+      "sha256": "6f8fcd384b7448018d299c60cfb3bc452a57cd2b5d935808d471280c7937b0d1"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-0.png",
+      "size": 761074,
+      "sha256": "3d9950bb4137cd1eca1a0affcc0913ca9ed719914ef6d4d2089753130663ee1b"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-1.png",
+      "size": 696051,
+      "sha256": "ece52b1af576ddb1370ab686404d2f495d9abea3cad27b2c25f907d5276bc992"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-2.png",
+      "size": 767557,
+      "sha256": "66997abb571fcf1f03a97185aa0e8a8eca64ed70923049b49b8c19f124c4ea8f"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-3.png",
+      "size": 834880,
+      "sha256": "0006a04684ef6203813cbf5b458d085aa782c6ccb1e8bafe30cde1c5337e51b1"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-4.png",
+      "size": 510183,
+      "sha256": "97d3fd9c5517554d569fc435216a2b48afbeddee7a8053653b26e4865eeb78fc"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-5.png",
+      "size": 502853,
+      "sha256": "b028b5f45dc8272414cfc616d070197dfdfb6417b76158225509d6996927277f"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-6.png",
+      "size": 545676,
+      "sha256": "73dd93e26d383266ecaa2523e8a7de442a66f669e129cb23074c5b3a8685bc31"
+    },
+    {
+      "path": "verification/p6/candidate-before-hud-spacing/p6-observer-7.png",
+      "size": 579012,
+      "sha256": "643fd9062f03134a84f976839583242841d26855046bf28c7f53e645d9ed0448"
+    },
+    {
+      "path": "verification/p6/candidate-full-client.log",
+      "size": 455027,
+      "sha256": "269e8073ea99413d2c470f36d54d09c28ac7b77069e31ec773bded359669058e"
+    },
+    {
+      "path": "verification/p6/final-focused.log",
+      "size": 77069,
+      "sha256": "69d7ac01c77cab201e8b3bf220adde8460d266e5a45922da6c49f8f2bd01ed08"
+    },
+    {
+      "path": "verification/p6/final-standalone.log",
+      "size": 6374,
+      "sha256": "adb2ff9904d2e0f72a0e9d08efc93b0c5fff9f68db4117b7a28b55b434247e90"
+    },
+    {
+      "path": "verification/p6/two-actor.log",
+      "size": 26606,
+      "sha256": "d5a11cbeccd30980884aa731d3291bdd8122ac42f1fe7d7cd150b458eb4b8761"
+    },
+    {
+      "path": "verification/p6/two-observer.log",
+      "size": 28145,
+      "sha256": "553a064bca4e48ab8e5268a91ce6275399c63a406d8ceb117d77a73719fe9195"
+    },
+    {
+      "path": "verification/p6/two-server.log",
+      "size": 7459,
+      "sha256": "3ca1679e95eca13c3d41888499452b3b48ef379222fd804da33ec7f6b7776369"
+    }
+  ]
+}

@@ -378,3 +378,34 @@ tasks.register('runMechanicsClientTest', net.fabricmc.loom.task.prod.ClientProdu
     useXVFB = false
     runDir = layout.buildDirectory.dir('run/mechanics-client-test')
 }
+
+// Freeze P6 jars before three independent JVMs; never rebuild files held by the lab.
+def p6Lab = new File(wildcraftCacheHome, 'labs/p6')
+tasks.register('prepareP6Lab') {
+    dependsOn tasks.named('jar'), gameTestJar
+    doLast {
+        if (!acceptTestEula) throw new GradleException('Local lab requires -PacceptMinecraftEula=true.')
+        def modsDir = new File(p6Lab, 'mods'); modsDir.mkdirs()
+        java.nio.file.Files.copy(tasks.named('jar', Jar).get().archiveFile.get().asFile.toPath(), new File(modsDir, 'wildcraft.jar').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        java.nio.file.Files.copy(gameTestJar.get().archiveFile.get().asFile.toPath(), new File(modsDir, 'wildcraft-test.jar').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        def serverDir = new File(p6Lab, 'server'); serverDir.mkdirs()
+        new File(serverDir, 'eula.txt').text = 'eula=true\n'
+        new File(serverDir, 'server.properties').text = 'server-ip=127.0.0.1\nserver-port=25636\nonline-mode=false\nenforce-secure-profile=false\nwhite-list=false\nmax-players=2\nview-distance=4\nsimulation-distance=4\nallow-flight=false\nlevel-name=P6Lab\nlevel-type=minecraft:flat\nspawn-protection=0\n'
+        ['actor', 'observer'].each { role ->
+            def clientDir = new File(p6Lab, role); clientDir.mkdirs()
+            new File(clientDir, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:30\nrenderDistance:4\nlang:zh_cn\n'
+        }
+    }
+}
+tasks.register('runP6Server', net.fabricmc.loom.task.prod.ServerProductionRunTask) {
+    mods.setFrom(new File(p6Lab, 'mods/wildcraft.jar'), new File(p6Lab, 'mods/wildcraft-test.jar'), configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Xmx1G', '-Dwildcraft.p6.server=true'); runDir = new File(p6Lab, 'server')
+}
+['actor', 'observer'].each { role ->
+    tasks.register("runP6${role.capitalize()}", net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+        mods.setFrom(new File(p6Lab, 'mods/wildcraft.jar'), new File(p6Lab, 'mods/wildcraft-test.jar'), configurations.productionRuntimeMods)
+        jvmArgs.addAll('-Xmx2G', "-Dwildcraft.p6.role=${role}")
+        programArgs.addAll('--username', "WC${role.capitalize()}", '--quickPlayMultiplayer', '127.0.0.1:25636')
+        useXVFB = false; runDir = new File(p6Lab, role)
+    }
+}

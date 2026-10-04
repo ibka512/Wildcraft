@@ -8,6 +8,8 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.network.syncher.*;
 import net.minecraft.server.level.*;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.player.Player;
@@ -25,6 +27,7 @@ public final class MachineEntity extends Entity {
     private static final EntityDataAccessor<Boolean> WORKING = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.BOOLEAN);
     private final NonNullList<ItemStack> parts = NonNullList.withSize(MachineNodes.COUNT, ItemStack.EMPTY);
     private UUID owner;
+    private long lastAction = Long.MIN_VALUE;
 
     public MachineEntity(EntityType<? extends MachineEntity> type, Level level) { super(type, level); }
     @Override protected void defineSynchedData(SynchedEntityData.Builder b) {
@@ -48,7 +51,10 @@ public final class MachineEntity extends Entity {
         var source = p.getItemInHand(hand);
         if (!canModify(p) || enabled() || !MachineNodes.valid(node) || !parts.get(node).isEmpty() || !accepts(source)
                 || source.is(EnergyContent.BATTERY) && batteryNode() >= 0) return false;
-        parts.set(node, source.copyWithCount(1)); source.shrink(1); syncParts(); return true;
+        parts.set(node, source.copyWithCount(1)); source.shrink(1);
+        // Player.interactOn restores a shrunken creative stack if its identity is unchanged.
+        // Replace the hand with the real remainder so creative installation still transfers once.
+        p.setItemInHand(hand, source.copy()); syncParts(); return true;
     }
     public boolean recover(ServerPlayer p, int node) {
         if (!canModify(p) || enabled() || !MachineNodes.valid(node) || parts.get(node).isEmpty()) return false;
@@ -62,6 +68,12 @@ public final class MachineEntity extends Entity {
     public boolean setEnabled(ServerPlayer p, boolean on) {
         if (!canModify(p)) return false;
         entityData.set(ENABLED, on); if (!on) entityData.set(WORKING, false); return true;
+    }
+    public void toggleFromRider(ServerPlayer p) {
+        if (p.getVehicle() != this || !canModify(p)) return;
+        long now = level().getGameTime();
+        if (lastAction != Long.MIN_VALUE && now - lastAction < 2) return;
+        lastAction = now; setEnabled(p, !enabled()); feedback(p, enabled() ? "on" : "off");
     }
     public boolean recoverBody(ServerPlayer p) {
         if (!canModify(p) || enabled() || isVehicle() || fanMask() != 0 || batteryNode() >= 0) return false;
@@ -77,6 +89,55 @@ public final class MachineEntity extends Entity {
         }
         entityData.set(FANS, mask); entityData.set(BATTERY, battery);
         entityData.set(CHARGE, battery < 0 ? 0 : Batteries.energy(parts.get(battery)));
+    }
+    /** Recompute the visible face from server eyes; packet coordinates are only a hint. */
+    public Vec3 verifiedHit(Player p, Vec3 relative) {
+        if (!relative.isFinite() || !p.isWithinEntityInteractionRange(this, .1)) return null;
+        Vec3 eye = p.getEyePosition();
+        var ray = getBoundingBox().clip(eye, eye.add(p.getLookAngle().scale(Math.min(5, p.entityInteractionRange() + .1))));
+        if (ray.isEmpty() || ray.get().distanceToSqr(position().add(relative)) > .09) return null;
+        var obstruction = level().clip(new net.minecraft.world.level.ClipContext(eye, ray.get(),
+                net.minecraft.world.level.ClipContext.Block.COLLIDER, net.minecraft.world.level.ClipContext.Fluid.NONE, p));
+        if (obstruction.getType() != net.minecraft.world.phys.HitResult.Type.MISS
+                && eye.distanceToSqr(obstruction.getLocation()) + .0001 < eye.distanceToSqr(ray.get())) return null;
+        return ray.get().subtract(position());
+    }
+    @Override public InteractionResult interact(Player player, InteractionHand hand, Vec3 relative) {
+        if (hand != InteractionHand.MAIN_HAND) return InteractionResult.PASS;
+        if (level().isClientSide()) return InteractionResult.SUCCESS;
+        if (!(player instanceof ServerPlayer p)) return InteractionResult.FAIL;
+        if (!canModify(p)) return feedback(p, "owner");
+        Vec3 hit = verifiedHit(p, relative);
+        if (hit == null) return feedback(p, "aim");
+        long now = level().getGameTime();
+        if (lastAction != Long.MIN_VALUE && now - lastAction < 2) return InteractionResult.SUCCESS_SERVER.withoutItem();
+        lastAction = now;
+        int node = MachineNodes.nearest(hit, getYRot());
+        var held = p.getMainHandItem();
+        boolean done;
+        if (accepts(held)) {
+            done = node >= 0 && install(p, node, hand);
+            return feedback(p, done ? "installed" : enabled() ? "stop_first" : "install_failed");
+        }
+        if (!held.isEmpty()) return feedback(p, "empty_hand");
+        if (p.isShiftKeyDown()) {
+            if (MachineNodes.panel(hit, getYRot())) {
+                setEnabled(p, !enabled()); return feedback(p, enabled() ? "on" : "off");
+            }
+            done = node >= 0 && recover(p, node);
+            return feedback(p, done ? "recovered" : enabled() ? "stop_first" : "recover_failed");
+        }
+        done = !isVehicle() && p.startRiding(this);
+        if (done) {
+            dev.wildcraft.traversal.Climbing.interrupt(p);
+            dev.wildcraft.traversal.Gliding.interrupt(p);
+        }
+        return feedback(p, done ? "riding" : "occupied");
+    }
+    private InteractionResult feedback(ServerPlayer p, String key) {
+        p.sendSystemMessage(Component.translatable("machine.wildcraft." + key), true);
+        p.inventoryMenu.broadcastChanges();
+        return InteractionResult.SUCCESS_SERVER.withoutItem();
     }
     @Override public void tick() {
         super.tick();
@@ -131,6 +192,11 @@ public final class MachineEntity extends Entity {
     }
     @Override public boolean isPickable() { return true; }
     @Override public boolean canBeCollidedWith(Entity other) { return true; }
-    @Override public boolean hurtServer(ServerLevel level, DamageSource source, float amount) { return false; }
+    @Override public boolean hurtServer(ServerLevel level, DamageSource source, float amount) {
+        if (source.getDirectEntity() instanceof ServerPlayer p && p.isShiftKeyDown() && p.getMainHandItem().isEmpty()
+                && p.isWithinAttackRange(p.getMainHandItem(), getBoundingBox(), 0))
+            feedback(p, recoverBody(p) ? "body_recovered" : "body_failed");
+        return false;
+    }
     @Override public ItemStack getPickResult() { return new ItemStack(MechanicsContent.BODY); }
 }

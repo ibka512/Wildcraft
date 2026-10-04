@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-04。当前本机游戏版本 **0.1.0-dev.10 / Minecraft 26.3**，完成到 **P5能源**。料理合同和验证见P4B-SPEC/VERIFICATION；公开 `main` 与最新 Release `handoff-dev7-2026-10-03` 仍为 dev.7，本次dev.8–dev.10未上传。保留旧游戏标签和所有历史交接。feature/mechanics正在开发P6公共基础，源码工作版本dev.11；实际玩家安装入口尚未接入，P6未完成。没有新增生产依赖或真实存档迁移。
+更新：2026-10-04。当前本机完整游戏版本 **0.1.0-dev.11 / Minecraft 26.3**，完成到 **P6机械安装**；下一阶段P7按P7-PREPARATION继续。公开main与Release仍dev.7，本次dev.8–dev.11未上传。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -48,10 +48,10 @@
 | P4A | 本机环境温度完成；[规格](P4A-SPEC.md)、[验证](P4A-VERIFICATION.md)；dev.8 尚未上传 |
 | P4B | 本机料理完成，见 [规格](P4B-SPEC.md) / [验收](P4B-VERIFICATION.md) |
 | P5 | 本机能源与有限电池完成，见P5-SPEC/VERIFICATION |
-| P6 | 公共基础与原型渲染已开发，实际安装入口待选择；见[P6合同](P6-SPEC.md)与[P6基础验证](P6-CORE-VERIFICATION.md)，尚未完成 |
+| P6 | 主体、六节点、风扇/电池、实际吸附安装/拆卸、启停/乘坐、保存与回收闭环；见[P6规则](P6-SPEC.md) / [完整验证](P6-VERIFICATION.md) |
 | P7及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
 
-当前没有多人林克时间、正式机械、制造机或Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
+当前没有多人林克时间、剩余六类机械部件、制造机或Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
 
 ## 固定环境与构建入口
 
@@ -115,7 +115,7 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 - `FocusItemMixin` 只校准使用剩余时间并走一次原版 release；缓降不清零摔落距离。客户端新同步样本修正预测，避免卡顿后永久超前。
 - GPU 原创后处理和独立有效开关；关闭画面保留技能、费用和 HUD。默认不启用轻闪/纹理/FOV；核心美术提供两份原创提示音。
 
-P4A和P4B均已完成。独立料理锅、有效实际时间、三类效果与有限细雪辅助见P4B-SPEC/VERIFICATION。P5也已完成，见P5-SPEC/VERIFICATION。下一计划P6安装交互尚待用户答复，其余准备见P6-PREPARATION。
+P4A和P4B均已完成。独立料理锅、有效实际时间、三类效果与有限细雪辅助见P4B-SPEC/VERIFICATION。P5也已完成，见P5-SPEC/VERIFICATION。P6安装交互已由用户确认直接节点操作，正在验证实际入口，见P6-SPEC与P6-PREPARATION。
 
 R1 保持独立研究代码；实验开始时主动退出并阻止当前正式拉弓会话，防止两个控制器争夺同一次使用，历史 R1 全套仍回归。普通客户端测量在 [FocusNativeProbe](../src/gametest/java/dev/wildcraft/test/research/time/FocusNativeProbe.java)，`fabric.client.gametest` 必须为 null。静态 NoGravity 场景只测时钟、世界/实体速率、蓄力与原版射箭；真正下降、反复拉弓与落地伤害在独立生命周期场景测。
 
@@ -154,7 +154,7 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## 可以交给下一位 AI 的起始任务
 
-> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P6-SPEC/P6-CORE-VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 最后完整玩法版本dev.10已完成P4A环境温度、P4B料理和P5能源，当前feature/mechanics源码为dev.11/P6未完成；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段P6按P6-PREPARATION继续，先接收安装操作答复。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。
+> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P6-SPEC/P6-CORE-VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 最后完整玩法版本dev.11已完成P4A环境温度、P4B料理、P5能源及P6机械安装；接下来按P7补齐部件；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段P7按P7-PREPARATION继续，用户授权推荐方案无需再问安装选择。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。
 
 ## P4B 完成检查点
 
@@ -164,12 +164,16 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## P5完成与当前下一任务
 
-EnergyContent注册电池/充电器/菜单/组件；Batteries只操作调用者持有的真实堆栈，consume原子整笔拒绝，charge返回实际入量。FixedEnergy只识别已加载世界中的红石块，按Level/gameTime清空源和充电器的当刻领取集合；每源20、每充电器20，邻接候选轮转，停止服务器清缓存。ChargerEntity保存原版库存，不保存无限源权限；菜单与客户端仅显示。电池组件格式1严格0..1000、实际物品最多一件，不改旧玩家附件。没有正式机械，R0仍是测试。
+EnergyContent注册电池/充电器/菜单/组件；Batteries只操作调用者持有的真实堆栈，consume原子整笔拒绝，charge返回实际入量。FixedEnergy只识别已加载世界中的红石块，按Level/gameTime清空源和充电器的当刻领取集合；每源20、每充电器20，邻接候选轮转，停止服务器清缓存。ChargerEntity保存原版库存，不保存无限源权限；菜单与客户端仅显示。电池组件格式1严格0..1000、实际物品最多一件，不改旧玩家附件。该P5历史点尚无正式机械；当前已由P6接入，R0仍是测试。
 
-当前P5已通过40服务端检查、能源专项客户端、12类候选全套客户端和独立服务端。完整边界复验及哈希见P5-VERIFICATION。下一阶段P6已询问“直指节点安装/蹲下空手拆卸”或“专用工具节点菜单”，尚未收到答案，不可默认选择。已整理P6-PREPARATION，先读取答复；连续开发与5%额度停线仍生效，生产依赖/真实迁移/公开发布仍需对应明确授权。
+当前P5已通过40服务端检查、能源专项客户端、12类候选全套客户端和独立服务端。完整边界复验及哈希见P5-VERIFICATION。用户在本轮明确按推荐继续，确认直接节点安装/蹲下空手拆卸；已接入玩家入口与预览，继续P6-PREPARATION的完整验证矩阵；连续开发与5%额度停线仍生效，生产依赖/真实迁移/公开发布仍需对应明确授权。
 
-## P6 公共基础接手点（当前）
+## P6 完成与下一阶段（当前）
 
-新正式代码在mechanics/MachineNodes、MechanicsContent、MachineBodyItem、MachineEntity；客户端MachineRenderer为原创模型。新保存格式1不改旧数据；跟踪仅同步部件种类、余量和开关。安装/拆卸/启停/回收为受限服务端API，尚无玩家操作入口，不能把P6核心专项客户端通过写成完整阶段完成。阶段合同见P6-SPEC，复现和实际证据见P6-CORE-VERIFICATION。
+P6正式代码在mechanics/MachineNodes、MechanicsContent、MachineBodyItem、MachineEntity、MachineToggle；客户端MachineRenderer、MachinePresentation为原创模型、吸附预览、提示和启停键。直接节点右键安装；蹲下空手节点右键拆卸，顶部控制板启停；空手站立右键乘坐，A/D转向、R启停、蹲下离开；关机、拆空、无乘客后蹲下空手攻击回收主体。
 
-先接收安装交互答复，再实现对应输入、预览/菜单、提示和真实客户端操作测试，复验全部P6矩阵后才冻结dev.11正式里程碑。当前最新可安装的完整玩法交付仍是dev.10，公开GitHub仍dev.7。连续开发及任一有效额度窗口≤5%停止仍有效；选择未确定只暂停依赖它的部分，不把等待视为同意，不使用额度重置。
+服务端从实际眼睛和朝向重算命中，检查原版距离和方块阻挡；客户端坐标只是提示。创造模式通过替换真实手持余量规避原版交互包装器数量恢复，安装仍转移一件。启停包无参数，由服务端取真实乘坐主体。完整真实部件格式1只保存在实体，跟踪只发种类、余量和开关；旧玩家附件和电池格式不变。
+
+完整证据P6-VERIFICATION包含49服务端检查、13类候选全套客户端、最终显示调整的机械专项、两位普通独立客户端和无测试模组独立服务端。P6-CORE-VERIFICATION及旧core包是上一轮历史；不改旧包/标签。当前最新完整交付dev.11，公开GitHub仍dev.7。
+
+用户已明确“按你推荐的来，不要询问我，你现在可以继续开发了”。P7采用P7-PREPARATION的推荐边界：被动翼、一次性火箭、有限冷却弹簧、接地轮子、有限稳定器、水中浮力。先定P7-SPEC再实施，每类独立及组合全部验收后才标P7完成。连续开发与任一有效额度窗口剩余≤5%保存停止仍有效，不使用重置额度。新增生产依赖、真实数据迁移和公开发布仍需对应授权；本机测试目录及原EULA接受保持有效。

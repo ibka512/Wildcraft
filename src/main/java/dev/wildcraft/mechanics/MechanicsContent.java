@@ -21,5 +21,9 @@ public final class MechanicsContent {
     private MechanicsContent() { }
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(o -> { o.accept(BODY); o.accept(FAN); });
+        net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry.serverboundPlay().register(MachineToggle.TYPE, MachineToggle.CODEC);
+        net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking.registerGlobalReceiver(MachineToggle.TYPE, (intent, context) -> {
+            if (context.player().getVehicle() instanceof MachineEntity body) body.toggleFromRider(context.player());
+        });
     }
 }
