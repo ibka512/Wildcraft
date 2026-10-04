@@ -19,8 +19,8 @@
     },
     {
       "path": "Wildcraft-P6-core-source.zip",
-      "size": 1851714,
-      "sha256": "fc1ea4cc562ca0590bbacd279f1f0b7d97732287d597623e4a7bbb5e54103b76"
+      "size": 1851774,
+      "sha256": "58d75c952d1b8a4fbf7b782a6bd1e6b7d69c69e2ef2e40c00e7aaed51de68683"
     },
     {
       "path": "verification/p6-core/0000_p6-core-installed-model.png",
@@ -33,24 +33,9 @@
       "sha256": "dcc8b99bd0673c23f70c6ea5defd6e86a3a8fcc2b566b88eebf482240723fcdd"
     },
     {
-      "path": "verification/p6-core/0001_p6-core-riding.png",
-      "size": 219187,
-      "sha256": "fb0e176a1fcdee5826b9a14734b4aa966e83894af5629bac37fd3292b261469a"
-    },
-    {
-      "path": "verification/p6-core/0002_p6-core-reloaded.png",
-      "size": 189857,
-      "sha256": "fa58d1834030803f8bbf7cdb0bc849cfa81b828fcaa12b8a0512688b9b3b91af"
-    },
-    {
       "path": "verification/p6-core/0002_p6-core-riding.png",
       "size": 311677,
       "sha256": "445ced493adb4ac4710aad84a73c33b1b8d0d7786a8dbba39077a47451b01bf4"
-    },
-    {
-      "path": "verification/p6-core/0003_p6-core-recovered.png",
-      "size": 167821,
-      "sha256": "c69f6b29ccc06c48ca5e2f87646cf1bd2c51f73d4e9f430385121ae5265bf192"
     },
     {
       "path": "verification/p6-core/0003_p6-core-reloaded.png",
@@ -66,6 +51,26 @@
       "path": "verification/p6-core/build.log",
       "size": 29405,
       "sha256": "daba872e8bb42966986d1424e55e8b7357be34af0d8926f02cd633e59a7cacd9"
+    },
+    {
+      "path": "verification/p6-core/candidate-before-guards/0001_p6-core-riding.png",
+      "size": 219187,
+      "sha256": "fb0e176a1fcdee5826b9a14734b4aa966e83894af5629bac37fd3292b261469a"
+    },
+    {
+      "path": "verification/p6-core/candidate-before-guards/0002_p6-core-reloaded.png",
+      "size": 189857,
+      "sha256": "fa58d1834030803f8bbf7cdb0bc849cfa81b828fcaa12b8a0512688b9b3b91af"
+    },
+    {
+      "path": "verification/p6-core/candidate-before-guards/0003_p6-core-recovered.png",
+      "size": 167821,
+      "sha256": "c69f6b29ccc06c48ca5e2f87646cf1bd2c51f73d4e9f430385121ae5265bf192"
+    },
+    {
+      "path": "verification/p6-core/candidate-before-guards/README.md",
+      "size": 361,
+      "sha256": "14e9e7c800638fe1a5918e686b25dc3adfff35eb3a32d1c19983832ab9adf14e"
     },
     {
       "path": "verification/p6-core/datagen.log",

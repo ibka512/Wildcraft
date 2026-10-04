@@ -1,0 +1,1 @@
+These three screenshots are from the successful pre-guard mechanics core client run (31s), before adding the separate fan-view screenshot. Candidate JAR SHA256: 83399c722999c596248915fd8693630d791444bd08a612e659826ef73fc749e6. Final five screenshots remain one directory above and match the final targeted client log. The initial failed run is not copied here.
