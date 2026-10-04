@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.10 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。正式机械及Fuse尚未实现。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.10尚未上传。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.10 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6机械公共基础正在feature/mechanics开发（源码工作版本dev.11），实际安装操作与吸附预览待选择后接入；P6尚未完成，Fuse尚未实现。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.10尚未上传。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -101,7 +101,7 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。下一步P6机械主体、风扇/电池和安装回收；[准备与测试矩阵](docs/P6-PREPARATION.md)已整理，安装交互待用户选择。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
+P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。当前P6已实现主体、风扇/电池、动力及保存基础，见[P6合同与进度](docs/P6-SPEC.md)；服务端API不代表玩家安装闭环已完成。[准备与测试矩阵](docs/P6-PREPARATION.md)已整理，安装交互待用户选择。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
 
 | 顺序 | 后续范围 |
 | --- | --- |

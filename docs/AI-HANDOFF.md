@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-04。当前本机游戏版本 **0.1.0-dev.10 / Minecraft 26.3**，完成到 **P5能源**。料理合同和验证见P4B-SPEC/VERIFICATION；公开 `main` 与最新 Release `handoff-dev7-2026-10-03` 仍为 dev.7，本次dev.8–dev.10未上传。保留旧游戏标签和所有历史交接。本次新增环境反馈和料理，没有新增生产依赖或真实存档迁移。
+更新：2026-10-04。当前本机游戏版本 **0.1.0-dev.10 / Minecraft 26.3**，完成到 **P5能源**。料理合同和验证见P4B-SPEC/VERIFICATION；公开 `main` 与最新 Release `handoff-dev7-2026-10-03` 仍为 dev.7，本次dev.8–dev.10未上传。保留旧游戏标签和所有历史交接。feature/mechanics正在开发P6公共基础，源码工作版本dev.11；实际玩家安装入口尚未接入，P6未完成。没有新增生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -48,7 +48,8 @@
 | P4A | 本机环境温度完成；[规格](P4A-SPEC.md)、[验证](P4A-VERIFICATION.md)；dev.8 尚未上传 |
 | P4B | 本机料理完成，见 [规格](P4B-SPEC.md) / [验收](P4B-VERIFICATION.md) |
 | P5 | 本机能源与有限电池完成，见P5-SPEC/VERIFICATION |
-| P6及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
+| P6 | 公共基础与原型渲染已开发，实际安装入口待选择；见[P6合同](P6-SPEC.md)与[P6基础验证](P6-CORE-VERIFICATION.md)，尚未完成 |
+| P7及之后 | 未实现；以 [路线](ROADMAP.md) 顺序继续 |
 
 当前没有多人林克时间、正式机械、制造机或Fuse。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
 
@@ -102,7 +103,7 @@ macOS `dev.sh` 选择 JDK 25，也支持 `WILDCRAFT_JAVA_HOME`。非 macOS 可�
 - 复活处理排在 Fabric 附件转移后。跨维度测试必须等原版加载确认，不能为让测试伤害生效删除原版保护。
 - 升级先用世界副本；真实用户数据迁移需要对应授权。保留旧读取；回退使用对应世界备份与旧包，而不是单独替换 JAR。
 
-## 已完成探索与料理；下一阶段 P5
+## 已完成探索、料理与能源；正在开发 P6
 
 当前技能合同见 [P3.2-SPEC](P3.2-SPEC.md)，开发默认 5 TPS / 每有效秒 10 精力 / 最多计入 250 ms 单步 / 最长 25 ms 等待轮询。弓首版，弩不触发；只允许未发布且恰有一名真实玩家的集成单人服务端。预先已经慢到 5 TPS 或更低时拒绝接管，避免把世界加速。
 
@@ -149,15 +150,15 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 用户在 2026-10-04 已要求完成一阶段后继续下一阶段，能读取额度时在任一有效窗口剩余 ≤5% 保存并停止。当前P4B已完成七条配方、料理锅/菜单/食用、独立格式1数据、有效时间与有限效果，合计37服务端测试通过，安装包dev.9。详见 [准备记录](P4B-PREPARATION.md)。
 
-用户已回复“按你的推荐方案来进行”，确认独立料理锅及有效实际时间。执行合同见 P4B-SPEC.md。P4B已验收，继续P5；新增生产依赖、真实数据迁移及公开发布仍需对应授权。额度为整个账号共享，应重新读取工具结果，不照搬本文件的历史数字，不自动使用重置额度。
+用户已回复“按你的推荐方案来进行”，确认独立料理锅及有效实际时间。执行合同见 P4B-SPEC.md。P4B与P5已验收，正在开发P6；新增生产依赖、真实数据迁移及公开发布仍需对应授权。额度为整个账号共享，应重新读取工具结果，不照搬本文件的历史数字，不自动使用重置额度。
 
 ## 可以交给下一位 AI 的起始任务
 
-> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P4A-SPEC/VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 本机版本dev.9已完成P4A环境温度和P4B料理；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段P6按P6-PREPARATION继续，先接收安装操作答复。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。
+> 先阅读 AGENTS.md、docs/AI-HANDOFF.md、P6-SPEC/P6-CORE-VERIFICATION 与 NEXT-DEVELOPMENT-PLAN。Wildcraft 最后完整玩法版本dev.10已完成P4A环境温度、P4B料理和P5能源，当前feature/mechanics源码为dev.11/P6未完成；公开 main 与 Release 仍为 dev.7，本次改动尚未上传。保留既有精力、攀爬、真实伞槽、双手收纳、实际使用登记背负、左上角 HUD、单人林克时间和核心美术。检查分支、用户本轮目标和授权；下一阶段P6按P6-PREPARATION继续，先接收安装操作答复。当前温度是非持久本人读数，不新增伤害、减速或精力费用；不更改原版细雪和皮革保护。多人全服减速仍禁止，新增依赖、真实数据迁移和发布需对应明确授权。
 
 ## P4B 完成检查点
 
-七条固定配方、原版容器协议、成品组件与有限效果见 P4B-SPEC.md。当前源码已实现 CookingContent / CookingPotEntity / CookingMenu / MealItem / CookingEffects；MealEffects格式1与旧精力/伞槽/背负格式分开。时钟复用ActivePlayClock，但只服务端持有锚点。暂停入口在IntegratedFocusMixin，原版细雪仅由MealFreezeMixin包装FREEZE增加；不修改原版伤害或皮革保护。PlayerStamina仅接入合格恢复倍率。37项服务端、11类候选客户端和独立服务端通过，见P4B-VERIFICATION。当前下一步为P5。
+七条固定配方、原版容器协议、成品组件与有限效果见 P4B-SPEC.md。当前源码已实现 CookingContent / CookingPotEntity / CookingMenu / MealItem / CookingEffects；MealEffects格式1与旧精力/伞槽/背负格式分开。时钟复用ActivePlayClock，但只服务端持有锚点。暂停入口在IntegratedFocusMixin，原版细雪仅由MealFreezeMixin包装FREEZE增加；不修改原版伤害或皮革保护。PlayerStamina仅接入合格恢复倍率。37项服务端、11类候选客户端和独立服务端通过，见P4B-VERIFICATION。该段是P4B历史记录，当前继续P6。
 
 用户已授权连续完成阶段；P5已完成，接下来在授权范围内继续P6，额度任一有效窗口剩余≤5%时保存交接并停止。新增依赖/真实数据迁移/公开发布仍需对应授权，不自动重置额度。公开main/Release保持dev.7。
 
@@ -166,3 +167,9 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 EnergyContent注册电池/充电器/菜单/组件；Batteries只操作调用者持有的真实堆栈，consume原子整笔拒绝，charge返回实际入量。FixedEnergy只识别已加载世界中的红石块，按Level/gameTime清空源和充电器的当刻领取集合；每源20、每充电器20，邻接候选轮转，停止服务器清缓存。ChargerEntity保存原版库存，不保存无限源权限；菜单与客户端仅显示。电池组件格式1严格0..1000、实际物品最多一件，不改旧玩家附件。没有正式机械，R0仍是测试。
 
 当前P5已通过40服务端检查、能源专项客户端、12类候选全套客户端和独立服务端。完整边界复验及哈希见P5-VERIFICATION。下一阶段P6已询问“直指节点安装/蹲下空手拆卸”或“专用工具节点菜单”，尚未收到答案，不可默认选择。已整理P6-PREPARATION，先读取答复；连续开发与5%额度停线仍生效，生产依赖/真实迁移/公开发布仍需对应明确授权。
+
+## P6 公共基础接手点（当前）
+
+新正式代码在mechanics/MachineNodes、MechanicsContent、MachineBodyItem、MachineEntity；客户端MachineRenderer为原创模型。新保存格式1不改旧数据；跟踪仅同步部件种类、余量和开关。安装/拆卸/启停/回收为受限服务端API，尚无玩家操作入口，不能把P6核心专项客户端通过写成完整阶段完成。阶段合同见P6-SPEC，复现和实际证据见P6-CORE-VERIFICATION。
+
+先接收安装交互答复，再实现对应输入、预览/菜单、提示和真实客户端操作测试，复验全部P6矩阵后才冻结dev.11正式里程碑。当前最新可安装的完整玩法交付仍是dev.10，公开GitHub仍dev.7。连续开发及任一有效额度窗口≤5%停止仍有效；选择未确定只暂停依赖它的部分，不把等待视为同意，不使用额度重置。

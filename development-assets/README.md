@@ -69,3 +69,7 @@ P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SH
 ## P5 本机新增
 
 [dev.10](wildcraft-0.1.0-dev.10+mc26.3.jar)、[源码](Wildcraft-P5-source.zip)、[证据](verification/p5)、[校验](Wildcraft-P5-SHA256SUMS.txt)。公开main/Release仍dev.7，本次未上传。
+
+## P6 未完成的公共基础检查点
+
+[工作版本dev.11/P6-core JAR](wildcraft-0.1.0-dev.11-p6-core.jar)、[源码](Wildcraft-P6-core-source.zip)、[基础证据](verification/p6-core)、[校验](Wildcraft-P6-core-SHA256SUMS.txt)、[明确状态与范围](../docs/P6-CORE-VERIFICATION.md)。实际玩家安装入口待操作选择后完成，不能当作完整P6版本；最新完整玩法交付仍dev.10。没有公开上传或新正式里程碑标签。

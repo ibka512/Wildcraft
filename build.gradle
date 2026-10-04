@@ -351,3 +351,30 @@ tasks.register('runEnergyClientTest', net.fabricmc.loom.task.prod.ClientProducti
     useXVFB = false
     runDir = layout.buildDirectory.dir('run/energy-client-test')
 }
+
+// Focused P6 production-JAR checks; the full packaged suite also includes this class.
+def mechanicsMetadataDirectory = layout.buildDirectory.dir('mechanics-test-metadata').get().asFile
+def mechanicsMetadata = tasks.register('mechanicsTestMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(mechanicsMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.MechanicsClientSmokeTest']
+        def destination = new File(mechanicsMetadataDirectory, 'fabric.mod.json')
+        destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def mechanicsTestJar = tasks.register('mechanicsTestJar', Jar) {
+    dependsOn mechanicsMetadata
+    archiveClassifier = 'mechanics-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(mechanicsMetadataDirectory)
+}
+tasks.register('runMechanicsClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(mechanicsTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    useXVFB = false
+    runDir = layout.buildDirectory.dir('run/mechanics-client-test')
+}

@@ -46,6 +46,6 @@ R1 未通过只阻塞 P3.2 的相关部分，P3.1 与 P4 可继续推进。R2 �
 
 ## 下一批任务
 
-P4A与P4B已完成本机实现，规则和证据见P4B-SPEC/VERIFICATION。P5能源也已完成，见P5-SPEC/VERIFICATION。下一阶段P6机械主体与安装回收，准备见P6-PREPARATION，安装操作待用户答复。
+P4A与P4B已完成本机实现，规则和证据见P4B-SPEC/VERIFICATION。P5能源也已完成，见P5-SPEC/VERIFICATION。当前feature/mechanics已开始P6正式公共基础（源码dev.11），见P6-SPEC及P6-CORE-VERIFICATION；安装操作与预览待用户选择后接入，P6尚未完成。
 
 用户已授权按新版计划开始执行。新增生产依赖、真实数据迁移和发布仍遵守对应授权。版本、资源、测试、数据保存与回退以 [新规划](DEVELOPMENT-PLAN-V2.md) 和 [架构记录](ARCHITECTURE.md) 为准。

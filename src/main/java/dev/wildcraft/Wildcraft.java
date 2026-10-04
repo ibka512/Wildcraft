@@ -27,6 +27,7 @@ public final class Wildcraft implements ModInitializer {
         ServerPlayerEvents.AFTER_RESPAWN.addPhaseOrdering(Event.DEFAULT_PHASE, AFTER_ATTACHMENT_TRANSFER);
         WildcraftItems.initialize();
         dev.wildcraft.energy.EnergyContent.initialize();
+        dev.wildcraft.mechanics.MechanicsContent.initialize();
         dev.wildcraft.cooking.CookingContent.initialize();
         dev.wildcraft.cooking.CookingEffects.initialize();
         dev.wildcraft.registry.WildcraftSounds.initialize();
@@ -39,6 +40,6 @@ public final class Wildcraft implements ModInitializer {
         StaminaCommands.initialize();
         dev.wildcraft.temperature.EnvironmentTemperature.initialize();
         dev.wildcraft.temperature.TemperatureCommands.initialize();
-        LOGGER.info("Wildcraft P5 initialization complete; energy, cooking, temperature and traversal registered.");
+        LOGGER.info("Wildcraft P6 initialization complete; mechanics, energy, cooking, temperature and traversal registered.");
     }
 }

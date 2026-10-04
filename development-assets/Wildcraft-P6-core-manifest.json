@@ -1,0 +1,96 @@
+{
+  "stage": "P6-core-checkpoint",
+  "stage_complete": false,
+  "working_version": "0.1.0-dev.11",
+  "latest_complete_version": "0.1.0-dev.10",
+  "public_version": "0.1.0-dev.7",
+  "branch": "feature/mechanics",
+  "pending": "Actual installation interaction choice; player input/preview and corresponding tests incomplete",
+  "candidate_full_client_jar_sha256": "83399c722999c596248915fd8693630d791444bd08a612e659826ef73fc749e6",
+  "final_jar_sha256": "03652f4fb6c05cad93384cd2c70074bc082dbd1a9a53b63d74b0738b485ea628",
+  "server_tests": 46,
+  "full_candidate_client_classes": 13,
+  "final_targeted_client_classes": 1,
+  "files": [
+    {
+      "path": "wildcraft-0.1.0-dev.11-p6-core.jar",
+      "size": 324197,
+      "sha256": "03652f4fb6c05cad93384cd2c70074bc082dbd1a9a53b63d74b0738b485ea628"
+    },
+    {
+      "path": "Wildcraft-P6-core-source.zip",
+      "size": 1851714,
+      "sha256": "fc1ea4cc562ca0590bbacd279f1f0b7d97732287d597623e4a7bbb5e54103b76"
+    },
+    {
+      "path": "verification/p6-core/0000_p6-core-installed-model.png",
+      "size": 249734,
+      "sha256": "95777feca23f186ba555447fd550848e636d8c578abe018225de1ea2d9c38a3b"
+    },
+    {
+      "path": "verification/p6-core/0001_p6-core-fan-model.png",
+      "size": 297477,
+      "sha256": "dcc8b99bd0673c23f70c6ea5defd6e86a3a8fcc2b566b88eebf482240723fcdd"
+    },
+    {
+      "path": "verification/p6-core/0001_p6-core-riding.png",
+      "size": 219187,
+      "sha256": "fb0e176a1fcdee5826b9a14734b4aa966e83894af5629bac37fd3292b261469a"
+    },
+    {
+      "path": "verification/p6-core/0002_p6-core-reloaded.png",
+      "size": 189857,
+      "sha256": "fa58d1834030803f8bbf7cdb0bc849cfa81b828fcaa12b8a0512688b9b3b91af"
+    },
+    {
+      "path": "verification/p6-core/0002_p6-core-riding.png",
+      "size": 311677,
+      "sha256": "445ced493adb4ac4710aad84a73c33b1b8d0d7786a8dbba39077a47451b01bf4"
+    },
+    {
+      "path": "verification/p6-core/0003_p6-core-recovered.png",
+      "size": 167821,
+      "sha256": "c69f6b29ccc06c48ca5e2f87646cf1bd2c51f73d4e9f430385121ae5265bf192"
+    },
+    {
+      "path": "verification/p6-core/0003_p6-core-reloaded.png",
+      "size": 250192,
+      "sha256": "26f103d235fc94360ae260e83e08350f0dbc430f7f20b72b28a7c4bfbd985c28"
+    },
+    {
+      "path": "verification/p6-core/0004_p6-core-recovered.png",
+      "size": 266449,
+      "sha256": "f23b60508020e8eef3e463735d9d392d40362ffaebb1fd276dc7b2b291120acf"
+    },
+    {
+      "path": "verification/p6-core/build.log",
+      "size": 29405,
+      "sha256": "daba872e8bb42966986d1424e55e8b7357be34af0d8926f02cd633e59a7cacd9"
+    },
+    {
+      "path": "verification/p6-core/datagen.log",
+      "size": 5323,
+      "sha256": "463e8139f3e21c647cac9c3212c38b7c86b8a139809ea719a891f543d916279a"
+    },
+    {
+      "path": "verification/p6-core/full-client-candidate.log",
+      "size": 456030,
+      "sha256": "954bb4666053d010d19282f515150ede4ca1d8807c77f574e9dddb97e339a0f2"
+    },
+    {
+      "path": "verification/p6-core/gametest-results.xml",
+      "size": 6837,
+      "sha256": "65a308875a77b251ea7a243244e8cb9ed0ccda78a42f59476f95213bc5be9e00"
+    },
+    {
+      "path": "verification/p6-core/mechanics-client.log",
+      "size": 37353,
+      "sha256": "363b8d812e31a99f3bc9534fdc7f255ea4bec9dcb2ddb34e4796d7868de3f4af"
+    },
+    {
+      "path": "verification/p6-core/standalone-server.log",
+      "size": 6374,
+      "sha256": "7bded002ec9ec0adcc28b1214bd7b5903db2c62241556a4b407e4a7dceebdb82"
+    }
+  ]
+}

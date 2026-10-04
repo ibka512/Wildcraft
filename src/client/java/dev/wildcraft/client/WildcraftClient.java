@@ -12,6 +12,7 @@ public final class WildcraftClient implements ClientModInitializer {
     public void onInitializeClient() {
         net.minecraft.client.gui.screens.MenuScreens.register(dev.wildcraft.cooking.CookingContent.MENU, dev.wildcraft.client.cooking.CookingScreen::new);
         net.minecraft.client.gui.screens.MenuScreens.register(dev.wildcraft.energy.EnergyContent.MENU, dev.wildcraft.client.energy.ChargerScreen::new);
+        net.minecraft.client.renderer.entity.EntityRenderers.register(dev.wildcraft.mechanics.MechanicsContent.MACHINE, dev.wildcraft.client.mechanics.MachineRenderer::new);
         StaminaHud.initialize();
         dev.wildcraft.client.temperature.TemperatureHud.initialize();
         dev.wildcraft.client.cooking.MealHud.initialize();

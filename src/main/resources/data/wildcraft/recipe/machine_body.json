@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "CBC",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "B": "minecraft:oak_planks"
+  },
+  "result": {
+    "id": "wildcraft:machine_body",
+    "count": 1
+  }
+}
