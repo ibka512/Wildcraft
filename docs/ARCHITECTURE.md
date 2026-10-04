@@ -169,3 +169,13 @@ R1 已在隔离测试模块验证单人世界减速、弓计时、独立费用�
 `temperature/TemperatureRules` 定义有界相对指数、插值和档位回差；`TemperatureSampler` 只访问已加载的附近区块并沿用原版当地降水；`EnvironmentTemperature` 每 10 世界刻错峰采样与生命周期发布。`network/TemperatureView` 只承载一个浮点目标，以 `AttachmentSyncPredicate.targetOnly()` 给本人，不持久化、不死亡转移，没有客户端上报最终值接口。
 
 客户端 `temperature/TemperatureHud` 在现有精力层之后显示，按真实帧时间平滑并尊重单人暂停；`TemperatureOptions` 独立本机格式 1。F8 原生设置页保留六项 Focus 控制，增加一项温度控制。公共代码不引用客户端。原精力、伞槽、背负保存格式与 Focus 设置保持兼容；本阶段没有存档数据迁移。详见 [P4A-SPEC](P4A-SPEC.md)。
+
+## P9 Fuse（dev.14 完成）
+
+真实宿主沿原版ItemStack，融合由独立wildcraft:fusion格式1组件保存单件材料原始NBT和剩余1–32次；fusion_wear保留拆卸材料磨损。完整快照只在服务端，受8192未压缩字节/16层预算约束。未知ID/组件保存原始标签，拒绝部分解码的伪材料；效果和拆卸停用，不删除或替换真实记录。
+
+fusion_view只带material ID、kind、uses和glint。fusion网络字段只发送4字节CRC；固定26.3原版菜单哈希会调用持久Codec，FusionData在HashOps路径返回同一个原版CRC，存储路径仍使用完整标签。投影不能编码为存储记录，也不能作为物品恢复能力。这个桥接是26.3容器协议兼容点，不能简单删除网络组件或让HashOps返回错误。
+
+V/Shift+V包只有一个拆分布尔意图，服务端重算当时真实两手与空间，单件提交、4刻重放保护。箭原版Infinity真实耗一根融合箭，Multishot虚拟额外箭移除融合；第一次撞击结算后移除完整组件/显示/箭附件。普通箭合成拒绝融合输入，维修/砂轮仅保留唯一融合源，铁砧拒绝消耗第二件融合宿主。创造编辑客户端自报投影不覆盖完整快照；首版在生存/冒险操作融合。
+
+客户端提取安全材料默认物品模型，在原宿主变换下增加有界模型；手持/GUI/掉落/背负共用入口，飞行箭用单独提取状态。背负仅附加fusion_view，不把完整快照放进观察者白名单。FusionViews每20世界刻重新校验玩家/打开菜单内融合显示，物品/箭实体加载时恢复显示；材料缺失显示停用，服务端记录保持。

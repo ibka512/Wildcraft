@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.13 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；Fuse在dev.14开发验收中，见[P9合同](docs/P9-SPEC.md)。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.13尚未上传。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.14 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；正式Fuse P9也已完成，见[P9合同](docs/P9-SPEC.md)与[验收](docs/P9-VERIFICATION.md)。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.14尚未上传。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -36,7 +36,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 ## 下载与安装
 
-- **本机最新完整开发包：[wildcraft-0.1.0-dev.13+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.13+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
+- **本机最新完整开发包：[wildcraft-0.1.0-dev.14+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
 - [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
 - [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
 
@@ -103,7 +103,7 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，正在按[P9合同](docs/P9-SPEC.md)开发正式Fuse。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
+P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，P9正式Fuse也已完成，下一步P9.1整合。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
 
 | 顺序 | 后续范围 |
 | --- | --- |
@@ -157,6 +157,8 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 
 独立古代装置制造机，每批4铜锭+2红石，100加载世界刻，八类部件各12.5%。服务端启动时扣料并保存一次结果；关闭、暂停、离线或搬运不会重抽。满库存保留成品，挖下再放置携带实际库存和进度。见[P8规格](docs/P8-SPEC.md)、[完整验收](docs/P8-VERIFICATION.md)和[资产](development-assets/verification/p8/README.md)。
 
-P9/dev.14的交互、效果、保存与通用模型已实施，当前正在验收，最新完整包仍P8/dev.13；当前进度和后续检查见[P9检查点](docs/P9-CHECKPOINT.md)。
+P9正式Fuse已完成，见[完整验收](docs/P9-VERIFICATION.md)；下一步P9.1整合空中箭、林克时间、背负和料理。
 
-P9 Fuse正在dev.14工作版本中实施，见[进行中合同](docs/P9-SPEC.md)；最新完整验证包仍dev.13，不把未验收功能视为完整里程碑。
+V融合、Shift+V拆卸；生存/冒险主手剑/斧/盾/箭、副手材料。32次材料磨损不会通过拆装补满；Infinity仍消费融合箭。通用外观为可替换原型，任意材料的第三方能力/模型仍需专项研究。
+
+P9本机dev.14新增正式Fuse；71服务端检查、16类完整客户端、两个普通客户端及独立服务端通过。[源码](development-assets/Wildcraft-P9-source.zip) / [资产与校验](development-assets/Wildcraft-P9-SHA256SUMS.txt)。

@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-04。当前本机完整游戏版本 **0.1.0-dev.13 / Minecraft 26.3**，完成到 **P8古代装置制造机**；P9/dev.14在feature/fuse进行中，见P9-SPEC/P9-CHECKPOINT。公开main与Release仍dev.7，本次dev.8–dev.13未上传。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
+更新：2026-10-04。当前本机完整游戏版本 **0.1.0-dev.14 / Minecraft 26.3**，完成到 **P9正式Fuse**；下一步P9.1整合，见P9-SPEC/P9-VERIFICATION。公开main与Release仍dev.7，本次dev.8–dev.14未上传。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -51,10 +51,10 @@
 | P6 | 主体、六节点、风扇/电池、实际吸附安装/拆卸、启停/乘坐、保存与回收闭环；见[P6规则](P6-SPEC.md) / [完整验证](P6-VERIFICATION.md) |
 | P7 | 八类部件、载重、有限燃料/冷却/供电、原版碰撞和保存；[规则](P7-SPEC.md) / [验收](P7-VERIFICATION.md) |
 | P8 | 制造机真实输入输出、一次结果、搬运和保存、共享菜单；[合同](P8-SPEC.md) / [验收](P8-VERIFICATION.md) |
-| P9 | dev.14进行中：真实交互、效果、保存、通用模型已实施；70项服务端通过，完整验收未完成；[合同](P9-SPEC.md) / [检查点](P9-CHECKPOINT.md) |
+| P9 | 本机dev.14完成，71服务端/16类客户端/双普通客户端及独立服务端；[合同](P9-SPEC.md) / [完整验收](P9-VERIFICATION.md) |
 | P9.1及之后 | 待继续；以 [路线](ROADMAP.md) 顺序继续 |
 
-当前没有多人林克时间；正式Fuse处于dev.14开发验收阶段，尚未冻结完整里程碑。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
+当前没有多人林克时间；正式Fuse已完成本机dev.14，组合玩法继续P9.1。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
 
 ## 固定环境与构建入口
 
@@ -162,3 +162,5 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 制造机入口fabrication/FabricationContent、FabricatorEntity、FabricatorBlock、FabricatorItem、FabricatorMenu；客户端FabricatorScreen。格式1保存真实3槽、已确定完整结果与0–100进度。菜单只传进度/状态/可见槽，未完成结果不公布。原版Container和BlockEntityData必须同时携带：默认应用组件会覆盖items，仅BE数据会丢库存。默认容器散落关闭，loot_table使用26.3的modifier/copy_components；创造放置也真实转移一件以避免原版包装器恢复数量。
 
 下一任务按P9-PREPARATION：先正式原始材料快照/未知ID降级/数据上限/原子消费，再真实交互、武器盾箭效果、耐久附魔维修与模型，最后P9.1整合。P9仅准备文档，尚无正式组件或玩家入口。额度任一窗口≤5%先保存停止；重新读工具数字。公开GitHub仍dev.7，本机新阶段未上传。
+
+P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复现见DEVELOPMENT。完整材料只服务端，4字节投影桥接固定26.3容器CRC；不能删除这个Codec的HashOps路径。最新包及源码/校验在development-assets的P9索引，下一步P9.1进行组合检验。

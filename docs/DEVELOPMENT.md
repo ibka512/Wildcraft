@@ -206,3 +206,11 @@ P3.2 当前共 27 项 GameTest、8 个成品客户端类，另有 4 项普通客
 合成：铁锭4、铜锭2、红石块1、熔炉1，布局见配方。右键打开，两槽投入4铜锭与2红石，点击制造；5秒加载模拟完成一件，八类各12.5%。关闭界面继续，暂停/离线不补进度。Shift点击取出，库存满则保留。挖下机器保留库存/任务/进度再放置，创造正常放置也消耗实际一件。
 
 验证：runFabricationClientTest专项，runPackagedClientTest完整15类；普通联机先prepareP8Lab，再用不同WILDCRAFT_PROJECT_CACHE启动runP8Server/runP8Actor/runP8Observer，冻结JAR运行期间不得覆盖。仅用于可丢弃本机测试世界，接受EULA由操作者本人决定。见P8-VERIFICATION。
+
+## P9 Fuse 开发与验证
+
+专用V：主手剑/斧/盾/原版箭，副手材料；Shift+V拆分，先确保空副手或真实库存空位。箭堆只融合一根，其余箭需要空格。操作要在生存/冒险、关闭界面且未使用物品/攀爬/滑翔时进行。原宿主耐久/附魔/维修保持；材料32次，拆装不会补次数；缺失材料停用并保留数据。任意已注册物品只保证预算内保存和通用规则，第三方专属能力/模型仍需专项验证。
+
+先runDatagen，再build gameTestJar，服务端runGameTest；完整图形runPackagedClientTest（16类），专项runFusionClientTest。测试参数需操作者已经接受Minecraft EULA。两个普通客户端先prepareP9Lab冻结包，再以独立WILDCRAFT_PROJECT_CACHE启动runP9Server/Actor/Observer；127.0.0.1:25640仅本机，服务端需指定测试角色开关，由任务提供。运行期间不重建冻结JAR，不将测试JAR安装到日常世界。
+
+当前完整包dev.14；最终事实见P9-VERIFICATION，P9-CHECKPOINT仅保留历史实施状态。
