@@ -34,7 +34,7 @@
 最终交付JAR SHA-256：
 `e9fa015671e19b663901a93c05c4afc8c328d0c9bd1cd045cd8ad17d53c43c6f`。
 
-两包唯一正式差异是机械HUD垂直间距；最终专项与最终服务端对应后者。双客户端截图放在verification/p6/candidate-before-hud-spacing；上级机械专项截图为最终显示，不能混称同一包。上一轮P6-core证据/包继续保留其历史状态。
+两包唯一正式差异是机械HUD垂直间距；最终专项与最终服务端对应后者。双客户端截图放在verification/p6/candidate-before-hud-spacing；最终机械专项仅以verification/p6/README.md列出的10张截图为准；其他同目录PNG为保留的旧尝试，不能混称最终结果。上一轮P6-core证据/包继续保留其历史状态。
 
 ## 复现与限制
 

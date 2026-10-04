@@ -75,3 +75,5 @@ P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SH
 [工作版本dev.11/P6-core JAR](wildcraft-0.1.0-dev.11-p6-core.jar)、[源码](Wildcraft-P6-core-source.zip)、[基础证据](verification/p6-core)、[校验](Wildcraft-P6-core-SHA256SUMS.txt)、[明确状态与范围](../docs/P6-CORE-VERIFICATION.md)。实际玩家安装入口待操作选择后完成，不能当作完整P6版本；最新完整玩法交付仍dev.10。没有公开上传或新正式里程碑标签。
 
 P6完整本机交付：wildcraft-0.1.0-dev.11+mc26.3.jar、Wildcraft-P6-source.zip、Wildcraft-P6-manifest.json、Wildcraft-P6-SHA256SUMS.txt；验收见docs/P6-VERIFICATION.md，证据verification/p6。旧P6-core为历史未完成检查点，不覆盖。
+
+P6最终截图按verification/p6/README.md中的10文件索引核对；Wildcraft-P6-handoff-source.zip与Wildcraft-P6-handoff-SHA256SUMS.txt为截图来源澄清后的交接补充，原冻结P6-source及清单不覆盖。
