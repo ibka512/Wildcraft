@@ -164,3 +164,5 @@ V融合、Shift+V拆卸；生存/冒险主手剑/斧/盾/箭、副手材料。32
 P9本机dev.14新增正式Fuse；71服务端检查、16类完整客户端、两个普通客户端及独立服务端通过。[源码](development-assets/Wildcraft-P9-source.zip) / [资产与校验](development-assets/Wildcraft-P9-SHA256SUMS.txt)。
 
 P9.1沿用同一dev.14正式包，72服务端/17类完整客户端回归通过；[组合验收](docs/P9.1-VERIFICATION.md)、[交接源码](development-assets/Wildcraft-P91-source.zip)、[校验](development-assets/Wildcraft-P91-SHA256SUMS.txt)。下一步多人局部时间仅研究，规则见[R2准备](docs/R2-PREPARATION.md)。
+
+2026-10-04额度停线：P9/P9.1完成，R2仅准备候选实验，未编译运行；恢复入口[R2检查点](docs/R2-CHECKPOINT.md)。
