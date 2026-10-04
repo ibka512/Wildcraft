@@ -91,3 +91,7 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 ## P9 完整本机交付
 
 [dev.14正式JAR](wildcraft-0.1.0-dev.14+mc26.3.jar)、[源码](Wildcraft-P9-source.zip)、[证据](verification/p9/README.md)、[校验](Wildcraft-P9-SHA256SUMS.txt)、[清单](Wildcraft-P9-manifest.json)。71服务端、16类成品客户端、两个普通客户端和无测试Mod独立服务端通过，同一正式包。原型模型及第三方兼容限制见P9-VERIFICATION；旧包/标签不覆盖，公开GitHub仍dev.7。
+
+## P9.1 组合验收交接
+
+沿用同一dev.14正式JAR。72服务端与完整17类客户端通过，[验收](../docs/P9.1-VERIFICATION.md)、[源码](Wildcraft-P91-source.zip)、[证据](verification/p91/README.md)、[校验](Wildcraft-P91-SHA256SUMS.txt)。R2是下一阶段研究，未含入这些计数。公开GitHub仍dev.7。

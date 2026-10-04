@@ -103,7 +103,7 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，P9正式Fuse也已完成，下一步P9.1整合。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
+P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，P9正式Fuse也已完成，P9.1组合验收也已完成，下一步R2研究。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
 
 | 顺序 | 后续范围 |
 | --- | --- |
@@ -157,8 +157,10 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 
 独立古代装置制造机，每批4铜锭+2红石，100加载世界刻，八类部件各12.5%。服务端启动时扣料并保存一次结果；关闭、暂停、离线或搬运不会重抽。满库存保留成品，挖下再放置携带实际库存和进度。见[P8规格](docs/P8-SPEC.md)、[完整验收](docs/P8-VERIFICATION.md)和[资产](development-assets/verification/p8/README.md)。
 
-P9正式Fuse已完成，见[完整验收](docs/P9-VERIFICATION.md)；下一步P9.1整合空中箭、林克时间、背负和料理。
+P9正式Fuse已完成，见[完整验收](docs/P9-VERIFICATION.md)；P9.1组合验收也已完成，下一步R2研究空中箭、林克时间、背负和料理。
 
 V融合、Shift+V拆卸；生存/冒险主手剑/斧/盾/箭、副手材料。32次材料磨损不会通过拆装补满；Infinity仍消费融合箭。通用外观为可替换原型，任意材料的第三方能力/模型仍需专项研究。
 
 P9本机dev.14新增正式Fuse；71服务端检查、16类完整客户端、两个普通客户端及独立服务端通过。[源码](development-assets/Wildcraft-P9-source.zip) / [资产与校验](development-assets/Wildcraft-P9-SHA256SUMS.txt)。
+
+P9.1沿用同一dev.14正式包，72服务端/17类完整客户端回归通过；[组合验收](docs/P9.1-VERIFICATION.md)、[交接源码](development-assets/Wildcraft-P91-source.zip)、[校验](development-assets/Wildcraft-P91-SHA256SUMS.txt)。下一步多人局部时间仅研究，规则见[R2准备](docs/R2-PREPARATION.md)。

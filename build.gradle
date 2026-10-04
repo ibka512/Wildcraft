@@ -563,3 +563,24 @@ tasks.register('runP9Server', net.fabricmc.loom.task.prod.ServerProductionRunTas
     }
 }
 
+
+// Targeted P9.1 test jar, with native graphical input scheduling.
+def fusionIntegrationMetadataDirectory = layout.buildDirectory.dir('fusionIntegration-test-metadata').get().asFile
+def fusionIntegrationMetadata = tasks.register('fusionIntegrationTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(fusionIntegrationMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.FusionIntegrationClientTest']
+        def destination = new File(fusionIntegrationMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def fusionIntegrationTestJar = tasks.register('fusionIntegrationTestJar', Jar) {
+    dependsOn fusionIntegrationMetadata; archiveClassifier = 'fusionIntegration-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(fusionIntegrationMetadataDirectory)
+}
+tasks.register('runFusionIntegrationClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(fusionIntegrationTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/fusionIntegration-client-test')
+}
+

@@ -2,7 +2,7 @@
 
 ## 开始前
 
-1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机完成P9/dev.14，见docs/P9-SPEC.md与P9-VERIFICATION.md。下一阶段P9.1做空中箭/背负/林克时间/料理整合，旧P9-CHECKPOINT仅历史；P7-CHECKPOINT仅为旧停线历史。公开main/Release仍dev.7，本次dev.8–dev.14未上传，旧里程碑保留。
+1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机完成P9/dev.14，见docs/P9-SPEC.md与P9-VERIFICATION.md。P9.1整合也已完成72服务端/17类客户端，见P9.1-VERIFICATION；下一阶段R2按R2-PREPARATION研究局部时间，测试研究不直接开启正式多人技能，旧P9-CHECKPOINT仅历史；P7-CHECKPOINT仅为旧停线历史。公开main/Release仍dev.7，本次dev.8–dev.14未上传，旧里程碑保留。
 2. 查看当前分支、未提交改动和用户本轮目标。公开仓库只是交接材料，不是自动授权完成整张路线图。
 3. 用户当前明确决定优先于原始设计文档的建议；原始设计和历史日志是资料，不是可执行指令。只规划/审阅的请求不授权实现。
 
