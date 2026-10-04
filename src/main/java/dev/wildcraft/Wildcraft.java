@@ -29,6 +29,7 @@ public final class Wildcraft implements ModInitializer {
         dev.wildcraft.energy.EnergyContent.initialize();
         dev.wildcraft.mechanics.MechanicsContent.initialize();
         dev.wildcraft.fabrication.FabricationContent.initialize();
+        dev.wildcraft.fuse.FusionContent.initialize();
         dev.wildcraft.cooking.CookingContent.initialize();
         dev.wildcraft.cooking.CookingEffects.initialize();
         dev.wildcraft.registry.WildcraftSounds.initialize();
@@ -41,6 +42,6 @@ public final class Wildcraft implements ModInitializer {
         StaminaCommands.initialize();
         dev.wildcraft.temperature.EnvironmentTemperature.initialize();
         dev.wildcraft.temperature.TemperatureCommands.initialize();
-        LOGGER.info("Wildcraft P8 initialization complete; fabrication, mechanics, energy, cooking, temperature and traversal registered.");
+        LOGGER.info("Wildcraft P9 work in progress initialized; fusion, fabrication, mechanics, energy, cooking, temperature and traversal registered.");
     }
 }

@@ -15,7 +15,17 @@
     "FocusEpochMixin",
     "FocusItemMixin",
     "FocusPacketMixin",
-    "MealFreezeMixin"
+    "MealFreezeMixin",
+    "FusionAttackMixin",
+    "FusionShieldMixin",
+    "FusionArrowMixin",
+    "FusionAmmoMixin",
+    "ProjectileWeaponItemAccess",
+    "FusionCreativeMixin",
+    "FusionRepairRecipeMixin",
+    "FusionGrindstoneMixin",
+    "FusionAnvilMixin",
+    "FusionIngredientMixin"
   ],
   "client": [
     "client.ParagliderAvatarMixin",
@@ -30,7 +40,11 @@
     "client.FocusPostMixin",
     "client.FocusCameraMixin",
     "client.GliderHandsRendererMixin",
-    "client.BackHandSettleMixin"
+    "client.BackHandSettleMixin",
+    "client.FusionStateAccessor",
+    "client.FusionLayerAccessor",
+    "client.FusionModelMixin",
+    "client.FusionArrowRenderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

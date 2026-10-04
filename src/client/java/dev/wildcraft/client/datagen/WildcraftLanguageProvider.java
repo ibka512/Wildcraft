@@ -21,6 +21,20 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("key.wildcraft.fuse", chinese ? "融合 / 按住蹲下拆分" : "Fuse / sneak to split");
+        translations.add("key.categories.wildcraft.fusion", chinese ? "Wildcraft 融合" : "Wildcraft Fusion");
+        translations.add("fuse.wildcraft.kind.6", chinese ? "材料不可用：效果和拆卸已停用，原始数据保留" : "Material unavailable: effects and splitting disabled; data retained");
+        translations.add("fuse.wildcraft.done", chinese ? "融合完成" : "Fusion attached");
+        translations.add("fuse.wildcraft.split_done", chinese ? "已拆分，材料保留剩余次数" : "Split; material keeps its remaining uses");
+        translations.add("fuse.wildcraft.refused", chinese ? "请检查两手、材料限制和库存空位" : "Check hands, material limits and free inventory space");
+        translations.add("fuse.wildcraft.tooltip", chinese ? "融合材料：%s · 剩余 %s 次" : "Fused: %s \u00b7 %s uses left");
+        translations.add("fuse.wildcraft.controls", chinese ? "主手宿主 / 副手材料 · %s融合 · 蹲下＋该键拆分" : "Host in main hand / material offhand \u00b7 %s to fuse \u00b7 sneak + key to split");
+        translations.add("fuse.wildcraft.kind.0", chinese ? "通用：近战 / 箭 +1；盾牌近身反推" : "Generic: melee / arrow +1; shield pushes nearby attacker");
+        translations.add("fuse.wildcraft.kind.1", chinese ? "石类：近战 / 箭 +2；盾牌近身反推" : "Rock: melee / arrow +2; shield pushes nearby attacker");
+        translations.add("fuse.wildcraft.kind.2", chinese ? "金属类：近战 / 箭 +3；盾牌近身反推" : "Metal: melee / arrow +3; shield pushes nearby attacker");
+        translations.add("fuse.wildcraft.kind.3", chinese ? "烈焰：+1；命中 / 完整格挡点燃3秒" : "Flame: +1; hit / full block ignites for 3 seconds");
+        translations.add("fuse.wildcraft.kind.4", chinese ? "寒冰：+1；命中 / 完整格挡减速3秒" : "Ice: +1; hit / full block slows for 3 seconds");
+        translations.add("fuse.wildcraft.kind.5", chinese ? "弹性：+1；命中 / 完整格挡增加击退" : "Elastic: +1; hit / full block adds knockback");
         translations.add("block.wildcraft.fabricator",chinese?"古代装置制造机":"Ancient Device Fabricator");
         translations.add("fabrication.wildcraft.start",chinese?"制造":"Make");
         translations.add("fabrication.wildcraft.cost",chinese?"铜锭×4 + 红石×2":"4 copper + 2 redstone");

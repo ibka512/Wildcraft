@@ -50,6 +50,7 @@ public final class ResearchFixtures implements ModInitializer {
         dev.wildcraft.test.mechanics.MachineMultiplayerProbe.initialize();
         dev.wildcraft.test.mechanics.PartsMultiplayerProbe.initialize();
         dev.wildcraft.test.fabrication.FabricationMultiplayerProbe.initialize();
+        dev.wildcraft.test.fuse.FusionMultiplayerProbe.initialize();
         // Static registration initializes this test-only registry.
     }
 }

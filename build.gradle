@@ -511,3 +511,55 @@ tasks.register('runP8Server', net.fabricmc.loom.task.prod.ServerProductionRunTas
         useXVFB = false; runDir = new File(p8Lab, role)
     }
 }
+
+// Targeted P9 test jar, with native graphical input scheduling.
+def fusionMetadataDirectory = layout.buildDirectory.dir('fusion-test-metadata').get().asFile
+def fusionMetadata = tasks.register('fusionTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(fusionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.FusionClientSmokeTest']
+        def destination = new File(fusionMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def fusionTestJar = tasks.register('fusionTestJar', Jar) {
+    dependsOn fusionMetadata; archiveClassifier = 'fusion-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(fusionMetadataDirectory)
+}
+tasks.register('runFusionClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(fusionTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/fusion-client-test')
+}
+
+// Freeze P9 jars before three independent JVMs; never rebuild files held by the lab.
+def p9Lab = new File(wildcraftCacheHome, 'labs/p9')
+tasks.register('prepareP9Lab') {
+    dependsOn tasks.named('jar'), gameTestJar
+    doLast {
+        if (!acceptTestEula) throw new GradleException('Local lab requires -PacceptMinecraftEula=true.')
+        def modsDir = new File(p9Lab, 'mods'); modsDir.mkdirs()
+        java.nio.file.Files.copy(tasks.named('jar', Jar).get().archiveFile.get().asFile.toPath(), new File(modsDir, 'wildcraft.jar').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        java.nio.file.Files.copy(gameTestJar.get().archiveFile.get().asFile.toPath(), new File(modsDir, 'wildcraft-test.jar').toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+        def serverDir = new File(p9Lab, 'server'); serverDir.mkdirs()
+        new File(serverDir, 'eula.txt').text = 'eula=true\n'
+        new File(serverDir, 'server.properties').text = 'server-ip=127.0.0.1\nserver-port=25640\nonline-mode=false\nenforce-secure-profile=false\nwhite-list=false\nmax-players=2\nview-distance=4\nsimulation-distance=4\nallow-flight=false\nlevel-name=P9Lab\nlevel-type=minecraft:normal\nspawn-protection=0\n'
+        ['actor', 'observer'].each { role ->
+            def clientDir = new File(p9Lab, role); clientDir.mkdirs()
+            new File(clientDir, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:30\nrenderDistance:4\nlang:zh_cn\n'
+        }
+    }
+}
+tasks.register('runP9Server', net.fabricmc.loom.task.prod.ServerProductionRunTask) {
+    mods.setFrom(new File(p9Lab, 'mods/wildcraft.jar'), new File(p9Lab, 'mods/wildcraft-test.jar'), configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Xmx1G', '-Dwildcraft.p9.server=true'); runDir = new File(p9Lab, 'server')
+}
+['actor', 'observer'].each { role ->
+    tasks.register("runP9${role.capitalize()}", net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+        mods.setFrom(new File(p9Lab, 'mods/wildcraft.jar'), new File(p9Lab, 'mods/wildcraft-test.jar'), configurations.productionRuntimeMods)
+        jvmArgs.addAll('-Xmx2G', "-Dwildcraft.p9.role=${role}")
+        programArgs.addAll('--username', "WC${role.capitalize()}", '--quickPlayMultiplayer', '127.0.0.1:25640')
+        useXVFB = false; runDir = new File(p9Lab, role)
+    }
+}
+

@@ -26,7 +26,8 @@
       "dev.wildcraft.test.EnergyGameTests",
       "dev.wildcraft.test.MechanicsGameTests",
       "dev.wildcraft.test.PartsGameTests",
-      "dev.wildcraft.test.FabricationGameTests"
+      "dev.wildcraft.test.FabricationGameTests",
+      "dev.wildcraft.test.FusionGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
@@ -43,7 +44,8 @@
       "dev.wildcraft.test.EnergyClientSmokeTest",
       "dev.wildcraft.test.MechanicsClientSmokeTest",
       "dev.wildcraft.test.PartsClientSmokeTest",
-      "dev.wildcraft.test.FabricationClientSmokeTest"
+      "dev.wildcraft.test.FabricationClientSmokeTest",
+      "dev.wildcraft.test.FusionClientSmokeTest"
     ]
   }
 }

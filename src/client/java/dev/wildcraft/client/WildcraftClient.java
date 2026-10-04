@@ -18,6 +18,7 @@ public final class WildcraftClient implements ClientModInitializer {
         dev.wildcraft.client.temperature.TemperatureHud.initialize();
         dev.wildcraft.client.cooking.MealHud.initialize();
         dev.wildcraft.client.mechanics.MachinePresentation.initialize();
+        dev.wildcraft.client.fuse.FusionPresentation.initialize();
         dev.wildcraft.client.render.CharacterPoses.initialize();
         dev.wildcraft.client.focus.FocusClient.initialize();
         ClimbControls.initialize();

@@ -216,6 +216,7 @@ public final class BackEquipment {
         copy(original, result, DataComponents.BANNER_PATTERNS);
         copy(original, result, DataComponents.BASE_COLOR);
         copy(original, result, DataComponents.UNBREAKABLE);
+        copy(original, result, dev.wildcraft.fuse.FusionContent.VIEW);
 
         result.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, original.hasFoil());
         return result;
