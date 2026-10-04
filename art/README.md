@@ -11,3 +11,5 @@
 `paraglider.svg`、`test-core.pixels.json` 和 [focus](focus/README.md) 中的旧说明保留开发历史。初始伞图标 SVG 已由交付的 A05 源稿替代；旧 JAR、标签和原始验证图片保持不动。[重设计计划](ASSET-REDESIGN-PLAN.md) 与 [CSV](asset-redesign.csv) 是制作时清单，不能单独作为当前接入状态。
 
 P6–P7原创机械原型源见[mechanics-v1](mechanics-v1/README.md)：主体、八类部件图标与实体几何、节点吸附预览、电量条、火箭尾焰、弹簧伸展和稳定器工作灯。当前为可编辑原型，最终美术仍可替换。
+
+P8制造机原创像素源见[fabrication-v1](fabrication-v1/README.md)，运行贴图由generate_mechanics_art.py生成；当前方块与界面均为可替换原型。

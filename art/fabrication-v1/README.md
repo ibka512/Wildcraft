@@ -1,0 +1,3 @@
+# 制造机原创原型美术
+
+16×16像素源fabricator.pixels.json由generate_mechanics_art.py导出block纹理，原版立方体模型由datagen生成；界面可编辑源为FabricatorScreen。当前为可替换原型，不代表最终美术。

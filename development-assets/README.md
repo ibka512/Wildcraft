@@ -83,3 +83,7 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 ## P7 完整本机交付
 
 [dev.12正式JAR](wildcraft-0.1.0-dev.12+mc26.3.jar)、[源码](Wildcraft-P7-source.zip)、[最终证据](verification/p7/README.md)、[校验](Wildcraft-P7-SHA256SUMS.txt)与[机器清单](Wildcraft-P7-manifest.json)。56服务端、14类成品客户端、两个普通客户端和独立服务端为同一正式包，见P7-VERIFICATION。上方旧停线检查点和wing-wheel先行包均保留其历史状态，完整最新已为dev.12；公开GitHub仍dev.7。
+
+## P8 完整本机交付
+
+[dev.13正式JAR](wildcraft-0.1.0-dev.13+mc26.3.jar)、[源码](Wildcraft-P8-source.zip)、[证据](verification/p8/README.md)、[校验](Wildcraft-P8-SHA256SUMS.txt)、[清单](Wildcraft-P8-manifest.json)。60服务端、15类成品客户端、两个普通客户端与无测试Mod独立服务端通过，同一正式包。旧包与标签不覆盖，公开GitHub仍dev.7。

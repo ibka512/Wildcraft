@@ -1,0 +1,126 @@
+{
+  "stage": "P8",
+  "status": "complete-local",
+  "version": "0.1.0-dev.13",
+  "public_version": "0.1.0-dev.7",
+  "date": "2026-10-04",
+  "server_tests": 60,
+  "project_server_tests": 59,
+  "client_test_classes": 15,
+  "ordinary_clients": 2,
+  "jar_entries": 324,
+  "jar_sha256": "157a0beafb07a58cbded94776f2e37aa375dafc5577a554fba6c82699d100d8d",
+  "source_files": 445,
+  "files": [
+    {
+      "path": "wildcraft-0.1.0-dev.13+mc26.3.jar",
+      "bytes": 377966,
+      "sha256": "157a0beafb07a58cbded94776f2e37aa375dafc5577a554fba6c82699d100d8d"
+    },
+    {
+      "path": "Wildcraft-P8-source.zip",
+      "bytes": 1932275,
+      "sha256": "8c8918b132d190196110fb8beec6066238cab863583aaf0a25d1cdd5f614c094"
+    },
+    {
+      "path": "verification/p8/0000_p8-empty-fabricator.png",
+      "bytes": 118014,
+      "sha256": "60f8fcfedfa07a0c5e7b62e6b7c5f5af0a52bba8b1a8fde65101a94edac6b622"
+    },
+    {
+      "path": "verification/p8/0001_p8-paid-job-menu.png",
+      "bytes": 112256,
+      "sha256": "ee1c9f2a0301c0cd58a1a88a97e342ef8cf916e881d1099d23b2fe81e60fa0ec"
+    },
+    {
+      "path": "verification/p8/0002_p8-carried-job-resumed.png",
+      "bytes": 104066,
+      "sha256": "236121b07b6626660f7099e812ce9bc332ae87f1fef26428e144b40d638fa1e5"
+    },
+    {
+      "path": "verification/p8/0003_p8-completed-output.png",
+      "bytes": 94160,
+      "sha256": "f43bb00fa871d4771710e6841bf41140089774098966441806a63137e8e7e039"
+    },
+    {
+      "path": "verification/p8/0004_p8-output-collected-once.png",
+      "bytes": 102357,
+      "sha256": "b7afc7b90b1bc041bac6105042e0c7844b66685f4eaa5c95c3f9d63f07112f1f"
+    },
+    {
+      "path": "verification/p8/0005_p8-english-menu.png",
+      "bytes": 99121,
+      "sha256": "1383c74f644274fe29cc91a44e3608c202ae8bffbca5908ba5a5d08bae523ebc"
+    },
+    {
+      "path": "verification/p8/README.md",
+      "bytes": 816,
+      "sha256": "c1f19565b2c2bae992d610b505e45471e0163c1784601251fd33e5d5e775a0b3"
+    },
+    {
+      "path": "verification/p8/build.log",
+      "bytes": 51874,
+      "sha256": "3bff59ea3ec4f9f6ab4406ce0f80466de9f85431295e9080ea17743ae2266d69"
+    },
+    {
+      "path": "verification/p8/datagen.log",
+      "bytes": 6049,
+      "sha256": "26924417c15508bc3e0d3399737691ced1f2528b00c8026664e7d6a2e72c364c"
+    },
+    {
+      "path": "verification/p8/full-client.log",
+      "bytes": 491739,
+      "sha256": "23ebc55dfa66d9ad8e000ad11d74bd6a2ea9edd0e481350d9f4c3e817e779873"
+    },
+    {
+      "path": "verification/p8/ordinary-actor.log",
+      "bytes": 27007,
+      "sha256": "9d304d45a5ed7e9b73db667023b44b42970e6a5c80a5bec32a0dd16f447a962f"
+    },
+    {
+      "path": "verification/p8/ordinary-observer.log",
+      "bytes": 28410,
+      "sha256": "f377383f9611322fd862fe85b6dc79233f187eb34dbeee10d46fb9155afda39b"
+    },
+    {
+      "path": "verification/p8/ordinary-server.log",
+      "bytes": 7407,
+      "sha256": "273c1df323515a5cd10b2d12dfd1501d2a00995f550009b615b6bab7d37338c1"
+    },
+    {
+      "path": "verification/p8/p8-observer-0.png",
+      "bytes": 313362,
+      "sha256": "742053c7a4d95b4a563f15856f5c5b14761fa0db85d266206c09361683dbd645"
+    },
+    {
+      "path": "verification/p8/p8-observer-1.png",
+      "bytes": 308277,
+      "sha256": "72d02b4cf10be0289f9012b725f5bea6dd7876299a598844c641e6719696073f"
+    },
+    {
+      "path": "verification/p8/p8-observer-2.png",
+      "bytes": 301919,
+      "sha256": "35e54baf32495ab837e29def13cbeeb965256940cab9b33e7cf20ca5e1ebd9a7"
+    },
+    {
+      "path": "verification/p8/p8-observer-3.png",
+      "bytes": 283093,
+      "sha256": "0f8045845358bd41cd3620d0cec697a5a24afe2742f466c61d93e7bc2a1908dc"
+    },
+    {
+      "path": "verification/p8/server-tests.xml",
+      "bytes": 8963,
+      "sha256": "06279e27bd7f94aabd0dad92b0fc260b38cd8ec772a8f880d7dc462708e93be4"
+    },
+    {
+      "path": "verification/p8/standalone-server.log",
+      "bytes": 6522,
+      "sha256": "8e29ecf43678bf18f27a838d61b469e77f8d38bc0ea2f03f0b35472f3251bc68"
+    },
+    {
+      "path": "verification/p8/targeted-client.log",
+      "bytes": 102687,
+      "sha256": "49a8ae5db2b1da6e23eff5a07f79c76f3aba5820a2991e061a2578b5a66051b6"
+    }
+  ]
+}

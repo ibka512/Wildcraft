@@ -21,6 +21,13 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("block.wildcraft.fabricator",chinese?"古代装置制造机":"Ancient Device Fabricator");
+        translations.add("fabrication.wildcraft.start",chinese?"制造":"Make");
+        translations.add("fabrication.wildcraft.cost",chinese?"铜锭×4 + 红石×2":"4 copper + 2 redstone");
+        translations.add("fabrication.wildcraft.pool",chinese?"八类部件 · 各%s%%":"8 part types · %s%% each");
+        String[] factoryZh={"材料就绪","放入铜锭和红石","制造中 · 可关闭界面","产出格占用 · 等待取走","制造完成 · 取走后可再制造"};
+        String[] factoryEn={"Ready","Add copper and redstone","Working · safe to close","Output blocked","Ready to collect"};
+        for(int n=0;n<5;n++)translations.add("fabrication.wildcraft.status."+n,chinese?factoryZh[n]:factoryEn[n]);
         translations.add("item.wildcraft.wing", chinese ? "机械翼" : "Machine wing");
         translations.add("item.wildcraft.wheel", chinese ? "机械轮" : "Machine wheel");
         translations.add("item.wildcraft.rocket",chinese?"机械火箭":"Machine rocket");

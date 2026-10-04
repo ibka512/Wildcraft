@@ -28,5 +28,5 @@ public abstract class NativeFrameResearchMixin {
         if (NativeTimeProbe.holdingUse() || dev.wildcraft.test.equipment.BackNativeClientProbe.holdingUse() || dev.wildcraft.test.research.time.FocusNativeProbe.holdingUse()) ((Minecraft) (Object) this).options.keyUse.setDown(true);
     }
     @Inject(method = "runTick", at = @At("TAIL"))
-    private void wildcraftResearch$frame(CallbackInfo info) { NativeTimeProbe.frame((Minecraft) (Object) this); dev.wildcraft.test.research.time.FocusNativeProbe.frame((Minecraft)(Object)this); dev.wildcraft.test.equipment.BackNativeClientProbe.frame((Minecraft) (Object)this); dev.wildcraft.test.mechanics.MachineNativeClientProbe.frame((Minecraft) (Object)this); dev.wildcraft.test.mechanics.PartsNativeClientProbe.frame((Minecraft) (Object)this); }
+    private void wildcraftResearch$frame(CallbackInfo info) { NativeTimeProbe.frame((Minecraft) (Object) this); dev.wildcraft.test.research.time.FocusNativeProbe.frame((Minecraft)(Object)this); dev.wildcraft.test.equipment.BackNativeClientProbe.frame((Minecraft) (Object)this); dev.wildcraft.test.mechanics.MachineNativeClientProbe.frame((Minecraft) (Object)this); dev.wildcraft.test.mechanics.PartsNativeClientProbe.frame((Minecraft) (Object)this); dev.wildcraft.test.fabrication.FabricationNativeClientProbe.frame((Minecraft) (Object)this); }
 }

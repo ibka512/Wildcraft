@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.12 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机下一阶段继续；Fuse尚未实现。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.12尚未上传。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.13 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；Fuse下一阶段继续。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.13尚未上传。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -152,3 +152,9 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 本机dev.10：40项服务端、12类候选客户端回归、最终能源专项和独立服务端通过；SHA-256：`1e7a0ec8e3fb6b630b62f071fb660771a8d816fa454a6a418163864f3986ca39`。验证和限制见P5-VERIFICATION。
 
 当前完整本机阶段P7/dev.12：56项服务端、14类成品客户端、两个普通独立客户端及无测试Mod服务端通过。JAR SHA-256：`986706154f0ead68ea57a1a22177ab1a23cd0cde8b8c4c2751298c2da66d3568`。原翼/轮子停线检查点保留其历史状态，最新入口见[P7验收](docs/P7-VERIFICATION.md)。公开GitHub仍dev.7，当前没有上传新发布。
+
+## P8 制造机
+
+独立古代装置制造机，每批4铜锭+2红石，100加载世界刻，八类部件各12.5%。服务端启动时扣料并保存一次结果；关闭、暂停、离线或搬运不会重抽。满库存保留成品，挖下再放置携带实际库存和进度。见[P8规格](docs/P8-SPEC.md)、[完整验收](docs/P8-VERIFICATION.md)和[资产](development-assets/verification/p8/README.md)。
+
+下一阶段按[P9准备](docs/P9-PREPARATION.md)完成正式Fuse数据底座，再接交互、效果、模型与整合；当前没有正式Fuse。
