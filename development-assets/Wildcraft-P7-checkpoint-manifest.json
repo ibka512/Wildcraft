@@ -1,0 +1,34 @@
+{
+  "stage": "P7-checkpoint",
+  "stage_complete": false,
+  "working_version": "0.1.0-dev.12",
+  "latest_complete_version": "0.1.0-dev.11",
+  "server_tests": 51,
+  "new_client_verification": false,
+  "quota_remaining": {
+    "five_hour": 4,
+    "weekly": 23
+  },
+  "files": [
+    {
+      "path": "wildcraft-0.1.0-dev.12-p7-checkpoint.jar",
+      "size": 340049,
+      "sha256": "b1cb9484be7308c9ececa6776e7bc9297db1a5e4a29312b449cac0c86518529d"
+    },
+    {
+      "path": "Wildcraft-P7-checkpoint-source.zip",
+      "size": 1871248,
+      "sha256": "bbba5d6f533223945b6fcffd36a7f6d9b5b9af1a1e8fe30cdd836615bdabac14"
+    },
+    {
+      "path": "verification/p7-checkpoint/build-and-server-tests.log",
+      "size": 45718,
+      "sha256": "95f0b0f12315c7641b84b964276dbe14a18edc5899ae9c1f96478a540faebbad"
+    },
+    {
+      "path": "verification/p7-checkpoint/datagen.log",
+      "size": 6034,
+      "sha256": "ff3d3cb11d8b871915160ad1cc7535dfc64f4e88e4ea679a25394207f47ca9c0"
+    }
+  ]
+}

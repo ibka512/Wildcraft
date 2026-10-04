@@ -77,3 +77,5 @@ P3.2 为后续本机追加，不覆盖原发布资产；阶段校验见 [P3.2 SH
 P6完整本机交付：wildcraft-0.1.0-dev.11+mc26.3.jar、Wildcraft-P6-source.zip、Wildcraft-P6-manifest.json、Wildcraft-P6-SHA256SUMS.txt；验收见docs/P6-VERIFICATION.md，证据verification/p6。旧P6-core为历史未完成检查点，不覆盖。
 
 P6最终截图按verification/p6/README.md中的10文件索引核对；Wildcraft-P6-handoff-source.zip与Wildcraft-P6-handoff-SHA256SUMS.txt为截图来源澄清后的交接补充，原冻结P6-source及清单不覆盖。
+
+P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-source.zip与校验清单；仅构建和51服务端检查通过，新增客户端/物理矩阵未验收。完整安装包仍P6/dev.11，见docs/P7-CHECKPOINT.md。

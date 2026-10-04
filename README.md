@@ -149,3 +149,5 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 本机dev.9安装包 SHA-256：`37cd31c0e716edb07e4d7d14c6d5d25e2357addb53bda500e1e2daf1598c566d`。
 
 本机dev.10：40项服务端、12类候选客户端回归、最终能源专项和独立服务端通过；SHA-256：`1e7a0ec8e3fb6b630b62f071fb660771a8d816fa454a6a418163864f3986ca39`。验证和限制见P5-VERIFICATION。
+
+当前连续开发检查点：源码dev.12已开始P7翼/轮子，尚未完成，最新完整玩法仍dev.11。进度、实际验证与下一任务见[停线交接](docs/P7-CHECKPOINT.md)。

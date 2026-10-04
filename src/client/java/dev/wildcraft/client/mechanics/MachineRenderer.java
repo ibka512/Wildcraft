@@ -14,17 +14,17 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 /** Original cuboid model; coloured material uses the authored 8x8 white texture. */
 public final class MachineRenderer extends EntityRenderer<MachineEntity, MachineRenderer.State> {
     public static final class State extends EntityRenderState {
-        public float yaw; public int fans, battery, energy; public boolean working; public int preview = -1, ghost, ghostEnergy;
+        public float yaw; public int fans, battery, energy, kinds; public boolean working; public int preview = -1, ghost, ghostEnergy;
     }
     public MachineRenderer(EntityRendererProvider.Context context) { super(context); shadowRadius = .7F; }
     @Override public State createRenderState() { return new State(); }
     @Override public void extractRenderState(MachineEntity body, State state, float partial) {
         super.extractRenderState(body, state, partial);
-        state.yaw = body.getYRot(); state.fans = body.fanMask(); state.battery = body.batteryNode();
+        state.kinds = body.kinds(); state.yaw = body.getYRot(); state.fans = body.fanMask(); state.battery = body.batteryNode();
         state.energy = body.energy(); state.working = body.working();
         state.preview = MachinePresentation.selectedNode(body);
         state.ghost = MachinePresentation.canPreview(body, state.preview)
-                ? net.minecraft.client.Minecraft.getInstance().player.getMainHandItem().is(dev.wildcraft.energy.EnergyContent.BATTERY) ? 2 : 1 : 0;
+                ? MechanicsContent.kind(net.minecraft.client.Minecraft.getInstance().player.getMainHandItem()) : 0;
         state.ghostEnergy = state.ghost == 2 ? dev.wildcraft.energy.Batteries.energy(net.minecraft.client.Minecraft.getInstance().player.getMainHandItem()) : 0;
     }
     @Override public void submit(State state, PoseStack poses, SubmitNodeCollector collector, CameraRenderState camera) {
@@ -37,11 +37,18 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
             orient(poses, n);
             boolean ghost = n == state.preview && state.ghost > 0;
             boolean fan = (state.fans & 1 << n) != 0 || ghost && state.ghost == 1, battery = state.battery == n || ghost && state.ghost == 2;
+            int kind = ghost ? state.ghost : state.kinds >>> (n * 4) & 15;
             int colour = n == state.preview ? state.ghost > 0 ? 0xFF93E8C0 : 0xFFDEAB7A : battery || fan ? 0xFFCCAD72 : 0xFF70A5A5;
             box(poses, collector, state.lightCoords, -.13F,-.13F,-.04F,.13F,.13F,.04F,colour);
             if (battery) {
                 box(poses, collector, state.lightCoords,-.2F,-.23F,.04F,.2F,.23F,.15F,ghost ? 0x885DD7B7 : 0xFF4C615A);
                 box(poses, collector, state.lightCoords,-.14F,-.15F,.151F,.14F,-.15F+.3F*(ghost ? state.ghostEnergy : state.energy)/1000F,.16F,ghost ? 0x885DD7B7 : 0xFF90D3A9);
+            }
+            if (kind == 3) box(poses, collector, state.lightCoords,-.6F,-.08F,.04F,.6F,.08F,.55F,ghost ? 0x885DD7B7 : 0xFFCBB98E);
+            if (kind == 6) {
+                box(poses, collector, state.lightCoords,-.25F,-.25F,.04F,.25F,.25F,.24F,ghost ? 0x885DD7B7 : 0xFF354547);
+                poses.pushPose();poses.translate(0,0,.25);poses.rotate(Axis.ZP,state.working&&!ghost?state.ageInTicks*.4F:0);
+                box(poses, collector, state.lightCoords,-.2F,-.025F,0,.2F,.025F,.02F,ghost ? 0x885DD7B7 : 0xFFBB9561);poses.popPose();
             }
             if (fan) {
                 box(poses, collector, state.lightCoords,-.29F,-.29F,.04F,.29F,.29F,.1F,ghost ? 0x885DD7B7 : 0xFF826D4B);

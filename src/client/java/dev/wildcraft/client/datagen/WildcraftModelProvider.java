@@ -24,6 +24,8 @@ public final class WildcraftModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators generator) {
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.BODY, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.FAN, ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.WING, ModelTemplates.FLAT_ITEM);
+        generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.WHEEL, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.energy.EnergyContent.BATTERY, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.cooking.CookingContent.MEAL, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(WildcraftItems.TEST_CORE, ModelTemplates.FLAT_ITEM);

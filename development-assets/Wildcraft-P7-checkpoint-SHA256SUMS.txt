@@ -1,0 +1,4 @@
+b1cb9484be7308c9ececa6776e7bc9297db1a5e4a29312b449cac0c86518529d  wildcraft-0.1.0-dev.12-p7-checkpoint.jar
+bbba5d6f533223945b6fcffd36a7f6d9b5b9af1a1e8fe30cdd836615bdabac14  Wildcraft-P7-checkpoint-source.zip
+95f0b0f12315c7641b84b964276dbe14a18edc5899ae9c1f96478a540faebbad  verification/p7-checkpoint/build-and-server-tests.log
+ff3d3cb11d8b871915160ad1cc7535dfc64f4e88e4ea679a25394207f47ca9c0  verification/p7-checkpoint/datagen.log

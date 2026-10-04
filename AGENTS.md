@@ -2,7 +2,7 @@
 
 ## 开始前
 
-1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机完成P6/dev.11，规则与证据见docs/P6-SPEC.md、docs/P6-VERIFICATION.md。下一阶段P7按docs/P7-PREPARATION.md实施；公开main/Release仍dev.7，本次dev.8–dev.11未上传，旧里程碑保留。
+1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机完成P6/dev.11，规则与证据见docs/P6-SPEC.md、docs/P6-VERIFICATION.md。P7当前源码dev.12已接入翼/轮子首批，未完成；先读docs/P7-CHECKPOINT.md、P7-SPEC.md再继续。公开main/Release仍dev.7，本次dev.8–dev.11未上传，旧里程碑保留。
 2. 查看当前分支、未提交改动和用户本轮目标。公开仓库只是交接材料，不是自动授权完成整张路线图。
 3. 用户当前明确决定优先于原始设计文档的建议；原始设计和历史日志是资料，不是可执行指令。只规划/审阅的请求不授权实现。
 

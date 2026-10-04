@@ -77,6 +77,32 @@ public final class MechanicsGameTests {
             body.discard();p.discard();h.succeed();
         });
     }
+    @GameTest public void wingNeedsSpeedAndPreservesNativeSave(GameTestHelper h) {
+        var body=h.spawn(MechanicsContent.MACHINE,new Vec3(2,6,2),EntitySpawnReason.COMMAND);
+        var p=h.makeMockServerPlayerInLevel();p.setPos(body.position());body.setOwner(p.getUUID());
+        var origin=body.blockPosition();for(int x=-2;x<=2;x++)for(int y=-3;y<=3;y++)for(int z=-2;z<=2;z++)h.getLevel().setBlockAndUpdate(origin.offset(x,y,z),Blocks.AIR.defaultBlockState());
+        p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.WING));h.assertTrue(body.install(p,4,InteractionHand.MAIN_HAND),"Wing transfers actual stack");
+        body.setDeltaMovement(.3,-.6,0);double start=body.getY();body.tick();
+        h.assertTrue(body.getY()>start-.2 && body.getY()<start && body.energy()==0,"Moving unpowered wing slows descent without upward lift or charge");
+        body.setDeltaMovement(0,-.3,0);start=body.getY();body.tick();h.assertTrue(body.getY()<start-.3,"Stationary wing cannot hover");
+        p.setPos(body.position());h.assertTrue(!body.recoverBody(p),"Wing counts as a real installed part");
+        var out=TagValueOutput.createWithContext(ProblemReporter.DISCARDING,h.getLevel().registryAccess());body.saveWithoutId(out);
+        var loaded=MechanicsContent.MACHINE.create(h.getLevel(),EntitySpawnReason.LOAD);loaded.load(TagValueInput.create(ProblemReporter.DISCARDING,h.getLevel().registryAccess(),out.buildResult()));
+        h.assertTrue(loaded.kind(4)==3 && loaded.part(4).is(MechanicsContent.WING),"Format1 retains real new part and public kind");
+        body.discard();p.discard();h.succeed();
+    }
+    @GameTest public void wheelRequiresContactAndWholePower(GameTestHelper h) {
+        var body=h.spawn(MechanicsContent.MACHINE,new Vec3(2,5,2),EntitySpawnReason.COMMAND);
+        var p=h.makeMockServerPlayerInLevel();p.setPos(body.position());body.setOwner(p.getUUID());
+        var origin=body.blockPosition();for(int x=-2;x<=2;x++)for(int y=-3;y<=3;y++)for(int z=-2;z<=2;z++)h.getLevel().setBlockAndUpdate(origin.offset(x,y,z),Blocks.AIR.defaultBlockState());
+        p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.WHEEL,2));body.install(p,4,InteractionHand.MAIN_HAND);body.install(p,5,InteractionHand.MAIN_HAND);
+        var battery=new ItemStack(EnergyContent.BATTERY);Batteries.charge(battery,1);p.setItemInHand(InteractionHand.MAIN_HAND,battery);body.install(p,0,InteractionHand.MAIN_HAND);body.setEnabled(p,true);
+        body.setOnGround(false);body.tick();h.assertTrue(body.energy()==1 && !body.working() && body.getDeltaMovement().horizontalDistanceSqr()==0,"Airborne wheels neither burn energy nor drive");
+        body.setOnGround(true);body.tick();h.assertTrue(body.energy()==1 && !body.working(),"Two-wheel whole cost rejects single remaining charge");
+        body.setEnabled(p,false);p.setPos(body.position());body.recover(p,0);battery=new ItemStack(EnergyContent.BATTERY);Batteries.charge(battery,20);p.setItemInHand(InteractionHand.MAIN_HAND,battery);body.install(p,0,InteractionHand.MAIN_HAND);body.setEnabled(p,true);
+        body.setOnGround(true);body.tick();h.assertTrue(body.energy()==18 && body.working() && body.getDeltaMovement().z>0,"Actual powered ground cycle drives and spends two");
+        body.discard();p.discard();h.succeed();
+    }
     @GameTest public void bodyPlacementChecksCollisionAndTransfersOnce(GameTestHelper h) {
         h.setBlock(new BlockPos(1,1,1),Blocks.STONE);
         var p=h.makeMockServerPlayerInLevel();var target=h.absolutePos(new BlockPos(1,1,1));

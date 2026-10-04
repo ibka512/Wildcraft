@@ -21,6 +21,8 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("item.wildcraft.wing", chinese ? "机械翼" : "Machine wing");
+        translations.add("item.wildcraft.wheel", chinese ? "机械轮" : "Machine wheel");
         translations.add("entity.wildcraft.machine", chinese ? "机械主体" : "Machine");
         translations.add("item.wildcraft.machine_body", chinese ? "机械主体" : "Machine Body");
         translations.add("item.wildcraft.fan", chinese ? "风扇" : "Fan");
