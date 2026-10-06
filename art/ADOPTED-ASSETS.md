@@ -1,6 +1,6 @@
 # Wildcraft 已采用与已接入美术台账
 
-2026-10-06，当前开发交接版 **dev.17 / Minecraft 26.3**。核心14编号＋第二批29编号，共43项当前资产已采用且接入。第二批保留30份版本；F05-10当前v02，v01历史保留。
+2026-10-06，当前本机开发版 **dev.18 / Minecraft 26.3**（公开交接仍dev.17）。核心14编号＋第二批29编号，共43项当前资产已采用且接入。第二批保留30份版本；F05-10当前v02，v01历史保留。
 
 [CSV](ADOPTED-ASSETS.csv) · [JSON及运行文件校验](ADOPTED-ASSETS.json) · [下载原件与交接包](../docs/ASSET-DOWNLOADS.md)
 
@@ -22,7 +22,7 @@
 | A11 | 林克时间画面 | v1 | 已采用、已接入 | [原稿](../art/approved-v1/A11-林克时间画面-v1/) | [入口](../src/client/java/dev/wildcraft/client/focus/FocusClient.java)；林克时间画面 |
 | A12 | 专注准星与低精力提示 | v1 | 已采用、已接入 | [原稿](../art/approved-v1/A12-专注准星与低精力提示-v1/) | [入口](../src/client/java/dev/wildcraft/client/focus/FocusClient.java)；专注准星与低精力提示 |
 | A13 | 专注进入/退出音效 | v1 | 已采用、已接入 | [原稿](../art/approved-v1/A13-专注进入退出音效-v1/) | [入口](../src/main/resources/assets/wildcraft/sounds/focus_enter.ogg)；专注进入/退出音效 |
-| A14 | 模组品牌图标 | v1 | 已采用、已接入 | [原稿](../art/approved-v1/A14-模组品牌图标-v1/) | [入口](../src/main/resources/assets/wildcraft/icon.png)；模组品牌图标 |
+| A14 | 品牌图标：精细展示/简单识别 | v02 | 已采用、已接入 | [原稿](brand-v2/A14/v02/README.md) | [入口](../src/main/resources/assets/wildcraft/icon.png)；原生20设置页；旧v1保留 |
 | A15 | 表现设置页 | v1 | 已采用、已接入 | [原稿](../art/approved-v1/A15-表现设置页-v1/) | [入口](../src/client/java/dev/wildcraft/client/focus/FocusSettingsScreen.java)；表现设置页 |
 
 ## 第二批系统美术（dev.15首次接入）

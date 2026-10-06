@@ -1,0 +1,197 @@
+{
+  "project": "Wildcraft",
+  "date": "2026-10-06",
+  "phase": "A14 brand v02 integration",
+  "game_version": "0.1.0-dev.18",
+  "game_tag": "v0.1.0-dev.18+mc26.3",
+  "branch": "feature/brand-icons",
+  "public_handoff": "handoff-dev17-2026-10-06 (unchanged)",
+  "tests": "datagen, build (83 server required tests), one CoreArtClientSmokeTest; actual normal/compact settings; not full 21 client classes",
+  "files": [
+    {
+      "file": "AGENTS.md",
+      "bytes": 4494,
+      "sha256": "4b5e36b51cd03c8127b1e9e8f033bca2cf708d9a8d82c426e6f3a20d841ef323"
+    },
+    {
+      "file": "README.md",
+      "bytes": 11341,
+      "sha256": "f01f3756f0f408f7bd1cd20a2ecf50be08448eb2cccee5777a67d266bc7e5b23"
+    },
+    {
+      "file": "art/ADOPTED-ASSETS.csv",
+      "bytes": 8804,
+      "sha256": "b2246fcc2313fabd024d2820125089a12273f8b066fbddf86697c29f3e38cb41"
+    },
+    {
+      "file": "art/ADOPTED-ASSETS.json",
+      "bytes": 54693,
+      "sha256": "9878d87abf4b14bdafac0c3c9eea38f08ca56740775e9e852edd875f19471e2c"
+    },
+    {
+      "file": "art/ADOPTED-ASSETS.md",
+      "bytes": 12731,
+      "sha256": "e46da58e84ffca4ad5c2026e8ca481737ce94f43d59d743ea2d784d52e70aff8"
+    },
+    {
+      "file": "art/README.md",
+      "bytes": 2048,
+      "sha256": "bc70c019fa68c42b66741bb979889f505510092a2fb2d2a3dfde16820e12888d"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/README.md",
+      "bytes": 1982,
+      "sha256": "9cdc676b771659495aa9d0808a091e7550c752a952a3f955867cfe58ac856e7b"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-detailed-512.png",
+      "bytes": 286085,
+      "sha256": "b1f143fc8dbde913911ce7a974b442eecac6828c2c5eede17e9c9a0a02a40ea8"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-128.png",
+      "bytes": 23105,
+      "sha256": "0c770514e2fe1392ab5e005711646bb135582f9a5a9950a133dc32655896d46c"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-20.png",
+      "bytes": 1201,
+      "sha256": "fb38f9aecbc73903615f56eee0f11141cf25c917a8151fea3d0db9d8717b2e6b"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-32.png",
+      "bytes": 2459,
+      "sha256": "7299b316c2580c0f50690276c310596b5a618896b67098cace9e01a3b79c0e37"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-64.png",
+      "bytes": 7617,
+      "sha256": "187170b132fe38303717c15dda32a494eb988787362f16645f173d9e3eb76a77"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/generation.json",
+      "bytes": 1743,
+      "sha256": "13190230dee0b38f9c94eb95bc6b78d99b8f3319788a683cc151a4040ed3e9b3"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/manifest.json",
+      "bytes": 2973,
+      "sha256": "bb0fb1445423649dd406aa1bc6a0b3c7385188d222416df3c67ae5521e5967c1"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-detailed-original.png",
+      "bytes": 1085603,
+      "sha256": "f2273605ea5eecc23246298973e6e5b721f0ddca8a9b855e6d639cf762927057"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-simple-cleaned.png",
+      "bytes": 866779,
+      "sha256": "f8c97845292c5e4f2942958d3a3d3be4c8e74521c80c6414afa8727996f721be"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-simple-original.png",
+      "bytes": 927106,
+      "sha256": "6a98c1492beb34f63012037f3992f45309ffdb15c389315410ccd6af009e8d05"
+    },
+    {
+      "file": "development-assets/README.md",
+      "bytes": 12126,
+      "sha256": "84f50514835a65ba93756238ebc9bad0aa4388e660de08afd4dcd6dc7c1444d2"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/README.md",
+      "bytes": 674,
+      "sha256": "2af7fa77c5e59e2dbdc6fad9e96130a435b5e4e5c706e38ac04cefe5bdb8131d"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/build-client.log",
+      "bytes": 82240,
+      "sha256": "f0b0cdb0c5fc50792843948c8ad0753fcc3d0c5690422dadb5818e44b8f5d959"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/datagen.log",
+      "bytes": 6733,
+      "sha256": "f40e9a12e16b8d600f7709b05b10e334439c70ab578305660873dd867f4cf66f"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/screenshots/0000_art-glider-first-person-grips.png",
+      "bytes": 199806,
+      "sha256": "e7ec548da99069d050c9ad21d830208c0bd39762cf0a8c380cb4afd7593afcc7"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/screenshots/0001_art-glider-third-person-front.png",
+      "bytes": 235092,
+      "sha256": "fff6ed195ccb5138575bfa9f5dbb06949ec705db7528a05d6b0eff2df281dc90"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/screenshots/0002_art-settings-normal.png",
+      "bytes": 142087,
+      "sha256": "6432d5df91b2fc88d83acbd605a6d036f68be8980d3ce61e6a198789f564d79a"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/screenshots/0003_art-settings-compact-layout.png",
+      "bytes": 204975,
+      "sha256": "ba38b3a9da2abc68d58afe424d47b2a9c35fbae1439e957d528c8679c02b8c52"
+    },
+    {
+      "file": "development-assets/verification/brand-v2/server-tests.xml",
+      "bytes": 12446,
+      "sha256": "e4d9ac3046819f550617299bd8a9e9427378e29555e5adcb96a3eb3b34fee1e6"
+    },
+    {
+      "file": "development-assets/wildcraft-0.1.0-dev.18+mc26.3.jar",
+      "bytes": 689789,
+      "sha256": "daaa39c4395511671a8ae9d1dcb5f0eca0ea399fe2d9b0ce4ef1ff47f15a869c"
+    },
+    {
+      "file": "development-assets/wildcraft-0.1.0-dev.18-sources.jar",
+      "bytes": 431225,
+      "sha256": "c3215094a978a63f54710a8b707f371f72b6006f26c40f0741e061ccb7ac7599"
+    },
+    {
+      "file": "docs/AI-HANDOFF.md",
+      "bytes": 25148,
+      "sha256": "029f587373495bf35b9424c48a07c85b4622c28acd0df3e92d247590ab5e8784"
+    },
+    {
+      "file": "docs/BRAND-ICONS-VERIFICATION.md",
+      "bytes": 2574,
+      "sha256": "fb1d8748b871bc426a58d36b3f0b957b3205bcd72c096104b3e7862c4239afcc"
+    },
+    {
+      "file": "docs/ROADMAP.md",
+      "bytes": 6188,
+      "sha256": "4fe78f2d5f27424d2a32fa4e8bdff0a8a61a019d0c40ffbaa63ad165b323d054"
+    },
+    {
+      "file": "gradle.properties",
+      "bytes": 227,
+      "sha256": "3e58aecc14cdbc8d8c8f0a057bfd7a98590e543334bf246678f90e267b050508"
+    },
+    {
+      "file": "src/client/java/dev/wildcraft/client/focus/FocusSettingsScreen.java",
+      "bytes": 5842,
+      "sha256": "8cf6e39ac3a7bb657805c296765cebbf31df2cc43e0424a8a878445f98042293"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/icon-20.png",
+      "bytes": 1201,
+      "sha256": "fb38f9aecbc73903615f56eee0f11141cf25c917a8151fea3d0db9d8717b2e6b"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/icon.png",
+      "bytes": 23105,
+      "sha256": "0c770514e2fe1392ab5e005711646bb135582f9a5a9950a133dc32655896d46c"
+    },
+    {
+      "file": "tools/export-brand-icons.sh",
+      "bytes": 790,
+      "sha256": "d5a3d16bc64f4d73a5655b12c5348d23d7b3707f5f67f7548ceeb4380bef6a8e"
+    },
+    {
+      "file": "tools/verify-adopted-assets.py",
+      "bytes": 3138,
+      "sha256": "16454bf237cad66890664bd31cb94fe5a221f896b2779a2593f89e8dfc0b6c41"
+    }
+  ]
+}

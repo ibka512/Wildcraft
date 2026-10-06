@@ -1,0 +1,81 @@
+{
+  "asset": "A14",
+  "version": "v02",
+  "date": "2026-10-06",
+  "adopted": true,
+  "integrated": true,
+  "game_version": "0.1.0-dev.18",
+  "approval_scope": "用户提供精细/简单品牌图，确认按推荐分工、清理和小尺寸导出接入；无新增玩法/依赖/存档变更。",
+  "original_files": [
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-detailed-original.png",
+      "sha256": "f2273605ea5eecc23246298973e6e5b721f0ddca8a9b855e6d639cf762927057"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-simple-original.png",
+      "sha256": "6a98c1492beb34f63012037f3992f45309ffdb15c389315410ccd6af009e8d05"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "file": "art/brand-v2/A14/v02/README.md",
+      "bytes": 1982,
+      "sha256": "9cdc676b771659495aa9d0808a091e7550c752a952a3f955867cfe58ac856e7b"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-detailed-512.png",
+      "bytes": 286085,
+      "sha256": "b1f143fc8dbde913911ce7a974b442eecac6828c2c5eede17e9c9a0a02a40ea8"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-128.png",
+      "bytes": 23105,
+      "sha256": "0c770514e2fe1392ab5e005711646bb135582f9a5a9950a133dc32655896d46c"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-20.png",
+      "bytes": 1201,
+      "sha256": "fb38f9aecbc73903615f56eee0f11141cf25c917a8151fea3d0db9d8717b2e6b"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-32.png",
+      "bytes": 2459,
+      "sha256": "7299b316c2580c0f50690276c310596b5a618896b67098cace9e01a3b79c0e37"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/exports/wildcraft-brand-simple-64.png",
+      "bytes": 7617,
+      "sha256": "187170b132fe38303717c15dda32a494eb988787362f16645f173d9e3eb76a77"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/generation.json",
+      "bytes": 1743,
+      "sha256": "13190230dee0b38f9c94eb95bc6b78d99b8f3319788a683cc151a4040ed3e9b3"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-detailed-original.png",
+      "bytes": 1085603,
+      "sha256": "f2273605ea5eecc23246298973e6e5b721f0ddca8a9b855e6d639cf762927057"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-simple-cleaned.png",
+      "bytes": 866779,
+      "sha256": "f8c97845292c5e4f2942958d3a3d3be4c8e74521c80c6414afa8727996f721be"
+    },
+    {
+      "file": "art/brand-v2/A14/v02/source/wildcraft-brand-simple-original.png",
+      "bytes": 927106,
+      "sha256": "6a98c1492beb34f63012037f3992f45309ffdb15c389315410ccd6af009e8d05"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/icon-20.png",
+      "bytes": 1201,
+      "sha256": "fb38f9aecbc73903615f56eee0f11141cf25c917a8151fea3d0db9d8717b2e6b"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/icon.png",
+      "bytes": 23105,
+      "sha256": "0c770514e2fe1392ab5e005711646bb135582f9a5a9950a133dc32655896d46c"
+    }
+  ]
+}

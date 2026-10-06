@@ -39,10 +39,16 @@ def main():
         for item in asset["runtime_files"]:
             check_file(item["path"], item["sha256"])
     count = 0
-    core = json.loads((ROOT / "art/approved-v1/SOURCE-MANIFEST.json").read_text())
-    for item in core["sourceFiles"]:
-        check_file(item["file"], item["sha256"])
-        count += 1
+    source_manifests = {"art/approved-v1/SOURCE-MANIFEST.json"}
+    source_manifests.update(a["source_manifest"] for a in assets)
+    for name in sorted(source_manifests):
+        data = json.loads((ROOT / name).read_text())
+        source_files = data.get("sourceFiles", [])
+        if not isinstance(source_files, list):
+            continue  # Some historical manifests use this key for a file count.
+        for item in source_files:
+            check_file(item["file"], item["sha256"])
+            count += 1
     manifests = sorted((ROOT / "art/production-v2").glob("*/v*/manifest.json"))
     if len(manifests) != 30:
         raise ValueError("Expected 30 preserved second-batch delivery manifests")

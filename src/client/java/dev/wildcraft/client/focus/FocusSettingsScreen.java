@@ -72,7 +72,7 @@ public final class FocusSettingsScreen extends Screen {
         g.fill(panelX, panelY, panelX+panelWidth, panelY+panelHeight, 0xEF18271C);
         g.outline(panelX, panelY, panelWidth, panelHeight, 0xFF607658);
         boolean compact = height < 240;
-        g.blit(RenderPipelines.GUI_TEXTURED, Wildcraft.id("icon.png"), panelX+14, panelY+12, 0, 0, 20, 20, 128, 128, 128, 128);
+        g.blit(RenderPipelines.GUI_TEXTURED, Wildcraft.id("icon-20.png"), panelX+14, panelY+12, 0, 0, 20, 20, 20, 20, 20, 20);
         g.text(font, "WILDCRAFT", panelX+40, panelY+10, 0xFFB6EB91);
         g.text(font, title, panelX+40, panelY+21, 0xFFFFFFFF);
         var hint = Component.translatable("focus.wildcraft.settings.hint");

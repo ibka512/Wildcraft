@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit",
+  "transparent_background": true,
+  "edit_target": "source/wildcraft-brand-simple-original.png",
+  "output": "source/wildcraft-brand-simple-cleaned.png",
+  "prompt": "Edit target: the supplied Wildcraft simple pixel-art logo. Make only a careful cleanup and small-icon legibility revision, not a new brand design. Preserve its distinctive circular stepped dark forest-green badge, exact front-facing cream-and-green paraglider silhouette with brown wooden grip frame, the three simple grass-and-dirt terrain ledges and pale winding path below, relative sizes, centered composition, colors, hard pixel edges. Remove the two irregular dark smudges in the left and right green background below the glider; replace with clean quiet forest-green matching the surrounding badge. Clean accidental turquoise fringe speckles around the outer badge. Simplify only extremely tiny noisy shading to work at 128, 64, 32 and 20 pixel display, keep the terrain/path identifiable. Maintain flat intentional pixel art, a coarse clean grid, no fine painted texture, no antialiasing of internal pixel blocks, no extra trees, text, letters, new objects, borders, gradients, or drop shadow. Outside the badge must be genuinely transparent (preserve alpha), never black or white background. Return a single clean square PNG production master of the same logo, with balanced small safety margin. The detailed other brand illustration is not an edit target.",
+  "export_tool": "macOS sips via tools/export-brand-icons.sh",
+  "note": "Imagegen performs visual cleanup; sips performs deterministic resource-size exports. User originals remain byte-identical. No layered Aseprite/Blender source is claimed."
+}

@@ -1,5 +1,8 @@
 # Wildcraft 开发路线（规划 v2）
 
+> 本机dev.18完成品牌双版本接入，公开交接仍dev.17；不改变单人开发方向，见[品牌验证](BRAND-ICONS-VERIFICATION.md)。
+
+
 更新：2026-10-06。最新执行顺序、阶段验收和第一批任务见 [后续开发计划](NEXT-DEVELOPMENT-PLAN.md)；完整设计背景见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。本页为执行索引，旧路线保存在 [历史快照](ROADMAP-before-plan-v2.md)。
 
 ## 当前基线

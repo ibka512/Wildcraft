@@ -1,5 +1,9 @@
 # Wildcraft
 
+<img src="art/brand-v2/A14/v02/exports/wildcraft-brand-detailed-512.png" width="280" alt="Wildcraft：滑翔伞与原版世界探索" />
+
+> 本机dev.18已接入新版品牌图标：精细版用于项目展示，简单版用于Mod与设置页。[品牌资产与导出](art/brand-v2/A14/v02/README.md)。公开GitHub与Release仍为下述dev.17；本次本机更新尚未上传，旧公开交接与校验保持不变。
+
 Wildcraft 是面向 **Minecraft Java Edition 的 Fabric Mod**，在原版世界中加入精力成长、攀爬、滑翔、单人林克时间、料理、Fuse 和有限能源机械。当前公开开发版本为 **0.1.0-dev.17 / Minecraft 26.3**，功能推进到 P10.2，开发重点是单人体验。
 
 这是可运行的开发交接版。自动验证已覆盖主要玩法循环，人工长期生存、最终平衡和部分美术仍待完成；尚未标记为稳定版。

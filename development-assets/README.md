@@ -111,3 +111,7 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 ## P10.2 单人生存入口与表现 / dev.17（2026-10-06）
 
 [正式包](wildcraft-0.1.0-dev.17+mc26.3.jar)、[正式main/client源码](wildcraft-0.1.0-dev.17-sources.jar)、[实际证据](verification/p102/README.md)、[manifest](Wildcraft-P10.2-manifest.json)/[校验](Wildcraft-P10.2-SHA256SUMS.txt)。完整测试和交接文档在当前仓库中，见[P10.2验收](../docs/P10.2-VERIFICATION.md)。83服务端/21类客户端与实际GUI1/2/3专项均通过，无测试Mod服务端保存退出通过。费用和原资产保持，底部/B6美术另列待办；本段记录阶段完成时状态，后续公开交接见顶部。
+
+## 本机品牌双版本 / dev.18（2026-10-06）
+
+[正式JAR](wildcraft-0.1.0-dev.18+mc26.3.jar)、[源码JAR](wildcraft-0.1.0-dev.18-sources.jar)、[接入验证](../docs/BRAND-ICONS-VERIFICATION.md)、[证据](verification/brand-v2/README.md)。83服务端与一类核心美术成品客户端专项通过，原生20设置页/128 Mod图标正常；公开交接仍dev.17，本批未上传。旧公开快照按旧交接标签复核。

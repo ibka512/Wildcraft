@@ -1,5 +1,8 @@
 # Wildcraft AI 开发交接说明
 
+> 本机品牌dev.18已接入，公开main/Release仍dev.17。本批只改A14双版本、Mod128与设置页原生20、README展示，游戏规则/保存/依赖不变；入口见[品牌验证](BRAND-ICONS-VERIFICATION.md)。旧公开快照/标签/包不移动。
+
+
 更新：2026-10-06。当前公开开发交接版 **0.1.0-dev.17 / Minecraft 26.3**，GitHub默认分支`main`，交接标签`handoff-dev17-2026-10-06`。游戏标签`v0.1.0-dev.17+mc26.3`固定P10.2功能提交`b92fe77`；本次只更新交接与资产台账，不改变正式JAR。P10.2单人取得入口、原生循环和显示收尾已完成，最终证据见[P10.2合同](P10.2-SPEC.md)/[验收](P10.2-VERIFICATION.md)。保留dev.16风天气、dev.15第二批29项美术和既有玩法；下一步人工单人生存、定向平衡与B6/机械底部美术。多人R2/P10.1暂缓。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
