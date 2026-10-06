@@ -1,0 +1,171 @@
+{
+  "coordinateSystem": "Design X right/Y up/Z back; body anchor origin at collar Y=24; 1 unit = 1/16 block",
+  "profiles": {
+    "sword": {
+      "reference": "diamond_sword",
+      "category": "melee",
+      "center": [
+        -6.4,
+        17.0,
+        4.2
+      ],
+      "scale": 0.85,
+      "canvasAngle": -90,
+      "javaBodyLocalCenterUnits": [
+        -6.4,
+        7.0,
+        4.2
+      ],
+      "scope": "visual center target after native FIXED transform; not raw layer translation",
+      "modelScale": "effective scale of native dimensions; shield FIXED has its own 0.55 scale, compensate rather than double-scale blindly"
+    },
+    "axe": {
+      "reference": "diamond_axe",
+      "category": "melee",
+      "center": [
+        -6.5,
+        19.0,
+        4.2
+      ],
+      "scale": 0.85,
+      "canvasAngle": 65,
+      "javaBodyLocalCenterUnits": [
+        -6.5,
+        5.0,
+        4.2
+      ],
+      "scope": "visual center target after native FIXED transform; not raw layer translation",
+      "modelScale": "effective scale of native dimensions; shield FIXED has its own 0.55 scale, compensate rather than double-scale blindly"
+    },
+    "shield": {
+      "reference": "shield",
+      "category": "shield",
+      "center": [
+        0,
+        17.2,
+        8.2
+      ],
+      "scale": 1.0,
+      "canvasAngle": 0,
+      "javaBodyLocalCenterUnits": [
+        0,
+        6.800000000000001,
+        8.2
+      ],
+      "scope": "visual center target after native FIXED transform; not raw layer translation",
+      "modelScale": "effective scale of native dimensions; shield FIXED has its own 0.55 scale, compensate rather than double-scale blindly"
+    },
+    "bow": {
+      "reference": "bow",
+      "category": "ranged",
+      "center": [
+        6.8,
+        25.0,
+        5.6
+      ],
+      "scale": 0.9,
+      "canvasAngle": -25,
+      "javaBodyLocalCenterUnits": [
+        6.8,
+        -1.0,
+        5.6
+      ],
+      "scope": "visual center target after native FIXED transform; not raw layer translation",
+      "modelScale": "effective scale of native dimensions; shield FIXED has its own 0.55 scale, compensate rather than double-scale blindly"
+    },
+    "crossbow": {
+      "reference": "crossbow_standby",
+      "category": "ranged",
+      "center": [
+        6.8,
+        24.0,
+        5.6
+      ],
+      "scale": 0.9,
+      "canvasAngle": 35,
+      "javaBodyLocalCenterUnits": [
+        6.8,
+        0.0,
+        5.6
+      ],
+      "scope": "visual center target after native FIXED transform; not raw layer translation",
+      "modelScale": "effective scale of native dimensions; shield FIXED has its own 0.55 scale, compensate rather than double-scale blindly"
+    }
+  },
+  "layersNormalDepthUnits": {
+    "sword": [
+      3.7749998569488525,
+      4.625
+    ],
+    "axe": [
+      3.7749998569488525,
+      4.625
+    ],
+    "shield": [
+      3.1999998092651367,
+      10.199999809265137
+    ],
+    "bow": [
+      5.150000095367432,
+      6.049999713897705
+    ],
+    "crossbow": [
+      5.150000095367432,
+      6.049999713897705
+    ]
+  },
+  "recordCategories": [
+    "melee sword OR axe",
+    "shield",
+    "ranged bow OR crossbow"
+  ],
+  "categoriesAreVisualReferencesNotInventory": true,
+  "poseReference": [
+    "stand",
+    "crouch",
+    "swim",
+    "glide using adopted A07"
+  ],
+  "rules": {
+    "heldSameReference": "hide only the recorded actual stack when actually shown in hand",
+    "sameLookingSpare": "does not hide the recorded distinct item",
+    "gliding": "hands grip glider, registered items may show on back",
+    "bowUse": "bow/crossbow stays in hand and shield may holster to back",
+    "visibleCape": "hide all three categories",
+    "elytra": "hide shield and ranged, melee remains subject to original wing occlusion",
+    "ownFirstPerson": "hide own back equipment",
+    "invisibleSpectator": "hide back equipment"
+  },
+  "nativeAppearance": "Keep ItemStackRenderState FIXED and actual sanitized native components; no baked replacement item texture. Preserve item model, damage, dye, shield base/pattern and enchantment glint. Preview does not emulate runtime effects.",
+  "fixedNormalization": "Shield FIXED includes translation [-4.5,4.5,-5] and scale [.55,.55,.55]. All centers here are visual targets after native display transforms. Use actual extracted model bounds to compensate origin/offset and derive the body-local transform. Blender canvas angle is a footprint angle; do not paste as Java Euler without verifying its coordinate/rotation order.",
+  "modelSource": "Reference only: local Minecraft 26.3 native item pixel silhouettes extruded one unit; shield dimensions from ShieldModel plate12x22x1 and handle2x6x6. Not a game replacement model.",
+  "developmentBoundary": "Only art placement source and spec delivered; no client/server code, stored references, inventory or production dependency changes. Current cape/elytra policies remain.",
+  "sizePolicy": {
+    "humanRequest": "手持与背负模型大小不要有太大差别，盾、弓与武器一致",
+    "basis": "native thirdperson_righthand world dimensions",
+    "backToHeldScaleRatios": {
+      "sword": 1.0,
+      "axe": 1.0,
+      "shield": 1.0,
+      "bow": 1.0,
+      "crossbow": 1.0
+    },
+    "thirdPersonHandEffectiveScales": {
+      "sword": 0.85,
+      "axe": 0.85,
+      "shield": 1.0,
+      "bow": 0.9,
+      "crossbow": 0.9
+    },
+    "defaultFixedLayerScaleCompensation": {
+      "sword": 0.85,
+      "axe": 0.85,
+      "bow": 0.9,
+      "crossbow": 0.9,
+      "shield": 1.8181818181818181
+    },
+    "projectionNote": "Compare world model scale at same camera. First-person screen projection uses different native display context/FOV."
+  },
+  "gameIntegrated": false,
+  "gameRuntimeVerified": false
+}

@@ -1,0 +1,659 @@
+{
+  "version": "0.1.0-dev.15",
+  "minecraft": "26.3",
+  "adopted_tasks": 29,
+  "adopted_versions": 30,
+  "unchanged_exports": 48,
+  "server_required_tests": 75,
+  "full_candidate_client_classes": 18,
+  "final_focused_client_classes": 2,
+  "ordinary_tcp_clients": 2,
+  "published": false,
+  "files": [
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.15+mc26.3.jar",
+      "bytes": 647141,
+      "sha256": "fa9fbd0366360a941665771b8b8093808de4349381c6bb1bb02053d6d88c2ace"
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.15-sources.jar",
+      "bytes": 398364,
+      "sha256": "e3f358d137212f97d88fa053c6403255869ed3e004f367783dde42c2103a972f"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/README.md",
+      "bytes": 864,
+      "sha256": "7dcbe2c0d542fa28ac3180acfdc48c7ebd1fedc8d45ff979d79ffe8c35ca9119"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/build-dev15.log",
+      "bytes": 33067,
+      "sha256": "78dd4c5fdc12ed0c4b2469a5463c46b669530411a2498f9ee05be7244b60df36"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/datagen.log",
+      "bytes": 6240,
+      "sha256": "7fb89eb225648562be21181ccd4a7b9e03a534fbdc56a6cc56b12766eb59b02e"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/focused-client-dev15.log",
+      "bytes": 96184,
+      "sha256": "5982dbef854b56b62744a5cae04f1d5b0a188a4211fe24a37d1d60379282cdec"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/full-client-candidate.log",
+      "bytes": 511909,
+      "sha256": "62143399b4f186a7a03c802633332e4b996f037bd3832b99a66d86ec28b80fd4"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0000_p0-test-core-in-world.png",
+      "bytes": 336560,
+      "sha256": "264e38d2b7d71e0e1618d7aceb5f14a92df1bf5bdc7204b1b6d40660b03d91ca"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0001_p0-test-core-after-reload.png",
+      "bytes": 191932,
+      "sha256": "a8faeb5d3e295f6a34483495cbf3f77d395f7a2e4ccc7d4f7858dd37211d9b8b"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0002_p0-test-core-on-server.png",
+      "bytes": 165572,
+      "sha256": "3f5f84900fd6066a35e373bf801eb1282d78597c271f7dbac91abc0089f26e50"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0003_p1-stamina-peak30-after-xp-spend-en.png",
+      "bytes": 270057,
+      "sha256": "a856c77c922c27a06ef70d91516d21ca049d31858746231c546a05ed589c0ea8"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0004_p1-stamina-peak30-after-xp-spend-zh.png",
+      "bytes": 278177,
+      "sha256": "d41638d72e558f3915803cd3f6445233e2785702082ada4eae98381c676b0b9e"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0005_p1-stamina-after-server-reconnect.png",
+      "bytes": 229430,
+      "sha256": "28e3868cf39a21f8fa8de031ad9f18e71728281439e8b98c3598bef3802206b7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0006_p2-climbing-wall-zh.png",
+      "bytes": 129539,
+      "sha256": "0561b01253cce193714d577cb3dd1eb66e13df951527040fa93762a7276fd3a4"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0007_p2-climbing-over-ledge.png",
+      "bytes": 142986,
+      "sha256": "d116a1ae187df1ccfd662650076e1da88b15666d10a84684b8e1904499ebe0a8"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0008_p2-climbing-outer-corner.png",
+      "bytes": 75090,
+      "sha256": "f6415861fe8f3df9149c7933e528b83909cc677fd66ec1fc0ec8dd47beeb0363"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0009_p2-climbing-on-tcp-server.png",
+      "bytes": 98949,
+      "sha256": "58559dbdcc457399e1036adf1f27eb8330888eacf1145e1189015bb44e65e91e"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0010_p3-paraglider-equipment-slot-zh.png",
+      "bytes": 66463,
+      "sha256": "616795c191e9ea35db631a0ba5917f7a1229bbda2061e09433062cb919f3f034"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0011_p3-paraglider-creative-slot-zh.png",
+      "bytes": 75758,
+      "sha256": "047bb10f74ec93e09f94db8947b1159090fa988bf0c5e814a89d686d1cf5349f"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0012_p3-paraglider-gliding-zh.png",
+      "bytes": 61289,
+      "sha256": "f474459453a41770565fca5930acacf10495ac2170e48b61621e59f918db83b1"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0013_p3-climb-to-glide.png",
+      "bytes": 200059,
+      "sha256": "58e360e7e5f38db2267c626b08d3eaf0a11b8fecfdee6d1dd6b1aa66f7d36c32"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0014_p3-gliding-tcp-en.png",
+      "bytes": 89317,
+      "sha256": "856f7977ecef7ff9dd24c2654f2ec4f01ffb0eca6e2fad587041f8b097754410"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0015_r1-native-back-anchor.png",
+      "bytes": 211551,
+      "sha256": "fc0f97190b704a5b38fcac714aa4ef77ba33c37edefc25a858b7fc7fbd8fb881"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0016_r1-color-normal.png",
+      "bytes": 232060,
+      "sha256": "3c884b26c6cf8b48226db845f9cfc8a9d17efa42ec6e719563851194f0305c9b"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0017_r1-color-desaturated.png",
+      "bytes": 226198,
+      "sha256": "bb459e3c5febec2fbd5488175cd0830614dd7888fd67c4b7fb45fb366da55e40"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0018_p31-bow-draw-shield-stowed.png",
+      "bytes": 82360,
+      "sha256": "138e2fdef4ac0915dd431c2489dff2bc8f7a952b0ec3f251424435925b85c7a8"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0019_p31-back-all-native-models.png",
+      "bytes": 81354,
+      "sha256": "91728b3815a5df5636735fe32764627f92f14316bb83e43c022ea4f53b9d4701"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0020_p31-crouching-back-models.png",
+      "bytes": 151641,
+      "sha256": "66d3546d0f64685604a4493ef814c303d6213faf9279126eb9c9ad3c2f362286"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0021_p31-swimming-back-models.png",
+      "bytes": 162779,
+      "sha256": "35ef942a396cac2985f8babf8c85be2f50adc2c623da42a23a6fdac7e274ab14"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0022_p31-first-person-no-own-back.png",
+      "bytes": 85808,
+      "sha256": "1cb0071545023079efc8c3563673d95ed85c60cd7c667f6e4f8e34f1a5319cc7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0023_p31-merged-hud-low-en.png",
+      "bytes": 85549,
+      "sha256": "0c2687bc588d037bc8f37c405c36557dc759ce4b3e859c9b68d112b56a9e7141"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0024_p31-merged-hud-low-zh.png",
+      "bytes": 86690,
+      "sha256": "4443ce739eaf822f7fa8004593df0d2edf0f96f1ebb4df3537d7075919ebfbc6"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0025_p31-hidden-hud.png",
+      "bytes": 69900,
+      "sha256": "6e6e717e847233f04403b4f6de00e56145b53dcd94f26b43322eb817eee78d42"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0026_p31-upper-left-multiple-heart-rows-scaled.png",
+      "bytes": 87283,
+      "sha256": "50196e700cb25c257ef543d8f8a768521ed6d3b14127d53990a76310553a28e1"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0027_p31-upper-left-large-capacity.png",
+      "bytes": 87344,
+      "sha256": "768220e659ce09157f68a690a2c518c3115c0aef628c2736732e6ca7e8893169"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0028_p31-native-mount-bar-kept-with-upper-left-stamina.png",
+      "bytes": 87965,
+      "sha256": "e085eb328d78c3d876db37c8f99c5eb369aa1f2a4b58726352433badae6c2143"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0029_p31-restored-xp-level5.png",
+      "bytes": 35631,
+      "sha256": "3de23be56f58fd1126c55597b889c0d879b8ff73b65b2e5d6d364c62ff848db9"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0030_p31-elytra-priority.png",
+      "bytes": 89260,
+      "sha256": "fea59221b8bfc1a795cddfef2db99f7f954cc9016e783b446d0d1208e0da39e6"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0031_p32-color-normal.png",
+      "bytes": 184378,
+      "sha256": "b9167b394e5f5527c415af59fd97c28e35100a26a01478901dff48a369b938e1"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0032_p32-focus-first-person.png",
+      "bytes": 219113,
+      "sha256": "c4bffff730a4c21f9573fdacddb12e291b5d84f630cd3175962031e577ac3ee6"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0033_p32-focus-third-person.png",
+      "bytes": 207965,
+      "sha256": "b0d5b9190c9a69e450583f475f9b32a47505c5ef986c5059a8e96abc5c38e300"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0034_p32-focus-effects-off.png",
+      "bytes": 164752,
+      "sha256": "1ef206aeef9034f0287866b1bcf472134b950f69bbda8e945cceda1370d864c7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0035_p32-focus-settings.png",
+      "bytes": 90468,
+      "sha256": "943bc4c8820b515db890adc71d1a9aa8224929542b47049618761a9a68bd8e97"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0036_art-glider-first-person-grips.png",
+      "bytes": 47897,
+      "sha256": "c97bb22131ec6d45871c8b5bd37619405cdb37b04f40269a58d193bc0b4e97a5"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0037_art-glider-third-person-front.png",
+      "bytes": 59570,
+      "sha256": "62c761cd00ec4e607925bcf5924acfdcabfb88c42bbd309d0a7815de1f9c1a58"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0038_art-settings-normal.png",
+      "bytes": 89048,
+      "sha256": "12dd28c186e1c1d39a79b00172aa81d66b01dc756b59d5692c7670c9c81ce530"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0039_art-settings-compact-layout.png",
+      "bytes": 89196,
+      "sha256": "257828ae2c64a7e8aff1cf4ae07e6304076af374e12ee77dfd18030acb993941"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0040_p4a-snow-cold.png",
+      "bytes": 104121,
+      "sha256": "bb2c532bad47f0d75d6551908938c4934fe4070cc539349a6d8cd43fbdddc294"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0041_p4a-desert-hot.png",
+      "bytes": 104130,
+      "sha256": "feb5210373a94cbb2730adfd6d38c4d2be3772ad4504e411922457d5b01a430a"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0042_p4a-campfire-warm.png",
+      "bytes": 134015,
+      "sha256": "45d5c971463886aca3519eba9ce66038fd700bf4d230b0987c7bef98ec9a47be"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0043_p4a-multiple-hearts-stamina.png",
+      "bytes": 109731,
+      "sha256": "129d62807fdd68dac8a41de52bc45fe50e3b89d911b962bfe48d8c19f3e4d28b"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0044_p4a-native-leather-boots.png",
+      "bytes": 68037,
+      "sha256": "6ac3fb8d88af592dc992ac3f2fce79476d77359a72508fc2085328d4e05a9a5c"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0045_p4a-temperature-gliding.png",
+      "bytes": 68890,
+      "sha256": "acd7f5667f44013623a4bc82a47e63357610ae12e9dacaa7ab82402b713e0d9a"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0046_p4a-focus-priority.png",
+      "bytes": 95923,
+      "sha256": "01970a8b73bb2fa7c16bd6c946a509228d9414bc6daf4b0e741778d0bd56c749"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0047_p4b-pot-awaiting-heat.png",
+      "bytes": 49450,
+      "sha256": "73b225bbb76e50afcd6d567683589c29ccffd24ff44814be82fadf249dbeb389"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0048_p4b-cooked-meal-menu.png",
+      "bytes": 69850,
+      "sha256": "22482e260378723a44998b67ac0e3eafbc121fc2028e47937dd8137c632a1714"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0049_p4b-consumed-meal-hud.png",
+      "bytes": 148177,
+      "sha256": "7e320a54ba78ae716b27f8dbfdcf43c2d1aef41ae402213eb796c29dcf1a8882"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0050_p4b-warmth-still-freezes.png",
+      "bytes": 181829,
+      "sha256": "68e68a94256790a80561d808b8c93767fc743fb29d600a642db97adf877a09c6"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0051_p4b-reloaded-effects.png",
+      "bytes": 33379,
+      "sha256": "9fea3dcc6197467d4d37bb164e5e0cd66e95631cb437e8bb648d19685e95772d"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0052_p5-signal-without-energy.png",
+      "bytes": 94241,
+      "sha256": "3c18e59d215908e0d90dd5b497c16d8f084dce8758c745c9e7bfbaa08c66aecc"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0053_p5-charging.png",
+      "bytes": 87601,
+      "sha256": "7253f7d18dcca9e036c8e27de38927ff863c9614dfabe6d35e75de055b75e564"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0054_p5-full-battery.png",
+      "bytes": 79826,
+      "sha256": "bb1bdcc35f2bfbd383a90f2e6e4e23c12721b906b95b361798cbd795ce18ed3c"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0055_p5-partly-used-battery.png",
+      "bytes": 190133,
+      "sha256": "996da4d1cef541e29531311fdcc4e6cbadec8792246c4f314e775fae80c85f93"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0056_p5-reloaded-charge.png",
+      "bytes": 78424,
+      "sha256": "86d23e8120a2b4ae1ee260a1c99170a09e66a20dc480dc034f560b64550c2bc7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0057_p6-core-installed-model.png",
+      "bytes": 173534,
+      "sha256": "8ad468a8bd086758d3f5538ab64c82980f40ea5b36656950200fbd019250c4be"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0058_p6-core-fan-model.png",
+      "bytes": 209908,
+      "sha256": "f0685437748361d508e7d0a376a255c924746b8606024c2389b783eea4751335"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0059_p6-core-riding.png",
+      "bytes": 221965,
+      "sha256": "e44b3629b39882a5af0c7ac727053b50056b975775b6f2d00b0f86d9603be9e3"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0060_p6-core-reloaded.png",
+      "bytes": 199019,
+      "sha256": "0913869f627246982c83f335b3fb56426ff4115cb03b56848a07d573f6a5d58f"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0061_p6-core-recovered.png",
+      "bytes": 207255,
+      "sha256": "02a7dc088d15576b2978fa2e0ed5508db44d24918e1a3d378a482923c960875e"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0062_p6-control-panel.png",
+      "bytes": 171831,
+      "sha256": "bd93bdba9179dcddd3cd4345776788a9b628655aedbed7d70a1bb9d97258ad5b"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0063_p6-fan-snap-preview.png",
+      "bytes": 192823,
+      "sha256": "9e7efffab4610dcdb2a47d6526aac2c639ba8c7db128250984fc31d14c069618"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0064_p6-battery-preview.png",
+      "bytes": 192865,
+      "sha256": "58030dc86a4c83f1386d0a4e27cf127ec662a178bb67966241e022fa1d5b60b5"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0065_p6-native-rider-control.png",
+      "bytes": 206090,
+      "sha256": "3a38cfce7c494688679491518fda06105f6678ee1c25fca00c2c7cb17d0835bb"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0066_p6-native-recovered.png",
+      "bytes": 249662,
+      "sha256": "6bed4f46bf5db37b02e91dc88dc16a49ca6ec5d1149ef28add74962391c6d384"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0067_p7-wing-preview.png",
+      "bytes": 183673,
+      "sha256": "b33190fbdf5e0f6bbfb867aea4a8990e8c15e1fff7db3dfa7a5d9d9ec6feca64"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0068_p7-native-one-block-step.png",
+      "bytes": 30408,
+      "sha256": "47d5f2a210bf6e21986af2e18518b4396fb831848cc4da1098d8d095e3645ba7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0069_p7-wing-wheel-loaded-glide.png",
+      "bytes": 141684,
+      "sha256": "0563ecc90494ab6d334e796d3dbbc5bae029182cc6ba0a36fa3d491b3ae747cb"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0070_p7-spring-bottom-preview.png",
+      "bytes": 48814,
+      "sha256": "05f37503b0a9f1ca08f4ec12c646a9645c7b6020471daa135de9395ed50d255d"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0071_p7-native-spring-launch.png",
+      "bytes": 206759,
+      "sha256": "f92dd50f5312b154c2f156142781f807fa4993911989fa23119d2d8df6c357cf"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0072_p7-buoyancy-front-preview.png",
+      "bytes": 173196,
+      "sha256": "e160a6efe289153c210fa97a85984dd8b4da013e98e935d61dbe2deef4906fe9"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0073_p7-rocket-rear-preview.png",
+      "bytes": 186201,
+      "sha256": "7bc453f6e6e7aa934582d0b11b87cd8794519af712ebfc8e833d22e7440b5ad7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0074_p7-rocket-spring-stabilizer-powered.png",
+      "bytes": 68008,
+      "sha256": "94c68c3f735bf127693c3c1e21ab60a9ed3b2ee8f67fb7e68196bbeeea775255"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0075_p7-native-rocket-burning-off.png",
+      "bytes": 132905,
+      "sha256": "7a234489d4dca3d122ce991a6286d1dd485a869592688799724690624d5b1d8a"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0076_p7-water-float-loaded-parts.png",
+      "bytes": 284026,
+      "sha256": "50bb6b95e46396c0f990f849b43c9f79f599876718b69fb7eac04f1f83319b29"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0077_p8-empty-fabricator.png",
+      "bytes": 39679,
+      "sha256": "122b8f2c8e6e468dd3ea6a37195224d750504d5dd50f536ebbe17d7186791d02"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0078_p8-paid-job-menu.png",
+      "bytes": 86167,
+      "sha256": "2ac59ddaaa8e1b2d7833abbdf3d09779490a0e8af841fb5d2cf74927b19b1391"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0079_p8-carried-job-resumed.png",
+      "bytes": 82224,
+      "sha256": "1d2e699f2678fcbda8e395bc83eee6bbab20d920b3f4f94fd54220807278b7b1"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0080_p8-completed-output.png",
+      "bytes": 83301,
+      "sha256": "05ced7fd9404b2da19900698d97ef70894e00bdbcdc84ce20dda7d2fa3e18c52"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0081_p8-output-collected-once.png",
+      "bytes": 94255,
+      "sha256": "c3f43e73cd75d78a8fce2e59fef554da5ba85d29efb8cb72a5377b01e0a5ba93"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0082_p8-english-menu.png",
+      "bytes": 91854,
+      "sha256": "5fd2aa5f79abd311071d55e2982791778130f1f507085dda1694310056a6c3d4"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0083_p9-native-fused-hand.png",
+      "bytes": 129143,
+      "sha256": "c8e7d97a91bce8f8612e82875b797f1f10ec1a950672ac605644df1533b8b6db"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0084_p9-native-fused-inventory.png",
+      "bytes": 68371,
+      "sha256": "cf04a4ff98d062b7947aa713b388fc24a5e96f34b53687c6979828c8fe076b3f"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0085_p9-native-fused-back.png",
+      "bytes": 199273,
+      "sha256": "5fc02393985cdabeb359adb1967ddc28772f77c4f1ba2017718c974f033a3f27"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0086_p9-native-fused-chest.png",
+      "bytes": 82433,
+      "sha256": "15400d9ce443d814ba3aa6a6f1d9b4b89afd36d74a47815bf7190fc14d70a356"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0087_p9-native-split-material.png",
+      "bytes": 185321,
+      "sha256": "034da938eb3123fd6029f4007665ac5ab0a989c37784067fc2e498a9fe94b734"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0088_p9-native-fused-arrow-flight.png",
+      "bytes": 154962,
+      "sha256": "0bd8b54799e9ba7fa9e8f62b69b285870b338bbbe4414fc57500217930b83fc5"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0089_p9-native-infinity-arrow-impact.png",
+      "bytes": 157799,
+      "sha256": "9e5d1d46ef150fc2e38885c40080fd5a4c79938f6aab07087c21af33b51a29f7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0090_p91-native-fusion-back-food-air-focus.png",
+      "bytes": 128367,
+      "sha256": "4acccbdc22fe79931411ec2f19b556017c133c08b686cba9ed841a4714b5363c"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0091_p91-native-ice-arrow-once.png",
+      "bytes": 95346,
+      "sha256": "e7961b4d1d24158a872796d3b8b131c7c2cefc2d1d28b001c0eb54a0d3ea768f"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0092_second-art-meals-fused-inventory.png",
+      "bytes": 60262,
+      "sha256": "a05fa2677c5e6d8ff7324b065f61196b24e5a50a35e8af2aad0c918f3904ce9a"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/full-client-candidate/0093_second-art-three-effects-native-hud.png",
+      "bytes": 113181,
+      "sha256": "0cb88a7a986b3da144fca425dd81d8efc1947a0aef2b680ec6eb122cfa23e534"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0000_p6-core-installed-model.png",
+      "bytes": 273715,
+      "sha256": "115af8a3b5e597a9ba7912425d7711f857dbc0132c77a90d11969af31d0ee993"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0001_p6-core-fan-model.png",
+      "bytes": 318634,
+      "sha256": "48e9943b1c7aeb7ca725fd7f2680209656ef82fa30a6486631b03e732d866648"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0001_p6-core-riding.png",
+      "bytes": 219187,
+      "sha256": "fb0e176a1fcdee5826b9a14734b4aa966e83894af5629bac37fd3292b261469a"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0002_p6-core-reloaded.png",
+      "bytes": 189857,
+      "sha256": "fa58d1834030803f8bbf7cdb0bc849cfa81b828fcaa12b8a0512688b9b3b91af"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0002_p6-core-riding.png",
+      "bytes": 333979,
+      "sha256": "41cbd5f114da5358b83617659811fedbcd2e353d6fc379548d98ed76959676f7"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0003_p6-core-recovered.png",
+      "bytes": 167821,
+      "sha256": "c69f6b29ccc06c48ca5e2f87646cf1bd2c51f73d4e9f430385121ae5265bf192"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0003_p6-core-reloaded.png",
+      "bytes": 275600,
+      "sha256": "ff5e7165a177289a7f60596d5acd9e10b9a625d520e57e8eccfa850fc8b5d57a"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0004_p6-core-recovered.png",
+      "bytes": 280901,
+      "sha256": "aae269adb0228c3182a9333cacccb29005da31682b4ed6e7a7dc492e49806b14"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0005_p6-control-panel.png",
+      "bytes": 243914,
+      "sha256": "29b4d6ed76bb76c6fcee4727bee58b96e9f12d71c07f5dde6d349dbaf4324d68"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0005_p6-fan-snap-preview.png",
+      "bytes": 204350,
+      "sha256": "f50be75d2b8bcc0088d9861f823cdeaf3330257c250ef99dde0de06aeb623291"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0006_p6-battery-preview.png",
+      "bytes": 227339,
+      "sha256": "54dfec779774768e59ae105ca2fab1de42691f94520257a749c70010b11e7118"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0006_p6-fan-snap-preview.png",
+      "bytes": 217806,
+      "sha256": "03def4d7f9a69891d941e62ed7b7294c217c182e454d5e3f39ae22e601c3580b"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0007_p6-battery-preview.png",
+      "bytes": 249259,
+      "sha256": "e8dac944254356859e115700dfaff3d5946c03497d59c07e4385827453420748"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0007_p6-native-rider-control.png",
+      "bytes": 213713,
+      "sha256": "f2235a9315dc0eea0a48a299c86154b4c146645432de3470c45b68f0a39bfe64"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0008_p6-native-rider-control.png",
+      "bytes": 226101,
+      "sha256": "3718316e207e95383353a02cec2e5a08bba86cea0e51fad0d6c6492f4f1b8af5"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/mechanics-final/0009_p6-native-recovered.png",
+      "bytes": 280480,
+      "sha256": "838ba90cdd939bda42328b112ba6ed9903da65ad31976941446fb2a0282e2e12"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/second-art-final/0000_second-art-meals-fused-inventory.png",
+      "bytes": 112163,
+      "sha256": "672e2a550b737966b02c9adf607319495f0bc107d146f3b3475ce5f5e7d9e076"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/second-art-final/0001_second-art-three-effects-native-hud.png",
+      "bytes": 281715,
+      "sha256": "049699827aee2eec00bb409fc985504024f05058e6462df0b365c9e925c87f30"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/tcp-final/p9-observer-0.png",
+      "bytes": 609700,
+      "sha256": "6aaf5be17fa6702001d4a734d1c8b47eeee8cf9072a78c049c93444d90fae204"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/tcp-final/p9-observer-1.png",
+      "bytes": 546316,
+      "sha256": "909105f71e15695cb4083002562bdc11a4bac92ef5c057469a86d996a3603669"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/tcp-final/p9-observer-2.png",
+      "bytes": 498336,
+      "sha256": "b4170dfcc3e72770f1fe51e2955301fd3c878dad5ccee0caf7a390738f76f4d6"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/tcp-final/p9-observer-3.png",
+      "bytes": 356648,
+      "sha256": "48a8d7b2949a64c71cd2d5ba37f262e65d17232d0b8834003cf4b15d2f36be99"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/tcp-final/p9-observer-4.png",
+      "bytes": 338555,
+      "sha256": "56f1aac7bc60080380445b84f48a242db9a1e8023d3b49e504debc9bcaf452b0"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/screenshots/tcp-final/p9-observer-5.png",
+      "bytes": 307861,
+      "sha256": "bd3589a0abc7a34848555b5c11aff4c41c8ec1106e7090ad2cb210bca65f4a90"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/standalone-dev15.log",
+      "bytes": 8234,
+      "sha256": "430390ad08913a6c1793ad03a2c9c3d674b8270564290853fce4c069ff74cff9"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/tcp-actor-dev15.log",
+      "bytes": 27772,
+      "sha256": "f544f8bf37152223f0fa344fc35a499941001b4fcfc9ec1ab25d9742daed605e"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/tcp-observer-dev15.log",
+      "bytes": 28098,
+      "sha256": "31aa94edc8c4010fbc678c18482c899193a6b8302739664ba50cabbf73c89eae"
+    },
+    {
+      "path": "development-assets/verification/second-art-v2/tcp-server-dev15.log",
+      "bytes": 8337,
+      "sha256": "341688141957c79b568ffcfdaf8f58e033b841678f74a3972651b850a1d089ca"
+    }
+  ]
+}

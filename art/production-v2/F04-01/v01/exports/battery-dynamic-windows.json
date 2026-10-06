@@ -1,0 +1,80 @@
+{
+  "capacity": 1000,
+  "texture": "battery-atlas-32.png",
+  "windows": [
+    {
+      "indexBottomUp": 0,
+      "from": [
+        5.7,
+        5.05,
+        8.811
+      ],
+      "to": [
+        10.3,
+        6.449999999999999,
+        8.811
+      ],
+      "direction": "south",
+      "materialRegion": "energy",
+      "fill": "height from bottom",
+      "fraction": "clamp(energy/1000*3-indexBottomUp,0,1)"
+    },
+    {
+      "indexBottomUp": 1,
+      "from": [
+        5.7,
+        6.88,
+        8.811
+      ],
+      "to": [
+        10.3,
+        8.28,
+        8.811
+      ],
+      "direction": "south",
+      "materialRegion": "energy",
+      "fill": "height from bottom",
+      "fraction": "clamp(energy/1000*3-indexBottomUp,0,1)"
+    },
+    {
+      "indexBottomUp": 2,
+      "from": [
+        5.7,
+        8.71,
+        8.811
+      ],
+      "to": [
+        10.3,
+        10.110000000000001,
+        8.811
+      ],
+      "direction": "south",
+      "materialRegion": "energy",
+      "fill": "height from bottom",
+      "fraction": "clamp(energy/1000*3-indexBottomUp,0,1)"
+    }
+  ],
+  "energyUV": [
+    6.0,
+    8.0,
+    12.0,
+    12.0
+  ],
+  "rendering": "flat +Z quads just above the dark recessed panel, cropped in height; no added bloom",
+  "mountTransform": {
+    "localUnits": "block",
+    "modelOrigin": [
+      8,
+      8,
+      6.55
+    ],
+    "scale": 0.0625,
+    "rotation": "reuse current orient(node)",
+    "nodeMaxFootprint": [
+      0.4,
+      0.46
+    ],
+    "backOffset": 0.04,
+    "frontMaxOffset": 0.16062499999999996
+  }
+}

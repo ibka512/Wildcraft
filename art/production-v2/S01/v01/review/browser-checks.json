@@ -1,0 +1,499 @@
+{
+  "allPassed": true,
+  "cases": 25,
+  "spaceId": 17,
+  "checks": [
+    {
+      "name": "no autoplay",
+      "passed": true,
+      "evidence": {
+        "bufferCount": 0,
+        "active": 0,
+        "timerCount": 0,
+        "playingId": null,
+        "policyVoices": 0,
+        "seen": 0,
+        "errors": []
+      }
+    },
+    {
+      "name": "actual playback cooking_start",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "cooking_start",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "cooking_start",
+        "signal": 0.0592680349946022
+      }
+    },
+    {
+      "name": "actual playback cooking_complete",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "cooking_complete",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "cooking_complete",
+        "signal": 0.09976118803024292
+      }
+    },
+    {
+      "name": "actual playback charger_start",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "charger_start",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "charger_start",
+        "signal": 0.05854668840765953
+      }
+    },
+    {
+      "name": "actual playback charger_full",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "charger_full",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "charger_full",
+        "signal": 0.10187159478664398
+      }
+    },
+    {
+      "name": "actual playback mechanic_install",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "mechanic_install",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "mechanic_install",
+        "signal": 0.09557722508907318
+      }
+    },
+    {
+      "name": "actual playback mechanic_remove",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "mechanic_remove",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "mechanic_remove",
+        "signal": 0.1486031860113144
+      }
+    },
+    {
+      "name": "actual playback mechanic_start",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "mechanic_start",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "mechanic_start",
+        "signal": 0.07850465178489685
+      }
+    },
+    {
+      "name": "actual playback mechanic_stop",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "mechanic_stop",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "mechanic_stop",
+        "signal": 0.02359054982662201
+      }
+    },
+    {
+      "name": "actual playback fabricator_start",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "fabricator_start",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "fabricator_start",
+        "signal": 0.06867291778326035
+      }
+    },
+    {
+      "name": "actual playback fabricator_complete",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "fabricator_complete",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "fabricator_complete",
+        "signal": 0.16290844976902008
+      }
+    },
+    {
+      "name": "actual playback fuse_join",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "fuse_join",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "fuse_join",
+        "signal": 0.16465409100055695
+      }
+    },
+    {
+      "name": "actual playback fuse_split",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 1,
+          "timerCount": 0,
+          "playingId": "fuse_split",
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        },
+        "played": "fuse_split",
+        "signal": 0.04861487075686455
+      }
+    },
+    {
+      "name": "all fourteen OGG decode",
+      "passed": true,
+      "evidence": 14
+    },
+    {
+      "name": "stop clears voices and scheduled sounds",
+      "passed": true,
+      "evidence": {
+        "context": "running",
+        "bufferCount": 14,
+        "active": 0,
+        "timerCount": 0,
+        "playingId": null,
+        "policyVoices": 0,
+        "seen": 0,
+        "errors": []
+      }
+    },
+    {
+      "name": "full sequence plays all twelve in order",
+      "passed": true,
+      "evidence": {
+        "played": [
+          "cooking_start",
+          "cooking_complete",
+          "charger_start",
+          "charger_full",
+          "mechanic_install",
+          "mechanic_remove",
+          "mechanic_start",
+          "mechanic_stop",
+          "fabricator_start",
+          "fabricator_complete",
+          "fuse_join",
+          "fuse_split"
+        ],
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 0,
+          "timerCount": 0,
+          "playingId": null,
+          "policyVoices": 0,
+          "seen": 0,
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "four sources retain exactly two voices",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 2,
+          "timerCount": 0,
+          "playingId": "mechanic_start",
+          "policyVoices": 2,
+          "seen": 4,
+          "errors": []
+        },
+        "log": "机械开始工作：准入\n机械开始工作：准入\n机械开始工作：裁减：同事件上限2\n机械开始工作：裁减：同事件上限2\n最终同时播放：2。参考演示，不是游戏录音。"
+      }
+    },
+    {
+      "name": "unload stops voices and clears event memory",
+      "passed": true,
+      "evidence": {
+        "context": "running",
+        "bufferCount": 14,
+        "active": 0,
+        "timerCount": 0,
+        "playingId": null,
+        "policyVoices": 0,
+        "seen": 0,
+        "errors": []
+      }
+    },
+    {
+      "name": "eight mixed events retain six voices",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "context": "running",
+          "bufferCount": 14,
+          "active": 6,
+          "timerCount": 0,
+          "playingId": "fabricator_complete",
+          "policyVoices": 6,
+          "seen": 8,
+          "errors": []
+        },
+        "log": "料理开始：准入\n开始充电：准入\n机械开始工作：准入\n制造开始：准入\n安装部件：准入\n融合成功：准入\n料理完成：准入（替换低优先级）\n制造完成：准入（替换低优先级）\n最终同时播放：6。参考演示，不是游戏录音。"
+      }
+    },
+    {
+      "name": "out of range stays silent",
+      "passed": true,
+      "evidence": {
+        "context": "running",
+        "bufferCount": 14,
+        "active": 0,
+        "timerCount": 0,
+        "playingId": null,
+        "policyVoices": 0,
+        "seen": 0,
+        "errors": []
+      }
+    },
+    {
+      "name": "keyboard stop cancels sequence",
+      "passed": true,
+      "evidence": {
+        "context": "running",
+        "bufferCount": 14,
+        "active": 0,
+        "timerCount": 0,
+        "playingId": null,
+        "policyVoices": 0,
+        "seen": 0,
+        "errors": []
+      }
+    },
+    {
+      "name": "unchanged focus reference plays",
+      "passed": true,
+      "evidence": {
+        "context": "running",
+        "bufferCount": 14,
+        "active": 1,
+        "timerCount": 0,
+        "playingId": "focus_enter",
+        "policyVoices": 0,
+        "seen": 0,
+        "errors": []
+      }
+    },
+    {
+      "name": "390px layout without horizontal overflow",
+      "passed": true,
+      "evidence": {
+        "width": 390,
+        "scroll": 375,
+        "cards": [
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          },
+          {
+            "left": 16,
+            "right": 359,
+            "width": 343
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop layout without overflow",
+      "passed": true,
+      "evidence": {
+        "width": 1232,
+        "scroll": 1217
+      }
+    },
+    {
+      "name": "browser no playback errors",
+      "passed": true,
+      "evidence": {
+        "played": [
+          "cooking_start",
+          "cooking_complete",
+          "charger_start",
+          "charger_full",
+          "mechanic_install",
+          "mechanic_remove",
+          "mechanic_start",
+          "mechanic_stop",
+          "fabricator_start",
+          "fabricator_complete",
+          "fuse_join",
+          "fuse_split",
+          "cooking_start",
+          "cooking_complete",
+          "charger_start",
+          "charger_full",
+          "mechanic_install",
+          "mechanic_remove",
+          "mechanic_start",
+          "mechanic_stop",
+          "fabricator_start",
+          "fabricator_complete",
+          "fuse_join",
+          "fuse_split",
+          "mechanic_start",
+          "mechanic_start",
+          "mechanic_start",
+          "fabricator_start",
+          "mechanic_install",
+          "fuse_join",
+          "cooking_complete",
+          "fabricator_complete",
+          "cooking_start",
+          "focus_enter"
+        ],
+        "errors": [],
+        "maxActive": 6
+      }
+    }
+  ],
+  "humanListeningApproved": false,
+  "gameRuntimeVerified": false
+}

@@ -1,0 +1,30 @@
+{
+  "asset": "F04-04",
+  "date": "2026-10-05",
+  "allPassed": true,
+  "size": [
+    176,
+    166
+  ],
+  "sourceLayers": 4,
+  "colorMode": "rgb",
+  "sourceReopened": true,
+  "pngReopened": true,
+  "sourcePngPixelIdentity": true,
+  "pixelHash": "fnv1a64:9f7718bccfcedcbb",
+  "matchesAuthoredPixels": true,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "visibleColors": 16,
+  "actualSlotCount": 37,
+  "chargerSlots": 1,
+  "playerSlots": 36,
+  "slotCoordinatesUnchanged": true,
+  "noSlotOverlaps": true,
+  "resizedConcept": false,
+  "bakedText": false,
+  "bakedEnergy": false,
+  "integrated": false
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "inactive",
+    "label": "未工作 · 暗灯",
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "active",
+    "label": "工作 · 薄荷绿灯",
+    "active": true,
+    "ghost": false
+  },
+  {
+    "id": "enabled-inactive",
+    "label": "已开启 · 节点未工作",
+    "active": false,
+    "ghost": false,
+    "enabled": true
+  },
+  {
+    "id": "zero-energy",
+    "label": "余量0 · 不推断未工作原因",
+    "active": false,
+    "ghost": false,
+    "energy": 0
+  },
+  {
+    "id": "last-payment",
+    "label": "支付后余量0 · 本刻仍工作",
+    "active": true,
+    "ghost": false,
+    "energy": 0
+  },
+  {
+    "id": "power-reference",
+    "label": "供能失败灯 · 仅设计参考",
+    "active": false,
+    "ghost": false,
+    "mode": "design_reference",
+    "failureReason": "payment_rejected"
+  },
+  {
+    "id": "ghost",
+    "label": "安装预览 · 统一绿色",
+    "active": true,
+    "ghost": true
+  }
+]

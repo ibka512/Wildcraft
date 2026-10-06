@@ -1,0 +1,185 @@
+{
+  "asset": "F01-02",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，未接入",
+  "adopted": true,
+  "integrated": false,
+  "delivered_png_count": 8,
+  "editable_aseprite_count": 8,
+  "native_sizes": [
+    [
+      32,
+      32
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "shared_layers": [
+    "01 共享木碗",
+    "03 前沿遮挡与木纹"
+  ],
+  "reference_generation": "内置imagegen；家族参考图，未作为原生导出",
+  "validation": "review/asset-checks.json",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3166,
+      "sha256": "3c6dbf41e0dfffb8736e3e3c2ae19211a5b73342e380f7a463081b6e9fe13bc1"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1748,
+      "sha256": "f744ad6387166cf718cd9608d7a3cb816b582748b8ea3afd65fc7551ccec0067"
+    },
+    {
+      "path": "exports/meal-cooling-16.png",
+      "bytes": 402,
+      "sha256": "f5fdb08e5f027f273fc36a073d80378f5dd6d21ea01c760cc7767cd2e1ea7e23"
+    },
+    {
+      "path": "exports/meal-cooling-32.png",
+      "bytes": 827,
+      "sha256": "939516f3c7b2c09f85fa4092e54f21e709d12e26bc09ebfb952302c413bed1db"
+    },
+    {
+      "path": "exports/meal-recovery-16.png",
+      "bytes": 421,
+      "sha256": "57c18feada1b16908c77f7952a6efbcc8b6ef6f473ce253aa761f588ccfc17b0"
+    },
+    {
+      "path": "exports/meal-recovery-32.png",
+      "bytes": 736,
+      "sha256": "7b4c4f0541a0a534cc14c57a8f0e025a6d3bb375304da196eaf78aa029381e79"
+    },
+    {
+      "path": "exports/meal-vegetable-16.png",
+      "bytes": 403,
+      "sha256": "5a251e657578a7563e1168e6b945203a1450ff92645abc6b5129487e8c02a225"
+    },
+    {
+      "path": "exports/meal-vegetable-32.png",
+      "bytes": 749,
+      "sha256": "2dd1a86df7bce249eed2c10edfa2c81b393e948c0266f7a78c2f0414b8fde85f"
+    },
+    {
+      "path": "exports/meal-warming-16.png",
+      "bytes": 444,
+      "sha256": "849622c3faf5eca0d66438bf57d9be8368d8744358f770a4f16110f54057fb1a"
+    },
+    {
+      "path": "exports/meal-warming-32.png",
+      "bytes": 804,
+      "sha256": "fd9afe836b0f4c4f53cc6e63f9d7f2991eea1e1be30170252dcd593ba494a193"
+    },
+    {
+      "path": "references/imagegen-prompt.md",
+      "bytes": 2193,
+      "sha256": "eb613596980496938c76ac6d8859710d9bd0faa3f3ee1e80532296ed764a6143"
+    },
+    {
+      "path": "references/meal-family-concept-v01.png",
+      "bytes": 1117850,
+      "sha256": "b5477b7ce6cb39f75546d206efcc837d90296b354067347011f077f1ce3bc427"
+    },
+    {
+      "path": "review/aseprite-saved-states.json",
+      "bytes": 1182244,
+      "sha256": "7b46887c132745eea27536a5dcbb98f77c7c132d08fcace8097c6841da9df81d"
+    },
+    {
+      "path": "review/aseprite-starting-state.json",
+      "bytes": 103782,
+      "sha256": "d31671adc97d3f783b34e56d39e48dfbdcf0e9bbade678591d21bb6b0a6f17a6"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 5200,
+      "sha256": "55a59447e965d2969e5e9d25df9ee96cd8b280d742582f63de7ae272d8f87458"
+    },
+    {
+      "path": "review/meal-family-review.png",
+      "bytes": 121319,
+      "sha256": "88606b33fe7d04b28fb006c7e6728663227da76679d8cd8eb156d41a75de100a"
+    },
+    {
+      "path": "review/meal-family-review.svg",
+      "bytes": 528859,
+      "sha256": "e61de54a7696b60c614148cf7b860a32729a1cd76613d89a7414e9f2f93ef2cf"
+    },
+    {
+      "path": "source/create-meals.py",
+      "bytes": 7542,
+      "sha256": "49c62b6bdc758d516cf0d4a50d2690bafa4aee4b7ed9cb2f25a324e4a9746bbe"
+    },
+    {
+      "path": "source/meal-cooling-16.aseprite",
+      "bytes": 792,
+      "sha256": "024a11c6f6f1a7c3c5cace0834c00f0dcaef8a587d18db4f8cd5e2a0e0a458c3"
+    },
+    {
+      "path": "source/meal-cooling-32.aseprite",
+      "bytes": 1018,
+      "sha256": "430d9daff743c2de2b7bbeb90b3aff8b207c9973e87f857851eeb44758eb074f"
+    },
+    {
+      "path": "source/meal-recovery-16.aseprite",
+      "bytes": 779,
+      "sha256": "12fea0b38200590fa8505556cd15c2909356df4bc0da93d4542bf2dd865697db"
+    },
+    {
+      "path": "source/meal-recovery-32.aseprite",
+      "bytes": 977,
+      "sha256": "f41c4306132fceea745a91504718c95137658dd2cd8912597bee0dad30c78486"
+    },
+    {
+      "path": "source/meal-vegetable-16.aseprite",
+      "bytes": 782,
+      "sha256": "de4c4d113de90628ace4f333660a46e88a519206d3e2262e2989f08564049a60"
+    },
+    {
+      "path": "source/meal-vegetable-32.aseprite",
+      "bytes": 994,
+      "sha256": "2401ae50a91253df47036f277b884dbed7312df6f91288ab67d37e98e34907f1"
+    },
+    {
+      "path": "source/meal-warming-16.aseprite",
+      "bytes": 812,
+      "sha256": "bd20ff7e2237b3193433e83b36fceea7f264e45303f8fce2c3b433ce0912c5cb"
+    },
+    {
+      "path": "source/meal-warming-32.aseprite",
+      "bytes": 1028,
+      "sha256": "e7c0e21b45aeafd1d9735f0889abfedccaff6f013b8b08e2551e62190d248b9f"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 221721,
+      "sha256": "89421a4bfecaa538259e6e6a6c33056d9311999e8bdfac1db34dae41a5d78880"
+    },
+    {
+      "path": "source/review-board.py",
+      "bytes": 2767,
+      "sha256": "26fc683ddbc8397b90746c6886b9930893d22146b3f5e19a7f4f2d71e7b6e31c"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 2666,
+      "sha256": "cf2413023a280f81ae56b338942e51dc30d5c56a348191028f270f39a87bb280"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1466,
+      "sha256": "cd9eefb691b7481a9b1b34e0e78131f07b76369320cb2f59c2b256964414a4a7"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 337,
+      "sha256": "4f4ad5e066b5ec36c3868ac7155aa17737880f7f8f3e4fa59ee6e1f36ca1d2f0"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，继续吧"
+}

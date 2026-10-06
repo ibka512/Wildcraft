@@ -21,9 +21,21 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        try (var input=getClass().getResourceAsStream("/wildcraft-datagen-labels.json")) {
+            if(input==null)throw new IllegalStateException("Missing adopted translations");
+            var source=com.google.gson.JsonParser.parseReader(new java.io.InputStreamReader(input,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject().getAsJsonObject(language);
+            source.entrySet().forEach(entry->translations.add(entry.getKey(),entry.getValue().getAsString()));
+        } catch(java.io.IOException ex){throw new java.io.UncheckedIOException(ex);}
+
         translations.add("key.wildcraft.fuse", chinese ? "融合 / 按住蹲下拆分" : "Fuse / sneak to split");
         translations.add("key.categories.wildcraft.fusion", chinese ? "Wildcraft 融合" : "Wildcraft Fusion");
         translations.add("fuse.wildcraft.kind.6", chinese ? "材料不可用：效果和拆卸已停用，原始数据保留" : "Material unavailable: effects and splitting disabled; data retained");
+        translations.add("machine.wildcraft.empty_node",chinese?"空节点":"Empty node");
+        translations.add("machine.wildcraft.preview_ready",chinese?"位置可用，右键尝试安装":"Position available · right-click to install");
+        translations.add("machine.wildcraft.node_occupied",chinese?"此接口已有部件":"This node is occupied");
+        translations.add("machine.wildcraft.battery_exists",chinese?"主体已有电池":"A battery is already installed");
+        translations.add("machine.wildcraft.spent_part",chinese?"空火箭壳不能安装":"A spent rocket cannot be installed");
+        translations.add("fuse.wildcraft.material_uses",chinese?"融合材料剩余 %s 次":"Fusion material: %s uses left");
         translations.add("fuse.wildcraft.done", chinese ? "融合完成" : "Fusion attached");
         translations.add("fuse.wildcraft.split_done", chinese ? "已拆分，材料保留剩余次数" : "Split; material keeps its remaining uses");
         translations.add("fuse.wildcraft.refused", chinese ? "请检查两手、材料限制和库存空位" : "Check hands, material limits and free inventory space");

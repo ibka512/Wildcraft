@@ -1,0 +1,171 @@
+{
+  "asset": "F01-02",
+  "version": "v01",
+  "date": "2026-10-05",
+  "all_passed": true,
+  "shared_bowl_layers_identical": true,
+  "no_downsampling": true,
+  "game_integration_tested": false,
+  "files": [
+    {
+      "name": "meal-vegetable-32",
+      "size": [
+        32,
+        32
+      ],
+      "opaque_colors": 21,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:72e43b20393bfc3e",
+      "png_reopened_hash": "fnv1a64:72e43b20393bfc3e",
+      "png_readonly_rgba_hash": "fnv1a64:72e43b20393bfc3e",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "2dd1a86df7bce249eed2c10edfa2c81b393e948c0266f7a78c2f0414b8fde85f",
+      "source_sha256": "2401ae50a91253df47036f277b884dbed7312df6f91288ab67d37e98e34907f1"
+    },
+    {
+      "name": "meal-vegetable-16",
+      "size": [
+        16,
+        16
+      ],
+      "opaque_colors": 20,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:9d76a19e0f391dec",
+      "png_reopened_hash": "fnv1a64:9d76a19e0f391dec",
+      "png_readonly_rgba_hash": "fnv1a64:9d76a19e0f391dec",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "5a251e657578a7563e1168e6b945203a1450ff92645abc6b5129487e8c02a225",
+      "source_sha256": "de4c4d113de90628ace4f333660a46e88a519206d3e2262e2989f08564049a60"
+    },
+    {
+      "name": "meal-warming-32",
+      "size": [
+        32,
+        32
+      ],
+      "opaque_colors": 24,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:7bbacfd86ac3f414",
+      "png_reopened_hash": "fnv1a64:7bbacfd86ac3f414",
+      "png_readonly_rgba_hash": "fnv1a64:7bbacfd86ac3f414",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "fd9afe836b0f4c4f53cc6e63f9d7f2991eea1e1be30170252dcd593ba494a193",
+      "source_sha256": "e7c0e21b45aeafd1d9735f0889abfedccaff6f013b8b08e2551e62190d248b9f"
+    },
+    {
+      "name": "meal-warming-16",
+      "size": [
+        16,
+        16
+      ],
+      "opaque_colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:b63676c8535bfc26",
+      "png_reopened_hash": "fnv1a64:b63676c8535bfc26",
+      "png_readonly_rgba_hash": "fnv1a64:b63676c8535bfc26",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "849622c3faf5eca0d66438bf57d9be8368d8744358f770a4f16110f54057fb1a",
+      "source_sha256": "bd20ff7e2237b3193433e83b36fceea7f264e45303f8fce2c3b433ce0912c5cb"
+    },
+    {
+      "name": "meal-cooling-32",
+      "size": [
+        32,
+        32
+      ],
+      "opaque_colors": 26,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:b90dec80e15d8fc4",
+      "png_reopened_hash": "fnv1a64:b90dec80e15d8fc4",
+      "png_readonly_rgba_hash": "fnv1a64:b90dec80e15d8fc4",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "939516f3c7b2c09f85fa4092e54f21e709d12e26bc09ebfb952302c413bed1db",
+      "source_sha256": "430d9daff743c2de2b7bbeb90b3aff8b207c9973e87f857851eeb44758eb074f"
+    },
+    {
+      "name": "meal-cooling-16",
+      "size": [
+        16,
+        16
+      ],
+      "opaque_colors": 23,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:1da6bb9ce4484a75",
+      "png_reopened_hash": "fnv1a64:1da6bb9ce4484a75",
+      "png_readonly_rgba_hash": "fnv1a64:1da6bb9ce4484a75",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "f5fdb08e5f027f273fc36a073d80378f5dd6d21ea01c760cc7767cd2e1ea7e23",
+      "source_sha256": "024a11c6f6f1a7c3c5cace0834c00f0dcaef8a587d18db4f8cd5e2a0e0a458c3"
+    },
+    {
+      "name": "meal-recovery-32",
+      "size": [
+        32,
+        32
+      ],
+      "opaque_colors": 18,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:086cf8f748c25aa7",
+      "png_reopened_hash": "fnv1a64:086cf8f748c25aa7",
+      "png_readonly_rgba_hash": "fnv1a64:086cf8f748c25aa7",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "7b4c4f0541a0a534cc14c57a8f0e025a6d3bb375304da196eaf78aa029381e79",
+      "source_sha256": "f41c4306132fceea745a91504718c95137658dd2cd8912597bee0dad30c78486"
+    },
+    {
+      "name": "meal-recovery-16",
+      "size": [
+        16,
+        16
+      ],
+      "opaque_colors": 18,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "source_layers": 4,
+      "source_reopened_hash": "fnv1a64:1dc6d350a0e46f5a",
+      "png_reopened_hash": "fnv1a64:1dc6d350a0e46f5a",
+      "png_readonly_rgba_hash": "fnv1a64:1dc6d350a0e46f5a",
+      "pixel_identity": true,
+      "matches_authored_design": true,
+      "png_sha256": "57c18feada1b16908c77f7952a6efbcc8b6ef6f473ce253aa761f588ccfc17b0",
+      "source_sha256": "12fea0b38200590fa8505556cd15c2909356df4bc0da93d4542bf2dd865697db"
+    }
+  ]
+}

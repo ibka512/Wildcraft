@@ -1,0 +1,292 @@
+{
+  "asset": "A09-C",
+  "version": "v01",
+  "date": "2026-10-06",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "basis": "X right/Y up/Z back; body-local collar origin; 1 unit=1/16 block",
+  "rotationOrder": "center native reference bounds, scale, roll around design Z, yaw around design Y, translate, live body matrix",
+  "profiles": {
+    "sword": {
+      "label": "剑",
+      "category": "melee",
+      "effectiveScale": 0.85,
+      "backToHeldRatio": 1,
+      "centerBodyLocal": [
+        9.2,
+        -13.2,
+        -5.5
+      ],
+      "rollDegrees": 225,
+      "yawDegrees": -90,
+      "poseOffsets": {
+        "stand": [
+          0,
+          0,
+          0
+        ],
+        "crouch": [
+          0,
+          1.1,
+          0
+        ],
+        "swim": [
+          0,
+          0,
+          0
+        ],
+        "glide": [
+          0,
+          0,
+          0
+        ]
+      },
+      "fixedLayerScaleCompensation": 0.85,
+      "javaBodyLocalCenterUnits": [
+        9.2,
+        13.2,
+        -5.5
+      ],
+      "centerScope": "visual centre after native display transform, not raw layer translation"
+    },
+    "axe": {
+      "label": "斧",
+      "category": "melee",
+      "effectiveScale": 0.85,
+      "backToHeldRatio": 1,
+      "centerBodyLocal": [
+        9.2,
+        -12.2,
+        -5.2
+      ],
+      "rollDegrees": 225,
+      "yawDegrees": -90,
+      "poseOffsets": {
+        "stand": [
+          0,
+          0,
+          0
+        ],
+        "crouch": [
+          0,
+          0.0,
+          0
+        ],
+        "swim": [
+          0,
+          0,
+          0
+        ],
+        "glide": [
+          0,
+          0,
+          0
+        ]
+      },
+      "fixedLayerScaleCompensation": 0.85,
+      "javaBodyLocalCenterUnits": [
+        9.2,
+        12.2,
+        -5.2
+      ],
+      "centerScope": "visual centre after native display transform, not raw layer translation"
+    },
+    "shield": {
+      "label": "盾",
+      "category": "shield",
+      "effectiveScale": 1,
+      "backToHeldRatio": 1,
+      "centerBodyLocal": [
+        -12.5,
+        -11.5,
+        -5.5
+      ],
+      "rollDegrees": 0,
+      "yawDegrees": -90,
+      "poseOffsets": {
+        "stand": [
+          0,
+          0,
+          0
+        ],
+        "crouch": [
+          0,
+          4.1,
+          0
+        ],
+        "swim": [
+          0,
+          0,
+          0
+        ],
+        "glide": [
+          0,
+          0,
+          0
+        ]
+      },
+      "fixedLayerScaleCompensation": 1.8181818181818181,
+      "javaBodyLocalCenterUnits": [
+        -12.5,
+        11.5,
+        -5.5
+      ],
+      "centerScope": "visual centre after native display transform, not raw layer translation"
+    },
+    "bow": {
+      "label": "弓",
+      "category": "ranged",
+      "effectiveScale": 0.9,
+      "backToHeldRatio": 1,
+      "centerBodyLocal": [
+        10.8,
+        -9.5,
+        -1.9
+      ],
+      "rollDegrees": 45,
+      "yawDegrees": 90,
+      "poseOffsets": {
+        "stand": [
+          0,
+          0,
+          0
+        ],
+        "crouch": [
+          0,
+          0.0,
+          0
+        ],
+        "swim": [
+          0,
+          0,
+          0
+        ],
+        "glide": [
+          0,
+          0,
+          0
+        ]
+      },
+      "fixedLayerScaleCompensation": 0.9,
+      "javaBodyLocalCenterUnits": [
+        10.8,
+        9.5,
+        -1.9
+      ],
+      "centerScope": "visual centre after native display transform, not raw layer translation"
+    },
+    "crossbow": {
+      "label": "弩",
+      "category": "ranged",
+      "effectiveScale": 0.9,
+      "backToHeldRatio": 1,
+      "centerBodyLocal": [
+        10.8,
+        -10.8,
+        -6.5
+      ],
+      "rollDegrees": 0,
+      "yawDegrees": 90,
+      "poseOffsets": {
+        "stand": [
+          0,
+          0,
+          0
+        ],
+        "crouch": [
+          0,
+          0.3,
+          0
+        ],
+        "swim": [
+          0,
+          0,
+          0
+        ],
+        "glide": [
+          0,
+          0,
+          0
+        ]
+      },
+      "fixedLayerScaleCompensation": 0.9,
+      "javaBodyLocalCenterUnits": [
+        10.8,
+        10.8,
+        -6.5
+      ],
+      "centerScope": "visual centre after native display transform, not raw layer translation"
+    }
+  },
+  "variants": [
+    "standard",
+    "slim"
+  ],
+  "poses": [
+    "stand",
+    "crouch",
+    "swim",
+    "glide"
+  ],
+  "layoutActivation": "visible cape OR worn elytra; otherwise preserve original A09 back layout",
+  "visibility": "live owned references; same held reference suppressed; own first person/invisible/spectator suppressed",
+  "categories": 3,
+  "newInventorySlots": 0,
+  "newProductionModels": 0,
+  "newTextures": 0,
+  "capeProxy": {
+    "width": 10,
+    "length": 16,
+    "thickness": 1,
+    "swingDegrees": [
+      6,
+      35
+    ],
+    "basis": "art exclusion guide, not native cloak simulation"
+  },
+  "elytraProxy": {
+    "wingSize": [
+      10,
+      20,
+      2
+    ],
+    "spreadDegrees": [
+      18,
+      62
+    ],
+    "basis": "art exclusion guide, not exact native animation"
+  },
+  "safety": "no guarantee for third-party oversized models; preserve scale and use legacy hiding fallback only if evaluated collision risk remains",
+  "transition": "waist settling requires separate bounded offsets; do not directly reuse back offsets; do not delay actions",
+  "fusionReference": "retain adopted F03-01; do not rotate or shrink material independently to make layout fit",
+  "waistSettle": {
+    "melee": {
+      "durationMs": 180,
+      "offset": [
+        0.15,
+        0.3,
+        -0.15
+      ]
+    },
+    "shield": {
+      "durationMs": 200,
+      "offset": [
+        -0.15,
+        0.3,
+        -0.15
+      ]
+    },
+    "ranged": {
+      "durationMs": 200,
+      "offset": [
+        0.15,
+        0.3,
+        -0.15
+      ]
+    }
+  },
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用"
+}

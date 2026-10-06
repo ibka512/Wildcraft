@@ -13,7 +13,7 @@ import net.minecraft.world.phys.AABB;
 /** Ordinary frame scheduler; no fabricated shared client state or gametest scheduling. */
 public final class FusionNativeClientProbe {
     private static final AABB AREA=new AABB(-6,118,-6,6,125,6);
-    private static long started,due;
+    private static long started,due,lastArtDiagnostic;
     private static int stage=-1;
     private static boolean acted,sent,primed;
     private FusionNativeClientProbe(){}
@@ -26,6 +26,15 @@ public final class FusionNativeClientProbe {
         int current=actor.getAttachedOrElse(FusionMultiplayerProbe.STAGE,-1);if(current<0)return;
         if(stage!=current){stage=current;acted=false;sent=false;primed=false;due=now+(stage==0?1_200_000_000L:400_000_000L);System.out.println("WILDCRAFT P9 ordinary "+role+" stage="+stage+" fabric.client.gametest="+System.getProperty("fabric.client.gametest"));}
         if(stage==6){if(now>=due)c.stop();return;}
+        if(stage==0){
+            if(now-started>10_000_000_000L&&now-lastArtDiagnostic>5_000_000_000L){
+                var a=c.level.getBlockEntity(new net.minecraft.core.BlockPos(-3,120,0));var b=c.level.getBlockEntity(new net.minecraft.core.BlockPos(-3,120,2));
+                System.out.println("WILDCRAFT ART TCP "+role+" charger="+(a instanceof dev.wildcraft.energy.ChargerEntity v?v.artStatus()+":"+v.artEnergy()+":"+v.artBattery():a)+" fab="+(b instanceof dev.wildcraft.fabrication.FabricatorEntity v?v.artStatus():b));lastArtDiagnostic=now;
+            }
+            if(!(c.level.getBlockEntity(new net.minecraft.core.BlockPos(-3,120,0)) instanceof dev.wildcraft.energy.ChargerEntity charger)||charger.artEnergy()!=333||!charger.artBattery()||charger.artStatus()!=1)return;
+            if(!(c.level.getBlockEntity(new net.minecraft.core.BlockPos(-3,120,2)) instanceof dev.wildcraft.fabrication.FabricatorEntity fab)||fab.artStatus()!=4)return;
+            check(charger.getItem(0).isEmpty()&&fab.getItem(2).isEmpty(),"Ordinary TCP clients receive world visuals without private inventories");
+        }
         boolean localActor=role.equals("actor");
         if(!acted&&now>=due){
             if(localActor){

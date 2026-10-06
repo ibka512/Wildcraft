@@ -1,0 +1,3926 @@
+{
+  "version": 1,
+  "fps": 50,
+  "coordinateSystem": "Design X right/Y up/Z back; body anchor origin at collar Y=24; 1 unit=1/16 block",
+  "templates": {
+    "melee": {
+      "items": [
+        "sword",
+        "axe"
+      ],
+      "stowMs": 180,
+      "drawMs": 140,
+      "backOffset": [
+        -0.6,
+        1.4,
+        0.8
+      ],
+      "backRotation": [
+        -6,
+        0,
+        0
+      ],
+      "handOffset": [
+        0.25,
+        0.45,
+        0.65
+      ],
+      "handRotation": [
+        4,
+        0,
+        3
+      ]
+    },
+    "ranged": {
+      "items": [
+        "bow",
+        "crossbow"
+      ],
+      "stowMs": 200,
+      "drawMs": 160,
+      "backOffset": [
+        0,
+        1.6,
+        1.0
+      ],
+      "backRotation": [
+        5,
+        0,
+        0
+      ],
+      "handOffset": [
+        0.3,
+        0.5,
+        0.7
+      ],
+      "handRotation": [
+        -4,
+        0,
+        4
+      ]
+    },
+    "shield": {
+      "items": [
+        "shield"
+      ],
+      "stowMs": 200,
+      "drawMs": 160,
+      "backOffset": [
+        -0.9,
+        0.6,
+        1.0
+      ],
+      "backRotation": [
+        2,
+        8,
+        0
+      ],
+      "handOffset": [
+        -0.35,
+        0.3,
+        0.5
+      ],
+      "handRotation": [
+        0,
+        -5,
+        4
+      ]
+    }
+  },
+  "keyPoseBudget": {
+    "templates": 3,
+    "normalizedTimes": [
+      0,
+      0.35,
+      0.7,
+      1
+    ],
+    "uniqueDesignKeyposes": 12,
+    "nativeSamples": "50fps bake, pose parameters shared across five profiles/two arm widths"
+  },
+  "curve": "offset weight (1-t)^3; zero final velocity; no size animation",
+  "scope": "A short secondary settle AFTER ownership changes: stow on the back, draw at the hand. No continuous physical hand-to-back travel is proposed.",
+  "identity": "One visual item per recorded actual reference; never infer from name/model appearance",
+  "handoff": "Switch visual owner immediately from current authoritative state; suppress the old owner in the same frame before applying the local settle.",
+  "firstPerson": "Keep native first-person item equip animation; no own-back drawing or cross-screen flight",
+  "interruptions": {
+    "rapidSwitch": "Discard old settle. Re-evaluate latest eligible reference and current owner; begin only the new current settle.",
+    "attackUseBowBlock": "Stop any draw settle and use native hand pose immediately; do not delay attack/use/block.",
+    "gliderOrClimb": "Existing gameplay pose takes priority. Eligible back settle may continue body-local; no extra reaching arm.",
+    "dropBreakInventoryIdentityLoss": "Remove visual item immediately, no outgoing ghost.",
+    "capeElytraInvisibilitySpectator": "Apply existing visibility policy before evaluating any settle; hidden item stays hidden.",
+    "pauseDisconnectRespawnDimension": "Clear local animation state; do not replay old settles on resume/load.",
+    "crouchSwimTurn": "Derive body/hand endpoints from live pose each render frame; these standing guides are not frozen world-space targets.",
+    "reducedMotion": "Animation can be disabled and still resolve the same owner/scale/visibility immediately; setting integration separate."
+  },
+  "preserveNativeAppearance": "Use sanitized native ItemStackRenderState, preserve shield patterns/dye/damage/glint and supported models; preview uses adopted A09 geometry references only",
+  "scenes": [
+    {
+      "scene": "A10_standard_sword_stow",
+      "variant": "standard",
+      "item": "sword",
+      "category": "melee",
+      "direction": "stow",
+      "durationMs": 180,
+      "frameRange": [
+        1,
+        10
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.400000095367432,
+        -7.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        4.468763828277588,
+        -4.1495513916015625,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -7.0,
+            -5.599999904632568,
+            5.0
+          ],
+          "quaternionWXYZ": [
+            0.6691305637359619,
+            0.0,
+            0.7431448101997375,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -6.821399211883545,
+            -6.016735076904297,
+            4.761865615844727
+          ],
+          "quaternionWXYZ": [
+            0.6806313991546631,
+            0.0,
+            0.7326260209083557,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -6.682304382324219,
+            -6.341289520263672,
+            4.576406002044678
+          ],
+          "quaternionWXYZ": [
+            0.6894739866256714,
+            0.0,
+            0.7243104577064514,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -6.577777862548828,
+            -6.5851850509643555,
+            4.437036991119385
+          ],
+          "quaternionWXYZ": [
+            0.696052074432373,
+            0.0,
+            0.717991292476654,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -6.502880573272705,
+            -6.759944915771484,
+            4.337173938751221
+          ],
+          "quaternionWXYZ": [
+            0.70073002576828,
+            0.0,
+            0.7134265899658203,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -6.452674865722656,
+            -6.877091884613037,
+            4.270233154296875
+          ],
+          "quaternionWXYZ": [
+            0.7038490176200867,
+            0.0,
+            0.7103496789932251,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -6.422222137451172,
+            -6.948148250579834,
+            4.2296295166015625
+          ],
+          "quaternionWXYZ": [
+            0.7057341933250427,
+            0.0,
+            0.7084766626358032,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -6.4065842628479,
+            -6.984636306762695,
+            4.2087788581848145
+          ],
+          "quaternionWXYZ": [
+            0.7067003846168518,
+            0.0,
+            0.7075129747390747,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -6.40082311630249,
+            -6.998079776763916,
+            4.201097011566162
+          ],
+          "quaternionWXYZ": [
+            0.7070559859275818,
+            0.0,
+            0.7071576118469238,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            -6.400000095367432,
+            -7.0,
+            4.199999809265137
+          ],
+          "quaternionWXYZ": [
+            0.7071068286895752,
+            0.0,
+            0.7071067690849304,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_sword_draw",
+      "variant": "standard",
+      "item": "sword",
+      "category": "melee",
+      "direction": "draw",
+      "durationMs": 140,
+      "frameRange": [
+        1,
+        8
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.400000095367432,
+        -7.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        4.468763828277588,
+        -4.1495513916015625,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            4.718763828277588,
+            -3.6995513439178467,
+            -4.512187957763672
+          ],
+          "quaternionWXYZ": [
+            0.8700574636459351,
+            0.022783229127526283,
+            -0.4922548830509186,
+            -0.012890134006738663
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            4.6261982917785645,
+            -3.8661694526672363,
+            -4.752858638763428
+          ],
+          "quaternionWXYZ": [
+            0.8765280842781067,
+            0.014452211558818817,
+            -0.48106837272644043,
+            -0.007931864820420742
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            4.559871673583984,
+            -3.9855573177337646,
+            -4.925307750701904
+          ],
+          "quaternionWXYZ": [
+            0.8810251951217651,
+            0.008405936881899834,
+            -0.47297313809394836,
+            -0.004512677434831858
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            4.515410900115967,
+            -4.065586566925049,
+            -5.040905475616455
+          ],
+          "quaternionWXYZ": [
+            0.883974015712738,
+            0.004318105056881905,
+            -0.46751055121421814,
+            -0.002283731708303094
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            4.488442897796631,
+            -4.114128589630127,
+            -5.111021995544434
+          ],
+          "quaternionWXYZ": [
+            0.8857367634773254,
+            0.001825303421355784,
+            -0.4641832113265991,
+            -0.0009565767250023782
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            4.474594593048096,
+            -4.1390557289123535,
+            -5.147027492523193
+          ],
+          "quaternionWXYZ": [
+            0.8866344094276428,
+            0.0005413700710050762,
+            -0.4624705910682678,
+            -0.0002823799441102892
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            4.4694929122924805,
+            -4.148239612579346,
+            -5.160293102264404
+          ],
+          "quaternionWXYZ": [
+            0.8869637846946716,
+            6.76699637551792e-05,
+            -0.4618389308452606,
+            -3.523551640682854e-05
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            4.468763828277588,
+            -4.1495513916015625,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            0.8870108127593994,
+            0.0,
+            -0.4617486298084259,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_axe_stow",
+      "variant": "standard",
+      "item": "axe",
+      "category": "melee",
+      "direction": "stow",
+      "durationMs": 180,
+      "frameRange": [
+        1,
+        10
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.5,
+        -5.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        4.36439323425293,
+        -3.55764102935791,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -7.099999904632568,
+            -3.5999999046325684,
+            5.0
+          ],
+          "quaternionWXYZ": [
+            0.8703556656837463,
+            0.0,
+            -0.49242353439331055,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -6.921399116516113,
+            -4.016735076904297,
+            4.761865615844727
+          ],
+          "quaternionWXYZ": [
+            0.8625754117965698,
+            0.0,
+            -0.5059283971786499,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -6.782304763793945,
+            -4.341289520263672,
+            4.576406002044678
+          ],
+          "quaternionWXYZ": [
+            0.8563708662986755,
+            0.0,
+            -0.5163611769676208,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -6.6777777671813965,
+            -4.5851850509643555,
+            4.437036991119385
+          ],
+          "quaternionWXYZ": [
+            0.8516252636909485,
+            0.0,
+            -0.524151086807251,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -6.602880477905273,
+            -4.759944915771484,
+            4.337173938751221
+          ],
+          "quaternionWXYZ": [
+            0.8481812477111816,
+            0.0,
+            -0.5297061204910278,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -6.552674770355225,
+            -4.877091884613037,
+            4.270233154296875
+          ],
+          "quaternionWXYZ": [
+            0.8458523154258728,
+            0.0,
+            -0.5334171652793884,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -6.52222204208374,
+            -4.948148250579834,
+            4.2296295166015625
+          ],
+          "quaternionWXYZ": [
+            0.8444318175315857,
+            0.0,
+            -0.5356630086898804,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -6.506584167480469,
+            -4.984636306762695,
+            4.2087788581848145
+          ],
+          "quaternionWXYZ": [
+            0.8436999917030334,
+            0.0,
+            -0.5368149280548096,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -6.500823020935059,
+            -4.998079776763916,
+            4.201097011566162
+          ],
+          "quaternionWXYZ": [
+            0.8434300422668457,
+            0.0,
+            -0.5372390151023865,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            -6.5,
+            -5.0,
+            4.199999809265137
+          ],
+          "quaternionWXYZ": [
+            0.8433914184570312,
+            0.0,
+            -0.537299633026123,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_axe_draw",
+      "variant": "standard",
+      "item": "axe",
+      "category": "melee",
+      "direction": "draw",
+      "durationMs": 140,
+      "frameRange": [
+        1,
+        8
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.5,
+        -5.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        4.36439323425293,
+        -3.55764102935791,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            4.61439323425293,
+            -3.1076409816741943,
+            -4.512187957763672
+          ],
+          "quaternionWXYZ": [
+            0.8700574636459351,
+            0.022783229127526283,
+            -0.4922548830509186,
+            -0.012890134006738663
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            4.521827697753906,
+            -3.274259090423584,
+            -4.752858638763428
+          ],
+          "quaternionWXYZ": [
+            0.8765280842781067,
+            0.014452211558818817,
+            -0.48106837272644043,
+            -0.007931864820420742
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            4.455501079559326,
+            -3.3936469554901123,
+            -4.925307750701904
+          ],
+          "quaternionWXYZ": [
+            0.8810251951217651,
+            0.008405936881899834,
+            -0.47297313809394836,
+            -0.004512677434831858
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            4.411040306091309,
+            -3.4736759662628174,
+            -5.040905475616455
+          ],
+          "quaternionWXYZ": [
+            0.883974015712738,
+            0.004318105056881905,
+            -0.46751055121421814,
+            -0.002283731708303094
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            4.384072303771973,
+            -3.5222182273864746,
+            -5.111021995544434
+          ],
+          "quaternionWXYZ": [
+            0.8857367634773254,
+            0.001825303421355784,
+            -0.4641832113265991,
+            -0.0009565767250023782
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            4.3702239990234375,
+            -3.547145366668701,
+            -5.147027492523193
+          ],
+          "quaternionWXYZ": [
+            0.8866344094276428,
+            0.0005413700710050762,
+            -0.4624705910682678,
+            -0.0002823799441102892
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            4.365122318267822,
+            -3.5563290119171143,
+            -5.160293102264404
+          ],
+          "quaternionWXYZ": [
+            0.8869637846946716,
+            6.76699637551792e-05,
+            -0.4618389308452606,
+            -3.523551640682854e-05
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            4.36439323425293,
+            -3.55764102935791,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            0.8870108127593994,
+            0.0,
+            -0.4617486298084259,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_shield_stow",
+      "variant": "standard",
+      "item": "shield",
+      "category": "shield",
+      "direction": "stow",
+      "durationMs": 200,
+      "frameRange": [
+        1,
+        11
+      ],
+      "scale": 1.0,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        0.0,
+        -6.800000190734863,
+        8.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        -6.0,
+        -9.372367858886719,
+        -7.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -0.8999999761581421,
+            -6.200000286102295,
+            9.199999809265137
+          ],
+          "quaternionWXYZ": [
+            0.9974121451377869,
+            0.0012174190487712622,
+            -0.01740991324186325,
+            0.06974580883979797
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -0.6560999751091003,
+            -6.362600326538086,
+            8.928999900817871
+          ],
+          "quaternionWXYZ": [
+            0.9986243844032288,
+            0.0006472473032772541,
+            -0.012706628069281578,
+            0.05086769908666611
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -0.46080002188682556,
+            -6.492800235748291,
+            8.711999893188477
+          ],
+          "quaternionWXYZ": [
+            0.9993212819099426,
+            0.00031934058642946184,
+            -0.008930220268666744,
+            0.035735271871089935
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -0.30869999527931213,
+            -6.594200134277344,
+            8.543000221252441
+          ],
+          "quaternionWXYZ": [
+            0.999695360660553,
+            0.00014333658327814192,
+            -0.005984699819236994,
+            0.023943208158016205
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -0.19439999759197235,
+            -6.670400142669678,
+            8.415999412536621
+          ],
+          "quaternionWXYZ": [
+            0.9998792409896851,
+            5.68459763599094e-05,
+            -0.0037694373168051243,
+            0.015078938566148281
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -0.11249999701976776,
+            -6.725000381469727,
+            8.324999809265137
+          ],
+          "quaternionWXYZ": [
+            0.9999595284461975,
+            1.9038117898162454e-05,
+            -0.0021815644577145576,
+            0.00872646551579237
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -0.057600002735853195,
+            -6.761600017547607,
+            8.263999938964844
+          ],
+          "quaternionWXYZ": [
+            0.9999894499778748,
+            4.990791239833925e-06,
+            -0.0011169796343892813,
+            0.004468065686523914
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -0.024299999698996544,
+            -6.78380012512207,
+            8.22700023651123
+          ],
+          "quaternionWXYZ": [
+            0.9999980926513672,
+            8.882465181159205e-07,
+            -0.0004712334484793246,
+            0.0018849358893930912
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -0.007200000341981649,
+            -6.795200347900391,
+            8.208000183105469
+          ],
+          "quaternionWXYZ": [
+            0.9999998211860657,
+            7.796266743298474e-08,
+            -0.0001395940489601344,
+            0.0005584955215454102
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            -0.0009000000427477062,
+            -6.799400329589844,
+            8.201000213623047
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            1.2158238860138226e-09,
+            -1.7404556274414062e-05,
+            6.985664367675781e-05
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 11,
+          "seconds": 0.2,
+          "positionBodyLocalUnits": [
+            0.0,
+            -6.800000190734863,
+            8.199999809265137
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_shield_draw",
+      "variant": "standard",
+      "item": "shield",
+      "category": "shield",
+      "direction": "draw",
+      "durationMs": 160,
+      "frameRange": [
+        1,
+        9
+      ],
+      "scale": 1.0,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        0.0,
+        -6.800000190734863,
+        8.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        -6.0,
+        -9.372367858886719,
+        -7.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -6.349999904632568,
+            -9.072367668151855,
+            -6.6621880531311035
+          ],
+          "quaternionWXYZ": [
+            -0.04359285160899162,
+            0.0015222945949062705,
+            0.034866321831941605,
+            -0.9984396696090698
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -6.234472751617432,
+            -9.171391487121582,
+            -6.8272271156311035
+          ],
+          "quaternionWXYZ": [
+            -0.029218722134828568,
+            0.0006833933293819427,
+            0.023372570052742958,
+            -0.9992995262145996
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -6.147656440734863,
+            -9.245805740356445,
+            -6.9512505531311035
+          ],
+          "quaternionWXYZ": [
+            -0.018404830247163773,
+            0.00027105084154754877,
+            0.014723136089742184,
+            -0.9997221827507019
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -6.08544921875,
+            -9.299125671386719,
+            -7.0401177406311035
+          ],
+          "quaternionWXYZ": [
+            -0.010652117431163788,
+            9.078042057808489e-05,
+            0.008521566167473793,
+            -0.9999069571495056
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -6.043749809265137,
+            -9.334867477416992,
+            -7.0996880531311035
+          ],
+          "quaternionWXYZ": [
+            -0.005454147234559059,
+            2.3797842004569247e-05,
+            0.004363219253718853,
+            -0.9999755620956421
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -6.018456935882568,
+            -9.356547355651855,
+            -7.1358208656311035
+          ],
+          "quaternionWXYZ": [
+            -0.0023010156583040953,
+            4.235621872794582e-06,
+            0.0018408240284770727,
+            -0.9999957084655762
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -6.005468845367432,
+            -9.367680549621582,
+            -7.1543755531311035
+          ],
+          "quaternionWXYZ": [
+            -0.0006818015244789422,
+            3.7179495393502293e-07,
+            0.0005453823832795024,
+            -0.9999996423721313
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -6.000683784484863,
+            -9.371782302856445,
+            -7.1612114906311035
+          ],
+          "quaternionWXYZ": [
+            -8.527835598215461e-05,
+            5.808974634646802e-09,
+            6.818771362304688e-05,
+            -1.0
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -6.0,
+            -9.372367858886719,
+            -7.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            -4.371138828673793e-08,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_bow_stow",
+      "variant": "standard",
+      "item": "bow",
+      "category": "ranged",
+      "direction": "stow",
+      "durationMs": 200,
+      "frameRange": [
+        1,
+        11
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        1.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        6.286880016326904,
+        -8.407898902893066,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            2.5999999046325684,
+            6.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9848077893257141,
+            0.0,
+            0.1736481487751007,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            2.1663999557495117,
+            6.328999996185303
+          ],
+          "quaternionWXYZ": [
+            0.9826856255531311,
+            0.0,
+            0.1852806955575943,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.819200038909912,
+            6.111999988555908
+          ],
+          "quaternionWXYZ": [
+            0.9808872938156128,
+            0.0,
+            0.19457675516605377,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.548799991607666,
+            5.942999839782715
+          ],
+          "quaternionWXYZ": [
+            0.979425847530365,
+            0.0,
+            0.20180438458919525,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.3456000089645386,
+            5.815999984741211
+          ],
+          "quaternionWXYZ": [
+            0.9782925248146057,
+            0.0,
+            0.20722870528697968,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.2000000476837158,
+            5.724999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9774619340896606,
+            0.0,
+            0.21111148595809937,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.1024000644683838,
+            5.664000034332275
+          ],
+          "quaternionWXYZ": [
+            0.9768966436386108,
+            0.0,
+            0.21371245384216309,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0432000160217285,
+            5.626999855041504
+          ],
+          "quaternionWXYZ": [
+            0.976550281047821,
+            0.0,
+            0.21528920531272888,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0127999782562256,
+            5.607999801635742
+          ],
+          "quaternionWXYZ": [
+            0.9763714671134949,
+            0.0,
+            0.21609878540039062,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0016000270843506,
+            5.60099983215332
+          ],
+          "quaternionWXYZ": [
+            0.9763054251670837,
+            0.0,
+            0.2163969725370407,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 11,
+          "seconds": 0.2,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0,
+            5.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9762960076332092,
+            0.0,
+            0.21643957495689392,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_bow_draw",
+      "variant": "standard",
+      "item": "bow",
+      "category": "ranged",
+      "direction": "draw",
+      "durationMs": 160,
+      "frameRange": [
+        1,
+        9
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        1.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        6.286880016326904,
+        -8.407898902893066,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            6.586880207061768,
+            -7.907898902893066,
+            -4.462188243865967
+          ],
+          "quaternionWXYZ": [
+            0.9980212450027466,
+            0.03485170751810074,
+            -0.05230401083827019,
+            -0.0018264984246343374
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            6.487856388092041,
+            -8.072937965393066,
+            -4.69324254989624
+          ],
+          "quaternionWXYZ": [
+            0.9976873993873596,
+            0.023334866389632225,
+            -0.06382085382938385,
+            -0.0014927031006664038
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            6.413442611694336,
+            -8.196961402893066,
+            -4.866875648498535
+          ],
+          "quaternionWXYZ": [
+            0.9972620010375977,
+            0.014686903916299343,
+            -0.0724688172340393,
+            -0.0010672648204490542
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            6.360122203826904,
+            -8.285828590393066,
+            -4.9912896156311035
+          ],
+          "quaternionWXYZ": [
+            0.9968651533126831,
+            0.008495641872286797,
+            -0.07866008579730988,
+            -0.0006703694234602153
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            6.324379920959473,
+            -8.345398902893066,
+            -5.074687957763672
+          ],
+          "quaternionWXYZ": [
+            0.9965559840202332,
+            0.004348299000412226,
+            -0.08280742168426514,
+            -0.0003613157896324992
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            6.302700519561768,
+            -8.381531715393066,
+            -5.125274181365967
+          ],
+          "quaternionWXYZ": [
+            0.9963518381118774,
+            0.0018341162940487266,
+            -0.08532161265611649,
+            -0.0001570627500768751
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            6.291567325592041,
+            -8.400086402893066,
+            -5.15125036239624
+          ],
+          "quaternionWXYZ": [
+            0.9962419867515564,
+            0.000543333007954061,
+            -0.08661239594221115,
+            -4.723689198726788e-05
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            6.287466049194336,
+            -8.406922340393066,
+            -5.160820960998535
+          ],
+          "quaternionWXYZ": [
+            0.996200680732727,
+            6.792864587623626e-05,
+            -0.08708779513835907,
+            -5.93831737205619e-06
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            6.286880016326904,
+            -8.407898902893066,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            0.9961947202682495,
+            0.0,
+            -0.08715572208166122,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_crossbow_stow",
+      "variant": "standard",
+      "item": "crossbow",
+      "category": "ranged",
+      "direction": "stow",
+      "durationMs": 200,
+      "frameRange": [
+        1,
+        11
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        0.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        5.550000190734863,
+        -5.322368144989014,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.600000023841858,
+            6.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9396926164627075,
+            0.0,
+            -0.3420202136039734,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.1663999557495117,
+            6.328999996185303
+          ],
+          "quaternionWXYZ": [
+            0.9436710476875305,
+            0.0,
+            -0.33088505268096924,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.8192000389099121,
+            6.111999988555908
+          ],
+          "quaternionWXYZ": [
+            0.9467617273330688,
+            0.0,
+            -0.32193523645401,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.548799991607666,
+            5.942999839782715
+          ],
+          "quaternionWXYZ": [
+            0.9491098523139954,
+            0.0,
+            -0.3149452209472656,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.3456000089645386,
+            5.815999984741211
+          ],
+          "quaternionWXYZ": [
+            0.9508404731750488,
+            0.0,
+            -0.3096809685230255,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.20000000298023224,
+            5.724999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9520626664161682,
+            0.0,
+            -0.3059031069278717,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.10240000486373901,
+            5.664000034332275
+          ],
+          "quaternionWXYZ": [
+            0.9528735280036926,
+            0.0,
+            -0.3033679127693176,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.04320000112056732,
+            5.626999855041504
+          ],
+          "quaternionWXYZ": [
+            0.953361988067627,
+            0.0,
+            -0.3018292486667633,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.012800000607967377,
+            5.607999801635742
+          ],
+          "quaternionWXYZ": [
+            0.9536119103431702,
+            0.0,
+            -0.3010387122631073,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.001600000075995922,
+            5.60099983215332
+          ],
+          "quaternionWXYZ": [
+            0.9537038207054138,
+            0.0,
+            -0.30074745416641235,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 11,
+          "seconds": 0.2,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.0,
+            5.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9537169337272644,
+            0.0,
+            -0.30070585012435913,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_standard_crossbow_draw",
+      "variant": "standard",
+      "item": "crossbow",
+      "category": "ranged",
+      "direction": "draw",
+      "durationMs": 160,
+      "frameRange": [
+        1,
+        9
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        0.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        5.550000190734863,
+        -5.322368144989014,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            5.850000381469727,
+            -4.822368144989014,
+            -4.462188243865967
+          ],
+          "quaternionWXYZ": [
+            0.9987820386886597,
+            0.03487827628850937,
+            0.03487827628850937,
+            0.0012179776094853878
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            5.7509765625,
+            -4.987407207489014,
+            -4.69324254989624
+          ],
+          "quaternionWXYZ": [
+            0.9994532465934753,
+            0.023376166820526123,
+            0.023376166820526123,
+            0.000546744093298912
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            5.676562786102295,
+            -5.111430644989014,
+            -4.866875648498535
+          ],
+          "quaternionWXYZ": [
+            0.9997831583023071,
+            0.014724033884704113,
+            0.014724033884704113,
+            0.00021684418607037514
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            5.623242378234863,
+            -5.200297832489014,
+            -4.9912896156311035
+          ],
+          "quaternionWXYZ": [
+            0.9999274015426636,
+            0.008521740324795246,
+            0.008521740324795246,
+            7.262532744789496e-05
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            5.587500095367432,
+            -5.259868144989014,
+            -5.074687957763672
+          ],
+          "quaternionWXYZ": [
+            0.9999809265136719,
+            0.004363243002444506,
+            0.004363243002444506,
+            1.9038250684388913e-05
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            5.565820693969727,
+            -5.296000957489014,
+            -5.125274181365967
+          ],
+          "quaternionWXYZ": [
+            0.9999966621398926,
+            0.0018408257747069001,
+            0.0018408257747069001,
+            3.3886506116687087e-06
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            5.5546875,
+            -5.314555644989014,
+            -5.15125036239624
+          ],
+          "quaternionWXYZ": [
+            0.9999997615814209,
+            0.0005453824414871633,
+            0.0005453824414871633,
+            2.974420567625202e-07
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            5.550586223602295,
+            -5.321391582489014,
+            -5.160820960998535
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            6.818771362304688e-05,
+            6.818771362304688e-05,
+            4.649564289138652e-09
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            5.550000190734863,
+            -5.322368144989014,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_sword_stow",
+      "variant": "slim",
+      "item": "sword",
+      "category": "melee",
+      "direction": "stow",
+      "durationMs": 180,
+      "frameRange": [
+        1,
+        10
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.400000095367432,
+        -7.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        3.968763828277588,
+        -4.1495513916015625,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -7.0,
+            -5.599999904632568,
+            5.0
+          ],
+          "quaternionWXYZ": [
+            0.6691305637359619,
+            0.0,
+            0.7431448101997375,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -6.821399211883545,
+            -6.016735076904297,
+            4.761865615844727
+          ],
+          "quaternionWXYZ": [
+            0.6806313991546631,
+            0.0,
+            0.7326260209083557,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -6.682304382324219,
+            -6.341289520263672,
+            4.576406002044678
+          ],
+          "quaternionWXYZ": [
+            0.6894739866256714,
+            0.0,
+            0.7243104577064514,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -6.577777862548828,
+            -6.5851850509643555,
+            4.437036991119385
+          ],
+          "quaternionWXYZ": [
+            0.696052074432373,
+            0.0,
+            0.717991292476654,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -6.502880573272705,
+            -6.759944915771484,
+            4.337173938751221
+          ],
+          "quaternionWXYZ": [
+            0.70073002576828,
+            0.0,
+            0.7134265899658203,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -6.452674865722656,
+            -6.877091884613037,
+            4.270233154296875
+          ],
+          "quaternionWXYZ": [
+            0.7038490176200867,
+            0.0,
+            0.7103496789932251,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -6.422222137451172,
+            -6.948148250579834,
+            4.2296295166015625
+          ],
+          "quaternionWXYZ": [
+            0.7057341933250427,
+            0.0,
+            0.7084766626358032,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -6.4065842628479,
+            -6.984636306762695,
+            4.2087788581848145
+          ],
+          "quaternionWXYZ": [
+            0.7067003846168518,
+            0.0,
+            0.7075129747390747,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -6.40082311630249,
+            -6.998079776763916,
+            4.201097011566162
+          ],
+          "quaternionWXYZ": [
+            0.7070559859275818,
+            0.0,
+            0.7071576118469238,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            -6.400000095367432,
+            -7.0,
+            4.199999809265137
+          ],
+          "quaternionWXYZ": [
+            0.7071068286895752,
+            0.0,
+            0.7071067690849304,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_sword_draw",
+      "variant": "slim",
+      "item": "sword",
+      "category": "melee",
+      "direction": "draw",
+      "durationMs": 140,
+      "frameRange": [
+        1,
+        8
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.400000095367432,
+        -7.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        3.968763828277588,
+        -4.1495513916015625,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            4.218763828277588,
+            -3.6995513439178467,
+            -4.512187957763672
+          ],
+          "quaternionWXYZ": [
+            0.8700574636459351,
+            0.022783229127526283,
+            -0.4922548830509186,
+            -0.012890134006738663
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            4.1261982917785645,
+            -3.8661694526672363,
+            -4.752858638763428
+          ],
+          "quaternionWXYZ": [
+            0.8765280842781067,
+            0.014452211558818817,
+            -0.48106837272644043,
+            -0.007931864820420742
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            4.059871673583984,
+            -3.9855573177337646,
+            -4.925307750701904
+          ],
+          "quaternionWXYZ": [
+            0.8810251951217651,
+            0.008405936881899834,
+            -0.47297313809394836,
+            -0.004512677434831858
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            4.015410900115967,
+            -4.065586566925049,
+            -5.040905475616455
+          ],
+          "quaternionWXYZ": [
+            0.883974015712738,
+            0.004318105056881905,
+            -0.46751055121421814,
+            -0.002283731708303094
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            3.98844313621521,
+            -4.114128589630127,
+            -5.111021995544434
+          ],
+          "quaternionWXYZ": [
+            0.8857367634773254,
+            0.001825303421355784,
+            -0.4641832113265991,
+            -0.0009565767250023782
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            3.974594831466675,
+            -4.1390557289123535,
+            -5.147027492523193
+          ],
+          "quaternionWXYZ": [
+            0.8866344094276428,
+            0.0005413700710050762,
+            -0.4624705910682678,
+            -0.0002823799441102892
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            3.9694926738739014,
+            -4.148239612579346,
+            -5.160293102264404
+          ],
+          "quaternionWXYZ": [
+            0.8869637846946716,
+            6.76699637551792e-05,
+            -0.4618389308452606,
+            -3.523551640682854e-05
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            3.968763828277588,
+            -4.1495513916015625,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            0.8870108127593994,
+            0.0,
+            -0.4617486298084259,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_axe_stow",
+      "variant": "slim",
+      "item": "axe",
+      "category": "melee",
+      "direction": "stow",
+      "durationMs": 180,
+      "frameRange": [
+        1,
+        10
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.5,
+        -5.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        3.864393472671509,
+        -3.55764102935791,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -7.099999904632568,
+            -3.5999999046325684,
+            5.0
+          ],
+          "quaternionWXYZ": [
+            0.8703556656837463,
+            0.0,
+            -0.49242353439331055,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -6.921399116516113,
+            -4.016735076904297,
+            4.761865615844727
+          ],
+          "quaternionWXYZ": [
+            0.8625754117965698,
+            0.0,
+            -0.5059283971786499,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -6.782304763793945,
+            -4.341289520263672,
+            4.576406002044678
+          ],
+          "quaternionWXYZ": [
+            0.8563708662986755,
+            0.0,
+            -0.5163611769676208,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -6.6777777671813965,
+            -4.5851850509643555,
+            4.437036991119385
+          ],
+          "quaternionWXYZ": [
+            0.8516252636909485,
+            0.0,
+            -0.524151086807251,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -6.602880477905273,
+            -4.759944915771484,
+            4.337173938751221
+          ],
+          "quaternionWXYZ": [
+            0.8481812477111816,
+            0.0,
+            -0.5297061204910278,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -6.552674770355225,
+            -4.877091884613037,
+            4.270233154296875
+          ],
+          "quaternionWXYZ": [
+            0.8458523154258728,
+            0.0,
+            -0.5334171652793884,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -6.52222204208374,
+            -4.948148250579834,
+            4.2296295166015625
+          ],
+          "quaternionWXYZ": [
+            0.8444318175315857,
+            0.0,
+            -0.5356630086898804,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -6.506584167480469,
+            -4.984636306762695,
+            4.2087788581848145
+          ],
+          "quaternionWXYZ": [
+            0.8436999917030334,
+            0.0,
+            -0.5368149280548096,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -6.500823020935059,
+            -4.998079776763916,
+            4.201097011566162
+          ],
+          "quaternionWXYZ": [
+            0.8434300422668457,
+            0.0,
+            -0.5372390151023865,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            -6.5,
+            -5.0,
+            4.199999809265137
+          ],
+          "quaternionWXYZ": [
+            0.8433914184570312,
+            0.0,
+            -0.537299633026123,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_axe_draw",
+      "variant": "slim",
+      "item": "axe",
+      "category": "melee",
+      "direction": "draw",
+      "durationMs": 140,
+      "frameRange": [
+        1,
+        8
+      ],
+      "scale": 0.85,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        -6.5,
+        -5.0,
+        4.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        3.864393472671509,
+        -3.55764102935791,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            4.11439323425293,
+            -3.1076409816741943,
+            -4.512187957763672
+          ],
+          "quaternionWXYZ": [
+            0.8700574636459351,
+            0.022783229127526283,
+            -0.4922548830509186,
+            -0.012890134006738663
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            4.021827697753906,
+            -3.274259090423584,
+            -4.752858638763428
+          ],
+          "quaternionWXYZ": [
+            0.8765280842781067,
+            0.014452211558818817,
+            -0.48106837272644043,
+            -0.007931864820420742
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            3.9555013179779053,
+            -3.3936469554901123,
+            -4.925307750701904
+          ],
+          "quaternionWXYZ": [
+            0.8810251951217651,
+            0.008405936881899834,
+            -0.47297313809394836,
+            -0.004512677434831858
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            3.911040782928467,
+            -3.4736759662628174,
+            -5.040905475616455
+          ],
+          "quaternionWXYZ": [
+            0.883974015712738,
+            0.004318105056881905,
+            -0.46751055121421814,
+            -0.002283731708303094
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            3.884072780609131,
+            -3.5222182273864746,
+            -5.111021995544434
+          ],
+          "quaternionWXYZ": [
+            0.8857367634773254,
+            0.001825303421355784,
+            -0.4641832113265991,
+            -0.0009565767250023782
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            3.8702244758605957,
+            -3.547145366668701,
+            -5.147027492523193
+          ],
+          "quaternionWXYZ": [
+            0.8866344094276428,
+            0.0005413700710050762,
+            -0.4624705910682678,
+            -0.0002823799441102892
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            3.8651223182678223,
+            -3.5563290119171143,
+            -5.160293102264404
+          ],
+          "quaternionWXYZ": [
+            0.8869637846946716,
+            6.76699637551792e-05,
+            -0.4618389308452606,
+            -3.523551640682854e-05
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            3.864393472671509,
+            -3.55764102935791,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            0.8870108127593994,
+            0.0,
+            -0.4617486298084259,
+            0.0
+          ],
+          "scale": 0.85,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_shield_stow",
+      "variant": "slim",
+      "item": "shield",
+      "category": "shield",
+      "direction": "stow",
+      "durationMs": 200,
+      "frameRange": [
+        1,
+        11
+      ],
+      "scale": 1.0,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        0.0,
+        -6.800000190734863,
+        8.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        -5.5,
+        -9.372367858886719,
+        -7.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -0.8999999761581421,
+            -6.200000286102295,
+            9.199999809265137
+          ],
+          "quaternionWXYZ": [
+            0.9974121451377869,
+            0.0012174190487712622,
+            -0.01740991324186325,
+            0.06974580883979797
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -0.6560999751091003,
+            -6.362600326538086,
+            8.928999900817871
+          ],
+          "quaternionWXYZ": [
+            0.9986243844032288,
+            0.0006472473032772541,
+            -0.012706628069281578,
+            0.05086769908666611
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -0.46080002188682556,
+            -6.492800235748291,
+            8.711999893188477
+          ],
+          "quaternionWXYZ": [
+            0.9993212819099426,
+            0.00031934058642946184,
+            -0.008930220268666744,
+            0.035735271871089935
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -0.30869999527931213,
+            -6.594200134277344,
+            8.543000221252441
+          ],
+          "quaternionWXYZ": [
+            0.999695360660553,
+            0.00014333658327814192,
+            -0.005984699819236994,
+            0.023943208158016205
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -0.19439999759197235,
+            -6.670400142669678,
+            8.415999412536621
+          ],
+          "quaternionWXYZ": [
+            0.9998792409896851,
+            5.68459763599094e-05,
+            -0.0037694373168051243,
+            0.015078938566148281
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -0.11249999701976776,
+            -6.725000381469727,
+            8.324999809265137
+          ],
+          "quaternionWXYZ": [
+            0.9999595284461975,
+            1.9038117898162454e-05,
+            -0.0021815644577145576,
+            0.00872646551579237
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -0.057600002735853195,
+            -6.761600017547607,
+            8.263999938964844
+          ],
+          "quaternionWXYZ": [
+            0.9999894499778748,
+            4.990791239833925e-06,
+            -0.0011169796343892813,
+            0.004468065686523914
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -0.024299999698996544,
+            -6.78380012512207,
+            8.22700023651123
+          ],
+          "quaternionWXYZ": [
+            0.9999980926513672,
+            8.882465181159205e-07,
+            -0.0004712334484793246,
+            0.0018849358893930912
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -0.007200000341981649,
+            -6.795200347900391,
+            8.208000183105469
+          ],
+          "quaternionWXYZ": [
+            0.9999998211860657,
+            7.796266743298474e-08,
+            -0.0001395940489601344,
+            0.0005584955215454102
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            -0.0009000000427477062,
+            -6.799400329589844,
+            8.201000213623047
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            1.2158238860138226e-09,
+            -1.7404556274414062e-05,
+            6.985664367675781e-05
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 11,
+          "seconds": 0.2,
+          "positionBodyLocalUnits": [
+            0.0,
+            -6.800000190734863,
+            8.199999809265137
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_shield_draw",
+      "variant": "slim",
+      "item": "shield",
+      "category": "shield",
+      "direction": "draw",
+      "durationMs": 160,
+      "frameRange": [
+        1,
+        9
+      ],
+      "scale": 1.0,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        0.0,
+        -6.800000190734863,
+        8.199999809265137
+      ],
+      "heldEndpointBodyLocalUnits": [
+        -5.5,
+        -9.372367858886719,
+        -7.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            -5.849999904632568,
+            -9.072367668151855,
+            -6.6621880531311035
+          ],
+          "quaternionWXYZ": [
+            -0.04359285160899162,
+            0.0015222945949062705,
+            0.034866321831941605,
+            -0.9984396696090698
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            -5.734472751617432,
+            -9.171391487121582,
+            -6.8272271156311035
+          ],
+          "quaternionWXYZ": [
+            -0.029218722134828568,
+            0.0006833933293819427,
+            0.023372570052742958,
+            -0.9992995262145996
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            -5.647656440734863,
+            -9.245805740356445,
+            -6.9512505531311035
+          ],
+          "quaternionWXYZ": [
+            -0.018404830247163773,
+            0.00027105084154754877,
+            0.014723136089742184,
+            -0.9997221827507019
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            -5.58544921875,
+            -9.299125671386719,
+            -7.0401177406311035
+          ],
+          "quaternionWXYZ": [
+            -0.010652117431163788,
+            9.078042057808489e-05,
+            0.008521566167473793,
+            -0.9999069571495056
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            -5.543749809265137,
+            -9.334867477416992,
+            -7.0996880531311035
+          ],
+          "quaternionWXYZ": [
+            -0.005454147234559059,
+            2.3797842004569247e-05,
+            0.004363219253718853,
+            -0.9999755620956421
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            -5.518456935882568,
+            -9.356547355651855,
+            -7.1358208656311035
+          ],
+          "quaternionWXYZ": [
+            -0.0023010156583040953,
+            4.235621872794582e-06,
+            0.0018408240284770727,
+            -0.9999957084655762
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            -5.505468845367432,
+            -9.367680549621582,
+            -7.1543755531311035
+          ],
+          "quaternionWXYZ": [
+            -0.0006818015244789422,
+            3.7179495393502293e-07,
+            0.0005453823832795024,
+            -0.9999996423721313
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            -5.500683784484863,
+            -9.371782302856445,
+            -7.1612114906311035
+          ],
+          "quaternionWXYZ": [
+            -8.527835598215461e-05,
+            5.808974634646802e-09,
+            6.818771362304688e-05,
+            -1.0
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            -5.5,
+            -9.372367858886719,
+            -7.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            -4.371138828673793e-08,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "scale": 1.0,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_bow_stow",
+      "variant": "slim",
+      "item": "bow",
+      "category": "ranged",
+      "direction": "stow",
+      "durationMs": 200,
+      "frameRange": [
+        1,
+        11
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        1.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        5.786880016326904,
+        -8.407898902893066,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            2.5999999046325684,
+            6.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9848077893257141,
+            0.0,
+            0.1736481487751007,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            2.1663999557495117,
+            6.328999996185303
+          ],
+          "quaternionWXYZ": [
+            0.9826856255531311,
+            0.0,
+            0.1852806955575943,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.819200038909912,
+            6.111999988555908
+          ],
+          "quaternionWXYZ": [
+            0.9808872938156128,
+            0.0,
+            0.19457675516605377,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.548799991607666,
+            5.942999839782715
+          ],
+          "quaternionWXYZ": [
+            0.979425847530365,
+            0.0,
+            0.20180438458919525,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.3456000089645386,
+            5.815999984741211
+          ],
+          "quaternionWXYZ": [
+            0.9782925248146057,
+            0.0,
+            0.20722870528697968,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.2000000476837158,
+            5.724999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9774619340896606,
+            0.0,
+            0.21111148595809937,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.1024000644683838,
+            5.664000034332275
+          ],
+          "quaternionWXYZ": [
+            0.9768966436386108,
+            0.0,
+            0.21371245384216309,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0432000160217285,
+            5.626999855041504
+          ],
+          "quaternionWXYZ": [
+            0.976550281047821,
+            0.0,
+            0.21528920531272888,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0127999782562256,
+            5.607999801635742
+          ],
+          "quaternionWXYZ": [
+            0.9763714671134949,
+            0.0,
+            0.21609878540039062,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0016000270843506,
+            5.60099983215332
+          ],
+          "quaternionWXYZ": [
+            0.9763054251670837,
+            0.0,
+            0.2163969725370407,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 11,
+          "seconds": 0.2,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.0,
+            5.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9762960076332092,
+            0.0,
+            0.21643957495689392,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_bow_draw",
+      "variant": "slim",
+      "item": "bow",
+      "category": "ranged",
+      "direction": "draw",
+      "durationMs": 160,
+      "frameRange": [
+        1,
+        9
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        1.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        5.786880016326904,
+        -8.407898902893066,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            6.086880207061768,
+            -7.907898902893066,
+            -4.462188243865967
+          ],
+          "quaternionWXYZ": [
+            0.9980212450027466,
+            0.03485170751810074,
+            -0.05230401083827019,
+            -0.0018264984246343374
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            5.987856388092041,
+            -8.072937965393066,
+            -4.69324254989624
+          ],
+          "quaternionWXYZ": [
+            0.9976873993873596,
+            0.023334866389632225,
+            -0.06382085382938385,
+            -0.0014927031006664038
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            5.913442611694336,
+            -8.196961402893066,
+            -4.866875648498535
+          ],
+          "quaternionWXYZ": [
+            0.9972620010375977,
+            0.014686903916299343,
+            -0.0724688172340393,
+            -0.0010672648204490542
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            5.860122203826904,
+            -8.285828590393066,
+            -4.9912896156311035
+          ],
+          "quaternionWXYZ": [
+            0.9968651533126831,
+            0.008495641872286797,
+            -0.07866008579730988,
+            -0.0006703694234602153
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            5.824379920959473,
+            -8.345398902893066,
+            -5.074687957763672
+          ],
+          "quaternionWXYZ": [
+            0.9965559840202332,
+            0.004348299000412226,
+            -0.08280742168426514,
+            -0.0003613157896324992
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            5.802700519561768,
+            -8.381531715393066,
+            -5.125274181365967
+          ],
+          "quaternionWXYZ": [
+            0.9963518381118774,
+            0.0018341162940487266,
+            -0.08532161265611649,
+            -0.0001570627500768751
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            5.791567325592041,
+            -8.400086402893066,
+            -5.15125036239624
+          ],
+          "quaternionWXYZ": [
+            0.9962419867515564,
+            0.000543333007954061,
+            -0.08661239594221115,
+            -4.723689198726788e-05
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            5.787466049194336,
+            -8.406922340393066,
+            -5.160820960998535
+          ],
+          "quaternionWXYZ": [
+            0.996200680732727,
+            6.792864587623626e-05,
+            -0.08708779513835907,
+            -5.93831737205619e-06
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            5.786880016326904,
+            -8.407898902893066,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            0.9961947202682495,
+            0.0,
+            -0.08715572208166122,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_crossbow_stow",
+      "variant": "slim",
+      "item": "crossbow",
+      "category": "ranged",
+      "direction": "stow",
+      "durationMs": 200,
+      "frameRange": [
+        1,
+        11
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        0.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        5.050000190734863,
+        -5.322368144989014,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.600000023841858,
+            6.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9396926164627075,
+            0.0,
+            -0.3420202136039734,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            1.1663999557495117,
+            6.328999996185303
+          ],
+          "quaternionWXYZ": [
+            0.9436710476875305,
+            0.0,
+            -0.33088505268096924,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.8192000389099121,
+            6.111999988555908
+          ],
+          "quaternionWXYZ": [
+            0.9467617273330688,
+            0.0,
+            -0.32193523645401,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.548799991607666,
+            5.942999839782715
+          ],
+          "quaternionWXYZ": [
+            0.9491098523139954,
+            0.0,
+            -0.3149452209472656,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.3456000089645386,
+            5.815999984741211
+          ],
+          "quaternionWXYZ": [
+            0.9508404731750488,
+            0.0,
+            -0.3096809685230255,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.20000000298023224,
+            5.724999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9520626664161682,
+            0.0,
+            -0.3059031069278717,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.10240000486373901,
+            5.664000034332275
+          ],
+          "quaternionWXYZ": [
+            0.9528735280036926,
+            0.0,
+            -0.3033679127693176,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.04320000112056732,
+            5.626999855041504
+          ],
+          "quaternionWXYZ": [
+            0.953361988067627,
+            0.0,
+            -0.3018292486667633,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.012800000607967377,
+            5.607999801635742
+          ],
+          "quaternionWXYZ": [
+            0.9536119103431702,
+            0.0,
+            -0.3010387122631073,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 10,
+          "seconds": 0.18,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.001600000075995922,
+            5.60099983215332
+          ],
+          "quaternionWXYZ": [
+            0.9537038207054138,
+            0.0,
+            -0.30074745416641235,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 11,
+          "seconds": 0.2,
+          "positionBodyLocalUnits": [
+            6.800000190734863,
+            0.0,
+            5.599999904632568
+          ],
+          "quaternionWXYZ": [
+            0.9537169337272644,
+            0.0,
+            -0.30070585012435913,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    },
+    {
+      "scene": "A10_slim_crossbow_draw",
+      "variant": "slim",
+      "item": "crossbow",
+      "category": "ranged",
+      "direction": "draw",
+      "durationMs": 160,
+      "frameRange": [
+        1,
+        9
+      ],
+      "scale": 0.9,
+      "backToHeldRatio": 1.0,
+      "backEndpointBodyLocalUnits": [
+        6.800000190734863,
+        0.0,
+        5.599999904632568
+      ],
+      "heldEndpointBodyLocalUnits": [
+        5.050000190734863,
+        -5.322368144989014,
+        -5.1621880531311035
+      ],
+      "heldEndpointScope": "Pose-guide only. Integration must use live native third-person hand transform.",
+      "samples": [
+        {
+          "frame": 1,
+          "seconds": 0.0,
+          "positionBodyLocalUnits": [
+            5.350000381469727,
+            -4.822368144989014,
+            -4.462188243865967
+          ],
+          "quaternionWXYZ": [
+            0.9987820386886597,
+            0.03487827628850937,
+            0.03487827628850937,
+            0.0012179776094853878
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 2,
+          "seconds": 0.02,
+          "positionBodyLocalUnits": [
+            5.2509765625,
+            -4.987407207489014,
+            -4.69324254989624
+          ],
+          "quaternionWXYZ": [
+            0.9994532465934753,
+            0.023376166820526123,
+            0.023376166820526123,
+            0.000546744093298912
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 3,
+          "seconds": 0.04,
+          "positionBodyLocalUnits": [
+            5.176562786102295,
+            -5.111430644989014,
+            -4.866875648498535
+          ],
+          "quaternionWXYZ": [
+            0.9997831583023071,
+            0.014724033884704113,
+            0.014724033884704113,
+            0.00021684418607037514
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 4,
+          "seconds": 0.06,
+          "positionBodyLocalUnits": [
+            5.123242378234863,
+            -5.200297832489014,
+            -4.9912896156311035
+          ],
+          "quaternionWXYZ": [
+            0.9999274015426636,
+            0.008521740324795246,
+            0.008521740324795246,
+            7.262532744789496e-05
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 5,
+          "seconds": 0.08,
+          "positionBodyLocalUnits": [
+            5.087500095367432,
+            -5.259868144989014,
+            -5.074687957763672
+          ],
+          "quaternionWXYZ": [
+            0.9999809265136719,
+            0.004363243002444506,
+            0.004363243002444506,
+            1.9038250684388913e-05
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 6,
+          "seconds": 0.1,
+          "positionBodyLocalUnits": [
+            5.065820693969727,
+            -5.296000957489014,
+            -5.125274181365967
+          ],
+          "quaternionWXYZ": [
+            0.9999966621398926,
+            0.0018408257747069001,
+            0.0018408257747069001,
+            3.3886506116687087e-06
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 7,
+          "seconds": 0.12,
+          "positionBodyLocalUnits": [
+            5.0546875,
+            -5.314555644989014,
+            -5.15125036239624
+          ],
+          "quaternionWXYZ": [
+            0.9999997615814209,
+            0.0005453824414871633,
+            0.0005453824414871633,
+            2.974420567625202e-07
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 8,
+          "seconds": 0.14,
+          "positionBodyLocalUnits": [
+            5.050586223602295,
+            -5.321391582489014,
+            -5.160820960998535
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            6.818771362304688e-05,
+            6.818771362304688e-05,
+            4.649564289138652e-09
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        },
+        {
+          "frame": 9,
+          "seconds": 0.16,
+          "positionBodyLocalUnits": [
+            5.050000190734863,
+            -5.322368144989014,
+            -5.1621880531311035
+          ],
+          "quaternionWXYZ": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": 0.9,
+          "visibleItemCount": 1
+        }
+      ]
+    }
+  ],
+  "productionTexturesAdded": 0,
+  "gameIntegrated": false,
+  "gameRuntimeVerified": false
+}

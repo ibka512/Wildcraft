@@ -1,0 +1,556 @@
+{
+  "asset": "S01",
+  "version": "v01",
+  "status": "draft_for_listening_review",
+  "adopted": false,
+  "integrated": false,
+  "sampleRate": 48000,
+  "seed": 6100601,
+  "ffmpeg": "/opt/homebrew/bin/ffmpeg",
+  "silentTailSeconds": 0.018,
+  "masterFormat": "PCM24 mono WAV",
+  "exportFormat": "Ogg Vorbis quality5 mono",
+  "loopCount": 0,
+  "cues": [
+    {
+      "index": 1,
+      "id": "cooking_start",
+      "event": "cooking.start",
+      "title": "料理开始",
+      "group": "料理",
+      "seconds": 0.28,
+      "peakDbfs": -11,
+      "gameVolume": 0.26,
+      "maxDistance": 8,
+      "description": "木柄轻触锅沿，三颗短泡缓落。",
+      "events": [
+        {
+          "kind": "wood",
+          "at": 0.012,
+          "hz": 280,
+          "level": 0.8,
+          "decay": 0.04
+        },
+        {
+          "kind": "ceramic",
+          "at": 0.025,
+          "hz": 790,
+          "level": 0.15,
+          "decay": 0.05
+        },
+        {
+          "kind": "bubble",
+          "at": 0.065,
+          "hz": 380,
+          "level": 0.18,
+          "decay": 0.025
+        },
+        {
+          "kind": "bubble",
+          "at": 0.115,
+          "hz": 295,
+          "level": 0.15,
+          "decay": 0.026
+        },
+        {
+          "kind": "bubble",
+          "at": 0.17,
+          "hz": 240,
+          "level": 0.11,
+          "decay": 0.03
+        }
+      ],
+      "trigger": "CookingPotEntity.tick：有效配方、碗和热源齐备，新一锅首次 progress 0→1。",
+      "exclude": "热源短暂中断后恢复、打开界面、读档恢复、已存在输出，不重新报开始。",
+      "priority": 2
+    },
+    {
+      "index": 2,
+      "id": "cooking_complete",
+      "event": "cooking.complete",
+      "title": "料理完成",
+      "group": "料理",
+      "seconds": 0.46,
+      "peakDbfs": -9.5,
+      "gameVolume": 0.3,
+      "maxDistance": 10,
+      "description": "碗沿轻碰与温和木托，尾音短而温暖。",
+      "events": [
+        {
+          "kind": "wood",
+          "at": 0.012,
+          "hz": 250,
+          "level": 0.5,
+          "decay": 0.04
+        },
+        {
+          "kind": "ceramic",
+          "at": 0.025,
+          "hz": 830,
+          "level": 0.65,
+          "decay": 0.09
+        },
+        {
+          "kind": "wood",
+          "at": 0.125,
+          "hz": 340,
+          "level": 0.28,
+          "decay": 0.045
+        },
+        {
+          "kind": "ceramic",
+          "at": 0.145,
+          "hz": 1030,
+          "level": 0.53,
+          "decay": 0.105
+        },
+        {
+          "kind": "air",
+          "at": 0.08,
+          "hz": 0,
+          "level": 0.025,
+          "decay": 0.06,
+          "lo": 240,
+          "hi": 1700
+        }
+      ],
+      "trigger": "CookingPotEntity.tick：items[4] 写入成品且食材与碗扣除的真实完成事务。",
+      "exclude": "只进度到头但未提交、领取已有料理、载入已有输出不播放。",
+      "priority": 3
+    },
+    {
+      "index": 3,
+      "id": "charger_start",
+      "event": "charger.start",
+      "title": "开始充电",
+      "group": "能源",
+      "seconds": 0.24,
+      "peakDbfs": -11,
+      "gameVolume": 0.22,
+      "maxDistance": 6,
+      "description": "铜接点扣合，低沉能量短暂升起。",
+      "events": [
+        {
+          "kind": "latch",
+          "at": 0.01,
+          "hz": 490,
+          "level": 0.7,
+          "decay": 0.025
+        },
+        {
+          "kind": "copper",
+          "at": 0.03,
+          "hz": 640,
+          "level": 0.28,
+          "decay": 0.06
+        },
+        {
+          "kind": "motor",
+          "at": 0.04,
+          "hz": 140,
+          "level": 0.16,
+          "decay": 0.07,
+          "endHz": 260
+        }
+      ],
+      "trigger": "ChargerEntity.tick：Batteries.charge 返回正值，当前电池会话首次实际注入。",
+      "exclude": "插入但无源、等待轮流供电、读档、短暂零分配、仅状态2同步，不重复。",
+      "priority": 2
+    },
+    {
+      "index": 4,
+      "id": "charger_full",
+      "event": "charger.full",
+      "title": "电池充满",
+      "group": "能源",
+      "seconds": 0.35,
+      "peakDbfs": -10,
+      "gameVolume": 0.25,
+      "maxDistance": 8,
+      "description": "两个干净铜点，第二下更轻。",
+      "events": [
+        {
+          "kind": "copper",
+          "at": 0.016,
+          "hz": 980,
+          "level": 0.7,
+          "decay": 0.07
+        },
+        {
+          "kind": "latch",
+          "at": 0.026,
+          "hz": 370,
+          "level": 0.21,
+          "decay": 0.024
+        },
+        {
+          "kind": "copper",
+          "at": 0.115,
+          "hz": 1170,
+          "level": 0.38,
+          "decay": 0.075
+        }
+      ],
+      "trigger": "ChargerEntity.tick：同一次成功充电前余量<容量，之后余量==容量。",
+      "exclude": "原已满电池插入/载入不播放；同事务开始并充满时只播充满。",
+      "priority": 3
+    },
+    {
+      "index": 5,
+      "id": "mechanic_install",
+      "event": "mechanic.install",
+      "title": "安装部件",
+      "group": "机械",
+      "seconds": 0.18,
+      "peakDbfs": -9.5,
+      "gameVolume": 0.3,
+      "maxDistance": 8,
+      "description": "木框与金属锁扣收紧，两下接成一次。",
+      "events": [
+        {
+          "kind": "wood",
+          "at": 0.012,
+          "hz": 210,
+          "level": 0.68,
+          "decay": 0.035
+        },
+        {
+          "kind": "latch",
+          "at": 0.03,
+          "hz": 520,
+          "level": 0.67,
+          "decay": 0.036
+        },
+        {
+          "kind": "copper",
+          "at": 0.04,
+          "hz": 940,
+          "level": 0.12,
+          "decay": 0.025
+        }
+      ],
+      "trigger": "MachineEntity.install 返回 true，物品转移和节点同步成功之后。",
+      "exclude": "安装失败、空壳拒绝、节点被占用、单纯预览不播放。",
+      "priority": 4
+    },
+    {
+      "index": 6,
+      "id": "mechanic_remove",
+      "event": "mechanic.remove",
+      "title": "拆卸部件",
+      "group": "机械",
+      "seconds": 0.22,
+      "peakDbfs": -10.5,
+      "gameVolume": 0.27,
+      "maxDistance": 8,
+      "description": "轻擦后低一档松扣，与安装声音成对。",
+      "events": [
+        {
+          "kind": "air",
+          "at": 0.008,
+          "hz": 0,
+          "level": 0.06,
+          "decay": 0.045,
+          "lo": 500,
+          "hi": 2400
+        },
+        {
+          "kind": "latch",
+          "at": 0.045,
+          "hz": 420,
+          "level": 0.62,
+          "decay": 0.038
+        },
+        {
+          "kind": "wood",
+          "at": 0.085,
+          "hz": 175,
+          "level": 0.5,
+          "decay": 0.04
+        }
+      ],
+      "trigger": "MachineEntity.recover 返回 true，回收完成并清空节点之后。",
+      "exclude": "背包不足、运行中拒绝、燃烧火箭拒绝、主体回收暂用原版物品行为。",
+      "priority": 4
+    },
+    {
+      "index": 7,
+      "id": "mechanic_start",
+      "event": "mechanic.start",
+      "title": "机械开始工作",
+      "group": "机械",
+      "seconds": 0.34,
+      "peakDbfs": -11,
+      "gameVolume": 0.24,
+      "maxDistance": 10,
+      "description": "锁扣轻响，短轴转动升起后迅速收尾。",
+      "events": [
+        {
+          "kind": "latch",
+          "at": 0.012,
+          "hz": 310,
+          "level": 0.55,
+          "decay": 0.035
+        },
+        {
+          "kind": "motor",
+          "at": 0.03,
+          "hz": 105,
+          "level": 0.37,
+          "decay": 0.1,
+          "endHz": 310
+        },
+        {
+          "kind": "air",
+          "at": 0.035,
+          "hz": 0,
+          "level": 0.032,
+          "decay": 0.08,
+          "lo": 170,
+          "hi": 1900
+        }
+      ],
+      "trigger": "MachineEntity.tick：有效提交后，供能风扇/轮子/稳定器位(kind 1/6/7)由无工作转为工作；连续2世界刻确认。",
+      "exclude": "仅 enabled=true、被动翼/浮体、弹簧单刻冲量、火箭点火、客户端初见实体都不触发。",
+      "priority": 2
+    },
+    {
+      "index": 8,
+      "id": "mechanic_stop",
+      "event": "mechanic.stop",
+      "title": "机械停止工作",
+      "group": "机械",
+      "seconds": 0.27,
+      "peakDbfs": -11.5,
+      "gameVolume": 0.22,
+      "maxDistance": 10,
+      "description": "低轴声降落，柔和末端扣合。",
+      "events": [
+        {
+          "kind": "motor",
+          "at": 0.008,
+          "hz": 240,
+          "level": 0.3,
+          "decay": 0.065,
+          "endHz": 55
+        },
+        {
+          "kind": "latch",
+          "at": 0.1,
+          "hz": 250,
+          "level": 0.65,
+          "decay": 0.04
+        },
+        {
+          "kind": "wood",
+          "at": 0.13,
+          "hz": 165,
+          "level": 0.2,
+          "decay": 0.03
+        }
+      ],
+      "trigger": "有效提交的供能工作位由有变无，连续4世界刻确认；明确关机导致停止可立即确认。",
+      "exclude": "仅轮子离地瞬变、短暂供电抖动、读档或卸载无告别提示音；已停时再关机不播放。",
+      "priority": 2
+    },
+    {
+      "index": 9,
+      "id": "fabricator_start",
+      "event": "fabricator.start",
+      "title": "制造开始",
+      "group": "制造",
+      "seconds": 0.38,
+      "peakDbfs": -10.5,
+      "gameVolume": 0.26,
+      "maxDistance": 10,
+      "description": "三段短棘轮与箱体共鸣，不持续嗡响。",
+      "events": [
+        {
+          "kind": "wood",
+          "at": 0.012,
+          "hz": 180,
+          "level": 0.4,
+          "decay": 0.05
+        },
+        {
+          "kind": "latch",
+          "at": 0.025,
+          "hz": 440,
+          "level": 0.65,
+          "decay": 0.025
+        },
+        {
+          "kind": "latch",
+          "at": 0.082,
+          "hz": 570,
+          "level": 0.53,
+          "decay": 0.022
+        },
+        {
+          "kind": "latch",
+          "at": 0.145,
+          "hz": 480,
+          "level": 0.4,
+          "decay": 0.025
+        },
+        {
+          "kind": "motor",
+          "at": 0.11,
+          "hz": 115,
+          "level": 0.18,
+          "decay": 0.065,
+          "endHz": 190
+        }
+      ],
+      "trigger": "FabricatorEntity.start 返回 true，铜锭/红石扣除且 pending 记录真实写入之后。",
+      "exclude": "按钮点击但被拒、读档恢复未完工、菜单开启不播放。",
+      "priority": 2
+    },
+    {
+      "index": 10,
+      "id": "fabricator_complete",
+      "event": "fabricator.complete",
+      "title": "制造完成",
+      "group": "制造",
+      "seconds": 0.48,
+      "peakDbfs": -9,
+      "gameVolume": 0.3,
+      "maxDistance": 12,
+      "description": "箱体轻落锁，出口铜件两下清晰落位。",
+      "events": [
+        {
+          "kind": "wood",
+          "at": 0.013,
+          "hz": 210,
+          "level": 0.47,
+          "decay": 0.065
+        },
+        {
+          "kind": "latch",
+          "at": 0.025,
+          "hz": 380,
+          "level": 0.54,
+          "decay": 0.04
+        },
+        {
+          "kind": "copper",
+          "at": 0.065,
+          "hz": 760,
+          "level": 0.5,
+          "decay": 0.09
+        },
+        {
+          "kind": "latch",
+          "at": 0.17,
+          "hz": 570,
+          "level": 0.34,
+          "decay": 0.035
+        },
+        {
+          "kind": "copper",
+          "at": 0.195,
+          "hz": 1280,
+          "level": 0.29,
+          "decay": 0.105
+        }
+      ],
+      "trigger": "FabricatorEntity.tick：输出槽空时 pending 写入 items[2]，pending 清空的真实事务。",
+      "exclude": "进度到100但输出堵塞不能播；载入已有输出和取走输出不播。",
+      "priority": 3
+    },
+    {
+      "index": 11,
+      "id": "fuse_join",
+      "event": "fuse.join",
+      "title": "融合成功",
+      "group": "Fuse",
+      "seconds": 0.3,
+      "peakDbfs": -9.5,
+      "gameVolume": 0.3,
+      "maxDistance": 8,
+      "description": "两种材质向内扣合，短小连接余响。",
+      "events": [
+        {
+          "kind": "wood",
+          "at": 0.012,
+          "hz": 230,
+          "level": 0.58,
+          "decay": 0.04
+        },
+        {
+          "kind": "air",
+          "at": 0.02,
+          "hz": 0,
+          "level": 0.044,
+          "decay": 0.038,
+          "lo": 400,
+          "hi": 2600
+        },
+        {
+          "kind": "latch",
+          "at": 0.055,
+          "hz": 700,
+          "level": 0.57,
+          "decay": 0.046
+        },
+        {
+          "kind": "copper",
+          "at": 0.074,
+          "hz": 1450,
+          "level": 0.13,
+          "decay": 0.065
+        }
+      ],
+      "trigger": "FusionActions.fuse 实际完成且返回 true 后；与F03-04融合内收粒子共享确认事件。",
+      "exclude": "按V、失败、物品VIEW恢复、次数变化、重复结果包都不播放。",
+      "priority": 4
+    },
+    {
+      "index": 12,
+      "id": "fuse_split",
+      "event": "fuse.split",
+      "title": "拆分成功",
+      "group": "Fuse",
+      "seconds": 0.3,
+      "peakDbfs": -10,
+      "gameVolume": 0.28,
+      "maxDistance": 8,
+      "description": "先松开高扣，再落下低木点，外散释放。",
+      "events": [
+        {
+          "kind": "latch",
+          "at": 0.015,
+          "hz": 660,
+          "level": 0.5,
+          "decay": 0.035
+        },
+        {
+          "kind": "air",
+          "at": 0.035,
+          "hz": 0,
+          "level": 0.037,
+          "decay": 0.06,
+          "lo": 350,
+          "hi": 2400
+        },
+        {
+          "kind": "wood",
+          "at": 0.095,
+          "hz": 210,
+          "level": 0.62,
+          "decay": 0.047
+        },
+        {
+          "kind": "copper",
+          "at": 0.11,
+          "hz": 1050,
+          "level": 0.11,
+          "decay": 0.06
+        }
+      ],
+      "trigger": "FusionActions.split 材料真实回收并移除融合数据且返回 true 后；与F03-04外散粒子共事件。",
+      "exclude": "按Shift+V、背包不足、无融合材料、重复包或读档都不播放。",
+      "priority": 4
+    }
+  ]
+}

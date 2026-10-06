@@ -1,0 +1,69 @@
+{
+  "asset": "F04-01",
+  "date": "2026-10-05",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "battery-atlas-32",
+      "size": [
+        32,
+        32
+      ],
+      "sourceLayers": 2,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 18,
+      "pixelHash": "fnv1a64:3341a075d12c9215",
+      "sourcePngIdentity": true,
+      "matchesAuthoredPixels": true,
+      "pngSha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba",
+      "sourceSha256": "6acf87c8f1fec53837648b8facf6050e67a8a042a17848036a88eeb9c9d530e6"
+    },
+    {
+      "name": "battery-item-32",
+      "size": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 14,
+      "pixelHash": "fnv1a64:c4de5cafbc993a3e",
+      "sourcePngIdentity": true,
+      "matchesAuthoredPixels": true,
+      "pngSha256": "f2168e7502e01a02502e514a433b759c9145daee6835b028d2d3bacaf25f0a67",
+      "sourceSha256": "aa70884b3521540e05c43aec46484178419e8d62229781faf785302938bf4842"
+    },
+    {
+      "name": "battery-item-16",
+      "size": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "opaqueColors": 13,
+      "pixelHash": "fnv1a64:2e4d5ca87e74cbb5",
+      "sourcePngIdentity": true,
+      "matchesAuthoredPixels": true,
+      "pngSha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f",
+      "sourceSha256": "8ca7a00aa5ec07f914d0f8c13f02aee9241c0d493c3a1772c8c13401eb24ad73"
+    }
+  ],
+  "modelCuboids": 16,
+  "dynamicWindowQuads": 3,
+  "allUVsOpaqueAndInBounds": true,
+  "envelopeChecked": true,
+  "embeddedBlockbenchTextureIdentity": true,
+  "blockbenchOpened": false,
+  "gameIntegrated": false,
+  "adopted": false
+}

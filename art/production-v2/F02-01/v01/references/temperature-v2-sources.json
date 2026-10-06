@@ -1,0 +1,26 @@
+[
+  {
+    "original": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/ambient-temperature-icon-v2/deliverable/ambient-temperature-color-16.png",
+    "copied": "exports/ambient-temperature-color-16.png",
+    "sha256": "5586acb51dd6c19823181141c6ee7fee5e63413aad184401f204895412337ee2",
+    "status": "温度v2仍待审，原件未修改"
+  },
+  {
+    "original": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/ambient-temperature-icon-v2/deliverable/ambient-temperature-color-16.aseprite",
+    "copied": "source/ambient-temperature-color-16.aseprite",
+    "sha256": "e1952b220a839fd5dd6db2a321582f034f4cf0c74ba50c2462c74a0a7ecb1db9",
+    "status": "温度v2仍待审，原件未修改"
+  },
+  {
+    "original": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/ambient-temperature-icon-v2/deliverable/ambient-temperature-color-32.png",
+    "copied": "exports/ambient-temperature-color-32.png",
+    "sha256": "8995d1a8701c73967cb6506f48daf4111be623cf26dbe4451073b704b747a2bc",
+    "status": "温度v2仍待审，原件未修改"
+  },
+  {
+    "original": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/ambient-temperature-icon-v2/deliverable/ambient-temperature-color-32.aseprite",
+    "copied": "source/ambient-temperature-color-32.aseprite",
+    "sha256": "8220bbd09628fe5c93ce52aa552f8288778d11587a702d8824dc8307997d5a78",
+    "status": "温度v2仍待审，原件未修改"
+  }
+]

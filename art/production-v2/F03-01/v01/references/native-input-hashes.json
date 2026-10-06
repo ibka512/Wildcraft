@@ -1,0 +1,28 @@
+{
+  "archive": "/Volumes/\u4ed5\u4e8b/Wildcraft/\u5f00\u53d1\u73af\u5883/cache/gradle/caches/fabric-loom/26.3/minecraft-client.jar",
+  "archiveSha256": "4508d006323f24fa02876310c192d739af56516eb259000ac50f0909a68c9a2d",
+  "entries": [
+    {
+      "entry": "assets/minecraft/textures/item/arrow.png",
+      "sha256": "fe76b2e0c79e09ddd037111cfc1d0510e1e13f2c2ff71bbf23e9c48b98d9030c"
+    },
+    {
+      "entry": "assets/minecraft/textures/item/diamond.png",
+      "sha256": "fd11635ec666c3febb9e6dd6d3ec49cdfb4d16a2a1d595ebd10e56b302417d08"
+    },
+    {
+      "entry": "assets/minecraft/textures/item/feather.png",
+      "sha256": "36e6f12de8ddabd5c1f58c2b99feb2be4f1a13a46a74525e68a06a3e7cf88cd1"
+    },
+    {
+      "entry": "assets/minecraft/textures/block/stone.png",
+      "sha256": "b5e10adc72442bfb257ce7ba0b9bbe36475a0c8cdfec89b80dc9517203ff3e9f"
+    },
+    {
+      "entry": "assets/minecraft/textures/entity/projectiles/arrow.png",
+      "sha256": "4020078eead4776e857ca87090cdfff68261fdfab3c542807685f23007e39f67"
+    }
+  ],
+  "rawFilesCopied": false,
+  "approximation": "generated items one-pixel extrusion; cube per-face native pixels; not game extraction"
+}

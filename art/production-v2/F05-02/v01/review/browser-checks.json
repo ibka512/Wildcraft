@@ -1,0 +1,250 @@
+{
+  "asset": "F05-02",
+  "allPassed": true,
+  "uiNodeCases": [
+    {
+      "angle": 0,
+      "node": -1,
+      "visibleFaces": 83,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": false,
+      "depthTest": true,
+      "fit": {
+        "scale": 32.608194777771985,
+        "cx": -1.2821464844816988,
+        "cy": 3.129593074731072
+      },
+      "drawnPixels": 109803,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 翼面本体 · 共用纹理图集"
+    },
+    {
+      "angle": 0,
+      "node": 0,
+      "visibleFaces": 288,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": true,
+      "depthTest": true,
+      "fit": {
+        "scale": 13.225468296519256,
+        "cx": 0,
+        "cy": -3.342495570370006
+      },
+      "drawnPixels": 102373,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 顶节点 + 已采用机体 · 共用纹理图集"
+    },
+    {
+      "angle": 0,
+      "node": 1,
+      "visibleFaces": 288,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": true,
+      "depthTest": true,
+      "fit": {
+        "scale": 13.225468296519256,
+        "cx": 0,
+        "cy": -3.342495570370006
+      },
+      "drawnPixels": 102373,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 底节点 + 已采用机体 · 共用纹理图集"
+    },
+    {
+      "angle": 0,
+      "node": 2,
+      "visibleFaces": 289,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": true,
+      "depthTest": true,
+      "fit": {
+        "scale": 12.411018731393455,
+        "cx": 0.012484604010969846,
+        "cy": -4.310060942731011
+      },
+      "drawnPixels": 100170,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 后节点 + 已采用机体 · 共用纹理图集"
+    },
+    {
+      "angle": 0,
+      "node": 3,
+      "visibleFaces": 287,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": true,
+      "depthTest": true,
+      "fit": {
+        "scale": 12.666246392123337,
+        "cx": -0.012484604010969846,
+        "cy": -2.6915273387476653
+      },
+      "drawnPixels": 103318,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 前节点 + 已采用机体 · 共用纹理图集"
+    },
+    {
+      "angle": 0,
+      "node": 4,
+      "visibleFaces": 289,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": true,
+      "depthTest": true,
+      "fit": {
+        "scale": 13.225468296519256,
+        "cx": -3.083913089640255,
+        "cy": -3.342495570370006
+      },
+      "drawnPixels": 118645,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 左节点 + 已采用机体 · 共用纹理图集"
+    },
+    {
+      "angle": 0,
+      "node": 5,
+      "visibleFaces": 287,
+      "wingParts": 28,
+      "movingParts": 0,
+      "fixedParts": 0,
+      "referenceBody": true,
+      "depthTest": true,
+      "fit": {
+        "scale": 13.225468296519256,
+        "cx": 3.083913089640255,
+        "cy": -3.342495570370006
+      },
+      "drawnPixels": 118270,
+      "glError": 0,
+      "info": "28个固定部件 · 原始比例 · 右节点 + 已采用机体 · 共用纹理图集"
+    }
+  ],
+  "rotationCases": [
+    {
+      "yaw": -150,
+      "pitch": -60,
+      "visibleFaces": 85,
+      "depthTest": true
+    },
+    {
+      "yaw": -150,
+      "pitch": 0,
+      "visibleFaces": 57,
+      "depthTest": true
+    },
+    {
+      "yaw": -150,
+      "pitch": 60,
+      "visibleFaces": 85,
+      "depthTest": true
+    },
+    {
+      "yaw": -60,
+      "pitch": -60,
+      "visibleFaces": 83,
+      "depthTest": true
+    },
+    {
+      "yaw": -60,
+      "pitch": 0,
+      "visibleFaces": 55,
+      "depthTest": true
+    },
+    {
+      "yaw": -60,
+      "pitch": 60,
+      "visibleFaces": 83,
+      "depthTest": true
+    },
+    {
+      "yaw": 60,
+      "pitch": -60,
+      "visibleFaces": 83,
+      "depthTest": true
+    },
+    {
+      "yaw": 60,
+      "pitch": 0,
+      "visibleFaces": 55,
+      "depthTest": true
+    },
+    {
+      "yaw": 60,
+      "pitch": 60,
+      "visibleFaces": 83,
+      "depthTest": true
+    },
+    {
+      "yaw": 150,
+      "pitch": -60,
+      "visibleFaces": 85,
+      "depthTest": true
+    },
+    {
+      "yaw": 150,
+      "pitch": 0,
+      "visibleFaces": 57,
+      "depthTest": true
+    },
+    {
+      "yaw": 150,
+      "pitch": 60,
+      "visibleFaces": 85,
+      "depthTest": true
+    }
+  ],
+  "responsiveLayoutCases": [
+    {
+      "width": 320,
+      "documentWidth": 305,
+      "liveWidth": 239
+    },
+    {
+      "width": 768,
+      "documentWidth": 753,
+      "liveWidth": 687
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1265,
+      "liveWidth": 743.328125
+    }
+  ],
+  "passiveStatusDoesNotAnimate": true,
+  "reset": {
+    "node": "-1",
+    "yaw": "-25",
+    "pitch": "50",
+    "active": false
+  },
+  "gameIntegrated": false,
+  "finalNativeIconCases": [
+    {
+      "name": "wing-item-32.png",
+      "size": [
+        32,
+        32
+      ],
+      "pixelHash": "fnv1a64:6bb7562499767b35"
+    },
+    {
+      "name": "wing-item-16.png",
+      "size": [
+        16,
+        16
+      ],
+      "pixelHash": "fnv1a64:048f684de21e1890"
+    }
+  ],
+  "finalPreviewRebuilt": true
+}

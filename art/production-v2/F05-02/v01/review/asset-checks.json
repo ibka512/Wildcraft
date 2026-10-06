@@ -1,0 +1,70 @@
+{
+  "asset": "F05-02",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "wing-atlas-128x64",
+      "nativeSize": [
+        128,
+        64
+      ],
+      "sourceLayers": 2,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:b94d947bc387faea",
+      "visibleColors": 69,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 96
+    },
+    {
+      "name": "wing-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:6bb7562499767b35",
+      "visibleColors": 19,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 600
+    },
+    {
+      "name": "wing-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:048f684de21e1890",
+      "visibleColors": 17,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 151
+    }
+  ],
+  "atlasCopiedNativePixels": 8192,
+  "atlasNewPaintedPixels": 0,
+  "machine64RegionExact": true,
+  "paragliderFour32RegionsExact": true,
+  "meshParts": 28,
+  "fixedOnly": true,
+  "meshFaceChecks": 168,
+  "outwardMeshWinding": true,
+  "prototypeEnvelopePreservedExceptExplicitContactDepth": 0.04,
+  "blockbenchJsonStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "gameIntegrated": false,
+  "javaAndDev14Unchanged": true
+}

@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-05",
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "MachineRenderer.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "BatteryData.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "BatteryItem.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "ChargerScreen.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "references/battery-full-16.png preserved",
+      "passed": true
+    },
+    {
+      "name": "references/battery-full-32.png preserved",
+      "passed": true
+    },
+    {
+      "name": "references/battery-empty-16.png preserved",
+      "passed": true
+    },
+    {
+      "name": "references/battery-empty-32.png preserved",
+      "passed": true
+    },
+    {
+      "name": "references/energy-regions.json preserved",
+      "passed": true
+    },
+    {
+      "name": "dev14 package unchanged",
+      "passed": true
+    },
+    {
+      "name": "asset-checks.json passed",
+      "passed": true
+    },
+    {
+      "name": "blender-source-checks.json passed",
+      "passed": true
+    },
+    {
+      "name": "browser-verification.json passed",
+      "passed": true
+    },
+    {
+      "name": "F01-04 adoption and hashes",
+      "passed": true
+    },
+    {
+      "name": "3 native PNG candidates",
+      "passed": true
+    },
+    {
+      "name": "3 Aseprite sources",
+      "passed": true
+    },
+    {
+      "name": "fixed shell count",
+      "passed": true
+    },
+    {
+      "name": "held/ground/fixed 1 to 1 scale",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/battery-review.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/battery-v01.blend",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/battery-v01.bbmodel",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/battery-static-model.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/battery-dynamic-windows.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/battery-atlas-32.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/battery-atlas-32.aseprite",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/battery-item-32.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/battery-item-32.aseprite",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/battery-item-16.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/battery-item-16.aseprite",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/battery-item-energy-regions.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/geometry-and-uv.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/uv-regions.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/preview.html",
+      "passed": true
+    },
+    {
+      "name": "README.md link brief.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link integration-map.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link verification.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link manifest.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link references/battery-concept-v01.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link references/imagegen-prompt.md",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/asset-checks.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/blender-source-checks.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/browser-verification.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/package-verification.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link manifest.json",
+      "passed": true
+    }
+  ],
+  "adopted": false,
+  "integrated": false
+}

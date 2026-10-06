@@ -1,0 +1,42 @@
+{
+  "asset": "F03-02",
+  "size": [
+    64,
+    32
+  ],
+  "regions": [
+    {
+      "name": "32px 完整融合符号",
+      "source": "fuse-status-32.png",
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "16px 完整融合符号",
+      "source": "fuse-status-16.png",
+      "x": 32,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "5px 槽位连接角标",
+      "source": "fuse-corner-5.png",
+      "x": 48,
+      "y": 0,
+      "width": 5,
+      "height": 5
+    }
+  ],
+  "filter": "nearest",
+  "mipmaps": false,
+  "adopted": true,
+  "integrated": false,
+  "version": "v01",
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项",
+  "gameRuntimeVerified": false
+}

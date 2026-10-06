@@ -1,0 +1,70 @@
+{
+  "asset": "F05-04",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": {
+    "loaded": 53,
+    "spent": 68
+  },
+  "hiddenAdoptedReferenceMeshes": 68,
+  "packedAtlas": [
+    128,
+    64
+  ],
+  "actualNodeTransformCases": [
+    {
+      "node": 0,
+      "vertexChecks": 992,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true,
+      "exhaustOutward": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 1,
+      "vertexChecks": 992,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true,
+      "exhaustOutward": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 2,
+      "vertexChecks": 992,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true,
+      "exhaustOutward": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 3,
+      "vertexChecks": 992,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true,
+      "exhaustOutward": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 4,
+      "vertexChecks": 992,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true,
+      "exhaustOutward": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 5,
+      "vertexChecks": 992,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true,
+      "exhaustOutward": true,
+      "thrustOpposite": true
+    }
+  ],
+  "sourceDefaultLoaded": true,
+  "spentAlternativeHidden": true,
+  "reviewNativeFlameHiddenByDefault": true,
+  "noMovingParts": true,
+  "noProductionEmission": true,
+  "gameIntegrated": false
+}

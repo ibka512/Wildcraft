@@ -1,0 +1,223 @@
+{
+  "sourceCoordinateSystem": "X right/Y up/Z back; units 1/16 block",
+  "shoulderPoseYOffset": 2.15,
+  "defaultArmPivotY": 22,
+  "posedShoulderY": 24.15,
+  "armLocalExtent": [
+    -2,
+    10
+  ],
+  "handContactAtLocal": 10,
+  "frameRange": [
+    1,
+    28
+  ],
+  "fps": 30,
+  "keyposes": [
+    {
+      "frame": 1,
+      "stage": "entry-start"
+    },
+    {
+      "frame": 5,
+      "stage": "reach"
+    },
+    {
+      "frame": 10,
+      "stage": "grip"
+    },
+    {
+      "frame": 20,
+      "stage": "steady"
+    },
+    {
+      "frame": 28,
+      "stage": "release-reference"
+    }
+  ],
+  "variants": {
+    "standard": [
+      {
+        "side": "left",
+        "width": 4,
+        "shoulder": [
+          -6,
+          24.15,
+          0
+        ],
+        "gripTarget": [
+          -7.5,
+          31,
+          -7
+        ],
+        "wristTip": [
+          -7.513896942138672,
+          31.06346321105957,
+          -7.064852714538574
+        ],
+        "tipErrorUnits": 0.09179639760676997,
+        "targetDistanceUnits": 9.908203895007855,
+        "blenderQuaternionWXYZ": [
+          0.9196048974990845,
+          0.3841243386268616,
+          -0.08231236040592194,
+          0.0
+        ],
+        "javaPivotUnits": [
+          -6,
+          -0.14999999999999858,
+          0
+        ],
+        "javaHandDirection": [
+          -0.1513897018773931,
+          -0.6913463052400953,
+          -0.7064852754278345
+        ]
+      },
+      {
+        "side": "right",
+        "width": 4,
+        "shoulder": [
+          6,
+          24.15,
+          0
+        ],
+        "gripTarget": [
+          7.5,
+          31,
+          -7
+        ],
+        "wristTip": [
+          7.513896942138672,
+          31.06346321105957,
+          -7.064852714538574
+        ],
+        "tipErrorUnits": 0.09179639760676997,
+        "targetDistanceUnits": 9.908203895007855,
+        "blenderQuaternionWXYZ": [
+          0.9196048974990845,
+          0.3841243386268616,
+          0.08231236040592194,
+          -0.0
+        ],
+        "javaPivotUnits": [
+          6,
+          -0.14999999999999858,
+          0
+        ],
+        "javaHandDirection": [
+          0.1513897018773931,
+          -0.6913463052400953,
+          -0.7064852754278345
+        ]
+      }
+    ],
+    "slim": [
+      {
+        "side": "left",
+        "width": 3,
+        "shoulder": [
+          -5.5,
+          24.15,
+          0
+        ],
+        "gripTarget": [
+          -7.5,
+          31,
+          -7
+        ],
+        "wristTip": [
+          -7.500775337219238,
+          31.002655029296875,
+          -7.002714157104492
+        ],
+        "tipErrorUnits": 0.0038751744681583206,
+        "targetDistanceUnits": 9.996124470265906,
+        "blenderQuaternionWXYZ": [
+          0.9179503321647644,
+          0.38143208622932434,
+          -0.10898058861494064,
+          0.0
+        ],
+        "javaPivotUnits": [
+          -5.5,
+          -0.14999999999999858,
+          0
+        ],
+        "javaHandDirection": [
+          -0.2000775450759875,
+          -0.6852655918852574,
+          -0.7002714077659562
+        ]
+      },
+      {
+        "side": "right",
+        "width": 3,
+        "shoulder": [
+          5.5,
+          24.15,
+          0
+        ],
+        "gripTarget": [
+          7.5,
+          31,
+          -7
+        ],
+        "wristTip": [
+          7.500775337219238,
+          31.002655029296875,
+          -7.002714157104492
+        ],
+        "tipErrorUnits": 0.0038751744681583206,
+        "targetDistanceUnits": 9.996124470265906,
+        "blenderQuaternionWXYZ": [
+          0.9179503321647644,
+          0.38143208622932434,
+          0.10898058861494064,
+          -0.0
+        ],
+        "javaPivotUnits": [
+          5.5,
+          -0.14999999999999858,
+          0
+        ],
+        "javaHandDirection": [
+          0.2000775450759875,
+          -0.6852655918852574,
+          -0.7002714077659562
+        ]
+      }
+    ]
+  },
+  "gameIntegrated": false,
+  "note": "Shoulder offset is visual arm-part translation only; body, camera eye and entity location remain unchanged. Original skin/sleeve geometry must follow this transform on integration.",
+  "firstPerson": {
+    "translationFromWorldPose": [
+      0,
+      -6,
+      -5
+    ],
+    "cameraEyeY": 29,
+    "referenceVerticalFovDegrees": 70,
+    "referenceAspect": "16:9",
+    "drawnParts": [
+      "both arms",
+      "supports",
+      "grip"
+    ],
+    "centerSafeRectNormalized": [
+      0.35,
+      0.3,
+      0.65,
+      0.6
+    ],
+    "note": "Reference view model keeps native game camera options unchanged; offset is for visual design only, not movement/collision. First-person hands currently hidden in client and need renderer work."
+  },
+  "integrationNotes": {
+    "restore": "Always derive pose from current vanilla setupAnim result; never retain previous frame offsets. Restore arms and skin sleeves on landing, cancel, death, spectator/non-player render or equipment change.",
+    "gameplayTiming": "Keyframes are visual reference only. Do not delay current gliding activation, collision or stamina consumption. A10 canopy folding and extraction are out of scope.",
+    "skin": "Guide materials are not a player skin. Use actual player skin and sleeve UV at integration.",
+    "firstPersonView": "Only reference 70-degree vertical FOV and 16:9 are verified here. Existing game FOV options and other aspects require in-game checks."
+  },
+  "rotationNote": "Blender quaternion is WXYZ in Blender coordinates. For Java ModelPart derive rotation from javaHandDirection and validate the renderer rotation order; do not paste Blender quaternions or assume equivalent Euler angles."
+}

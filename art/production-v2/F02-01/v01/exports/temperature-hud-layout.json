@@ -1,0 +1,1588 @@
+{
+  "asset": "F02-01",
+  "version": "v01",
+  "date": "2026-10-05",
+  "status": "已采用，未接入",
+  "adopted": true,
+  "integrated": false,
+  "units": "Minecraft logical GUI pixels",
+  "meaning": "环境冷热等级；不表示摄氏度或人物体温",
+  "icon": {
+    "runtimeSize": 16,
+    "referenceSize": 32,
+    "staticWarmTopCoolBottom": true,
+    "provenance": "temperature-v2-sources.json",
+    "previousDraftAdopted": true,
+    "files": [
+      "ambient-temperature-color-16.png",
+      "ambient-temperature-color-32.png"
+    ]
+  },
+  "rules": {
+    "iconX": 12,
+    "iconOffsetY": -3,
+    "iconSize": 16,
+    "gaugeX": 32,
+    "gaugeOffsetY": -2,
+    "gaugeWidth": 5,
+    "gaugeStep": 2,
+    "gaugeBarHeight": 1,
+    "labelX": 44,
+    "labelOffsetY": 0,
+    "backgroundX": 10,
+    "backgroundOffsetY": -3,
+    "backgroundWidth": 104,
+    "backgroundHeight": 16
+  },
+  "states": [
+    {
+      "key": "extreme_cold",
+      "zh": "极冷",
+      "en": "Very cold",
+      "color": "#7faecd",
+      "index": 0,
+      "visualRowFromTop": 6,
+      "reviewExampleValue": -2.8
+    },
+    {
+      "key": "cold",
+      "zh": "寒冷",
+      "en": "Cold",
+      "color": "#a4c8dd",
+      "index": 1,
+      "visualRowFromTop": 5,
+      "reviewExampleValue": -1.8
+    },
+    {
+      "key": "cool",
+      "zh": "偏冷",
+      "en": "Cool",
+      "color": "#bfd6da",
+      "index": 2,
+      "visualRowFromTop": 4,
+      "reviewExampleValue": -0.8
+    },
+    {
+      "key": "comfortable",
+      "zh": "舒适",
+      "en": "Comfortable",
+      "color": "#cbd8bd",
+      "index": 3,
+      "visualRowFromTop": 3,
+      "reviewExampleValue": 0
+    },
+    {
+      "key": "warm",
+      "zh": "偏暖",
+      "en": "Warm",
+      "color": "#ddc39a",
+      "index": 4,
+      "visualRowFromTop": 2,
+      "reviewExampleValue": 0.8
+    },
+    {
+      "key": "hot",
+      "zh": "炎热",
+      "en": "Hot",
+      "color": "#e5b37b",
+      "index": 5,
+      "visualRowFromTop": 1,
+      "reviewExampleValue": 1.8
+    },
+    {
+      "key": "extreme_hot",
+      "zh": "极热",
+      "en": "Very hot",
+      "color": "#ef9a66",
+      "index": 6,
+      "visualRowFromTop": 0,
+      "reviewExampleValue": 2.8
+    }
+  ],
+  "gauge": {
+    "top": "extreme_hot",
+    "bottom": "extreme_cold",
+    "current": "白色亮框、左向指示和档位文字",
+    "rendering": "矩形与文字程序化绘制",
+    "runtimeStateTextureCount": 0
+  },
+  "anchor": {
+    "temperatureY": "StaminaHud.heartBottom() + (StaminaHud.showStamina() ? 29 : 5)",
+    "iconY": "temperatureY - 3",
+    "mealStartY": "temperatureY + 14",
+    "showToHideShift": 24,
+    "adoptedMealPositionsChanged": false
+  },
+  "edges": {
+    "reuseExisting": true,
+    "width": 4,
+    "maximumAlpha": 14,
+    "focusDisables": true,
+    "comfortableDisables": true,
+    "optional": true,
+    "coldRgb": "#78acd0",
+    "hotRgb": "#d49a62",
+    "alpha": "round(min(14, abs(displayed)*5)/(matchingFoodLevel+1))",
+    "newShaderCount": 0
+  },
+  "integration": {
+    "approved": false,
+    "temperatureSamplingChanges": false,
+    "smoothingChanges": false,
+    "hysteresisChanges": false,
+    "freezeOrDamageChanges": false,
+    "font": "实机接入时使用原版字体并重新核对文字宽度"
+  },
+  "examples": {
+    "normal": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 104,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 104,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 108,
+            "nameX": 32,
+            "nameY": 108,
+            "levelX": 31,
+            "levelY": 104,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 47,
+        "labelX": 44,
+        "labelY": 50,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 53,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 48,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 50,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 52,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 54,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 56,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 58,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 60,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 47,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 64
+      }
+    },
+    "single": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 1,
+        "height": 16,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 47,
+        "labelX": 44,
+        "labelY": 50,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 53,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 48,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 50,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 52,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 54,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 56,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 58,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 60,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 47,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 64
+      }
+    },
+    "hearts": {
+      "meal": {
+        "aim": {
+          "left": 150,
+          "right": 170,
+          "top": 80,
+          "bottom": 100
+        },
+        "heartBottom": 45,
+        "temperatureY": 74,
+        "startY": 88,
+        "bottom": 134,
+        "mode": "compact",
+        "cols": 2,
+        "rows": 2,
+        "height": 44,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 88,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 90,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 31,
+            "timerY": 98,
+            "nameX": 32,
+            "nameY": 92,
+            "levelX": 31,
+            "levelY": 88,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 71,
+            "y": 88,
+            "width": 53,
+            "height": 20,
+            "iconX": 71,
+            "iconY": 90,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 90,
+            "timerY": 98,
+            "nameX": 91,
+            "nameY": 92,
+            "levelX": 90,
+            "levelY": 88,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 112,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 114,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 31,
+            "timerY": 122,
+            "nameX": 32,
+            "nameY": 116,
+            "levelX": 31,
+            "levelY": 112,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 51,
+        "staminaTrackY": 62
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 71,
+        "labelX": 44,
+        "labelY": 74,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 77,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 72,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 74,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 76,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 78,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 80,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 82,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 84,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 71,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 88
+      }
+    },
+    "hidden": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 26,
+        "startY": 40,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 40,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 40,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 44,
+            "nameX": 32,
+            "nameY": 44,
+            "levelX": 31,
+            "levelY": 40,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 60,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 60,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 64,
+            "nameX": 32,
+            "nameY": 64,
+            "levelX": 31,
+            "levelY": 60,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 80,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 80,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 84,
+            "nameX": 32,
+            "nameY": 84,
+            "levelX": 31,
+            "levelY": 80,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 23,
+        "labelX": 44,
+        "labelY": 26,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 29,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 24,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 26,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 28,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 30,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 32,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 34,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 36,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 23,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 40
+      }
+    },
+    "english": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "Warmth",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "Cooling",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 104,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 104,
+            "name": "Recovery",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 108,
+            "nameX": 32,
+            "nameY": 108,
+            "levelX": 31,
+            "levelY": 104,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "Comfortable",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 47,
+        "labelX": 44,
+        "labelY": 50,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 53,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 48,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 50,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 52,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 54,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 56,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 58,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 60,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 47,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 64
+      }
+    },
+    "short": {
+      "meal": {
+        "aim": {
+          "left": 150,
+          "right": 170,
+          "top": 72,
+          "bottom": 92
+        },
+        "heartBottom": 30,
+        "temperatureY": 59,
+        "startY": 73,
+        "bottom": 118,
+        "mode": "compact",
+        "cols": 2,
+        "rows": 2,
+        "height": 44,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 73,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 75,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 31,
+            "timerY": 83,
+            "nameX": 32,
+            "nameY": 77,
+            "levelX": 31,
+            "levelY": 73,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 71,
+            "y": 73,
+            "width": 53,
+            "height": 20,
+            "iconX": 71,
+            "iconY": 75,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 90,
+            "timerY": 83,
+            "nameX": 91,
+            "nameY": 77,
+            "levelX": 90,
+            "levelY": 73,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 97,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 99,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 31,
+            "timerY": 107,
+            "nameX": 32,
+            "nameY": 101,
+            "levelX": 31,
+            "levelY": 97,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 36,
+        "staminaTrackY": 47
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 56,
+        "labelX": 44,
+        "labelY": 59,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 62,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 57,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 59,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 61,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 63,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 65,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 67,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 69,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 56,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 73
+      }
+    },
+    "focus": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 9,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "0:09",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": true
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 104,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 104,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 108,
+            "nameX": 32,
+            "nameY": 108,
+            "levelX": 31,
+            "levelY": 104,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 47,
+        "labelX": 44,
+        "labelY": 50,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 53,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 48,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 50,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 52,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 54,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 56,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 58,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 60,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 47,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 64
+      }
+    },
+    "expired": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 2,
+        "height": 36,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 47,
+        "labelX": 44,
+        "labelY": 50,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 53,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 48,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 50,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 52,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 54,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 56,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 58,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 60,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 47,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 64
+      }
+    },
+    "none": {
+      "meal": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 26,
+        "startY": 40,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 0,
+        "height": 0,
+        "fits": true,
+        "boxes": [],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      },
+      "temperature": {
+        "band": 3,
+        "state": "comfortable",
+        "label": "舒适",
+        "color": "#cbd8bd",
+        "iconX": 12,
+        "iconY": 23,
+        "labelX": 44,
+        "labelY": 26,
+        "activeRow": 3,
+        "marker": {
+          "x": 31,
+          "y": 29,
+          "width": 7,
+          "height": 3
+        },
+        "gauge": [
+          {
+            "band": 6,
+            "x": 32,
+            "y": 24,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ef9a66"
+          },
+          {
+            "band": 5,
+            "x": 32,
+            "y": 26,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#e5b37b"
+          },
+          {
+            "band": 4,
+            "x": 32,
+            "y": 28,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#ddc39a"
+          },
+          {
+            "band": 3,
+            "x": 32,
+            "y": 30,
+            "width": 5,
+            "height": 1,
+            "active": true,
+            "color": "#cbd8bd"
+          },
+          {
+            "band": 2,
+            "x": 32,
+            "y": 32,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#bfd6da"
+          },
+          {
+            "band": 1,
+            "x": 32,
+            "y": 34,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#a4c8dd"
+          },
+          {
+            "band": 0,
+            "x": 32,
+            "y": 36,
+            "width": 5,
+            "height": 1,
+            "active": false,
+            "color": "#7faecd"
+          }
+        ],
+        "box": {
+          "x": 10,
+          "y": 23,
+          "width": 104,
+          "height": 16
+        },
+        "mealStartY": 40
+      }
+    }
+  },
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，你可以继续了"
+}

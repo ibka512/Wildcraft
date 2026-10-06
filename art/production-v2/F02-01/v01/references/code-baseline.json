@@ -1,0 +1,21 @@
+{
+  "version": "dev14",
+  "files": [
+    {
+      "file": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/cooking/MealHud.java",
+      "sha256": "0bf7319bcd486255563887c92c4532369133910d1b50a44f074d5c483726a130"
+    },
+    {
+      "file": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/temperature/TemperatureHud.java",
+      "sha256": "e1fbed4d13f3459bf6a7768258d5ae1efa9275153ba8065474ff8381a85ae01c"
+    },
+    {
+      "file": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/hud/StaminaHud.java",
+      "sha256": "a20caa9536b508ea78d4c1c5489b8eee37d13f1b1613f7c2c40764bf3b8b288a"
+    },
+    {
+      "file": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/temperature/TemperatureRules.java",
+      "sha256": "cb82e0784a1e73a46d93a0578a3bb0d1d6706347667afd40670a5873f8c1479c"
+    }
+  ]
+}

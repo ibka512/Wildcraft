@@ -1,0 +1,51 @@
+[
+  {
+    "id": "compressed",
+    "label": "压缩 · 冷却0",
+    "cooldown": 0,
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "fired",
+    "label": "弹出 · 触发后40刻",
+    "cooldown": 40,
+    "active": true,
+    "ghost": false
+  },
+  {
+    "id": "cooling",
+    "label": "弹出 · 冷却35刻",
+    "cooldown": 35,
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "boundary31",
+    "label": "边界 · 剩余31刻仍弹出",
+    "cooldown": 31,
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "boundary30",
+    "label": "边界 · 剩余30刻回压缩",
+    "cooldown": 30,
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "cooling10",
+    "label": "压缩 · 冷却10刻",
+    "cooldown": 10,
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "ghost",
+    "label": "安装预览 · 始终压缩",
+    "cooldown": 40,
+    "active": true,
+    "ghost": true
+  }
+]

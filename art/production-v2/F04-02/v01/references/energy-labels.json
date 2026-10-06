@@ -1,0 +1,20 @@
+{
+  "zh_cn": {
+    "energy.wildcraft.battery_help": "放入紧邻固定红石块的充电器",
+    "energy.wildcraft.charge": "电量 %s / %s",
+    "energy.wildcraft.status.0": "放入有限电池",
+    "energy.wildcraft.status.1": "需要紧邻固定红石块",
+    "energy.wildcraft.status.2": "充电中",
+    "energy.wildcraft.status.3": "电量已满",
+    "energy.wildcraft.status.4": "等候共享电源"
+  },
+  "en_us": {
+    "energy.wildcraft.battery_help": "Charge beside a fixed redstone block",
+    "energy.wildcraft.charge": "Charge %s / %s",
+    "energy.wildcraft.status.0": "Insert a battery",
+    "energy.wildcraft.status.1": "Place beside a redstone block",
+    "energy.wildcraft.status.2": "Charging",
+    "energy.wildcraft.status.3": "Fully charged",
+    "energy.wildcraft.status.4": "Waiting for shared supply"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "asset": "F03-03",
+  "allPassed": true,
+  "spriteSize": [
+    16,
+    16
+  ],
+  "opaquePixels": 84,
+  "connectedComponents": [
+    40,
+    44
+  ],
+  "colorCount": 6,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "spriteLayers": 2,
+  "atlasLayers": 4,
+  "oldAtlasPixelsUnchangedOutsideNewRegion": true,
+  "newAtlasRegionPixelExact": true,
+  "sourceAndPNGReopenedReadback": [
+    {
+      "asset": "fuse-unavailable-16",
+      "format": "aseprite",
+      "reopened": true,
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-unavailable-16",
+      "format": "png",
+      "reopened": true,
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-shared-atlas-64x32",
+      "format": "aseprite",
+      "reopened": true,
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-shared-atlas-64x32",
+      "format": "png",
+      "reopened": true,
+      "pixelExact": true
+    }
+  ],
+  "native32SpriteCreated": false,
+  "gameIntegrated": false
+}

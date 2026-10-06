@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 0,
+    "layerId": 0,
+    "frame": 0,
+    "celId": 0,
+    "focus": 0,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 1,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": []
+}

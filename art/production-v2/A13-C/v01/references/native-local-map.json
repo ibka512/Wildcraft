@@ -1,0 +1,80 @@
+{
+  "index": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/indexes/26.3-34.json",
+  "indexSha256": "0f026e5396e2d709b3e6d8c7b2cc2fba9e6a7f02b53b632ba051edb1cd362377",
+  "referenceOnly": true,
+  "redistribute": false,
+  "assets": [
+    {
+      "id": "rain1",
+      "assetKey": "minecraft/sounds/ambient/weather/rain1.ogg",
+      "hash": "59d8157fa79a96eb6557e4ff440aa7482edbbd52",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/59/59d8157fa79a96eb6557e4ff440aa7482edbbd52",
+      "sha256": "5cad76e1f62599d1854b840ffeb887809fccb8d70d30f9976e4c1fedb793600c",
+      "bundled": false,
+      "url": "/native/rain1.ogg"
+    },
+    {
+      "id": "rain2",
+      "assetKey": "minecraft/sounds/ambient/weather/rain2.ogg",
+      "hash": "87fe1be2e8238dcf66ed0072cc8115702fe6b108",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/87/87fe1be2e8238dcf66ed0072cc8115702fe6b108",
+      "sha256": "295e4015ee54707145b7f04b65f6b21b476df6841a6c7c28e6d52eb49e2182bc",
+      "bundled": false,
+      "url": "/native/rain2.ogg"
+    },
+    {
+      "id": "snow1",
+      "assetKey": "minecraft/sounds/step/snow1.ogg",
+      "hash": "0ac6bdc2d85025531e84145a64e04b287dabc51a",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/0a/0ac6bdc2d85025531e84145a64e04b287dabc51a",
+      "sha256": "2f24c69e70c814c99f4eecbb12b7b321c18e51af352bcb78b5943e2a2209118f",
+      "bundled": false,
+      "url": "/native/snow1.ogg"
+    },
+    {
+      "id": "snow2",
+      "assetKey": "minecraft/sounds/step/snow2.ogg",
+      "hash": "db2cf4f4cbab91745a4f887cfe5f053d8770398c",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/db/db2cf4f4cbab91745a4f887cfe5f053d8770398c",
+      "sha256": "b1668d69e9a9b4c5cd36374ff89383717f6e3b7a8b55614f91e369c78ad37a19",
+      "bundled": false,
+      "url": "/native/snow2.ogg"
+    },
+    {
+      "id": "bow",
+      "assetKey": "minecraft/sounds/random/bow.ogg",
+      "hash": "4a6c47aa4f8c2cfe3237b250ed19b8714d611fd2",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/4a/4a6c47aa4f8c2cfe3237b250ed19b8714d611fd2",
+      "sha256": "3d983f24930734d6d32428b3b722d688b99475d488ab963f0d61107381d04c4a",
+      "bundled": false,
+      "url": "/native/bow.ogg"
+    },
+    {
+      "id": "bow_hit",
+      "assetKey": "minecraft/sounds/random/bowhit1.ogg",
+      "hash": "8648a8dcbe82c047b60d74783f7b1c9eb5826290",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/86/8648a8dcbe82c047b60d74783f7b1c9eb5826290",
+      "sha256": "2897d44bfcd556bf4a4cc303463ee999ed0ebb22eeef39e754090ec952e3c5a7",
+      "bundled": false,
+      "url": "/native/bow_hit.ogg"
+    },
+    {
+      "id": "hit",
+      "assetKey": "minecraft/sounds/damage/hit1.ogg",
+      "hash": "c43077ac1f9ceda7e9e1c152f839baf207833aa8",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/c4/c43077ac1f9ceda7e9e1c152f839baf207833aa8",
+      "sha256": "d3c5958cbbe957e4c2b33304458663e254e7da8124bce61066c6b4fcd8b4d03c",
+      "bundled": false,
+      "url": "/native/hit.ogg"
+    },
+    {
+      "id": "strong",
+      "assetKey": "minecraft/sounds/entity/player/attack/strong1.ogg",
+      "hash": "999bdf382687457820f934783e6ef38dc01c508b",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/assets/objects/99/999bdf382687457820f934783e6ef38dc01c508b",
+      "sha256": "ea49515b4f731c4864412a2b37a9951cb9f20d06432e4ef212bb93af5cc5398d",
+      "bundled": false,
+      "url": "/native/strong.ogg"
+    }
+  ]
+}

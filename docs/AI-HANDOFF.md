@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-04。当前本机完整游戏版本 **0.1.0-dev.14 / Minecraft 26.3**，完成到 **P9正式Fuse**；P9.1整合也已完成，72服务端/17类客户端通过，见P9.1-SPEC/P9.1-VERIFICATION；下一步R2-PREPARATION。公开main与Release仍dev.7，本次dev.8–dev.14未上传。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
+更新：2026-10-06。当前本机开发版本 **0.1.0-dev.15 / Minecraft 26.3**，完成到 **P9正式Fuse**；P9.1整合也已完成，72服务端/17类客户端通过，见P9.1-SPEC/P9.1-VERIFICATION；下一步R2-PREPARATION。公开main与Release仍dev.7，本次 dev.8–dev.15 未上传。当前分支 feature/second-art 完成 29 项采用美术接入，优先读 [接入说明](SECOND-ART-INTEGRATION.md) 与 [实测记录](SECOND-ART-VERIFICATION.md)。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -53,9 +53,10 @@
 | P8 | 制造机真实输入输出、一次结果、搬运和保存、共享菜单；[合同](P8-SPEC.md) / [验收](P8-VERIFICATION.md) |
 | P9 | 本机dev.14完成，71服务端/16类客户端/双普通客户端及独立服务端；[合同](P9-SPEC.md) / [完整验收](P9-VERIFICATION.md) |
 | P9.1 | 同正式dev.14，72服务端/完整17类客户端组合回归通过；[验收](P9.1-VERIFICATION.md) |
+| 第二批美术 v2 | dev.15 接入 29 项采用资产，F05-10 v02 为当前；[记录](SECOND-ART-VERIFICATION.md) |
 | R2及之后 | 按R2-PREPARATION与路线继续，正式多人局部时间尚未开放 |
 
-当前没有多人林克时间；正式Fuse已完成本机dev.14，P9.1组合也完成，继续R2研究。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风显示隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局后补。没有环形精力样式或雨天攀爬打滑。
+当前没有多人林克时间；正式Fuse已完成本机dev.14，P9.1组合也完成，继续R2研究。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风或鞘翅下改用侧腰布局；五类真实物品仍保持原有尺度和库存归属。没有环形精力样式或雨天攀爬打滑。
 
 ## 固定环境与构建入口
 
@@ -169,3 +170,7 @@ P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复�
 ## 本轮额度停线
 
 2026-10-04最终检测5小时余量3%/周85%，已按≤5%停止。P9和P9.1完整完成；R2候选实验尚未编译/接入/执行，不算通过，下一回先按[R2-CHECKPOINT](R2-CHECKPOINT.md)恢复。没有公开上传、生产依赖或真实存档迁移；正式多人林克时间保持关闭。
+
+## 第二批美术后续入口
+
+运行资源与原件分别在 src/main/resources、art/production-v2；导入工具 tools/import-second-art.py 需要 Pillow，普通构建无需美术编辑器。新增 ArtSnapshot 不保存库存或私有制造结果，既有数据格式不迁移。首次接手先看 SECOND-ART-VERIFICATION 的准确验证范围，再看 R2-CHECKPOINT；R2 候选依然未注册、未验证，不因美术整合而算已完成。

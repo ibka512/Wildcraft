@@ -1,0 +1,85 @@
+{
+  "asset": "A13-C",
+  "version": "v01",
+  "date": "2026-10-06",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "focusFiles": "reuse original OGG and masters unchanged; no new production sound files",
+  "profiles": {
+    "current": {
+      "enter": 0.22,
+      "exit": 0.22
+    },
+    "proposed": {
+      "enter": 0.22,
+      "exit": 0.28
+    }
+  },
+  "recommendedProfile": "proposed",
+  "pitch": 1,
+  "category": "UI (verified local Minecraft26.3 SimpleSoundInstance.forUI)",
+  "spatialAttenuation": false,
+  "loop": false,
+  "focusVoices": 1,
+  "focusReplacement": "retain existing immediate stop of previous focus cue; no pending queue, repeat cooldown or restart on duplicate active sample",
+  "s01Budget": "reuse adopted6 total/2 same event/1 per source, distance and priority unchanged; focus is a separate one-voice UI cue",
+  "otherAudio": "retain native combat, weather and subtitles; no gameplay-side ducking, EQ, master/category override or soundtrack",
+  "transportStopRampMs": 6,
+  "transportScope": "audition player only; not a proposed gameplay change",
+  "referenceSeconds": 5,
+  "enterAt": 1,
+  "exitAt": 3,
+  "referenceMasterGain": 1,
+  "scenarios": [
+    {
+      "id": "quiet",
+      "title": "安静环境",
+      "note": "原进出音量与退出补偿直接对照"
+    },
+    {
+      "id": "rain",
+      "title": "雨中探索",
+      "note": "原版雨声在本机缓存读取；固定参考音量"
+    },
+    {
+      "id": "snow",
+      "title": "雪地行走",
+      "note": "原版雪地脚步参照，不制作持续降雪声"
+    },
+    {
+      "id": "combat",
+      "title": "射箭与受击",
+      "note": "弓、命中、受击、强攻击同场，原版事件保留"
+    },
+    {
+      "id": "machines",
+      "title": "机械／能源并存",
+      "note": "复用S01机械、充电及制造短音，非新增循环声"
+    },
+    {
+      "id": "crowded",
+      "title": "六声预算与专注",
+      "note": "八个S01事件先裁为六声，专注单声仍独立"
+    },
+    {
+      "id": "rain_combat",
+      "title": "雨中战斗与机械",
+      "note": "最拥挤的组合参照；不以数值断言人耳辨识已通过"
+    },
+    {
+      "id": "rapid",
+      "title": "快速进出专注",
+      "note": "0.12秒间隔切换，停止上一段；重复状态不重复提示"
+    }
+  ],
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "acceptedProfile": "proposed",
+  "acceptedVolumes": {
+    "enter": 0.22,
+    "exit": 0.28
+  },
+  "userReviewApproved": true
+}

@@ -1,0 +1,11 @@
+{
+  "asset": "S01",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "scope": "12个原创动作短音及事件/音量/距离/去重方案，12OGG/12母带/36分层，0循环；实际游戏声场与混音待接入验证"
+}

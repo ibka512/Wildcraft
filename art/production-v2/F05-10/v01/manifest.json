@@ -1,0 +1,342 @@
+{
+  "asset": "F05-10",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，代表件安装预览与机械HUD齐全，未接入；B3后全件复核",
+  "adopted": true,
+  "integrated": false,
+  "sourceAssets": [
+    "F04-02",
+    "F05-01",
+    "F05-03",
+    "F05-05"
+  ],
+  "newProductionModels": 0,
+  "newProductionTextures": 0,
+  "newAsepriteDocuments": 0,
+  "reusedPNGIcons": 4,
+  "reusedAsepriteSources": 4,
+  "proceduralGlyphs": 5,
+  "proceduralGlyphNativeSize": [
+    9,
+    9
+  ],
+  "reviewSceneCount": 18,
+  "ghostAlpha": 0.5333333333333333,
+  "nativeIconSizes": [
+    16,
+    32
+  ],
+  "modelScale": 1,
+  "contractCases": 108,
+  "actualBrowserUICases": 108,
+  "finalLayoutCases": 108,
+  "actualDepthComparisonCases": 24,
+  "nativeEnergyMaskCases": 18,
+  "gameTested": false,
+  "B3AllModelsVerified": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3124,
+      "sha256": "c86bfec175c24b4d5260b2dea4236e8ab77ddc9fe8cc5f9ed8e8adbeecd5f840"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 303,
+      "sha256": "24e8b50c41e50b2acb19f5639302221d06a1b580666af7216cc26a03ff51e975"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1347,
+      "sha256": "957614621892028ce85667b2578c37d400a0e50bc50017f9f1fad5a70e90942a"
+    },
+    {
+      "path": "exports/machine-presentation-layout.json",
+      "bytes": 1645,
+      "sha256": "6ac968091605962fa66afa83c3c5511f49bdfe90e00ee79c9acc026a127d907d"
+    },
+    {
+      "path": "exports/machine-state-rules.json",
+      "bytes": 2796,
+      "sha256": "4791907575d681c3cc8783a66499a34484aff4674cdd1662aea9df0a32a5f871"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 4673,
+      "sha256": "65ba5860ef3c313b221e08033c5ba7ef4ebfa4b84774acf8c1c9b1ad1546c9b1"
+    },
+    {
+      "path": "references/F04-02-battery-empty-16.aseprite",
+      "bytes": 444,
+      "sha256": "d91c3b2a40d96f767a3c2cc39c6f3f8b79b23450b43b386f88e57772eb6f396c"
+    },
+    {
+      "path": "references/F04-02-battery-empty-16.png",
+      "bytes": 217,
+      "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7"
+    },
+    {
+      "path": "references/F04-02-battery-empty-32.aseprite",
+      "bytes": 557,
+      "sha256": "486cf7867897100a0fd893667f67e640f6c981d5b702337f2db21b3109a76dd6"
+    },
+    {
+      "path": "references/F04-02-battery-empty-32.png",
+      "bytes": 404,
+      "sha256": "0a4cecad045e8bfb06086e91e46c94512e57333667f611e754e3695d246b3759"
+    },
+    {
+      "path": "references/F04-02-battery-full-16.aseprite",
+      "bytes": 536,
+      "sha256": "22aac33efafbeff685222ab3d25d256ea1b04f7fcbebb9df9fb42ecb68cc9869"
+    },
+    {
+      "path": "references/F04-02-battery-full-16.png",
+      "bytes": 245,
+      "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665"
+    },
+    {
+      "path": "references/F04-02-battery-full-32.aseprite",
+      "bytes": 642,
+      "sha256": "13feb85856128a23f5372d669c7ca37e9596535ab5364ede8799c1b119f2ef7f"
+    },
+    {
+      "path": "references/F04-02-battery-full-32.png",
+      "bytes": 459,
+      "sha256": "fee8d98b8bae980f68e955c0135653470999c021b4b774965d6267a4c3af75d6"
+    },
+    {
+      "path": "references/F04-02-battery-readout-layout.json",
+      "bytes": 3484,
+      "sha256": "68971e2d8e909df302363a730a09f5090001ca537414aeceaef245e918fa77f6"
+    },
+    {
+      "path": "references/F04-02-energy-regions.json",
+      "bytes": 765,
+      "sha256": "d949e65f3b704b2f1515ba00602fd7d73e4d85a3fb855eaf4b9ca3098ccaaa75"
+    },
+    {
+      "path": "references/F05-01-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/F05-03-fan-preview.js",
+      "bytes": 5434,
+      "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2"
+    },
+    {
+      "path": "references/F05-03-geometry-and-uv.json",
+      "bytes": 94361,
+      "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961"
+    },
+    {
+      "path": "references/F05-05-battery-mount-adaptation.json",
+      "bytes": 2182,
+      "sha256": "4a840c860d9717a1ff6be06abea50d52a993c49038036e769c363928337d0241"
+    },
+    {
+      "path": "references/F05-05-battery-mount-preview.js",
+      "bytes": 6208,
+      "sha256": "173910f237441b4f4c5b8e4f215ed56b9bd3f3213828433c8bf764a655ea00c9"
+    },
+    {
+      "path": "references/F05-05-geometry-and-uv.json",
+      "bytes": 121946,
+      "sha256": "147b1eae005f4e16cd1972e3c30e149a0eeb7b0b3b2a320f05e963db59d7d4ad"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachinePresentation.java",
+      "bytes": 4632,
+      "sha256": "96eaecea453bb79546de6ee7ff874e44dabb5f8e62302b56f68064e4d9a042e1"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/RocketData.java",
+      "bytes": 1204,
+      "sha256": "1c572e29d28a91027c84223dfe7748052dff2250b80308c3c767de0566c5c7ac"
+    },
+    {
+      "path": "references/SpringData.java",
+      "bytes": 1171,
+      "sha256": "f12df3690d77bd11a7ac51aab900c161dc4f968d4d44fb70a3839e5fa04489bb"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 1152,
+      "sha256": "874ba5de9b58f6f525a198c1dc7768d50399e84d515d3ece60257f6aa10cad6a"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 4997,
+      "sha256": "0227163f56558f169a8aa019b57497b26623e94a2013eecfd16133beaff3b5b7"
+    },
+    {
+      "path": "review/battery-empty-ready.png",
+      "bytes": 46022,
+      "sha256": "369f65720c928d3ef60ee40c84bd984a2b5d825a39232f8eb83e86e2fd619cd2"
+    },
+    {
+      "path": "review/battery-ready.png",
+      "bytes": 46576,
+      "sha256": "f9732ae36431fe0a75bdd7737e1533827e5815ee416b44f0bb43bc3db03f4ae1"
+    },
+    {
+      "path": "review/browser-layout-checks.json",
+      "bytes": 30054,
+      "sha256": "dd30d6fbfd5b69dc56c0624d98d204cef10c685dc14f7f3512bf7492786e2d9f"
+    },
+    {
+      "path": "review/browser-render-checks.json",
+      "bytes": 30563,
+      "sha256": "54262ef5810a249daba564ff26a62d730d2bc7d55f5ac207cf24c6a8c9b80df7"
+    },
+    {
+      "path": "review/contract-verification.json",
+      "bytes": 16896,
+      "sha256": "6de14d91be5b53912740644ae41b3ed3a54844fa1aa5c0dfe35b350269095deb"
+    },
+    {
+      "path": "review/depleted.png",
+      "bytes": 43971,
+      "sha256": "dba412093a7b39d539dee7190f03fa39ba002a7c72ba4cd99f0a3c26ede7addc"
+    },
+    {
+      "path": "review/duplicate-battery.png",
+      "bytes": 37935,
+      "sha256": "649a4a5634202a6bfa68943893cef43c5dab5d2a4323adb7d7ee0476ad3c01f1"
+    },
+    {
+      "path": "review/enabled-blocked.png",
+      "bytes": 37409,
+      "sha256": "280d02c59b7f4a07f037b04afb342bb352bd9f9700df37b9b5d1b210f4f8509e"
+    },
+    {
+      "path": "review/fan-ready.png",
+      "bytes": 45140,
+      "sha256": "79145fc27a77a3bb42273ce67cedf226069babbd0da0d178042840e1e6972ee6"
+    },
+    {
+      "path": "review/hidden.png",
+      "bytes": 28344,
+      "sha256": "41082e54e43504df2cc9003f4b3d38722d64cd0e28a6a8ad4853dc3335bc5aa0"
+    },
+    {
+      "path": "review/low-working.png",
+      "bytes": 43394,
+      "sha256": "25fc7b4fe120a6162e2ceeee1423c569e542d0fd05bda244a6df075924a250c2"
+    },
+    {
+      "path": "review/machine-presentation-review.png",
+      "bytes": 492714,
+      "sha256": "177d5be7f143974f52f5d27214a25b182d421a0a946955e6d7c0e9b09f2e3441"
+    },
+    {
+      "path": "review/no-battery.png",
+      "bytes": 42313,
+      "sha256": "809845085ce8c5df56438030878ec5fca405f5583bbcbcb379ff61eff4cfb5c2"
+    },
+    {
+      "path": "review/occupied.png",
+      "bytes": 41017,
+      "sha256": "c09f649504003b6e107581788fee46d9dc1d4e2aa98e8f900c6d4ee4704c9456"
+    },
+    {
+      "path": "review/owner-feedback.png",
+      "bytes": 35795,
+      "sha256": "aa410cc6b775b819bbb17d2ac0e8bb79ebf437246a2b2735ccfd6849b86fbb1e"
+    },
+    {
+      "path": "review/package-verification.json",
+      "bytes": 2758,
+      "sha256": "b5d2b99591fb9feb3e77e67631e232d770d9da6633c58fce6a16add5f59c3c3b"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 121694,
+      "sha256": "e446562b68f0af3bd7fe20f0fac99d10ff8a0ed619ca41d72e8206a8034641f4"
+    },
+    {
+      "path": "review/rocket-fuel.png",
+      "bytes": 38849,
+      "sha256": "7901a767768fdf1782f73024eb299b3b94a277cec59213cccfbb2dd55583cbfc"
+    },
+    {
+      "path": "review/rocket-off-burning.png",
+      "bytes": 38645,
+      "sha256": "3b68684ba9d3fa0a19da1562f4b90d5bf480bf55d2a572e8b57f87c15eecbcba"
+    },
+    {
+      "path": "review/running.png",
+      "bytes": 42970,
+      "sha256": "1a0925b91045b57aa3ad2ef2ed1b97e6b09faf8b1d77a827e5e1112b30c76345"
+    },
+    {
+      "path": "review/spent-rocket.png",
+      "bytes": 36813,
+      "sha256": "9d541213c38da9adb036cabe7f5b4a85bbab794090d1085c86173f804c61aedd"
+    },
+    {
+      "path": "review/spring-cooldown.png",
+      "bytes": 39310,
+      "sha256": "d7ac8eadc2303441da43c0faebab134c4cbfb5f1bcb9fea1a1e9e78aba928275"
+    },
+    {
+      "path": "review/stopped.png",
+      "bytes": 41469,
+      "sha256": "8430569ac19fe977e2b2413fd0b0bc75e955902090c7eb94c3730cbc02e1266a"
+    },
+    {
+      "path": "review/waiting.png",
+      "bytes": 37169,
+      "sha256": "7dd5225f89039351f956f1448958bfd76a0248952f1326113dcd55e9c2f31e08"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 10931,
+      "sha256": "bc8807f6cb32ac56c461622e9cc3ee9d2422e9257aabf706bab7889e6dd8b721"
+    },
+    {
+      "path": "source/machine-presentation.js",
+      "bytes": 15760,
+      "sha256": "dee5866eafcea04c92c14cd95714a035cb39cf26b9c0e89366315d5502162681"
+    },
+    {
+      "path": "source/review-scenarios.json",
+      "bytes": 7239,
+      "sha256": "5b8f99de93c2187fe66bdafead8ef68afa0e0b095a52a2c1b73a6f1f47aaa057"
+    },
+    {
+      "path": "source/status-glyphs.json",
+      "bytes": 1075,
+      "sha256": "90c337f519beb8d92ecc0bf1af339454a91514f5965587baddfd0bb733e93c3a"
+    },
+    {
+      "path": "source/verify-contract.mjs",
+      "bytes": 4011,
+      "sha256": "839953e9509bd01d948d096e28fc7cab20a9c07d6371e4c39b9ff08b1210c583"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2425,
+      "sha256": "c9f44f8feb42992985d8563c1885df2555640de50d6854f8be34ee37a26fa64e"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用。开始下一项"
+}

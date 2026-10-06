@@ -1,0 +1,7606 @@
+{
+  "date": "2026-10-05",
+  "scope": "Browser layout simulation; no game integration or game-font verification",
+  "caseCount": 126,
+  "checkCount": 1146,
+  "allPassed": true,
+  "failures": [],
+  "checks": [
+    {
+      "name": "normal/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "normal/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "single/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hearts/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "hidden/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "english/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "short/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "focus/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "expired/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/zh/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/0/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/1/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/2/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/3/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/4/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/5/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/temperature fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/one active row",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/separate from stamina",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/separate from meals",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/meal fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/meal unchanged",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/label fits",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/native opaque pixels",
+      "passed": true
+    },
+    {
+      "name": "none/en/6/focus edges off",
+      "passed": true
+    },
+    {
+      "name": "hidden shifts shared anchors 24px",
+      "passed": true
+    },
+    {
+      "name": "integer display scale 1",
+      "passed": true
+    },
+    {
+      "name": "integer display scale 2",
+      "passed": true
+    },
+    {
+      "name": "integer display scale 3",
+      "passed": true
+    },
+    {
+      "name": "expired warmth removed",
+      "passed": true
+    },
+    {
+      "name": "temperature stays anchored",
+      "passed": true
+    },
+    {
+      "name": "ten minute timer",
+      "passed": true
+    },
+    {
+      "name": "edge switch off",
+      "passed": true
+    },
+    {
+      "name": "edge switch on",
+      "passed": true
+    },
+    {
+      "name": "warmth reduces cold edge",
+      "passed": true
+    },
+    {
+      "name": "cooling reduces hot edge",
+      "passed": true
+    },
+    {
+      "name": "comfortable no edge",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "normal",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "single",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hearts",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 71,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 88,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 112,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "hidden",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 40,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 60,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 80,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "english",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "short",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 56,
+      "mealMode": "compact",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 71,
+          "y": 73,
+          "width": 53,
+          "height": 20
+        },
+        {
+          "x": 12,
+          "y": 97,
+          "width": 53,
+          "height": 20
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "focus",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 104,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "expired",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 47,
+      "mealMode": "full",
+      "mealBoxes": [
+        {
+          "x": 12,
+          "y": 64,
+          "width": 148,
+          "height": 16
+        },
+        {
+          "x": 12,
+          "y": 84,
+          "width": 148,
+          "height": 16
+        }
+      ],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 0,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 1,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 2,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 3,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 4,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 5,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "zh",
+      "band": 6,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 0,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 1,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 2,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 3,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 4,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 5,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    },
+    {
+      "scenario": "none",
+      "language": "en",
+      "band": 6,
+      "temperatureY": 23,
+      "mealMode": "full",
+      "mealBoxes": [],
+      "passed": true
+    }
+  ]
+}

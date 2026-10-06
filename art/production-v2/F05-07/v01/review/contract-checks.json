@@ -1,0 +1,12 @@
+{
+  "asset": "F05-07",
+  "allPassed": true,
+  "activeGhostAgeEnabledDriveCases": 120,
+  "webMeshVertexChecks": 1192320,
+  "rate": 0.4,
+  "ghostAndInactiveAngleZero": true,
+  "reverseInputDoesNotReverseVisual": true,
+  "enabledAloneDoesNotAnimate": true,
+  "noDistanceInference": true,
+  "gameIntegrated": false
+}

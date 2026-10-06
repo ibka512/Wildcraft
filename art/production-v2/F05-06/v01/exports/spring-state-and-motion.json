@@ -1,0 +1,30 @@
+{
+  "asset": "F05-06",
+  "status": "user_approved",
+  "integrated": false,
+  "poseRule": "!ghost && cooldown > 30 ? extended : compressed",
+  "fixedGroup": "fixed",
+  "translateGroup": "moving",
+  "deformGroup": "coil",
+  "pushPlateTravel": 3.2,
+  "coilDeformation": "Z += 3.2 * endpointQ; square wire cross-section constant",
+  "cooldown": 40,
+  "extendedCooldownRange": [
+    31,
+    40
+  ],
+  "compressedCooldownRange": [
+    0,
+    30
+  ],
+  "ghostPose": "compressed",
+  "activeBitDoesNotDrivePose": true,
+  "clientArmedAvailable": false,
+  "rearm": "stopped && grounded && previous cooldown == 0",
+  "fire": "enabled && grounded && armed && cooldown == 0 && full shared battery payment",
+  "energy": 20,
+  "extraPhysics": false,
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项吧"
+}

@@ -1,0 +1,87 @@
+{
+  "asset": "F03-02",
+  "allPassed": true,
+  "reusedSymbols": [
+    {
+      "size": 16,
+      "legacyPixelsUnchanged": true,
+      "sourceReopened": true,
+      "colorMode": "indexed",
+      "layers": 1
+    },
+    {
+      "size": 32,
+      "legacyPixelsUnchanged": true,
+      "sourceReopened": true,
+      "colorMode": "indexed",
+      "layers": 1
+    }
+  ],
+  "cornerSize": [
+    5,
+    5
+  ],
+  "newStandaloneMark": 1,
+  "atlasSize": [
+    64,
+    32
+  ],
+  "atlasLayers": 3,
+  "atlasSourceReopened": true,
+  "atlasRegionsPixelExact": true,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "sourceAndPNGReadbackCases": [
+    {
+      "asset": "fuse-status-16",
+      "format": "aseprite",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-status-16",
+      "format": "png",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-status-32",
+      "format": "aseprite",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-status-32",
+      "format": "png",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-corner-5",
+      "format": "aseprite",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-corner-5",
+      "format": "png",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-status-atlas-64x32",
+      "format": "aseprite",
+      "pixelExact": true
+    },
+    {
+      "asset": "fuse-status-atlas-64x32",
+      "format": "png",
+      "pixelExact": true
+    }
+  ],
+  "exportFallbacksVerifiedByPixelReadback": [
+    "exports/fuse-status-16.png",
+    "review/source-reopen-16.png",
+    "exports/fuse-status-32.png",
+    "review/source-reopen-32.png",
+    "exports/fuse-corner-5.png",
+    "exports/fuse-status-atlas-64x32.png"
+  ],
+  "gameIntegrated": false
+}

@@ -1,0 +1,327 @@
+{
+  "asset": "F05-03",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，交付齐全，未接入",
+  "adopted": true,
+  "integrated": false,
+  "meshParts": 24,
+  "fixedParts": 18,
+  "rotatingParts": 6,
+  "bladeCount": 4,
+  "newPngCount": 2,
+  "nativeItemSizes": [
+    [
+      32,
+      32
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "newAsepriteSources": 2,
+  "newSourceLayers": [
+    3,
+    3
+  ],
+  "reusedAtlasSize": [
+    64,
+    64
+  ],
+  "reusedAtlasSources": 1,
+  "newAtlasPixels": 0,
+  "blenderSource": 1,
+  "blockbenchSource": 1,
+  "blockbenchAppOpened": false,
+  "pivot": [
+    0,
+    0,
+    1.76
+  ],
+  "rotationRateRadiansPerWorldTick": 0.7,
+  "fullRotationClearanceCases": 361,
+  "blenderAnimationCases": 15,
+  "blenderDirectionCases": 6,
+  "actualBrowserNodeMotionViewCases": 126,
+  "gameIntegrationTested": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2493,
+      "sha256": "7bd67041510edcd0f45ba0589d9558300a25a961bf5d66e6b4d3d60b3a5d89e1"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 274,
+      "sha256": "d2cc19cc20c445b09d6a31ee24a99100e7fcd53c162e48d071ec3d01b2dffb38"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1570,
+      "sha256": "065d7bbbfb181c742710469569c0279025e3c44603c6b885721cfa8654be45a8"
+    },
+    {
+      "path": "exports/fan-animation.json",
+      "bytes": 567,
+      "sha256": "f2452ac864e17d357cde4fa6227fe6199e47fc96c3e10f2c0320c2b8290c6b83"
+    },
+    {
+      "path": "exports/fan-geometry.json",
+      "bytes": 94361,
+      "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961"
+    },
+    {
+      "path": "exports/fan-item-16.png",
+      "bytes": 449,
+      "sha256": "bdcb2aa8319d550b2133205b4b3ad13f1e2c6ab3c7bc7642ce4b00e05b524ad2"
+    },
+    {
+      "path": "exports/fan-item-32.png",
+      "bytes": 737,
+      "sha256": "6bb96e6458c7eba9b35fe9d45c9a6911edb56685a4ac29d674db4e7c030feada"
+    },
+    {
+      "path": "exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 3137,
+      "sha256": "b56ae5d29ee278f74a4cf377fc65cbd37732a8c600e710575fd1d01179b54e4d"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachinePresentation.java",
+      "bytes": 4632,
+      "sha256": "96eaecea453bb79546de6ee7ff874e44dabb5f8e62302b56f68064e4d9a042e1"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/MechanicsContent.java",
+      "bytes": 4178,
+      "sha256": "5384916e7bc24011281c4983949eed893cf4157a9dd9bb56ccc9b2324219bae1"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/approved-machine-provenance.json",
+      "bytes": 1589,
+      "sha256": "087350f918469cd41600481ab66b93409e59a20e5aec1e8cc29630066768d8ef"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 999,
+      "sha256": "8437f2435cbc8224280475ad71587cba0da42977a4076d40d832fe41639a8868"
+    },
+    {
+      "path": "references/concept-prompt.txt",
+      "bytes": 1675,
+      "sha256": "375f1f2272ceabbd61ee215b2dcaa67d702b686303ebc06c8c0fb42fa83d0e68"
+    },
+    {
+      "path": "references/concept-provenance.json",
+      "bytes": 197,
+      "sha256": "673921766b3cca3a07f244a5c029cf4ff1036a38a092a7b9e013e3e619947408"
+    },
+    {
+      "path": "references/fan-concept-v01.png",
+      "bytes": 1487007,
+      "sha256": "c8faba8f3862bd6218ea72d0dac9b0c76344389afbe7dd765bcdfa304fee605a"
+    },
+    {
+      "path": "references/machine-node-template.json",
+      "bytes": 12531,
+      "sha256": "18f89bbf1555cc2ee2201e8c66a34b6241a5b332e0f917cf8721557d4fbe6eae"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "review/aseprite-starting-document.json",
+      "bytes": 278,
+      "sha256": "16207e2762170d59c733e38a29b8c9dc8d619f90bcb5faaf94d1c5337e34a2b5"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 1270,
+      "sha256": "75e8bf97f5cbc2ba3cfeac18633d228e30d4cb8723a16f74d66c882c00fe5d4f"
+    },
+    {
+      "path": "review/blender-render.log",
+      "bytes": 2452,
+      "sha256": "db995600d4e7c67ed75c1785d6f9ce2e0d1271c5da98561677ffa43121218252"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 3361,
+      "sha256": "c4aab090181f63fa757d11c7321041c80c71a03b6c97fe4a2fb986fad75aa904"
+    },
+    {
+      "path": "review/blender-verification.log",
+      "bytes": 297,
+      "sha256": "2cd25ad3d5fb41543645a3165fb84980ca54017fcabdc0076c4cc001ea5f89ac"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 106100,
+      "sha256": "8342265a02fc39400c712d53307265c87d43ab16004aa1608fbbf6deb7cbc190"
+    },
+    {
+      "path": "review/fan-back.png",
+      "bytes": 664150,
+      "sha256": "bad3f815774ff9c8518f294caaedb7a5ea2f1c7511fbd6b112adedefb784df81"
+    },
+    {
+      "path": "review/fan-front.png",
+      "bytes": 570618,
+      "sha256": "cf9728fbb8f07862a0db46d7e70e2be847f1cf26fb53cbfaa2208b306dc79116"
+    },
+    {
+      "path": "review/fan-idle-three-quarter.png",
+      "bytes": 702569,
+      "sha256": "6e8cea81132e1e189fa9130af77ddfed5826bdbbd2d8becedc93e5e957cc3084"
+    },
+    {
+      "path": "review/fan-mounted-front.png",
+      "bytes": 731300,
+      "sha256": "65f9ffc2132dbf0283378096c05282aeab220a128d35b683e39e117290db219a"
+    },
+    {
+      "path": "review/fan-mounted-top.png",
+      "bytes": 738462,
+      "sha256": "6d949ca88ede0f47b5f31b19811e8d26a34d2c20b0214534cfd3d9638b9bf715"
+    },
+    {
+      "path": "review/fan-review.png",
+      "bytes": 930561,
+      "sha256": "cc2b56aeb0101cdd3234865b537934b0e4317c2bba60e40d5640e8d83691ce3f"
+    },
+    {
+      "path": "review/fan-running-phase.png",
+      "bytes": 719240,
+      "sha256": "5cc74aadd8430c3d2da2009d8b01923843c78b0aa5e3d8d4800a523f9d069213"
+    },
+    {
+      "path": "review/fan-side.png",
+      "bytes": 495361,
+      "sha256": "9e3d3b3b12f690b110c92ddf143577ddc0002f42f80aea902cbe03e7bac18e47"
+    },
+    {
+      "path": "review/interactive-model-simulation.png",
+      "bytes": 31069,
+      "sha256": "48257a1fcfa44db6a5a649bd4ef014e8bbfeb348866e0507aba13090a8ff22ef"
+    },
+    {
+      "path": "review/package-verification.json",
+      "bytes": 3806,
+      "sha256": "de4f3330779c95e051d54cd7d1e9b8e78dcb901099f376910df4d505d9e75699"
+    },
+    {
+      "path": "review/preview-server.json",
+      "bytes": 196,
+      "sha256": "7ec4a3faf0143396ad3e9dcfa50771f82fb4a6603d4f5dc0726eb81f4ed01404"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 6266104,
+      "sha256": "4c64fe064aee09af54b68e25dbbfbf36b566f99c319285cc8152ab2ef0ba07be"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 5910,
+      "sha256": "66d99cb562ae4845fe86b577ef64429dd9b4bd63ed3ea10c19758b6edd930072"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 12848,
+      "sha256": "c3a36747f34d4370cb0b3b32fed818054087a95e6758344aefdcb8717a0ec896"
+    },
+    {
+      "path": "source/create-icons.py",
+      "bytes": 5101,
+      "sha256": "51da23d3375f8b2073d7cf9873db06e9f5e0ec3f25c241feb846643442194b5b"
+    },
+    {
+      "path": "source/fan-item-16.aseprite",
+      "bytes": 738,
+      "sha256": "a04706431b7720ee76fa7b7b04a1cd4501283eb4ea394166d96278b6d39474dc"
+    },
+    {
+      "path": "source/fan-item-32.aseprite",
+      "bytes": 909,
+      "sha256": "f7fb4f5eb19e6c503b2b191bfdce47b4f58c058bd8c489e7a9841298daa98fad"
+    },
+    {
+      "path": "source/fan-preview.js",
+      "bytes": 5434,
+      "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2"
+    },
+    {
+      "path": "source/fan-v01.bbmodel",
+      "bytes": 100104,
+      "sha256": "7fc0cf24799f4dd97398339158f887bb9bc0f5809eef15c503a8b48d96c3f3f8"
+    },
+    {
+      "path": "source/fan-v01.blend",
+      "bytes": 144480,
+      "sha256": "83bf225a1be1647e98c3a51ba61bc9e1f7ac97410da13d83469d1bb1bf5908c2"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 94361,
+      "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 35985,
+      "sha256": "1a36f857192c2d58760623e76d5f17814be22f42e8e6eabfcd8d46fbfc55cec8"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 5988,
+      "sha256": "90ce506d1c94986917e4316c4d7985c5d047e45bbe47d2b7158707abe3e75124"
+    },
+    {
+      "path": "source/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 4266,
+      "sha256": "8aeb61e4203c76636a18b82c782fb91ebd3b9326838e72c1ce26c983b3142d00"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 3056,
+      "sha256": "e3243cceee378c80c0fc01360f9ac7f99f6bf920b3d88a67970db5e2379e2896"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1800,
+      "sha256": "24bd884d528b0c44ee207d2e9becf4924e5a1753bbe94d65dc0a6b53c5d8fdc8"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

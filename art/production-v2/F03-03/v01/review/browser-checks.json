@@ -1,0 +1,461 @@
+{
+  "asset": "F03-03",
+  "allPassed": true,
+  "actualDropdownStateCases": [
+    {
+      "state": {
+        "host": "sword",
+        "phase": "data-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.37333333333333335,
+        "maxSpan": 0.28,
+        "triangles": 2016,
+        "glError": 0
+      },
+      "title": "融合记录 · 材料不可用",
+      "lines": "保留的剩余次数：8 次效果和拆卸已停用；原始数据保留。缺失材料 ID：example:missing_material"
+    },
+    {
+      "state": {
+        "host": "sword",
+        "phase": "model-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.37333333333333335,
+        "maxSpan": 0.28,
+        "triangles": 2016,
+        "glError": 0
+      },
+      "title": "融合记录 · 显示资源不可用",
+      "lines": "实际剩余次数：8 次效果及拆卸遵循真实服务端状态。此例仅模拟模型显示失败，未改变材料数据。"
+    },
+    {
+      "state": {
+        "host": "sword",
+        "phase": "restored-reference",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "stone",
+        "scale": 1,
+        "materialScale": 0.28,
+        "maxSpan": 0.28,
+        "triangles": 4080,
+        "glError": 0
+      },
+      "title": "已融合 · 恢复后参考",
+      "lines": "实际剩余次数：8 次恢复后显示真实材料；不补充次数。这是视觉对照，没有执行资源修复。"
+    },
+    {
+      "state": {
+        "host": "sword",
+        "phase": "unfused",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.37333333333333335,
+        "maxSpan": 0.28,
+        "triangles": 1008,
+        "glError": 0
+      },
+      "title": "普通宿主",
+      "lines": "没有融合记录、回退符号或融合角标。宿主的原版功能保持实际状态。"
+    },
+    {
+      "state": {
+        "host": "axe",
+        "phase": "data-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.39999999999999997,
+        "maxSpan": 0.3,
+        "triangles": 1728,
+        "glError": 0
+      },
+      "title": "融合记录 · 材料不可用",
+      "lines": "保留的剩余次数：8 次效果和拆卸已停用；原始数据保留。缺失材料 ID：example:missing_material"
+    },
+    {
+      "state": {
+        "host": "axe",
+        "phase": "model-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.39999999999999997,
+        "maxSpan": 0.3,
+        "triangles": 1728,
+        "glError": 0
+      },
+      "title": "融合记录 · 显示资源不可用",
+      "lines": "实际剩余次数：8 次效果及拆卸遵循真实服务端状态。此例仅模拟模型显示失败，未改变材料数据。"
+    },
+    {
+      "state": {
+        "host": "axe",
+        "phase": "restored-reference",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "stone",
+        "scale": 1,
+        "materialScale": 0.3,
+        "maxSpan": 0.3,
+        "triangles": 3792,
+        "glError": 0
+      },
+      "title": "已融合 · 恢复后参考",
+      "lines": "实际剩余次数：8 次恢复后显示真实材料；不补充次数。这是视觉对照，没有执行资源修复。"
+    },
+    {
+      "state": {
+        "host": "axe",
+        "phase": "unfused",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.39999999999999997,
+        "maxSpan": 0.3,
+        "triangles": 720,
+        "glError": 0
+      },
+      "title": "普通宿主",
+      "lines": "没有融合记录、回退符号或融合角标。宿主的原版功能保持实际状态。"
+    },
+    {
+      "state": {
+        "host": "shield",
+        "phase": "data-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.32,
+        "maxSpan": 0.24,
+        "triangles": 4188,
+        "glError": 0
+      },
+      "title": "融合记录 · 材料不可用",
+      "lines": "保留的剩余次数：8 次效果和拆卸已停用；原始数据保留。缺失材料 ID：example:missing_material"
+    },
+    {
+      "state": {
+        "host": "shield",
+        "phase": "model-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.32,
+        "maxSpan": 0.24,
+        "triangles": 4188,
+        "glError": 0
+      },
+      "title": "融合记录 · 显示资源不可用",
+      "lines": "实际剩余次数：8 次效果及拆卸遵循真实服务端状态。此例仅模拟模型显示失败，未改变材料数据。"
+    },
+    {
+      "state": {
+        "host": "shield",
+        "phase": "restored-reference",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "stone",
+        "scale": 1,
+        "materialScale": 0.24,
+        "maxSpan": 0.24,
+        "triangles": 6252,
+        "glError": 0
+      },
+      "title": "已融合 · 恢复后参考",
+      "lines": "实际剩余次数：8 次恢复后显示真实材料；不补充次数。这是视觉对照，没有执行资源修复。"
+    },
+    {
+      "state": {
+        "host": "shield",
+        "phase": "unfused",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.32,
+        "maxSpan": 0.24,
+        "triangles": 3180,
+        "glError": 0
+      },
+      "title": "普通宿主",
+      "lines": "没有融合记录、回退符号或融合角标。宿主的原版功能保持实际状态。"
+    },
+    {
+      "state": {
+        "host": "arrow",
+        "phase": "data-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.26666666666666666,
+        "maxSpan": 0.2,
+        "triangles": 1464,
+        "glError": 0
+      },
+      "title": "融合记录 · 材料不可用",
+      "lines": "保留的剩余次数：8 次效果和拆卸已停用；原始数据保留。缺失材料 ID：example:missing_material"
+    },
+    {
+      "state": {
+        "host": "arrow",
+        "phase": "model-unavailable",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.26666666666666666,
+        "maxSpan": 0.2,
+        "triangles": 1464,
+        "glError": 0
+      },
+      "title": "融合记录 · 显示资源不可用",
+      "lines": "实际剩余次数：8 次效果及拆卸遵循真实服务端状态。此例仅模拟模型显示失败，未改变材料数据。"
+    },
+    {
+      "state": {
+        "host": "arrow",
+        "phase": "restored-reference",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "stone",
+        "scale": 1,
+        "materialScale": 0.2,
+        "maxSpan": 0.2,
+        "triangles": 3528,
+        "glError": 0
+      },
+      "title": "已融合 · 恢复后参考",
+      "lines": "实际剩余次数：8 次恢复后显示真实材料；不补充次数。这是视觉对照，没有执行资源修复。"
+    },
+    {
+      "state": {
+        "host": "arrow",
+        "phase": "unfused",
+        "context": "gui",
+        "uses": 8,
+        "yaw": 0,
+        "pitch": 8,
+        "light": false,
+        "material": "fallback",
+        "scale": 1,
+        "materialScale": 0.26666666666666666,
+        "maxSpan": 0.2,
+        "triangles": 456,
+        "glError": 0
+      },
+      "title": "普通宿主",
+      "lines": "没有融合记录、回退符号或融合角标。宿主的原版功能保持实际状态。"
+    }
+  ],
+  "flight": {
+    "host": "arrow",
+    "phase": "data-unavailable",
+    "context": "flight",
+    "uses": 8,
+    "yaw": 72,
+    "pitch": 10,
+    "light": false,
+    "material": "fallback",
+    "scale": 1,
+    "materialScale": 0.24,
+    "maxSpan": 0.18,
+    "triangles": 1154,
+    "glError": 0
+  },
+  "keyboard": {
+    "host": "arrow",
+    "phase": "data-unavailable",
+    "context": "flight",
+    "uses": 8,
+    "yaw": 57,
+    "pitch": 10,
+    "light": false,
+    "material": "fallback",
+    "scale": 1,
+    "materialScale": 0.24,
+    "maxSpan": 0.18,
+    "triangles": 1154,
+    "glError": 0
+  },
+  "light": {
+    "state": {
+      "host": "arrow",
+      "phase": "data-unavailable",
+      "context": "flight",
+      "uses": 8,
+      "yaw": 57,
+      "pitch": 10,
+      "light": true,
+      "material": "fallback",
+      "scale": 1,
+      "materialScale": 0.24,
+      "maxSpan": 0.18,
+      "triangles": 1154,
+      "glError": 0
+    },
+    "bg": "rgb(199, 198, 185)"
+  },
+  "back": {
+    "host": "shield",
+    "phase": "data-unavailable",
+    "context": "back",
+    "uses": 8,
+    "yaw": 57,
+    "pitch": 10,
+    "light": true,
+    "material": "fallback",
+    "scale": 1,
+    "materialScale": 0.32,
+    "maxSpan": 0.24,
+    "triangles": 4260,
+    "glError": 0
+  },
+  "arrow": {
+    "state": {
+      "host": "arrow",
+      "phase": "data-unavailable",
+      "context": "gui",
+      "uses": 8,
+      "yaw": 57,
+      "pitch": 10,
+      "light": true,
+      "material": "fallback",
+      "scale": 1,
+      "materialScale": 0.26666666666666666,
+      "maxSpan": 0.2,
+      "triangles": 1464,
+      "glError": 0
+    },
+    "backDisabled": true
+  },
+  "drag": {
+    "host": "arrow",
+    "phase": "data-unavailable",
+    "context": "gui",
+    "uses": 8,
+    "yaw": 77,
+    "pitch": 13,
+    "light": true,
+    "material": "fallback",
+    "scale": 1,
+    "materialScale": 0.26666666666666666,
+    "maxSpan": 0.2,
+    "triangles": 1464,
+    "glError": 0
+  },
+  "low": {
+    "state": {
+      "host": "sword",
+      "phase": "model-unavailable",
+      "context": "gui",
+      "uses": 1,
+      "yaw": 77,
+      "pitch": 13,
+      "light": true,
+      "material": "fallback",
+      "scale": 1,
+      "materialScale": 0.37333333333333335,
+      "maxSpan": 0.28,
+      "triangles": 2016,
+      "glError": 0
+    },
+    "color": "rgb(226, 184, 104)"
+  },
+  "inactive": {
+    "state": {
+      "host": "sword",
+      "phase": "data-unavailable",
+      "context": "gui",
+      "uses": 1,
+      "yaw": 77,
+      "pitch": 13,
+      "light": true,
+      "material": "fallback",
+      "scale": 1,
+      "materialScale": 0.37333333333333335,
+      "maxSpan": 0.28,
+      "triangles": 2016,
+      "glError": 0
+    },
+    "color": ""
+  },
+  "widths": [
+    {
+      "width": 390,
+      "scrollWidth": 375,
+      "controlsWidth": 347
+    },
+    {
+      "width": 900,
+      "scrollWidth": 885,
+      "controlsWidth": 837
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1265,
+      "controlsWidth": 1202
+    }
+  ],
+  "canvasExports": true,
+  "gameRuntimeVerified": false
+}

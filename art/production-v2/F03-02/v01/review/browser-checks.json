@@ -1,0 +1,81 @@
+{
+  "asset": "F03-02",
+  "allPassed": true,
+  "actualLastUseExhaustion": {
+    "state": {
+      "phase": "spent",
+      "uses": 1,
+      "host": "sword",
+      "material": "diamond",
+      "count": 1,
+      "durability": 0.07,
+      "glint": true
+    },
+    "hero": {
+      "mark": false,
+      "attached": false,
+      "uses": null,
+      "low": false,
+      "kind": 0,
+      "available": true,
+      "returned": false
+    },
+    "info": {
+      "lines": [
+        "主手宿主 / 副手材料 · V融合 · 蹲下＋",
+        "该键拆分"
+      ],
+      "height": 52,
+      "mark": false,
+      "uses": null,
+      "width": 178,
+      "returned": false
+    }
+  },
+  "actual32To31": 31,
+  "actualPointerHover64": {
+    "index": 5,
+    "count": 64,
+    "uses": null,
+    "mark": false
+  },
+  "actualKeyboardNavigation": {
+    "index": 4,
+    "uses": 1
+  },
+  "actualSelectReturned": {
+    "phase": "returned",
+    "host": "shield",
+    "info": {
+      "lines": [
+        "Reusable material · 32 uses left",
+        "Splitting preserves remaining uses"
+      ],
+      "height": 52,
+      "mark": false,
+      "uses": 32,
+      "width": 178,
+      "returned": true
+    }
+  },
+  "responsive": [
+    {
+      "width": 390,
+      "documentWidth": 375,
+      "passed": true,
+      "scrollableStage": true
+    },
+    {
+      "width": 900,
+      "documentWidth": 885,
+      "passed": true,
+      "scrollableStage": false
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1265,
+      "passed": true,
+      "scrollableStage": false
+    }
+  ]
+}

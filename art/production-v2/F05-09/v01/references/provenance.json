@@ -1,0 +1,30 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/source/geometry-and-uv.json",
+    "copy": "references/approved-machine-geometry.json",
+    "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-02/v01/exports/wing-atlas-128x64.png",
+    "copy": "references/shared-fabric-machine-atlas-128x64.png",
+    "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-02/v01/source/wing-atlas-128x64.aseprite",
+    "copy": "references/shared-fabric-machine-atlas-128x64.aseprite",
+    "sha256": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/references/uv-regions.json",
+    "copy": "references/uv-regions.json",
+    "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719",
+    "adopted": true,
+    "changed": false
+  }
+]

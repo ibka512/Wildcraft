@@ -1,0 +1,10 @@
+{
+  "asset": "F01-03",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，继续",
+  "package": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-03/v01",
+  "integrated": false,
+  "scope": "料理效果HUD排布：纵排/紧凑、等级、固定时间列、精力隐藏联动；图标复用已采用原件"
+}

@@ -1,0 +1,137 @@
+{
+  "asset": "F05-05",
+  "version": "v01",
+  "status": "user_approved",
+  "integrated": false,
+  "units": "1/16 block",
+  "sourceAsset": "F04-01 v01",
+  "scale": 1,
+  "originalToLocalOffset": [
+    -8,
+    -6.1,
+    -6.57
+  ],
+  "previousReferenceOffset": [
+    -8,
+    -8,
+    -6.56
+  ],
+  "reason": "对齐原电池背面低位铜触点，不修改电池或节点几何",
+  "transformOrder": [
+    "translate battery source by offset",
+    "orient(node)",
+    "translate node.point",
+    "cosmetic roll about body Z",
+    "body yaw about Y"
+  ],
+  "nodes": [
+    {
+      "id": 0,
+      "name": "顶",
+      "point": [
+        0,
+        10.4,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "name": "底",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "后",
+      "point": [
+        0,
+        5.2,
+        -11.2
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "前",
+      "point": [
+        0,
+        5.2,
+        11.2
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "name": "左",
+      "point": [
+        -11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "name": "右",
+      "point": [
+        11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "basisMap": [
+    "(x,z,-y)",
+    "(x,-z,y)",
+    "(-x,y,-z)",
+    "(x,y,z)",
+    "(-z,y,x)",
+    "(z,y,-x)"
+  ],
+  "capacity": 1000,
+  "windowFraction": "clamp(E/1000*3-indexBottomUp,0,1)",
+  "installation": {
+    "maxBatteries": 1,
+    "requiresStopped": true,
+    "requiresEmptyNode": true,
+    "transfersActualStack": true,
+    "recoveryRequiresInventorySpace": true,
+    "energyPreserved": true
+  },
+  "reviewOnlyExplodedDistance": 6,
+  "noNewTextures": true,
+  "noNewBatteryModel": true,
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

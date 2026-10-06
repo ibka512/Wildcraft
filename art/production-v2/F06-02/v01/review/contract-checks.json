@@ -1,0 +1,15 @@
+{
+  "asset": "F06-02",
+  "allPassed": true,
+  "assertions": 342,
+  "slotCount": 39,
+  "buttonUnchanged": true,
+  "progressValues": 101,
+  "completedBarShowsOutcome": true,
+  "sourceProgressAtCollect": 0,
+  "repeatStartRejectedInDemo": true,
+  "occupiedOutputKeptUntilCollect": true,
+  "pendingResultNotPresentInPresentationData": true,
+  "nativeServerCodeExecuted": false,
+  "previewFixtureOnly": true
+}

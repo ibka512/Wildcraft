@@ -1,0 +1,14 @@
+/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/source/render-model.py:11: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('64px native shared machine steel green copper');mat.use_nodes=True;bs=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');bs.inputs['Roughness'].default_value=.9;bs.inputs['Metallic'].default_value=.04;tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(R/'exports/machine-atlas-64.png'));tex.image.pack();tex.interpolation='Closest';mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
+00:03.160  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-front-three-quarter.png'
+00:05.783  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-back-three-quarter.png'
+00:07.458  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-front.png'
+00:10.118  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-top.png'
+00:11.789  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-underside.png'
+00:14.429  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-battery-front.png'
+00:17.062  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/review/machine-battery-top.png'
+信息: 已另存为 "machine-body-v01.blend"
+Saved actual mesh/UV Blender source; rendered 5 chassis views and 2 adopted-battery fit views.
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:31:22)
+
+Blender quit

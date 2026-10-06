@@ -584,3 +584,23 @@ tasks.register('runFusionIntegrationClientTest', net.fabricmc.loom.task.prod.Cli
     runDir = layout.buildDirectory.dir('run/fusionIntegration-client-test')
 }
 
+
+// Isolate the adopted-art native regression without replaying unrelated client stages.
+def secondArtMetadataDirectory = layout.buildDirectory.dir('second-art-test-metadata').get().asFile
+def secondArtMetadata = tasks.register('secondArtTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(secondArtMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.SecondArtClientTest']
+        def destination = new File(secondArtMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def secondArtTestJar = tasks.register('secondArtTestJar', Jar) {
+    dependsOn secondArtMetadata; archiveClassifier = 'second-art-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(secondArtMetadataDirectory)
+}
+tasks.register('runSecondArtClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(secondArtTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/second-art-client-test')
+}

@@ -1,0 +1,23 @@
+{
+  "asset": "F06-01",
+  "allPassed": true,
+  "method": "read and compare preserved Java contract with art metadata; no Java execution",
+  "materials": {
+    "copper_ingot": 4,
+    "redstone": 2
+  },
+  "durationLoadedTicks": 100,
+  "menuStateMapping": {
+    "0": "idle ready",
+    "1": "idle insufficient",
+    "2": "working",
+    "3": "complete blocked output",
+    "4": "complete actual output present"
+  },
+  "worldSnapshotAbsent": true,
+  "noFacingPropertyAdded": true,
+  "noResultDepiction": true,
+  "noPowerNetworkRequirement": true,
+  "cosmeticIntakeOutletOnly": true,
+  "surfaceOffsetsChecked": true
+}

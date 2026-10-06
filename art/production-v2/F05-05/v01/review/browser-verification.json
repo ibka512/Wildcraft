@@ -1,0 +1,960 @@
+{
+  "allPassed": true,
+  "actualUICases": 24,
+  "keyboardEnergyBoundary99to100Passed": true,
+  "energyCases": [
+    {
+      "node": 0,
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "e": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "e": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 0,
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 0,
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 1,
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "e": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "e": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 1,
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 1,
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 2,
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "e": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "e": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 2,
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 2,
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 3,
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "e": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "e": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 3,
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 3,
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 4,
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "e": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "e": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 4,
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 4,
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 5,
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "e": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "e": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 5,
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 5,
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "bodyMotionRenderCases": [
+    {
+      "node": 0,
+      "bodyYaw": 0,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 0,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 0,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 0,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 0,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 0,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 0,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 0,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 0,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 0,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 0,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 0,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 0,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 0,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 0,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 0,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 0,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 0,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 90,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 90,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 90,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 90,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 90,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 90,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 90,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 90,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 90,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 90,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 90,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 90,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 90,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 90,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 90,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 90,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 90,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 90,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 180,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 180,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 180,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 180,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 180,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 180,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 180,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 180,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 180,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 180,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 180,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 180,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 180,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 180,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 180,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 180,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 180,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 180,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 270,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 270,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 270,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 270,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 270,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 270,
+      "bodyRoll": -6,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 270,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 270,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 270,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 270,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 270,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 270,
+      "bodyRoll": 0,
+      "edgePixels": 0
+    },
+    {
+      "node": 0,
+      "bodyYaw": 270,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 1,
+      "bodyYaw": 270,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 2,
+      "bodyYaw": 270,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 3,
+      "bodyYaw": 270,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 4,
+      "bodyYaw": 270,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    },
+    {
+      "node": 5,
+      "bodyYaw": 270,
+      "bodyRoll": 6,
+      "edgePixels": 0
+    }
+  ],
+  "actualFramebufferEnergyChanges": [
+    {
+      "node": 0,
+      "changedPixels": 4958,
+      "outsideEnergyWindows": 0
+    },
+    {
+      "node": 1,
+      "changedPixels": 4958,
+      "outsideEnergyWindows": 0
+    },
+    {
+      "node": 2,
+      "changedPixels": 8866,
+      "outsideEnergyWindows": 0
+    },
+    {
+      "node": 3,
+      "changedPixels": 8866,
+      "outsideEnergyWindows": 0
+    },
+    {
+      "node": 4,
+      "changedPixels": 8866,
+      "outsideEnergyWindows": 0
+    },
+    {
+      "node": 5,
+      "changedPixels": 8866,
+      "outsideEnergyWindows": 0
+    }
+  ],
+  "gameTested": false
+}

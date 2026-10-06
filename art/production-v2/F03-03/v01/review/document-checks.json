@@ -1,0 +1,11 @@
+{
+  "allPassed": true,
+  "scope": "only adoption registration and design/reference integrity; no pixel/model/browser/runtime checks",
+  "previousAssetAdopted": true,
+  "historicalZipUnchanged": true,
+  "codeLocalesJarUnchanged": true,
+  "copiedReferenceHashesMatch": true,
+  "productionAssetFiles": 0,
+  "pixelVerificationPerformed": false,
+  "runtimeVerified": false
+}

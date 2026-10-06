@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-full-16.png",
+    "copy": "references/battery-full-16.png",
+    "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665",
+    "status": "已采用电量HUD稿，仅作身份与窗口语义参考，未改原件"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-full-32.png",
+    "copy": "references/battery-full-32.png",
+    "sha256": "fee8d98b8bae980f68e955c0135653470999c021b4b774965d6267a4c3af75d6",
+    "status": "已采用电量HUD稿，仅作身份与窗口语义参考，未改原件"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-16.png",
+    "copy": "references/battery-empty-16.png",
+    "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7",
+    "status": "已采用电量HUD稿，仅作身份与窗口语义参考，未改原件"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-32.png",
+    "copy": "references/battery-empty-32.png",
+    "sha256": "0a4cecad045e8bfb06086e91e46c94512e57333667f611e754e3695d246b3759",
+    "status": "已采用电量HUD稿，仅作身份与窗口语义参考，未改原件"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/energy-regions.json",
+    "copy": "references/energy-regions.json",
+    "sha256": "d949e65f3b704b2f1515ba00602fd7d73e4d85a3fb855eaf4b9ca3098ccaaa75",
+    "status": "已采用电量HUD稿，仅作身份与窗口语义参考，未改原件"
+  }
+]

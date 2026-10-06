@@ -1,0 +1,197 @@
+{
+  "asset": "F01-01",
+  "version": "v01",
+  "status": "已采用，未接入",
+  "adopted": true,
+  "integrated": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3592,
+      "sha256": "7aa5b494821cffc7fbc0f011e0e2250790cef3c93b5f074cdc2550ad8d3ebda2",
+      "purpose": "说明"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1658,
+      "sha256": "8c9a7f791654f5de53a5b1b1eef54a6bdcc346e156ee5ccbad19508866ea8d97",
+      "purpose": "说明"
+    },
+    {
+      "path": "exports/cooking-pot-atlas-64.png",
+      "bytes": 1107,
+      "sha256": "b8ee70402e8aa984a70508278415e488ba9315e13f680e98352ec1f435219ab8",
+      "purpose": "候选导出"
+    },
+    {
+      "path": "exports/cooking-pot.block-model.json",
+      "bytes": 45372,
+      "sha256": "72d8de3cd63afb680130fda18c5bc95a300c6d4cd1e8c3b453e948e07227922d",
+      "purpose": "候选导出"
+    },
+    {
+      "path": "references/cooking-pot-concept-v01.png",
+      "bytes": 1371377,
+      "sha256": "f8682b7ef0ed751c44e72223b325390ba24fb5cfb40c1ea1e4756e3bf33fd3e3",
+      "purpose": "参考"
+    },
+    {
+      "path": "references/imagegen-prompt.md",
+      "bytes": 2030,
+      "sha256": "de3a37a796545dbc45ee98eef4295ce51e018451874d501f7243b739b1ad9f11",
+      "purpose": "参考"
+    },
+    {
+      "path": "review/aseprite-final-verification.json",
+      "bytes": 405,
+      "sha256": "58b4ca823b4d803249e147ac64f1a2f33b4b2d21afaf07145fd11c09c7bfbf2a",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/aseprite-reopened-states.json",
+      "bytes": 20323,
+      "sha256": "217c2214b7509d09c42e4923bc38c70d773b46540944bfc59050ac9423965232",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/aseprite-saved-state.json",
+      "bytes": 3966,
+      "sha256": "6265384925491b3edf993c45a9ebf41446dbcaac3828ac5f44f8068e63db3dcc",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 703,
+      "sha256": "2964154ea92c050e60da5a805959be38965805b56aeed4db0fc928f0206bca63",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-atlas-preview.png",
+      "bytes": 1107,
+      "sha256": "b8ee70402e8aa984a70508278415e488ba9315e13f680e98352ec1f435219ab8",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-demonstration.blend",
+      "bytes": 142139,
+      "sha256": "2dfd714a8fb9384cd054189d1e4190074c698465aca1c2f1756052ed252fb61e",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-front.png",
+      "bytes": 787144,
+      "sha256": "7b0764e65ef16f8e592d7ab65aa8682c06a0aacceb51801716ca934a906f747d",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-heat-source-mockup.png",
+      "bytes": 1249111,
+      "sha256": "f7f490790b478290c3cc12f6863162c088c87ba62dd85487461df2adfbb40bb3",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-idle.png",
+      "bytes": 1477507,
+      "sha256": "c2d1442a4e3492530d418f31f47c661aa5e9fc58f911e424c5516be5c9613270",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-paired-review.png",
+      "bytes": 1565177,
+      "sha256": "effcd74381a0d7c60f0f470bad731cd77e5a191407db73fc0e844bedff149cae",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/cooking-pot-top.png",
+      "bytes": 794834,
+      "sha256": "e97e08e03522bd9c043e973ad94b5fb637b7af066265bec5615cfd766b23009c",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/dimensions-top.svg",
+      "bytes": 6248,
+      "sha256": "2964eb134b2c1bf6cd47704c0b488e1eefc1cd216c1101e13f1ead7917cf74af",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/render-log.txt",
+      "bytes": 2076,
+      "sha256": "5528bdca430b5a4ff3c1147b28ee4e068ac4d88cffd93a9edb1539bdde2c4a30",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "review/uv-layout-guide.svg",
+      "bytes": 4595,
+      "sha256": "95cb1fe5cbb8a28180599f03b67c49bcc42448d15d08f62db4abf845535b6bfe",
+      "purpose": "审稿或验证"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 5202,
+      "sha256": "7aa41070cac48e759292bf0288bc90539309d4be70bc07095d9adc8ec2b91ca7",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/cooking-pot-atlas-64.aseprite",
+      "bytes": 1246,
+      "sha256": "51cedcc87babec5fadfe287cf18182c3b2ab9789b471d27e92a6a148362897b1",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/cooking-pot-v01.bbmodel",
+      "bytes": 55549,
+      "sha256": "e34ff08e9aabe0f2857eb02c30b26722befe13dbcfc92e5b427cf60e07b3ebd7",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/cooking-pot-v01.blend",
+      "bytes": 119633,
+      "sha256": "b2427091ab0cd9ccdd07ec64e6241bef6dd5d89d8ab9f6deceee1e57f5a1739b",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/create-uv.py",
+      "bytes": 3326,
+      "sha256": "f79eed7f982b4dfd6cd575adb1143c0faac79637d3afd501d37bb6ba82ef6b1b",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 46435,
+      "sha256": "bab4f4373aa9fa5f43dfb7895893be871ba175e6955bdb525b832f60a1e5d270",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/material-palette.json",
+      "bytes": 1734,
+      "sha256": "b0a390175033fc548a3e77383b9d70cb885ebfd2c4671a047de78f66f9c1292b",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 9220,
+      "sha256": "f6c49d02991a6bfd2aa0b33b997ab53c26d72cfe1a170ff1596224438d7ceb4f",
+      "purpose": "源稿"
+    },
+    {
+      "path": "source/uv-regions.json",
+      "bytes": 1656,
+      "sha256": "c1373f877eedb1d3efa2ddabc8f0bfe96298cf5b4ac454df4f11a0b203586a4d",
+      "purpose": "源稿"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1927,
+      "sha256": "2e72177f9e07b04cfddc30dbf130fda404efd54d6f522e254dfe8d992ceabf5e",
+      "purpose": "说明"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 357,
+      "sha256": "ad8269dc2de6b45237518ce25ae1f2eff781409f4ef1a0b3432cfc224392577e",
+      "purpose": "采用记录"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，继续吧"
+}

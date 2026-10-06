@@ -1,0 +1,597 @@
+{
+  "asset": "F05-07",
+  "allPassed": true,
+  "uiCases": 42,
+  "cases": [
+    {
+      "snapshot": "idle",
+      "node": -1,
+      "angle": 0,
+      "rotating": false,
+      "faces": 205,
+      "ghost": false,
+      "fit": {
+        "scale": 40.2266642508363,
+        "cx": -1.0396409238821207,
+        "cy": 0.6889586904885419
+      }
+    },
+    {
+      "snapshot": "idle",
+      "node": 0,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.2672562965638,
+        "cx": 0,
+        "cy": -5.5213973199092266
+      }
+    },
+    {
+      "snapshot": "idle",
+      "node": 1,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.19305962217325,
+        "cx": 0,
+        "cy": -4.408715504863405
+      }
+    },
+    {
+      "snapshot": "idle",
+      "node": 2,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "idle",
+      "node": 3,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "idle",
+      "node": 4,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": -0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "idle",
+      "node": 5,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": 0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": -1,
+      "angle": 8,
+      "rotating": true,
+      "faces": 205,
+      "ghost": false,
+      "fit": {
+        "scale": 40.2266642508363,
+        "cx": -1.0396409238821207,
+        "cy": 0.6889586904885419
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": 0,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.2672562965638,
+        "cx": 0,
+        "cy": -5.5213973199092266
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": 1,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.19305962217325,
+        "cx": 0,
+        "cy": -4.408715504863405
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": 2,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": 3,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": 4,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": -0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "working",
+      "node": 5,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": 0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": -1,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 205,
+      "ghost": false,
+      "fit": {
+        "scale": 40.2266642508363,
+        "cx": -1.0396409238821207,
+        "cy": 0.6889586904885419
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": 0,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.2672562965638,
+        "cx": 0,
+        "cy": -5.5213973199092266
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": 1,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.19305962217325,
+        "cx": 0,
+        "cy": -4.408715504863405
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": 2,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": 3,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": 4,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": -0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "quarter",
+      "node": 5,
+      "angle": 0.784,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": 0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": -1,
+      "angle": 8,
+      "rotating": true,
+      "faces": 205,
+      "ghost": false,
+      "fit": {
+        "scale": 40.2266642508363,
+        "cx": -1.0396409238821207,
+        "cy": 0.6889586904885419
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": 0,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.2672562965638,
+        "cx": 0,
+        "cy": -5.5213973199092266
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": 1,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.19305962217325,
+        "cx": 0,
+        "cy": -4.408715504863405
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": 2,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": 3,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": 4,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": -0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "reverse",
+      "node": 5,
+      "angle": 8,
+      "rotating": true,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": 0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": -1,
+      "angle": 0,
+      "rotating": false,
+      "faces": 205,
+      "ghost": false,
+      "fit": {
+        "scale": 40.2266642508363,
+        "cx": -1.0396409238821207,
+        "cy": 0.6889586904885419
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": 0,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.2672562965638,
+        "cx": 0,
+        "cy": -5.5213973199092266
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": 1,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.19305962217325,
+        "cx": 0,
+        "cy": -4.408715504863405
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": 2,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": 3,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": 4,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": -0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "inactive",
+      "node": 5,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": false,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": 0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": -1,
+      "angle": 0,
+      "rotating": false,
+      "faces": 205,
+      "ghost": true,
+      "fit": {
+        "scale": 40.2266642508363,
+        "cx": -1.0396409238821207,
+        "cy": 0.6889586904885419
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 0,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": true,
+      "fit": {
+        "scale": 19.2672562965638,
+        "cx": 0,
+        "cy": -5.5213973199092266
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 1,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": true,
+      "fit": {
+        "scale": 19.19305962217325,
+        "cx": 0,
+        "cy": -4.408715504863405
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 2,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": true,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 3,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": true,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 4,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": true,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": -0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 5,
+      "angle": 0,
+      "rotating": false,
+      "faces": 409,
+      "ghost": true,
+      "fit": {
+        "scale": 18.929292847372142,
+        "cx": 0.4361990777326463,
+        "cy": -4.984618940037834
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "documentWidth": 305,
+      "liveWidth": 239,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "documentWidth": 753,
+      "liveWidth": 687,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1265,
+      "liveWidth": 743.328125,
+      "overflow": false
+    }
+  ],
+  "nativeImages": [
+    {
+      "name": "wheel-item-32",
+      "width": 32,
+      "height": 32,
+      "pixelHash": "fnv1a64:406418c28ad838ef"
+    },
+    {
+      "name": "wheel-item-16",
+      "width": 16,
+      "height": 16,
+      "pixelHash": "fnv1a64:f2dd156c398d7332"
+    }
+  ],
+  "sameScaleAcrossPhases": true,
+  "reverseMatchesCurrentRenderer": true,
+  "manualPlayAndPauseVerified": true,
+  "ghostStatic": true,
+  "defaultStatic": true,
+  "reviewBoardSaved": true,
+  "liveCaptureSaved": true,
+  "gameIntegrated": false,
+  "finalActualRenderFilesVerified": 12,
+  "finalPreviewRechecked": true
+}

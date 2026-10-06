@@ -1,0 +1,70 @@
+{
+  "asset": "F04-02",
+  "allPassed": true,
+  "date": "2026-10-05",
+  "reusedPng": 4,
+  "reusedAseprite": 4,
+  "sourceFiles": [
+    {
+      "name": "battery-empty-16",
+      "size": [
+        16,
+        16
+      ],
+      "colorMode": "indexed",
+      "layers": 1,
+      "sourcePngHash": "fnv1a64:2f0355fde1e0b185",
+      "sourceReopened": true,
+      "pngReopened": true,
+      "binaryAlpha": true,
+      "visibleColors": 18
+    },
+    {
+      "name": "battery-full-16",
+      "size": [
+        16,
+        16
+      ],
+      "colorMode": "indexed",
+      "layers": 1,
+      "sourcePngHash": "fnv1a64:e2665e2353fb55af",
+      "sourceReopened": true,
+      "pngReopened": true,
+      "binaryAlpha": true,
+      "visibleColors": 22
+    },
+    {
+      "name": "battery-empty-32",
+      "size": [
+        32,
+        32
+      ],
+      "colorMode": "indexed",
+      "layers": 1,
+      "sourcePngHash": "fnv1a64:29c6950e244bcd60",
+      "sourceReopened": true,
+      "pngReopened": true,
+      "binaryAlpha": true,
+      "visibleColors": 22
+    },
+    {
+      "name": "battery-full-32",
+      "size": [
+        32,
+        32
+      ],
+      "colorMode": "indexed",
+      "layers": 1,
+      "sourcePngHash": "fnv1a64:c7be72cc40ba84c5",
+      "sourceReopened": true,
+      "pngReopened": true,
+      "binaryAlpha": true,
+      "visibleColors": 27
+    }
+  ],
+  "endpointExteriorIdentical": true,
+  "alphaIdentical": true,
+  "originalEightFilesUnchanged": true,
+  "newArtworkGenerated": false,
+  "gameIntegrated": false
+}

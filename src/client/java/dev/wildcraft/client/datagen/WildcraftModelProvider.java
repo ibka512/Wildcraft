@@ -14,9 +14,9 @@ public final class WildcraftModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators generator) {
-        generator.createTrivialCube(dev.wildcraft.fabrication.FabricationContent.BLOCK);
+        generator.createNonTemplateModelBlock(dev.wildcraft.fabrication.FabricationContent.BLOCK);
         generator.registerSimpleItemModel(dev.wildcraft.fabrication.FabricationContent.BLOCK, net.minecraft.client.data.models.model.ModelLocationUtils.getModelLocation(dev.wildcraft.fabrication.FabricationContent.BLOCK));
-        generator.createTrivialCube(dev.wildcraft.energy.EnergyContent.CHARGER);
+        generator.createNonTemplateModelBlock(dev.wildcraft.energy.EnergyContent.CHARGER);
         generator.registerSimpleItemModel(dev.wildcraft.energy.EnergyContent.CHARGER, net.minecraft.client.data.models.model.ModelLocationUtils.getModelLocation(dev.wildcraft.energy.EnergyContent.CHARGER));
         generator.createNonTemplateModelBlock(dev.wildcraft.cooking.CookingContent.POT);
         generator.registerSimpleItemModel(dev.wildcraft.cooking.CookingContent.POT, net.minecraft.client.data.models.model.ModelLocationUtils.getModelLocation(dev.wildcraft.cooking.CookingContent.POT));
@@ -29,8 +29,6 @@ public final class WildcraftModelProvider extends FabricModelProvider {
         for(var part:java.util.List.of(dev.wildcraft.mechanics.MechanicsContent.ROCKET,dev.wildcraft.mechanics.MechanicsContent.SPENT_ROCKET,dev.wildcraft.mechanics.MechanicsContent.SPRING,dev.wildcraft.mechanics.MechanicsContent.STABILIZER,dev.wildcraft.mechanics.MechanicsContent.BUOYANCY))generator.generateFlatItem(part,ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.WING, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(dev.wildcraft.mechanics.MechanicsContent.WHEEL, ModelTemplates.FLAT_ITEM);
-        generator.generateFlatItem(dev.wildcraft.energy.EnergyContent.BATTERY, ModelTemplates.FLAT_ITEM);
-        generator.generateFlatItem(dev.wildcraft.cooking.CookingContent.MEAL, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(WildcraftItems.TEST_CORE, ModelTemplates.FLAT_ITEM);
         generator.generateFlatItem(WildcraftItems.PARAGLIDER, ModelTemplates.FLAT_ITEM);
     }

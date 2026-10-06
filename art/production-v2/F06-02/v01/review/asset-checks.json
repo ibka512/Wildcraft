@@ -1,0 +1,33 @@
+{
+  "asset": "F06-02",
+  "date": "2026-10-05",
+  "allPassed": true,
+  "size": [
+    176,
+    192
+  ],
+  "sourceLayers": 4,
+  "colorMode": "rgb",
+  "sourceReopened": true,
+  "pngReopened": true,
+  "sourcePngPixelIdentity": true,
+  "pixelHash": "fnv1a64:5e4390b081f14d03",
+  "matchesAuthoredPixels": true,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "visibleColors": 16,
+  "actualSlotCount": 39,
+  "inputSlots": 2,
+  "outputSlots": 1,
+  "playerSlots": 36,
+  "slotCoordinatesUnchanged": true,
+  "buttonCoordinatesUnchanged": true,
+  "noSlotOverlaps": true,
+  "bakedText": false,
+  "bakedItems": false,
+  "bakedProgress": false,
+  "javaLocalesJarUnchanged": true,
+  "integrated": false
+}

@@ -69,7 +69,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 装备后，在空中重新按跳跃键开伞，再按一次收伞。默认空格会跟随原版跳跃键改绑。视角控制方向，W/S 调整前进速度，A/D 侧移。开伞时剑、盾等物品暂时收起并保留原来的堆栈；切换快捷栏、攻击或使用物品会收伞。精力耗尽、受击、落地、卸下装备也会收伞，详见 [P3 规则](P3-RULES.md)。
 
-使用剑/斧实际击中目标、举盾或拉弓/装弩后，该类别登记最近使用的装备。只切换快捷栏不会改记录；换成空手或其他物品后可在第三人称看到背负，其他玩家也能看到。掉落、放入箱子或损坏会清除对应记录。拉弓时盾暂时显示在背上，滑翔时双手仍抓伞，真实物品留在原库存。首版显示披风时隐藏背负，鞘翅隐藏冲突的盾/弓；短落定过渡已接入，完整腰侧布局留到后续。
+使用剑/斧实际击中目标、举盾或拉弓/装弩后，该类别登记最近使用的装备。只切换快捷栏不会改记录；换成空手或其他物品后可在第三人称看到背负，其他玩家也能看到。掉落、放入箱子或损坏会清除对应记录。拉弓时盾暂时显示在背上，滑翔时双手仍抓伞，真实物品留在原库存。dev.15 在披风或鞘翅下改用侧腰布局，保持真实装备尺度；短落定和探索动作衔接已接入，攻击/使用即时接管。
 
 未开放 LAN 的单人生存世界，空中按住使用键实际拉弓会自动进入林克时间。世界 5 TPS，拉弓保持正常实际时间曲线，精力每有效秒消耗 10。松弓、落地、耗尽和资格丢失退出；暂停和开放 LAN 恢复进入前速率。有限缓降仍受累计摔落伤害；弩不触发。F8 打开独立表现设置，可关闭去饱和/暗角等，不会关闭技能或精力收费。
 
@@ -213,4 +213,8 @@ P3.2 当前共 27 项 GameTest、8 个成品客户端类，另有 4 项普通客
 
 先runDatagen，再build gameTestJar，服务端runGameTest；完整图形runPackagedClientTest（16类），专项runFusionClientTest。测试参数需操作者已经接受Minecraft EULA。两个普通客户端先prepareP9Lab冻结包，再以独立WILDCRAFT_PROJECT_CACHE启动runP9Server/Actor/Observer；127.0.0.1:25640仅本机，服务端需指定测试角色开关，由任务提供。运行期间不重建冻结JAR，不将测试JAR安装到日常世界。
 
-当前完整包dev.14；最终事实见P9-VERIFICATION，P9-CHECKPOINT仅保留历史实施状态。
+当前本机包 dev.15；第二批美术实测见 SECOND-ART-VERIFICATION，P9 原始玩法验收见 P9-VERIFICATION，P9-CHECKPOINT 仅保留历史状态。
+
+## 第二批美术接入后的验证入口
+
+先单独运行 `./dev.sh runDatagen`，再运行 `./dev.sh build gameTestJar`。接受本机测试 EULA 后使用 `./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runSecondArtClientTest runMechanicsClientTest` 做专项，或使用 runPackagedClientTest 做完整客户端回归。生产实例只安装 dev.15 正式包与指定 Fabric API，不安装测试包。导入原稿的方法及准确覆盖见 [接入说明](SECOND-ART-INTEGRATION.md) / [实测记录](SECOND-ART-VERIFICATION.md)。

@@ -1,0 +1,3638 @@
+{
+  "allPassed": true,
+  "asset": "F05-10",
+  "version": "v02",
+  "cases": [
+    {
+      "scene": "part-1-ready",
+      "node": 0,
+      "ghost": 1,
+      "ghostParts": 24,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 1,
+      "ghost": 1,
+      "ghostParts": 24,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 2,
+      "ghost": 1,
+      "ghostParts": 24,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 3,
+      "ghost": 1,
+      "ghostParts": 24,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 4,
+      "ghost": 1,
+      "ghostParts": 24,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 5,
+      "ghost": 1,
+      "ghostParts": 24,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 0,
+      "ghost": 2,
+      "ghostParts": 17,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 1,
+      "ghost": 2,
+      "ghostParts": 17,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 2,
+      "ghost": 2,
+      "ghostParts": 17,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 3,
+      "ghost": 2,
+      "ghostParts": 17,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 4,
+      "ghost": 2,
+      "ghostParts": 17,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 5,
+      "ghost": 2,
+      "ghostParts": 17,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 0,
+      "ghost": 3,
+      "ghostParts": 28,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 1,
+      "ghost": 3,
+      "ghostParts": 28,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 2,
+      "ghost": 3,
+      "ghostParts": 28,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 3,
+      "ghost": 3,
+      "ghostParts": 28,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 4,
+      "ghost": 3,
+      "ghostParts": 28,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 5,
+      "ghost": 3,
+      "ghostParts": 28,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 0,
+      "ghost": 4,
+      "ghostParts": 53,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 1,
+      "ghost": 4,
+      "ghostParts": 53,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 2,
+      "ghost": 4,
+      "ghostParts": 53,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 3,
+      "ghost": 4,
+      "ghostParts": 53,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 4,
+      "ghost": 4,
+      "ghostParts": 53,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 5,
+      "ghost": 4,
+      "ghostParts": 53,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 0,
+      "ghost": 5,
+      "ghostParts": 44,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 1,
+      "ghost": 5,
+      "ghostParts": 44,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 2,
+      "ghost": 5,
+      "ghostParts": 44,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 3,
+      "ghost": 5,
+      "ghostParts": 44,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 4,
+      "ghost": 5,
+      "ghostParts": 44,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 5,
+      "ghost": 5,
+      "ghostParts": 44,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 0,
+      "ghost": 6,
+      "ghostParts": 67,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 1,
+      "ghost": 6,
+      "ghostParts": 67,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 2,
+      "ghost": 6,
+      "ghostParts": 67,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 3,
+      "ghost": 6,
+      "ghostParts": 67,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 4,
+      "ghost": 6,
+      "ghostParts": 67,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 5,
+      "ghost": 6,
+      "ghostParts": 67,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 58,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 58,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 58,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 58,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 58,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 58,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 0,
+      "ghost": 7,
+      "ghostParts": 25,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 1,
+      "ghost": 7,
+      "ghostParts": 25,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 2,
+      "ghost": 7,
+      "ghostParts": 25,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 3,
+      "ghost": 7,
+      "ghostParts": 25,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 4,
+      "ghost": 7,
+      "ghostParts": 25,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 5,
+      "ghost": 7,
+      "ghostParts": 25,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 0,
+      "ghost": 8,
+      "ghostParts": 15,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 1,
+      "ghost": 8,
+      "ghostParts": 15,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 2,
+      "ghost": 8,
+      "ghostParts": 15,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 3,
+      "ghost": 8,
+      "ghostParts": 15,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 4,
+      "ghost": 8,
+      "ghostParts": 15,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 5,
+      "ghost": 8,
+      "ghostParts": 15,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 0,
+      "ghost": 2,
+      "ghostParts": 16,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 1,
+      "ghost": 2,
+      "ghostParts": 16,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 2,
+      "ghost": 2,
+      "ghostParts": 16,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 3,
+      "ghost": 2,
+      "ghostParts": 16,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 4,
+      "ghost": 2,
+      "ghostParts": 16,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 5,
+      "ghost": 2,
+      "ghostParts": 16,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 0,
+      "ghost": 2,
+      "ghostParts": 19,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 1,
+      "ghost": 2,
+      "ghostParts": 19,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 2,
+      "ghost": 2,
+      "ghostParts": 19,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 3,
+      "ghost": 2,
+      "ghostParts": 19,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 4,
+      "ghost": 2,
+      "ghostParts": 19,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 5,
+      "ghost": 2,
+      "ghostParts": 19,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 0,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 122,
+      "fxMeshes": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 0,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 1,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 2,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 3,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 4,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 5,
+      "ghost": 0,
+      "ghostParts": 0,
+      "changedMeshes": 6,
+      "fxMeshes": 1,
+      "allPassed": true
+    }
+  ],
+  "caseCount": 402,
+  "vertexChecks": 368184,
+  "eightAdoptedModelsCovered": true,
+  "previewsStationary": true,
+  "ghostScale1": true,
+  "ghostsHaveNoFx": true,
+  "allEightUvRangesValid": true,
+  "actualNodeActivitySeparatedFromGlobalSwitch": true,
+  "rocketZeroNoFlame": true,
+  "spring31To40Extended": true,
+  "spring0NotArmed": true,
+  "lastPaymentStabilizerMint": true,
+  "productionGameTested": false
+}

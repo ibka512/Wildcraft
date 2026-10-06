@@ -1,0 +1,172 @@
+{
+  "asset": "F05-04",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "scale": 1,
+  "unitsPerBlock": 16,
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "nodes": [
+    {
+      "id": 0,
+      "name": "顶",
+      "point": [
+        0,
+        10.4,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "name": "底",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "后",
+      "point": [
+        0,
+        5.2,
+        -11.2
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "前",
+      "point": [
+        0,
+        5.2,
+        11.2
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "name": "左",
+      "point": [
+        -11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "name": "右",
+      "point": [
+        11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "localBasis": [
+    "(x,z,-y)",
+    "(x,-z,y)",
+    "(-x,y,-z)",
+    "(x,y,z)",
+    "(-z,y,x)",
+    "(z,y,-x)"
+  ],
+  "exhaustLocal": [
+    0,
+    0,
+    1
+  ],
+  "thrustLocal": [
+    0,
+    0,
+    -1
+  ],
+  "fuelCapacityWorldTicks": 80,
+  "batteryCost": 0,
+  "activation": "enabled || already ignited; server simulation only",
+  "shutdownDoesNotExtinguish": true,
+  "burningCanBeRecovered": false,
+  "spentInstallAllowed": false,
+  "spentRecharges": false,
+  "spentRecycle": "existing recipe: one copper ingot",
+  "stateSelection": "actual fuel >0 and not actual spent item: loaded; fuel==0 or actual spent identity: spent",
+  "flame": {
+    "originModelUnits": [
+      0,
+      0,
+      8
+    ],
+    "boundsModelUnits": {
+      "min": [
+        -1.28,
+        -1.28,
+        8
+      ],
+      "max": [
+        1.28,
+        1.28,
+        13.76
+      ]
+    },
+    "colorRGBA": "#DDFFD58B",
+    "alpha": 0.8666666666666667,
+    "emissionReviewOnly": true,
+    "visibleRule": "node active && real fuel > 0 && !ghost && !spent",
+    "worldPositionRule": "same node basis as rocket; then existing machine yaw and roll",
+    "geometry": "existing MachineRenderer cuboid; no newly added particles or texture",
+    "onZeroFuel": "no lingering or fade-out flame",
+    "onGhost": "no flame"
+  },
+  "animation": "no moving model parts",
+  "paperSeal": "binary loaded/spent shape only; not a fake continuous fuel gauge",
+  "ghost": {
+    "sameModelAndScale": true,
+    "color": "#5DD7B7",
+    "alpha": 0.5333333333333333,
+    "depthTest": true,
+    "depthWrite": false,
+    "allPartsReview": "F05-10 final B3 all-part review still pending"
+  },
+  "requiresGameVerification": [
+    "six-node install/recover/last tick/real item spent identity",
+    "bottom mounting clearance and collision",
+    "multi-part geometry/ghost occlusion",
+    "paused/unloaded simulation does not advance visual fuel"
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

@@ -1,0 +1,33 @@
+{
+  "asset": "F03-03",
+  "allPassed": true,
+  "adopted": false,
+  "integrated": false,
+  "newOriginalGlyphs": 1,
+  "productionModelFiles": 0,
+  "sourceAsepriteFiles": 2,
+  "productionPNGFiles": 2,
+  "nativeSpriteSize": [
+    16,
+    16
+  ],
+  "actualSpriteColors": 6,
+  "atlasSize": [
+    64,
+    32
+  ],
+  "atlasLayers": 4,
+  "sourceAndPNGReopenedCases": 4,
+  "opaqueGeometryMountCases": 5,
+  "finiteGeometrySceneCases": 64,
+  "WebGLRenderCases": 64,
+  "actualDropdownStateCases": 16,
+  "referenceCornerOcclusionCases": 8,
+  "handBackScaleRatio": 1.0,
+  "oldAtlasPixelsUnchangedOutsideNewRegion": true,
+  "previousAssetAdopted": true,
+  "previousArchiveUnchanged": true,
+  "referencesAndCodeLocalesJarUnchanged": true,
+  "editorStartupBlockerResolved": true,
+  "gameRuntimeVerified": false
+}

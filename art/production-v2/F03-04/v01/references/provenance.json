@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-03/v01/exports/fuse-shared-atlas-64x32.png",
+    "copy": "references/adopted-fuse-atlas.png",
+    "sha256": "6796a496b82b2da2ca6a0686fe36fd64a1ec6d6bbc65c5b4e0c2ea5052a51899"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/reference-meshes.json",
+    "copy": "references/adopted-reference-meshes.json",
+    "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/mount-spec.json",
+    "copy": "references/adopted-mount-spec.json",
+    "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-03/v01/exports/fallback-design-spec.json",
+    "copy": "references/adopted-fallback-spec.json",
+    "sha256": "d6eb76e76c36902e2c4a862c8c2a53ab5804180d41ab1c775862d409e973dbd2"
+  }
+]

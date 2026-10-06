@@ -1,0 +1,56 @@
+[
+  {
+    "id": "loaded",
+    "label": "未点燃 · 满燃料",
+    "fuel": 80,
+    "active": false,
+    "enabled": false,
+    "ghost": false,
+    "isSpent": false
+  },
+  {
+    "id": "burning",
+    "label": "燃烧中 · 部分余量",
+    "fuel": 37,
+    "active": true,
+    "enabled": true,
+    "ghost": false,
+    "isSpent": false
+  },
+  {
+    "id": "shutdown-burning",
+    "label": "已关机 · 仍在燃烧",
+    "fuel": 19,
+    "active": true,
+    "enabled": false,
+    "ghost": false,
+    "isSpent": false
+  },
+  {
+    "id": "spent",
+    "label": "燃尽 · 留下空壳",
+    "fuel": 0,
+    "active": false,
+    "enabled": false,
+    "ghost": false,
+    "isSpent": true
+  },
+  {
+    "id": "final-tick",
+    "label": "末刻 · 零燃料无尾焰",
+    "fuel": 0,
+    "active": true,
+    "enabled": true,
+    "ghost": false,
+    "isSpent": true
+  },
+  {
+    "id": "ghost",
+    "label": "安装预览 · 固定无尾焰",
+    "fuel": 80,
+    "active": true,
+    "enabled": false,
+    "ghost": true,
+    "isSpent": false
+  }
+]

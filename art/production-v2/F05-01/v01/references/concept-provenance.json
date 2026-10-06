@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "role": "造型参考，不是最终模型或纹理",
+  "file": "machine-concept-v01.png",
+  "nativePixelsFromConcept": false,
+  "interpretation": "保持参考材料与低矮平台方向；以代码节点、尺寸与控制板命中范围为准"
+}

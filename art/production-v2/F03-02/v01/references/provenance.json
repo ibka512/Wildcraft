@@ -1,0 +1,97 @@
+[
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-16.png",
+    "copy": "references/legacy-fuse-status-16.png",
+    "sha256": "267fd79bdf3c7b82d3335f7310ac694ded1603faa2fb70d5cc77ce27a35b2e9b"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-32.png",
+    "copy": "references/legacy-fuse-status-32.png",
+    "sha256": "04101391b0257ea36b78ebc60ac74354be20d91426f62869b1afebd157195c45"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-16.aseprite",
+    "copy": "references/legacy-fuse-status-16.aseprite",
+    "sha256": "1d171b966ab0dda4e1027f1c419b243b1fb4f4a7f0a716c97a3309252eff5fdd"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-32.aseprite",
+    "copy": "references/legacy-fuse-status-32.aseprite",
+    "sha256": "287e2bf34d6cd7ca87d2569a9914a1f0c36d91594d9c740e2d7e40ccd8c1127f"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/说明.md",
+    "copy": "references/legacy-说明.md",
+    "sha256": "711dea33ac81f8fba1da1571abc0d9a2ba333af14bfae7935e91612c8e51ee33"
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/verification.json",
+    "copy": "references/legacy-verification.json",
+    "sha256": "dbb35a89c7688538f554f5ceed9a689ae736dc2f406c0a636f10acba86213e78"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/fuse-review.js",
+    "copy": "references/adopted-fuse-review.js",
+    "sha256": "ce575ba3a24bb78c981289700afc791196912f166ae7cb0bfe392420a0487bf4"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/reference-meshes.json",
+    "copy": "references/adopted-reference-meshes.json",
+    "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/mount-spec.json",
+    "copy": "references/adopted-mount-spec.json",
+    "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p9/0084_p9-native-fused-inventory.png",
+    "copy": "references/historical-p9-inventory.png",
+    "sha256": "a94eeddc77d584dab506dff93f9ac8dbeb90d52fe8dbf3ac647a85228c4d4853"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/lang/zh_cn.json",
+    "copy": "references/zh_cn.json",
+    "sha256": "72c6941cfe83c5f52df8946271d6cb2c23b4b018242d081f4cc1463ec45dac30"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/lang/en_us.json",
+    "copy": "references/en_us.json",
+    "sha256": "959459db08fd520642b93735cf36eff857170446ca0af78f809b738b3211fe83"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+    "copy": "references/FusionPresentation.java",
+    "sha256": "cd1641b77377c3c45ab1a8bf7c51befd6dcff0142d0a11a7ac7601acd8d1d14b"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionVisual.java",
+    "copy": "references/FusionVisual.java",
+    "sha256": "49a0115bb602b42b1b59beda538a83674016ca0a7b7ee16ab9ab46ee992fb54c"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionCombat.java",
+    "copy": "references/FusionCombat.java",
+    "sha256": "1d03da91fff0512fc01449212db400fff15af828d4672f68a8f8fe3f34a61512"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionRules.java",
+    "copy": "references/FusionRules.java",
+    "sha256": "94256d379370359a1da2a4e5c616f266f09ae57561a9c9d2ba34233ad54b84ae"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionData.java",
+    "copy": "references/FusionData.java",
+    "sha256": "e19a6b6bae4fdefee9828e09ddcb63b2bbb79607848dbf2fc998916b3f3f5140"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionViews.java",
+    "copy": "references/FusionViews.java",
+    "sha256": "f9766453d02a184a4e1c2b21844881f502b525a13b1bfa6152a48f0b1c9adca2"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionItems.java",
+    "copy": "references/FusionItems.java",
+    "sha256": "f0888f0901e124243115868115ee84174e8026871545d2db19c25a1892ef9e8e"
+  }
+]

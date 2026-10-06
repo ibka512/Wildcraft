@@ -1,0 +1,32 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/mount-spec.json",
+    "copy": "references/adopted-mount-spec.json",
+    "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-02/v01/exports/status-layout.json",
+    "copy": "references/adopted-status-layout.json",
+    "sha256": "3b101071e0ba8921268ea099108a2ca9ac99edde37ab750beed1389dc9e54394"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-02/v01/exports/atlas-layout.json",
+    "copy": "references/adopted-atlas-layout.json",
+    "sha256": "db5b74deb941c183f5fb5ded5e231d8affb9a7eccbd2f11296cc326106f9aed9"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/source/reference-meshes.json",
+    "copy": "references/adopted-reference-meshes.json",
+    "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-01/v01/references/adopted-back-layout.json",
+    "copy": "references/adopted-back-layout.json",
+    "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F03-02/v01/exports/fuse-status-atlas-64x32.png",
+    "copy": "references/adopted-fuse-status-atlas-64x32.png",
+    "sha256": "757ea9c6fe5b54a67b546817ebe1f4d74a5c7d9d56d3667478cb3dcece1a89c9"
+  }
+]

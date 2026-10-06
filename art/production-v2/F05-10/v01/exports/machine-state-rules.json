@@ -1,0 +1,83 @@
+{
+  "asset": "F05-10",
+  "version": "v01",
+  "status": "user_approved",
+  "integrated": false,
+  "scope": "adopted body/fan/battery visual rules; B3 other six models pending",
+  "candidate": {
+    "source": "MachinePresentation.selectedNode / canPreview",
+    "requirements": [
+      "local selected node",
+      "stopped",
+      "empty node",
+      "accepted real held stack",
+      "not spent rocket",
+      "held battery requires no existing battery"
+    ],
+    "label": "位置可用，右键尝试安装",
+    "serverResultRequired": true,
+    "doesNotPredict": [
+      "owner permission",
+      "server eye ray",
+      "inventory room",
+      "action cooldown"
+    ]
+  },
+  "invalid": {
+    "ghostVisible": false,
+    "marker": "amber corner brackets",
+    "glyph": "blocked",
+    "reasonTextRequired": true
+  },
+  "states": {
+    "off": "!enabled",
+    "working": "enabled && working",
+    "waiting": "enabled && !working",
+    "low": "battery present && energy < 100; not equal to stopped",
+    "noBattery": "batteryNode < 0; — / 1000"
+  },
+  "fanRotation": {
+    "source": "node ACTIVE bit only",
+    "angle": "ageInTicks * .7",
+    "ghostAngle": 0
+  },
+  "batteryGhost": {
+    "source": "actual held BatteryData",
+    "capacity": 1000,
+    "modelScale": 1,
+    "fill": "clamp(E/1000*3-i,0,1)",
+    "differentFromMachineEnergy": true
+  },
+  "resources": {
+    "machineEnergy": "body.energy / actual battery node",
+    "rocket": "selected node rocketFuel / 80 world ticks",
+    "spring": "selected node springCooldown, 0..40 world ticks; zero does not prove armed"
+  },
+  "keys": {
+    "riding": "actual translated TOGGLE binding; W/S and A/D",
+    "groundStop": "sneak empty-hand RMB on control panel",
+    "remove": "stopped, sneak empty-hand RMB; burning rocket cannot remove; inventory must have room"
+  },
+  "feedback": {
+    "source": "actual existing machine.wildcraft feedback keys",
+    "scope": "current target only; clear on target/held item change or bounded response display lifetime",
+    "doesNotAddNetworkFields": true,
+    "owner": "无操作权限",
+    "inventory": "背包空间不足",
+    "aim": "请对准接口"
+  },
+  "visibility": {
+    "hud": "alive nonspectator HUD visible no screen within five blocks and target/riding same machine",
+    "ghost": "selectedNode eligibility; hide on no target/screen/HUD hidden"
+  },
+  "deferredChecks": [
+    "B3 wing,rocket,spring,wheel,stabilizer,float transparency/occlusion",
+    "Minecraft native font and true GUI scaling",
+    "real install/remove and server rejection",
+    "actual crouch/riding/owner/inventory and client tracking",
+    "floor/parts extending body collision; inherited F05-05 known limit"
+  ],
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用。开始下一项"
+}

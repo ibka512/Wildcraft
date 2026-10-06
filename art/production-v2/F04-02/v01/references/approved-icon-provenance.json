@@ -1,0 +1,58 @@
+[
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-16.png",
+    "copy": "exports/battery-empty-16.png",
+    "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-16.aseprite",
+    "copy": "source/battery-empty-16.aseprite",
+    "sha256": "d91c3b2a40d96f767a3c2cc39c6f3f8b79b23450b43b386f88e57772eb6f396c",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-full-16.png",
+    "copy": "exports/battery-full-16.png",
+    "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-full-16.aseprite",
+    "copy": "source/battery-full-16.aseprite",
+    "sha256": "22aac33efafbeff685222ab3d25d256ea1b04f7fcbebb9df9fb42ecb68cc9869",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-32.png",
+    "copy": "exports/battery-empty-32.png",
+    "sha256": "0a4cecad045e8bfb06086e91e46c94512e57333667f611e754e3695d246b3759",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-32.aseprite",
+    "copy": "source/battery-empty-32.aseprite",
+    "sha256": "486cf7867897100a0fd893667f67e640f6c981d5b702337f2db21b3109a76dd6",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-full-32.png",
+    "copy": "exports/battery-full-32.png",
+    "sha256": "fee8d98b8bae980f68e955c0135653470999c021b4b774965d6267a4c3af75d6",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/codex/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/battery-status-icon-v1/deliverable/battery-full-32.aseprite",
+    "copy": "source/battery-full-32.aseprite",
+    "sha256": "13feb85856128a23f5372d669c7ca37e9596535ab5364ede8799c1b119f2ef7f",
+    "status": "user_approved",
+    "pixels_changed": false
+  }
+]

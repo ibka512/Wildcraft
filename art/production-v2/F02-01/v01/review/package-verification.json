@@ -1,0 +1,148 @@
+{
+  "date": "2026-10-05",
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "exports/ambient-temperature-color-16.png preserved",
+      "passed": true
+    },
+    {
+      "name": "source/ambient-temperature-color-16.aseprite preserved",
+      "passed": true
+    },
+    {
+      "name": "exports/ambient-temperature-color-32.png preserved",
+      "passed": true
+    },
+    {
+      "name": "source/ambient-temperature-color-32.aseprite preserved",
+      "passed": true
+    },
+    {
+      "name": "MealHud.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "TemperatureHud.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "StaminaHud.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "TemperatureRules.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "adopted meal layout preserved",
+      "passed": true
+    },
+    {
+      "name": "warmth-meal-16.png preserved",
+      "passed": true
+    },
+    {
+      "name": "cooling-meal-16.png preserved",
+      "passed": true
+    },
+    {
+      "name": "stamina-recovery-16.png preserved",
+      "passed": true
+    },
+    {
+      "name": "F01-03 adopted manifest intact",
+      "passed": true
+    },
+    {
+      "name": "dev14 jar unchanged",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/temperature-hud-review.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/preview.html",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/ambient-temperature-color-16.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/ambient-temperature-color-16.aseprite",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/ambient-temperature-color-32.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/ambient-temperature-color-32.aseprite",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/temperature-hud-layout.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/temperature-hud.js",
+      "passed": true
+    },
+    {
+      "name": "README.md link brief.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link integration-map.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link verification.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link manifest.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/seven-states/",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/icon-verification.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link references/temperature-v2-sources.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/browser-verification.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/package-verification.json",
+      "passed": true
+    },
+    {
+      "name": "browser checks passed",
+      "passed": true
+    },
+    {
+      "name": "icon checks passed",
+      "passed": true
+    },
+    {
+      "name": "seven state review images",
+      "passed": true
+    },
+    {
+      "name": "six joint review images",
+      "passed": true
+    }
+  ],
+  "integrated": false,
+  "adopted": false
+}

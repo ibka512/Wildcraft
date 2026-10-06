@@ -1,0 +1,149 @@
+{
+  "asset": "A07-A08-C",
+  "version": "v01",
+  "date": "2026-10-06",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "purpose": "Bounded visual joins and immediate action takeover; reference review only",
+  "newProductionModels": 0,
+  "newTextures": 0,
+  "newAuthoredClipSets": 0,
+  "localJoinTemplates": 3,
+  "durationsMs": {
+    "open": 300,
+    "emptyExit": 200,
+    "climbSwitch": 120
+  },
+  "curve": "smoothstep x*x*(3-2*x), reference limb morph only; item settle retains adopted (1-t)^3",
+  "rotation": "shortest-path normalized quaternion slerp between baked Euler frame rotations; linear pivot positions",
+  "climbPhase": "actual displacement * 18; this review supplies labelled synthetic displacement, not time-driven gameplay",
+  "releaseResample": "entire adopted release 0..18 in existing 200ms visual window; outgoing snapshot in first half, native pose in final half",
+  "immediateOverrides": [
+    "attack",
+    "use_item",
+    "bow",
+    "shield",
+    "identity_loss",
+    "death",
+    "spectator",
+    "invisible",
+    "disconnect",
+    "dimension_change"
+  ],
+  "firstPerson": "existing steady GliderPose hands/frame while open, native item takeover on close; 70 degree vertical reference, no camera change",
+  "inventory": "three display references, no new slots; owner changes atomically, registered/spare are distinct",
+  "scenarios": [
+    {
+      "id": "climb_glide",
+      "label": "攀爬 → 开伞",
+      "from": "up",
+      "to": "glide",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "继承当前攀爬姿态，300ms内到采用握持；伞即时出现"
+    },
+    {
+      "id": "release_empty",
+      "label": "抓墙 → 空手放开",
+      "from": "hold",
+      "to": "empty",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "200ms用完整放手参考，结束对齐原版空手姿态"
+    },
+    {
+      "id": "climb_turn",
+      "label": "上攀 → 横移",
+      "from": "up",
+      "to": "left",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "120ms局部衔接；循环相位仍由实际位移决定"
+    },
+    {
+      "id": "glide_close",
+      "label": "持伞 → 空手收伞",
+      "from": "glide",
+      "to": "empty",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "伞即时消失，空手肢体200ms回原版"
+    },
+    {
+      "id": "glide_sword",
+      "label": "持伞 → 取剑",
+      "from": "glide",
+      "to": "item",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "伞与持伞覆盖即时清除，仅保留140ms手部物件落定"
+    },
+    {
+      "id": "glide_bow",
+      "label": "持伞 → 拉弓",
+      "from": "glide",
+      "to": "bow",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "原版双手拉弓立即优先，盾收起，无自定义手部落定"
+    },
+    {
+      "id": "glide_block",
+      "label": "持伞 → 举盾",
+      "from": "glide",
+      "to": "block",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "盾与原版挡格立即优先，无自定义手部落定"
+    },
+    {
+      "id": "rapid_glide",
+      "label": "收伞 → 重开 → 拉弓",
+      "from": "glide",
+      "to": "rapid",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "每次从当前呈现姿态重算；动作即时打断"
+    },
+    {
+      "id": "mantle_restore",
+      "label": "登顶 → 站立",
+      "from": "mantle",
+      "to": "empty",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "只恢复视觉肢体，不加入根运动或新翻越能力"
+    },
+    {
+      "id": "loss_reset",
+      "label": "持伞 → 状态失效",
+      "from": "glide",
+      "to": "reset",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "死亡/隐身/旁观/断开等测试输入即清空参考，不播退出"
+    },
+    {
+      "id": "blocked_climb",
+      "label": "上攀 → 停住",
+      "from": "up",
+      "to": "hold",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "阻挡时相位停止；120ms转抓墙参考，恢复需实际位移"
+    },
+    {
+      "id": "same_spare",
+      "label": "持伞 → 相同备用剑",
+      "from": "glide",
+      "to": "spare",
+      "eventSeconds": 0.65,
+      "durationSeconds": 1.8,
+      "reviewNote": "备用剑在手、登记剑仍背负；两者是不同真实引用"
+    }
+  ],
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用"
+}

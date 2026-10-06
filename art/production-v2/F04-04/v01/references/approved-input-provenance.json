@@ -1,0 +1,58 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-item-16.png",
+    "copy": "references/battery-item-16.png",
+    "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-item-energy-regions.json",
+    "copy": "references/battery-item-energy-regions.json",
+    "sha256": "b8c4e434aec0c9cd3f998e93fb1b8f3cff505276a0ac231152463833f4149ade",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/source/battery-preview.js",
+    "copy": "references/battery-preview.js",
+    "sha256": "34e4ba4f2679f6b1c3c3f4b7b59b52154ab253a6af13761c65162b6a210a1c3a",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-empty-16.png",
+    "copy": "references/battery-empty-16.png",
+    "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-full-16.png",
+    "copy": "references/battery-full-16.png",
+    "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/energy-regions.json",
+    "copy": "references/energy-regions.json",
+    "sha256": "d949e65f3b704b2f1515ba00602fd7d73e4d85a3fb855eaf4b9ca3098ccaaa75",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/source/battery-readout.js",
+    "copy": "references/battery-readout.js",
+    "sha256": "7cb692a57fcae97700d5494fcd001ba1a740878c78228fe9889b24e7d57f9975",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/exports/charger-atlas-64.png",
+    "copy": "references/charger-atlas-64.png",
+    "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0",
+    "status": "user_approved",
+    "pixels_changed": false
+  }
+]

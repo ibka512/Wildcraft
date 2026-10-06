@@ -1,0 +1,1784 @@
+{
+  "allPassed": true,
+  "actualNodeViewCases": 42,
+  "actualChargeRenderCases": 30,
+  "energyKeyboardPassed": true,
+  "boundsTogglePassed": true,
+  "viewBordersNotCropped": true,
+  "allViewsDepthTest": true,
+  "gameIntegrated": false,
+  "cases": [
+    {
+      "state": {
+        "node": -1,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 204,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 0,
+          "node": -1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 158343,
+      "borderColoredPixels": 0,
+      "disabled": true,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 68,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 0,
+          "node": -1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 109229,
+      "borderColoredPixels": 0,
+      "disabled": true,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 136,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 0,
+          "node": -1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": 0,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 185317,
+      "borderColoredPixels": 0,
+      "disabled": true,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 68,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 0,
+          "node": -1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 109075,
+      "borderColoredPixels": 0,
+      "disabled": true,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 136,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 0,
+          "node": -1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.014258770683236222
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "disabled": true,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 204,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 0,
+          "node": -1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "disabled": true,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 254,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 0,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 158343,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 0,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": -0.9399999999999995
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 114409,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 170,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 0,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": 0,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 185317,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 0,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": -0.9399999999999995
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 114943,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 170,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 0,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.014258770683236222
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 252,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 0,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 252,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 158343,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0.9399999999999995
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 114500,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": 0,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 185317,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0.9399999999999995
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 115019,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.014258770683236222
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 254,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 1,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 252,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 2,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 158343,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 2,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 109229,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 170,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 2,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": 0,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 185317,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 2,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": -0.9399999999999995,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 115193,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 2,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 15.013447711593653,
+            "cx": 0,
+            "cy": -1.012126585526576
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 122972,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 252,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 2,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 92792,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 254,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 3,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 158343,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 86,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 3,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 109229,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 3,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": 0,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 185317,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 3,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0.9399999999999995,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 115203,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 170,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 3,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.980917255315816,
+            "cx": 0,
+            "cy": 1.011812733682965
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 122127,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 254,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 3,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 92597,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 252,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 4,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 159046,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 4,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": -0.9399999999999995,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 115354,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 4,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": 0.9399999999999995,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 192961,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 86,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 4,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 109075,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 4,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": -0.9399999999999995,
+            "cy": -0.014258770683236222
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 143920,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 252,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 4,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 93567,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "e": 500,
+        "yaw": -25,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 254,
+          "yaw": -25,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 5,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 18.00765243676148,
+            "cx": 0,
+            "cy": -0.024436573813597207
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 159461,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 0,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 5,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0.9399999999999995,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 115357,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "e": 500,
+        "yaw": 180,
+        "pitch": 24,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 180,
+          "pitch": 24,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 5,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 20.87266108192444,
+            "cx": -0.9399999999999995,
+            "cy": -0.03647733873458581
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 192960,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "e": 500,
+        "yaw": 90,
+        "pitch": 0,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 84,
+          "yaw": 90,
+          "pitch": 0,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 5,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 21,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 109075,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "e": 500,
+        "yaw": 0,
+        "pitch": 85,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 168,
+          "yaw": 0,
+          "pitch": 85,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 5,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0.9399999999999995,
+            "cy": -0.014258770683236222
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 143920,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "e": 500,
+        "yaw": -25,
+        "pitch": -65,
+        "info": {
+          "energy": 500,
+          "fractions": [
+            1,
+            0.5,
+            0
+          ],
+          "visibleFaces": 254,
+          "yaw": -25,
+          "pitch": -65,
+          "modelCuboids": 68,
+          "batteryCuboids": 16,
+          "node": 5,
+          "referenceScale": 1,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": 0
+          }
+        },
+        "bounds": false
+      },
+      "glError": 0,
+      "coloredPixels": 93448,
+      "borderColoredPixels": 0,
+      "disabled": false,
+      "overflow": false
+    }
+  ],
+  "charge": [
+    {
+      "node": 0,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "redWindowPixels": 2998
+    },
+    {
+      "node": 0,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "redWindowPixels": 2998
+    },
+    {
+      "node": 0,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "redWindowPixels": 4659
+    },
+    {
+      "node": 0,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "redWindowPixels": 5811
+    },
+    {
+      "node": 0,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "redWindowPixels": 5811
+    },
+    {
+      "node": 1,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "redWindowPixels": 730
+    },
+    {
+      "node": 1,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "redWindowPixels": 730
+    },
+    {
+      "node": 1,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "redWindowPixels": 2890
+    },
+    {
+      "node": 1,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "redWindowPixels": 4762
+    },
+    {
+      "node": 1,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "redWindowPixels": 4762
+    },
+    {
+      "node": 2,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "redWindowPixels": 1950
+    },
+    {
+      "node": 2,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "redWindowPixels": 1950
+    },
+    {
+      "node": 2,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "redWindowPixels": 5982
+    },
+    {
+      "node": 2,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "redWindowPixels": 9783
+    },
+    {
+      "node": 2,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "redWindowPixels": 9783
+    },
+    {
+      "node": 3,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "redWindowPixels": 1900
+    },
+    {
+      "node": 3,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "redWindowPixels": 1900
+    },
+    {
+      "node": 3,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "redWindowPixels": 5932
+    },
+    {
+      "node": 3,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "redWindowPixels": 9733
+    },
+    {
+      "node": 3,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "redWindowPixels": 9733
+    },
+    {
+      "node": 4,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "redWindowPixels": 2033
+    },
+    {
+      "node": 4,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "redWindowPixels": 2033
+    },
+    {
+      "node": 4,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "redWindowPixels": 6065
+    },
+    {
+      "node": 4,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "redWindowPixels": 9866
+    },
+    {
+      "node": 4,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "redWindowPixels": 9866
+    },
+    {
+      "node": 5,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "redWindowPixels": 2035
+    },
+    {
+      "node": 5,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "redWindowPixels": 2035
+    },
+    {
+      "node": 5,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "redWindowPixels": 6067
+    },
+    {
+      "node": 5,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "redWindowPixels": 9868
+    },
+    {
+      "node": 5,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "redWindowPixels": 9868
+    }
+  ]
+}

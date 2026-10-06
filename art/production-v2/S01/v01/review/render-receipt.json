@@ -1,0 +1,104 @@
+{
+  "seed": 6100601,
+  "sampleRate": 48000,
+  "cues": [
+    {
+      "id": "cooking_start",
+      "title": "料理开始",
+      "seconds": 0.28,
+      "master": "source/masters/cooking_start.wav",
+      "ogg": "exports/sounds/cooking_start.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "cooking_complete",
+      "title": "料理完成",
+      "seconds": 0.46,
+      "master": "source/masters/cooking_complete.wav",
+      "ogg": "exports/sounds/cooking_complete.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "charger_start",
+      "title": "开始充电",
+      "seconds": 0.24,
+      "master": "source/masters/charger_start.wav",
+      "ogg": "exports/sounds/charger_start.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "charger_full",
+      "title": "电池充满",
+      "seconds": 0.35,
+      "master": "source/masters/charger_full.wav",
+      "ogg": "exports/sounds/charger_full.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "mechanic_install",
+      "title": "安装部件",
+      "seconds": 0.18,
+      "master": "source/masters/mechanic_install.wav",
+      "ogg": "exports/sounds/mechanic_install.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "mechanic_remove",
+      "title": "拆卸部件",
+      "seconds": 0.22,
+      "master": "source/masters/mechanic_remove.wav",
+      "ogg": "exports/sounds/mechanic_remove.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "mechanic_start",
+      "title": "机械开始工作",
+      "seconds": 0.34,
+      "master": "source/masters/mechanic_start.wav",
+      "ogg": "exports/sounds/mechanic_start.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "mechanic_stop",
+      "title": "机械停止工作",
+      "seconds": 0.27,
+      "master": "source/masters/mechanic_stop.wav",
+      "ogg": "exports/sounds/mechanic_stop.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "fabricator_start",
+      "title": "制造开始",
+      "seconds": 0.38,
+      "master": "source/masters/fabricator_start.wav",
+      "ogg": "exports/sounds/fabricator_start.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "fabricator_complete",
+      "title": "制造完成",
+      "seconds": 0.48,
+      "master": "source/masters/fabricator_complete.wav",
+      "ogg": "exports/sounds/fabricator_complete.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "fuse_join",
+      "title": "融合成功",
+      "seconds": 0.3,
+      "master": "source/masters/fuse_join.wav",
+      "ogg": "exports/sounds/fuse_join.ogg",
+      "allStemsShareMixNormalization": true
+    },
+    {
+      "id": "fuse_split",
+      "title": "拆分成功",
+      "seconds": 0.3,
+      "master": "source/masters/fuse_split.wav",
+      "ogg": "exports/sounds/fuse_split.ogg",
+      "allStemsShareMixNormalization": true
+    }
+  ],
+  "originalSampleImports": 0,
+  "stemsPerCue": 3
+}

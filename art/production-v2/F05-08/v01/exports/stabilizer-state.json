@@ -1,0 +1,45 @@
+{
+  "asset": "F05-08",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "actualStates": [
+    "inactive",
+    "active"
+  ],
+  "colors": {
+    "inactive": "#607775",
+    "active": "#8DD5B7",
+    "powerFailureReference": "#DB8A55"
+  },
+  "activeSource": "per-node active bit",
+  "inactiveDoesNotMeanNoPower": true,
+  "powerFailureReference": {
+    "implemented": false,
+    "designOnly": true,
+    "requires": "explicit authoritative payment failure reason",
+    "cannotInferFrom": [
+      "active=0",
+      "working=false",
+      "enabled alone",
+      "some battery energy",
+      "zero battery energy without enabled/context"
+    ]
+  },
+  "materialTechnique": "state colour on fixed indicator only",
+  "emission": 0,
+  "halo": false,
+  "pulsing": false,
+  "movingModelParts": 0,
+  "ghost": {
+    "color": "#5DD7B7",
+    "alpha": 0.5333333333333333,
+    "noStateColor": true
+  },
+  "bodyRollRule": "any actual installed active kind7 stabilizer ->0; otherwise original lateral velocity roll",
+  "energyPerWorldTick": 2,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项",
+  "scope": "稳定器固定模型、独立32/16图标、当前两态灯与六向安装；琥珀灯仅设计参考，游戏接入待验证"
+}

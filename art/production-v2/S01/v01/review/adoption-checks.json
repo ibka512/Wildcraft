@@ -1,0 +1,18 @@
+{
+  "asset": "S01",
+  "allPassed": true,
+  "scope": "adoption metadata integrity, not a new runtime or listening test",
+  "userEvidence": "采用",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "audioMastersStemsSourceReviewAndReferencesUnchanged": true,
+  "playbackParametersUnchanged": true,
+  "historicalArchiveUnchanged": true,
+  "historicalArchiveSha256": "6dca111dec5a0eafb76064430f397366fee6a3e6588b2ab8a7fb88b98c689c59",
+  "originalManifestSha256": "becab78e1b9dd573ab6cc9b5d7100ef355c4d930ac7f20a7efdf8f38c2d47275",
+  "codeLocalesJarAndFocusUnchanged": true,
+  "otherQueueRowsUnchanged": true,
+  "nextAsset": "A09-C 披风/鞘翅下的侧腰摆放",
+  "nextAssetUnstarted": true
+}

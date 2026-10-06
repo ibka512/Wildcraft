@@ -1,0 +1,23 @@
+/* Art-only menu presentation. Display uses authoritative status supplied to it. */
+(function(root){
+const slots=[{id:0,x:26,y:35,role:'copper'},{id:1,x:54,y:35,role:'redstone'},{id:2,x:134,y:54,role:'output'}];for(let row=0;row<3;row++)for(let col=0;col<9;col++)slots.push({id:3+row*9+col,x:8+col*18,y:110+row*18,role:'inventory'});for(let col=0;col<9;col++)slots.push({id:30+col,x:8+col*18,y:168,role:'hotbar'});
+const states=[
+{id:0,key:'ready',zh:'材料就绪',en:'Ready',color:'#354438',glyph:{atlas:'fabricator',x:32,y:48},helpZh:'材料达到每批4铜锭与2红石，且无进行中的任务、产出格为空，可以制造。',helpEn:'At least 4 copper ingots and 2 redstone, no active job, and an empty output slot. Ready to make.'},
+{id:1,key:'insufficient',zh:'材料不足',en:'Missing materials',color:'#805014',glyph:{atlas:'charger',x:8,y:48},helpZh:'需要每批4铜锭与2红石。补齐材料后才可开始；红石是消耗材料，无需外接电源。',helpEn:'Each batch needs 4 copper ingots and 2 redstone. Add the missing material. Redstone is consumed; no external power source is required.'},
+{id:2,key:'working',zh:'制造中，可关闭',en:'Working · can close',color:'#354438',glyph:{atlas:'fabricator',x:40,y:48},helpZh:'制造持续100个已加载世界刻。关闭界面不取消，暂停、离线或未加载不会补进度；完成前不显示本批结果。',helpEn:'Runs for 100 loaded world ticks. Closing the menu does not cancel. Pausing, going offline or unloading does not add progress. The new result stays hidden until transfer.'},
+{id:3,key:'blocked',zh:'产出格占用',en:'Output occupied',color:'#805014',glyph:{atlas:'charger',x:32,y:48},helpZh:'本批已完成，等待产出格腾空。格中已有物品不是本批待转移结果；取走已有物品后由服务器转移本批结果，不重抽。',helpEn:'This batch is complete, waiting for a free output slot. The visible existing item is not the pending result. Remove it so the server can transfer the committed result without rerolling.'},
+{id:4,key:'collect',zh:'成品待取',en:'Collect result',color:'#354438',glyph:{atlas:'fabricator',x:48,y:48},helpZh:'成品已在实际产出格中。取走后，如材料充足即可再制造；背包满时保留原成品，不另发地面奖励。',helpEn:'The finished item is in the actual output slot. Collect it to make another batch if materials suffice. A full inventory keeps the original output; no extra ground reward is issued.'}
+];
+const fixtures={ready:{status:0,copper:4,redstone:2,progress:0,hasJob:false,output:null},insufficient:{status:1,copper:3,redstone:1,progress:0,hasJob:false,output:null},working:{status:2,copper:0,redstone:0,progress:50,hasJob:true,output:null},blocked:{status:3,copper:0,redstone:0,progress:100,hasJob:true,output:'battery'},collect:{status:4,copper:0,redstone:0,progress:0,hasJob:false,output:'wing'}};
+const labels={zh:{title:'古代装置制造机',cost:'铜锭×4 + 红石×2',pool:'八类部件 · 各12.5%',start:'制造',inventory:'物品栏',done:'完成'},en:{title:'Ancient Device Fabricator',cost:'4 copper + 2 redstone',pool:'8 types · 12.5% each',start:'Make',inventory:'Inventory',done:'Done'}};
+const layout={size:[176,192],title:{x:8,y:7,maxWidth:144},cost:{x:8,y:19,maxWidth:160},button:{x:104,y:30,w:64,h:20,vanilla:true},progressTrack:{x:80,y:59,w:43,h:7},progressFill:{x:81,y:60,w:41,h:5},progressText:{centerX:101.5,y:50},pool:{x:8,y:76,maxWidth:160,hover:{x:8,y:75,w:160,h:10}},status:{glyphX:10,glyphY:88,textX:22,textY:88,maxWidth:146,hover:{x:8,y:86,w:160,h:12}},inventoryTitle:{x:8,y:100},inputSlots:[{x:26,y:35,w:16,h:16},{x:54,y:35,w:16,h:16}],outputSlot:{x:134,y:54,w:16,h:16},completedBarShowsOutcome:true};
+function ticks(p){const n=Number(p);return Number.isFinite(n)?Math.max(0,Math.min(100,Math.floor(n))):0;}
+function barWidth(s){return s.status===4?41:Math.floor(41*ticks(s.progress)/100);}
+function startEnabled(s){return s.status===0;}
+// Server-like rule used only to check reviewer fixtures; never replaces menu.status in production.
+function fixtureStatus(s){return s.hasJob?(ticks(s.progress)>=100?3:2):s.output?4:s.copper>=4&&s.redstone>=2?0:1;}
+function demoStart(s){if(!startEnabled(s))return {started:false,snapshot:{...s}};return {started:true,snapshot:{...s,status:2,copper:s.copper-4,redstone:s.redstone-2,progress:0,hasJob:true,output:null}};}
+function demoProgress(s,p){if(!s.hasJob)return {...s};const next={...s,progress:ticks(p)};if(next.progress===100&&!next.output)return {...next,status:4,progress:0,hasJob:false,output:'wing'};return {...next,status:next.progress===100?3:2};}
+function demoCollect(s){if(!s.output)return {...s};if(s.hasJob&&ticks(s.progress)===100)return {...s,hasJob:false,progress:0,output:'wing',status:4};const next={...s,output:null};return {...next,status:fixtureStatus(next)};}
+root.WildcraftFabricatorUi={slots,states,fixtures,labels,layout,ticks,barWidth,startEnabled,fixtureStatus,demoStart,demoProgress,demoCollect};if(typeof module!=='undefined')module.exports=root.WildcraftFabricatorUi;
+})(typeof globalThis!=='undefined'?globalThis:this);

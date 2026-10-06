@@ -1,0 +1,829 @@
+{
+  "asset": "F05-07",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": 67,
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "hiddenReferenceMeshes": 68,
+  "actualRotationCases": [
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "angle": 0.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "angle": 0.4,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0.7853981633974483,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "age": 20,
+      "angle": 8.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "angle": 40.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": true,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": true,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "angle": 0.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "angle": 0.4,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0.7853981633974483,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "age": 20,
+      "angle": 8.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "angle": 40.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": true,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": true,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "angle": 0.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "angle": 0.4,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0.7853981633974483,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "age": 20,
+      "angle": 8.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "angle": 40.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": true,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": true,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "angle": 0.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "angle": 0.4,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0.7853981633974483,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "age": 20,
+      "angle": 8.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "angle": 40.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": true,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": true,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "angle": 0.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "angle": 0.4,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0.7853981633974483,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "age": 20,
+      "angle": 8.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "angle": 40.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": true,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": true,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "angle": 0.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "angle": 0.4,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "age": 1.9634954084936207,
+      "angle": 0.7853981633974483,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "age": 20,
+      "angle": 8.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "angle": 40.0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": true,
+      "age": 1.9634954084936207,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": true,
+      "age": 20,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "angle": 0,
+      "vertexChecks": 552,
+      "fixedMountUnmoved": true
+    }
+  ],
+  "totalEvaluatedVertexChecks": 49680,
+  "fixedMountAndAxleUnmoved": true,
+  "actualActiveGhostDriver": true,
+  "sourceDefaultIdle": true,
+  "noProductionEmission": true,
+  "gameIntegrated": false
+}

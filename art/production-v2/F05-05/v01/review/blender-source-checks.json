@@ -1,0 +1,859 @@
+{
+  "allPassed": true,
+  "actualBlenderReopened": true,
+  "energyAndUVCropCases": [
+    {
+      "node": 0,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 0,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 1,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 2,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 3,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 4,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 99,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 100,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "node": 5,
+      "energy": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "worldYawRollCases": [
+    {
+      "node": 0,
+      "yaw": 0,
+      "roll": -6
+    },
+    {
+      "node": 1,
+      "yaw": 0,
+      "roll": -6
+    },
+    {
+      "node": 2,
+      "yaw": 0,
+      "roll": -6
+    },
+    {
+      "node": 3,
+      "yaw": 0,
+      "roll": -6
+    },
+    {
+      "node": 4,
+      "yaw": 0,
+      "roll": -6
+    },
+    {
+      "node": 5,
+      "yaw": 0,
+      "roll": -6
+    },
+    {
+      "node": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    {
+      "node": 1,
+      "yaw": 0,
+      "roll": 0
+    },
+    {
+      "node": 2,
+      "yaw": 0,
+      "roll": 0
+    },
+    {
+      "node": 3,
+      "yaw": 0,
+      "roll": 0
+    },
+    {
+      "node": 4,
+      "yaw": 0,
+      "roll": 0
+    },
+    {
+      "node": 5,
+      "yaw": 0,
+      "roll": 0
+    },
+    {
+      "node": 0,
+      "yaw": 0,
+      "roll": 6
+    },
+    {
+      "node": 1,
+      "yaw": 0,
+      "roll": 6
+    },
+    {
+      "node": 2,
+      "yaw": 0,
+      "roll": 6
+    },
+    {
+      "node": 3,
+      "yaw": 0,
+      "roll": 6
+    },
+    {
+      "node": 4,
+      "yaw": 0,
+      "roll": 6
+    },
+    {
+      "node": 5,
+      "yaw": 0,
+      "roll": 6
+    },
+    {
+      "node": 0,
+      "yaw": 90,
+      "roll": -6
+    },
+    {
+      "node": 1,
+      "yaw": 90,
+      "roll": -6
+    },
+    {
+      "node": 2,
+      "yaw": 90,
+      "roll": -6
+    },
+    {
+      "node": 3,
+      "yaw": 90,
+      "roll": -6
+    },
+    {
+      "node": 4,
+      "yaw": 90,
+      "roll": -6
+    },
+    {
+      "node": 5,
+      "yaw": 90,
+      "roll": -6
+    },
+    {
+      "node": 0,
+      "yaw": 90,
+      "roll": 0
+    },
+    {
+      "node": 1,
+      "yaw": 90,
+      "roll": 0
+    },
+    {
+      "node": 2,
+      "yaw": 90,
+      "roll": 0
+    },
+    {
+      "node": 3,
+      "yaw": 90,
+      "roll": 0
+    },
+    {
+      "node": 4,
+      "yaw": 90,
+      "roll": 0
+    },
+    {
+      "node": 5,
+      "yaw": 90,
+      "roll": 0
+    },
+    {
+      "node": 0,
+      "yaw": 90,
+      "roll": 6
+    },
+    {
+      "node": 1,
+      "yaw": 90,
+      "roll": 6
+    },
+    {
+      "node": 2,
+      "yaw": 90,
+      "roll": 6
+    },
+    {
+      "node": 3,
+      "yaw": 90,
+      "roll": 6
+    },
+    {
+      "node": 4,
+      "yaw": 90,
+      "roll": 6
+    },
+    {
+      "node": 5,
+      "yaw": 90,
+      "roll": 6
+    },
+    {
+      "node": 0,
+      "yaw": 180,
+      "roll": -6
+    },
+    {
+      "node": 1,
+      "yaw": 180,
+      "roll": -6
+    },
+    {
+      "node": 2,
+      "yaw": 180,
+      "roll": -6
+    },
+    {
+      "node": 3,
+      "yaw": 180,
+      "roll": -6
+    },
+    {
+      "node": 4,
+      "yaw": 180,
+      "roll": -6
+    },
+    {
+      "node": 5,
+      "yaw": 180,
+      "roll": -6
+    },
+    {
+      "node": 0,
+      "yaw": 180,
+      "roll": 0
+    },
+    {
+      "node": 1,
+      "yaw": 180,
+      "roll": 0
+    },
+    {
+      "node": 2,
+      "yaw": 180,
+      "roll": 0
+    },
+    {
+      "node": 3,
+      "yaw": 180,
+      "roll": 0
+    },
+    {
+      "node": 4,
+      "yaw": 180,
+      "roll": 0
+    },
+    {
+      "node": 5,
+      "yaw": 180,
+      "roll": 0
+    },
+    {
+      "node": 0,
+      "yaw": 180,
+      "roll": 6
+    },
+    {
+      "node": 1,
+      "yaw": 180,
+      "roll": 6
+    },
+    {
+      "node": 2,
+      "yaw": 180,
+      "roll": 6
+    },
+    {
+      "node": 3,
+      "yaw": 180,
+      "roll": 6
+    },
+    {
+      "node": 4,
+      "yaw": 180,
+      "roll": 6
+    },
+    {
+      "node": 5,
+      "yaw": 180,
+      "roll": 6
+    },
+    {
+      "node": 0,
+      "yaw": 270,
+      "roll": -6
+    },
+    {
+      "node": 1,
+      "yaw": 270,
+      "roll": -6
+    },
+    {
+      "node": 2,
+      "yaw": 270,
+      "roll": -6
+    },
+    {
+      "node": 3,
+      "yaw": 270,
+      "roll": -6
+    },
+    {
+      "node": 4,
+      "yaw": 270,
+      "roll": -6
+    },
+    {
+      "node": 5,
+      "yaw": 270,
+      "roll": -6
+    },
+    {
+      "node": 0,
+      "yaw": 270,
+      "roll": 0
+    },
+    {
+      "node": 1,
+      "yaw": 270,
+      "roll": 0
+    },
+    {
+      "node": 2,
+      "yaw": 270,
+      "roll": 0
+    },
+    {
+      "node": 3,
+      "yaw": 270,
+      "roll": 0
+    },
+    {
+      "node": 4,
+      "yaw": 270,
+      "roll": 0
+    },
+    {
+      "node": 5,
+      "yaw": 270,
+      "roll": 0
+    },
+    {
+      "node": 0,
+      "yaw": 270,
+      "roll": 6
+    },
+    {
+      "node": 1,
+      "yaw": 270,
+      "roll": 6
+    },
+    {
+      "node": 2,
+      "yaw": 270,
+      "roll": 6
+    },
+    {
+      "node": 3,
+      "yaw": 270,
+      "roll": 6
+    },
+    {
+      "node": 4,
+      "yaw": 270,
+      "roll": 6
+    },
+    {
+      "node": 5,
+      "yaw": 270,
+      "roll": 6
+    }
+  ],
+  "batteryCuboids": 16,
+  "dynamicWindowPlanes": 3,
+  "scale": 1,
+  "packedNearestTexture": true,
+  "gameTested": false
+}

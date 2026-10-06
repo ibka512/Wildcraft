@@ -1,0 +1,30 @@
+{
+  "asset": "F03-03",
+  "date": "2026-10-06",
+  "command": "aseprite-web-control ensure",
+  "attempts": 2,
+  "results": [
+    {
+      "attempt": 1,
+      "ok": false,
+      "error": {
+        "code": "START_TIMEOUT",
+        "message": "Aseprite Web 本机服务或可写编辑页未在 35 秒内连接"
+      }
+    },
+    {
+      "attempt": 2,
+      "ok": false,
+      "error": {
+        "code": "START_TIMEOUT",
+        "message": "Aseprite Web 本机服务或可写编辑页未在 35 秒内连接"
+      }
+    }
+  ],
+  "editableSourceCreated": false,
+  "productionPNGCreated": false,
+  "pixelVerificationPerformed": false,
+  "authenticationBypassed": false,
+  "instruction": "On a second failure, report the exact blocker; do not bypass authentication or expose the control token.",
+  "skill": "/Users/zhou/.codex/plugins/cache/aseprite-web-local/aseprite-web/0.1.0+codex.20260917060940/skills/aseprite-web-agent/SKILL.md"
+}

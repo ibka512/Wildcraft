@@ -1,0 +1,9 @@
+{
+  "role": "concept only; not a production model, texture or native icon",
+  "provider": "built-in imagegen",
+  "date": "2026-10-05",
+  "file": "wing-concept-imagegen.png",
+  "sha256": "d408626a23533d461ddcd50dea2b667ab8da83406d22947f4ebe9d4bc9c5f7bd",
+  "materialReference": "paraglider-atlas-128x64.png",
+  "generatedSource": "/Users/zhou/.codex/generated_images/01a0fc6d-b9dc-7003-b4e6-383ef3392534/exec-48ff0c42-5e99-42f4-a8d8-e84ecb1047bb.png"
+}

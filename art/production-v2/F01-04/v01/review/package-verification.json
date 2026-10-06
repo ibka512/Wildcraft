@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-05",
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "CookingScreen.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "CookingMenu.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "CookingPotEntity.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "CookingRecipes.java unchanged",
+      "passed": true
+    },
+    {
+      "name": "dev14 jar unchanged",
+      "passed": true
+    },
+    {
+      "name": "vegetable meal reference preserved",
+      "passed": true
+    },
+    {
+      "name": "warming meal reference preserved",
+      "passed": true
+    },
+    {
+      "name": "cooling meal reference preserved",
+      "passed": true
+    },
+    {
+      "name": "recovery meal reference preserved",
+      "passed": true
+    },
+    {
+      "name": "beetroot local reference intact",
+      "passed": true
+    },
+    {
+      "name": "potato local reference intact",
+      "passed": true
+    },
+    {
+      "name": "carrot local reference intact",
+      "passed": true
+    },
+    {
+      "name": "bowl local reference intact",
+      "passed": true
+    },
+    {
+      "name": "native UI source/PNG check",
+      "passed": true
+    },
+    {
+      "name": "40 browser cases passed",
+      "passed": true
+    },
+    {
+      "name": "paused progress preserved",
+      "passed": true
+    },
+    {
+      "name": "ten complete state previews",
+      "passed": true
+    },
+    {
+      "name": "one runtime candidate PNG",
+      "passed": true
+    },
+    {
+      "name": "one native source",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/cooking-ui-review.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/cooking-ui-176x182.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/cooking-ui-176x182.aseprite",
+      "passed": true
+    },
+    {
+      "name": "README.md link exports/cooking-ui-layout.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link source/ui-pixel-design.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/preview.html",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/states/",
+      "passed": true
+    },
+    {
+      "name": "README.md link review/output-tooltip-en-simulation.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link brief.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link integration-map.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link verification.md",
+      "passed": true
+    },
+    {
+      "name": "README.md link manifest.json",
+      "passed": true
+    },
+    {
+      "name": "README.md link references/cooking-ui-concept-v01.png",
+      "passed": true
+    },
+    {
+      "name": "README.md link references/imagegen-prompt.md",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/asset-checks.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link source/ui-pixel-design.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/browser-verification.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link review/package-verification.json",
+      "passed": true
+    },
+    {
+      "name": "verification.md link manifest.json",
+      "passed": true
+    },
+    {
+      "name": "temperature adoption and file hashes",
+      "passed": true
+    },
+    {
+      "name": "menu coordinate contract",
+      "passed": true
+    }
+  ],
+  "adopted": false,
+  "integrated": false
+}

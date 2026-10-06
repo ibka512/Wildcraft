@@ -1,0 +1,48 @@
+{
+  "asset": "F05-09",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": 15,
+  "packedAtlas": [
+    128,
+    64
+  ],
+  "hiddenReferenceMeshes": 68,
+  "actualNodeCases": [
+    {
+      "node": 0,
+      "vertexChecks": 128,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 1,
+      "vertexChecks": 128,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 2,
+      "vertexChecks": 128,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 3,
+      "vertexChecks": 128,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 4,
+      "vertexChecks": 128,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 5,
+      "vertexChecks": 128,
+      "allGeometryStatic": true
+    }
+  ],
+  "totalEvaluatedVertexChecks": 768,
+  "noMovingParts": true,
+  "productionUVMatches": true,
+  "sourceWaterPlaneIncluded": false,
+  "gameIntegrated": false
+}

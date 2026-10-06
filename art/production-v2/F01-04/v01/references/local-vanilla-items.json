@@ -1,0 +1,34 @@
+[
+  {
+    "name": "beetroot",
+    "sourceJar": "/Users/zhou/.gradle/caches/fabric-loom/26.3/minecraft-client.jar",
+    "jarEntry": "assets/minecraft/textures/item/beetroot.png",
+    "localReviewCopy": "/Volumes/仕事/Wildcraft/美术制作/第二批-系统美术/F01-04/本机原版参考/beetroot.png",
+    "sha256": "51e6ca1d5d360a1dd8fecb15cc757ee87a3e159ae23248c3785b3d0cb22063e2",
+    "use": "本机界面示意，不属于本轮新资产，不放入运行导出"
+  },
+  {
+    "name": "potato",
+    "sourceJar": "/Users/zhou/.gradle/caches/fabric-loom/26.3/minecraft-client.jar",
+    "jarEntry": "assets/minecraft/textures/item/potato.png",
+    "localReviewCopy": "/Volumes/仕事/Wildcraft/美术制作/第二批-系统美术/F01-04/本机原版参考/potato.png",
+    "sha256": "d230597b0d91c857936370089ef7da12a8f0b4b3e84207b92c9b48e92798507f",
+    "use": "本机界面示意，不属于本轮新资产，不放入运行导出"
+  },
+  {
+    "name": "carrot",
+    "sourceJar": "/Users/zhou/.gradle/caches/fabric-loom/26.3/minecraft-client.jar",
+    "jarEntry": "assets/minecraft/textures/item/carrot.png",
+    "localReviewCopy": "/Volumes/仕事/Wildcraft/美术制作/第二批-系统美术/F01-04/本机原版参考/carrot.png",
+    "sha256": "a433ecc4dbc28cf1751299ea518df0a5dd4b34e714d3015c77b9d193ec4c8a24",
+    "use": "本机界面示意，不属于本轮新资产，不放入运行导出"
+  },
+  {
+    "name": "bowl",
+    "sourceJar": "/Users/zhou/.gradle/caches/fabric-loom/26.3/minecraft-client.jar",
+    "jarEntry": "assets/minecraft/textures/item/bowl.png",
+    "localReviewCopy": "/Volumes/仕事/Wildcraft/美术制作/第二批-系统美术/F01-04/本机原版参考/bowl.png",
+    "sha256": "4510b6adbf2e162d5af6330e7faa3f162b82b89cacfd36ec5b90f3d29e0513e5",
+    "use": "本机界面示意，不属于本轮新资产，不放入运行导出"
+  }
+]

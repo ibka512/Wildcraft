@@ -1,0 +1,51 @@
+{
+  "asset": "F01-01",
+  "version": "v01",
+  "status": "草稿待审",
+  "model_elements": 36,
+  "model_quads": 216,
+  "rotated_elements": 12,
+  "body_bounds": [
+    [
+      1.9999999999999996,
+      0,
+      1.9999999999999993
+    ],
+    [
+      14,
+      10,
+      14
+    ]
+  ],
+  "including_handles_bounds": [
+    [
+      0,
+      0,
+      1.9999999999999993
+    ],
+    [
+      16.0,
+      10,
+      14
+    ]
+  ],
+  "collision_from": [
+    2,
+    0,
+    2
+  ],
+  "collision_to": [
+    14,
+    10,
+    14
+  ],
+  "png_size": [
+    64,
+    64
+  ],
+  "opaque_colors": 92,
+  "all_uv_regions_opaque": true,
+  "aseprite_png_pixels_equal": true,
+  "game_resource_replaced": false,
+  "game_tests_run": false
+}

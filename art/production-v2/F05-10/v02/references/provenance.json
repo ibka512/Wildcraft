@@ -1,0 +1,170 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-02/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-02-geometry.json",
+    "sha256": "4bc2d14cd09a3a5f658a9bf18c495c6c7f5f8140ed895475fd0ef4cc144d7ef2",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-02/v01/adoption.json",
+    "copy": "references/F05-02-adoption.json",
+    "sha256": "1ef86995cc1b2bdf5538f7fa70c72a1dd23d7e3802a6ccafec2e7920647a58da",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-03-geometry.json",
+    "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/adoption.json",
+    "copy": "references/F05-03-adoption.json",
+    "sha256": "d2cc19cc20c445b09d6a31ee24a99100e7fcd53c162e48d071ec3d01b2dffb38",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-04/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-04-geometry.json",
+    "sha256": "de6a842c408a5db8f961909e1ad03499572b5a2284079c7fdbfda3a190640d26",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-04/v01/adoption.json",
+    "copy": "references/F05-04-adoption.json",
+    "sha256": "8fd22401df183a97df1f5cf2e1dbe55ab14ba3f0321f947bdbf8d0253169dae0",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-05/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-05-geometry.json",
+    "sha256": "147b1eae005f4e16cd1972e3c30e149a0eeb7b0b3b2a320f05e963db59d7d4ad",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-05/v01/adoption.json",
+    "copy": "references/F05-05-adoption.json",
+    "sha256": "432bfe144f34b863537302ff9a9152ff6793ea6d754a3f013eb1bd220a20b674",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-06/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-06-geometry.json",
+    "sha256": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-06/v01/adoption.json",
+    "copy": "references/F05-06-adoption.json",
+    "sha256": "9b462e436eb5d6e6e8c7e9a992cef3f89ebc754a486cb9092a68f51ed50c24ca",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-07/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-07-geometry.json",
+    "sha256": "d59023c5038a5255aef1545d8890e4592ae9f2906a7cc9809767251778446a94",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-07/v01/adoption.json",
+    "copy": "references/F05-07-adoption.json",
+    "sha256": "4810695c20afc41de0a689fbfc7019f99e63b12cf5d18cbce524bed68a2b5816",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-08/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-08-geometry.json",
+    "sha256": "c105a0e4f47adbdedf642164457dc09a3434dd86a457b6e1f5eafbcb12480a26",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-08/v01/adoption.json",
+    "copy": "references/F05-08-adoption.json",
+    "sha256": "605541ade571b39190884a246fa1680d63cdbd4f83c1839eac126667e2419fe0",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-09/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-09-geometry.json",
+    "sha256": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-09/v01/adoption.json",
+    "copy": "references/F05-09-adoption.json",
+    "sha256": "da45eb1f7078e710e4f970b5e1407a15201405c5f9d96171359decfcc08b0f6c",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/exports/machine-atlas-64.png",
+    "copy": "references/machine-atlas-64.png",
+    "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-02/v01/exports/wing-atlas-128x64.png",
+    "copy": "references/fabric-atlas-128x64.png",
+    "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-04/v01/exports/rocket-atlas-128x64.png",
+    "copy": "references/rocket-atlas-128x64.png",
+    "sha256": "4ba17e47b802f387de718dc0b46f02e80dd9ff06f2370bed7046be47a47b8afe",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/references/F04-02-battery-empty-16.png",
+    "copy": "references/F04-02-battery-empty-16.png",
+    "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/references/F04-02-battery-full-16.png",
+    "copy": "references/F04-02-battery-full-16.png",
+    "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/references/F04-02-battery-empty-32.png",
+    "copy": "references/F04-02-battery-empty-32.png",
+    "sha256": "0a4cecad045e8bfb06086e91e46c94512e57333667f611e754e3695d246b3759",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/references/F04-02-battery-full-32.png",
+    "copy": "references/F04-02-battery-full-32.png",
+    "sha256": "fee8d98b8bae980f68e955c0135653470999c021b4b774965d6267a4c3af75d6",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/references/F04-02-energy-regions.json",
+    "copy": "references/F04-02-energy-regions.json",
+    "sha256": "d949e65f3b704b2f1515ba00602fd7d73e4d85a3fb855eaf4b9ca3098ccaaa75",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/references/F04-02-battery-readout-layout.json",
+    "copy": "references/F04-02-battery-readout-layout.json",
+    "sha256": "68971e2d8e909df302363a730a09f5090001ca537414aeceaef245e918fa77f6",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/source/machine-presentation.js",
+    "copy": "references/adopted-v01-presentation.js",
+    "sha256": "dee5866eafcea04c92c14cd95714a035cb39cf26b9c0e89366315d5502162681",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/source/status-glyphs.json",
+    "copy": "references/status-glyphs.json",
+    "sha256": "90c337f519beb8d92ecc0bf1af339454a91514f5965587baddfd0bb733e93c3a",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-10/v01/adoption.json",
+    "copy": "references/F05-10-v01-adoption.json",
+    "sha256": "24e8b50c41e50b2acb19f5639302221d06a1b580666af7216cc26a03ff51e975",
+    "changed": false
+  }
+]

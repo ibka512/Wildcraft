@@ -1,0 +1,238 @@
+{
+  "asset": "F02-01",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，未接入",
+  "adopted": true,
+  "integrated": false,
+  "reusedPng": 2,
+  "reusedAseprite": 2,
+  "newPixelAssets": 0,
+  "newProgramComponents": 1,
+  "runtimeStateTextures": 0,
+  "reviewStates": 7,
+  "jointReviewScenes": 6,
+  "browserCases": 126,
+  "mealHudReferenceAdopted": true,
+  "temperatureV2PreviouslyAdopted": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3152,
+      "sha256": "933a05efbe72c39e5f937118ab38271d93ab382ee73fdc57c9e8aa291ec35058"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 276,
+      "sha256": "1e9a3e2a28c0f4878b00332e3a3731c3e81e38a8528682294c58eb9c1fe69990"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1785,
+      "sha256": "9efad56a86b41b9e4c8618542ca9dd58d7e0a45e7dc97f1e911d826861d5891d"
+    },
+    {
+      "path": "exports/ambient-temperature-color-16.png",
+      "bytes": 218,
+      "sha256": "5586acb51dd6c19823181141c6ee7fee5e63413aad184401f204895412337ee2"
+    },
+    {
+      "path": "exports/ambient-temperature-color-32.png",
+      "bytes": 415,
+      "sha256": "8995d1a8701c73967cb6506f48daf4111be623cf26dbe4451073b704b747a2bc"
+    },
+    {
+      "path": "exports/temperature-hud-layout.json",
+      "bytes": 35891,
+      "sha256": "8e83b1160b47882564bc1e9fdcfb1209c19a2f1e604b4c136b88df1dcefe8c32"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2444,
+      "sha256": "c7d8a922a5914d8a8a383051acc9235385c9521d26027938e0825cdf90bbf3bb"
+    },
+    {
+      "path": "references/adopted-meal-hud-layout.js",
+      "bytes": 4113,
+      "sha256": "f971c0710a9c7c73ffbeeb2b8f78eef4469842e2353aff1bffa7ef211594ab5a"
+    },
+    {
+      "path": "references/adopted-meal-hud-layout.json",
+      "bytes": 22177,
+      "sha256": "41df9b34307058187b7286f00985c8490b42891ba86299ba2f00ec759c96b8da"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 928,
+      "sha256": "b08d33421813a78c70cfd43b44a51154ddd3ef039b0b9d057df4a55a83efd216"
+    },
+    {
+      "path": "references/cooling-meal-16.png",
+      "bytes": 274,
+      "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a"
+    },
+    {
+      "path": "references/stamina-hud-atlas.png",
+      "bytes": 256,
+      "sha256": "50713b9af2f997ff68b135b67fe3176e7128182fcd02dcefc28565822499b8c3"
+    },
+    {
+      "path": "references/stamina-recovery-16.png",
+      "bytes": 241,
+      "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93"
+    },
+    {
+      "path": "references/temperature-v2-sources.json",
+      "bytes": 1641,
+      "sha256": "2e89dd3747f0a105d36a90008756efc44a7a61af5f0f377c5b1e464b45f5f3be"
+    },
+    {
+      "path": "references/warmth-meal-16.png",
+      "bytes": 282,
+      "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e"
+    },
+    {
+      "path": "review/aseprite-starting-document.json",
+      "bytes": 168,
+      "sha256": "b5f0af915ec4a379d1160ac04db8f34e26ceea9443ebb0100438101711ae74fd"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 145119,
+      "sha256": "fe53ac3d3125fcf241ae01beb5b5ebc6b2db69f6c6a67bfa804ebe7a0a6464c8"
+    },
+    {
+      "path": "review/icon-verification.json",
+      "bytes": 1171,
+      "sha256": "cb4fc8e0b19ccf32f7c33103ff827bb65e67fcb5191d0f35f78b21a6f8859c5a"
+    },
+    {
+      "path": "review/joint-english-simulation.png",
+      "bytes": 16164,
+      "sha256": "7efd86c5ce3521b13853a8c3c257792e33bb8145b1ae963cb1aa5031df689fa0"
+    },
+    {
+      "path": "review/joint-focus-simulation.png",
+      "bytes": 16009,
+      "sha256": "a217819f5c844f412ac163671a1409935be32772c141029cc29d3cfe52d30a29"
+    },
+    {
+      "path": "review/joint-hearts-simulation.png",
+      "bytes": 12691,
+      "sha256": "bdfad2502e84dd4d8f63ba7d449d088fa605e4b20b2105bb2f1c2d215ca3e7d5"
+    },
+    {
+      "path": "review/joint-hidden-simulation.png",
+      "bytes": 14365,
+      "sha256": "aef541f42eae8f7e0b75068860db3b90ba7b8656d1756c27d87a1dd3023e8ddb"
+    },
+    {
+      "path": "review/joint-normal-simulation.png",
+      "bytes": 15974,
+      "sha256": "17674ff887a3c5b5e2ef4c46afccbeff4c2574a853d654b1aeaf6d5b775fde54"
+    },
+    {
+      "path": "review/joint-short-simulation.png",
+      "bytes": 11872,
+      "sha256": "82738517afe98821f49e16e3830d56c8b4ee44783ef1e4fe9da4571fdc9aac30"
+    },
+    {
+      "path": "review/package-verification.json",
+      "bytes": 3263,
+      "sha256": "f52a8784bc45d883087c45c981ffb48792b6899fbfd2efe517680a244618c2f9"
+    },
+    {
+      "path": "review/preview-server.json",
+      "bytes": 162,
+      "sha256": "a7c2fe16996d48b78cc6909ddf25c90495a2b5cdb91bc11343c8fde7f8bed366"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 19169,
+      "sha256": "b87fcf47a15c88c4ca25e8728e203ad95b22488a175cdeb0492f7860d62ec2aa"
+    },
+    {
+      "path": "review/seven-states/cold-simulation.png",
+      "bytes": 1261,
+      "sha256": "a873f71aa9ef2869f04211a33b30c3b2fe212b50e520df685cf52487368c8801"
+    },
+    {
+      "path": "review/seven-states/comfortable-simulation.png",
+      "bytes": 1313,
+      "sha256": "7cdc3ba96540e0528af12073f973b44974ef598bd002b5660eb5ebb3ab9dbaac"
+    },
+    {
+      "path": "review/seven-states/cool-simulation.png",
+      "bytes": 1267,
+      "sha256": "1d6a72c7934a36004169eef40519cc1e684fd5b4f4cebaf8e85ace29c169b953"
+    },
+    {
+      "path": "review/seven-states/extreme_cold-simulation.png",
+      "bytes": 1286,
+      "sha256": "819ccbff990fb39220e48749d7eccf0636026f67be164177b53aa507023a053b"
+    },
+    {
+      "path": "review/seven-states/extreme_hot-simulation.png",
+      "bytes": 1330,
+      "sha256": "8d1cf5167e9f95dba1f4d3c0da0e9feb1f0368d884994b5922dbc3d92a5e4b41"
+    },
+    {
+      "path": "review/seven-states/hot-simulation.png",
+      "bytes": 1320,
+      "sha256": "b3c42555ac7f53fa7b4695f70c6a8b17af99ef2dc9ec0221835b501e44b3e7cf"
+    },
+    {
+      "path": "review/seven-states/warm-simulation.png",
+      "bytes": 1308,
+      "sha256": "d08b09604566baa592c1a43c37b27b5cc18cf5bb31b8d1b81dd11f46bdd67d95"
+    },
+    {
+      "path": "review/temperature-hud-review.png",
+      "bytes": 198953,
+      "sha256": "3ecc1cbde9027718e359f2e75c3d24738b979c98c56f5982e06860ebaa6d6119"
+    },
+    {
+      "path": "source/ambient-temperature-color-16.aseprite",
+      "bytes": 462,
+      "sha256": "e1952b220a839fd5dd6db2a321582f034f4cf0c74ba50c2462c74a0a7ecb1db9"
+    },
+    {
+      "path": "source/ambient-temperature-color-32.aseprite",
+      "bytes": 735,
+      "sha256": "8220bbd09628fe5c93ce52aa552f8288778d11587a702d8824dc8307997d5a78"
+    },
+    {
+      "path": "source/build-review.py",
+      "bytes": 6200,
+      "sha256": "383b03a7357bb66270772c1a98026b4b91585b4dcc9a7e8c405502a25478d7f6"
+    },
+    {
+      "path": "source/export-layout.cjs",
+      "bytes": 1867,
+      "sha256": "200778f5cb16befe7a414ca167081b8025dd00293453cc7df27fdb2c3fda23e2"
+    },
+    {
+      "path": "source/render-review-board.js",
+      "bytes": 2954,
+      "sha256": "66cf071946a74a9c31d79f76a86d3995cb66817aa7d154aeb8a2c3fbac63bf03"
+    },
+    {
+      "path": "source/temperature-hud.js",
+      "bytes": 1779,
+      "sha256": "2ea82070b6062bf122d2c53f69a8547b4350a8bc4b80cf88664876c67f042c22"
+    },
+    {
+      "path": "source/verify-temperature-icons.py",
+      "bytes": 1922,
+      "sha256": "c9dc1506c2fec56cb8c06323ff497c2b27c8f8043bf50314799e9e5bdce6efb1"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2223,
+      "sha256": "c10e34b8ba8f81d11a6fc848c831935955658d2562a3aa0acd3d51b29c060416"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，你可以继续了",
+  "temperatureV2AdoptedWithThisAsset": true
+}

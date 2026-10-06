@@ -1,0 +1,828 @@
+{
+  "asset": "F06-01",
+  "allPassed": true,
+  "states": 3,
+  "orbitCases": 108,
+  "cases": [
+    {
+      "s": 0,
+      "yaw": -180,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -180,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -180,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -135,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -135,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -135,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -90,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -90,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -90,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -45,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -45,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -45,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -25,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -25,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": -25,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 0,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 0,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 0,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 25,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 25,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 25,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 45,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 45,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 45,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 90,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 90,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 90,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 135,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 135,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 135,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 179,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 179,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 179,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 180,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 180,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 0,
+      "yaw": 180,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -180,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -180,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -180,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -135,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -135,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -135,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -90,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -90,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -90,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -45,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -45,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -45,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -25,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -25,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": -25,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 0,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 0,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 0,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 25,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 25,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 25,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 45,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 45,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 45,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 90,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 90,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 90,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 135,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 135,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 135,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 179,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 179,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 179,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 180,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 180,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 1,
+      "yaw": 180,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -180,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -180,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -180,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -135,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -135,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -135,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -90,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -90,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -90,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -45,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -45,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -45,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -25,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -25,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": -25,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 0,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 0,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 0,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 25,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 25,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 25,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 45,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 45,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 45,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 90,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 90,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 90,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 135,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 135,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 135,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 179,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 179,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 179,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 180,
+      "pitch": -65,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 180,
+      "pitch": 0,
+      "depthTest": true,
+      "resourceReuse": true
+    },
+    {
+      "s": 2,
+      "yaw": 180,
+      "pitch": 65,
+      "depthTest": true,
+      "resourceReuse": true
+    }
+  ],
+  "modelFaces": 261,
+  "itemViews": [
+    {
+      "size": 32,
+      "variedPixels": 530,
+      "modelDerived": true,
+      "nearestTexture": true
+    },
+    {
+      "size": 16,
+      "variedPixels": 130,
+      "modelDerived": true,
+      "nearestTexture": true
+    }
+  ],
+  "resourceReuse": true,
+  "externalNetworkDependencies": 0,
+  "worldSyncImplemented": false,
+  "viewport": {
+    "width": 900,
+    "height": 692
+  },
+  "horizontalOverflow": false,
+  "buttonChecks": [
+    {
+      "button": "button[data-yaw=\"0\"]",
+      "yaw": 0,
+      "passed": true
+    },
+    {
+      "button": "button[data-yaw=\"90\"]",
+      "yaw": 90,
+      "passed": true
+    },
+    {
+      "button": "button[data-yaw=\"180\"]",
+      "yaw": 180,
+      "passed": true
+    },
+    {
+      "button": "button[data-yaw=\"-25\"]",
+      "yaw": -25,
+      "passed": true
+    }
+  ],
+  "stateAndPitchHandlers": true,
+  "viewports": [
+    {
+      "width": 390,
+      "scroll": 390,
+      "canvasWidth": 328
+    },
+    {
+      "width": 900,
+      "scroll": 900,
+      "canvasWidth": 838
+    },
+    {
+      "width": 1280,
+      "scroll": 1280,
+      "canvasWidth": 552
+    }
+  ],
+  "fullPageScreenshot": "timed out; canonical board/model PNGs captured from canvas; page recovered and controls rechecked"
+}

@@ -1,0 +1,210 @@
+{
+  "asset": "F03-01",
+  "referenceCases": [
+    {
+      "host": "sword",
+      "material": "stone",
+      "maxSpanMeasured": 0.2800000160932541,
+      "capOK": true,
+      "penetrationMeasured": 0.008000001311302185,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 410,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "sword",
+      "material": "diamond",
+      "maxSpanMeasured": 0.2799999862909317,
+      "capOK": true,
+      "penetrationMeasured": 0.007999997586011887,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 1064,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "sword",
+      "material": "feather",
+      "maxSpanMeasured": 0.2799999862909317,
+      "capOK": true,
+      "penetrationMeasured": 0.007999997586011887,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 490,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "axe",
+      "material": "stone",
+      "maxSpanMeasured": 0.30000002682209015,
+      "capOK": true,
+      "penetrationMeasured": 0.008000001311302185,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 512,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "axe",
+      "material": "diamond",
+      "maxSpanMeasured": 0.30000002682209015,
+      "capOK": true,
+      "penetrationMeasured": 0.007999997586011887,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 1220,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "axe",
+      "material": "feather",
+      "maxSpanMeasured": 0.30000002682209015,
+      "capOK": true,
+      "penetrationMeasured": 0.007999997586011887,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 680,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "shield",
+      "material": "stone",
+      "maxSpanMeasured": 0.24000000953674316,
+      "capOK": true,
+      "penetrationMeasured": 0.006000004708766937,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 412,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "shield",
+      "material": "diamond",
+      "maxSpanMeasured": 0.23999997973442078,
+      "capOK": true,
+      "penetrationMeasured": 0.006000004708766937,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 1130,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "shield",
+      "material": "feather",
+      "maxSpanMeasured": 0.24000000953674316,
+      "capOK": true,
+      "penetrationMeasured": 0.006000004708766937,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 560,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "arrow",
+      "material": "stone",
+      "maxSpanMeasured": 0.20000000298023224,
+      "capOK": true,
+      "penetrationMeasured": 0.008000001311302185,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 288,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "arrow",
+      "material": "diamond",
+      "maxSpanMeasured": 0.19999998807907104,
+      "capOK": true,
+      "penetrationMeasured": 0.007999999448657036,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 926,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "arrow",
+      "material": "feather",
+      "maxSpanMeasured": 0.19999998807907104,
+      "capOK": true,
+      "penetrationMeasured": 0.007999999448657036,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 496,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "flight",
+      "material": "stone",
+      "maxSpanMeasured": 0.18000000715255737,
+      "capOK": true,
+      "penetrationMeasured": 0.008000012636184689,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 20,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "flight",
+      "material": "diamond",
+      "maxSpanMeasured": 0.17999999970197678,
+      "capOK": true,
+      "penetrationMeasured": 0.008000012636184689,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 50,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    },
+    {
+      "host": "flight",
+      "material": "feather",
+      "maxSpanMeasured": 0.18000000715255737,
+      "capOK": true,
+      "penetrationMeasured": 0.008000012636184689,
+      "contactOK": true,
+      "referenceTriangleOverlaps": 10,
+      "occupiedReferenceContact": true,
+      "patternClear": true,
+      "passed": true
+    }
+  ],
+  "scaleCases": [
+    {
+      "host": "sword",
+      "backToHeldScaleRatio": 1.0,
+      "passed": true
+    },
+    {
+      "host": "axe",
+      "backToHeldScaleRatio": 1.0,
+      "passed": true
+    },
+    {
+      "host": "shield",
+      "backToHeldScaleRatio": 1.0,
+      "passed": true
+    }
+  ],
+  "allPassed": true,
+  "nativeHostComponentsRendered": false,
+  "gameRuntimeVerified": false,
+  "newProductionModels": 0,
+  "newProductionTextures": 0,
+  "packedImageFiles": [],
+  "emissiveMaterials": [],
+  "referenceContactIsNotGameCollision": true
+}

@@ -1,0 +1,4 @@
+const fs=require('fs'),path=require('path');const R=path.resolve(__dirname,'..'),U=require('./fabricator-ui.js');
+fs.writeFileSync(path.join(R,'exports/fabricator-ui-layout.json'),JSON.stringify({asset:'F06-02',version:'v01',adopted:false,integrated:false,layout:U.layout,slots:U.slots,states:U.states.map(s=>({id:s.id,key:s.key,glyph:s.glyph})),authoritativeStatusOnly:true,buttonMessage:{button:0,transport:'existing container button protocol'},noBakedTextItemsProgress:true,inventorySlotsUnchanged:true,completedBarShowsOutcome:true},null,2)+'\n');
+fs.writeFileSync(path.join(R,'exports/fabricator-ui-labels-candidate.json'),JSON.stringify({candidateOnly:true,productionLanguageFilesChanged:false,labels:U.labels,states:U.states.map(({id,key,zh,en,helpZh,helpEn})=>({id,key,zh,en,helpZh,helpEn}))},null,2)+'\n');
+console.log('Layout and candidate bilingual labels exported');

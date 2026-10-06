@@ -1,0 +1,74 @@
+{
+  "asset": "F04-03",
+  "allPassed": true,
+  "sourceReopened": true,
+  "chargerCuboids": 30,
+  "batteryReferenceCuboids": 16,
+  "statusPlanes": 5,
+  "dynamicWindowPlanes": 3,
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "referenceScaleUnchanged": true,
+  "noEmission": true,
+  "reviewCases": [
+    {
+      "state": 0,
+      "energy": 0,
+      "hasBattery": false,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    },
+    {
+      "state": 1,
+      "energy": 500,
+      "hasBattery": true,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    },
+    {
+      "state": 2,
+      "energy": 500,
+      "hasBattery": true,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    },
+    {
+      "state": 3,
+      "energy": 1000,
+      "hasBattery": true,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    },
+    {
+      "state": 4,
+      "energy": 500,
+      "hasBattery": true,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    },
+    {
+      "state": 2,
+      "energy": 1,
+      "hasBattery": true,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    },
+    {
+      "state": 2,
+      "energy": 999,
+      "hasBattery": true,
+      "oneStatusVisible": true,
+      "batteryVisibilityCorrect": true,
+      "windowFractionsCorrect": true
+    }
+  ],
+  "worldSyncImplemented": false
+}

@@ -1,0 +1,5174 @@
+{
+  "asset": "F05-10",
+  "version": "v02",
+  "allPassed": true,
+  "uiCases": [
+    {
+      "scene": "part-1-ready",
+      "node": 0,
+      "ghost": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 1,
+      "ghost": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 2,
+      "ghost": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 3,
+      "ghost": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 4,
+      "ghost": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-ready",
+      "node": 5,
+      "ghost": 1,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-1-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 0,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 1,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 2,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 3,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 4,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-ready",
+      "node": 5,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-2-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 0,
+      "ghost": 3,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 1,
+      "ghost": 3,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 2,
+      "ghost": 3,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 3,
+      "ghost": 3,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 4,
+      "ghost": 3,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-ready",
+      "node": 5,
+      "ghost": 3,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-3-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 0,
+      "ghost": 4,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 1,
+      "ghost": 4,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 2,
+      "ghost": 4,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 3,
+      "ghost": 4,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 4,
+      "ghost": 4,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-ready",
+      "node": 5,
+      "ghost": 4,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-4-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 0,
+      "ghost": 5,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 1,
+      "ghost": 5,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 2,
+      "ghost": 5,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 3,
+      "ghost": 5,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 4,
+      "ghost": 5,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-ready",
+      "node": 5,
+      "ghost": 5,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-5-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 0,
+      "ghost": 6,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 1,
+      "ghost": 6,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 2,
+      "ghost": 6,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 3,
+      "ghost": 6,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 4,
+      "ghost": 6,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-ready",
+      "node": 5,
+      "ghost": 6,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-6-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 0,
+      "ghost": 7,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 1,
+      "ghost": 7,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 2,
+      "ghost": 7,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 3,
+      "ghost": 7,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 4,
+      "ghost": 7,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-ready",
+      "node": 5,
+      "ghost": 7,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-7-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 0,
+      "ghost": 8,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 1,
+      "ghost": 8,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 2,
+      "ghost": 8,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 3,
+      "ghost": 8,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 4,
+      "ghost": 8,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-ready",
+      "node": 5,
+      "ghost": 8,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-occupied",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-enabled",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-installed",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "part-8-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-off-burning",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-last",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-zero",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "rocket-spent-held",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-40",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-31",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-30",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "spring-0",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-last",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "stabilizer-inactive",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-off-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "float-overload",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wing-off-active",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "wheel-no-demand",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 0,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 1,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 2,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 3,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 4,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-zero-preview",
+      "node": 5,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 0,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 1,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 2,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 3,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 4,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "battery-full-preview",
+      "node": 5,
+      "ghost": 2,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "duplicate-battery",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "no-battery",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "low-working",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-owner",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-inventory",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "feedback-aim",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "hidden",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-drive",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-float",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-spring",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 0,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 1,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 2,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 3,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 4,
+      "ghost": 0,
+      "allPassed": true
+    },
+    {
+      "scene": "combo-rocket",
+      "node": 5,
+      "ghost": 0,
+      "allPassed": true
+    }
+  ],
+  "layoutCases": [
+    {
+      "id": "part-1-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-ready",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-occupied",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-enabled",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-installed",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-off-burning",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-last",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-zero",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-spent-held",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-40",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-31",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-30",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-0",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-last",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-inactive",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "float-off-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "float-overload",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "wing-off-active",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "wheel-no-demand",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "battery-zero-preview",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "battery-full-preview",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "duplicate-battery",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "no-battery",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "low-working",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-owner",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-inventory",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-aim",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "hidden",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-drive",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-float",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-spring",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-rocket",
+      "lang": "zh",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-ready",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-occupied",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-enabled",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-installed",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-off-burning",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-last",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-zero",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-spent-held",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-40",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-31",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-30",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-0",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-last",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-inactive",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "float-off-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "float-overload",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "wing-off-active",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "wheel-no-demand",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "battery-zero-preview",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "battery-full-preview",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "duplicate-battery",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "no-battery",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "low-working",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-owner",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-inventory",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-aim",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "hidden",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-drive",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-float",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-spring",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-rocket",
+      "lang": "zh",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-ready",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-occupied",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-enabled",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-installed",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-off-burning",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-last",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-zero",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-spent-held",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-40",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-31",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-30",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-0",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-last",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-inactive",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "float-off-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "float-overload",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "wing-off-active",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "wheel-no-demand",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "battery-zero-preview",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "battery-full-preview",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "duplicate-battery",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "no-battery",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "low-working",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-owner",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-inventory",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-aim",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "hidden",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-drive",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-float",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-spring",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-rocket",
+      "lang": "zh",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-ready",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-occupied",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-enabled",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-installed",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-off-burning",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-last",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-zero",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-spent-held",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-40",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-31",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-30",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "spring-0",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-last",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-inactive",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "float-off-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "float-overload",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "wing-off-active",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "wheel-no-demand",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "battery-zero-preview",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "battery-full-preview",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "duplicate-battery",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "no-battery",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "low-working",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-owner",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-inventory",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-aim",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "hidden",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-drive",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-float",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-spring",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "combo-rocket",
+      "lang": "en",
+      "size": "320,240",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-ready",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-occupied",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-enabled",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-installed",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-off-burning",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-last",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-zero",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-spent-held",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-40",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-31",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-30",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "spring-0",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-last",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-inactive",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "float-off-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "float-overload",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "wing-off-active",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "wheel-no-demand",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "battery-zero-preview",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "battery-full-preview",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "duplicate-battery",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "no-battery",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "low-working",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-owner",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-inventory",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-aim",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "hidden",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-drive",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-float",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-spring",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "combo-rocket",
+      "lang": "en",
+      "size": "640,360",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-1-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-2-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-3-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-4-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-5-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-6-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-7-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-ready",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-occupied",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-enabled",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-installed",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "part-8-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-off-burning",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-last",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-zero",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "rocket-spent-held",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-40",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-31",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-30",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "spring-0",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-last",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "stabilizer-inactive",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "float-off-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "float-overload",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "wing-off-active",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "wheel-no-demand",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "battery-zero-preview",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "battery-full-preview",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "duplicate-battery",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "no-battery",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "low-working",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-owner",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-inventory",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "feedback-aim",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "hidden",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-drive",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-float",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-spring",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    },
+    {
+      "id": "combo-rocket",
+      "lang": "en",
+      "size": "960,540",
+      "allPassed": true
+    }
+  ],
+  "uiCaseCount": 402,
+  "layoutCaseCount": 402,
+  "depthFramebufferPairs": [
+    {
+      "part": 1,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 15809
+    },
+    {
+      "part": 1,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 29532
+    },
+    {
+      "part": 1,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 22083
+    },
+    {
+      "part": 1,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 21646
+    },
+    {
+      "part": 1,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 21838
+    },
+    {
+      "part": 1,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 21877
+    },
+    {
+      "part": 2,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 11051
+    },
+    {
+      "part": 2,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 37276
+    },
+    {
+      "part": 2,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 17352
+    },
+    {
+      "part": 2,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 17209
+    },
+    {
+      "part": 2,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 17359
+    },
+    {
+      "part": 2,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 17324
+    },
+    {
+      "part": 3,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 14968
+    },
+    {
+      "part": 3,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 29227
+    },
+    {
+      "part": 3,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 12223
+    },
+    {
+      "part": 3,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 11995
+    },
+    {
+      "part": 3,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 11979
+    },
+    {
+      "part": 3,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 12191
+    },
+    {
+      "part": 4,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 12164
+    },
+    {
+      "part": 4,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 28755
+    },
+    {
+      "part": 4,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 10348
+    },
+    {
+      "part": 4,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 9912
+    },
+    {
+      "part": 4,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 10104
+    },
+    {
+      "part": 4,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 10108
+    },
+    {
+      "part": 5,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 15818
+    },
+    {
+      "part": 5,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 30737
+    },
+    {
+      "part": 5,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 19640
+    },
+    {
+      "part": 5,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 19204
+    },
+    {
+      "part": 5,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 19396
+    },
+    {
+      "part": 5,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 19400
+    },
+    {
+      "part": 6,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 14937
+    },
+    {
+      "part": 6,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 29949
+    },
+    {
+      "part": 6,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 17504
+    },
+    {
+      "part": 6,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 17068
+    },
+    {
+      "part": 6,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 17260
+    },
+    {
+      "part": 6,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 17264
+    },
+    {
+      "part": 7,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 14796
+    },
+    {
+      "part": 7,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 30521
+    },
+    {
+      "part": 7,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 18482
+    },
+    {
+      "part": 7,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 18046
+    },
+    {
+      "part": 7,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 18238
+    },
+    {
+      "part": 7,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 18242
+    },
+    {
+      "part": 8,
+      "node": 0,
+      "depthVsDisabledChangedPixels": 17359
+    },
+    {
+      "part": 8,
+      "node": 1,
+      "depthVsDisabledChangedPixels": 30937
+    },
+    {
+      "part": 8,
+      "node": 2,
+      "depthVsDisabledChangedPixels": 22254
+    },
+    {
+      "part": 8,
+      "node": 3,
+      "depthVsDisabledChangedPixels": 21818
+    },
+    {
+      "part": 8,
+      "node": 4,
+      "depthVsDisabledChangedPixels": 22010
+    },
+    {
+      "part": 8,
+      "node": 5,
+      "depthVsDisabledChangedPixels": 22014
+    }
+  ],
+  "viewportWidths": [
+    {
+      "width": 320,
+      "scroll": 305
+    },
+    {
+      "width": 768,
+      "scroll": 753
+    },
+    {
+      "width": 1280,
+      "scroll": 1265
+    }
+  ],
+  "embeddedImageBytesMatch": [
+    "machine-atlas-64.png",
+    "fabric-atlas-128x64.png",
+    "rocket-atlas-128x64.png",
+    "F04-02-battery-empty-16.png",
+    "F04-02-battery-full-16.png",
+    "F04-02-battery-empty-32.png",
+    "F04-02-battery-full-32.png"
+  ],
+  "remappedKeyChecked": true,
+  "grayscaleChecked": true,
+  "sceneScreenshots": [
+    "part-1-ready",
+    "part-1-occupied",
+    "part-1-enabled",
+    "part-1-installed",
+    "part-1-active",
+    "part-2-ready",
+    "part-2-occupied",
+    "part-2-enabled",
+    "part-2-installed",
+    "part-2-active",
+    "part-3-ready",
+    "part-3-occupied",
+    "part-3-enabled",
+    "part-3-installed",
+    "part-3-active",
+    "part-4-ready",
+    "part-4-occupied",
+    "part-4-enabled",
+    "part-4-installed",
+    "part-4-active",
+    "part-5-ready",
+    "part-5-occupied",
+    "part-5-enabled",
+    "part-5-installed",
+    "part-5-active",
+    "part-6-ready",
+    "part-6-occupied",
+    "part-6-enabled",
+    "part-6-installed",
+    "part-6-active",
+    "part-7-ready",
+    "part-7-occupied",
+    "part-7-enabled",
+    "part-7-installed",
+    "part-7-active",
+    "part-8-ready",
+    "part-8-occupied",
+    "part-8-enabled",
+    "part-8-installed",
+    "part-8-active",
+    "rocket-off-burning",
+    "rocket-last",
+    "rocket-zero",
+    "rocket-spent-held",
+    "spring-40",
+    "spring-31",
+    "spring-30",
+    "spring-0",
+    "stabilizer-last",
+    "stabilizer-inactive",
+    "float-off-active",
+    "float-overload",
+    "wing-off-active",
+    "wheel-no-demand",
+    "battery-zero-preview",
+    "battery-full-preview",
+    "duplicate-battery",
+    "no-battery",
+    "low-working",
+    "feedback-owner",
+    "feedback-inventory",
+    "feedback-aim",
+    "hidden",
+    "combo-drive",
+    "combo-float",
+    "combo-spring",
+    "combo-rocket"
+  ],
+  "productionGameTested": false,
+  "animationControlDoesNotConsumeResources": true,
+  "animationStoppedAfterTest": true
+}

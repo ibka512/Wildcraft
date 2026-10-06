@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wildcraft 七档温度 HUD · v01 审稿</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#111b17;color:#e3e8d9;font:15px/1.6 system-ui,-apple-system,sans-serif}main{max-width:1280px;margin:auto;padding:30px}h1{margin:8px 0;font-size:29px}h2{font-size:20px;margin:0 0 12px}.kicker{color:#d6b77d;font-size:12px;letter-spacing:2px}.muted{color:#a4b7a6}.controls{display:flex;gap:16px;flex-wrap:wrap;padding:18px;background:#202d25;border:1px solid #38463b;border-radius:10px;margin:22px 0}label{display:flex;gap:8px;align-items:center}select,button,input{font:inherit}select,button{background:#304331;color:#e3e8d9;border:1px solid #617b57;border-radius:5px;padding:6px 10px}select:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #d6b77d;outline-offset:3px}.stage{padding:16px;background:#090f0c;border:1px solid #3a4c3d;overflow:auto;border-radius:10px}canvas{display:block;image-rendering:pixelated;image-rendering:crisp-edges;max-width:none}.status{margin-top:12px;color:#c9d5bf;min-height:24px}.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:24px 0}.note{padding:18px;background:#1d2a22;border:1px solid #35473a;border-radius:10px}.note p{margin:8px 0}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:18px}.card{background:#1c2820;padding:18px;border-radius:10px;border:1px solid #3b4a3f;overflow:hidden}.card h3{margin:0 0 12px;font-size:16px}.card canvas{border:1px solid #3b4a3f}.card small{color:#b2c2ac}footer{border-top:1px solid #3e4b3d;padding:18px 0;color:#9eaf9f;font-size:13px}@media(max-width:600px){main{padding:16px}.gallery{grid-template-columns:1fr}.card{overflow:auto}}</style>
+<main><div class="kicker">WILDCRAFT · F02-01 · v01</div><h1>七档环境温度 HUD</h1><p class="muted">温度计沿用上暖下冷v2待审稿，七档亮框与文字表示当前读数。料理HUD复用刚采用布局。下方是布局模拟，字体近似，不是实机截图。</p>
+<div class="controls"><label>场景<select id="scenario"></select></label><label>温度档位<select id="band"></select></label><label><input id="edge" type="checkbox" checked>轻边缘色调</label><label>语言<select id="language"><option value="zh">中文</option><option value="en">English</option></select></label><label>显示倍数<select id="scale"><option>1</option><option selected>2</option><option>3</option></select></label><label><input id="stamina" type="checkbox" checked>显示精力</label><label><input id="bounds" type="checkbox">检查边界</label><label>保暖剩余秒<input id="seconds" type="range" min="0" max="600" value="127"><output id="seconds-label">127</output></label></div>
+<section class="stage" aria-label="温度与料理联合HUD布局模拟"><canvas id="live" role="img" aria-label="料理图标与红心、精力、温度的排列"></canvas></section><div class="status" id="status" aria-live="polite"></div>
+<div class="notes"><div class="note"><h2>上暖下冷 · 当前档位单独标记</h2><p>温度计保留静态冷热配色；旁边七格从上方极热到下方极冷。亮框、指向标记与文字共同指出当前档位，不把蓝色底泡当作实时读数。</p></div><div class="note"><h2>环境信息 · 料理负责辅助</h2><p>不显示摄氏度，不增加普通冷热伤害、减速或精力惩罚。保暖料理辅助细雪冻结；耐热料理不表示抗火或岩浆免疫。</p></div><div class="note"><h2>与已采用料理HUD衔接</h2><p>温度16px组件放在原文字锚点上方3px。下方料理仍从原锚点+14开始，图标与两列文字保留；精力隐藏时两组一起上移24px。</p></div></div><h2>状态对照 · 均为布局模拟</h2><div id="gallery" class="gallery"></div>
+<footer>温度图标与新七档组件待采用；料理图标和排布已采用。红心/吸收心、景物、底部区域为示意，字体近似。边缘色调沿现有4px低透明度规则，专注时关闭；未接入游戏。</footer></main>
+<script>/* Review-only layout model, measured in Minecraft logical GUI pixels. */
+(function(root){
+const effectOrder=['warmth','cooling','recovery'];
+const labels={zh:{warmth:'保暖',cooling:'耐热',recovery:'精力恢复'},en:{warmth:'Warmth',cooling:'Cooling',recovery:'Recovery'}};
+const presets={
+ normal:{title:'三效果并存',w:426,h:240,rows:1,rowHeight:9,stamina:true,levels:[2,1,2],seconds:[127,84,56],language:'zh',absorption:false,focus:false},
+ single:{title:'单一保暖效果',w:426,h:240,rows:1,rowHeight:9,stamina:true,levels:[2,0,0],seconds:[127,0,0],language:'zh',absorption:false,focus:false},
+ hearts:{title:'多排红心与吸收心',w:320,h:180,rows:4,rowHeight:8,stamina:true,levels:[2,1,2],seconds:[127,84,56],language:'zh',absorption:true,focus:false},
+ hidden:{title:'精力自动隐藏',w:426,h:240,rows:1,rowHeight:9,stamina:false,levels:[2,1,2],seconds:[127,84,56],language:'zh',absorption:false,focus:false},
+ english:{title:'英文排布',w:426,h:240,rows:1,rowHeight:9,stamina:true,levels:[2,1,2],seconds:[127,84,56],language:'en',absorption:false,focus:false},
+ short:{title:'小视窗紧凑排列',w:320,h:164,rows:2,rowHeight:9,stamina:true,levels:[2,1,2],seconds:[127,84,56],language:'zh',absorption:false,focus:false},
+ focus:{title:'专注与临近结束',w:426,h:240,rows:1,rowHeight:9,stamina:true,levels:[2,1,2],seconds:[9,84,56],language:'zh',absorption:false,focus:true},
+ expired:{title:'保暖结束后重排',w:426,h:240,rows:1,rowHeight:9,stamina:true,levels:[0,1,2],seconds:[0,84,56],language:'zh',absorption:false,focus:false},
+ none:{title:'无料理效果',w:426,h:240,rows:1,rowHeight:9,stamina:false,levels:[0,0,0],seconds:[0,0,0],language:'zh',absorption:false,focus:false}
+};
+const rules={x:12,iconSize:16,fullWidth:148,fullRowHeight:16,fullRowStride:20,compactWidth:53,compactHeight:20,compactGap:6,compactRowStride:24,bottomReserve:46,temperatureOffsetVisible:29,temperatureOffsetHidden:5,mealOffset:14};
+function timeLabel(seconds){const s=Math.max(0,Math.floor(seconds));return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;}
+function compute(s){
+ const heartBottom=12+(s.rows-1)*s.rowHeight+9;
+ const temperatureY=heartBottom+(s.stamina?29:5),startY=temperatureY+14,bottom=s.h-rules.bottomReserve;
+ const list=effectOrder.map((key,i)=>({key,level:s.levels[i],seconds:s.seconds[i]})).filter(v=>v.level>0&&v.seconds>0);
+ const availableW=s.w-24,fullHeight=list.length?16+20*(list.length-1):0;
+ const aim={left:Math.floor(s.w/2)-10,right:Math.floor(s.w/2)+10,top:Math.floor(s.h/2)-10,bottom:Math.floor(s.h/2)+10};
+ const fullCrossesAim=list.length&&12+148>aim.left&&12<aim.right&&startY<aim.bottom&&startY+fullHeight>aim.top;
+ let mode='full',cols=1;
+ if(list.length && (availableW<rules.fullWidth||startY+fullHeight>bottom||fullCrossesAim)){
+  mode='compact';
+  const compactAvailableW=startY<aim.bottom&&startY+68>aim.top?Math.min(availableW,aim.left-12):availableW;
+  cols=Math.max(1,Math.min(list.length,Math.floor((compactAvailableW+6)/(53+6))));
+ }
+ const rows=mode==='full'?list.length:Math.ceil(list.length/cols),height=list.length?(mode==='full'?fullHeight:20+24*(rows-1)):0;
+ // No overlay can displace hearts or cover the reserved XP/hotbar area.
+ const fits=availableW>=(mode==='full'?148:53)&&(!list.length||startY+height<=bottom);
+ const boxes=list.map((v,i)=>{const x=12+(mode==='compact'?(i%cols)*59:0),y=startY+(mode==='compact'?Math.floor(i/cols)*24:i*20);return {...v,x,y,width:mode==='full'?148:53,height:mode==='full'?16:20,iconX:x,iconY:y+(mode==='compact'?2:0),name:labels[s.language][v.key],levelText:v.level===2?'II':'I',timeText:timeLabel(v.seconds),timerX:mode==='full'?x+114:x+19,timerY:mode==='full'?y+4:y+10,nameX:x+20,nameY:y+4,levelX:x+19,levelY:y,lowTime:v.seconds<=10};});
+ return {aim,heartBottom,temperatureY,startY,bottom,mode,cols,rows,height,fits,boxes,staminaLabelY:heartBottom+6,staminaTrackY:heartBottom+17};
+}
+root.WildcraftMealHud={effectOrder,labels,presets,rules,timeLabel,compute};
+if(typeof module!=='undefined')module.exports=root.WildcraftMealHud;
+})(typeof globalThis!=='undefined'?globalThis:this);
+
+/* Review-only component; state indices mirror TemperatureRules.STATES. */
+(function(root){
+const states=[
+ {key:'extreme_cold',zh:'极冷',en:'Very cold',color:'#7faecd',value:-2.8},
+ {key:'cold',zh:'寒冷',en:'Cold',color:'#a4c8dd',value:-1.8},
+ {key:'cool',zh:'偏冷',en:'Cool',color:'#bfd6da',value:-.8},
+ {key:'comfortable',zh:'舒适',en:'Comfortable',color:'#cbd8bd',value:0},
+ {key:'warm',zh:'偏暖',en:'Warm',color:'#ddc39a',value:.8},
+ {key:'hot',zh:'炎热',en:'Hot',color:'#e5b37b',value:1.8},
+ {key:'extreme_hot',zh:'极热',en:'Very hot',color:'#ef9a66',value:2.8}
+];
+const rules={iconX:12,iconOffsetY:-3,iconSize:16,gaugeX:32,gaugeOffsetY:-2,gaugeWidth:5,gaugeStep:2,gaugeBarHeight:1,labelX:44,labelOffsetY:0,backgroundX:10,backgroundOffsetY:-3,backgroundWidth:104,backgroundHeight:16};
+function layout(s,meal){const band=Math.max(0,Math.min(6,s.band??3)),y=meal.temperatureY,activeRow=6-band;return {band,state:states[band].key,label:states[band][s.language],color:states[band].color,iconX:12,iconY:y-3,labelX:44,labelY:y,activeRow,marker:{x:31,y:y-3+2*activeRow,width:7,height:3},gauge:states.map((v,i)=>({band:6-i,x:32,y:y-2+2*i,width:5,height:1,active:6-i===band,color:states[6-i].color})),box:{x:10,y:y-3,width:104,height:16},mealStartY:meal.startY};}
+function edge(s){const band=s.band??3,value=states[band].value;if(s.focus||s.edge===false||Math.abs(value)<=.5)return {visible:false,alpha:0,width:4};const level=value<0?s.levels[0]:s.levels[1];return {visible:true,alpha:Math.round(Math.min(14,Math.abs(value)*5)/(level+1)),width:4,color:value<0?'#78acd0':'#d49a62'};}
+root.WildcraftTemperatureHud={states,rules,layout,edge};if(typeof module!=='undefined')module.exports=root.WildcraftTemperatureHud;
+})(typeof globalThis!=='undefined'?globalThis:this);
+</script><script>const ASSET={"warmth": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAklEQVR42v0bdY4AAADTSURBVGNgGLTg/aXl/yky4MbOaf//vruKYgg6n6ABIEy2q9BtA2mm2FtEg2ezXP8vi1b7n2Eu8j9EWwBMg/ggTFAjSMOdfN7/76ZxgfHf49JgPggvtWUCy9e6SWAa5CTNAbYBpvnv2Ugwtgvi/g8yGCQGMwik1kyMDdUQmDORbQSx3ZL5wJpBAXjRkuX/HGNGsDqQISgG6PEzgCVg3oA5H+YVEAaJg9Rg9QIIgBSADIAFIgyDNIAwSB6r89ENAXkHhEGaYGyiNKMbBNMEoonWSCoAAETjyQX4om4sAAAAAElFTkSuQmCC", "cooling": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAklEQVR42v0bdY4AAADLSURBVGNgGAUkAX5Npf+v3778D6JJ1nhPVRmMv7pY/z9yJpx4A/6uWfr/V3I4WKOPtBDYEKIMAGmAaYbZDsPT1hj9x2sjyJ8gA0CKYbYiO98jVxvTAJCmyMaJGM5FxiDNINthgYkIJHMneOjuOuaB4WyQgW9urgTbDFITXZaLGhMwA2CGgBSCbAIZBsIgvnGkyv+1p278n3TMAIwtJsujeqNj1R64ITCDYBhkO0gzSBykESQGUo81EKdsOQaWBGGQJmQMEgOF0+BK3gCwfOvu8I9OuQAAAABJRU5ErkJggg==", "recovery": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAklEQVR42v0bdY4AAACqSURBVGNgGL7g3avo/9jE+QyF/4MwQQM+zZX9j03zwpOmxBmATTPIVZHLrP57zHT6T5KzI7IN/9+6ZQm2/dfX+f+Vi63/E+1sEABptpvq8B9GC/rp4fYCyAZkP4LYXftMwc4GGQCyHW8YgJwJ0gDCMANgtstlWeG3HdlGUGCBNIL48y64gm0mqBkGQIpBGKQR5iqiog49FmCJhmibscUCyHaKkjRZqY4UAADKxn6ZWovomQAAAABJRU5ErkJggg==", "stamina": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAgCAYAAADKbvy8AAAAAklEQVR42v0bdY4AAAC5SURBVO3WIQoCQQCF4T2GYBCETYvZExg9guIVNCgWwSOIi0nxAmKUbTar0QMYBbUbno5gWKYLb/k/+Be2zgszSfJRSxsiv5LfeJvdkgz7jhg+83yitJ2RUYNhvzxgPWuSUQxYpQHDD/lVesiQ6SsU5g63hcinaMDRZSbyKRqws+qJfOLOAAAA1aDrVuRTNOCz6Ip8igbcT1sin7gzAABANTxeZ4U4CVOn+1ohTsJUfhwrxEkAAADgb95F9n7qkl6k1QAAAABJRU5ErkJggg==", "temperature": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAklEQVR42v0bdY4AAACTSURBVGNgGN6guKHn/4kLN/57hyX9J8uApy/f/P/bG/0fZBD5BhSxgg34vSL5/9WOwP+kG7DRinwXgPz/4UI/2ICfL/b/v7i7m3QXpN64SpkLGBsvgQ2Y9un/f58tF/+TbABD6i7KYoFt9ZP/i1Zu/E9WIgI5W+LYO/JcAUp9bJu//GfsfPyf0WsWeamR4qRMDAAAVm2CAGqvGCEAAAAASUVORK5CYII=", "temperature32": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAklEQVR42v0bdY4AAAFYSURBVGNgGAWjYCgDF7/o/xev3f5v7Rr4n+6W+4an/L/9+PX/bTt3g7Glk///AXHA397o/2cu3RyYUIA5ABQNA5IGBtwBn798/f8nkBXsgN8rkv9/XZLyn+4O+FvEOsAhMJF/gNPARiuwA36+2P//17Nd9HXIrfuP/3+40P8fRA9YFOy6d3Rg00DqjatgB0z79P9/y+v/9M8FqsfuD2wUMDZeGjgHgIJ+QB0AqoQYUnf937zrEP0dEBSd+R8UBQwha8AOoGt1DLJ85Yad/1/8+PVfdN/r/2yrn/xfs/Pof2Mb1/90S3wgHP3uz3+JY+/+c2x8Co6KfUfO0McBoCJ49fIl/1Wvf/vPue3Nf6bJj/4zRG2gnwNAcZ6dmfGfbfOX/4ydj/8zFl35z+g16395y6T/dM0BHh4e/xlygZa7TaF/TgC1AUEJcdaSdWAsqWE6MGXBKBjyAACTjCx2ox9AswAAAABJRU5ErkJggg=="};</script><script>
+const M=WildcraftMealHud,T=WildcraftTemperatureHud,imgs={};
+let state={...M.presets.normal,band:3,edge:true};
+function imageLoad(){return Promise.all(Object.entries(ASSET).map(([key,src])=>new Promise((resolve,reject)=>{let im=new Image();im.onload=()=>{imgs[key]=im;resolve()};im.onerror=reject;im.src=src;})));}
+const heartRows=['.oo.oo...','orrroro..','orrhrrro.','orrrrrro.','.orrrro..','..orro...','...oo....'];
+function label(c,t,x,y,color='#e1d7ae',size=9){c.font=`${size}px monospace, "PingFang SC", sans-serif`;c.textBaseline='top';c.fillStyle='#0b100b';c.fillText(t,x+1,y+1);c.fillStyle=color;c.fillText(t,x,y);}
+function hearts(c,s){const map={o:'#181c13',r:'#c84440',h:'#ee8c72'};for(let row=0;row<s.rows;row++){for(let k=0;k<10;k++){let x=12+k*8,y=12+row*s.rowHeight;heartRows.forEach((r,j)=>[...r].forEach((a,i)=>{if(a!=='.'){c.fillStyle=(s.absorption&&row===s.rows-1)?{o:'#252516',r:'#d1a648',h:'#f4dc89'}[a]:map[a];c.fillRect(x+i,y+j,1,1);}}));}}}
+function backdrop(c,s){c.fillStyle='#78988b';c.fillRect(0,0,s.w,s.h);c.fillStyle='#b9c8af';c.fillRect(0,0,s.w,Math.floor(s.h*.44));c.fillStyle='#49694d';for(let i=0;i<12;i++){let x=i*43,y=Math.floor(s.h*.38)+(i%3)*7;c.fillRect(x,y,45,s.h-y);}c.fillStyle='#254331';for(let i=0;i<7;i++){let x=155+i*51,y=Math.floor(s.h*.32)+(i%2)*13;c.fillRect(x,y,17,26);c.fillStyle='#634e38';c.fillRect(x+7,y+23,4,14);c.fillStyle='#254331';}c.fillStyle='#617946';c.fillRect(0,Math.floor(s.h*.61),s.w,Math.ceil(s.h*.4));c.fillStyle='#415d3b';for(let i=0;i<20;i++)c.fillRect((i*37)%s.w,s.h-60-(i%3)*8,7,2);
+ c.fillStyle='#253227';c.fillRect(0,s.h-46,s.w,46);label(c,s.language==='zh'?'经验 / 快捷栏预留区域':'XP / hotbar reserved',Math.max(12,s.w/2-57),s.h-28,'#9fa88d',8);
+ c.fillStyle='#eceddc';let cx=Math.floor(s.w/2),cy=Math.floor(s.h/2);c.fillRect(cx-3,cy,7,1);c.fillRect(cx,cy-3,1,7);
+}
+function drawTemperature(c,s,l){
+ const q=T.layout(s,l);c.globalAlpha=1;c.fillStyle='rgba(21,35,27,.44)';c.fillRect(q.box.x,q.box.y,q.box.width,q.box.height);c.drawImage(imgs.temperature,q.iconX,q.iconY,16,16);
+ for(const z of q.gauge){c.globalAlpha=z.active?1:.58;c.fillStyle=z.color;c.fillRect(z.x,z.y,z.width,z.height);}c.globalAlpha=1;
+ const a=q.marker;c.fillStyle='#eff0d6';c.fillRect(a.x,a.y,a.width,1);c.fillRect(a.x,a.y+2,a.width,1);c.fillRect(a.x,a.y+1,1,1);c.fillRect(a.x+6,a.y+1,1,1);c.fillRect(39,a.y+1,1,1);c.fillRect(40,a.y,1,1);c.fillRect(40,a.y+2,1,1);
+ label(c,q.label,q.labelX,q.labelY,q.color);return q;
+}
+function drawEdges(c,s){const z=T.edge(s);if(z.visible){c.globalAlpha=z.alpha/255;c.fillStyle=z.color;c.fillRect(0,0,4,s.h);c.fillRect(s.w-4,0,4,s.h);}c.globalAlpha=1;}
+
+function draw(canvas,s,scale){const l=M.compute(s);canvas.width=s.w;canvas.height=s.h;canvas.style.width=`${s.w*scale}px`;canvas.style.height=`${s.h*scale}px`;const c=canvas.getContext('2d');c.imageSmoothingEnabled=false;backdrop(c,s);drawEdges(c,s);hearts(c,s);
+ if(s.stamina){label(c,s.language==='zh'?'精力 64 / 100':'Stamina 64 / 100',12,l.staminaLabelY,'#dce8d0');c.drawImage(imgs.stamina,0,0,112,7,12,l.staminaTrackY,112,7);c.drawImage(imgs.stamina,0,8,69,3,14,l.staminaTrackY+2,69,3);}
+ drawTemperature(c,s,l);
+ if(l.fits){for(const b of l.boxes){c.fillStyle='rgba(21,35,27,.44)';c.fillRect(b.x-2,b.y-1,b.width+4,b.height+2);c.drawImage(imgs[b.key],b.iconX,b.iconY,16,16);if(l.mode==='full')label(c,`${b.name} ${b.levelText}`,b.nameX,b.nameY);else label(c,b.levelText,b.levelX,b.levelY);label(c,b.timeText,b.timerX,b.timerY,b.lowTime?'#f0b84d':'#d4dccb');}}
+ if(s.bounds){c.strokeStyle='#ffc16d';c.lineWidth=1;for(const b of l.boxes)c.strokeRect(b.x-.5,b.y-.5,b.width+1,b.height+1);c.strokeStyle='#ed8681';c.beginPath();c.moveTo(0,l.bottom+.5);c.lineTo(s.w,l.bottom+.5);c.stroke();}
+ canvas.setAttribute('aria-label',`${s.title}，${l.mode==='full'?'纵排':'紧凑排列'}，${l.boxes.length}个效果`);return l;
+}
+function update(){const l=draw(document.querySelector('#live'),state,Number(document.querySelector('#scale').value));document.querySelector('#status').textContent=`${T.states[state.band][state.language]} · ${state.title} · ${state.w}×${state.h} 逻辑尺寸 · ${l.mode==='full'?'纵排':'紧凑排列'} · ${l.boxes.length} 个效果 · ${l.fits?'布局可容纳':'空间不足：不覆盖红心或底部区域'}${state.focus?' · 专注时保持料理读取，温度边缘色调关闭':''}`;window.lastLayout=l;window.lastTemperature=T.layout(state,l);window.lastEdge=T.edge(state);}
+function apply(key){state={...M.presets[key],band:Number(document.querySelector('#band').value),edge:document.querySelector('#edge').checked,levels:[...M.presets[key].levels],seconds:[...M.presets[key].seconds]};document.querySelector('#language').value=state.language;document.querySelector('#stamina').checked=state.stamina;document.querySelector('#seconds').value=state.seconds[0];document.querySelector('#seconds-label').value=state.seconds[0];update();}
+for(let i=6;i>=0;i--){const o=new Option(T.states[i].zh,String(i));document.querySelector('#band').add(o);}document.querySelector('#band').value='3';
+for(const [k,s] of Object.entries(M.presets)){let o=new Option(s.title,k);document.querySelector('#scenario').add(o);}
+document.querySelector('#band').onchange=e=>{state.band=Number(e.target.value);update();};document.querySelector('#edge').onchange=e=>{state.edge=e.target.checked;update();};
+document.querySelector('#scenario').onchange=e=>apply(e.target.value);document.querySelector('#language').onchange=e=>{state.language=e.target.value;update();};document.querySelector('#stamina').onchange=e=>{state.stamina=e.target.checked;update();};document.querySelector('#bounds').onchange=e=>{state.bounds=e.target.checked;update();};document.querySelector('#scale').onchange=update;document.querySelector('#seconds').oninput=e=>{state.seconds[0]=Number(e.target.value);state.levels[0]=state.seconds[0]>0?2:0;document.querySelector('#seconds-label').value=e.target.value;update();};
+window.reviewReady=false;imageLoad().then(()=>{apply('normal');for(const [key,s] of Object.entries(M.presets)){const d=document.createElement('article');d.className='card';const h=document.createElement('h3');h.textContent=s.title;d.append(h);const cv=document.createElement('canvas');cv.id='sample-'+key;d.append(cv);let l=draw(cv,{...s,band:3,edge:true},1);const p=document.createElement('small');p.textContent=`${s.w}×${s.h} · ${l.mode==='full'?'纵排':'紧凑'} · ${l.boxes.length}项；模拟 / 字体近似`;d.append(p);document.querySelector('#gallery').append(d);}update();window.reviewReady=true;});
+</script></html>

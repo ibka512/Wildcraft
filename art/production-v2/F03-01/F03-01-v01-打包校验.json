@@ -1,0 +1,10 @@
+{
+  "asset": "F03-01",
+  "allPassed": true,
+  "manifestFiles": 89,
+  "zipEntryCount": 90,
+  "zipBytes": 18246383,
+  "zipSha256": "7c3d58738abebb0ec876de1355fbf4013f907728dd27d4496a88fc7f9f45df8e",
+  "manifestSha256": "47e9115a4d4cf02c2cf55e677a9026030e3519332c97a110cf3069b28fa2b77a",
+  "zipCRCAndFileHashesVerified": true
+}

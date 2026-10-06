@@ -1,0 +1,163 @@
+{
+  "asset": "F04-04",
+  "allPassed": true,
+  "codeAndJar": [
+    {
+      "path": "src/client/java/dev/wildcraft/client/energy/ChargerScreen.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/energy/ChargerMenu.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/energy/ChargerEntity.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/energy/FixedEnergy.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/energy/BatteryData.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/energy/BatteryItem.java",
+      "unchanged": true
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar",
+      "unchanged": true
+    }
+  ],
+  "reusedInputs": [
+    {
+      "path": "references/battery-item-16.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-item-energy-regions.json",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-preview.js",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-empty-16.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-full-16.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/energy-regions.json",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-readout.js",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/charger-atlas-64.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    }
+  ],
+  "priorAdoptedPackages": [
+    {
+      "asset": "F04-01",
+      "adopted": true,
+      "fileCount": 54,
+      "manifestMatches": true,
+      "mismatches": []
+    },
+    {
+      "asset": "F04-02",
+      "adopted": true,
+      "fileCount": 38,
+      "manifestMatches": true,
+      "mismatches": []
+    },
+    {
+      "asset": "F04-03",
+      "adopted": true,
+      "fileCount": 55,
+      "manifestMatches": true,
+      "mismatches": []
+    }
+  ],
+  "relativeMarkdownLinks": [
+    {
+      "file": "README.md",
+      "target": "review/charger-ui-review.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "exports/charger-ui-176x166.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "source/charger-ui-176x166.aseprite",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "exports/charger-ui-layout.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "exports/charger-ui-labels-candidate.json",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "integration-map.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "verification.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "review/charger-status-help-en.png",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/asset-checks.json",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/ui-pixel-layout-verification.json",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/browser-verification.json",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/package-verification.json",
+      "exists": true
+    }
+  ],
+  "previewHttpStatus": 200,
+  "integrated": false
+}

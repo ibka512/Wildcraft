@@ -1,0 +1,12 @@
+{
+  "originalCues": 12,
+  "externalSamples": 0,
+  "method": "seeded procedural material modes, colored noise and short motor gestures",
+  "editableProject": "source/sound-design.json + source/render-audio.py + source/stems/",
+  "reusedFocus": {
+    "source": "src/main/resources/assets/wildcraft/sounds",
+    "unchanged": true,
+    "newAssets": false
+  },
+  "referencesNotProductionExports": true
+}

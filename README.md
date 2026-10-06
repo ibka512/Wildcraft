@@ -1,6 +1,6 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机已完成的玩法版本为 **0.1.0-dev.14 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；正式Fuse P9也已完成，见[P9合同](docs/P9-SPEC.md)与[验收](docs/P9-VERIFICATION.md)。公开 main 与最新 Release 仍为 dev.7，本次dev.8–dev.14尚未上传。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.15 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；正式Fuse P9也已完成，见[P9合同](docs/P9-SPEC.md)与[验收](docs/P9-VERIFICATION.md)。公开 main 与最新 Release 仍为 dev.7，本次 dev.8–dev.15 尚未上传。第二批 29 项采用美术已接入，见 [接入说明](docs/SECOND-ART-INTEGRATION.md) 和 [验证记录](docs/SECOND-ART-VERIFICATION.md)。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
@@ -24,6 +24,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 | 有限电池 P5 | 空电池容量1000，充电器显示进度；实际堆栈存余量，取出消费、掉落或重载不回满；机械动力留到P6 |
 | 机械安装 P6 | 六个固定节点；手持部件右键安装、吸附预览；蹲下空手右键拆下；顶部控制板启停；空手乘坐、A/D转向、R启停；拆空后蹲下空手攻击回收主体 |
 | 八类部件 P7 | 被动翼、接地轮子、一次性火箭、冷却弹簧、有限稳定器、水中浮力，以及已有风扇/电池；W/S驱动、载重限制、真实资源保存 |
+| 第二批美术 v2 | 四类料理、新温度/料理/能源/制造界面、机械模型与透明预览、Fuse 显示和有限音效粒子、腰侧装备与动作衔接；[记录](docs/SECOND-ART-VERIFICATION.md) |
 | 核心美术 v1 | 原创滑翔伞网格、标准/细手臂握持和攀爬姿态、五类背负挂点与短落定、精力图集、专注画面/音效及设置页 |
 
 ![第三人称滑翔](development-assets/verification/core-art-v1/glider-third-person-front.png)
@@ -32,11 +33,11 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 ![背负装备](development-assets/verification/core-art-v1/back-equipment.png)
 
-首版披风可见时隐藏三类背负，鞘翅隐藏中央盾/弓；腰侧布局仍待完善。弩不触发林克时间；多人局部林克时间尚未实现，联机不会降低全服速率。精力目前采用数值加短条。详细操作与限制见 [开发手册](docs/DEVELOPMENT.md) 和各阶段规则。
+当前披风或鞘翅下使用侧腰布局，三个背负记录仍只引用真实库存。弩不触发林克时间；多人局部林克时间尚未实现，联机不会降低全服速率。精力目前采用数值加短条。详细操作与限制见 [开发手册](docs/DEVELOPMENT.md) 和各阶段规则。
 
 ## 下载与安装
 
-- **本机最新完整开发包：[wildcraft-0.1.0-dev.14+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
+- **本机最新开发包：[wildcraft-0.1.0-dev.15+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.15+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
 - [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
 - [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
 

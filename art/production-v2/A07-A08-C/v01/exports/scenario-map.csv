@@ -1,0 +1,13 @@
+﻿id,label,from,to,eventSeconds,durationSeconds,reviewNote
+climb_glide,攀爬 → 开伞,up,glide,0.65,1.8,继承当前攀爬姿态，300ms内到采用握持；伞即时出现
+release_empty,抓墙 → 空手放开,hold,empty,0.65,1.8,200ms用完整放手参考，结束对齐原版空手姿态
+climb_turn,上攀 → 横移,up,left,0.65,1.8,120ms局部衔接；循环相位仍由实际位移决定
+glide_close,持伞 → 空手收伞,glide,empty,0.65,1.8,伞即时消失，空手肢体200ms回原版
+glide_sword,持伞 → 取剑,glide,item,0.65,1.8,伞与持伞覆盖即时清除，仅保留140ms手部物件落定
+glide_bow,持伞 → 拉弓,glide,bow,0.65,1.8,原版双手拉弓立即优先，盾收起，无自定义手部落定
+glide_block,持伞 → 举盾,glide,block,0.65,1.8,盾与原版挡格立即优先，无自定义手部落定
+rapid_glide,收伞 → 重开 → 拉弓,glide,rapid,0.65,1.8,每次从当前呈现姿态重算；动作即时打断
+mantle_restore,登顶 → 站立,mantle,empty,0.65,1.8,只恢复视觉肢体，不加入根运动或新翻越能力
+loss_reset,持伞 → 状态失效,glide,reset,0.65,1.8,死亡/隐身/旁观/断开等测试输入即清空参考，不播退出
+blocked_climb,上攀 → 停住,up,hold,0.65,1.8,阻挡时相位停止；120ms转抓墙参考，恢复需实际位移
+same_spare,持伞 → 相同备用剑,glide,spare,0.65,1.8,备用剑在手、登记剑仍背负；两者是不同真实引用

@@ -1,0 +1,21 @@
+{
+  "asset": "S01",
+  "allPassed": true,
+  "adopted": false,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "originalOgg": 12,
+  "masters": 12,
+  "editableStems": 36,
+  "reusedFocusReferences": 2,
+  "loops": 0,
+  "newImagesOrModels": 0,
+  "audioExportChecksPassed": true,
+  "policyCases": 26,
+  "actualBrowserCases": 25,
+  "previousAssetAdopted": true,
+  "previousZipUnchanged": true,
+  "codeLocalesJarAndFocusUnchanged": true,
+  "embeddedSourceConfigAndAudioExact": true,
+  "nextAssetUntouched": true
+}

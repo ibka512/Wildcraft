@@ -1,0 +1,13 @@
+{
+  "allPassed": true,
+  "frames": 108,
+  "fps": 30,
+  "width": 1240,
+  "height": 740,
+  "durationSeconds": 3.6,
+  "codec": "h264",
+  "audioStreams": 0,
+  "fullyDecoded": true,
+  "source": "Actual browser reference canvases; not game capture",
+  "gameRuntimeVerified": false
+}

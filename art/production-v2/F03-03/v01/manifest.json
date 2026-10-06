@@ -1,0 +1,334 @@
+{
+  "asset": "F03-03",
+  "allPassed": true,
+  "adopted": true,
+  "integrated": false,
+  "newOriginalGlyphs": 1,
+  "productionModelFiles": 0,
+  "sourceAsepriteFiles": 2,
+  "productionPNGFiles": 2,
+  "nativeSpriteSize": [
+    16,
+    16
+  ],
+  "actualSpriteColors": 6,
+  "atlasSize": [
+    64,
+    32
+  ],
+  "atlasLayers": 4,
+  "sourceAndPNGReopenedCases": 4,
+  "opaqueGeometryMountCases": 5,
+  "finiteGeometrySceneCases": 64,
+  "WebGLRenderCases": 64,
+  "actualDropdownStateCases": 16,
+  "referenceCornerOcclusionCases": 8,
+  "handBackScaleRatio": 1.0,
+  "oldAtlasPixelsUnchangedOutsideNewRegion": true,
+  "previousAssetAdopted": true,
+  "previousArchiveUnchanged": true,
+  "referencesAndCodeLocalesJarUnchanged": true,
+  "editorStartupBlockerResolved": true,
+  "gameRuntimeVerified": false,
+  "version": "v01",
+  "created": "2026-10-06",
+  "status": "user_approved",
+  "designDocumentsCompleted": true,
+  "productionAssetsCompleted": true,
+  "runtimeIntegrationPending": true,
+  "nextAfterAdoption": "F03-04 特殊材料及融合过程反馈",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2641,
+      "sha256": "b533ddaa06ddc339e552094b865bb4a0a64f99c969797d43ad28219a4f29b235"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 230,
+      "sha256": "1dbe0ac65c2e56fa48ff89ba8a0ad7726844de3b2945c187e4708ab2f33e66aa"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1654,
+      "sha256": "d0f4af6b70e035fa7a634ab7ad5cee49779ca7b2aeba6121a249e3611ecd6c40"
+    },
+    {
+      "path": "exports/atlas-layout.json",
+      "bytes": 1588,
+      "sha256": "310c3bea4b292450d00af59cf14745f061f0adcc20bd7cf88ec496cf3ac9c52b"
+    },
+    {
+      "path": "exports/fallback-design-spec.json",
+      "bytes": 4782,
+      "sha256": "d6eb76e76c36902e2c4a862c8c2a53ab5804180d41ab1c775862d409e973dbd2"
+    },
+    {
+      "path": "exports/fuse-shared-atlas-64x32.png",
+      "bytes": 1364,
+      "sha256": "6796a496b82b2da2ca6a0686fe36fd64a1ec6d6bbc65c5b4e0c2ea5052a51899"
+    },
+    {
+      "path": "exports/fuse-unavailable-16.png",
+      "bytes": 264,
+      "sha256": "d0d48aad969645410157b2a0ab16c8c0fd30b3cd111545a085c6fb5a061cd199"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 3231,
+      "sha256": "ac77e9a78f47fce55811dc42c78925683cfd6ce7f5c97efb6d14da0075800d2f"
+    },
+    {
+      "path": "references/adopted-atlas-layout.json",
+      "bytes": 796,
+      "sha256": "db5b74deb941c183f5fb5ded5e231d8affb9a7eccbd2f11296cc326106f9aed9"
+    },
+    {
+      "path": "references/adopted-back-layout.json",
+      "bytes": 5755,
+      "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104"
+    },
+    {
+      "path": "references/adopted-fuse-status-atlas-64x32.png",
+      "bytes": 1200,
+      "sha256": "757ea9c6fe5b54a67b546817ebe1f4d74a5c7d9d56d3667478cb3dcece1a89c9"
+    },
+    {
+      "path": "references/adopted-mount-spec.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "references/adopted-reference-meshes.json",
+      "bytes": 786336,
+      "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+    },
+    {
+      "path": "references/adopted-status-layout.json",
+      "bytes": 2090,
+      "sha256": "3b101071e0ba8921268ea099108a2ca9ac99edde37ab750beed1389dc9e54394"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 1748,
+      "sha256": "74268300b9496b807b5e9b27d80bf474d8c677bdc451b6f61b383e2491e37748"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1602,
+      "sha256": "a3662101e189e39451be51b0f5e63779857bfdfcd82a9148b3c70bb081a9025c"
+    },
+    {
+      "path": "review/aseprite-adopted-atlas-open.json",
+      "bytes": 4783,
+      "sha256": "bb005c6f4bda4922d6ac29ec0109a6e69c759e4ad6b9f21f01ca064bd46f1c4d"
+    },
+    {
+      "path": "review/aseprite-before.json",
+      "bytes": 5612,
+      "sha256": "1d505d6b62a02b6ff6b8c6b7fba154fda7e81ef7ae065313caa8ade528ae1f60"
+    },
+    {
+      "path": "review/aseprite-created.json",
+      "bytes": 3064,
+      "sha256": "386aaea0778d61a5bdde74ae12850655504f4e6113a1c1ef2c657ebeaa6ed448"
+    },
+    {
+      "path": "review/aseprite-fuse-shared-atlas-64x32-aseprite-reopened.json",
+      "bytes": 5625,
+      "sha256": "9f2cd0f2b301af30b4a151c7d285cea1fe713a016bd5c477ebb896040f86f994"
+    },
+    {
+      "path": "review/aseprite-fuse-shared-atlas-64x32-png-reopened.json",
+      "bytes": 3502,
+      "sha256": "38585206a529c25f9f4105ac5970bd00714e2a0030adba8c156de072582d22b9"
+    },
+    {
+      "path": "review/aseprite-fuse-unavailable-16-aseprite-reopened.json",
+      "bytes": 3974,
+      "sha256": "0aec6b606adcc4736198f04cd5fd87a232ddc023c3d0a1802fcaa14af4921415"
+    },
+    {
+      "path": "review/aseprite-fuse-unavailable-16-png-reopened.json",
+      "bytes": 2550,
+      "sha256": "57fcabb1ed2a76e02964b1ab429d2b2c8d3d9433cb04f4e32de1fbb825858d01"
+    },
+    {
+      "path": "review/aseprite-sprite-saved.json",
+      "bytes": 3956,
+      "sha256": "4f55714ced8905263f12360b2eb8e468269366dea231f42bab5638c264e42610"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 11917,
+      "sha256": "021c00f8bd42dbc1ff430690477d4aa019a7c63adde1b0b29cb2cbae81abd145"
+    },
+    {
+      "path": "review/data-unavailable.png",
+      "bytes": 6450,
+      "sha256": "4b46ec42f686bc0ee3ba14727dfe5d72a256026b9182d77ef03777b7507e34a9"
+    },
+    {
+      "path": "review/document-checks.json",
+      "bytes": 370,
+      "sha256": "719fbcb6657332662986c3ce3936002816c2561462735db9ec3c0b708fb26042"
+    },
+    {
+      "path": "review/editor-recovered-initial-state.json",
+      "bytes": 490,
+      "sha256": "aadc93af74af94600f6afdb396d86c3fa44ce23555669ae0b093cfe573e97437"
+    },
+    {
+      "path": "review/editor-recovery.json",
+      "bytes": 694,
+      "sha256": "d318372eb312ee4baac3c939c4ba5f73ee0a89470178cf4a597f183b67906d92"
+    },
+    {
+      "path": "review/editor-startup-blocker.json",
+      "bytes": 929,
+      "sha256": "7d7cf3ff640c7f73ddaee5a51a33c977d7f620e101fd39a670650f3ca919b7d9"
+    },
+    {
+      "path": "review/fallback-reference-boxes.json",
+      "bytes": 14381,
+      "sha256": "b5187a416293fe6cd860a299ec474bc2c447aba7ed2387344cc0d4651045f8e9"
+    },
+    {
+      "path": "review/fuse-fallback-review.png",
+      "bytes": 300614,
+      "sha256": "06a34e4ef3592cf44d52561cb7f86e89dc839d217b81d406f4184e2837b8bcc8"
+    },
+    {
+      "path": "review/fuse-shared-atlas-64x32-aseprite-pixels.json",
+      "bytes": 35059,
+      "sha256": "d34c6703efe0ad573e811fcf3e1a8622099fdd0b053b45d8cdd80bd17305715a"
+    },
+    {
+      "path": "review/fuse-shared-atlas-64x32-png-pixels.json",
+      "bytes": 35059,
+      "sha256": "de4640e3b4082921346b37522174565c3621428b391c3fd9dc1cde91afa9cbb4"
+    },
+    {
+      "path": "review/fuse-unavailable-16-aseprite-pixels.json",
+      "bytes": 4595,
+      "sha256": "794df574ceedb7bbebe94fb5b2794912dd0578976593e2baeaf62ba129d523dc"
+    },
+    {
+      "path": "review/fuse-unavailable-16-png-pixels.json",
+      "bytes": 4595,
+      "sha256": "c07ff90b2d2fdc11f1eea56975f4712068cf07c062d9d47385abf1708404df4a"
+    },
+    {
+      "path": "review/geometry-checks.json",
+      "bytes": 10871,
+      "sha256": "b38b5bd643c1b81f936c5646890784379450fee9e7150adb7755e5797a44cf9e"
+    },
+    {
+      "path": "review/model-unavailable.png",
+      "bytes": 6450,
+      "sha256": "4b46ec42f686bc0ee3ba14727dfe5d72a256026b9182d77ef03777b7507e34a9"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 793,
+      "sha256": "6cc537bb77ef7d958936e45d09b792043f9ffaa6b9dc33bb6ba19c91a8d4e0b2"
+    },
+    {
+      "path": "review/pixel-checks.json",
+      "bytes": 949,
+      "sha256": "3eb131a7b4828a641cf5f48822b066d63375415762d60a4eaa1edca57fbe07a5"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 883867,
+      "sha256": "c75e7abdc24871a8c71ccb3ad24e033e17fca06edab37055b951ef43f2e0b395"
+    },
+    {
+      "path": "review/render-checks.json",
+      "bytes": 11459,
+      "sha256": "5c9f6a00fa6ac07679fd2ea1cc0f96053c1fd2f217f760a0ce8e2e9bd5965591"
+    },
+    {
+      "path": "review/restored-reference.png",
+      "bytes": 7171,
+      "sha256": "061b5e15236f3b515ce6d003ddf468cff52c9b8aabb4b953f5d1cb7b7491fb3a"
+    },
+    {
+      "path": "review/slot-native16-32.png",
+      "bytes": 10030,
+      "sha256": "cda20595ed1738ab63f95ddcfcde87b40682278ffde8df9e50f861c16a171621"
+    },
+    {
+      "path": "review/sword-fallback-front.png",
+      "bytes": 6450,
+      "sha256": "4b46ec42f686bc0ee3ba14727dfe5d72a256026b9182d77ef03777b7507e34a9"
+    },
+    {
+      "path": "review/unfused.png",
+      "bytes": 5998,
+      "sha256": "45c24bf7ef76e42769e8f7c2ff6ab4ac732524dd0b9ee4f23e65124e0cd0ec2d"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 6804,
+      "sha256": "a36afe5bff4034cfee4105de6c88bd3763001859ad2e8c869d9686ebb2233fae"
+    },
+    {
+      "path": "source/check-geometry.js",
+      "bytes": 5150,
+      "sha256": "2082d76f8eff88e2a4d6d32ccca7abf1c0dee0b96b47a17b7bbdcf0b4dd07c3f"
+    },
+    {
+      "path": "source/fallback-review.js",
+      "bytes": 10076,
+      "sha256": "2430508b627a43664c6061041a4e74dfbe94b1265da4d9372c1cd8eda0183249"
+    },
+    {
+      "path": "source/fuse-shared-atlas-64x32.aseprite",
+      "bytes": 1368,
+      "sha256": "f83d9336fc74a94ff57a74cadb5f0bb5dfff52dc396529f709177d35670019bf"
+    },
+    {
+      "path": "source/fuse-unavailable-16.aseprite",
+      "bytes": 531,
+      "sha256": "2bf6de7b1ea7c5b102677485b99b22454b99c0235928fa4ef9000c883dfe44e8"
+    },
+    {
+      "path": "source/native-reference-renderer.js",
+      "bytes": 5700,
+      "sha256": "2596beebce9b991fc223e8ecccfdf3a6a9637b480ca612923ffdadb37b7f1cbc"
+    },
+    {
+      "path": "source/package-assets.py",
+      "bytes": 4347,
+      "sha256": "8a8369fa0179928506e80015d014cf2ca42a40947c598cbfb67d98e109d2fdf9"
+    },
+    {
+      "path": "source/pixel-plan.json",
+      "bytes": 5969,
+      "sha256": "db5b7612f4964620d00a0b7b353106259be46dcda2555a81cb359ddb27bae0f8"
+    },
+    {
+      "path": "source/prepare-pixel-assets.py",
+      "bytes": 6374,
+      "sha256": "94f5e38111e390e5ff44ba99bbd5a5195b747525e8c07a3bc884523af74f4c16"
+    },
+    {
+      "path": "source/review-meshes.json",
+      "bytes": 851138,
+      "sha256": "95df288ec81c2a2338da56158b8b20f63699d09f9d46e063d819b1ba9fba1ea7"
+    },
+    {
+      "path": "source/serve-preview.py",
+      "bytes": 542,
+      "sha256": "83bad60f98b96901fe8268356a690fbc6aaceb200beba332ae44cde02d41e675"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2744,
+      "sha256": "5ee22e99acdc5501a4c93b3fc14fc70595703b0f13eb89902575a0781ee217b8"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一版"
+}

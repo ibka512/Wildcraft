@@ -1,0 +1,168 @@
+{
+  "asset": "F05-03",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": 24,
+  "hiddenAdoptedReferenceMeshes": 68,
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "actualAnimationCases": [
+    {
+      "age": 0,
+      "active": false,
+      "ghost": false,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 1,
+      "active": false,
+      "ghost": false,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 10,
+      "active": false,
+      "ghost": false,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 45,
+      "active": false,
+      "ghost": false,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 100,
+      "active": false,
+      "ghost": false,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 0,
+      "active": true,
+      "ghost": false,
+      "angle": 0.0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 1,
+      "active": true,
+      "ghost": false,
+      "angle": 0.7,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 10,
+      "active": true,
+      "ghost": false,
+      "angle": 7.0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 45,
+      "active": true,
+      "ghost": false,
+      "angle": 31.499999999999996,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 100,
+      "active": true,
+      "ghost": false,
+      "angle": 70.0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 0,
+      "active": true,
+      "ghost": true,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 1,
+      "active": true,
+      "ghost": true,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 10,
+      "active": true,
+      "ghost": true,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 45,
+      "active": true,
+      "ghost": true,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    },
+    {
+      "age": 100,
+      "active": true,
+      "ghost": true,
+      "angle": 0,
+      "fixedHousingUnmoved": true,
+      "actualBladeVertexMatches": true
+    }
+  ],
+  "actualNodeDirectionCases": [
+    {
+      "node": 0,
+      "exhaustCorrect": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 1,
+      "exhaustCorrect": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 2,
+      "exhaustCorrect": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 3,
+      "exhaustCorrect": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 4,
+      "exhaustCorrect": true,
+      "thrustOpposite": true
+    },
+    {
+      "node": 5,
+      "exhaustCorrect": true,
+      "thrustOpposite": true
+    }
+  ],
+  "noEmission": true,
+  "motionBlur": false,
+  "gameIntegrated": false
+}

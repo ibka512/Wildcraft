@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-atlas-32.png",
+    "copy": "references/battery-atlas-32.png",
+    "sha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/source/geometry-and-uv.json",
+    "copy": "references/geometry-and-uv.json",
+    "sha256": "d54a489b51211af4af7ea0982d74531fb494f8aff78648c27a0809c395eab93d",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/source/uv-regions.json",
+    "copy": "references/uv-regions.json",
+    "sha256": "4d8aac98e2426dab5e6932bdb793f8d66cea94ad479e684d8459749f68049a65",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-item-16.png",
+    "copy": "references/battery-item-16.png",
+    "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f",
+    "status": "user_approved",
+    "pixels_changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-item-32.png",
+    "copy": "references/battery-item-32.png",
+    "sha256": "f2168e7502e01a02502e514a433b759c9145daee6835b028d2d3bacaf25f0a67",
+    "status": "user_approved",
+    "pixels_changed": false
+  }
+]

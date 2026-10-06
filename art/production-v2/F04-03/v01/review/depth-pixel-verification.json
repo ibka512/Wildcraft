@@ -1,0 +1,165 @@
+{
+  "allPassed": true,
+  "actualFramebufferSamples": 12,
+  "cases": [
+    {
+      "e": 0,
+      "actual": [
+        {
+          "name": "bottom",
+          "y": 7.23,
+          "px": 320,
+          "py": 242,
+          "rgb": [
+            61,
+            30,
+            35
+          ],
+          "red": false
+        },
+        {
+          "name": "middleLower",
+          "y": 8.7,
+          "px": 320,
+          "py": 210,
+          "rgb": [
+            40,
+            24,
+            30
+          ],
+          "red": false
+        },
+        {
+          "name": "middleUpper",
+          "y": 9.4,
+          "px": 320,
+          "py": 194,
+          "rgb": [
+            61,
+            30,
+            35
+          ],
+          "red": false
+        },
+        {
+          "name": "top",
+          "y": 10.89,
+          "px": 320,
+          "py": 161,
+          "rgb": [
+            61,
+            30,
+            35
+          ],
+          "red": false
+        }
+      ]
+    },
+    {
+      "e": 500,
+      "actual": [
+        {
+          "name": "bottom",
+          "y": 7.23,
+          "px": 320,
+          "py": 242,
+          "rgb": [
+            156,
+            29,
+            29
+          ],
+          "red": true
+        },
+        {
+          "name": "middleLower",
+          "y": 8.7,
+          "px": 320,
+          "py": 210,
+          "rgb": [
+            100,
+            17,
+            23
+          ],
+          "red": true
+        },
+        {
+          "name": "middleUpper",
+          "y": 9.4,
+          "px": 320,
+          "py": 194,
+          "rgb": [
+            61,
+            30,
+            35
+          ],
+          "red": false
+        },
+        {
+          "name": "top",
+          "y": 10.89,
+          "px": 320,
+          "py": 161,
+          "rgb": [
+            61,
+            30,
+            35
+          ],
+          "red": false
+        }
+      ]
+    },
+    {
+      "e": 1000,
+      "actual": [
+        {
+          "name": "bottom",
+          "y": 7.23,
+          "px": 320,
+          "py": 242,
+          "rgb": [
+            156,
+            29,
+            29
+          ],
+          "red": true
+        },
+        {
+          "name": "middleLower",
+          "y": 8.7,
+          "px": 320,
+          "py": 210,
+          "rgb": [
+            100,
+            17,
+            23
+          ],
+          "red": true
+        },
+        {
+          "name": "middleUpper",
+          "y": 9.4,
+          "px": 320,
+          "py": 194,
+          "rgb": [
+            197,
+            62,
+            37
+          ],
+          "red": true
+        },
+        {
+          "name": "top",
+          "y": 10.89,
+          "px": 320,
+          "py": 161,
+          "rgb": [
+            156,
+            29,
+            29
+          ],
+          "red": true
+        }
+      ]
+    }
+  ]
+}

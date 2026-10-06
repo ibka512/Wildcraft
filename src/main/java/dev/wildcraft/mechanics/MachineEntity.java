@@ -66,7 +66,7 @@ public final class MachineEntity extends Entity {
         parts.set(node, source.copyWithCount(1)); source.shrink(1);
         // Player.interactOn restores a shrunken creative stack if its identity is unchanged.
         // Replace the hand with the real remainder so creative installation still transfers once.
-        p.setItemInHand(hand, source.copy()); syncParts(); return true;
+        p.setItemInHand(hand, source.copy()); syncParts(); artCue(dev.wildcraft.art.ArtFeedback.Cue.INSTALL); return true;
     }
     public boolean recover(ServerPlayer p, int node) {
         if (!canModify(p) || enabled() || !MachineNodes.valid(node) || parts.get(node).isEmpty()) return false;
@@ -77,7 +77,7 @@ public final class MachineEntity extends Entity {
         if (inventory.getFreeSlot() < 0 && inventory.getSlotWithRemainingSpace(copy) < 0) return false;
         inventory.add(copy);
         if (!copy.isEmpty()) return false;
-        parts.set(node, ItemStack.EMPTY); syncParts(); return true;
+        parts.set(node, ItemStack.EMPTY); syncParts(); artCue(dev.wildcraft.art.ArtFeedback.Cue.REMOVE); return true;
     }
     public boolean setEnabled(ServerPlayer p, boolean on) {
         if (!canModify(p)) return false;
@@ -196,7 +196,7 @@ public final class MachineEntity extends Entity {
         velocity=new Vec3(velocity.x,Math.clamp(velocity.y,-.8,rocketBurning||springFired||countKind(5)>0?.6:.3),velocity.z);
         var next=getBoundingBox().move(velocity);
         if(!level().hasChunkAt(net.minecraft.core.BlockPos.containing(next.minX,getY(),next.minZ)) || !level().hasChunkAt(net.minecraft.core.BlockPos.containing(next.maxX,getY(),next.maxZ))){
-            if(paid)Batteries.charge(parts.get(batteryNode()),cost);setYRot(previousYaw);entityData.set(WORKING,false);entityData.set(ACTIVE,0);setDeltaMovement(Vec3.ZERO);syncParts();return;
+            if(paid)Batteries.charge(parts.get(batteryNode()),cost);setYRot(previousYaw);entityData.set(WORKING,false);entityData.set(ACTIVE,0);setDeltaMovement(Vec3.ZERO);syncParts();audioWork();return;
         }
         // Commit finite resource changes only after validating the destination is simulated.
         for(int n=0;n<6;n++) {
@@ -206,7 +206,7 @@ public final class MachineEntity extends Entity {
         entityData.set(WORKING,paid || rocketBurning);entityData.set(ACTIVE,active);
         move(MoverType.SELF,velocity);
         setDeltaMovement(new Vec3(horizontalCollision?0:velocity.x*(onGround()?.8:wings>0?.98:.94),verticalCollision?0:velocity.y*.98,horizontalCollision?0:velocity.z*(onGround()?.8:wings>0?.98:.94)));
-        syncParts();
+        syncParts();audioWork();
     }
     @Override protected void addAdditionalSaveData(ValueOutput out) {
         out.putInt("wildcraft_schema", 1);
@@ -240,4 +240,15 @@ public final class MachineEntity extends Entity {
         return false;
     }
     @Override public ItemStack getPickResult() { return new ItemStack(MechanicsContent.BODY); }
+
+    private boolean audioReady,audioWorking;private int workOn,workOff;private long lastWorkCue=Long.MIN_VALUE;
+    private void artCue(dev.wildcraft.art.ArtFeedback.Cue cue){if(level() instanceof net.minecraft.server.level.ServerLevel server)dev.wildcraft.art.ArtFeedback.send(server,getUUID(),position(),cue,-1);}
+    private void audioWork(){
+        boolean work=activeKind(1)||activeKind(6)||activeKind(7);
+        if(!audioReady){audioReady=true;audioWorking=work;return;}
+        workOn=work?Math.min(2,workOn+1):0;workOff=work?0:Math.min(4,workOff+1);
+        boolean next=workOn>=2?true:workOff>=4?false:audioWorking;
+        long now=level().getGameTime();
+        if(next!=audioWorking&&(lastWorkCue==Long.MIN_VALUE||now-lastWorkCue>=12)){audioWorking=next;lastWorkCue=now;artCue(next?dev.wildcraft.art.ArtFeedback.Cue.MACHINE_START:dev.wildcraft.art.ArtFeedback.Cue.MACHINE_STOP);}
+    }
 }

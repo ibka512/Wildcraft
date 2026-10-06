@@ -1,0 +1,714 @@
+{
+  "asset": "F05-01",
+  "version": "v01",
+  "units": "1/16 block",
+  "front": "+Z / mounting outward",
+  "origin": "MachineNodes point",
+  "parts": [
+    {
+      "name": "recess",
+      "from": [
+        -2.08,
+        -2.08,
+        -0.64
+      ],
+      "to": [
+        2.08,
+        2.08,
+        0.38
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "recess"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            12.0,
+            6.0,
+            14.0
+          ],
+          "materialRegion": "port"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "recess"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "recess"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "recess"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "recess"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "rim_left",
+      "from": [
+        -2.08,
+        -2.08,
+        0.38
+      ],
+      "to": [
+        -1.52,
+        2.08,
+        0.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "rim_right",
+      "from": [
+        1.52,
+        -2.08,
+        0.38
+      ],
+      "to": [
+        2.08,
+        2.08,
+        0.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "rim_top",
+      "from": [
+        -1.52,
+        1.52,
+        0.38
+      ],
+      "to": [
+        1.52,
+        2.08,
+        0.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "rim_bottom",
+      "from": [
+        -1.52,
+        -2.08,
+        0.38
+      ],
+      "to": [
+        1.52,
+        -1.52,
+        0.64
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            12.0,
+            8.0,
+            14.0
+          ],
+          "materialRegion": "trim"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "contact0",
+      "from": [
+        -1.0,
+        -0.8,
+        0.38
+      ],
+      "to": [
+        -0.43999999999999995,
+        0.8,
+        0.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "contact1",
+      "from": [
+        0.44,
+        -0.8,
+        0.38
+      ],
+      "to": [
+        1.0,
+        0.8,
+        0.62
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      },
+      "group": "node"
+    },
+    {
+      "name": "key",
+      "from": [
+        -0.3,
+        1.55,
+        0.64
+      ],
+      "to": [
+        0.3,
+        1.95,
+        0.68
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "steel"
+        }
+      },
+      "group": "node"
+    }
+  ],
+  "outwardFaceModelUnits": 0.64,
+  "batteryBackModelUnits": 0.64,
+  "instances": [
+    {
+      "id": 0,
+      "name": "顶",
+      "point": [
+        0,
+        10.4,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "name": "底",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "后",
+      "point": [
+        0,
+        5.2,
+        -11.2
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "前",
+      "point": [
+        0,
+        5.2,
+        11.2
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "name": "左",
+      "point": [
+        -11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "name": "右",
+      "point": [
+        11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "rotationMappings": [
+    "(x,z,-y)",
+    "(x,-z,y)",
+    "(-x,y,-z)",
+    "(x,y,z)",
+    "(-z,y,x)",
+    "(z,y,-x)"
+  ],
+  "integrated": false
+}

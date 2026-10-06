@@ -1,0 +1,17 @@
+{
+  "asset": "A07-A08-C",
+  "allPassed": true,
+  "scope": "adoption metadata integrity; no new runtime or motion test",
+  "userEvidence": "采用",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "sourceReferenceTracksPngVideoAndScenarioCsvUnchanged": true,
+  "historicalArchiveUnchanged": true,
+  "historicalArchiveSha256": "130466b9932372be9b3b2fbef28ed4131304da9854809d493a507b656b7fe77c",
+  "originalManifestSha256": "81c26ac063125e6443c017c8b8bc2eb0aecd7fd417ec981f3f7e4035d765c00c",
+  "baselineFilesUnchanged": 23,
+  "otherQueueRowsAndRegistryEntriesUnchanged": true,
+  "nextAsset": "A13-C 专注音效混音复核",
+  "nextAssetUnstarted": true
+}

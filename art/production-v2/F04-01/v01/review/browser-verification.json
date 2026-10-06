@@ -1,0 +1,2452 @@
+{
+  "date": "2026-10-05",
+  "scope": "actual geometry review WebGL and native item-mask simulation; no game integration",
+  "caseCount": 66,
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "0/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "0/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "0/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "0/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "0/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "0/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "0/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "0/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "0/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "0/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "0/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "0/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "0/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/0/readout",
+      "passed": true
+    },
+    {
+      "name": "0/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "0/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "0/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "0/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/90/readout",
+      "passed": true
+    },
+    {
+      "name": "0/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "0/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "0/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "0/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/180/readout",
+      "passed": true
+    },
+    {
+      "name": "0/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "0/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "0/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "0/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "0/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "1/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "1/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "1/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "1/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "1/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "1/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/0/readout",
+      "passed": true
+    },
+    {
+      "name": "1/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "1/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/90/readout",
+      "passed": true
+    },
+    {
+      "name": "1/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "1/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/180/readout",
+      "passed": true
+    },
+    {
+      "name": "1/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "1/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "99/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "99/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "99/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "99/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "99/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "99/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "99/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "99/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "99/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "99/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "99/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "99/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/0/readout",
+      "passed": true
+    },
+    {
+      "name": "99/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "99/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "99/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "99/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/90/readout",
+      "passed": true
+    },
+    {
+      "name": "99/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "99/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "99/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "99/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/180/readout",
+      "passed": true
+    },
+    {
+      "name": "99/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "99/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "99/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "99/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "99/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "100/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "100/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "100/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "100/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "100/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "100/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "100/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "100/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "100/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "100/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "100/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "100/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/0/readout",
+      "passed": true
+    },
+    {
+      "name": "100/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "100/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "100/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "100/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/90/readout",
+      "passed": true
+    },
+    {
+      "name": "100/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "100/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "100/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "100/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/180/readout",
+      "passed": true
+    },
+    {
+      "name": "100/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "100/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "100/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "100/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "100/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "333/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "333/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "333/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "333/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "333/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "333/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "333/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "333/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "333/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "333/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "333/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "333/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/0/readout",
+      "passed": true
+    },
+    {
+      "name": "333/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "333/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "333/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "333/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/90/readout",
+      "passed": true
+    },
+    {
+      "name": "333/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "333/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "333/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "333/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/180/readout",
+      "passed": true
+    },
+    {
+      "name": "333/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "333/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "333/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "333/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "333/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "334/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "334/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "334/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "334/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "334/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "334/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "334/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "334/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "334/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "334/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "334/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "334/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/0/readout",
+      "passed": true
+    },
+    {
+      "name": "334/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "334/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "334/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "334/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/90/readout",
+      "passed": true
+    },
+    {
+      "name": "334/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "334/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "334/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "334/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/180/readout",
+      "passed": true
+    },
+    {
+      "name": "334/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "334/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "334/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "334/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "334/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "500/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "500/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "500/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "500/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "500/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "500/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "500/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "500/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "500/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "500/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "500/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "500/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/0/readout",
+      "passed": true
+    },
+    {
+      "name": "500/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "500/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "500/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "500/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/90/readout",
+      "passed": true
+    },
+    {
+      "name": "500/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "500/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "500/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "500/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/180/readout",
+      "passed": true
+    },
+    {
+      "name": "500/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "500/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "500/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "500/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "500/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "666/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "666/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "666/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "666/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "666/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "666/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "666/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "666/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "666/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "666/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "666/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "666/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/0/readout",
+      "passed": true
+    },
+    {
+      "name": "666/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "666/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "666/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "666/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/90/readout",
+      "passed": true
+    },
+    {
+      "name": "666/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "666/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "666/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "666/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/180/readout",
+      "passed": true
+    },
+    {
+      "name": "666/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "666/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "666/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "666/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "666/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "667/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "667/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "667/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "667/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "667/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "667/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "667/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "667/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "667/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "667/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "667/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "667/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/0/readout",
+      "passed": true
+    },
+    {
+      "name": "667/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "667/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "667/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "667/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/90/readout",
+      "passed": true
+    },
+    {
+      "name": "667/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "667/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "667/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "667/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/180/readout",
+      "passed": true
+    },
+    {
+      "name": "667/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "667/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "667/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "667/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "667/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "999/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "999/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "999/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "999/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "999/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "999/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "999/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "999/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "999/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "999/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "999/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "999/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/0/readout",
+      "passed": true
+    },
+    {
+      "name": "999/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "999/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "999/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "999/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/90/readout",
+      "passed": true
+    },
+    {
+      "name": "999/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "999/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "999/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "999/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/180/readout",
+      "passed": true
+    },
+    {
+      "name": "999/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "999/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "999/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "999/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "999/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/-180/readout",
+      "passed": true
+    },
+    {
+      "name": "1000/-180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1000/-180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1000/-180/fill order",
+      "passed": true
+    },
+    {
+      "name": "1000/-180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/-180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/-90/readout",
+      "passed": true
+    },
+    {
+      "name": "1000/-90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1000/-90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1000/-90/fill order",
+      "passed": true
+    },
+    {
+      "name": "1000/-90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/-90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/-25/readout",
+      "passed": true
+    },
+    {
+      "name": "1000/-25/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1000/-25/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1000/-25/fill order",
+      "passed": true
+    },
+    {
+      "name": "1000/-25/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/-25/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/0/readout",
+      "passed": true
+    },
+    {
+      "name": "1000/0/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1000/0/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1000/0/fill order",
+      "passed": true
+    },
+    {
+      "name": "1000/0/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/0/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/90/readout",
+      "passed": true
+    },
+    {
+      "name": "1000/90/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1000/90/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1000/90/fill order",
+      "passed": true
+    },
+    {
+      "name": "1000/90/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/90/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/180/readout",
+      "passed": true
+    },
+    {
+      "name": "1000/180/same shell mesh",
+      "passed": true
+    },
+    {
+      "name": "1000/180/charge sum",
+      "passed": true
+    },
+    {
+      "name": "1000/180/fill order",
+      "passed": true
+    },
+    {
+      "name": "1000/180/native 32 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "1000/180/native 16 shell preserved",
+      "passed": true
+    },
+    {
+      "name": "integer display 1",
+      "passed": true
+    },
+    {
+      "name": "integer display 2",
+      "passed": true
+    },
+    {
+      "name": "integer display 4",
+      "passed": true
+    },
+    {
+      "name": "integer display 8",
+      "passed": true
+    },
+    {
+      "name": "pitch -60 renders",
+      "passed": true
+    },
+    {
+      "name": "pitch 0 renders",
+      "passed": true
+    },
+    {
+      "name": "pitch 60 renders",
+      "passed": true
+    },
+    {
+      "name": "depth-buffer shows bottom red at half",
+      "passed": true
+    },
+    {
+      "name": "depth-buffer shows middle lower half red",
+      "passed": true
+    },
+    {
+      "name": "middle upper remains empty at half",
+      "passed": true
+    },
+    {
+      "name": "top remains empty at half",
+      "passed": true
+    },
+    {
+      "name": "top fills at full",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "cases": [
+    {
+      "energy": 0,
+      "yaw": -180,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 0,
+      "yaw": -90,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 0,
+      "yaw": -25,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "faces": 48,
+      "passed": true
+    },
+    {
+      "energy": 0,
+      "yaw": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 0,
+      "yaw": 90,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 0,
+      "yaw": 180,
+      "fractions": [
+        0,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1,
+      "yaw": -180,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1,
+      "yaw": -90,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1,
+      "yaw": -25,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "faces": 49,
+      "passed": true
+    },
+    {
+      "energy": 1,
+      "yaw": 0,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "faces": 33,
+      "passed": true
+    },
+    {
+      "energy": 1,
+      "yaw": 90,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1,
+      "yaw": 180,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 99,
+      "yaw": -180,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 99,
+      "yaw": -90,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 99,
+      "yaw": -25,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ],
+      "faces": 49,
+      "passed": true
+    },
+    {
+      "energy": 99,
+      "yaw": 0,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ],
+      "faces": 33,
+      "passed": true
+    },
+    {
+      "energy": 99,
+      "yaw": 90,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 99,
+      "yaw": 180,
+      "fractions": [
+        0.29700000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 100,
+      "yaw": -180,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 100,
+      "yaw": -90,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 100,
+      "yaw": -25,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ],
+      "faces": 49,
+      "passed": true
+    },
+    {
+      "energy": 100,
+      "yaw": 0,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ],
+      "faces": 33,
+      "passed": true
+    },
+    {
+      "energy": 100,
+      "yaw": 90,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 100,
+      "yaw": 180,
+      "fractions": [
+        0.30000000000000004,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 333,
+      "yaw": -180,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 333,
+      "yaw": -90,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 333,
+      "yaw": -25,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ],
+      "faces": 49,
+      "passed": true
+    },
+    {
+      "energy": 333,
+      "yaw": 0,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ],
+      "faces": 33,
+      "passed": true
+    },
+    {
+      "energy": 333,
+      "yaw": 90,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 333,
+      "yaw": 180,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 334,
+      "yaw": -180,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 334,
+      "yaw": -90,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 334,
+      "yaw": -25,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ],
+      "faces": 50,
+      "passed": true
+    },
+    {
+      "energy": 334,
+      "yaw": 0,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ],
+      "faces": 34,
+      "passed": true
+    },
+    {
+      "energy": 334,
+      "yaw": 90,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 334,
+      "yaw": 180,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 500,
+      "yaw": -180,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 500,
+      "yaw": -90,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 500,
+      "yaw": -25,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "faces": 50,
+      "passed": true
+    },
+    {
+      "energy": 500,
+      "yaw": 0,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "faces": 34,
+      "passed": true
+    },
+    {
+      "energy": 500,
+      "yaw": 90,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 500,
+      "yaw": 180,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 666,
+      "yaw": -180,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 666,
+      "yaw": -90,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 666,
+      "yaw": -25,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ],
+      "faces": 50,
+      "passed": true
+    },
+    {
+      "energy": 666,
+      "yaw": 0,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ],
+      "faces": 34,
+      "passed": true
+    },
+    {
+      "energy": 666,
+      "yaw": 90,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 666,
+      "yaw": 180,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 667,
+      "yaw": -180,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 667,
+      "yaw": -90,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 667,
+      "yaw": -25,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ],
+      "faces": 51,
+      "passed": true
+    },
+    {
+      "energy": 667,
+      "yaw": 0,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ],
+      "faces": 35,
+      "passed": true
+    },
+    {
+      "energy": 667,
+      "yaw": 90,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 667,
+      "yaw": 180,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 999,
+      "yaw": -180,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 999,
+      "yaw": -90,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 999,
+      "yaw": -25,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "faces": 51,
+      "passed": true
+    },
+    {
+      "energy": 999,
+      "yaw": 0,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "faces": 35,
+      "passed": true
+    },
+    {
+      "energy": 999,
+      "yaw": 90,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 999,
+      "yaw": 180,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1000,
+      "yaw": -180,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1000,
+      "yaw": -90,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1000,
+      "yaw": -25,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "faces": 51,
+      "passed": true
+    },
+    {
+      "energy": 1000,
+      "yaw": 0,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "faces": 35,
+      "passed": true
+    },
+    {
+      "energy": 1000,
+      "yaw": 90,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "faces": 32,
+      "passed": true
+    },
+    {
+      "energy": 1000,
+      "yaw": 180,
+      "fractions": [
+        1,
+        1,
+        1
+      ],
+      "faces": 32,
+      "passed": true
+    }
+  ],
+  "depthPixelReadings": [
+    {
+      "energy": 0,
+      "bottom": [
+        61,
+        30,
+        35,
+        255
+      ],
+      "middleLow": [
+        40,
+        24,
+        30,
+        255
+      ],
+      "middleHigh": [
+        81,
+        42,
+        46,
+        255
+      ],
+      "top": [
+        61,
+        30,
+        35,
+        255
+      ]
+    },
+    {
+      "energy": 500,
+      "bottom": [
+        156,
+        29,
+        29,
+        255
+      ],
+      "middleLow": [
+        100,
+        17,
+        23,
+        255
+      ],
+      "middleHigh": [
+        81,
+        42,
+        46,
+        255
+      ],
+      "top": [
+        61,
+        30,
+        35,
+        255
+      ]
+    },
+    {
+      "energy": 1000,
+      "bottom": [
+        156,
+        29,
+        29,
+        255
+      ],
+      "middleLow": [
+        100,
+        17,
+        23,
+        255
+      ],
+      "middleHigh": [
+        212,
+        123,
+        72,
+        255
+      ],
+      "top": [
+        197,
+        62,
+        37,
+        255
+      ]
+    }
+  ]
+}

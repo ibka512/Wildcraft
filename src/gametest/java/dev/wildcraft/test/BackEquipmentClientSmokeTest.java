@@ -127,7 +127,7 @@ public final class BackEquipmentClientSmokeTest implements FabricClientGameTest 
                 state.skin = net.minecraft.world.entity.player.PlayerSkin.insecure(skin.body(), new net.minecraft.core.ClientAsset.ResourceTexture(dev.wildcraft.Wildcraft.id("textures/entity/paraglider.png")), null, skin.model());
                 state.showCape = true;
                 dev.wildcraft.client.render.BackEquipmentLayer.extract(client.player, state);
-                check(state.getData(dev.wildcraft.client.render.BackEquipmentLayer.ITEMS) == null, "Visible cape has safe display priority");
+                check(state.getData(dev.wildcraft.client.render.BackEquipmentLayer.ITEMS) != null, "Visible cape switches the same owned references to waist layout");
                 System.out.println("WILDCRAFT P3.1 controlled client skin model=" + skin.model());
             });
             c.runOnClient(client -> client.options.setCameraType(CameraType.FIRST_PERSON));
@@ -180,8 +180,8 @@ public final class BackEquipmentClientSmokeTest implements FabricClientGameTest 
                 var p = server.getPlayerList().getPlayers().getFirst(); p.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.ELYTRA));
                 BackEquipment.tick(p);
             });
-            c.waitFor(client -> BackEquipment.view(client.player).shield().isEmpty() && BackEquipment.view(client.player).ranged().isEmpty());
-            check(c.computeOnClient(client -> !BackEquipment.view(client.player).melee().isEmpty()), "Elytra keeps only non-central melee anchor");
+            c.waitFor(client -> !BackEquipment.view(client.player).shield().isEmpty() && !BackEquipment.view(client.player).ranged().isEmpty());
+            check(c.computeOnClient(client -> !BackEquipment.view(client.player).melee().isEmpty()), "Elytra retains all three owned references for waist layout");
             c.runOnClient(client -> client.options.setCameraType(CameraType.THIRD_PERSON_BACK)); c.waitTicks(3);
             c.takeScreenshot("p31-elytra-priority");
             w.getServer().runOnServer(server -> { var p = server.getPlayerList().getPlayers().getFirst(); p.setItemSlot(EquipmentSlot.CHEST, ItemStack.EMPTY); });

@@ -1,0 +1,80 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/approved-v1/A09-背负装备挂点-v1/deliverable/attachment-layout-spec.json",
+    "copy": "references/adopted-back-layout.json",
+    "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/approved-v1/A09-背负装备挂点-v1/source/back-equipment-placement.blend",
+    "copy": "references/adopted-back-reference.blend",
+    "sha256": "bbb8981f581747cc4b1104857061a956c008aa610547aa0f7fd35e012f4037e4",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p9/0083_p9-native-fused-hand.png",
+    "copy": "references/0083_p9-native-fused-hand.png",
+    "sha256": "8aaa9db6c572494bd0922997ded714e3882db24fd940a8bb591c50f15b8bb8ca",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p9/0085_p9-native-fused-back.png",
+    "copy": "references/0085_p9-native-fused-back.png",
+    "sha256": "f6d2b14b2909e249d1e902ae9d60eac3e68f756cb442e5f8fb8b2618636914d1",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p9/0088_p9-native-fused-arrow-flight.png",
+    "copy": "references/0088_p9-native-fused-arrow-flight.png",
+    "sha256": "4a01543015fd7d63bd74fe60b544399013656bf46bb95c166fb5e2acc2dad69b",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/docs/P9-SPEC.md",
+    "copy": "references/P9-SPEC.md",
+    "sha256": "b0bd38f7d4236594a25a6e1354c4e545bbbe22775c586f664f11630616129033",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/docs/P9.1-SPEC.md",
+    "copy": "references/P9.1-SPEC.md",
+    "sha256": "c3872f82aa054d24fcd8c65a41424a3ca0c82838364e9ea077ce6aab70acd1b9",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java",
+    "copy": "references/FusionItemRenderer.java",
+    "sha256": "42860d16033d8f5f3e12b38595966fd347204269ef3664fbf36ece393972c1f2",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionArrowRenderer.java",
+    "copy": "references/FusionArrowRenderer.java",
+    "sha256": "82a1509a38331164886290d5f678cd08a5805f9bc2365b3d06ba8cb6a210fe0b",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+    "copy": "references/FusionPresentation.java",
+    "sha256": "cd1641b77377c3c45ab1a8bf7c51befd6dcff0142d0a11a7ac7601acd8d1d14b",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
+    "copy": "references/BackEquipmentLayer.java",
+    "sha256": "382e050d9222490f59e10f6c71516ff1bc629a72f6e55ed2bc3c486e168d4088",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionVisual.java",
+    "copy": "references/FusionVisual.java",
+    "sha256": "49a0115bb602b42b1b59beda538a83674016ca0a7b7ee16ab9ab46ee992fb54c",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionRules.java",
+    "copy": "references/FusionRules.java",
+    "sha256": "94256d379370359a1da2a4e5c616f266f09ae57561a9c9d2ba34233ad54b84ae",
+    "changed": false
+  }
+]

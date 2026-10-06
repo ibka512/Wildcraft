@@ -1,0 +1,1958 @@
+{
+  "allPassed": true,
+  "browserConfigurations": 480,
+  "actualRenderCalls": 1440,
+  "checks": [
+    {
+      "name": "actual-scene-variant-main-and-event-controls",
+      "pass": true
+    },
+    {
+      "name": "actual-next-frame-control",
+      "pass": true
+    },
+    {
+      "name": "actual-play-time-advances",
+      "pass": true
+    },
+    {
+      "name": "actual-pause-control",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:cape:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:right:none:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:cape:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:standard:left:none:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:cape:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:right:none:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:cape:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:release_empty:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:release_empty:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:release_empty:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:release_empty:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:release_empty:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_turn:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_turn:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_turn:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_turn:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:climb_turn:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_close:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_close:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_close:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_close:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_close:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_sword:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_sword:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_sword:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_sword:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_sword:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_bow:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_bow:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_bow:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_bow:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_bow:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_block:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_block:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_block:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_block:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:glide_block:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:rapid_glide:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:rapid_glide:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:rapid_glide:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:rapid_glide:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:rapid_glide:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:mantle_restore:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:mantle_restore:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:mantle_restore:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:mantle_restore:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:mantle_restore:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:loss_reset:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:loss_reset:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:loss_reset:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:loss_reset:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:loss_reset:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:blocked_climb:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:blocked_climb:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:blocked_climb:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:blocked_climb:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:blocked_climb:1.8",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:same_spare:0.64",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:same_spare:0.65",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:same_spare:0.75",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:same_spare:0.95",
+      "pass": true
+    },
+    {
+      "name": "render:slim:left:none:same_spare:1.8",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-still-resolves-owners",
+      "pass": true
+    },
+    {
+      "name": "no-console-errors",
+      "pass": true
+    },
+    {
+      "name": "mobile-no-horizontal-overflow",
+      "pass": true
+    }
+  ],
+  "gameRuntimeVerified": false,
+  "scope": "Browser controls and synthetic reference rendering, not game input or physics",
+  "pauseRetest": "Normal-speed clip had reached end before initial pause click; retested user pause at quarter speed with keyboard"
+}

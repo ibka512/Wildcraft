@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "role": "造型参考，非运行纹理或最终模型",
+  "file": "fan-concept-v01.png",
+  "prompt": "concept-prompt.txt",
+  "nativePixelsFromConcept": false
+}

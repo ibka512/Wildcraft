@@ -1,0 +1,301 @@
+{
+  "asset": "F05-05",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，六向安装适配交付齐全，未接入",
+  "adopted": true,
+  "integrated": false,
+  "sourceAssets": [
+    "F04-01 v01",
+    "F05-01 v01"
+  ],
+  "scale": 1,
+  "newProductionBatteryModels": 0,
+  "newTextures": 0,
+  "newIcons": 0,
+  "editableAssemblySources": 2,
+  "actualReviewRenders": 12,
+  "batteryCuboids": 16,
+  "dynamicWindows": 3,
+  "originalToMountOffset": [
+    -8,
+    -6.1,
+    -6.57
+  ],
+  "topControlClearanceBlock": 0.20875000000000005,
+  "bottomProtrusionBlock": 0.15937499999999993,
+  "maximumIntentionalInterfaceEmbeddingBlock": 0.003125,
+  "bodyOrOtherNodeIntersections": 0,
+  "fanDistinctNodeEnvelopeCases": 30,
+  "blenderEnergyUVCases": 54,
+  "blenderWorldMotionCases": 72,
+  "browserUICases": 24,
+  "browserEnergyCases": 54,
+  "browserMotionCases": 72,
+  "gameTested": false,
+  "blockbenchAppOpened": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2620,
+      "sha256": "3393953bb470c45868c56e63ee8539a8ce96a3360f3aef992b4425105da9ec9e"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 310,
+      "sha256": "432bfe144f34b863537302ff9a9152ff6793ea6d754a3f013eb1bd220a20b674"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1040,
+      "sha256": "7f83ea458ae8e50e7e40fe5daaa9984623631f7c35d333595fe0f4f3e112ac98"
+    },
+    {
+      "path": "exports/battery-mount-adaptation.json",
+      "bytes": 2182,
+      "sha256": "4a840c860d9717a1ff6be06abea50d52a993c49038036e769c363928337d0241"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 3128,
+      "sha256": "e3d152a5957c492d7883faa9cca721d1d4c274cf386e65d4ce3fa8c6581e1bf1"
+    },
+    {
+      "path": "references/F04-01-battery-atlas-32.aseprite",
+      "bytes": 691,
+      "sha256": "6acf87c8f1fec53837648b8facf6050e67a8a042a17848036a88eeb9c9d530e6"
+    },
+    {
+      "path": "references/F04-01-battery-atlas-32.png",
+      "bytes": 429,
+      "sha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba"
+    },
+    {
+      "path": "references/F04-01-battery-item-16.aseprite",
+      "bytes": 669,
+      "sha256": "8ca7a00aa5ec07f914d0f8c13f02aee9241c0d493c3a1772c8c13401eb24ad73"
+    },
+    {
+      "path": "references/F04-01-battery-item-16.png",
+      "bytes": 306,
+      "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f"
+    },
+    {
+      "path": "references/F04-01-battery-item-32.aseprite",
+      "bytes": 791,
+      "sha256": "aa70884b3521540e05c43aec46484178419e8d62229781faf785302938bf4842"
+    },
+    {
+      "path": "references/F04-01-battery-item-32.png",
+      "bytes": 512,
+      "sha256": "f2168e7502e01a02502e514a433b759c9145daee6835b028d2d3bacaf25f0a67"
+    },
+    {
+      "path": "references/F04-01-geometry-and-uv.json",
+      "bytes": 25322,
+      "sha256": "d54a489b51211af4af7ea0982d74531fb494f8aff78648c27a0809c395eab93d"
+    },
+    {
+      "path": "references/F04-03-charger-atlas-64.png",
+      "bytes": 1008,
+      "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0"
+    },
+    {
+      "path": "references/F04-03-geometry-and-uv.json",
+      "bytes": 65929,
+      "sha256": "0bb88b26466daf00677d9cc1afa2e92787da64d497ce0f76fd0d438122f69584"
+    },
+    {
+      "path": "references/F05-01-geometry-and-uv.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/F05-01-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "references/F05-01-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/F05-01-machine-body-v01.bbmodel",
+      "bytes": 259925,
+      "sha256": "67b3ec727df1a94574d5544c8745ae04800fa1fed94e26d150f80ac428d996ef"
+    },
+    {
+      "path": "references/F05-01-machine-preview.js",
+      "bytes": 5502,
+      "sha256": "7c2cbd28afc8f047c60b26e7075b4a3aad389cd19406bcb5926b48a8c64bcd46"
+    },
+    {
+      "path": "references/F05-01-render-model.py",
+      "bytes": 6108,
+      "sha256": "1079a81c8af923ef24d6556ed9a824165a48e4e4a8db7ce155135e4720339bd9"
+    },
+    {
+      "path": "references/F05-03-geometry-and-uv.json",
+      "bytes": 94361,
+      "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 999,
+      "sha256": "8437f2435cbc8224280475ad71587cba0da42977a4076d40d832fe41639a8868"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 4962,
+      "sha256": "f2b720d1fd9d26f52f40889f49f25fb48bfce30c5e0872914764d9e8b7ea7e92"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 12986,
+      "sha256": "a6606d71866d2a073a5da7c6c8a9e45d46681dd25a65cd3e8defe9e2771a19da"
+    },
+    {
+      "path": "review/battery-mount-review.png",
+      "bytes": 1193514,
+      "sha256": "5614aa7001408c78beb9e684799e737ab2066f245935175cf34a10d35ae09205"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 11411,
+      "sha256": "f2d805754e00faafae95d764d120b9a7e2863ba5fc391ecd9a521dc82e469d7b"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 13895,
+      "sha256": "e27af44aaae32714ad58679e5ae26b92cc963ff4c0922ce51967bd5f99277cc6"
+    },
+    {
+      "path": "review/contact-alignment.svg",
+      "bytes": 1914,
+      "sha256": "3cc240b3204ebae46ee1095849db6665f7476805e9bcad37076819c765a7dfc8"
+    },
+    {
+      "path": "review/empty.png",
+      "bytes": 417440,
+      "sha256": "b0ebf9e1d249dbce6445ffcca347ca33762f23ec7ded9fcb52a602fb44bfd3e3"
+    },
+    {
+      "path": "review/energy-0.png",
+      "bytes": 374574,
+      "sha256": "a6859f119d148a32b859fd863f709742b3119c67e86bf140c597a9e532fc64f0"
+    },
+    {
+      "path": "review/energy-1000.png",
+      "bytes": 377563,
+      "sha256": "eaac8f905cbb29bf1cfcba1c0cb9598a66e8a30dd451668d415e350ce868b402"
+    },
+    {
+      "path": "review/energy-500.png",
+      "bytes": 376375,
+      "sha256": "7e475685fe9b1c40b60eefb466edf7a4fb2fe051ef41aee2d76b493f9c74b07e"
+    },
+    {
+      "path": "review/energy-99.png",
+      "bytes": 375293,
+      "sha256": "bbe536d877b0e5b7efe7a4429cc03fa9f41b08b42d200cba9ace7d51087d1867"
+    },
+    {
+      "path": "review/exploded.png",
+      "bytes": 423070,
+      "sha256": "d012487d300a9d8adf672bc55e80d533a5b904ec188c7dd9cea373276ba87a73"
+    },
+    {
+      "path": "review/mount-0.png",
+      "bytes": 441005,
+      "sha256": "483891e370dec87127ebc9212d4ca00ffe65f26f9a4515b3b69c932ae9ff0307"
+    },
+    {
+      "path": "review/mount-1.png",
+      "bytes": 432263,
+      "sha256": "b562f0743bbf0af5ca338545cf908b890cdc5296e5d99a5a7f020d5adfcd53a9"
+    },
+    {
+      "path": "review/mount-2.png",
+      "bytes": 356681,
+      "sha256": "a570727a46ddaa2d237d2ffbe388808a50074b915e19f40f4a65066f1d566a09"
+    },
+    {
+      "path": "review/mount-3.png",
+      "bytes": 430294,
+      "sha256": "b2de0a9994192139b5283f210657d779b482637695ddd1e3af6e83cfef5d4d62"
+    },
+    {
+      "path": "review/mount-4.png",
+      "bytes": 417253,
+      "sha256": "7e2c213e0ac788439cfa43996879171f45ec104b59e4182f34a0bc23783fc071"
+    },
+    {
+      "path": "review/mount-5.png",
+      "bytes": 459601,
+      "sha256": "42fc8b24f6621033bdb71a5e73fdf423c9d1b2c9dc91130e00bdbe0d4ec187a4"
+    },
+    {
+      "path": "review/package-verification.json",
+      "bytes": 2408,
+      "sha256": "a4d823399b5a38fb2f4f39010b8ad1700ae52fe7c45d4970efc1d0026aca54c9"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 6583579,
+      "sha256": "2cdf9b1bb913df0a79c08a0b9f222bb9497751bb32850a77bb299daebca618f8"
+    },
+    {
+      "path": "source/battery-mount-preview.js",
+      "bytes": 6208,
+      "sha256": "173910f237441b4f4c5b8e4f215ed56b9bd3f3213828433c8bf764a655ea00c9"
+    },
+    {
+      "path": "source/battery-six-node-v01.bbmodel",
+      "bytes": 324727,
+      "sha256": "73f7856deda61bf510b076e63b9788d678ac9ab9e7152fd604225f0f728f56e3"
+    },
+    {
+      "path": "source/battery-six-node-v01.blend",
+      "bytes": 151330,
+      "sha256": "6e95ce564f6f4db7025346851db9f563b95e35452a2b83b48d9d0c130eb8506a"
+    },
+    {
+      "path": "source/build-assembly.py",
+      "bytes": 5147,
+      "sha256": "b07f2b0906e5a29b578d65fc2b9968b3c8adc66d269175620469e75931bedfec"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 11872,
+      "sha256": "e6595d981398f758163f922e4b9b295e95db66460493b911c91bb88a5c7297f1"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 121946,
+      "sha256": "147b1eae005f4e16cd1972e3c30e149a0eeb7b0b3b2a320f05e963db59d7d4ad"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 7847,
+      "sha256": "c30072ec3cc574b2f3667586a5f08d9482278f0e4f5913b9e6bcfe5c031bfc90"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 3000,
+      "sha256": "339584ca13dec156731fcc960b28962ce48ae192305daf09219942a0e7814715"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 2641,
+      "sha256": "18f5d230e4a756a75352966b42e09723f07395a6b0078a92a352c1490a4b1a49"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1966,
+      "sha256": "1418aae3ee3a6a7fb334b96a9e4774da8619e58456db7deb3c533ecccc2a7f50"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

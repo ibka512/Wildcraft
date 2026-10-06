@@ -1,0 +1,343 @@
+{
+  "asset": "F05-01",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，交付齐全，未接入",
+  "adopted": true,
+  "integrated": false,
+  "bodyAndControlCuboids": 20,
+  "nodeTemplateCuboids": 8,
+  "nodeInstances": 6,
+  "productionCuboids": 68,
+  "atlasSize": [
+    64,
+    64
+  ],
+  "nativeItemSizes": [
+    [
+      32,
+      32
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "newPngCount": 3,
+  "asepriteSources": 3,
+  "sourceLayers": [
+    4,
+    3,
+    3
+  ],
+  "blenderSource": 1,
+  "blockbenchSource": 1,
+  "blockbenchAppOpened": false,
+  "adoptedBatteryScale": 1,
+  "batteryPixelRegionUnchanged": true,
+  "collisionUnchanged": true,
+  "existingPanelHitboxUnchanged": true,
+  "blenderNodeChargeCases": 30,
+  "actualBrowserNodeViewCases": 42,
+  "actualBrowserChargeCases": 30,
+  "gameIntegrationTested": false,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2258,
+      "sha256": "2cc811df653968aa0f3675bf4be1ab68a49ea70d4931a6a9e3f4bff66877f159"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 278,
+      "sha256": "ccaf2cdbb21859d5c1b56f288491e822911a0f8345faddd5736d233356e35d28"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 2012,
+      "sha256": "d8816387d1b053e09c908a6f0a923ea2646ab91af1636a280d86ce6b7dc682e5"
+    },
+    {
+      "path": "exports/machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "exports/machine-body-geometry.json",
+      "bytes": 97330,
+      "sha256": "0f3eaa22d081a83a5c9798eabd754c1097b6a88831a0632f04da0579a1fb18d7"
+    },
+    {
+      "path": "exports/machine-body-item-16.png",
+      "bytes": 432,
+      "sha256": "24f9c906997fbd4761d67827c34135bbed010014093d685ca1f6a9ffcfbc9ee2"
+    },
+    {
+      "path": "exports/machine-body-item-32.png",
+      "bytes": 818,
+      "sha256": "7911585d7bd3647974f4f1fb62d0073b6a83449df7be5aa8bfa5dc04dcc0614f"
+    },
+    {
+      "path": "exports/machine-node-template.json",
+      "bytes": 12531,
+      "sha256": "18f89bbf1555cc2ee2201e8c66a34b6241a5b332e0f917cf8721557d4fbe6eae"
+    },
+    {
+      "path": "exports/machine-presentation.json",
+      "bytes": 1746,
+      "sha256": "36331bee720066de8eda1418f153693691e1129de9440e0fd8ebd4aa1ad94b52"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 3323,
+      "sha256": "6ef7f8d73e9c1c4b9bdeb6c8ef70b9cde85a74c2db3a7a5846f613e0edbef443"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachinePresentation.java",
+      "bytes": 4632,
+      "sha256": "96eaecea453bb79546de6ee7ff874e44dabb5f8e62302b56f68064e4d9a042e1"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/MechanicsContent.java",
+      "bytes": 4178,
+      "sha256": "5384916e7bc24011281c4983949eed893cf4157a9dd9bb56ccc9b2324219bae1"
+    },
+    {
+      "path": "references/approved-battery-provenance.json",
+      "bytes": 1582,
+      "sha256": "433f7d12ef34f91d1987ae2af832a75935b398ff6827760dd69eeb123d7c2831"
+    },
+    {
+      "path": "references/battery-atlas-32.png",
+      "bytes": 429,
+      "sha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba"
+    },
+    {
+      "path": "references/battery-item-16.png",
+      "bytes": 306,
+      "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f"
+    },
+    {
+      "path": "references/battery-item-32.png",
+      "bytes": 512,
+      "sha256": "f2168e7502e01a02502e514a433b759c9145daee6835b028d2d3bacaf25f0a67"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 999,
+      "sha256": "8437f2435cbc8224280475ad71587cba0da42977a4076d40d832fe41639a8868"
+    },
+    {
+      "path": "references/concept-prompt.txt",
+      "bytes": 1796,
+      "sha256": "1a7ddb39f5ba9d9558317a4ad9e29db695d685f34093c762daf80cf4d01ac9b5"
+    },
+    {
+      "path": "references/concept-provenance.json",
+      "bytes": 284,
+      "sha256": "4c3cf6cfe3ace57c218a0d3b4f8eabc2521dcaf8385a0c7e2b2f07f446816426"
+    },
+    {
+      "path": "references/geometry-and-uv.json",
+      "bytes": 25322,
+      "sha256": "d54a489b51211af4af7ea0982d74531fb494f8aff78648c27a0809c395eab93d"
+    },
+    {
+      "path": "references/machine-concept-v01.png",
+      "bytes": 1833317,
+      "sha256": "f8a109bdeee28b13d28f10d8b4f780e7c84c804a99a008d95f57cbdab7eff3b7"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 1244,
+      "sha256": "4d8aac98e2426dab5e6932bdb793f8d66cea94ad479e684d8459749f68049a65"
+    },
+    {
+      "path": "review/aseprite-starting-document.json",
+      "bytes": 278,
+      "sha256": "a50dc62bd2281e98e5b776ec1fab5feb754c3e1913846b3e7aeb64eb6d401a53"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 1374,
+      "sha256": "ed34bc6770dc54cbbe85223c42e4406de3f1568d09fd271ed3dc661306311130"
+    },
+    {
+      "path": "review/blender-render.log",
+      "bytes": 1908,
+      "sha256": "491c13ee1f5537583a8bc458ed8485ded17feb5fea4fbf35c46e5ea75e297db0"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 4542,
+      "sha256": "b8da1ca129e71acfef48f147e7a8c47b3e9b59cc4e348e2cb027a1310d6226de"
+    },
+    {
+      "path": "review/blender-verification.log",
+      "bytes": 325,
+      "sha256": "2e00fa8350d343d4f1f5a5763136b044b548c88d12b45839a30b9ec83b450565"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 36154,
+      "sha256": "2d9803fbd292f6c6e7d155ca91e7b01f423692b11d09aebc4730daf44085deb0"
+    },
+    {
+      "path": "review/interactive-model-simulation.png",
+      "bytes": 42308,
+      "sha256": "39c82e992de7fa218716c4ab12fd620e369cdd889362d57875845e7ed5b7816b"
+    },
+    {
+      "path": "review/machine-back-three-quarter.png",
+      "bytes": 554847,
+      "sha256": "4407f5c91ea7c11f09b1910e07a8290a844fa394e2d7b81e318c96aeb52869ff"
+    },
+    {
+      "path": "review/machine-battery-front.png",
+      "bytes": 653107,
+      "sha256": "b94be027d01aedcd4fc6f2b6180da937f2d4efd18e954a8b0e65a19a5deff4d9"
+    },
+    {
+      "path": "review/machine-battery-top.png",
+      "bytes": 673300,
+      "sha256": "12fa1f0b668d7de2d2469322abcbec6ed6f0fabb09c0526a1ae16d731f20d30d"
+    },
+    {
+      "path": "review/machine-front-three-quarter.png",
+      "bytes": 683017,
+      "sha256": "566630f7a0055b7e035129045dd65e9aefeddf54f1dee543f5446398ca3b0f69"
+    },
+    {
+      "path": "review/machine-front.png",
+      "bytes": 535018,
+      "sha256": "deea9216c127cdc332be0dbc7b0df8b3bd621f113d8fcf3e09b9f923bf3322f6"
+    },
+    {
+      "path": "review/machine-review.png",
+      "bytes": 1091329,
+      "sha256": "70b5e9cd0d15ca2164d887546afcb9c787b5c65bf4d817351dfeaa69fcab3438"
+    },
+    {
+      "path": "review/machine-top.png",
+      "bytes": 643339,
+      "sha256": "fd7804c06dba024b8fca610ee2d1c252c671c283d44b3ea281435fe93cbeeabe"
+    },
+    {
+      "path": "review/machine-underside.png",
+      "bytes": 638271,
+      "sha256": "9ff0d04ffbe7231e40dc3353354721c9cc6a8d63340ba3532f4f1fa1e47ee3a2"
+    },
+    {
+      "path": "review/package-verification.json",
+      "bytes": 3802,
+      "sha256": "a0fa249cb559548605d9f757f1fb9f7f6f9985c37b2ba97b3f3bd8f624c2ac2a"
+    },
+    {
+      "path": "review/preview-server.json",
+      "bytes": 196,
+      "sha256": "a87a743d52aa301cc883450507b3fcaa2360609455fd5de66ae856af88fcebc1"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 5916537,
+      "sha256": "927582cc00e4494650bc25f85e03f3880d22faa74e3d67decd9646d0e186fbbf"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 6367,
+      "sha256": "08cf533218d8f6c2ad643705b19f65a49c78eafed9769df0849290a3573aa675"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 13413,
+      "sha256": "5fef31f0e76ac98c2b3025d5031cdbbf60e8198f19abb19d4a82dd57f501d33d"
+    },
+    {
+      "path": "source/create-pixel-assets.py",
+      "bytes": 8142,
+      "sha256": "0dd68bda6d5de2348147d5f3703a6a8a601e9a20e6c79e8bde57fad02efd00f2"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "source/machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "source/machine-body-item-16.aseprite",
+      "bytes": 726,
+      "sha256": "bde8748452adb71b1029be5a7f4c3725de17edde856bc059fe68a01d26fc28ef"
+    },
+    {
+      "path": "source/machine-body-item-32.aseprite",
+      "bytes": 935,
+      "sha256": "b972ed33c56c9d672452c3011b2ddd16994e322b116d155471ac8efd9b1a4348"
+    },
+    {
+      "path": "source/machine-body-v01.bbmodel",
+      "bytes": 259925,
+      "sha256": "67b3ec727df1a94574d5544c8745ae04800fa1fed94e26d150f80ac428d996ef"
+    },
+    {
+      "path": "source/machine-body-v01.blend",
+      "bytes": 142597,
+      "sha256": "637f56482aa28413555cd641ddbf2c55988f97618ba736c71d77769d181b12a7"
+    },
+    {
+      "path": "source/machine-preview.js",
+      "bytes": 5502,
+      "sha256": "7c2cbd28afc8f047c60b26e7075b4a3aad389cd19406bcb5926b48a8c64bcd46"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 75520,
+      "sha256": "1cc34233bf71a9e3cc3d68b935e3766a073b2fb3c6838c7b202454a134918446"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 6108,
+      "sha256": "1079a81c8af923ef24d6556ed9a824165a48e4e4a8db7ce155135e4720339bd9"
+    },
+    {
+      "path": "source/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 3647,
+      "sha256": "1d247ae4b13343de85ccb3e67a804dae8d219099df40102c0c5886c65d677cf6"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 2408,
+      "sha256": "506dedad657fdcc7dc2b8ee40a11abcc9abc3a04db9d4d43df5639c5d89af863"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2163,
+      "sha256": "3e5ed6c3ff75d2aed1ae1d0aa52b5c37f91866533d8f7417935baf1a5d5f7f71"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

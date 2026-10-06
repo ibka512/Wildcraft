@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 499,
+    "layerId": 500,
+    "frame": 0,
+    "celId": 501,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 499,
+      "objectVersion": 0,
+      "revisionToken": "rev1:03c783aad0d51a67",
+      "name": "1791219586101_legacy-fuse-status-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791219586101_legacy-fuse-status-32.aseprite",
+      "modified": false,
+      "active": true,
+      "width": 32,
+      "height": 32,
+      "colorMode": "indexed",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 500,
+          "stableId": "layer:500",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 501,
+              "frame": 0,
+              "imageId": 504,
+              "dataId": 503,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#00000000",
+          "#00000000",
+          "#00000000",
+          "#2f1703ff",
+          "#1a171bff",
+          "#232328ff",
+          "#18181bff",
+          "#2d1808ff",
+          "#3f210aff",
+          "#1e1d22ff",
+          "#292930ff",
+          "#4b290fff",
+          "#683c19ff",
+          "#74441dff",
+          "#794820ff",
+          "#3e3d46ff",
+          "#474651ff",
+          "#575a68ff",
+          "#6a6a77ff",
+          "#8d5727ff",
+          "#9a612eff",
+          "#b37235ff",
+          "#c07f3cff",
+          "#c6823cff",
+          "#d69749ff",
+          "#f6cc71ff",
+          "#747789ff",
+          "#7d8296ff",
+          "#9697a6ff",
+          "#fddb83ff",
+          "#b4b7c5ff",
+          "#e2e3e8ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:987455c8cb28f39e"
+      }
+    }
+  ],
+  "totalDocumentCount": 43
+}

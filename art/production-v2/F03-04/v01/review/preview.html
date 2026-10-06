@@ -1,0 +1,323 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wildcraft · Fuse短反馈 v01</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#102017;color:#e1e8d8;font:16px/1.65 -apple-system,"PingFang SC",sans-serif}main{max-width:1250px;margin:auto;padding:28px 24px}h1{font-size:32px;margin:8px 0}h2{font-size:22px}.tag{color:#dfb776;font-size:14px}.small,.muted{color:#b4c5aa}.small{font-size:14px}.controls{display:flex;flex-wrap:wrap;gap:14px;padding:18px;background:#25372a;border:1px solid #4c5e46;border-radius:10px;margin:20px 0}label{display:flex;align-items:center;gap:8px;flex-wrap:wrap}select,button,input{font:inherit;max-width:100%}select,button{padding:8px;background:#16291c;color:inherit;border:1px solid #718368;border-radius:5px;min-height:42px}button{cursor:pointer}button:hover{background:#354b32}select:disabled{opacity:.5}input[type=range]{width:150px;accent-color:#dbb678}:focus-visible{outline:3px solid #e4bf78;outline-offset:3px}.stage{display:grid;grid-template-columns:minmax(0,2fr) minmax(250px,1fr);gap:20px}.panel{background:#1b2c21;border:1px solid #4c5e46;border-radius:10px;padding:18px;min-width:0}canvas{image-rendering:pixelated}#live{display:block;width:100%;height:auto}.views{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.board{width:100%;height:auto}.links{display:flex;gap:20px;flex-wrap:wrap;margin:22px 0}a{color:#e7c98a}#status{overflow-wrap:anywhere}@media(max-width:850px){.stage{grid-template-columns:1fr}main{padding:20px 14px}h1{font-size:27px}.controls{padding:14px}}
+</style><main><div class="tag">WILDCRAFT / F03-04 · v01 待视觉审稿</div><h1>特殊材料与融合过程 · 短反馈</h1><p class="muted">火的上升余烬、冰的冷色碎粒、弹性的方向碎屑；融合内收、拆卸外散。</p><div class="controls"><label>反馈<select id="type"><option value="fire">火命中</option><option value="ice">冰命中</option><option value="elastic">弹性命中</option><option value="fuse">融合成功</option><option value="split">拆卸成功</option></select></label><label>触发场景<select id="channel"><option value="melee">近战命中</option><option value="shield-melee">完整格挡近战</option><option value="arrow-entity">箭命中实体</option><option value="arrow-block">箭射中方块</option><option value="shield-ranged">完整格挡投射物</option><option value="shield-partial">部分格挡</option><option value="action" id="actionOption" disabled>物品操作事务</option></select></label><label>结果<select id="result"><option value="confirmed">确认生效</option><option value="refused">失败或未生效</option><option value="inactive">材料数据不可用</option><option value="duplicate">重复通知</option><option value="model-only" id="modelOnlyOption">显示资源缺失，效果生效</option></select></label><label>粒子设置<select id="mode"><option value="all">全部</option><option value="reduced">减少</option><option value="minimal">最少额外粒子</option></select></label><label><input id="light" type="checkbox">浅色环境</label><label><input id="protected" type="checkbox">显示准星保护参考</label></div><div class="stage"><section class="panel"><canvas id="live" width="480" height="270" role="img" aria-label="融合短反馈动态参考"></canvas><div class="views"><button id="play">播放一次</button><button id="stress">密集事件参考</button><button id="reset">重置示例</button><label>时间<input id="time" type="range" min="0" max="12" step="0.1" value="2"><span id="timeLabel">0.10 s</span></label></div><p class="small">可播放或拖动时间检查起始、方向和消退。一次反馈最长8世界刻；密集参考使用同一预算。</p></section><section class="panel"><h2 id="typeLabel"></h2><p id="stats" class="small"></p><canvas id="detail" width="192" height="144" aria-label="粒子局部3倍放大参考"></canvas><p class="small">局部3倍放大，仅用于审稿。</p><p id="status" aria-live="polite"></p><p class="small">当前为美术动态模拟。图中场景和粒子形状是程序化近似，真实游戏接入将复用原版精灵。不会执行真实融合、拆卸或战斗操作。</p><p class="small">反馈不改变原版火焰、缓慢与击退，也不新增飞箭拖尾、全屏滤镜或闪屏。</p></section></div><h2>时序审稿总览</h2><canvas id="board" class="board" width="1200" height="1680" role="img" aria-label="五种融合短反馈时序审稿"></canvas><div class="links"><a href="/exports/fuse-feedback-presets.json">五套反馈参数</a><a href="/source/feedback-engine.js">动态参考源</a><a href="/integration-map.md">接入与触发规则</a><a href="/README.md">制作说明</a></div><p class="small">2026-10-06 · F03-03已采用 · 本项待采用、未接入 · 下一项：S01音效配套</p></main><script>const CONFIG={
+  "asset": "F03-04",
+  "version": "v01",
+  "date": "2026-10-06",
+  "format": "wildcraft-art-fx-reference-v1",
+  "status": "draft_for_visual_review",
+  "adopted": false,
+  "integrated": false,
+  "notMinecraftResourceCodec": true,
+  "newOriginalSprites": 0,
+  "productionModelFiles": 0,
+  "asepriteFiles": 0,
+  "productionPNGFiles": 0,
+  "referenceRateTPS": 20,
+  "timeBasis": "world ticks; seconds shown at normal20TPS only",
+  "budget": {
+    "maximumPerEvent": 6,
+    "maximumLiveForThisBatch": 48,
+    "maximumLivePerOrigin": 12,
+    "maximumQueuedEvents": 0,
+    "dedupWindowTicks": 40,
+    "maxWorldRadius": 0.35,
+    "reducedParticleFactor": 0.5,
+    "minimalExtraParticles": 0,
+    "extraEmissionNearCameraCutoff": 0.8,
+    "reviewProtectedCrosshairRadiusPx": 12,
+    "runtimeProtectedConeRadians": 0.018,
+    "budgetScope": "F03-04 client emitter shared across five presets; not a validated limit for all Minecraft/other Wildcraft particle systems",
+    "dedupState": "one last-sequence scalar per ordered active connection epoch; no deferred event queue"
+  },
+  "presets": {
+    "fire": {
+      "label": "火命中",
+      "materialKind": 3,
+      "particle": "minecraft:flame",
+      "count": 6,
+      "lifetimeTicks": 6,
+      "normalRateSeconds": 0.3,
+      "paletteReference": [
+        "#f4b46a",
+        "#e67a39",
+        "#fff1bf"
+      ],
+      "movement": "rise",
+      "dustColor": null,
+      "scaleReferenceBlocks": 0.035,
+      "worldRadiusLimit": 0.35,
+      "light": "preserve native sprite lighting; no added dynamic light",
+      "loop": false,
+      "flash": false,
+      "trail": false,
+      "screenFilter": false,
+      "soundAsset": null,
+      "providerNote": "lifetime/alpha/motion are art targets; native providers have their own behavior. Reuse vanilla sprites through an internal bounded emitter if exact control is required; no new image or dependency."
+    },
+    "ice": {
+      "label": "冰命中",
+      "materialKind": 4,
+      "particle": "minecraft:snowflake",
+      "count": 6,
+      "lifetimeTicks": 8,
+      "normalRateSeconds": 0.4,
+      "paletteReference": [
+        "#c6edf0",
+        "#f2fcfb",
+        "#84becb"
+      ],
+      "movement": "fleck",
+      "dustColor": null,
+      "scaleReferenceBlocks": 0.035,
+      "worldRadiusLimit": 0.35,
+      "light": "preserve native sprite lighting; no added dynamic light",
+      "loop": false,
+      "flash": false,
+      "trail": false,
+      "screenFilter": false,
+      "soundAsset": null,
+      "providerNote": "lifetime/alpha/motion are art targets; native providers have their own behavior. Reuse vanilla sprites through an internal bounded emitter if exact control is required; no new image or dependency."
+    },
+    "elastic": {
+      "label": "弹性命中",
+      "materialKind": 5,
+      "particle": "minecraft:item_slime",
+      "count": 5,
+      "lifetimeTicks": 8,
+      "normalRateSeconds": 0.4,
+      "paletteReference": [
+        "#83ba5b",
+        "#b8dd8f",
+        "#446e39"
+      ],
+      "movement": "push",
+      "dustColor": null,
+      "scaleReferenceBlocks": 0.05,
+      "worldRadiusLimit": 0.35,
+      "light": "preserve native sprite lighting; no added dynamic light",
+      "loop": false,
+      "flash": false,
+      "trail": false,
+      "screenFilter": false,
+      "soundAsset": null,
+      "providerNote": "lifetime/alpha/motion are art targets; native providers have their own behavior. Reuse vanilla sprites through an internal bounded emitter if exact control is required; no new image or dependency."
+    },
+    "fuse": {
+      "label": "融合成功",
+      "materialKind": null,
+      "particle": "minecraft:dust",
+      "count": 6,
+      "lifetimeTicks": 6,
+      "normalRateSeconds": 0.3,
+      "paletteReference": [
+        "#bec3c7",
+        "#e6e9e6",
+        "#858e93"
+      ],
+      "movement": "converge",
+      "dustColor": [
+        0.71,
+        0.74,
+        0.77
+      ],
+      "scaleReferenceBlocks": 0.035,
+      "worldRadiusLimit": 0.35,
+      "light": "preserve native sprite lighting; no added dynamic light",
+      "loop": false,
+      "flash": false,
+      "trail": false,
+      "screenFilter": false,
+      "soundAsset": null,
+      "providerNote": "lifetime/alpha/motion are art targets; native providers have their own behavior. Reuse vanilla sprites through an internal bounded emitter if exact control is required; no new image or dependency."
+    },
+    "split": {
+      "label": "拆卸成功",
+      "materialKind": null,
+      "particle": "minecraft:dust",
+      "count": 4,
+      "lifetimeTicks": 6,
+      "normalRateSeconds": 0.3,
+      "paletteReference": [
+        "#bec3c7",
+        "#e6e9e6",
+        "#858e93"
+      ],
+      "movement": "scatter",
+      "dustColor": [
+        0.71,
+        0.74,
+        0.77
+      ],
+      "scaleReferenceBlocks": 0.035,
+      "worldRadiusLimit": 0.35,
+      "light": "preserve native sprite lighting; no added dynamic light",
+      "loop": false,
+      "flash": false,
+      "trail": false,
+      "screenFilter": false,
+      "soundAsset": null,
+      "providerNote": "lifetime/alpha/motion are art targets; native providers have their own behavior. Reuse vanilla sprites through an internal bounded emitter if exact control is required; no new image or dependency."
+    }
+  },
+  "triggerRules": {
+    "combat": "only actual successful effect application on a live target; melee damage taken>0; shield full block+eligible living attacker; arrow hit accepted+living target",
+    "actions": "after server transaction commits successfully; never on local key press",
+    "noExtraEffects": [
+      "generic/rock/metal bonus only",
+      "empty swing",
+      "rejected damage or dead target",
+      "arrow hitting a block",
+      "full projectile block without living direct attacker",
+      "partial block",
+      "data-unavailable kind6",
+      "rejected fusion/split",
+      "duplicate notification"
+    ],
+    "displayOnlyFailure": "valid server effect may still play; do not suppress just because material model failed",
+    "arrow": "one effect result per physical projectile; no elemental arrow trail",
+    "dedup": "server event identity needed; cannot infer success or effect from uses changes or actionbar text",
+    "nativeEffectsPreserved": "existing3second burning,60tick slowness and0.65 knockback remain actual gameplay; this burst duration changes none of them"
+  }
+}
+,ATLAS="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAAAXNSR0IArs4c6QAABQ5JREFUaIHtl3tMk2cUxn818xIyx5w60NoOWsYoYkVEt5EiuCzFCBI1cYuGzLjMzJiFOC9TjFGnSzY3EzM1sDinM0yy6eL+AGckxsuUzqFDKQwm19paKXIpl4Jcpu/+YK3gFFr4Wi/bkzTt937nO995zvuc857CU4SQkMkiYKJCePLMMG8F42skz08RqavSmBIe9ahD8T2S56eIssqb4vDRXBESMtkjBTzxOLQsVNjOfy7WpO14+omnZ2SJ9IwsoVaHucgunuYvNiVMeLrJq9VhYuXK9SLnRJ5I0C8QCfoFkhF+7JugWh0m1qzdDMCeXTsBMFuqJfP/jGSe7oNSoXLt0vARI6is/FPmqY+cE3lCG6Fmdnw8IWoNZks148e9SFdXh2RxeiUBSoVKbNj4iev63Plf6O7qEmZLldtJmBggF9oINQBr1m4mKekNEvRzqCj7g5u1Vo+T+TBIWgJKhUrMitWL9H2ZKINeospkocpkoam+lqR5i3C3duOC/cSprVqMxZUAVJksrFu/lcTkxZKSBwkToFSoxFtL3idiyjTXWtGVixRduQhAZUWZW7W7QjdBnM5N45atlWvfvstr0dOxWKqJi53Fzh3rJSUPMGSHSoVKaDRTeX5cAHGxswAoLirsY3PmzMl/bIM5mftTv+9sv/yhyM++RE7edUqtLQBokjd6hTxIlIDXY/WEhmkBaLBdB3p23Annztvtddhs/Us4UeMvFGP9eFn+HOXWFn4tv0Vh7R2vkIchlIBaHSbSM7LEBYOBL3ZsBe6RLy66AvQQN1uqaXO0YLfXueX3eGmzi6y3ycMgFaBWh4kv936Ds0sD6GJiSJq3yLXzziMLoK7+Fm2OFrq6OwdUgK8xKAXcT95YXMkFg4Gc7KN97EymCkymiqFF6GV4vBuBgXKRsjSV1A+WAj3kzaYe6dfUNbF82UIS9HMAXLIfMXwknswAvoRHCpgYIBcpEcOIj9fx9cFjD7T57NNd2O11tDlaXGt/dXUOLUovwu1JMC7YT2R8pKWprpXI8T/yXvoRXp0xFW2Emt8uFXK7rZX21kYamprJv/Q7u/ceGtTRFRkd0++wdPWyQVIlueVsSuAo8cOW2bzyZgwA104ZqCyvZ3nWTVKWpqIKUlBlsmDpNeiEhmnZvnmlR8FGRseIAwf2E6SUA2AyW133NqRtIvf4Md+X0QrdBGHYphN3yrcLwzadOLtFJ7JXzxD7lmlFosZfBAbKRXpGlnh7yQrXd+8/Qu4iMjpGFBhLhD5xoQBw/nZ+nHYFxhIxkEo8Qb8lEBfsJ97R3+v2DU2djB49knNGGwCOjm6mj3Gw7eN17D94hMzMTIBBN7wgpdy1y1Ha8H/5KDCWiOyfcwfj+qEYsAdEzp3BSP8XOP/dSRfxUMUYDp+tQCP3x9LQzvQxDvbs2klpaeGQu32BsUQ8iLy3MGACVq/6nsSZk6ix93TyOG0gNfZONHL/PnaFxvwhDzkms5UNaZseet/ZG6REvwk4V90ue3bUcHE8/wYAiTMnUWZt4bTRhmKsH6XWZhpv36XI1iGDZsmDux+9m6JUGHAOuNHo6HNd39yjhL7kn1wMmIDC2juyvAo7AE4lODq6abx9V/JgBjrqorThsnlz9ZK+061BqMjWISuy1Uj64gfBSb7AWCKgp+adso/ShsseySngKzgnvAJjidi99yvXerBKRXVVlWv9asFlSafBx65+fT0K/4//Ov4G7JpB/ENXo9UAAAAASUVORK5CYII=";</script><script>/* Deterministic art reference emitter. Not a Minecraft particle provider/network implementation. */
+(function(root){
+'use strict';
+function random(seed){let s=seed>>>0;return()=>{s=(Math.imul(1664525,s)+1013904223)>>>0;return s/4294967296;};}
+function gate(e){
+ if(!['fire','ice','elastic','fuse','split'].includes(e.type))return 'unknown-event';
+ if(e.result==='inactive')return 'material-data-unavailable';
+ if(e.result==='refused')return 'not-confirmed';
+ if(!['confirmed','model-only'].includes(e.result))return 'unknown-result';
+ if(e.type==='fuse'||e.type==='split')return e.channel==='action'&&e.committed?'accepted':'transaction-not-committed';
+ if(!e.effectApplied||!e.targetAlive)return 'no-applied-effect';
+ if(e.channel==='melee')return e.damageTaken>0?'accepted':'no-damage';
+ if(e.channel==='shield-melee')return e.fullBlock&&e.livingDirectAttacker?'accepted':'no-elemental-counter';
+ if(e.channel==='arrow-entity')return e.damageAccepted&&e.livingTarget?'accepted':'arrow-damage-not-accepted';
+ return 'no-elemental-trigger';
+}
+class Emitter{
+ constructor(config){this.config=config;this.particles=[];this.lastSequence=-1;this.epoch='reference';}
+ reset(epoch='reference'){this.particles=[];this.lastSequence=-1;this.epoch=epoch;}
+ prune(now){this.particles=this.particles.filter(p=>now<p.birth+p.life);}
+ emit(e,now=e.tick){
+  this.prune(now);
+  if(e.epoch!==this.epoch)return {accepted:false,reason:'connection-epoch',spawned:0};
+  if(!Number.isSafeInteger(e.sequence)||e.sequence<=this.lastSequence)return {accepted:false,reason:'duplicate-or-old-sequence',spawned:0};
+  this.lastSequence=e.sequence;
+  if(!Number.isFinite(e.tick)||e.tick>now||now-e.tick>this.config.budget.dedupWindowTicks)return {accepted:false,reason:'stale-or-invalid-time',spawned:0};
+  const reason=gate(e);if(reason!=='accepted')return {accepted:false,reason,spawned:0};
+  if(!Number.isFinite(e.distance)||e.anchor&&(!Array.isArray(e.anchor)||e.anchor.length!==3||!e.anchor.every(Number.isFinite)))return {accepted:false,reason:'invalid-display-input',spawned:0};
+  if(e.particleMode==='minimal')return {accepted:true,reason:'minimal-particle-setting',spawned:0};
+  if(e.distance<this.config.budget.extraEmissionNearCameraCutoff)return {accepted:true,reason:'near-camera',spawned:0};
+  const preset=this.config.presets[e.type],count=e.particleMode==='reduced'?Math.ceil(preset.count*this.config.budget.reducedParticleFactor):preset.count;
+  const local=this.particles.filter(p=>p.origin===e.origin).length,available=Math.max(0,Math.min(this.config.budget.maximumLiveForThisBatch-this.particles.length,this.config.budget.maximumLivePerOrigin-local));
+  const n=Math.min(count,available,this.config.budget.maximumPerEvent),rnd=random((e.seed||42)^e.sequence),startAge=Math.max(0,now-e.tick);
+  let spawned=0;
+  for(let i=0;i<n;i++){
+   const angle=(i/preset.count)*Math.PI*2+(rnd()-.5)*.3;
+   const start=preset.movement==='converge'?.15:.015+rnd()*.022;
+   const life=preset.lifetimeTicks,phase=angle,spread=.012+rnd()*.012;
+   if(startAge>=life)continue;
+   this.particles.push({type:e.type,origin:e.origin,birth:e.tick,life,angle:phase,start,spread,color:preset.paletteReference[i%preset.paletteReference.length],index:i,direction:e.direction===-1?-1:1,anchor:e.anchor||[0,0,0],size:preset.scaleReferenceBlocks});spawned++;
+  }
+  return {accepted:true,reason:spawned===count?'accepted':'particle-budget',spawned};
+ }
+ sample(now){
+  this.prune(now);const out=[];
+  for(const p of this.particles){const age=now-p.birth;if(age<0||age>=p.life)continue;const u=age/p.life,ca=Math.cos(p.angle),sa=Math.sin(p.angle);let x=0,y=0,z=0;
+   if(p.type==='fire'){x=ca*p.start*(1+u*.4);y=age*(.02+p.spread*.2);z=sa*p.start;}
+   else if(p.type==='ice'){const r=p.start+age*.018;x=ca*r;y=sa*r-age*age*.0006;z=Math.sin(p.angle*2)*.018;}
+   else if(p.type==='elastic'){x=p.direction*(p.start+age*.022)+ca*age*.006;y=sa*(p.start+age*.006)+.012*age-.002*age*age;z=Math.sin(p.angle*2)*age*.007;}
+   else if(p.type==='fuse'){const r=p.start*(1-u);x=ca*r;y=sa*r;z=Math.sin(p.angle*2)*r*.25;}
+   else {const r=p.start+age*.014;x=ca*r;y=sa*r-.001*age*age;z=Math.sin(p.angle*2)*.02;}
+   const length=Math.hypot(x,y,z),limit=this.config.budget.maxWorldRadius;if(length>limit){x*=limit/length;y*=limit/length;z*=limit/length;}
+   const alpha=Math.max(0,Math.min(1,age<1?age+.35:(p.life-age)/2));
+   out.push({...p,age,alpha,position:[x+p.anchor[0],y+p.anchor[1],z+p.anchor[2]],offset:[x,y,z],size:p.size*(p.type==='elastic'?1-u*.4:1-u*.55)});
+  }
+  return out;
+ }
+}
+function fixture(type,channel='melee',result='confirmed',extra={}){
+ if(type==='fuse'||type==='split')channel='action';
+ return {type,channel,result,committed:result!=='refused',effectApplied:result!=='refused'&&result!=='inactive',targetAlive:true,livingTarget:true,damageTaken:1,damageAccepted:true,fullBlock:true,livingDirectAttacker:channel==='shield-melee',epoch:'reference',sequence:1,tick:0,seed:42,origin:'review-target',direction:1,particleMode:'all',distance:4,anchor:[0,0,0],...extra};
+}
+root.FuseFeedback={Emitter,gate,fixture};if(typeof module!=='undefined')module.exports=root.FuseFeedback;
+})(typeof window!=='undefined'?window:globalThis);
+</script><script>(async function(){
+'use strict';
+const $=id=>document.getElementById(id),F=FuseFeedback;
+const atlas=new Image();atlas.src=ATLAS;await atlas.decode();
+let type='fire',channel='melee',result='confirmed',mode='all',light=false,time=2,playing=false,start=0,stress=false;
+const engine=new F.Emitter(CONFIG);let receipt=null,current=null;
+function rebuild(){engine.reset();current=F.fixture(type,channel,result,{particleMode:mode,sequence:1});if(result==='duplicate'){engine.lastSequence=stress?24:1;current.result='confirmed';}if(stress){let spawned=0;for(let i=0;i<24;i++){const r=engine.emit({...current,sequence:i+1,origin:'target-'+(i%4)},0);spawned+=r.spawned;}receipt={accepted:spawned>0,reason:'dense-reference',spawned};}else receipt=engine.emit(current,0);}
+function scene(c,w,h,key,t,emitter=engine,options={}){
+ const bright=options.light??light,config=CONFIG.presets[key],combat=!['fuse','split'].includes(key),point=combat?[212,139]:[111,192];
+ c.save();c.scale(w/480,h/270);c.imageSmoothingEnabled=false;
+ c.fillStyle=bright?'#bdc8b1':'#22382b';c.fillRect(0,0,480,270);c.fillStyle=bright?'#91a17f':'#314530';c.fillRect(0,177,480,93);
+ for(let y=177;y<270;y+=22)for(let x=0;x<480;x+=32){if(((x/32)+(y-177)/22)%2===0){c.fillStyle=bright?'#96a683':'#354934';c.fillRect(x,y,32,22);}}
+ c.fillStyle=bright?'#819373':'#1a2d24';c.fillRect(357,94,59,83);c.fillStyle=bright?'#a3b593':'#2a4030';c.fillRect(353,90,67,8);
+ // Block figure and weapon are neutral stage props, not production models or native screenshots.
+ c.fillStyle='#273026';c.fillRect(205,217,70,5);c.fillStyle='#aaa18e';c.fillRect(225,82,30,31);c.fillStyle='#868775';c.fillRect(225,106,30,7);
+ c.fillStyle='#637866';c.fillRect(225,116,30,58);c.fillStyle='#51685b';c.fillRect(213,116,12,52);c.fillRect(255,116,12,52);
+ c.fillStyle='#394856';c.fillRect(226,174,12,43);c.fillRect(242,174,12,43);
+ c.save();c.translate(92,223);c.rotate(-.70);c.fillStyle='#3c3024';c.fillRect(-4,-17,8,23);c.fillStyle='#c7d3ca';c.fillRect(-4,-67,8,49);c.fillStyle='#6d9e92';c.fillRect(-3,-65,3,46);c.fillStyle='#46564d';c.fillRect(-12,-18,24,5);c.restore();
+ const active=options.result??result;
+ const committed=active==='confirmed'||active==='model-only';
+ const missing=active==='inactive'||active==='model-only';
+ if(!combat&&((key==='fuse'&&committed)||(key==='split'&&!committed))){if(missing)c.drawImage(atlas,32,16,16,16,103,182,16,16);else{c.fillStyle='#747d76';c.fillRect(104,184,15,15);c.fillStyle='#b7c1b6';c.fillRect(105,184,12,4);c.fillStyle='#929b92';c.fillRect(104,188,4,10);}}
+ if(combat){if(missing)c.drawImage(atlas,32,16,16,16,103,182,16,16);else{c.fillStyle=config.paletteReference[0];c.fillRect(105,185,9,7);c.fillStyle='#d3d7d1';c.fillRect(105,185,6,2);}}
+ if(options.showNativeNote!==false){c.fillStyle='#dce6d3';c.font='10px "PingFang SC",sans-serif';c.fillText(combat?'目标与宿主为舞台示意':'物品状态已由成功事务提交；粒子不延迟转移',12,22);}
+ const samples=emitter.sample(t);let shown=0,culled=0;
+ for(const p of samples){
+  const x=Math.round(point[0]+p.offset[0]*80+p.offset[2]*16),y=Math.round(point[1]-p.offset[1]*80+p.offset[2]*8),size=Math.max(1,Math.round(p.size*80));
+  const dx=Math.max(0,Math.abs(x-240)-size-1),dy=Math.max(0,Math.abs(y-125)-size-1);
+  if(dx*dx+dy*dy<CONFIG.budget.reviewProtectedCrosshairRadiusPx**2){culled++;continue;}
+  c.globalAlpha=p.alpha;c.fillStyle=p.color;
+  if(key==='fire'){c.fillRect(x-1,y-size,size,Math.max(2,size+1));c.fillStyle='#fff0b8';c.fillRect(x,y-size+1,1,Math.max(1,size-1));}
+  else if(key==='ice'){c.fillRect(x-size,y-size,size,1);c.fillRect(x-size,y-size,1,size);c.fillStyle='#f1fcfa';c.fillRect(x,y,1,1);}
+  else if(key==='elastic'){c.fillRect(x-size,y-size,size+1,size);c.fillStyle='#b9d992';c.fillRect(x-size,y-size,size,1);}
+  else {c.fillRect(x,y,size,size);c.fillStyle='#e2e6df';c.fillRect(x,y,1,1);}
+  shown++;
+ }
+ c.globalAlpha=1;
+ c.strokeStyle=bright?'#263a2c':'#e0e8d8';c.lineWidth=1;c.beginPath();c.moveTo(234,125);c.lineTo(238,125);c.moveTo(242,125);c.lineTo(246,125);c.moveTo(240,119);c.lineTo(240,123);c.moveTo(240,127);c.lineTo(240,131);c.stroke();
+ if(options.protectedZone){c.setLineDash([2,3]);c.strokeStyle='#c1ab79';c.beginPath();c.arc(240,125,12,0,Math.PI*2);c.stroke();c.setLineDash([]);}
+ c.fillStyle=bright?'#344536':'#b2c4a6';c.font='11px sans-serif';c.fillText((t/20).toFixed(2)+'s · '+shown+' 额外粒子',12,256);
+ c.restore();return {shown,culled,alive:samples.length};
+}
+function description(){
+ if(result==='inactive')return '材料数据不可用：没有元素反馈；保留已有回退外观。';
+ if(result==='refused')return ['fuse','split'].includes(type)?'事务失败：没有成功粒子，保留实际物品状态与原有拒绝提示。':'没有实际生效：没有额外元素反馈。';
+ if(result==='duplicate')return '同一确认事件已处理：重复通知不重新播放。';
+ if(channel==='arrow-block'&&!['fuse','split'].includes(type))return '射中方块：原版碰撞和融合清除照常；没有元素命中反馈。';
+ if(channel==='shield-ranged'&&!['fuse','split'].includes(type))return '完整格挡投射物：没有符合条件的近战攻击者，不播放元素反击反馈。';
+ if(channel==='shield-partial'&&!['fuse','split'].includes(type))return '部分格挡：当前合同没有触发元素反击，不播放该反馈。';
+ if(result==='model-only')return ['fuse','split'].includes(type)?'物品事务已成功；仅显示资源缺失，操作短反馈仍可播放。':'显示资源缺失：真实效果仍生效，按实际服务端确认播放。';
+ return ['fuse','split'].includes(type)?'服务端事务已成功提交：物品立即更新，只补充一次短反馈。':'实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。';
+}
+function draw(){const info=scene($('live').getContext('2d'),480,270,type,time,engine,{light,protectedZone:$('protected').checked});const detail=$('detail').getContext('2d'),point=['fuse','split'].includes(type)?[111,192]:[212,139];detail.imageSmoothingEnabled=false;detail.drawImage($('live'),point[0]-32,point[1]-24,64,48,0,0,192,144);$('timeLabel').textContent=(time/20).toFixed(2)+' s';$('typeLabel').textContent=CONFIG.presets[type].label;$('status').textContent=description();$('stats').textContent=`${CONFIG.presets[type].count}粒子预算 · ${CONFIG.presets[type].lifetimeTicks}世界刻（20TPS约${CONFIG.presets[type].normalRateSeconds.toFixed(2)}秒） · 当前${info.shown}个可见`;
+ window.reviewState={type,channel,result,mode,light,time,playing,receipt,draw:info,stress,description:description()};}
+function sync(){type=$('type').value;channel=$('channel').value;result=$('result').value;mode=$('mode').value;light=$('light').checked;time=Number($('time').value);stress=false;
+ const action=['fuse','split'].includes(type);$('channel').disabled=action;$('actionOption').disabled=!action;if(action){channel='action';$('channel').value='action';}else if(channel==='action'){channel='melee';$('channel').value='melee';}$('modelOnlyOption').textContent=action?'显示资源缺失，事务成功':'显示资源缺失，效果生效';
+ playing=false;$('play').textContent='播放一次';rebuild();draw();}
+for(const id of ['type','channel','result','mode','light'])$(id).addEventListener('input',sync);
+$('protected').addEventListener('input',draw);$('time').addEventListener('input',()=>{time=Number($('time').value);playing=false;$('play').textContent='播放一次';rebuild();draw();});
+$('play').addEventListener('click',()=>{if(playing){playing=false;$('play').textContent='播放一次';draw();return;}stress=false;rebuild();time=0;start=performance.now();playing=true;$('play').textContent='暂停';draw();});
+$('stress').addEventListener('click',()=>{time=2;$('time').value=2;playing=false;$('play').textContent='播放一次';stress=true;rebuild();draw();});
+$('reset').addEventListener('click',()=>{$('type').value='fire';$('channel').value='melee';$('result').value='confirmed';$('mode').value='all';$('light').checked=false;$('time').value=2;sync();});
+function animate(now){if(playing){time=Math.min(12,(now-start)/50);$('time').value=time;draw();if(time>=12){playing=false;$('play').textContent='播放一次';draw();}}requestAnimationFrame(animate);}
+function board(){
+ const c=$('board').getContext('2d');c.fillStyle='#102017';c.fillRect(0,0,1200,1680);c.fillStyle='#d9b77b';c.font='16px sans-serif';c.fillText('WILDCRAFT / F03-04 · v01 / 2026-10-06 · 待视觉采用',40,36);c.fillStyle='#e4eadb';c.font='bold 32px "PingFang SC",sans-serif';c.fillText('特殊材料与融合过程 · 短反馈',40,84);c.font='18px "PingFang SC",sans-serif';c.fillStyle='#b7c6aa';c.fillText('三类命中 + 两类操作 / 复用原版精灵 / 原创贴图0 / 无全屏滤镜与飞箭拖尾',40,124);
+ const frame=document.createElement('canvas');frame.width=480;frame.height=270;const fc=frame.getContext('2d');
+ ['fire','ice','elastic','fuse','split'].forEach((key,i)=>{
+  const y=156+i*241,p=CONFIG.presets[key],em=new F.Emitter(CONFIG);em.emit(F.fixture(key),0);c.fillStyle='#e2e8d8';c.font='bold 22px "PingFang SC",sans-serif';c.fillText(p.label,40,y+27);c.font='16px sans-serif';c.fillStyle='#b4c4a7';c.fillText(`${p.count}粒 · ${p.lifetimeTicks}世界刻 · ${p.movement==='converge'?'内收':p.movement==='scatter'?'外散':p.movement==='rise'?'上升余烬':p.movement==='push'?'有方向的碎屑':'短促冷色碎粒'}`,218,y+27);
+  const point=['fuse','split'].includes(key)?[111,192]:[212,139];scene(fc,480,270,key,2,em,{light:false,result:'confirmed',showNativeNote:false});c.fillStyle='#1b2c21';c.fillRect(40,y+42,256,144);c.imageSmoothingEnabled=false;c.drawImage(frame,point[0]-32,point[1]-24,64,48,72,y+42,192,144);c.fillStyle='#91a28a';c.font='15px sans-serif';c.fillText('0.10秒 · 3倍局部',48,y+212);
+  [0,2,8].forEach((tick,j)=>{scene(fc,480,270,key,tick,em,{light:false,result:'confirmed',showNativeNote:false});c.imageSmoothingEnabled=false;c.drawImage(frame,328+j*288,y+42,256,144);c.fillStyle='#91a28a';c.font='15px sans-serif';c.fillText(`${(tick/20).toFixed(2)}秒`,336+j*288,y+212);});
+ });
+ const y=1400;c.fillStyle='#25372a';c.fillRect(40,y,1120,209);c.fillStyle='#e2e8d8';c.font='bold 23px "PingFang SC",sans-serif';c.fillText('短反馈只说明已发生的事件',60,y+36);c.fillStyle='#b7c6aa';c.font='17px "PingFang SC",sans-serif';c.fillText('成功命中或事务提交后播放；失败、方块碰撞、重复通知不伪装成成功。',60,y+75);c.fillText('火3秒、冰60刻与弹性击退仍按原玩法；粒子仅为0.30–0.40秒的视觉提示。',60,y+111);c.fillText('每事件最多6粒，五类共用48粒在场上限；减少/最少粒子设置有对应降级。',60,y+147);c.fillText('图中精灵与场景为程序化审稿近似；原版粒子与真实游戏需接入后复核。',60,y+183);
+ c.fillStyle='#8e9f88';c.font='14px "PingFang SC",sans-serif';c.fillText('参数与动态源已交付 · 未接入游戏 · 原版燃烧/状态粒子不受本次额外反馈预算控制',40,1652);
+}
+sync();board();requestAnimationFrame(animate);window.renderReviewBoard=board;window.drawFeedbackScene=scene;window.reviewReady=true;
+})();
+</script></html>

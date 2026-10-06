@@ -1,0 +1,861 @@
+{
+  "allPassed": true,
+  "sixNodeScenarioCases": [
+    {
+      "scenario": "fan-ready",
+      "node": 0,
+      "ghost": 1,
+      "ghostMeshParts": 24,
+      "changedParts": []
+    },
+    {
+      "scenario": "fan-ready",
+      "node": 1,
+      "ghost": 1,
+      "ghostMeshParts": 24,
+      "changedParts": []
+    },
+    {
+      "scenario": "fan-ready",
+      "node": 2,
+      "ghost": 1,
+      "ghostMeshParts": 24,
+      "changedParts": []
+    },
+    {
+      "scenario": "fan-ready",
+      "node": 3,
+      "ghost": 1,
+      "ghostMeshParts": 24,
+      "changedParts": []
+    },
+    {
+      "scenario": "fan-ready",
+      "node": 4,
+      "ghost": 1,
+      "ghostMeshParts": 24,
+      "changedParts": []
+    },
+    {
+      "scenario": "fan-ready",
+      "node": 5,
+      "ghost": 1,
+      "ghostMeshParts": 24,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-ready",
+      "node": 0,
+      "ghost": 2,
+      "ghostMeshParts": 17,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-ready",
+      "node": 1,
+      "ghost": 2,
+      "ghostMeshParts": 17,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-ready",
+      "node": 2,
+      "ghost": 2,
+      "ghostMeshParts": 17,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-ready",
+      "node": 3,
+      "ghost": 2,
+      "ghostMeshParts": 17,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-ready",
+      "node": 4,
+      "ghost": 2,
+      "ghostMeshParts": 17,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-ready",
+      "node": 5,
+      "ghost": 2,
+      "ghostMeshParts": 17,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-empty-ready",
+      "node": 0,
+      "ghost": 2,
+      "ghostMeshParts": 16,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-empty-ready",
+      "node": 1,
+      "ghost": 2,
+      "ghostMeshParts": 16,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-empty-ready",
+      "node": 2,
+      "ghost": 2,
+      "ghostMeshParts": 16,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-empty-ready",
+      "node": 3,
+      "ghost": 2,
+      "ghostMeshParts": 16,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-empty-ready",
+      "node": 4,
+      "ghost": 2,
+      "ghostMeshParts": 16,
+      "changedParts": []
+    },
+    {
+      "scenario": "battery-empty-ready",
+      "node": 5,
+      "ghost": 2,
+      "ghostMeshParts": 16,
+      "changedParts": []
+    },
+    {
+      "scenario": "occupied",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "occupied",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "occupied",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "occupied",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "occupied",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "occupied",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "enabled-blocked",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "enabled-blocked",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "enabled-blocked",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "enabled-blocked",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "enabled-blocked",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "enabled-blocked",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "duplicate-battery",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "duplicate-battery",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "duplicate-battery",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "duplicate-battery",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "duplicate-battery",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "duplicate-battery",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "stopped",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "stopped",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "stopped",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "stopped",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "stopped",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "stopped",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "running",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/0/blade_0",
+        "fan/0/blade_1",
+        "fan/0/blade_2",
+        "fan/0/blade_3",
+        "fan/0/rotor_hub",
+        "fan/0/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "running",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/1/blade_0",
+        "fan/1/blade_1",
+        "fan/1/blade_2",
+        "fan/1/blade_3",
+        "fan/1/rotor_hub",
+        "fan/1/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "running",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/2/blade_0",
+        "fan/2/blade_1",
+        "fan/2/blade_2",
+        "fan/2/blade_3",
+        "fan/2/rotor_hub",
+        "fan/2/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "running",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/3/blade_0",
+        "fan/3/blade_1",
+        "fan/3/blade_2",
+        "fan/3/blade_3",
+        "fan/3/rotor_hub",
+        "fan/3/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "running",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/4/blade_0",
+        "fan/4/blade_1",
+        "fan/4/blade_2",
+        "fan/4/blade_3",
+        "fan/4/rotor_hub",
+        "fan/4/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "running",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/5/blade_0",
+        "fan/5/blade_1",
+        "fan/5/blade_2",
+        "fan/5/blade_3",
+        "fan/5/rotor_hub",
+        "fan/5/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "no-battery",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "no-battery",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "no-battery",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "no-battery",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "no-battery",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "no-battery",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "depleted",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "depleted",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "depleted",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "depleted",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "depleted",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "depleted",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "low-working",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/0/blade_0",
+        "fan/0/blade_1",
+        "fan/0/blade_2",
+        "fan/0/blade_3",
+        "fan/0/rotor_hub",
+        "fan/0/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "low-working",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/1/blade_0",
+        "fan/1/blade_1",
+        "fan/1/blade_2",
+        "fan/1/blade_3",
+        "fan/1/rotor_hub",
+        "fan/1/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "low-working",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/2/blade_0",
+        "fan/2/blade_1",
+        "fan/2/blade_2",
+        "fan/2/blade_3",
+        "fan/2/rotor_hub",
+        "fan/2/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "low-working",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/3/blade_0",
+        "fan/3/blade_1",
+        "fan/3/blade_2",
+        "fan/3/blade_3",
+        "fan/3/rotor_hub",
+        "fan/3/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "low-working",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/4/blade_0",
+        "fan/4/blade_1",
+        "fan/4/blade_2",
+        "fan/4/blade_3",
+        "fan/4/rotor_hub",
+        "fan/4/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "low-working",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": [
+        "fan/5/blade_0",
+        "fan/5/blade_1",
+        "fan/5/blade_2",
+        "fan/5/blade_3",
+        "fan/5/rotor_hub",
+        "fan/5/copper_axle_cap"
+      ]
+    },
+    {
+      "scenario": "waiting",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "waiting",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "waiting",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "waiting",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "waiting",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "waiting",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-fuel",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-fuel",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-fuel",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-fuel",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-fuel",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-fuel",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spring-cooldown",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spring-cooldown",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spring-cooldown",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spring-cooldown",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spring-cooldown",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spring-cooldown",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-off-burning",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-off-burning",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-off-burning",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-off-burning",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-off-burning",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "rocket-off-burning",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "owner-feedback",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "owner-feedback",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "owner-feedback",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "owner-feedback",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "owner-feedback",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "owner-feedback",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spent-rocket",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spent-rocket",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spent-rocket",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spent-rocket",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spent-rocket",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "spent-rocket",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "hidden",
+      "node": 0,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "hidden",
+      "node": 1,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "hidden",
+      "node": 2,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "hidden",
+      "node": 3,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "hidden",
+      "node": 4,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    },
+    {
+      "scenario": "hidden",
+      "node": 5,
+      "ghost": 0,
+      "ghostMeshParts": 0,
+      "changedParts": []
+    }
+  ],
+  "uniqueProceduralGlyphs": [
+    "ready",
+    "blocked",
+    "off",
+    "working",
+    "waiting"
+  ],
+  "heldGhostChargePreserved": true,
+  "previewsStationary": true,
+  "activeNodeOnlyRotation": true,
+  "waitingNotAutomaticallyEmpty": true,
+  "lowChargeCanWork": true,
+  "rocketFuelWorldTickCapacity": 80,
+  "springCooldownWorldTickMaximum": 40,
+  "reboundKeySupported": true,
+  "productionGameTested": false
+}

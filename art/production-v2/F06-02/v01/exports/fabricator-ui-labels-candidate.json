@@ -1,0 +1,72 @@
+{
+  "candidateOnly": true,
+  "productionLanguageFilesChanged": false,
+  "labels": {
+    "zh": {
+      "title": "古代装置制造机",
+      "cost": "铜锭×4 + 红石×2",
+      "pool": "八类部件 · 各12.5%",
+      "start": "制造",
+      "inventory": "物品栏",
+      "done": "完成"
+    },
+    "en": {
+      "title": "Ancient Device Fabricator",
+      "cost": "4 copper + 2 redstone",
+      "pool": "8 types · 12.5% each",
+      "start": "Make",
+      "inventory": "Inventory",
+      "done": "Done"
+    }
+  },
+  "states": [
+    {
+      "id": 0,
+      "key": "ready",
+      "zh": "材料就绪",
+      "en": "Ready",
+      "helpZh": "材料达到每批4铜锭与2红石，且无进行中的任务、产出格为空，可以制造。",
+      "helpEn": "At least 4 copper ingots and 2 redstone, no active job, and an empty output slot. Ready to make."
+    },
+    {
+      "id": 1,
+      "key": "insufficient",
+      "zh": "材料不足",
+      "en": "Missing materials",
+      "helpZh": "需要每批4铜锭与2红石。补齐材料后才可开始；红石是消耗材料，无需外接电源。",
+      "helpEn": "Each batch needs 4 copper ingots and 2 redstone. Add the missing material. Redstone is consumed; no external power source is required."
+    },
+    {
+      "id": 2,
+      "key": "working",
+      "zh": "制造中，可关闭",
+      "en": "Working · can close",
+      "helpZh": "制造持续100个已加载世界刻。关闭界面不取消，暂停、离线或未加载不会补进度；完成前不显示本批结果。",
+      "helpEn": "Runs for 100 loaded world ticks. Closing the menu does not cancel. Pausing, going offline or unloading does not add progress. The new result stays hidden until transfer."
+    },
+    {
+      "id": 3,
+      "key": "blocked",
+      "zh": "产出格占用",
+      "en": "Output occupied",
+      "helpZh": "本批已完成，等待产出格腾空。格中已有物品不是本批待转移结果；取走已有物品后由服务器转移本批结果，不重抽。",
+      "helpEn": "This batch is complete, waiting for a free output slot. The visible existing item is not the pending result. Remove it so the server can transfer the committed result without rerolling."
+    },
+    {
+      "id": 4,
+      "key": "collect",
+      "zh": "成品待取",
+      "en": "Collect result",
+      "helpZh": "成品已在实际产出格中。取走后，如材料充足即可再制造；背包满时保留原成品，不另发地面奖励。",
+      "helpEn": "The finished item is in the actual output slot. Collect it to make another batch if materials suffice. A full inventory keeps the original output; no extra ground reward is issued."
+    }
+  ],
+  "asset": "F06-02",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项",
+  "integrated": false,
+  "scope": "制造机原生176×192界面/四层源稿/五态中英/槽位与按钮/悬停和交互审稿；游戏字体与容器同步待接入"
+}

@@ -1,0 +1,52 @@
+{
+  "asset": "F05-02",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": 28,
+  "hiddenAdoptedReferenceMeshes": 68,
+  "packedAtlas": [
+    128,
+    64
+  ],
+  "actualNodeTransformCases": [
+    {
+      "node": 0,
+      "vertexChecks": 224,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true
+    },
+    {
+      "node": 1,
+      "vertexChecks": 224,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true
+    },
+    {
+      "node": 2,
+      "vertexChecks": 224,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true
+    },
+    {
+      "node": 3,
+      "vertexChecks": 224,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true
+    },
+    {
+      "node": 4,
+      "vertexChecks": 224,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true
+    },
+    {
+      "node": 5,
+      "vertexChecks": 224,
+      "sharedNodeBasisExact": true,
+      "scaleUnchanged": true
+    }
+  ],
+  "noEmission": true,
+  "noMovingParts": true,
+  "gameIntegrated": false
+}

@@ -1,0 +1,12 @@
+{
+  "asset": "F05-08",
+  "allPassed": true,
+  "activeGhostEnabledEnergyOtherRollCases": 144,
+  "webMeshVertexChecks": 44928,
+  "noFalsePowerFailure": true,
+  "explicitReferenceGateVerified": true,
+  "anyActualActiveStabilizerSuppressesRoll": true,
+  "ghostDoesNotStabilize": true,
+  "geometryStatic": true,
+  "gameIntegrated": false
+}

@@ -54,9 +54,9 @@ public final class BackTransitions {
         m.previous = current; m.dimension = p.level().dimension();
         state.setData(SETTLES,result);
     }
-    public static void back(PoseStack poses, AvatarRenderState state, int category) {
+    public static void back(PoseStack poses, AvatarRenderState state, int category,boolean waist) {
         Settle[] settles = state.getData(SETTLES);
-        if (settles != null && settles[category].owner == 3) transform(poses,BACK[category],settles[category].weight);
+        if (settles != null && settles[category].owner == 3) transform(poses,waist?new float[]{category==1?-.15F:.15F,.3F,-.15F,0,0,0}:BACK[category],settles[category].weight);
     }
     public static void hand(PoseStack poses, AvatarRenderState state, HumanoidArm arm) {
         Settle[] settles = state.getData(SETTLES);

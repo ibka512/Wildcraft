@@ -1,0 +1,1499 @@
+{
+  "allPassed": true,
+  "actualPixelCases": 2002,
+  "displayCombinations": 16,
+  "scenarioLocaleCombinations": 10,
+  "sliderFullLockFixed": true,
+  "numericKeyboardTest": true,
+  "states": [
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 1,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "16px"
+      },
+      "readoutCSS": "112px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 1,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "16px"
+      },
+      "readoutCSS": "112px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 2,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "32px"
+      },
+      "readoutCSS": "224px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 2,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "32px"
+      },
+      "readoutCSS": "224px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 4,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "64px"
+      },
+      "readoutCSS": "448px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 4,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "64px"
+      },
+      "readoutCSS": "448px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 8,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "128px"
+      },
+      "readoutCSS": "896px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 16,
+        "scale": 8,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 16,
+        "h": 16,
+        "css": "128px"
+      },
+      "readoutCSS": "896px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 1,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "32px"
+      },
+      "readoutCSS": "112px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 1,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "32px"
+      },
+      "readoutCSS": "112px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 2,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "64px"
+      },
+      "readoutCSS": "224px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 2,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "64px"
+      },
+      "readoutCSS": "224px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 4,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "128px"
+      },
+      "readoutCSS": "448px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 4,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "128px"
+      },
+      "readoutCSS": "448px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 8,
+        "theme": "dark",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#e3e9df"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "256px"
+      },
+      "readoutCSS": "896px",
+      "overflow": false
+    },
+    {
+      "state": {
+        "e": 500,
+        "present": true,
+        "status": 2,
+        "n": 32,
+        "scale": 8,
+        "theme": "light",
+        "readout": {
+          "present": true,
+          "energy": 500,
+          "text": "500 / 1000",
+          "tone": "normal",
+          "semantic": "partial",
+          "showIcon": true,
+          "chargerStatus": 2,
+          "icon": {
+            "energy": 500,
+            "widthsBottomUp": [
+              5,
+              2,
+              0
+            ],
+            "fractions": [
+              1,
+              0.5,
+              0
+            ]
+          },
+          "number": {
+            "width": 59,
+            "height": 7
+          },
+          "color": "#354438"
+        },
+        "charger": {
+          "slot": [
+            26,
+            35
+          ],
+          "icon": [
+            54,
+            29
+          ],
+          "number": [
+            74,
+            32
+          ],
+          "barWidth": 52,
+          "text": "500 / 1000",
+          "statusText": "充电中"
+        }
+      },
+      "icon": {
+        "w": 32,
+        "h": 32,
+        "css": "256px"
+      },
+      "readoutCSS": "896px",
+      "overflow": false
+    }
+  ],
+  "scenarios": [
+    {
+      "lang": "zh_cn",
+      "e": 500,
+      "present": false,
+      "status": 0,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": false,
+        "energy": null,
+        "text": "— / 1000",
+        "tone": "neutral",
+        "semantic": "no_battery",
+        "showIcon": false,
+        "chargerStatus": 0,
+        "icon": null,
+        "number": {
+          "width": 47,
+          "height": 7
+        },
+        "color": "#9da89f"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 0,
+        "text": "— / 1000",
+        "statusText": "放入有限电池"
+      }
+    },
+    {
+      "lang": "zh_cn",
+      "e": 500,
+      "present": true,
+      "status": 1,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 500,
+        "text": "500 / 1000",
+        "tone": "normal",
+        "semantic": "partial",
+        "showIcon": true,
+        "chargerStatus": 1,
+        "icon": {
+          "energy": 500,
+          "widthsBottomUp": [
+            5,
+            2,
+            0
+          ],
+          "fractions": [
+            1,
+            0.5,
+            0
+          ]
+        },
+        "number": {
+          "width": 59,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 52,
+        "text": "500 / 1000",
+        "statusText": "需要紧邻固定红石块"
+      }
+    },
+    {
+      "lang": "zh_cn",
+      "e": 500,
+      "present": true,
+      "status": 2,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 500,
+        "text": "500 / 1000",
+        "tone": "normal",
+        "semantic": "partial",
+        "showIcon": true,
+        "chargerStatus": 2,
+        "icon": {
+          "energy": 500,
+          "widthsBottomUp": [
+            5,
+            2,
+            0
+          ],
+          "fractions": [
+            1,
+            0.5,
+            0
+          ]
+        },
+        "number": {
+          "width": 59,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 52,
+        "text": "500 / 1000",
+        "statusText": "充电中"
+      }
+    },
+    {
+      "lang": "zh_cn",
+      "e": 1000,
+      "present": true,
+      "status": 3,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 1000,
+        "text": "1000 / 1000",
+        "tone": "normal",
+        "semantic": "full",
+        "showIcon": true,
+        "chargerStatus": 3,
+        "icon": {
+          "energy": 1000,
+          "widthsBottomUp": [
+            5,
+            5,
+            5
+          ],
+          "fractions": [
+            1,
+            1,
+            1
+          ]
+        },
+        "number": {
+          "width": 65,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 105,
+        "text": "1000 / 1000",
+        "statusText": "电量已满"
+      }
+    },
+    {
+      "lang": "zh_cn",
+      "e": 500,
+      "present": true,
+      "status": 4,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 500,
+        "text": "500 / 1000",
+        "tone": "normal",
+        "semantic": "partial",
+        "showIcon": true,
+        "chargerStatus": 4,
+        "icon": {
+          "energy": 500,
+          "widthsBottomUp": [
+            5,
+            2,
+            0
+          ],
+          "fractions": [
+            1,
+            0.5,
+            0
+          ]
+        },
+        "number": {
+          "width": 59,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 52,
+        "text": "500 / 1000",
+        "statusText": "等候共享电源"
+      }
+    },
+    {
+      "lang": "en_us",
+      "e": 500,
+      "present": false,
+      "status": 0,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": false,
+        "energy": null,
+        "text": "— / 1000",
+        "tone": "neutral",
+        "semantic": "no_battery",
+        "showIcon": false,
+        "chargerStatus": 0,
+        "icon": null,
+        "number": {
+          "width": 47,
+          "height": 7
+        },
+        "color": "#9da89f"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 0,
+        "text": "— / 1000",
+        "statusText": "Insert a battery"
+      }
+    },
+    {
+      "lang": "en_us",
+      "e": 500,
+      "present": true,
+      "status": 1,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 500,
+        "text": "500 / 1000",
+        "tone": "normal",
+        "semantic": "partial",
+        "showIcon": true,
+        "chargerStatus": 1,
+        "icon": {
+          "energy": 500,
+          "widthsBottomUp": [
+            5,
+            2,
+            0
+          ],
+          "fractions": [
+            1,
+            0.5,
+            0
+          ]
+        },
+        "number": {
+          "width": 59,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 52,
+        "text": "500 / 1000",
+        "statusText": "Place beside a redstone block"
+      }
+    },
+    {
+      "lang": "en_us",
+      "e": 500,
+      "present": true,
+      "status": 2,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 500,
+        "text": "500 / 1000",
+        "tone": "normal",
+        "semantic": "partial",
+        "showIcon": true,
+        "chargerStatus": 2,
+        "icon": {
+          "energy": 500,
+          "widthsBottomUp": [
+            5,
+            2,
+            0
+          ],
+          "fractions": [
+            1,
+            0.5,
+            0
+          ]
+        },
+        "number": {
+          "width": 59,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 52,
+        "text": "500 / 1000",
+        "statusText": "Charging"
+      }
+    },
+    {
+      "lang": "en_us",
+      "e": 1000,
+      "present": true,
+      "status": 3,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 1000,
+        "text": "1000 / 1000",
+        "tone": "normal",
+        "semantic": "full",
+        "showIcon": true,
+        "chargerStatus": 3,
+        "icon": {
+          "energy": 1000,
+          "widthsBottomUp": [
+            5,
+            5,
+            5
+          ],
+          "fractions": [
+            1,
+            1,
+            1
+          ]
+        },
+        "number": {
+          "width": 65,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 105,
+        "text": "1000 / 1000",
+        "statusText": "Fully charged"
+      }
+    },
+    {
+      "lang": "en_us",
+      "e": 500,
+      "present": true,
+      "status": 4,
+      "n": 16,
+      "scale": 4,
+      "theme": "dark",
+      "readout": {
+        "present": true,
+        "energy": 500,
+        "text": "500 / 1000",
+        "tone": "normal",
+        "semantic": "partial",
+        "showIcon": true,
+        "chargerStatus": 4,
+        "icon": {
+          "energy": 500,
+          "widthsBottomUp": [
+            5,
+            2,
+            0
+          ],
+          "fractions": [
+            1,
+            0.5,
+            0
+          ]
+        },
+        "number": {
+          "width": 59,
+          "height": 7
+        },
+        "color": "#e3e9df"
+      },
+      "charger": {
+        "slot": [
+          26,
+          35
+        ],
+        "icon": [
+          54,
+          29
+        ],
+        "number": [
+          74,
+          32
+        ],
+        "barWidth": 52,
+        "text": "500 / 1000",
+        "statusText": "Waiting for shared supply"
+      }
+    }
+  ],
+  "finalResponsive": {
+    "viewport": 888,
+    "scrollWidth": 873,
+    "columns": "845px"
+  }
+}

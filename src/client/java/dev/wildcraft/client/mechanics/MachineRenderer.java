@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 
-/** Original cuboid model; coloured material uses the authored 8x8 white texture. */
+/** Adopted second-batch geometry; gameplay and node collision remain server-owned. */
 public final class MachineRenderer extends EntityRenderer<MachineEntity, MachineRenderer.State> {
     public static final class State extends EntityRenderState {
         public float yaw, roll; public int fans, battery, energy, kinds, active; public long fuel, cooldown; public boolean working; public int preview = -1, ghost, ghostEnergy;
@@ -32,47 +32,17 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
     }
     @Override public void submit(State state, PoseStack poses, SubmitNodeCollector collector, CameraRenderState camera) {
         poses.pushPose(); poses.rotate(Axis.YP, (float)Math.toRadians(-state.yaw));poses.rotate(Axis.ZP,(float)Math.toRadians(state.roll));
-        box(poses, collector, state.lightCoords, -.66F,.05F,-.66F,.66F,.56F,.66F,0xFF475A5B);
-        box(poses, collector, state.lightCoords, -.70F,.54F,-.70F,.70F,.65F,.70F,0xFFB99361);
-        box(poses, collector, state.lightCoords, -.38F,.652F,.2F,.38F,.67F,.5F,0xFF77BCB4);
-        for (int n = 0; n < MachineNodes.COUNT; n++) {
-            var at = MachineNodes.point(n); poses.pushPose(); poses.translate(at);
-            orient(poses, n);
-            boolean ghost = n == state.preview && state.ghost > 0;
-            boolean fan = (state.fans & 1 << n) != 0 || ghost && state.ghost == 1, battery = state.battery == n || ghost && state.ghost == 2;
-            int kind = ghost ? state.ghost : state.kinds >>> (n * 4) & 15;
-            int colour = n == state.preview ? state.ghost > 0 ? 0xFF93E8C0 : 0xFFDEAB7A : battery || fan ? 0xFFCCAD72 : 0xFF70A5A5;
-            box(poses, collector, state.lightCoords, -.13F,-.13F,-.04F,.13F,.13F,.04F,colour);
-            if (battery) {
-                box(poses, collector, state.lightCoords,-.2F,-.23F,.04F,.2F,.23F,.15F,ghost ? 0x885DD7B7 : 0xFF4C615A);
-                box(poses, collector, state.lightCoords,-.14F,-.15F,.151F,.14F,-.15F+.3F*(ghost ? state.ghostEnergy : state.energy)/1000F,.16F,ghost ? 0x885DD7B7 : 0xFF90D3A9);
-            }
-            if (kind == 3) box(poses, collector, state.lightCoords,-.6F,-.08F,.04F,.6F,.08F,.55F,ghost ? 0x885DD7B7 : 0xFFCBB98E);
-            if (kind == 6) {
-                box(poses, collector, state.lightCoords,-.25F,-.25F,.04F,.25F,.25F,.24F,ghost ? 0x885DD7B7 : 0xFF354547);
-                poses.pushPose();poses.translate(0,0,.25);poses.rotate(Axis.ZP,(state.active & 1<<n)!=0&&!ghost?state.ageInTicks*.4F:0);
-                box(poses, collector, state.lightCoords,-.2F,-.025F,0,.2F,.025F,.02F,ghost ? 0x885DD7B7 : 0xFFBB9561);poses.popPose();
-            }
-            int material=ghost?0x885DD7B7:0xFFB99867;
-            if(kind==4){box(poses,collector,state.lightCoords,-.13F,-.13F,.03F,.13F,.13F,.5F,material);
-                box(poses,collector,state.lightCoords,-.09F,-.09F,.01F,.09F,.09F,.12F,ghost?material:0xFF6B918C);
-                if(!ghost && (state.active & 1<<n)!=0 && (state.fuel >>> (7*n)&127)>0)box(poses,collector,state.lightCoords,-.08F,-.08F,.5F,.08F,.08F,.86F,0xDDFFD58B);}
-            if(kind==5){float stretch=!ghost && (state.cooldown >>> (6*n)&63)>30?.32F:.12F;
-                box(poses,collector,state.lightCoords,-.22F,-.22F,.04F,.22F,.22F,.1F,material);
-                for(int i=0;i<3;i++)box(poses,collector,state.lightCoords,-.14F,-.14F,.12F+i*stretch/3,.14F,.14F,.16F+i*stretch/3,ghost?material:0xFF758D8A);
-                box(poses,collector,state.lightCoords,-.22F,-.22F,.18F+stretch,.22F,.22F,.24F+stretch,material);}
-            if(kind==7){box(poses,collector,state.lightCoords,-.18F,-.26F,.04F,.18F,.26F,.22F,material);
-                box(poses,collector,state.lightCoords,-.08F,-.08F,.23F,.08F,.08F,.25F,ghost?material:(state.active & 1<<n)!=0?0xFF8DD5B7:0xFF607775);}
-            if(kind==8){box(poses,collector,state.lightCoords,-.32F,-.18F,.04F,.32F,.18F,.38F,ghost?material:0xFFD3C59D);
-                box(poses,collector,state.lightCoords,-.04F,-.2F,.02F,.04F,.2F,.4F,material);}
-            if (fan) {
-                box(poses, collector, state.lightCoords,-.29F,-.29F,.04F,.29F,.29F,.1F,ghost ? 0x885DD7B7 : 0xFF826D4B);
-                poses.translate(0,0,.11);
-                poses.rotate(Axis.ZP, (state.active & 1<<n)!=0 && !ghost ? state.ageInTicks * .7F : 0);
-                box(poses, collector, state.lightCoords,-.24F,-.045F,0,.24F,.045F,.04F,ghost ? 0x885DD7B7 : 0xFFA5C0B7);
-                box(poses, collector, state.lightCoords,-.045F,-.24F,0,.045F,.24F,.04F,ghost ? 0x885DD7B7 : 0xFFA5C0B7);
-                box(poses, collector, state.lightCoords,-.07F,-.07F,.04F,.07F,.07F,.09F,ghost ? 0x885DD7B7 : 0xFF69C5BA);
-            }
+        dev.wildcraft.client.art.ArtMesh.get("machine").submit(poses,collector,state.lightCoords,false,0,false,false,0);
+        for(int n=0;n<MachineNodes.COUNT;n++){
+            int kind=state.kinds >>> (n*4)&15;
+            boolean ghost=n==state.preview&&state.ghost>0;
+            if(ghost)kind=state.ghost;if(kind<1||kind>8)continue;
+            boolean active=!ghost&&(state.active&1<<n)!=0;int fuel=(int)(state.fuel >>> (7*n)&127),cooldown=(int)(state.cooldown >>> (6*n)&63);
+            String mesh=switch(kind){case 1->"fan";case 2->"battery";case 3->"wing";case 4->!ghost&&fuel==0?"spent_rocket":"rocket";case 5->"spring";case 6->"wheel";case 7->"stabilizer";default->"buoyancy";};
+            poses.pushPose();poses.translate(MachineNodes.point(n));orient(poses,n);
+            float angle=active?(kind==1?state.ageInTicks*.7F:kind==6?state.ageInTicks*.4F:0):0;
+            dev.wildcraft.client.art.ArtMesh.get(mesh).submit(poses,collector,state.lightCoords,ghost,angle,!ghost&&cooldown>30,active,ghost?state.ghostEnergy:state.energy);
+            if(kind==4&&active&&fuel>0)box(poses,collector,state.lightCoords,-.08F,-.08F,.5F,.08F,.08F,.86F,0xDDFFD58B);
             poses.popPose();
         }
         poses.popPose(); super.submit(state, poses, collector, camera);

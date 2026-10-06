@@ -1,0 +1,290 @@
+{
+  "asset": "F05-08",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": 25,
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "hiddenReferenceMeshes": 68,
+  "actualNodeAndColorCases": [
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#DB8A55",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 0,
+      "active": true,
+      "ghost": true,
+      "powerReference": true,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#DB8A55",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 1,
+      "active": true,
+      "ghost": true,
+      "powerReference": true,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#DB8A55",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 2,
+      "active": true,
+      "ghost": true,
+      "powerReference": true,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#DB8A55",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 3,
+      "active": true,
+      "ghost": true,
+      "powerReference": true,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#DB8A55",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 4,
+      "active": true,
+      "ghost": true,
+      "powerReference": true,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "powerReference": false,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#DB8A55",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "powerReference": true,
+      "color": "#8DD5B7",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    },
+    {
+      "node": 5,
+      "active": true,
+      "ghost": true,
+      "powerReference": true,
+      "color": "#607775",
+      "vertexChecks": 208,
+      "allGeometryStatic": true
+    }
+  ],
+  "totalEvaluatedVertexChecks": 6240,
+  "noMovingParts": true,
+  "threeRgbMaterialDrivers": true,
+  "noEmission": true,
+  "sourceDefaultInactive": true,
+  "referenceColorNotConnectedToRuntime": true,
+  "gameIntegrated": false
+}

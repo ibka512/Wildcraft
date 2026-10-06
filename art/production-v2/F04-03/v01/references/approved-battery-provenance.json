@@ -1,0 +1,20 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-atlas-32.png",
+    "copy": "references/battery-atlas-32.png",
+    "sha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba",
+    "status": "user_approved"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/source/geometry-and-uv.json",
+    "copy": "references/geometry-and-uv.json",
+    "sha256": "d54a489b51211af4af7ea0982d74531fb494f8aff78648c27a0809c395eab93d",
+    "status": "user_approved"
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/source/uv-regions.json",
+    "copy": "references/uv-regions.json",
+    "sha256": "4d8aac98e2426dab5e6932bdb793f8d66cea94ad479e684d8459749f68049a65",
+    "status": "user_approved"
+  }
+]

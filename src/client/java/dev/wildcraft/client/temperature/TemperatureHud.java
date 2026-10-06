@@ -47,7 +47,8 @@ public final class TemperatureHud {
         double seconds = Math.max(0, now - lastFrame) / 1_000_000_000.0; lastFrame = now;
         if (!c.isPaused()) displayed = TemperatureRules.smooth(displayed, view.target(), seconds);
         band = TemperatureRules.band(displayed, band);
-        int color = band < 3 ? 0xFFAACFE0 : band > 3 ? 0xFFE9BF85 : 0xFFCCD8C2;
+        int[] colours={0xFF7FAECD,0xFFA4C8DD,0xFFBFD6DA,0xFFCBD8BD,0xFFDDC39A,0xFFE5B37B,0xFFEF9A66};
+        int color=colours[band];
         if (edgeTintVisible()) {
             int rgb = displayed < 0 ? 0x78ACD0 : 0xD49A62;
             var food=p.getAttached(dev.wildcraft.cooking.CookingEffects.VIEW);
@@ -58,10 +59,15 @@ public final class TemperatureHud {
             g.fill(g.guiWidth() - 4, 0, g.guiWidth(), g.guiHeight(), alpha << 24 | rgb);
         }
         int y = rowY();
-        if (y + 10 > g.guiHeight() - 2 || g.guiWidth() < 100) return;
-        Component label = Component.translatable("hud.wildcraft.temperature." + TemperatureRules.STATES[band]);
-        g.fill(10, y - 2, Math.min(g.guiWidth() - 10, 18 + c.font.width(label) + 37), y + 10, 0x7015231B);
-        for (int i = 0; i < 7; i++) g.fill(12 + i * 5, y + 2, 15 + i * 5, y + 6, i == band ? color : 0xFF4D5F51);
-        g.text(c.font, label, 51, y, color);
+        if (y + 13 > g.guiHeight() - 46 || g.guiWidth() < 100) return;
+        Component label=Component.translatable("hud.wildcraft.temperature."+TemperatureRules.STATES[band]);
+        int width=Math.max(104,38+c.font.width(label));
+        if(10+width>g.guiWidth()-10) return;
+        g.fill(10,y-3,10+width,y+13,0x7015231B);
+        dev.wildcraft.client.art.ArtGui.icon(g,"ambient-temperature",12,y-3);
+        for(int i=0;i<7;i++)g.fill(32,y-2+(6-i)*2,37,y-1+(6-i)*2,colours[i]);
+        int markerY=y-2+(6-band)*2;
+        g.fill(31,markerY-1,38,markerY+2,0xFFFFFFFF);g.fill(32,markerY,37,markerY+1,color);
+        g.text(c.font,label,44,y,color);
     }
 }

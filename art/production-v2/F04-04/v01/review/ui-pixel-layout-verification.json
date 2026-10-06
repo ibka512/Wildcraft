@@ -1,0 +1,1121 @@
+{
+  "allPassed": true,
+  "localeStateCases": 10,
+  "tooltipCases": 18,
+  "actualFullUiBarCases": 3003,
+  "slotCount": 37,
+  "caseDetails": [
+    {
+      "language": "zh",
+      "status": 0,
+      "readout": "— / 1000",
+      "barWidth": 0,
+      "statusText": {
+        "text": "放入有限电池",
+        "x": 22,
+        "y": 60,
+        "width": 54,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "充电器",
+          "width": 27
+        },
+        {
+          "text": "电池",
+          "width": 18
+        },
+        {
+          "text": "电量",
+          "width": 18
+        },
+        {
+          "text": "物品栏",
+          "width": 27
+        },
+        {
+          "text": "放入有限电池",
+          "width": 54
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "readout": "500 / 1000",
+      "barWidth": 52,
+      "statusText": {
+        "text": "缺少固定红石源",
+        "x": 22,
+        "y": 60,
+        "width": 63,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "充电器",
+          "width": 27
+        },
+        {
+          "text": "电池",
+          "width": 18
+        },
+        {
+          "text": "电量",
+          "width": 18
+        },
+        {
+          "text": "物品栏",
+          "width": 27
+        },
+        {
+          "text": "缺少固定红石源",
+          "width": 63
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "readout": "500 / 1000",
+      "barWidth": 52,
+      "statusText": {
+        "text": "充电中",
+        "x": 22,
+        "y": 60,
+        "width": 27,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "充电器",
+          "width": 27
+        },
+        {
+          "text": "电池",
+          "width": 18
+        },
+        {
+          "text": "电量",
+          "width": 18
+        },
+        {
+          "text": "物品栏",
+          "width": 27
+        },
+        {
+          "text": "充电中",
+          "width": 27
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "readout": "1000 / 1000",
+      "barWidth": 105,
+      "statusText": {
+        "text": "电量已满",
+        "x": 22,
+        "y": 60,
+        "width": 36,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "充电器",
+          "width": 27
+        },
+        {
+          "text": "电池",
+          "width": 18
+        },
+        {
+          "text": "电量",
+          "width": 18
+        },
+        {
+          "text": "物品栏",
+          "width": 27
+        },
+        {
+          "text": "电量已满",
+          "width": 36
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "readout": "500 / 1000",
+      "barWidth": 52,
+      "statusText": {
+        "text": "等待共享供电",
+        "x": 22,
+        "y": 60,
+        "width": 54,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "充电器",
+          "width": 27
+        },
+        {
+          "text": "电池",
+          "width": 18
+        },
+        {
+          "text": "电量",
+          "width": 18
+        },
+        {
+          "text": "物品栏",
+          "width": 27
+        },
+        {
+          "text": "等待共享供电",
+          "width": 54
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "readout": "— / 1000",
+      "barWidth": 0,
+      "statusText": {
+        "text": "Insert a battery",
+        "x": 22,
+        "y": 60,
+        "width": 86.6953125,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "Charger",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Battery",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Charge",
+          "width": 32.5107421875
+        },
+        {
+          "text": "Inventory",
+          "width": 48.76611328125
+        },
+        {
+          "text": "Insert a battery",
+          "width": 86.6953125
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "readout": "500 / 1000",
+      "barWidth": 52,
+      "statusText": {
+        "text": "No redstone source",
+        "x": 22,
+        "y": 60,
+        "width": 97.5322265625,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "Charger",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Battery",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Charge",
+          "width": 32.5107421875
+        },
+        {
+          "text": "Inventory",
+          "width": 48.76611328125
+        },
+        {
+          "text": "No redstone source",
+          "width": 97.5322265625
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "readout": "500 / 1000",
+      "barWidth": 52,
+      "statusText": {
+        "text": "Charging",
+        "x": 22,
+        "y": 60,
+        "width": 43.34765625,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "Charger",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Battery",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Charge",
+          "width": 32.5107421875
+        },
+        {
+          "text": "Inventory",
+          "width": 48.76611328125
+        },
+        {
+          "text": "Charging",
+          "width": 43.34765625
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "readout": "1000 / 1000",
+      "barWidth": 105,
+      "statusText": {
+        "text": "Fully charged",
+        "x": 22,
+        "y": 60,
+        "width": 70.43994140625,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "Charger",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Battery",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Charge",
+          "width": 32.5107421875
+        },
+        {
+          "text": "Inventory",
+          "width": 48.76611328125
+        },
+        {
+          "text": "Fully charged",
+          "width": 70.43994140625
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "readout": "500 / 1000",
+      "barWidth": 52,
+      "statusText": {
+        "text": "Waiting for supply",
+        "x": 22,
+        "y": 60,
+        "width": 97.5322265625,
+        "height": 9
+      },
+      "labelWidths": [
+        {
+          "text": "Charger",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Battery",
+          "width": 37.92919921875
+        },
+        {
+          "text": "Charge",
+          "width": 32.5107421875
+        },
+        {
+          "text": "Inventory",
+          "width": 48.76611328125
+        },
+        {
+          "text": "Waiting for supply",
+          "width": 97.5322265625
+        }
+      ]
+    }
+  ],
+  "tooltipChecks": [
+    {
+      "language": "zh",
+      "status": 0,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "放入有限电池",
+            "x": 186,
+            "y": 63,
+            "width": 54,
+            "height": 9
+          },
+          {
+            "text": "放入有限电池；充电槽为空，不表示电池",
+            "x": 186,
+            "y": 74,
+            "width": 162,
+            "height": 9
+          },
+          {
+            "text": "电量为零。",
+            "x": 186,
+            "y": 85,
+            "width": 45,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 56,
+        "lines": [
+          {
+            "text": "缺少固定红石源",
+            "x": 186,
+            "y": 63,
+            "width": 63,
+            "height": 9
+          },
+          {
+            "text": "充电器需要紧邻已放置的红石块，任一相",
+            "x": 186,
+            "y": 74,
+            "width": 162,
+            "height": 9
+          },
+          {
+            "text": "邻方向均可。手持红石块和红石信号不能",
+            "x": 186,
+            "y": 85,
+            "width": 162,
+            "height": 9
+          },
+          {
+            "text": "供电。",
+            "x": 186,
+            "y": 96,
+            "width": 27,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "有限电池",
+            "x": 186,
+            "y": 41,
+            "width": 36,
+            "height": 9
+          },
+          {
+            "text": "500 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 54.1845703125,
+            "height": 9
+          },
+          {
+            "text": "放入紧邻固定红石块的充电器",
+            "x": 186,
+            "y": 63,
+            "width": 117,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "充电中",
+            "x": 186,
+            "y": 63,
+            "width": 27,
+            "height": 9
+          },
+          {
+            "text": "正在从相邻红石块获得供电，数字显示电",
+            "x": 186,
+            "y": 74,
+            "width": 162,
+            "height": 9
+          },
+          {
+            "text": "池当前余量。",
+            "x": 186,
+            "y": 85,
+            "width": 54,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "有限电池",
+            "x": 186,
+            "y": 41,
+            "width": 36,
+            "height": 9
+          },
+          {
+            "text": "500 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 54.1845703125,
+            "height": 9
+          },
+          {
+            "text": "放入紧邻固定红石块的充电器",
+            "x": 186,
+            "y": 63,
+            "width": 117,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "电量已满",
+            "x": 186,
+            "y": 63,
+            "width": 36,
+            "height": 9
+          },
+          {
+            "text": "电池余量为1000，可以取走使用；无电",
+            "x": 186,
+            "y": 74,
+            "width": 156.673828125,
+            "height": 9
+          },
+          {
+            "text": "源时仍保持满电状态。",
+            "x": 186,
+            "y": 85,
+            "width": 90,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "有限电池",
+            "x": 186,
+            "y": 41,
+            "width": 36,
+            "height": 9
+          },
+          {
+            "text": "1000 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 59.60302734375,
+            "height": 9
+          },
+          {
+            "text": "放入紧邻固定红石块的充电器",
+            "x": 186,
+            "y": 63,
+            "width": 117,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "等待共享供电",
+            "x": 186,
+            "y": 63,
+            "width": 54,
+            "height": 9
+          },
+          {
+            "text": "红石源存在，正在等候共享供电。电池已",
+            "x": 186,
+            "y": 74,
+            "width": 162,
+            "height": 9
+          },
+          {
+            "text": "有余量保留。",
+            "x": 186,
+            "y": 85,
+            "width": 54,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 45,
+        "lines": [
+          {
+            "text": "有限电池",
+            "x": 186,
+            "y": 41,
+            "width": 36,
+            "height": 9
+          },
+          {
+            "text": "500 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 54.1845703125,
+            "height": 9
+          },
+          {
+            "text": "放入紧邻固定红石块的充电器",
+            "x": 186,
+            "y": 63,
+            "width": 117,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 56,
+        "lines": [
+          {
+            "text": "Insert a battery",
+            "x": 186,
+            "y": 63,
+            "width": 86.6953125,
+            "height": 9
+          },
+          {
+            "text": "Insert a finite battery. An",
+            "x": 186,
+            "y": 74,
+            "width": 146.29833984375,
+            "height": 9
+          },
+          {
+            "text": "empty slot is different from a",
+            "x": 186,
+            "y": 85,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "battery with no charge.",
+            "x": 186,
+            "y": 96,
+            "width": 124.62451171875,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 78,
+        "lines": [
+          {
+            "text": "No redstone source",
+            "x": 186,
+            "y": 63,
+            "width": 97.5322265625,
+            "height": 9
+          },
+          {
+            "text": "Place a fixed redstone block",
+            "x": 186,
+            "y": 74,
+            "width": 151.716796875,
+            "height": 9
+          },
+          {
+            "text": "beside the charger, on any of",
+            "x": 186,
+            "y": 85,
+            "width": 157.13525390625,
+            "height": 9
+          },
+          {
+            "text": "its six adjacent sides. Held",
+            "x": 186,
+            "y": 96,
+            "width": 151.716796875,
+            "height": 9
+          },
+          {
+            "text": "blocks and redstone signals do",
+            "x": 186,
+            "y": 107,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "not supply energy.",
+            "x": 186,
+            "y": 118,
+            "width": 97.5322265625,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 56,
+        "lines": [
+          {
+            "text": "Battery",
+            "x": 186,
+            "y": 41,
+            "width": 37.92919921875,
+            "height": 9
+          },
+          {
+            "text": "500 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 54.1845703125,
+            "height": 9
+          },
+          {
+            "text": "Charge beside a fixed redstone",
+            "x": 186,
+            "y": 63,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "block",
+            "x": 186,
+            "y": 74,
+            "width": 27.09228515625,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 67,
+        "lines": [
+          {
+            "text": "Charging",
+            "x": 186,
+            "y": 63,
+            "width": 43.34765625,
+            "height": 9
+          },
+          {
+            "text": "Receiving supply from an",
+            "x": 186,
+            "y": 74,
+            "width": 130.04296875,
+            "height": 9
+          },
+          {
+            "text": "adjacent redstone block. The",
+            "x": 186,
+            "y": 85,
+            "width": 151.716796875,
+            "height": 9
+          },
+          {
+            "text": "number shows the battery’s",
+            "x": 186,
+            "y": 96,
+            "width": 140.8798828125,
+            "height": 9
+          },
+          {
+            "text": "current charge.",
+            "x": 186,
+            "y": 107,
+            "width": 81.27685546875,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 56,
+        "lines": [
+          {
+            "text": "Battery",
+            "x": 186,
+            "y": 41,
+            "width": 37.92919921875,
+            "height": 9
+          },
+          {
+            "text": "500 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 54.1845703125,
+            "height": 9
+          },
+          {
+            "text": "Charge beside a fixed redstone",
+            "x": 186,
+            "y": 63,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "block",
+            "x": 186,
+            "y": 74,
+            "width": 27.09228515625,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 67,
+        "lines": [
+          {
+            "text": "Fully charged",
+            "x": 186,
+            "y": 63,
+            "width": 70.43994140625,
+            "height": 9
+          },
+          {
+            "text": "The battery holds 1000 units",
+            "x": 186,
+            "y": 74,
+            "width": 151.716796875,
+            "height": 9
+          },
+          {
+            "text": "and is ready to use. A full",
+            "x": 186,
+            "y": 85,
+            "width": 146.29833984375,
+            "height": 9
+          },
+          {
+            "text": "battery stays full without a",
+            "x": 186,
+            "y": 96,
+            "width": 151.716796875,
+            "height": 9
+          },
+          {
+            "text": "source.",
+            "x": 186,
+            "y": 107,
+            "width": 37.92919921875,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 56,
+        "lines": [
+          {
+            "text": "Battery",
+            "x": 186,
+            "y": 41,
+            "width": 37.92919921875,
+            "height": 9
+          },
+          {
+            "text": "1000 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 59.60302734375,
+            "height": 9
+          },
+          {
+            "text": "Charge beside a fixed redstone",
+            "x": 186,
+            "y": 63,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "block",
+            "x": 186,
+            "y": 74,
+            "width": 27.09228515625,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "kind": "status",
+      "passed": true,
+      "tooltip": {
+        "kind": "status",
+        "x": 180,
+        "y": 57,
+        "width": 176,
+        "height": 67,
+        "lines": [
+          {
+            "text": "Waiting for supply",
+            "x": 186,
+            "y": 63,
+            "width": 97.5322265625,
+            "height": 9
+          },
+          {
+            "text": "A redstone source is present.",
+            "x": 186,
+            "y": 74,
+            "width": 157.13525390625,
+            "height": 9
+          },
+          {
+            "text": "Waiting for its shared supply;",
+            "x": 186,
+            "y": 85,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "the battery keeps its existing",
+            "x": 186,
+            "y": 96,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "charge.",
+            "x": 186,
+            "y": 107,
+            "width": 37.92919921875,
+            "height": 9
+          }
+        ]
+      }
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "kind": "battery",
+      "passed": true,
+      "tooltip": {
+        "kind": "battery",
+        "x": 180,
+        "y": 35,
+        "width": 176,
+        "height": 56,
+        "lines": [
+          {
+            "text": "Battery",
+            "x": 186,
+            "y": 41,
+            "width": 37.92919921875,
+            "height": 9
+          },
+          {
+            "text": "500 / 1000",
+            "x": 186,
+            "y": 52,
+            "width": 54.1845703125,
+            "height": 9
+          },
+          {
+            "text": "Charge beside a fixed redstone",
+            "x": 186,
+            "y": 63,
+            "width": 162.5537109375,
+            "height": 9
+          },
+          {
+            "text": "block",
+            "x": 186,
+            "y": 74,
+            "width": 27.09228515625,
+            "height": 9
+          }
+        ]
+      }
+    }
+  ],
+  "missingBatteryDistinct": true,
+  "fullPriorityPreserved": true,
+  "originalGlyphsReused": true,
+  "statusInventoryNoOverlap": true,
+  "textSlotNoOverlap": true,
+  "actualGameFontTested": false,
+  "updatedTooltipWrappingPassed": true
+}

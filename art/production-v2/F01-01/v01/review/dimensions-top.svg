@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="650" viewBox="0 0 850 650">
+<rect width="850" height="650" fill="#1c232b"/>
+<g fill="#e5e8e9" font-family="sans-serif"><text x="34" y="34" font-size="24">F01-01 / 俯视尺寸与碰撞范围</text><text x="34" y="62" font-size="15">实线：实际方盒投影；红虚线：现有12×12碰撞横截面。单位：1/16方块。</text></g>
+<polygon points="212.00,171.00 436.00,171.00 436.00,507.00 212.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,227.00 492.00,227.00 492.00,451.00 156.00,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,227.00 212.00,171.00 268.00,227.00 212.00,283.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="380.00,227.00 436.00,171.00 492.00,227.00 436.00,283.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="380.00,451.00 436.00,395.00 492.00,451.00 436.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,451.00 212.00,395.00 268.00,451.00 212.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="212.00,171.00 436.00,171.00 436.00,203.20 212.00,203.20" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="212.00,474.80 436.00,474.80 436.00,507.00 212.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,227.00 188.20,227.00 188.20,451.00 156.00,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="459.80,227.00 492.00,227.00 492.00,451.00 459.80,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,227.00 212.00,171.00 234.77,193.77 178.77,249.77" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="436.00,171.00 492.00,227.00 469.23,249.77 413.23,193.77" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="413.23,484.23 469.23,428.23 492.00,451.00 436.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="178.77,428.23 234.77,484.23 212.00,507.00 156.00,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="212.00,171.00 436.00,171.00 436.00,211.60 212.00,211.60" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="212.00,466.40 436.00,466.40 436.00,507.00 212.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,227.00 196.60,227.00 196.60,451.00 156.00,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="451.40,227.00 492.00,227.00 492.00,451.00 451.40,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="156.00,227.00 212.00,171.00 240.71,199.71 184.71,255.71" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="436.00,171.00 492.00,227.00 463.29,255.71 407.29,199.71" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="407.29,478.29 463.29,422.29 492.00,451.00 436.00,507.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="184.71,422.29 240.71,478.29 212.00,507.00 156.00,451.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="101.12,297.00 128.00,297.00 128.00,381.00 101.12,381.00" fill="#93704b" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="128.00,283.00 175.60,283.00 175.60,305.40 128.00,305.40" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="128.00,372.60 175.60,372.60 175.60,395.00 128.00,395.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="101.12,283.00 128.00,283.00 128.00,297.00 101.12,297.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="100.00,285.80 101.12,285.80 101.12,294.20 100.00,294.20" fill="#a48562" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="101.12,381.00 128.00,381.00 128.00,395.00 101.12,395.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="100.00,383.80 101.12,383.80 101.12,392.20 100.00,392.20" fill="#a48562" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="520.00,297.00 546.88,297.00 546.88,381.00 520.00,381.00" fill="#93704b" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="472.40,283.00 520.00,283.00 520.00,305.40 472.40,305.40" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="472.40,372.60 520.00,372.60 520.00,395.00 472.40,395.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="520.00,283.00 546.88,283.00 546.88,297.00 520.00,297.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="546.88,285.80 548.00,285.80 548.00,294.20 546.88,294.20" fill="#a48562" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="520.00,381.00 546.88,381.00 546.88,395.00 520.00,395.00" fill="#455761" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<polygon points="546.88,383.80 548.00,383.80 548.00,392.20 546.88,392.20" fill="#a48562" fill-opacity=".16" stroke="#9daeb5" stroke-width="1"/>
+<rect x="156" y="171" width="336" height="336" fill="none" stroke="#f08f81" stroke-width="2" stroke-dasharray="8 5"/>
+<path d="M 100,95 H 548" stroke="#e3c99d"/><text x="270" y="85" fill="#e3c99d" font-family="sans-serif" font-size="18">把手总跨度16</text>
+<g fill="#e5e8e9" font-family="sans-serif" font-size="16"><text x="590" y="160">锅体：12×10×12</text><text x="590" y="194">碰撞：(2,0,2)→(14,10,14)</text><text x="590" y="228">把手：x 0…16</text><text x="590" y="262">材质：64×64 / 原生像素</text><text x="590" y="296">空腔保留；无腿、无底座</text><text x="590" y="330">显示与交互尺寸分别标明</text></g>
+</svg>

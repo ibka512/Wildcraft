@@ -1,0 +1,46 @@
+[
+  {
+    "id": "idle",
+    "label": "停转 · 节点未工作",
+    "ageInTicks": 20,
+    "active": false,
+    "ghost": false
+  },
+  {
+    "id": "working",
+    "label": "运转 · 工作节点",
+    "ageInTicks": 20,
+    "active": true,
+    "ghost": false
+  },
+  {
+    "id": "quarter",
+    "label": "运转 · 45°相位",
+    "ageInTicks": 1.9634954085,
+    "active": true,
+    "ghost": false
+  },
+  {
+    "id": "reverse",
+    "label": "后退输入参考 · 同向转动",
+    "ageInTicks": 20,
+    "active": true,
+    "ghost": false,
+    "drive": -1
+  },
+  {
+    "id": "inactive",
+    "label": "整机开启 · 节点未工作",
+    "ageInTicks": 20,
+    "active": false,
+    "ghost": false,
+    "enabled": true
+  },
+  {
+    "id": "ghost",
+    "label": "安装预览 · 静止",
+    "ageInTicks": 20,
+    "active": true,
+    "ghost": true
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "path": "src/main/java/dev/wildcraft/fuse/FusionViews.java",
+    "sha256": "f9766453d02a184a4e1c2b21844881f502b525a13b1bfa6152a48f0b1c9adca2"
+  },
+  {
+    "path": "src/main/java/dev/wildcraft/fuse/FusionData.java",
+    "sha256": "e19a6b6bae4fdefee9828e09ddcb63b2bbb79607848dbf2fc998916b3f3f5140"
+  },
+  {
+    "path": "src/main/java/dev/wildcraft/fuse/FusionVisual.java",
+    "sha256": "49a0115bb602b42b1b59beda538a83674016ca0a7b7ee16ab9ab46ee992fb54c"
+  },
+  {
+    "path": "src/main/java/dev/wildcraft/fuse/FusionRules.java",
+    "sha256": "94256d379370359a1da2a4e5c616f266f09ae57561a9c9d2ba34233ad54b84ae"
+  },
+  {
+    "path": "src/main/java/dev/wildcraft/fuse/FusionItems.java",
+    "sha256": "f0888f0901e124243115868115ee84174e8026871545d2db19c25a1892ef9e8e"
+  },
+  {
+    "path": "src/main/java/dev/wildcraft/fuse/FusionCombat.java",
+    "sha256": "1d03da91fff0512fc01449212db400fff15af828d4672f68a8f8fe3f34a61512"
+  },
+  {
+    "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+    "sha256": "cd1641b77377c3c45ab1a8bf7c51befd6dcff0142d0a11a7ac7601acd8d1d14b"
+  },
+  {
+    "path": "src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java",
+    "sha256": "42860d16033d8f5f3e12b38595966fd347204269ef3664fbf36ece393972c1f2"
+  },
+  {
+    "path": "src/main/generated/assets/wildcraft/lang/zh_cn.json",
+    "sha256": "72c6941cfe83c5f52df8946271d6cb2c23b4b018242d081f4cc1463ec45dac30"
+  },
+  {
+    "path": "src/main/generated/assets/wildcraft/lang/en_us.json",
+    "sha256": "959459db08fd520642b93735cf36eff857170446ca0af78f809b738b3211fe83"
+  },
+  {
+    "path": "development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar",
+    "sha256": "c81ce6d7a960d67c3cd2125a2c426a62216e3b5f784c8e2b99d8afc6792a91ac"
+  }
+]

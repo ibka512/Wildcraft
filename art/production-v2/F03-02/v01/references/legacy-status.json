@@ -1,0 +1,23 @@
+{
+  "status": "draft_pending_review",
+  "package": "/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable",
+  "revision": "v1：短木质/石质段与亮银连接环，32×32及16×16通用已融合标记",
+  "files": [
+    {
+      "path": "/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-32.png",
+      "sha256": "04101391b0257ea36b78ebc60ac74354be20d91426f62869b1afebd157195c45"
+    },
+    {
+      "path": "/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-32.aseprite",
+      "sha256": "287e2bf34d6cd7ca87d2569a9914a1f0c36d91594d9c740e2d7e40ccd8c1127f"
+    },
+    {
+      "path": "/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-16.png",
+      "sha256": "267fd79bdf3c7b82d3335f7310ac694ded1603faa2fb70d5cc77ce27a35b2e9b"
+    },
+    {
+      "path": "/Volumes/仕事/开发/2026-10-02/referenced-chatgpt-conversation-this-is-an-2/outputs/art-prototypes/2026-10-03/fuse-status-icon-v1/deliverable/fuse-status-16.aseprite",
+      "sha256": "1d171b966ab0dda4e1027f1c419b243b1fb4f4a7f0a716c97a3309252eff5fdd"
+    }
+  ]
+}

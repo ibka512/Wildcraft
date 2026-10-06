@@ -1,0 +1,4438 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 374,
+    "layerId": 375,
+    "frame": 0,
+    "celId": 376,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 374,
+      "objectVersion": 0,
+      "revisionToken": "rev1:28ec729746a8102c",
+      "name": "1791137964121_meal-warming-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137964121_meal-warming-32.aseprite",
+      "modified": false,
+      "active": true,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 375,
+          "stableId": "layer:375",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 376,
+              "frame": 0,
+              "imageId": 379,
+              "dataId": 378,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 380,
+          "stableId": "layer:380",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 381,
+              "frame": 0,
+              "imageId": 383,
+              "dataId": 382,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 384,
+          "stableId": "layer:384",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 385,
+              "frame": 0,
+              "imageId": 387,
+              "dataId": 386,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 388,
+          "stableId": "layer:388",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 389,
+              "frame": 0,
+              "imageId": 391,
+              "dataId": 390,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:59da1689887d0143"
+      }
+    },
+    {
+      "id": 367,
+      "objectVersion": 0,
+      "revisionToken": "rev1:20e1123cb52a80bb",
+      "name": "1791137963727_meal-recovery-16.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137963727_meal-recovery-16.png",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 368,
+          "stableId": "layer:368",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 369,
+              "frame": 0,
+              "imageId": 372,
+              "dataId": 371,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 19,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#4c3020ff",
+          "#634027ff",
+          "#7c502fff",
+          "#913036ff",
+          "#916234ff",
+          "#98673cff",
+          "#a97642ff",
+          "#ad7c47ff",
+          "#c44e49ff",
+          "#b68149ff",
+          "#ab8152ff",
+          "#d4a15eff",
+          "#c49a60ff",
+          "#ed8c65ff",
+          "#dec188ff",
+          "#ebd89eff",
+          "#fff1bdff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 348,
+      "objectVersion": 0,
+      "revisionToken": "rev1:96dd846d76e5da7a",
+      "name": "1791137963337_meal-recovery-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137963337_meal-recovery-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 349,
+          "stableId": "layer:349",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 350,
+              "frame": 0,
+              "imageId": 353,
+              "dataId": 352,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 354,
+          "stableId": "layer:354",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 355,
+              "frame": 0,
+              "imageId": 357,
+              "dataId": 356,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 358,
+          "stableId": "layer:358",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 359,
+              "frame": 0,
+              "imageId": 361,
+              "dataId": 360,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 362,
+          "stableId": "layer:362",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 363,
+              "frame": 0,
+              "imageId": 365,
+              "dataId": 364,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 341,
+      "objectVersion": 0,
+      "revisionToken": "rev1:4af761632ddea351",
+      "name": "1791137962947_meal-recovery-32.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137962947_meal-recovery-32.png",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 342,
+          "stableId": "layer:342",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 343,
+              "frame": 0,
+              "imageId": 346,
+              "dataId": 345,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 19,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#4c3020ff",
+          "#634027ff",
+          "#7c502fff",
+          "#913036ff",
+          "#916234ff",
+          "#98673cff",
+          "#a97642ff",
+          "#ad7c47ff",
+          "#c44e49ff",
+          "#b68149ff",
+          "#ab8152ff",
+          "#d4a15eff",
+          "#c49a60ff",
+          "#ed8c65ff",
+          "#dec188ff",
+          "#ebd89eff",
+          "#fff1bdff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 322,
+      "objectVersion": 0,
+      "revisionToken": "rev1:fb6bca3830a55dc0",
+      "name": "1791137962547_meal-recovery-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137962547_meal-recovery-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 323,
+          "stableId": "layer:323",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 324,
+              "frame": 0,
+              "imageId": 327,
+              "dataId": 326,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 328,
+          "stableId": "layer:328",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 329,
+              "frame": 0,
+              "imageId": 331,
+              "dataId": 330,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 332,
+          "stableId": "layer:332",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 333,
+              "frame": 0,
+              "imageId": 335,
+              "dataId": 334,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 336,
+          "stableId": "layer:336",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 337,
+              "frame": 0,
+              "imageId": 339,
+              "dataId": 338,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 315,
+      "objectVersion": 0,
+      "revisionToken": "rev1:20b3a5126e34c7ff",
+      "name": "1791137962141_meal-cooling-16.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137962141_meal-cooling-16.png",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 316,
+          "stableId": "layer:316",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 317,
+              "frame": 0,
+              "imageId": 320,
+              "dataId": 319,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 24,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#4c3020ff",
+          "#634027ff",
+          "#7c502fff",
+          "#407448ff",
+          "#ac2932ff",
+          "#8c4637ff",
+          "#914734ff",
+          "#98673cff",
+          "#b93640ff",
+          "#b3694cff",
+          "#a97642ff",
+          "#ed5c52ff",
+          "#77ad51ff",
+          "#b68149ff",
+          "#d4a15eff",
+          "#d49667ff",
+          "#ff9b79ff",
+          "#d2af72ff",
+          "#c9d47bff",
+          "#e7b488ff",
+          "#f0d799ff",
+          "#fff0c2ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 296,
+      "objectVersion": 0,
+      "revisionToken": "rev1:b65c3f14db23f6ce",
+      "name": "1791137961734_meal-cooling-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137961734_meal-cooling-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 297,
+          "stableId": "layer:297",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 298,
+              "frame": 0,
+              "imageId": 301,
+              "dataId": 300,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 302,
+          "stableId": "layer:302",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 303,
+              "frame": 0,
+              "imageId": 305,
+              "dataId": 304,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 306,
+          "stableId": "layer:306",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 307,
+              "frame": 0,
+              "imageId": 309,
+              "dataId": 308,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 310,
+          "stableId": "layer:310",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 311,
+              "frame": 0,
+              "imageId": 313,
+              "dataId": 312,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 289,
+      "objectVersion": 0,
+      "revisionToken": "rev1:bcf01d75862ed295",
+      "name": "1791137961204_meal-cooling-32.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137961204_meal-cooling-32.png",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 290,
+          "stableId": "layer:290",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 291,
+              "frame": 0,
+              "imageId": 294,
+              "dataId": 293,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 27,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#4c3020ff",
+          "#6d2730ff",
+          "#634027ff",
+          "#7c502fff",
+          "#407448ff",
+          "#ac2932ff",
+          "#8c4637ff",
+          "#914734ff",
+          "#98673cff",
+          "#b93640ff",
+          "#b3694cff",
+          "#a97642ff",
+          "#e34b42ff",
+          "#ed5c52ff",
+          "#77ad51ff",
+          "#b68149ff",
+          "#d4a15eff",
+          "#d49667ff",
+          "#ff9b79ff",
+          "#d2af72ff",
+          "#e5b977ff",
+          "#c9d47bff",
+          "#e7b488ff",
+          "#f0d799ff",
+          "#fff0c2ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 270,
+      "objectVersion": 0,
+      "revisionToken": "rev1:65722778ee3f9444",
+      "name": "1791137959576_meal-cooling-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137959576_meal-cooling-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 271,
+          "stableId": "layer:271",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 272,
+              "frame": 0,
+              "imageId": 275,
+              "dataId": 274,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 276,
+          "stableId": "layer:276",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 277,
+              "frame": 0,
+              "imageId": 279,
+              "dataId": 278,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 280,
+          "stableId": "layer:280",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 281,
+              "frame": 0,
+              "imageId": 283,
+              "dataId": 282,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 284,
+          "stableId": "layer:284",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 285,
+              "frame": 0,
+              "imageId": 287,
+              "dataId": 286,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 263,
+      "objectVersion": 0,
+      "revisionToken": "rev1:15096f884658a463",
+      "name": "1791137958284_meal-warming-16.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137958284_meal-warming-16.png",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 264,
+          "stableId": "layer:264",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 265,
+              "frame": 0,
+              "imageId": 268,
+              "dataId": 267,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 24,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#771d39ff",
+          "#4c3020ff",
+          "#6c2035ff",
+          "#634027ff",
+          "#7c502fff",
+          "#98673cff",
+          "#942a46ff",
+          "#a82950ff",
+          "#b73750ff",
+          "#997445ff",
+          "#a97642ff",
+          "#ce4b57ff",
+          "#d65771ff",
+          "#b68149ff",
+          "#d4a15eff",
+          "#c5a361ff",
+          "#f38e8cff",
+          "#c7aa84ff",
+          "#ead190ff",
+          "#e8cfa4ff",
+          "#fff0baff",
+          "#fff0cfff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 244,
+      "objectVersion": 0,
+      "revisionToken": "rev1:e03cdc96d14c2392",
+      "name": "1791137956631_meal-warming-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137956631_meal-warming-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 245,
+          "stableId": "layer:245",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 246,
+              "frame": 0,
+              "imageId": 249,
+              "dataId": 248,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 250,
+          "stableId": "layer:250",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 251,
+              "frame": 0,
+              "imageId": 253,
+              "dataId": 252,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 254,
+          "stableId": "layer:254",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 255,
+              "frame": 0,
+              "imageId": 257,
+              "dataId": 256,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 258,
+          "stableId": "layer:258",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 259,
+              "frame": 0,
+              "imageId": 261,
+              "dataId": 260,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 237,
+      "objectVersion": 0,
+      "revisionToken": "rev1:004d2f7e64701039",
+      "name": "1791137953409_meal-warming-32.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137953409_meal-warming-32.png",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 238,
+          "stableId": "layer:238",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 239,
+              "frame": 0,
+              "imageId": 242,
+              "dataId": 241,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 25,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#771d39ff",
+          "#4c3020ff",
+          "#6c2035ff",
+          "#634027ff",
+          "#7c502fff",
+          "#98673cff",
+          "#942a46ff",
+          "#a82950ff",
+          "#b73750ff",
+          "#997445ff",
+          "#a97642ff",
+          "#ce4b57ff",
+          "#d65771ff",
+          "#b68149ff",
+          "#d4a15eff",
+          "#c5a361ff",
+          "#e5b977ff",
+          "#f38e8cff",
+          "#c7aa84ff",
+          "#ead190ff",
+          "#e8cfa4ff",
+          "#fff0baff",
+          "#fff0cfff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 218,
+      "objectVersion": 0,
+      "revisionToken": "rev1:07bea49fdd5850d8",
+      "name": "1791137951531_meal-warming-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137951531_meal-warming-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 219,
+          "stableId": "layer:219",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 220,
+              "frame": 0,
+              "imageId": 223,
+              "dataId": 222,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 224,
+          "stableId": "layer:224",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 225,
+              "frame": 0,
+              "imageId": 227,
+              "dataId": 226,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 228,
+          "stableId": "layer:228",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 229,
+              "frame": 0,
+              "imageId": 231,
+              "dataId": 230,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 232,
+          "stableId": "layer:232",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 233,
+              "frame": 0,
+              "imageId": 235,
+              "dataId": 234,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 211,
+      "objectVersion": 0,
+      "revisionToken": "rev1:ddf23b7510a8d007",
+      "name": "1791137950236_meal-vegetable-16.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137950236_meal-vegetable-16.png",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 212,
+          "stableId": "layer:212",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 213,
+              "frame": 0,
+              "imageId": 216,
+              "dataId": 215,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 21,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#4c3020ff",
+          "#634027ff",
+          "#7c502fff",
+          "#9d3f19ff",
+          "#9c571eff",
+          "#98673cff",
+          "#d96722ff",
+          "#997445ff",
+          "#a97642ff",
+          "#d28b2dff",
+          "#f69c36ff",
+          "#b68149ff",
+          "#d4a15eff",
+          "#ebac40ff",
+          "#c5a361ff",
+          "#f7c564ff",
+          "#ffd079ff",
+          "#ead190ff",
+          "#fff0baff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 192,
+      "objectVersion": 0,
+      "revisionToken": "rev1:2fe4566a9977fd06",
+      "name": "1791137948360_meal-vegetable-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137948360_meal-vegetable-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 193,
+          "stableId": "layer:193",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 194,
+              "frame": 0,
+              "imageId": 197,
+              "dataId": 196,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 198,
+          "stableId": "layer:198",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 199,
+              "frame": 0,
+              "imageId": 201,
+              "dataId": 200,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 202,
+          "stableId": "layer:202",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 203,
+              "frame": 0,
+              "imageId": 205,
+              "dataId": 204,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 206,
+          "stableId": "layer:206",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 207,
+              "frame": 0,
+              "imageId": 209,
+              "dataId": 208,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 185,
+      "objectVersion": 0,
+      "revisionToken": "rev1:c32b2c61d66c233d",
+      "name": "1791137946808_meal-vegetable-32.png",
+      "filename": "/home/web_user/aseprite-web/files/1791137946808_meal-vegetable-32.png",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 186,
+          "stableId": "layer:186",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 187,
+              "frame": 0,
+              "imageId": 190,
+              "dataId": 189,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 22,
+        "colors": [
+          "#00000000",
+          "#352218ff",
+          "#4c3020ff",
+          "#634027ff",
+          "#7c502fff",
+          "#9d3f19ff",
+          "#9c571eff",
+          "#98673cff",
+          "#d96722ff",
+          "#997445ff",
+          "#a97642ff",
+          "#d28b2dff",
+          "#f69c36ff",
+          "#b68149ff",
+          "#d4a15eff",
+          "#ebac40ff",
+          "#c5a361ff",
+          "#e5b977ff",
+          "#f7c564ff",
+          "#ffd079ff",
+          "#ead190ff",
+          "#fff0baff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 166,
+      "objectVersion": 0,
+      "revisionToken": "rev1:3716497a67a54bbc",
+      "name": "1791137945382_meal-vegetable-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791137945382_meal-vegetable-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 167,
+          "stableId": "layer:167",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 168,
+              "frame": 0,
+              "imageId": 171,
+              "dataId": 170,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 172,
+          "stableId": "layer:172",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 173,
+              "frame": 0,
+              "imageId": 175,
+              "dataId": 174,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 176,
+          "stableId": "layer:176",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 177,
+              "frame": 0,
+              "imageId": 179,
+              "dataId": 178,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 180,
+          "stableId": "layer:180",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 181,
+              "frame": 0,
+              "imageId": 183,
+              "dataId": 182,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 146,
+      "objectVersion": 1,
+      "revisionToken": "rev1:9be8569b1246e7ab",
+      "name": "meal-recovery-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-recovery-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 147,
+          "stableId": "layer:147",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 148,
+              "frame": 0,
+              "imageId": 151,
+              "dataId": 150,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 154,
+          "stableId": "layer:154",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 155,
+              "frame": 0,
+              "imageId": 157,
+              "dataId": 156,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 158,
+          "stableId": "layer:158",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 159,
+              "frame": 0,
+              "imageId": 161,
+              "dataId": 160,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 162,
+          "stableId": "layer:162",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 163,
+              "frame": 0,
+              "imageId": 165,
+              "dataId": 164,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 7,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Create Layer",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 126,
+      "objectVersion": 1,
+      "revisionToken": "rev1:febdba0db689132f",
+      "name": "meal-recovery-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-recovery-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 127,
+          "stableId": "layer:127",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 128,
+              "frame": 0,
+              "imageId": 131,
+              "dataId": 130,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 134,
+          "stableId": "layer:134",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 135,
+              "frame": 0,
+              "imageId": 137,
+              "dataId": 136,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 138,
+          "stableId": "layer:138",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 139,
+              "frame": 0,
+              "imageId": 141,
+              "dataId": 140,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 142,
+          "stableId": "layer:142",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 143,
+              "frame": 0,
+              "imageId": 145,
+              "dataId": 144,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 7,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Create Layer",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 106,
+      "objectVersion": 1,
+      "revisionToken": "rev1:b14baee3f9e7f673",
+      "name": "meal-cooling-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-cooling-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 107,
+          "stableId": "layer:107",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 108,
+              "frame": 0,
+              "imageId": 111,
+              "dataId": 110,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 114,
+          "stableId": "layer:114",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 115,
+              "frame": 0,
+              "imageId": 117,
+              "dataId": 116,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 118,
+          "stableId": "layer:118",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 119,
+              "frame": 0,
+              "imageId": 121,
+              "dataId": 120,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 122,
+          "stableId": "layer:122",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 123,
+              "frame": 0,
+              "imageId": 125,
+              "dataId": 124,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 7,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Create Layer",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 86,
+      "objectVersion": 1,
+      "revisionToken": "rev1:90ab24a464298b97",
+      "name": "meal-cooling-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-cooling-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 87,
+          "stableId": "layer:87",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 88,
+              "frame": 0,
+              "imageId": 91,
+              "dataId": 90,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 94,
+          "stableId": "layer:94",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 95,
+              "frame": 0,
+              "imageId": 97,
+              "dataId": 96,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 98,
+          "stableId": "layer:98",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 99,
+              "frame": 0,
+              "imageId": 101,
+              "dataId": 100,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 102,
+          "stableId": "layer:102",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 103,
+              "frame": 0,
+              "imageId": 105,
+              "dataId": 104,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 7,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Create Layer",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 66,
+      "objectVersion": 1,
+      "revisionToken": "rev1:850100d8673cc162",
+      "name": "meal-warming-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-warming-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 67,
+          "stableId": "layer:67",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 68,
+              "frame": 0,
+              "imageId": 71,
+              "dataId": 70,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 74,
+          "stableId": "layer:74",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 75,
+              "frame": 0,
+              "imageId": 77,
+              "dataId": 76,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 78,
+          "stableId": "layer:78",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 79,
+              "frame": 0,
+              "imageId": 81,
+              "dataId": 80,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 82,
+          "stableId": "layer:82",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 83,
+              "frame": 0,
+              "imageId": 85,
+              "dataId": 84,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 8,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Pixel Runs",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 46,
+      "objectVersion": 1,
+      "revisionToken": "rev1:93a8739fdbf7c72e",
+      "name": "meal-warming-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-warming-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 47,
+          "stableId": "layer:47",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 48,
+              "frame": 0,
+              "imageId": 51,
+              "dataId": 50,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 54,
+          "stableId": "layer:54",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 55,
+              "frame": 0,
+              "imageId": 57,
+              "dataId": 56,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 58,
+          "stableId": "layer:58",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 59,
+              "frame": 0,
+              "imageId": 61,
+              "dataId": 60,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 62,
+          "stableId": "layer:62",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 63,
+              "frame": 0,
+              "imageId": 65,
+              "dataId": 64,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 8,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Pixel Runs",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 26,
+      "objectVersion": 1,
+      "revisionToken": "rev1:983cd216fe2115e3",
+      "name": "meal-vegetable-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-vegetable-16.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 27,
+          "stableId": "layer:27",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 28,
+              "frame": 0,
+              "imageId": 31,
+              "dataId": 30,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 34,
+          "stableId": "layer:34",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 35,
+              "frame": 0,
+              "imageId": 37,
+              "dataId": 36,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 38,
+          "stableId": "layer:38",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 39,
+              "frame": 0,
+              "imageId": 41,
+              "dataId": 40,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 42,
+          "stableId": "layer:42",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 43,
+              "frame": 0,
+              "imageId": 45,
+              "dataId": 44,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 7,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Create Layer",
+        "nextRedoLabel": ""
+      }
+    },
+    {
+      "id": 6,
+      "objectVersion": 1,
+      "revisionToken": "rev1:8d88a1e19a1941c7",
+      "name": "meal-vegetable-32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/meal-vegetable-32.aseprite",
+      "modified": false,
+      "active": false,
+      "width": 32,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 7,
+          "stableId": "layer:7",
+          "name": "01 共享木碗",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 8,
+              "frame": 0,
+              "imageId": 11,
+              "dataId": 10,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 14,
+          "stableId": "layer:14",
+          "name": "02 食材与汤汁",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 15,
+              "frame": 0,
+              "imageId": 17,
+              "dataId": 16,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 18,
+          "stableId": "layer:18",
+          "name": "03 前沿遮挡与木纹",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 19,
+              "frame": 0,
+              "imageId": 21,
+              "dataId": 20,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 22,
+          "stableId": "layer:22",
+          "name": "04 蒸汽",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 23,
+              "frame": 0,
+              "imageId": 25,
+              "dataId": 24,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 32,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 7,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Create Layer",
+        "nextRedoLabel": ""
+      }
+    }
+  ]
+}

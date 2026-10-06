@@ -1,0 +1,242 @@
+{
+  "asset": "F01-04",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，未接入",
+  "adopted": true,
+  "integrated": false,
+  "nativeSize": [
+    176,
+    182
+  ],
+  "runtimeCandidatePng": 1,
+  "asepriteSource": 1,
+  "sourceLayers": 4,
+  "opaqueColors": 16,
+  "programStateGlyphs": 5,
+  "newStateTextures": 0,
+  "newShaders": 0,
+  "reviewStates": 5,
+  "reviewLanguages": 2,
+  "browserCases": 40,
+  "concept": "built-in imagegen reference only; native pixels drawn separately",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3552,
+      "sha256": "bafc1d01c05303962b94b75c824a07baeb6b013d1d90dac83e615d987d151de7"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 265,
+      "sha256": "ba77995330a412b9af4f309cb40a4ccaf9142c51d213048d2a00f89b018b6df6"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1685,
+      "sha256": "6ad7ecc9f58b889a3abee67ab650d64145d35bcf7185975deb09bad81ffa6a7d"
+    },
+    {
+      "path": "exports/cooking-ui-176x182.png",
+      "bytes": 1640,
+      "sha256": "7ddf060bc06da1df4c9e942ee31763e98b2d0ff755964df24f67bffc052000c3"
+    },
+    {
+      "path": "exports/cooking-ui-layout.json",
+      "bytes": 8320,
+      "sha256": "17127083a9231c3e2097cdd8f36a413e89779866d28e2fe504f69ac9f4f983ce"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2541,
+      "sha256": "694430271cac9875e324ffc410d68aa57bbab7e4378ca487f82fe7cf9f931c9e"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 985,
+      "sha256": "7b6c5ce44bcbbd5733a4977afbe680e45314748ffeaa37d9583110d89547d30c"
+    },
+    {
+      "path": "references/cooking-ui-concept-v01.png",
+      "bytes": 1054337,
+      "sha256": "9bb83fe34656a70ff9378b2049c43e73b0ec9a821c0007e2362d2dc7251a0d9b"
+    },
+    {
+      "path": "references/imagegen-prompt.md",
+      "bytes": 1664,
+      "sha256": "c446fba3312ca823ca01d52e61f1a8bc2e453382d546d8e3762d794a7c08344d"
+    },
+    {
+      "path": "references/local-vanilla-items.json",
+      "bytes": 1871,
+      "sha256": "f995beb0589fd6603f0da60b68c7e97fb0703e213ad52f2b9a813fe1abd801a5"
+    },
+    {
+      "path": "references/meal-cooling-16.png",
+      "bytes": 402,
+      "sha256": "f5fdb08e5f027f273fc36a073d80378f5dd6d21ea01c760cc7767cd2e1ea7e23"
+    },
+    {
+      "path": "references/meal-recovery-16.png",
+      "bytes": 421,
+      "sha256": "57c18feada1b16908c77f7952a6efbcc8b6ef6f473ce253aa761f588ccfc17b0"
+    },
+    {
+      "path": "references/meal-vegetable-16.png",
+      "bytes": 403,
+      "sha256": "5a251e657578a7563e1168e6b945203a1450ff92645abc6b5129487e8c02a225"
+    },
+    {
+      "path": "references/meal-warming-16.png",
+      "bytes": 444,
+      "sha256": "849622c3faf5eca0d66438bf57d9be8368d8744358f770a4f16110f54057fb1a"
+    },
+    {
+      "path": "review/aseprite-starting-document.json",
+      "bytes": 272,
+      "sha256": "a964229d20b977c4e51f0e61db95057627f2cfc68e3d5f590a25d2b8b6db0f51"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 574,
+      "sha256": "a77fa1e3c8825c32f212241e04de27c19a979b6d2637fe8a787788b263aec9bf"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 36757,
+      "sha256": "10a32ac673cffd67512ec02c7351782c4ce4d6d53ecbc1ad96a74a7cb3faac26"
+    },
+    {
+      "path": "review/cooking-ui-review.png",
+      "bytes": 194384,
+      "sha256": "5e08487f3fc81e08182cab71e0ec10b2cdded408ac8bf0cc4bdccf5ab957efd7"
+    },
+    {
+      "path": "review/output-tooltip-en-simulation.png",
+      "bytes": 13408,
+      "sha256": "135345ccb7efcf4924cf8946be66b2b9d371f077875396f444233b794eec6c8e"
+    },
+    {
+      "path": "review/package-verification.json",
+      "bytes": 3556,
+      "sha256": "e14b4eb386f6b575cba475e2fe84fb33e84a340c68d179a0fd030b988b19b6fd"
+    },
+    {
+      "path": "review/paused-heat-simulation.png",
+      "bytes": 8905,
+      "sha256": "4dd678ba64524b8b9e256255b6ba615b3442c9b49c6e58660b662bffbf583de2"
+    },
+    {
+      "path": "review/paused-progress-check.json",
+      "bytes": 98,
+      "sha256": "cc9089310f7cc5e3e88c009ac24d7550c9b88e916790321b491c1493acbd9074"
+    },
+    {
+      "path": "review/preview-server.json",
+      "bytes": 161,
+      "sha256": "ddb5af88303b81a3d84d900001bcf8398891e515415d9cca71a70f1cb078ef4e"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 17197,
+      "sha256": "1329b83942f8cf7b2a4d1d705b778209b31f7f4e4dfba5daf1577800c4b9a05a"
+    },
+    {
+      "path": "review/states/cooking-en-simulation.png",
+      "bytes": 8351,
+      "sha256": "540937868d3bb9e6bc419e4c268fa344e4c2f94e6b112c2fa66465f98de176fb"
+    },
+    {
+      "path": "review/states/cooking-simulation.png",
+      "bytes": 7577,
+      "sha256": "331b3bbafe2f6d3fd36b2ea438bee541493bd10e8600382e19a13b80d926164a"
+    },
+    {
+      "path": "review/states/missing_bowl-en-simulation.png",
+      "bytes": 8829,
+      "sha256": "8b11b94b60469c168b521c40fe6f08c7c84e361ae50d7f2e8c1afb4920cf1466"
+    },
+    {
+      "path": "review/states/missing_bowl-simulation.png",
+      "bytes": 7721,
+      "sha256": "a29294fab414c28178ab054c3f21ef78abafadea893639d692cfaf27be285c6d"
+    },
+    {
+      "path": "review/states/missing_heat-en-simulation.png",
+      "bytes": 9234,
+      "sha256": "0f6bfbbd3b68a95eb1a08693ff7c53c4e3db5ad5ad0b4fbd0eb5b6a2e4492398"
+    },
+    {
+      "path": "review/states/missing_heat-simulation.png",
+      "bytes": 8895,
+      "sha256": "f6eaf17f79ef4896803f9cc9c2d56e94699714222eb3ce1c11b40a29536408cd"
+    },
+    {
+      "path": "review/states/output_waiting-en-simulation.png",
+      "bytes": 8610,
+      "sha256": "fcd566d5b5b5f08b2b8c43f09b2427f903c79be80ced9d4c049495e656007141"
+    },
+    {
+      "path": "review/states/output_waiting-simulation.png",
+      "bytes": 7864,
+      "sha256": "defa6a439a5eed7cf0d6f9e2d0e623402c71f83430fbf0d3268c40a8128fbbc5"
+    },
+    {
+      "path": "review/states/unmatched-en-simulation.png",
+      "bytes": 8653,
+      "sha256": "c29823f5c67d3b83caa1f32bfacaa1b2136550c4040532d4ff86e606ddcc0b7c"
+    },
+    {
+      "path": "review/states/unmatched-simulation.png",
+      "bytes": 7589,
+      "sha256": "4d57c7b88a47b62d87d1e5624cf430376408fddc0d46e155eee578a8e888d49c"
+    },
+    {
+      "path": "source/build-review.py",
+      "bytes": 9456,
+      "sha256": "cd1c4cde207d226d95abb1c243563439a75f7e50c0ea722ad102de24ace036ff"
+    },
+    {
+      "path": "source/cooking-ui-176x182.aseprite",
+      "bytes": 2281,
+      "sha256": "44c388c56437e2f3ad92e3e8ec9a823d22c148f94bb6843c7b329551045fde05"
+    },
+    {
+      "path": "source/cooking-ui.js",
+      "bytes": 2804,
+      "sha256": "2fef1ba7c34394c572def789ed0e31481fa10b8afbcfaea400e6976ff63d1f2c"
+    },
+    {
+      "path": "source/create-ui.py",
+      "bytes": 5331,
+      "sha256": "44feb0bf735191d13fe2439d9858b6c23ca6aa8603fc99d255bdf067dc51b0d8"
+    },
+    {
+      "path": "source/export-layout.cjs",
+      "bytes": 1603,
+      "sha256": "1e0ed6212aa8bc727c2af8819d38c6b3c677dd45b071cb3999017dfb7c682965"
+    },
+    {
+      "path": "source/render-review-board.js",
+      "bytes": 2338,
+      "sha256": "6bd9152c7e486fd6af051cbb25928b2701ab833981e071306553f0d9754f414d"
+    },
+    {
+      "path": "source/ui-pixel-design.json",
+      "bytes": 294120,
+      "sha256": "2896c4a04338c38b5d56692beb6b87796b4b9e2608d94483078d8c03757fcbc5"
+    },
+    {
+      "path": "source/verify-ui.py",
+      "bytes": 2047,
+      "sha256": "c69ea7fbbc503e8b6d158e188a9ab49e086c9c5a229e45a9081afc545712b4cc"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2005,
+      "sha256": "a9a09536d1cdea10c0d0ce21cab0c0e939ba1f648ffdcfb78e478981627b4e2c"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，继续吧"
+}

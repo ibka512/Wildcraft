@@ -1,0 +1,22 @@
+{
+  "asset": "A13-C",
+  "allPassed": true,
+  "scope": "adoption metadata integrity; no new game runtime or audio test",
+  "userEvidence": "采用",
+  "adopted": true,
+  "acceptedProfile": "proposed",
+  "acceptedVolumes": {
+    "enter": 0.22,
+    "exit": 0.28
+  },
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "originalSoundPlansPolicyImagesAndEvidenceUnchanged": 50,
+  "protectedOriginalFilesUnchanged": 30,
+  "historicalArchiveUnchanged": true,
+  "historicalArchiveSha256": "afd9356a7ed8b47a7f7ca7a8a803dbf1ee654aee36285921f34c8a7825492820",
+  "originalManifestSha256": "c7958737eabb21214a6789b0bb0f7ae760ea66a61ccc771a599e8f948b06de3e",
+  "otherQueueRowsAndRegistryEntriesUnchanged": true,
+  "nextBatch": "B6 conditional weather and multiplayer assets",
+  "nextBatchUnstarted": true
+}

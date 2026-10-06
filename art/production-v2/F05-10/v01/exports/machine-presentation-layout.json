@@ -1,0 +1,48 @@
+{
+  "asset": "F05-10",
+  "version": "v01",
+  "status": "user_approved",
+  "integrated": false,
+  "colors": {
+    "ready": "#93E8C0",
+    "blocked": "#DEAB7A",
+    "ghost": "#5DD7B7",
+    "normal": "#E7DEC3",
+    "neutral": "#AEB8AC",
+    "panel": "#223030"
+  },
+  "ghostAlpha": 0.5333333333333333,
+  "ghostDepthTest": true,
+  "ghostDepthWrite": false,
+  "invalidGhostVisible": false,
+  "ghostEnergySource": "actual held BatteryData",
+  "hud": {
+    "anchor": "center, bottom 78 logical px reserved",
+    "marginX": 12,
+    "sourceFont": "Minecraft font at integration; browser approximate",
+    "batteryNativeSize": 16,
+    "capacity": 1000,
+    "lowThresholdExclusive": 100,
+    "maximumWidth": "min(344,guiWidth-24)",
+    "wrap": "measure with actual font; wrap by grapheme",
+    "labelLines": [
+      "state + current machine charge in one row",
+      "selected local node, part, optional actual fuel/cooldown",
+      "actual key/action or blocked reason"
+    ],
+    "noBattery": "— / 1000",
+    "fuelUnit": "world ticks",
+    "fuelCapacity": 80,
+    "springCooldownMaximum": 40,
+    "visibility": "alive, nonspectator, HUD visible, no screen, machine within range",
+    "browserReferenceFontPixels": 12,
+    "integrationFont": "Minecraft native font scale 1; measure actual widths and lineHeight"
+  },
+  "glyphs": "source/status-glyphs.json",
+  "noNewRasterTextures": true,
+  "finalAllPartsReview": "B3 six remaining models after adoption",
+  "authority": "client local position candidate; real install and recover only server result",
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用。开始下一项"
+}

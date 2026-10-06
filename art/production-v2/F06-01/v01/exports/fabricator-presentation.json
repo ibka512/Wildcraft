@@ -1,0 +1,71 @@
+{
+  "asset": "F06-01",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "worldStateNeedsSynchronization": true,
+  "statusPanel": {
+    "from": [
+      7.05,
+      11.5,
+      15.211
+    ],
+    "to": [
+      8.95,
+      13.1,
+      15.211
+    ],
+    "normal": [
+      0,
+      0,
+      1
+    ],
+    "tiles": {
+      "0": [
+        8.0,
+        12.0,
+        10.0,
+        14.0
+      ],
+      "1": [
+        10.0,
+        12.0,
+        12.0,
+        14.0
+      ],
+      "2": [
+        12.0,
+        12.0,
+        14.0,
+        14.0
+      ]
+    },
+    "symbols": [
+      "neutral outline",
+      "double chevron",
+      "check"
+    ],
+    "nonEmissive": true,
+    "source": "art reference only; existing progress/status synchronized to menu, no world snapshot"
+  },
+  "menuMapping": {
+    "0": "idle ready",
+    "1": "idle insufficient",
+    "2": "working",
+    "3": "complete blocked output",
+    "4": "complete actual output present"
+  },
+  "materialsPerBatch": {
+    "copper_ingot": 4,
+    "redstone": 2
+  },
+  "durationLoadedWorldTicks": 100,
+  "randomResultHiddenUntilTransfer": true,
+  "noPowerNetworkInput": true,
+  "noNewInventoryInsertionAPI": true,
+  "noIndependentlyPaintedItemIcons": true,
+  "version": "v01",
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，下一项",
+  "scope": "制造机固定箱体模型、原生64图集、双材料与三态及物品显示参考；世界状态同步和游戏接入待完成"
+}

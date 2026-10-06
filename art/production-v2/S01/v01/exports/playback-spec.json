@@ -1,0 +1,113 @@
+{
+  "asset": "S01",
+  "adopted": true,
+  "integrated": false,
+  "categoryProposal": "BLOCKS for cooking/charger/fabricator; PLAYERS for Fuse/manual install/remove; BLOCKS for machine start/stop",
+  "positionProposal": "authoritative action block centre or entity/player position",
+  "pitch": 1,
+  "pitchVariation": {
+    "install_remove": [
+      0.97,
+      1.03
+    ],
+    "other": [
+      1,
+      1
+    ]
+  },
+  "loop": false,
+  "stream": false,
+  "distanceModel": "linear: max(0,1-distance/maxDistance); reference only, Minecraft attenuation requires later verification",
+  "maxSimultaneousVoices": 6,
+  "maxVoicesPerSource": 1,
+  "maxSameEventVoices": 2,
+  "pendingQueue": false,
+  "priorityOrder": "Fuse/manual interaction > completion > background start/stop",
+  "stealRule": "higher priority may replace lowest priority/oldest voice; otherwise drop new low-priority sound",
+  "distanceAndVolumes": [
+    {
+      "id": "cooking_start",
+      "volume": 0.26,
+      "distanceBlocks": 8,
+      "priority": 2
+    },
+    {
+      "id": "cooking_complete",
+      "volume": 0.3,
+      "distanceBlocks": 10,
+      "priority": 3
+    },
+    {
+      "id": "charger_start",
+      "volume": 0.22,
+      "distanceBlocks": 6,
+      "priority": 2
+    },
+    {
+      "id": "charger_full",
+      "volume": 0.25,
+      "distanceBlocks": 8,
+      "priority": 3
+    },
+    {
+      "id": "mechanic_install",
+      "volume": 0.3,
+      "distanceBlocks": 8,
+      "priority": 4
+    },
+    {
+      "id": "mechanic_remove",
+      "volume": 0.27,
+      "distanceBlocks": 8,
+      "priority": 4
+    },
+    {
+      "id": "mechanic_start",
+      "volume": 0.24,
+      "distanceBlocks": 10,
+      "priority": 2
+    },
+    {
+      "id": "mechanic_stop",
+      "volume": 0.22,
+      "distanceBlocks": 10,
+      "priority": 2
+    },
+    {
+      "id": "fabricator_start",
+      "volume": 0.26,
+      "distanceBlocks": 10,
+      "priority": 2
+    },
+    {
+      "id": "fabricator_complete",
+      "volume": 0.3,
+      "distanceBlocks": 12,
+      "priority": 3
+    },
+    {
+      "id": "fuse_join",
+      "volume": 0.3,
+      "distanceBlocks": 8,
+      "priority": 4
+    },
+    {
+      "id": "fuse_split",
+      "volume": 0.28,
+      "distanceBlocks": 8,
+      "priority": 4
+    }
+  ],
+  "repeatRules": {
+    "operations": "server success UUID/sequence per source, dimension and connection epoch; same key once; bounded TTL 5s/256keys",
+    "mechanical": "stable work onset2 ticks, loss4 ticks, 12ticks cooldown per entity; exclude passive/rocket/spring flags",
+    "charging": "one start per battery insertion/confirmed charging-session; zero-allocation frames do not reset; real full crossing wins over start in same transaction",
+    "cooking": "one start per fresh batch; saved progress/menu status does not create start",
+    "completion": "once per actual output commit",
+    "lifecycle": "stop voices and clear dedup on world disconnect/unload/source removal; ordinary stop never creates loop tail"
+  },
+  "existingFocus": "preserve current forUI volume0.22; comparison only; focus mix pass remains A13-C",
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用"
+}

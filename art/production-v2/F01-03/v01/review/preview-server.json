@@ -1,0 +1,6 @@
+{
+  "url": "http://127.0.0.1:8803/preview.html",
+  "kind": "本机临时审稿预览",
+  "permanentFile": "preview.html",
+  "productionDeployment": false
+}

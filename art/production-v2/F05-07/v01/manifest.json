@@ -1,0 +1,347 @@
+{
+  "asset": "F05-07",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，车轮模型/图标/转动/六向与接地参考齐全，未接入",
+  "adopted": true,
+  "integrated": false,
+  "sourceAssets": [
+    "F05-01 shared64 atlas",
+    "F05-03 shared node contract"
+  ],
+  "productionMeshes": 67,
+  "fixedMeshes": 9,
+  "rotatingMeshes": 58,
+  "treadSegments": 16,
+  "outerRadius": 4,
+  "pivot": [
+    0,
+    0,
+    4
+  ],
+  "rateRadiansPerWorldTick": 0.4,
+  "reverseInputDoesNotReverseVisual": true,
+  "nativeIconSizes": [
+    32,
+    16
+  ],
+  "nativeIcons": 2,
+  "nativeIconsIndependentlyAuthored": true,
+  "productionAtlasSize": [
+    64,
+    64
+  ],
+  "newProductionTexturePixels": 0,
+  "newAsepriteSources": 2,
+  "reusedAsepriteSources": 1,
+  "actualRenderViews": 12,
+  "blenderRotationCases": 90,
+  "browserUiCases": 42,
+  "nominalSideGroundGapBlock": 0.075,
+  "conceptUse": "reference only; exact prompt archived",
+  "nextAfterAdoption": "F05-08 稳定器",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2965,
+      "sha256": "67225b2461ebca4ea6db22c2dd7db41322bb005dfd807284ae408878635be116"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 306,
+      "sha256": "4810695c20afc41de0a689fbfc7019f99e63b12cf5d18cbce524bed68a2b5816"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1633,
+      "sha256": "9f81da933d8c9fca2080213af230033a4dbd6be404d70524669d077ac24e0594"
+    },
+    {
+      "path": "exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "exports/wheel-geometry.json",
+      "bytes": 257626,
+      "sha256": "d59023c5038a5255aef1545d8890e4592ae9f2906a7cc9809767251778446a94"
+    },
+    {
+      "path": "exports/wheel-item-16.png",
+      "bytes": 445,
+      "sha256": "cc7b1721f658ae5ddd31c31a1a5748a86bf96d013d19abcd8581483f096c9429"
+    },
+    {
+      "path": "exports/wheel-item-32.png",
+      "bytes": 859,
+      "sha256": "13a7841e2fe8e4fa5d8b0e4175fbbd3eb29e637533989152f84b363891052f2b"
+    },
+    {
+      "path": "exports/wheel-motion.json",
+      "bytes": 743,
+      "sha256": "1eff17f36c7c6329357e854bc57d3246ea5a23971f677f37a01b09f97b6aaa31"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 3236,
+      "sha256": "692e95f1b7b53e51d0c0651746b71dee1d68110929d2c1ec6d7ed74deb8c6ca9"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 814,
+      "sha256": "e4e309837f951dcdbcae6836f9535ea35bef8a0af1af7a0e7434eba60775500e"
+    },
+    {
+      "path": "references/fan-preview.js",
+      "bytes": 5434,
+      "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2"
+    },
+    {
+      "path": "references/imagegen-prompt.txt",
+      "bytes": 1321,
+      "sha256": "16da8e670cd23b8bc7d386ae5fe84a65fbaa17359fb973b1678d2919bdabcfce"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1525,
+      "sha256": "96bb5c0d31583793cde7a68a74ee500f3ebceb25e75262d2918edef1b2b0d0ca"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "references/wheel-concept.png",
+      "bytes": 1706293,
+      "sha256": "0db0e9e5964e239a38a76b807c734ff42d098a5fe7fc881bdaccfecdb9963363"
+    },
+    {
+      "path": "references/wheel.json",
+      "bytes": 262,
+      "sha256": "017dde1bedbe9604a02cef7226c87cede3e358b7327f85ba26648c3c48e0cc49"
+    },
+    {
+      "path": "review/aseprite-start.json",
+      "bytes": 274,
+      "sha256": "0cbbcb387af2a9c6eb6fb3499dde4fb2e9cd5ff2dd1cedfda433efba365bfb5c"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 1087,
+      "sha256": "f5158bc1438f041b744ca08f1a22900a938ac991a497ff6b50b6cf86c3bac77a"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 15942,
+      "sha256": "62727e57eca44e90d36eb57c962cf2658afbc6dcbddcfb35094825c56bfc49ee"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 11960,
+      "sha256": "518c68460735a9f799aecf5db8a97545ce1f12d00d41e41e49bc8189b9966ee2"
+    },
+    {
+      "path": "review/contract-checks.json",
+      "bytes": 313,
+      "sha256": "35885db876aea9c3d088f35ff899def911d115edf91695128e5184fd4d4641d6"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 468,
+      "sha256": "1abf1afed2fb312ec1fdb323521d25876d42678473cf6f8f1b8276da89d771a6"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 11401255,
+      "sha256": "84c4a506e747acc75ff4cd8c6c2ab1626a849f20310301ab1d7c29bd25b75c93"
+    },
+    {
+      "path": "review/wheel-back.png",
+      "bytes": 688252,
+      "sha256": "86cdc27cd1d8c90652e009fe010093404244a06358cbe299a865e7f90e75bfb9"
+    },
+    {
+      "path": "review/wheel-front.png",
+      "bytes": 653660,
+      "sha256": "2c807d2816567c937bc6443af0934ce793d7b5346744d63e69ee3a504e3b85b0"
+    },
+    {
+      "path": "review/wheel-idle-three-quarter.png",
+      "bytes": 735681,
+      "sha256": "c27e57914c3c6dbb69d2df2579a45f1ec2538b91481aaa2a8b19277f8f7d6469"
+    },
+    {
+      "path": "review/wheel-live-review.png",
+      "bytes": 61103,
+      "sha256": "a58f31c94a50a14e5a1e61322ad5c5ac306f84bf223f21977cf535ab30ff0b97"
+    },
+    {
+      "path": "review/wheel-mounted-0.png",
+      "bytes": 773623,
+      "sha256": "0dff0a378550f8d1436fe3a09b762b161267e475e7cafb26f97ec792ed76c2dc"
+    },
+    {
+      "path": "review/wheel-mounted-1.png",
+      "bytes": 627695,
+      "sha256": "1255a608d9904732d066050ff16622f9a556f0ab193b13170ddaef8f43556e66"
+    },
+    {
+      "path": "review/wheel-mounted-2.png",
+      "bytes": 733012,
+      "sha256": "e03e1b5664f534c2419b4da19de5dbbfcda91e58cadc2ef2c5c2b5c6ca6f2d7d"
+    },
+    {
+      "path": "review/wheel-mounted-3.png",
+      "bytes": 776011,
+      "sha256": "85c57756ab759da21a79087664e51b44dadb9babc25d633b5dafaa385a35e7c9"
+    },
+    {
+      "path": "review/wheel-mounted-4.png",
+      "bytes": 770000,
+      "sha256": "299c51c463b2d2807a17807e68c51ee687885a2e7cb124f4e4264bac570b9c6a"
+    },
+    {
+      "path": "review/wheel-mounted-5.png",
+      "bytes": 772425,
+      "sha256": "f0a15597d84364346e664b0b962ee653e45a5ec23a80f27143c03759d828169a"
+    },
+    {
+      "path": "review/wheel-review.png",
+      "bytes": 1618932,
+      "sha256": "c9c5c234b174cc2b74940335d3a06d93108a9b066c626bc9947ab78dfcd946cd"
+    },
+    {
+      "path": "review/wheel-running-phase.png",
+      "bytes": 744875,
+      "sha256": "83ba31dc46148ac8514c6f177f44c284eb004b513f03c23505b15ac93cf4cae7"
+    },
+    {
+      "path": "review/wheel-side-ground-reference.png",
+      "bytes": 638922,
+      "sha256": "dbf21b68d08b2ceb29df15b678300e55a3e1a1066baea019266501bab973448c"
+    },
+    {
+      "path": "review/wheel-side.png",
+      "bytes": 526882,
+      "sha256": "128df2b40f63636440561a9023086ef5a01c8ae50ba90c0b1d3e1c63219f61b7"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 6420,
+      "sha256": "22800b2514238df0fb3886053dabf056e8adad64b40bf1d33cdddf122d5168e8"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 10707,
+      "sha256": "039b73a05b26e428a093a6cf4e04fabc0aa670e720149e1a991910abf463e043"
+    },
+    {
+      "path": "source/create-pixels.py",
+      "bytes": 6298,
+      "sha256": "4d911599f7184d3fa427290953cd8818b7e869239841e6f101b473199b4b0d22"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 257626,
+      "sha256": "d59023c5038a5255aef1545d8890e4592ae9f2906a7cc9809767251778446a94"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 41538,
+      "sha256": "a769846fd28dd1168b8c768dcef8e282dc97501e0c208ebe7fea1ee7e79687f2"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 6340,
+      "sha256": "f96dd332f90c46505b83c5962ddeda8cdbabc33c0cf344ffebc35551f412b9f8"
+    },
+    {
+      "path": "source/review-snapshots.json",
+      "bytes": 850,
+      "sha256": "ed3d5cc5437b8c3e8fea61b0894329d978cd1f58cd62914555ed0f6654bb11d4"
+    },
+    {
+      "path": "source/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 4048,
+      "sha256": "426f9188530f26a963bfcefd3e33f8d1bbb8dc3eca126c6ac1c83f98326d4acc"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 3202,
+      "sha256": "1626c309edb5d0b372efa29d14160f4c30ae12542d152f7e6b964ef4bbf9f43d"
+    },
+    {
+      "path": "source/verify-contract.mjs",
+      "bytes": 1915,
+      "sha256": "f5e9d7cf67e008edd60f49fe68384923f4b91ba1a5736042658a97c20ed2d05c"
+    },
+    {
+      "path": "source/wheel-item-16.aseprite",
+      "bytes": 744,
+      "sha256": "cef20219d962d2abc07795d45fa957e898f957f5d905df9225633e48247ec42c"
+    },
+    {
+      "path": "source/wheel-item-32.aseprite",
+      "bytes": 983,
+      "sha256": "7bb5e06c3273235e3b6a84780714bd61bc4bf3dc176a0aba08ae0508997b4e71"
+    },
+    {
+      "path": "source/wheel-preview.js",
+      "bytes": 6312,
+      "sha256": "84c852987aeb875c0aecfc456c61c34f84b81c05c23cc0e26db1f9593e75f018"
+    },
+    {
+      "path": "source/wheel-v01.bbmodel",
+      "bytes": 269492,
+      "sha256": "eda23104e84765aff40594b65a16ea6dc7b286a807b5c3a6c995af98a9dd03b1"
+    },
+    {
+      "path": "source/wheel-v01.blend",
+      "bytes": 168101,
+      "sha256": "06c4a733ced4a5cf907003033e120cc638490a9bdd7c02991dda34db2b42c142"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1888,
+      "sha256": "e604edadcf0a71344eb64b7a0316b688971550b76b9375f169527dad5f2885dd"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

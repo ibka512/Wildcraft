@@ -1,0 +1,1088 @@
+{
+  "date": "2026-10-04",
+  "scope": "核对清单与当前项目；不制作/接入新美术，不运行新游戏验收",
+  "project": "/Volumes/仕事/Wildcraft/开发环境/project",
+  "commit": "a15536a318fcddc2e762b2fccd4c5b353998e2fa",
+  "branch": "feature/fuse",
+  "baselineJar": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar",
+  "baselineJarSha256": "c81ce6d7a960d67c3cd2125a2c426a62216e3b5f784c8e2b99d8afc6792a91ac",
+  "inputSha256": {
+    "/Volumes/仕事/Wildcraft/开发环境/project/art/production-docs/PENDING-ART-ASSETS-2026-10-04.md": "ae42ec5e42fda8cbf6a0e8ae0b5ef17abfde4fe3f2fc6d01a9b3dc08a5e8e456",
+    "/Volumes/仕事/Wildcraft/开发环境/project/art/production-docs/PENDING-ART-ASSETS-2026-10-04.csv": "b7d5e6ce5414114d8726f7f693f5876c439c7ae1852b2aafcf72d85c8cb60194",
+    "/Volumes/仕事/Wildcraft/开发环境/project/art/README.md": "06432450cc06ed6fde5a5ae2d45b09827ec3776e6ca13c0267bb8d41e574d00b",
+    "/Volumes/仕事/Wildcraft/开发环境/project/art/production-docs/README.md": "186ed1d7d753f5b2eb7593f60832c93f8e56d07e7aa9a3ca43fa8a9ffb5b1d01"
+  },
+  "preExistingWorktreeChanges": [
+    " M art/README.md",
+    " M art/production-docs/README.md",
+    "?? art/production-docs/PENDING-ART-ASSETS-2026-10-04.csv",
+    "?? art/production-docs/PENDING-ART-ASSETS-2026-10-04.md"
+  ],
+  "taskCount": 32,
+  "priorities": {
+    "P0": 22,
+    "P1": 7,
+    "P2": 3
+  },
+  "auditResults": {
+    "一致": 29,
+    "需澄清状态": 2,
+    "需补制作坐标": 1
+  },
+  "explicitSourceReferences": [
+    {
+      "task": "F01-01",
+      "path": "art/cooking-v1",
+      "exists": true
+    },
+    {
+      "task": "F01-01",
+      "path": "src/main/resources/assets/wildcraft/models/block/cooking_pot.json",
+      "exists": true
+    },
+    {
+      "task": "F01-02",
+      "path": "art/cooking-v1/meal.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F01-02",
+      "path": "src/main/generated/assets/wildcraft/items/meal.json",
+      "exists": true
+    },
+    {
+      "task": "F01-03",
+      "path": "src/client/java/dev/wildcraft/client/cooking/MealHud.java",
+      "exists": true
+    },
+    {
+      "task": "F01-04",
+      "path": "src/client/java/dev/wildcraft/client/cooking/CookingScreen.java",
+      "exists": true
+    },
+    {
+      "task": "F02-01",
+      "path": "src/client/java/dev/wildcraft/client/temperature/TemperatureHud.java",
+      "exists": true
+    },
+    {
+      "task": "F04-01",
+      "path": "art/energy-v1",
+      "exists": true
+    },
+    {
+      "task": "F04-01",
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "exists": true
+    },
+    {
+      "task": "F04-02",
+      "path": "src/client/java/dev/wildcraft/client/energy/ChargerScreen.java",
+      "exists": true
+    },
+    {
+      "task": "F04-03",
+      "path": "art/energy-v1/charger.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F04-03",
+      "path": "src/main/generated/assets/wildcraft/models/block/charger.json",
+      "exists": true
+    },
+    {
+      "task": "F04-04",
+      "path": "src/client/java/dev/wildcraft/client/energy/ChargerScreen.java",
+      "exists": true
+    },
+    {
+      "task": "F05-01",
+      "path": "art/mechanics-v1",
+      "exists": true
+    },
+    {
+      "task": "F05-01",
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineNodes.java",
+      "exists": true
+    },
+    {
+      "task": "F05-02",
+      "path": "art/mechanics-v1/wing.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-03",
+      "path": "art/mechanics-v1/fan.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-04",
+      "path": "art/mechanics-v1/rocket.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-04",
+      "path": "art/mechanics-v1/spent_rocket.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-05",
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "exists": true
+    },
+    {
+      "task": "F05-06",
+      "path": "art/mechanics-v1/spring.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-07",
+      "path": "art/mechanics-v1/wheel.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-08",
+      "path": "art/mechanics-v1/stabilizer.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-09",
+      "path": "art/mechanics-v1/buoyancy.pixels.json",
+      "exists": true
+    },
+    {
+      "task": "F05-10",
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
+      "exists": true
+    },
+    {
+      "task": "F06-01",
+      "path": "art/fabrication-v1",
+      "exists": true
+    },
+    {
+      "task": "F06-01",
+      "path": "src/main/generated/assets/wildcraft/models/block/fabricator.json",
+      "exists": true
+    },
+    {
+      "task": "F06-02",
+      "path": "src/client/java/dev/wildcraft/client/fabrication/FabricatorScreen.java",
+      "exists": true
+    },
+    {
+      "task": "F03-01",
+      "path": "art/fuse-v1",
+      "exists": true
+    },
+    {
+      "task": "F03-01",
+      "path": "src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java",
+      "exists": true
+    },
+    {
+      "task": "F03-02",
+      "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+      "exists": true
+    },
+    {
+      "task": "F03-03",
+      "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+      "exists": true
+    },
+    {
+      "task": "F03-04",
+      "path": "src/main/java/dev/wildcraft/fuse/FusionCombat.java",
+      "exists": true
+    },
+    {
+      "task": "F03-04",
+      "path": "art/fuse-v1",
+      "exists": true
+    },
+    {
+      "task": "S01",
+      "path": "src/main/resources/assets/wildcraft/sounds.json",
+      "exists": true
+    },
+    {
+      "task": "A09-C",
+      "path": "docs/AI-HANDOFF.md",
+      "exists": true
+    },
+    {
+      "task": "A09-C",
+      "path": "src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
+      "exists": true
+    },
+    {
+      "task": "A07-A08-C",
+      "path": "art/approved-v1",
+      "exists": true
+    },
+    {
+      "task": "A07-A08-C",
+      "path": "docs/CORE-ART-INTEGRATION.md",
+      "exists": true
+    },
+    {
+      "task": "A13-C",
+      "path": "art/approved-v1",
+      "exists": true
+    },
+    {
+      "task": "A13-C",
+      "path": "docs/CORE-ART-VERIFICATION.md",
+      "exists": true
+    },
+    {
+      "task": "F07-01",
+      "path": "docs/ROADMAP.md",
+      "exists": true
+    },
+    {
+      "task": "F07-01",
+      "path": "docs/NEXT-DEVELOPMENT-PLAN.md",
+      "exists": true
+    },
+    {
+      "task": "F07-02",
+      "path": "docs/ROADMAP.md",
+      "exists": true
+    },
+    {
+      "task": "R2-V",
+      "path": "docs/R2-PREPARATION.md",
+      "exists": true
+    },
+    {
+      "task": "R2-V",
+      "path": "docs/R2-CHECKPOINT.md",
+      "exists": true
+    }
+  ],
+  "markdownLinkCount": 23,
+  "missingMarkdownLinks": [],
+  "coreSourceFilesVerified": 55,
+  "coreSourceHashErrors": [],
+  "reusedApprovedFilesVerified": [
+    {
+      "asset": "warming_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-32.png",
+      "sha256": "c8a47e2b364d08dbc436dd2b15cc2258c4796f91f7fa1244706fc8e0f79ff494"
+    },
+    {
+      "asset": "warming_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-32.aseprite",
+      "sha256": "7d75b02d772e29abae051c9d27764c7d755c2148fc5c7965b25bc20e531ab868"
+    },
+    {
+      "asset": "warming_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-16.png",
+      "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e"
+    },
+    {
+      "asset": "warming_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-16.aseprite",
+      "sha256": "91344bd660a3c31fa2a4a0d8eaedb4844152fc45b8571a5b80d19cea136894d0"
+    },
+    {
+      "asset": "cooling_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-32.png",
+      "sha256": "cbf5139c1d358e260264adcd320629e6ae4f31b132489c6bf008c89b71980873"
+    },
+    {
+      "asset": "cooling_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-32.aseprite",
+      "sha256": "88da409e5818e904b4e6983201dea9d2b00184312ac4e2c8bc7a4454d2ada50b"
+    },
+    {
+      "asset": "cooling_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-16.png",
+      "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a"
+    },
+    {
+      "asset": "cooling_meal_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-16.aseprite",
+      "sha256": "b24b439f917c3c434bfcef2bdf8c7b8fa9570065c10fc74bfd42a17695885342"
+    },
+    {
+      "asset": "stamina_recovery_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-32.png",
+      "sha256": "fdd99efbb786fe60384aecea902c784aa155ef09dc455c516e64e4eaffef41dc"
+    },
+    {
+      "asset": "stamina_recovery_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-32.aseprite",
+      "sha256": "e6312f52471a4025459b55b04863f9252514185fa7f024da735e26237f931f36"
+    },
+    {
+      "asset": "stamina_recovery_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-16.png",
+      "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93"
+    },
+    {
+      "asset": "stamina_recovery_effect",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-16.aseprite",
+      "sha256": "b2e6e675d29891a85b5d233d2a48086176ffdeb89a89a2cc83f2a3617c97bd3f"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-full-32.png",
+      "sha256": "fee8d98b8bae980f68e955c0135653470999c021b4b774965d6267a4c3af75d6"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-full-32.aseprite",
+      "sha256": "13feb85856128a23f5372d669c7ca37e9596535ab5364ede8799c1b119f2ef7f"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-32.png",
+      "sha256": "0a4cecad045e8bfb06086e91e46c94512e57333667f611e754e3695d246b3759"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-32.aseprite",
+      "sha256": "486cf7867897100a0fd893667f67e640f6c981d5b702337f2db21b3109a76dd6"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-full-16.png",
+      "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-full-16.aseprite",
+      "sha256": "22aac33efafbeff685222ab3d25d256ea1b04f7fcbebb9df9fb42ecb68cc9869"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-16.png",
+      "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7"
+    },
+    {
+      "asset": "battery_status_symbol",
+      "path": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/battery-status-icon-v1/deliverable/battery-empty-16.aseprite",
+      "sha256": "d91c3b2a40d96f767a3c2cc39c6f3f8b79b23450b43b386f88e57772eb6f396c"
+    }
+  ],
+  "draftStatuses": {
+    "ambient_temperature_symbol": "draft_pending_review",
+    "fuse_status_symbol": "draft_pending_review"
+  },
+  "runtimePng": [
+    {
+      "file": "src/main/resources/assets/wildcraft/icon.png",
+      "size": [
+        128,
+        128
+      ],
+      "sha256": "45545136b98319f187b3a9036e1ca3077884a1d63d718d580d8562f7f1342984"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/block/charger.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "c5a584c8b4ce8f4aa3b1232a19ae32f16b0d268746b66f0a4f4b80b146406401"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/block/cooking_pot.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "b1b0a8bb94a9bd05fee1eb1fc536c85975a64a3d20a35874eb675ae79227de59"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/block/fabricator.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "03e73d279f586e4246a460b9fd18dfb670641e0c5ab041c728df75443786a9cc"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/entity/machine.png",
+      "size": [
+        8,
+        8
+      ],
+      "sha256": "ea2e756cfae73ae84195aab2e1de0c1dff8d5f517fd7e42c9a9ae610c0a14d70"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/entity/paraglider.png",
+      "size": [
+        128,
+        64
+      ],
+      "sha256": "db7425988c24047f07fba15f0601b9a591940639c616d50add7c7938a2a10da6"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/gui/sprites/container/slot/paraglider.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "5a1b7a6527a2fb4586e49282dab762b8c9bae3580d559f4803ef4c5cf2addfcf"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/gui/stamina-hud-atlas.png",
+      "size": [
+        112,
+        32
+      ],
+      "sha256": "50713b9af2f997ff68b135b67fe3176e7128182fcd02dcefc28565822499b8c3"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/battery.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "7d0c62ba8f16358f75dd9ceb573e84b3b78e576e100afa9f7e8f38dc8534a228"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/buoyancy.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "f0c3f8c8d699d3bb56354aedaa3dfa42155a94190891f6364e414ca666f026db"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/fan.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "0dfa62f66b43354ffd5ab4edc8e00235e521f8accc85aefc372227c590f7aced"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/machine_body.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "bd1df9031fce47e6abdd08f6eed7f77d5ddcdc2ae877e0c0ab514b9ab79ecea3"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/meal.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "eaadc7c7068e5687257c3dfb5088cccff61c1d349a68dbdc0b77b673946dc3c8"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/paraglider.png",
+      "size": [
+        32,
+        32
+      ],
+      "sha256": "4c18ed2b21b5171ef0e4c83441bd607d0e1b11b33c1202fdff23d2bb67794ddc"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/rocket.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "17ffba995e8c9ed309288962c0a5836d741c51b7cc9f1359f2c8b5a863dc45a9"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/spent_rocket.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "ea62c638649294cbb7d4e15f6359cef8cd830cc46a7ff4cebb40ebcf3aef80b6"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/spring.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "e5b5fb94dccc664987c87f62052c8d43cf0456bae167c854aa3940248cace9f9"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/stabilizer.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "43217b328f02d28bb8679a545b32cad20ca523e995ec3b3c3942103c2371a301"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/test_core.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "f942bf2cab9c2f3837eb13fb37c6383edb7134e24244ae612806e9aa8c9ee783"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/wheel.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "762c9a708f6b41d1e2a93c7bedc7de43cb4d6d2c6c9bec1252f030a3cc7d4f5a"
+    },
+    {
+      "file": "src/main/resources/assets/wildcraft/textures/item/wing.png",
+      "size": [
+        16,
+        16
+      ],
+      "sha256": "6fb9076395c3f89f8b4d00ec0952ebd5951ac88d8a5af1a7ef6e9eafddb61b1c"
+    }
+  ],
+  "jarPngCount": 21,
+  "jarOggCount": 2,
+  "jarSourceMismatches": [],
+  "historicalXmlReports": [
+    {
+      "stage": "核心",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/core-art-v1/gametest-results.xml",
+      "testcases": 28,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    {
+      "stage": "P4B",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p4b/gametest-results.xml",
+      "testcases": 37,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    {
+      "stage": "P5",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p5/gametest-results.xml",
+      "testcases": 40,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    {
+      "stage": "P7",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p7/gametest-results.xml",
+      "testcases": 56,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    {
+      "stage": "P8",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p8/server-tests.xml",
+      "testcases": 60,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    {
+      "stage": "P9",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p9/server-tests.xml",
+      "testcases": 71,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    {
+      "stage": "P9.1",
+      "path": "/Volumes/仕事/Wildcraft/开发环境/project/development-assets/verification/p91/server-tests.xml",
+      "testcases": 72,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    }
+  ],
+  "newRuntimeTestsExecuted": false,
+  "tasks": [
+    {
+      "编号": "F01-01",
+      "系统": "料理",
+      "任务": "料理锅正式模型与纹理",
+      "优先级": "P0",
+      "当前状态": "可编辑功能原型已接入",
+      "待交付内容": "1个锅体模型；1套UV/纹理；静止/烹饪表现稿",
+      "已有可复用资产": "已有七盒模型和16×16锅体贴图",
+      "约束与前置": "锅碰撞为16单位中的12×10×12；热源来自锅下原版营火/火焰",
+      "源码或资料定位": "art/cooking-v1；src/main/resources/assets/wildcraft/models/block/cooking_pot.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/cooking/CookingPotBlock.java:17",
+      "核对事实": "当前锅为7方盒+16纹理，碰撞12×10×12；菜单和热源可用。",
+      "制作或接入澄清": "锅口/把手可改美术，不暗改碰撞；火源继续复用原版。"
+    },
+    {
+      "编号": "F01-02",
+      "系统": "料理",
+      "任务": "四类料理物品外观",
+      "优先级": "P0",
+      "当前状态": "目前四类共用一张原型图",
+      "待交付内容": "普通蔬菜/保暖/耐热/精力共4种基础外观；32/16原生适配",
+      "已有可复用资产": "现meal.png；保暖和清凉已采用稿可作造型参考",
+      "约束与前置": "七条配方按4个kind归类；I/II优先文字标识；模型分流需后续接入",
+      "源码或资料定位": "art/cooking-v1/meal.pixels.json；src/main/generated/assets/wildcraft/items/meal.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/cooking/CookingRecipes.java:14",
+      "核对事实": "7配方对应kind0–3四类结果；当前meal资源没有按kind分流。",
+      "制作或接入澄清": "四类图足够；I/II用等级，不多画七份。分流修改数据生成/物品模型入口。"
+    },
+    {
+      "编号": "F01-03",
+      "系统": "料理",
+      "任务": "三类效果图标接入及HUD排布",
+      "优先级": "P0",
+      "当前状态": "已采用图标源稿在本机；未接入",
+      "待交付内容": "保暖/耐热/恢复3图标复用；1套等级与倒计时布局",
+      "已有可复用资产": "warmth-meal-effect-v3；cooling-meal-effect-v2；stamina-recovery-effect-v2，各32/16",
+      "约束与前置": "效果图标与具体菜品图区分；温度下方；三类并存和中英文缩放",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/cooking/MealHud.java；本机补充采用成果",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/cooking/MealHud.java:17",
+      "核对事实": "HUD当前纯文字，三种效果并存；迁移包中6PNG+6Aseprite已采用且原哈希匹配。",
+      "制作或接入澄清": "已有图标复用；倒计时和等级保持字体；三行/缩放/红心避让需接入。"
+    },
+    {
+      "编号": "F01-04",
+      "系统": "料理",
+      "任务": "料理锅界面",
+      "优先级": "P0",
+      "当前状态": "代码绘制功能原型",
+      "待交付内容": "1套176×182逻辑尺寸布局；5种状态稿",
+      "已有可复用资产": "原版字体/槽框/空碗；现CookingScreen",
+      "约束与前置": "3食材+1空碗+1成品；匹配食材/缺热源/烹饪/缺碗/待取出",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/cooking/CookingScreen.java",
+      "核对结果": "需澄清状态",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/cooking/CookingPotEntity.java:50",
+      "核对事实": "现有0–4五状态，与176×182/三食材+空碗+成品布局相符。",
+      "制作或接入澄清": "“匹配食材”宜写“缺食材/未匹配配方”；这是status0提示，不是独立的已就绪状态。"
+    },
+    {
+      "编号": "F02-01",
+      "系统": "温度",
+      "任务": "七档温度HUD及图标",
+      "优先级": "P0",
+      "当前状态": "7档代码指示已接入；图标v2待审",
+      "待交付内容": "1个温度组件；7档状态稿；32/16图标审核和接入",
+      "已有可复用资产": "ambient-temperature-icon-v2，上暖下冷；现七格+文字",
+      "约束与前置": "心/精力下方；非摄氏度；普通冷热不新增惩罚；专注优先",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/temperature/TemperatureHud.java；本机待审稿",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/temperature/TemperatureHud.java:64",
+      "核对事实": "7格+文字；仅左右最外4 GUI像素色调，最大14/255；专注时暂停色调。温度v2仍待审。",
+      "制作或接入澄清": "沿用非摄氏度语义、普通冷热无惩罚；上暖下冷图标先审稿。"
+    },
+    {
+      "编号": "F04-01",
+      "系统": "能源",
+      "任务": "有限电池正式外观",
+      "优先级": "P0",
+      "当前状态": "16×16物品图及安装态几何为原型",
+      "待交付内容": "1种电池设计；物品图；安装态模型/UV/电量窗口",
+      "已有可复用资产": "art/energy-v1/battery.pixels.json；安装态现动态电量",
+      "约束与前置": "容量1000由程序驱动；空/部分/满；与F05-05为同一资产",
+      "源码或资料定位": "art/energy-v1；src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:46",
+      "核对事实": "物品16原型和程序方盒安装态已存在；电量窗口按余量动态变化。",
+      "制作或接入澄清": "同一电池设计跨物品、机械与充电器；F05-05不重复计新模型。"
+    },
+    {
+      "编号": "F04-02",
+      "系统": "能源",
+      "任务": "已采用电量图标接入",
+      "优先级": "P0",
+      "当前状态": "满/空图标已采用；尚未接入现界面",
+      "待交付内容": "复用满/空×32/16共4张PNG及源稿；填充遮罩规格",
+      "已有可复用资产": "battery-status-icon-v1，三格红石能量",
+      "约束与前置": "部分电量程序填充；保留真实数值，不按百分比逐张制作",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/energy/ChargerScreen.java；本机补充采用成果",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/energy/ChargerScreen.java:16",
+      "核对事实": "现充电条程序填充；采用的满/空×32/16共4PNG+4Aseprite未进入运行资源。",
+      "制作或接入澄清": "统一三格/填充区域说明，保留真实数值；无需逐百分比画图。"
+    },
+    {
+      "编号": "F04-03",
+      "系统": "能源",
+      "任务": "充电器正式模型与纹理",
+      "优先级": "P0",
+      "当前状态": "原版立方体+原创16×16原型贴图",
+      "待交付内容": "1个方块模型及UV/纹理；电池接口/工作灯状态",
+      "已有可复用资产": "现charger.png和cube_all模型",
+      "约束与前置": "现方块格内尺度；无电池/无源/充电/满电/等待供电状态",
+      "源码或资料定位": "art/energy-v1/charger.pixels.json；src/main/generated/assets/wildcraft/models/block/charger.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/models/block/charger.json:2",
+      "核对事实": "充电器仍为cube_all+16原创原型纹理，没有已制作的正式模型。",
+      "制作或接入澄清": "更新数据生成入口，工作灯/接口状态需要配套接入，不能仅换贴图。"
+    },
+    {
+      "编号": "F04-04",
+      "系统": "能源",
+      "任务": "充电器界面",
+      "优先级": "P0",
+      "当前状态": "代码绘制功能原型",
+      "待交付内容": "1套176×166逻辑尺寸布局；5种状态稿",
+      "已有可复用资产": "原版槽框/字体；已采用电量图标",
+      "约束与前置": "只有1真实电池槽；余量/容量/共享供电提示；不增能源网络UI",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/energy/ChargerScreen.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/energy/ChargerEntity.java:38",
+      "核对事实": "单真实槽；0无电池/1无固定源/2充电/3满/4等共享供电五状态。",
+      "制作或接入澄清": "176×166沿用原版默认容器布局；本轮未启动GUI重测。"
+    },
+    {
+      "编号": "F05-01",
+      "系统": "机械",
+      "任务": "主体/六节点/控制板正式外观",
+      "优先级": "P0",
+      "当前状态": "彩色方盒几何+8×8白材质原型",
+      "待交付内容": "1个主体模型；1个物品图；共用节点接口；控制板",
+      "已有可复用资产": "machine_body.png；MachineRenderer；MachineNodes",
+      "约束与前置": "主体1.4×0.65方块，六固定节点；不改变碰撞/交互位置",
+      "源码或资料定位": "art/mechanics-v1；src/main/java/dev/wildcraft/mechanics/MachineNodes.java",
+      "核对结果": "需补制作坐标",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/mechanics/MachineNodes.java:22",
+      "核对事实": "1.4×0.65主体、6固定节点及顶部可操作区存在；控制板视觉范围比点击区大。",
+      "制作或接入澄清": "须给设计稿标注panel命中边界和六节点坐标，不直接把整块可见板当可点击范围。"
+    },
+    {
+      "编号": "F05-02",
+      "系统": "机械",
+      "任务": "翼",
+      "优先级": "P0",
+      "当前状态": "图标和安装态原型已接入",
+      "待交付内容": "1模型；1物品图；布/木材质；安装朝向说明",
+      "已有可复用资产": "wing.pixels.json；现被动翼几何",
+      "约束与前置": "翼为被动部件；不添加风力发电或复杂布料物理",
+      "源码或资料定位": "art/mechanics-v1/wing.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:50",
+      "核对事实": "翼图标和安装几何已存在，合同为不耗电被动滑翔面。",
+      "制作或接入澄清": "同造型的物品/安装稿；无风力发电或复杂布料。"
+    },
+    {
+      "编号": "F05-03",
+      "系统": "机械",
+      "任务": "风扇",
+      "优先级": "P0",
+      "当前状态": "图标/几何/工作转动已接入",
+      "待交付内容": "1模型；1物品图；轮毂/叶片分组；停/转参数",
+      "已有可复用资产": "fan.pixels.json；现风叶工作转动",
+      "约束与前置": "说明轴心、转向、推力/排风方向；电量不足停转",
+      "源码或资料定位": "art/mechanics-v1/fan.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:71",
+      "核对事实": "风扇原型已按实际active工作位转叶，预览静止。",
+      "制作或接入澄清": "正式模型需活动组、轴心/方向，停转不能只靠贴图。"
+    },
+    {
+      "编号": "F05-04",
+      "系统": "机械",
+      "任务": "火箭及空壳",
+      "优先级": "P0",
+      "当前状态": "图标/几何/外向尾焰/耗尽物品已接入",
+      "待交付内容": "1模型及工作/耗尽变体；完整/空壳2物品图；尾焰表现",
+      "已有可复用资产": "rocket.pixels.json；spent_rocket.pixels.json",
+      "约束与前置": "一次有限燃料；喷口方向与节点一致；不重画每档燃料",
+      "源码或资料定位": "art/mechanics-v1/rocket.pixels.json；art/mechanics-v1/spent_rocket.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/mechanics/MechanicsContent.java:41",
+      "核对事实": "完整/空壳已有不同物品图；安装几何共用kind4，工作带外向方盒尾焰。",
+      "制作或接入澄清": "正式耗尽变体仍需制作；空壳不计第九类部件。"
+    },
+    {
+      "编号": "F05-05",
+      "系统": "机械",
+      "任务": "电池安装适配",
+      "优先级": "P0",
+      "当前状态": "安装态动态余量已接入；造型为原型",
+      "待交付内容": "复用F04-01，补六节点安装和预览检查",
+      "已有可复用资产": "同一有限电池，不另做第九种部件",
+      "约束与前置": "只适配安装/拆卸/充电器一致性；总量统计不重复算模型",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:31",
+      "核对事实": "安装预览与真实电量都走同一有限电池类型。",
+      "制作或接入澄清": "只做F04-01的节点适配/回收/充电器一致性检查。"
+    },
+    {
+      "编号": "F05-06",
+      "系统": "机械",
+      "任务": "弹簧",
+      "优先级": "P0",
+      "当前状态": "图标/几何/有限伸展已接入",
+      "待交付内容": "1模型；1物品图；压缩/弹出/冷却表现参数",
+      "已有可复用资产": "spring.pixels.json；现伸展动画",
+      "约束与前置": "分清底座/弹簧/推板；按实际冷却状态驱动",
+      "源码或资料定位": "art/mechanics-v1/spring.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:60",
+      "核对事实": "弹簧原型按冷却阶段伸展，已有可编辑状态参数。",
+      "制作或接入澄清": "分底座/弹簧/推板；压缩/弹出/冷却稿配实际参数。"
+    },
+    {
+      "编号": "F05-07",
+      "系统": "机械",
+      "任务": "轮子",
+      "优先级": "P0",
+      "当前状态": "图标/几何/工作转动已接入",
+      "待交付内容": "1模型；1物品图；轮毂/轮胎分组和轴心",
+      "已有可复用资产": "wheel.pixels.json；现轮辐转动",
+      "约束与前置": "接地动力；停/转区分；不加入悬挂刚体物理",
+      "源码或资料定位": "art/mechanics-v1/wheel.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:53",
+      "核对事实": "轮子原型及实际active轮辐转动已存在。",
+      "制作或接入澄清": "正式轮胎/轮毂分组并保留轴心；不扩充刚体悬挂。"
+    },
+    {
+      "编号": "F05-08",
+      "系统": "机械",
+      "任务": "稳定器",
+      "优先级": "P0",
+      "当前状态": "图标/几何/供电工作灯已接入",
+      "待交付内容": "1模型；1物品图；停/工作/缺电状态",
+      "已有可复用资产": "stabilizer.pixels.json；现工作保持展示水平",
+      "约束与前置": "有限供电；工作灯与实际active对应",
+      "源码或资料定位": "art/mechanics-v1/stabilizer.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:64",
+      "核对事实": "稳定器现有灯只按active分两色，供电时保持水平展示。",
+      "制作或接入澄清": "缺电第三态属于待制作/待接入；不能把所有active=false都判成缺电。"
+    },
+    {
+      "编号": "F05-09",
+      "系统": "机械",
+      "任务": "浮力装置",
+      "优先级": "P0",
+      "当前状态": "图标/安装态原型已接入",
+      "待交付内容": "1模型；1物品图；浮体/束带材质；水中检查稿",
+      "已有可复用资产": "buoyancy.pixels.json；现水中浮力几何",
+      "约束与前置": "水中有限承载；设备不是新船种；水线表现按后续可用状态",
+      "源码或资料定位": "art/mechanics-v1/buoyancy.pixels.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java:66",
+      "核对事实": "浮体原型与束带方盒可见，水中浮力合同与源码存在。",
+      "制作或接入澄清": "材质/水线稿按真实可用状态；不新建船型或模型外碰撞。"
+    },
+    {
+      "编号": "F05-10",
+      "系统": "机械",
+      "任务": "安装预览与机械状态提示",
+      "优先级": "P0",
+      "当前状态": "绿色有效预览/琥珀选中提示和文字HUD已接入",
+      "待交付内容": "1套可安装/不可安装/占用/启停状态视觉规范；电量/燃料/冷却布局",
+      "已有可复用资产": "现半透明几何、节点高亮、文字HUD",
+      "约束与前置": "复用同一部件模型；文字/轮廓辅助颜色；不新增蓝图/编辑器",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java:28",
+      "核对事实": "现绿色有效预览、琥珀选中、文字状态及燃料/冷却信息可编辑。",
+      "制作或接入澄清": "无效/占用/停机的完整视觉规范仍待做；复用同一部件几何。"
+    },
+    {
+      "编号": "F06-01",
+      "系统": "制造机",
+      "任务": "古代装置制造机正式外观",
+      "优先级": "P0",
+      "当前状态": "立方体+原创16×16原型贴图",
+      "待交付内容": "1模型及UV/纹理；空闲/工作/完成状态稿",
+      "已有可复用资产": "fabricator.pixels.json；现cube_all模型",
+      "约束与前置": "保持当前方块尺度；不提前泄露未完成随机结果；不增升级款",
+      "源码或资料定位": "art/fabrication-v1；src/main/generated/assets/wildcraft/models/block/fabricator.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/models/block/fabricator.json:2",
+      "核对事实": "制造机仍cube_all+16原型，世界中的工作外观尚未有正式模型。",
+      "制作或接入澄清": "状态只经菜单数据展示；世界动件/灯需要后续客户端状态接入，不泄露未完成结果。"
+    },
+    {
+      "编号": "F06-02",
+      "系统": "制造机",
+      "任务": "制造界面",
+      "优先级": "P0",
+      "当前状态": "代码绘制功能原型",
+      "待交付内容": "1套176×192逻辑尺寸布局；5种状态稿",
+      "已有可复用资产": "原版按钮/槽框/字体；FabricatorScreen",
+      "约束与前置": "2输入+1输出；4铜+2红石；100刻；八类各12.5%；结果仅完成后显示",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/fabrication/FabricatorScreen.java",
+      "核对结果": "需澄清状态",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricatorEntity.java:39",
+      "核对事实": "176×192、2输入+1输出、4铜+2红石、100刻、八类等概率相符。",
+      "制作或接入澄清": "状态3是任务结束但输出格占用；状态4是成品已入输出槽。五张状态稿需把两者明确区分。"
+    },
+    {
+      "编号": "F03-01",
+      "系统": "Fuse",
+      "任务": "通用组合外观与挂点",
+      "优先级": "P0",
+      "当前状态": "原版宿主+材料模型的有界拼接原型",
+      "待交付内容": "1套剑/斧/盾/箭4类挂点与体积规范；必要时共享连接件",
+      "已有可复用资产": "原版真实宿主/材料模型；现GUI/手/掉落/背负/飞箭显示",
+      "约束与前置": "不按所有物品组合全量建模；保留附魔/盾图案/染色",
+      "源码或资料定位": "art/fuse-v1；src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java:28",
+      "核对事实": "原生宿主+有界材料模型已接入；物品.32、飞箭.22模型包围盒归一基线。",
+      "制作或接入澄清": "剑/斧/盾/箭分别出挂点约束；不为每个材料组合全量建模，不只靠换PNG。"
+    },
+    {
+      "编号": "F03-02",
+      "系统": "Fuse",
+      "任务": "已融合标记与磨损可读性",
+      "优先级": "P1",
+      "当前状态": "标记首稿待审；当前文字与提示已实现",
+      "待交付内容": "复核现32/16标记；1套标记和剩余次数展示稿",
+      "已有可复用资产": "fuse-status-icon-v1；现物品提示",
+      "约束与前置": "先确定现物品栏/提示里的落点；不新增Fuse界面/工作台",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java；本机待审稿",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java:19",
+      "核对事实": "当前tooltip显示材料/余次/类别；32/16标记稿存在，采用状态仍待审。",
+      "制作或接入澄清": "先确定标记位置并审稿；不新增大型Fuse页面。"
+    },
+    {
+      "编号": "F03-03",
+      "系统": "Fuse",
+      "任务": "未知材料通用回退外观",
+      "优先级": "P1",
+      "当前状态": "目前采用原版屏障图标回退",
+      "待交付内容": "1个中性回退符号或小型占位模型；缺失状态稿",
+      "已有可复用资产": "现FusionPresentation降级和文字说明",
+      "约束与前置": "材料不可用时保留原数据；图案不暗示仍有元素能力",
+      "源码或资料定位": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java:16",
+      "核对事实": "当前未知物品/空展示堆栈回退屏障，停用类别提示保留材料ID。",
+      "制作或接入澄清": "这不证明任意第三方缺失/异常模型都有可靠回退；相关兼容继续专项验收。"
+    },
+    {
+      "编号": "F03-04",
+      "系统": "Fuse",
+      "任务": "特殊材料及融合过程反馈",
+      "优先级": "P1",
+      "当前状态": "战斗效果已实现；专用原创表现尚未制作",
+      "待交付内容": "融合/拆卸短反馈；火/冰/弹性3类轻量表现规范",
+      "已有可复用资产": "原版着火/减速/击退结果；原生粒子可占位",
+      "约束与前置": "基于已支持类别，不承诺每个第三方材料独立特效",
+      "源码或资料定位": "src/main/java/dev/wildcraft/fuse/FusionCombat.java；art/fuse-v1",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fuse/FusionCombat.java:34",
+      "核对事实": "火3秒点燃、冰3秒缓慢、弹性击退已实现，未注册专用原创反馈套件。",
+      "制作或接入澄清": "原生效果可占位；设计轻量过程/命中稿，不许诺每种材料独立特效。"
+    },
+    {
+      "编号": "S01",
+      "系统": "音效配套",
+      "任务": "料理/能源/机械/制造/Fuse提示音",
+      "优先级": "P1",
+      "当前状态": "新增系统没有注册专用原创声音；专注2音已完成",
+      "待交付内容": "事件清单与原创短音；工作循环按需要后补；母带/OGG/响度",
+      "已有可复用资产": "已有focus_enter/exit原件保留；原版音效可暂用",
+      "约束与前置": "先完成/安装/拆卸/点火/弹出/融合等离散反馈，再补循环；数量按事件定",
+      "源码或资料定位": "src/main/resources/assets/wildcraft/sounds.json",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/resources/assets/wildcraft/sounds.json:2",
+      "核对事实": "本模组自有sounds.json只有focus.enter/exit，包内OGG两份。",
+      "制作或接入澄清": "新增系统的音频需按离散事件先列数量，工作循环需停止/暂停/耗尽合同。"
+    },
+    {
+      "编号": "A09-C",
+      "系统": "角色完善",
+      "任务": "披风/鞘翅下的侧腰摆放",
+      "优先级": "P1",
+      "当前状态": "路线待完善；目前采用隐藏规则",
+      "待交付内容": "五类装备摆放适配；标准/细手臂；站/蹲/游泳/滑翔检查",
+      "已有可复用资产": "已有A09挂点与A10短落定；原版装备模型",
+      "约束与前置": "需先出布局并后续接入；不增加库存或第四个伞背负槽",
+      "源码或资料定位": "docs/AI-HANDOFF.md；src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java:40",
+      "核对事实": "可见披风隐藏三类背负；鞘翅的中央盾/弓抑制有既定规则；尚无侧腰布局。",
+      "制作或接入澄清": "五类装备适配而不是新库存；最终同尺寸与原生外观需继续验收。"
+    },
+    {
+      "编号": "A07-A08-C",
+      "系统": "角色完善",
+      "任务": "探索动作衔接复核",
+      "优先级": "P1",
+      "当前状态": "基本动作已接入；后续按实际问题润色",
+      "待交付内容": "攀爬→开伞→取物/拉弓过渡检查；必要的局部关键姿态修订",
+      "已有可复用资产": "已有A07/A08标准和细手臂源稿",
+      "约束与前置": "不重做整套动画；行为即时生效；不以动画延迟攻击/收伞",
+      "源码或资料定位": "art/approved-v1；docs/CORE-ART-INTEGRATION.md",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/render/CharacterPoses.java:37",
+      "核对事实": "已加载采用的标准/细手臂动作烘焙，核心验收有握点/公开攀爬验证。",
+      "制作或接入澄清": "本任务是衔接复核，不代表已发现新穿插或需要整套重做。"
+    },
+    {
+      "编号": "A13-C",
+      "系统": "音效完善",
+      "任务": "专注音效混音复核",
+      "优先级": "P1",
+      "当前状态": "2个原创音已接入；主观战斗混音未全面验收",
+      "待交付内容": "现2段音在战斗/雨雪/设备声下试听；必要时调音量",
+      "已有可复用资产": "原OGG/WAV与源工程保留",
+      "约束与前置": "属于混音复核，不是缺失两段音效或新增技能音乐",
+      "源码或资料定位": "art/approved-v1；docs/CORE-ART-VERIFICATION.md",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/focus/FocusClient.java:84",
+      "核对事实": "原创进入/退出声实际调用，pitch1、音量.22；主观混音未全面验收。",
+      "制作或接入澄清": "两原音继续保留，仅按战斗/天气/设备声实际试听调音量。"
+    },
+    {
+      "编号": "F07-01",
+      "系统": "后续天气",
+      "任务": "风向/强度/阵风反馈",
+      "优先级": "P2",
+      "当前状态": "风场机制尚未实现；等待规则定稿",
+      "待交付内容": "方向/强度提示稿；0–2基础风线精灵预算",
+      "已有可复用资产": "原版环境/粒子；已采用伞和机械模型",
+      "约束与前置": "规则定稿后才锁定状态与动画；不增加第九部件或新能源体系",
+      "源码或资料定位": "docs/ROADMAP.md；docs/NEXT-DEVELOPMENT-PLAN.md",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/docs/ROADMAP.md:34",
+      "核对事实": "正式路线仍把风場/风力放P10；当前主代码没有实现风场。",
+      "制作或接入澄清": "方向/强度/阵风规则先定稿；不先锁风线精灵数量。"
+    },
+    {
+      "编号": "F07-02",
+      "系统": "后续天气",
+      "任务": "天气对伞与机械的响应",
+      "优先级": "P2",
+      "当前状态": "温度的雨雪修正已实现；风天气互动仍待开发",
+      "待交付内容": "复用伞/翼等的参数响应；必要的雨雪/水中轻量表现",
+      "已有可复用资产": "原版雨雪闪电；现温度反馈",
+      "约束与前置": "不批量重画天气、群系或全屏滤镜；不把雨天攀爬打滑列成已确定机制",
+      "源码或资料定位": "docs/ROADMAP.md",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/docs/P4A-SPEC.md:27",
+      "核对事实": "温度当地雨雪修正已做；正式伞/机械风天气响应未做。",
+      "制作或接入澄清": "复用原版天气和伞/翼参数，不安排群系重画或雨天打滑。"
+    },
+    {
+      "编号": "R2-V",
+      "系统": "后续多人",
+      "任务": "多人局部林克时间识别提示",
+      "优先级": "P2",
+      "当前状态": "仅研究准备/未验证候选；没有正式多人技能",
+      "待交付内容": "研究通过且作用范围定稿后，确定本人/观察者/目标提示",
+      "已有可复用资产": "已有单人准星/后处理/2段音效优先复用",
+      "约束与前置": "不提前锁定大型时间场/气泡；不把研究界面当正式资产",
+      "源码或资料定位": "docs/R2-PREPARATION.md；docs/R2-CHECKPOINT.md",
+      "核对结果": "一致",
+      "源码证据": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/focus/FocusTime.java:62",
+      "核对事实": "正式技能仍只允许未发布单人；R2研究候选未验证，未开放多人局部技能。",
+      "制作或接入澄清": "提示等研究作用集合确定后设计；不把候选实验当正式功能。"
+    }
+  ]
+}

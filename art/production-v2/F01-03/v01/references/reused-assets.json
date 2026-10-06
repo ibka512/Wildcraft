@@ -1,0 +1,98 @@
+[
+  {
+    "label": "保暖",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-16.png",
+    "copied": "exports/warmth-meal-16.png",
+    "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "保暖",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-16.aseprite",
+    "copied": "source/warmth-meal-16.aseprite",
+    "sha256": "91344bd660a3c31fa2a4a0d8eaedb4844152fc45b8571a5b80d19cea136894d0",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "保暖",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-32.png",
+    "copied": "exports/warmth-meal-32.png",
+    "sha256": "c8a47e2b364d08dbc436dd2b15cc2258c4796f91f7fa1244706fc8e0f79ff494",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "保暖",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/warmth-meal-effect-v3/deliverable/warmth-meal-32.aseprite",
+    "copied": "source/warmth-meal-32.aseprite",
+    "sha256": "7d75b02d772e29abae051c9d27764c7d755c2148fc5c7965b25bc20e531ab868",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "耐热",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-16.png",
+    "copied": "exports/cooling-meal-16.png",
+    "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "耐热",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-16.aseprite",
+    "copied": "source/cooling-meal-16.aseprite",
+    "sha256": "b24b439f917c3c434bfcef2bdf8c7b8fa9570065c10fc74bfd42a17695885342",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "耐热",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-32.png",
+    "copied": "exports/cooling-meal-32.png",
+    "sha256": "cbf5139c1d358e260264adcd320629e6ae4f31b132489c6bf008c89b71980873",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "耐热",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/cooling-meal-effect-v2/deliverable/cooling-meal-32.aseprite",
+    "copied": "source/cooling-meal-32.aseprite",
+    "sha256": "88da409e5818e904b4e6983201dea9d2b00184312ac4e2c8bc7a4454d2ada50b",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "精力恢复",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-16.png",
+    "copied": "exports/stamina-recovery-16.png",
+    "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "精力恢复",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-16.aseprite",
+    "copied": "source/stamina-recovery-16.aseprite",
+    "sha256": "b2e6e675d29891a85b5d233d2a48086176ffdeb89a89a2cc83f2a3617c97bd3f",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "精力恢复",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-32.png",
+    "copied": "exports/stamina-recovery-32.png",
+    "sha256": "fdd99efbb786fe60384aecea902c784aa155ef09dc455c516e64e4eaffef41dc",
+    "matches_adopted_record": true,
+    "new_art": false
+  },
+  {
+    "label": "精力恢复",
+    "original": "/Volumes/仕事/Wildcraft-全部已采用美术成果-2026-10-03/02-补充已采用成果/2026-10-03/stamina-recovery-effect-v2/deliverable/stamina-recovery-32.aseprite",
+    "copied": "source/stamina-recovery-32.aseprite",
+    "sha256": "e6312f52471a4025459b55b04863f9252514185fa7f024da735e26237f931f36",
+    "matches_adopted_record": true,
+    "new_art": false
+  }
+]

@@ -1,0 +1,226 @@
+{
+  "asset": "F03-04",
+  "allPassed": true,
+  "adopted": true,
+  "integrated": false,
+  "motionPresets": 5,
+  "editableMotionJSFiles": 2,
+  "newOriginalSprites": 0,
+  "productionPNGFiles": 0,
+  "asepriteFiles": 0,
+  "productionModelFiles": 0,
+  "soundFiles": 0,
+  "nativeParticlesVerifiedLocally": 4,
+  "rawMinecraftFilesCopied": false,
+  "eventLogicCases": 90,
+  "timeSamples": 245,
+  "highFrequencyEvents": 1200,
+  "maximumExtraParticlesInScene": 48,
+  "actualBrowserPresetSettingCases": 15,
+  "actualCrosshairReferenceCanvasCases": 990,
+  "previousAssetAdopted": true,
+  "previousArchiveUnchanged": true,
+  "referencesAndCodeLocalesJarUnchanged": true,
+  "previewSourceAndConfigEmbeddedExact": true,
+  "nextAssetUntouched": true,
+  "gameRuntimeVerified": false,
+  "version": "v01",
+  "date": "2026-10-06",
+  "status": "user_approved",
+  "newSpritesNeeded": false,
+  "nativeReuseRequiresFutureProviderIntegration": true,
+  "normalRateExtraFeedbackSeconds": [
+    0.3,
+    0.4
+  ],
+  "loop": false,
+  "flash": false,
+  "screenFilter": false,
+  "arrowTrail": false,
+  "nextAfterAdoption": "S01 音效配套",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3060,
+      "sha256": "c351e7cc0fd2631746447a5a868ed9dd7be504a76c1e1157fdd7ba07c8f6e76f"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 347,
+      "sha256": "35d54f6d92084907762766eaea7ce53ca7ff64016727d789487c59246ffe6efd"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1949,
+      "sha256": "16fce402631e6ebfebb647afdbd34e6a169c31e2be34d5b8365568938ec8adbb"
+    },
+    {
+      "path": "exports/fuse-feedback-presets.json",
+      "bytes": 6610,
+      "sha256": "ae5fe3f8c4cbc99f8cb422aad4d163b325b9563b434b85b6f08d592ffa7bb6f4"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 4749,
+      "sha256": "6bc7c010dc5f0bcbba854370e5c82637294644ac9956b0fd679fa78605e9958e"
+    },
+    {
+      "path": "references/adopted-fallback-spec.json",
+      "bytes": 4782,
+      "sha256": "d6eb76e76c36902e2c4a862c8c2a53ab5804180d41ab1c775862d409e973dbd2"
+    },
+    {
+      "path": "references/adopted-fuse-atlas.png",
+      "bytes": 1364,
+      "sha256": "6796a496b82b2da2ca6a0686fe36fd64a1ec6d6bbc65c5b4e0c2ea5052a51899"
+    },
+    {
+      "path": "references/adopted-mount-spec.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "references/adopted-reference-meshes.json",
+      "bytes": 786336,
+      "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 1576,
+      "sha256": "bc57211abf1306dcfdc7d23d070bd1f4d637d11a5b681a4155d2aad4d75df43d"
+    },
+    {
+      "path": "references/native-particle-provenance.json",
+      "bytes": 1953,
+      "sha256": "1d152af7a1313fe3169770292f1892fec926ef32fe43350401dffbc95b1cbc83"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1065,
+      "sha256": "ecc4774fe6e464b1414a038f4c0badcd98b0d0b5619b87b30a732119830eeac8"
+    },
+    {
+      "path": "review/adoption-checks.json",
+      "bytes": 556,
+      "sha256": "532cd4443b920ad1074c9eb521512a06836c600ec90845e41c1fa63ec9cebf56"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 14880,
+      "sha256": "0e33c40ab5069f798272929008cf4797f605efeb359df585448b25930c9e851a"
+    },
+    {
+      "path": "review/elastic-detail.png",
+      "bytes": 1431,
+      "sha256": "a10a0c4607535bd59f7c637e9ec57e32c0d768c1eea68be4ae77cba070355581"
+    },
+    {
+      "path": "review/elastic-live.png",
+      "bytes": 11358,
+      "sha256": "9807d16de3e6898d73317365c57e242b8d1974bca42fcae2120a32997fb68f37"
+    },
+    {
+      "path": "review/feedback-checks.json",
+      "bytes": 11529,
+      "sha256": "7d7e76444de07c002a64db990e3715885f612a57c48865519653061db0f4a298"
+    },
+    {
+      "path": "review/fire-detail.png",
+      "bytes": 1416,
+      "sha256": "ea4a51cd261bb7afe4f5e3165d0daf5ad8a96cd300245a5ab21c6435607f6c81"
+    },
+    {
+      "path": "review/fire-live.png",
+      "bytes": 11365,
+      "sha256": "00050dd07e6eb6d48ccf26378c661a6c080745f6049b32eab4b526ab0933d693"
+    },
+    {
+      "path": "review/fuse-detail.png",
+      "bytes": 2032,
+      "sha256": "cfddd236d8ab6e374be6218c55c12c3bb27ddd6d431085385d4dce7c48fa57a4"
+    },
+    {
+      "path": "review/fuse-feedback-review.png",
+      "bytes": 236602,
+      "sha256": "4ba45062cb0dab398be1902c06b360f4b9dbc77ef47fe67eb4f3fd0f60e7f6e1"
+    },
+    {
+      "path": "review/fuse-live.png",
+      "bytes": 14070,
+      "sha256": "78fc2bed77b40a4e80f1fc455c2b8c72e2ee90c7be2c8764bc86124b97efd063"
+    },
+    {
+      "path": "review/ice-detail.png",
+      "bytes": 1553,
+      "sha256": "dc14dda03e0faeb33a777902610801114044f912a70ba5fd57ec64476865393d"
+    },
+    {
+      "path": "review/ice-live.png",
+      "bytes": 11461,
+      "sha256": "ecd4132a67af6d3a47691ad8162d79dc52a30505ab82022d77ade7cee2335c4a"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 767,
+      "sha256": "4630c1118efa24c76e76f998f67a6cab0f2d0756453989c2d573325d4f47ad09"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 29676,
+      "sha256": "a3322589d01ae3f5058fff28df287447758da764bc30808e699b08b824692450"
+    },
+    {
+      "path": "review/render-checks.json",
+      "bytes": 178108,
+      "sha256": "1d16550dd809c9e1052d6898676e60f2adb68cf98ffe34d37245a903496d5f17"
+    },
+    {
+      "path": "review/split-detail.png",
+      "bytes": 1903,
+      "sha256": "2ffeaa5f4557c511551695fcbfe99f2bf10031b3927fad6b7d74ea829ffa4eea"
+    },
+    {
+      "path": "review/split-live.png",
+      "bytes": 13895,
+      "sha256": "edfab28d12f63e8b132a61c7142017c97e7aab3e9780a18923a259f19ff8517d"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 5623,
+      "sha256": "8a0e07f536a4b6253014437207e9afa03d0ea2ac0ffbb8459b7ec0003f87fb70"
+    },
+    {
+      "path": "source/check-feedback.js",
+      "bytes": 5388,
+      "sha256": "74db4b2bbc26a504acedea8a19e74243917d3e76948508002f50881689499d76"
+    },
+    {
+      "path": "source/feedback-engine.js",
+      "bytes": 5188,
+      "sha256": "28197a98a45b77bc9fb20c6e34e30513dd72f48f14485264fc33695dd69df336"
+    },
+    {
+      "path": "source/feedback-review.js",
+      "bytes": 11219,
+      "sha256": "db9e435a72cfdb7d08ad977dc4e42334daa8c94feb6416d794cba5d21b12be3d"
+    },
+    {
+      "path": "source/package-assets.py",
+      "bytes": 4377,
+      "sha256": "9a9a39c6a5ddd9c96ed8c21a65bcd6699abb26ad824ba3d249aa5f7e06a66c05"
+    },
+    {
+      "path": "source/serve-preview.py",
+      "bytes": 542,
+      "sha256": "db9750b579d75e0d366cb50bc01a35a292a849dfbf9ae7f6bf5b850441d9f156"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2478,
+      "sha256": "089de346b50726d171b7413c1d5ec7655264b014f85d3e540fc31bc53a29cbc4"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "scope": "五种反馈的方向、时序、事件语义、复用与预算方案；原版提供器精确表现待游戏接入验证"
+}

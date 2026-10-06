@@ -1,0 +1,180 @@
+{
+  "asset": "F04-02",
+  "version": "v01",
+  "status": "user_approved",
+  "integrated": false,
+  "capacity": 1000,
+  "nativeSizes": [
+    16,
+    32
+  ],
+  "displayScale": "nearest integer 1/2/4/8",
+  "endpoints": "copy approved PNG pixels unchanged",
+  "mask": {
+    "order": "bottom,middle,top",
+    "withinCell": "left_to_right",
+    "rectanglesTopToBottom": {
+      "32": [
+        {
+          "x": 12,
+          "y": 12,
+          "w": 9,
+          "h": 3
+        },
+        {
+          "x": 12,
+          "y": 17,
+          "w": 9,
+          "h": 3
+        },
+        {
+          "x": 12,
+          "y": 22,
+          "w": 9,
+          "h": 3
+        }
+      ],
+      "16": [
+        {
+          "x": 6,
+          "y": 6,
+          "w": 5,
+          "h": 2
+        },
+        {
+          "x": 6,
+          "y": 9,
+          "w": 5,
+          "h": 2
+        },
+        {
+          "x": 6,
+          "y": 12,
+          "w": 5,
+          "h": 2
+        }
+      ]
+    },
+    "widthFormula": "floor(w * clamp((3*E - i*1000) / 1000, 0, 1)); i=0 bottom,1 middle,2 top",
+    "source": "empty base + corresponding full PNG crop; no recoloring",
+    "exactEndpoints": [
+      0,
+      1000
+    ]
+  },
+  "readout": {
+    "format": "E / 1000",
+    "noBattery": "— / 1000",
+    "lowThresholdExclusive": 100,
+    "lowMeaning": "low, not empty",
+    "fullOnlyAt": 1000,
+    "persistentPlayerHudAdded": false,
+    "reviewColors": {
+      "dark": {
+        "low": "#E5B96C",
+        "normal": "#E3E9DF",
+        "neutral": "#9DA89F"
+      },
+      "light": {
+        "low": "#805014",
+        "normal": "#354438",
+        "neutral": "#637066"
+      }
+    }
+  },
+  "chargerCandidate": {
+    "guiSize": [
+      176,
+      166
+    ],
+    "batterySlotUnchanged": [
+      26,
+      35,
+      16,
+      16
+    ],
+    "statusIcon": [
+      54,
+      29,
+      16,
+      16
+    ],
+    "numberAnchor": [
+      74,
+      32
+    ],
+    "numberMaxWidth": 94,
+    "barFrameUnchanged": [
+      54,
+      47,
+      107,
+      7
+    ],
+    "barFillUnchanged": [
+      55,
+      48,
+      105,
+      5
+    ],
+    "statusAnchorUnchanged": [
+      8,
+      64
+    ],
+    "formalGuiTask": "F04-04",
+    "textFont": "Minecraft original, browser review approximate"
+  },
+  "existingItemBar": {
+    "widthFormula": "Math.round(13F * E / 1000)",
+    "lowColor": "#D8A24D",
+    "normalColor": "#7AAE83",
+    "change": false
+  },
+  "existingChargerBar": {
+    "widthFormula": "floor(105 * E / 1000)",
+    "color": "#608865",
+    "change": false
+  },
+  "statusMapping": {
+    "0": "no battery: no icon, placeholder numeric; never show as zero-charge battery",
+    "1": "source absent: keep real energy, not force zero",
+    "2": "charging: keep real energy; no unconditional full glow",
+    "3": "full: read real energy 1000; full endpoint",
+    "4": "waiting for shared supply: keep real energy, not force zero"
+  },
+  "atlasPackSuggestion": {
+    "status": "optional future packing, not exported",
+    "size": [
+      64,
+      48
+    ],
+    "entries": {
+      "empty32": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "full32": [
+        32,
+        0,
+        32,
+        32
+      ],
+      "empty16": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "full16": [
+        16,
+        32,
+        16,
+        16
+      ]
+    },
+    "maskCoordinates": "native rectangle + corresponding endpoint origin"
+  },
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

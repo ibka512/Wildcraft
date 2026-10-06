@@ -33,9 +33,11 @@ public final class FusionCombat{
     }
     public static void effect(int kind,LivingEntity target,DamageSource source){
         if(!target.isAlive())return;
-        if(kind==FusionRules.FIRE)target.igniteForSeconds(3);
-        else if(kind==FusionRules.ICE)target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS,60,0),source.getEntity());
-        else if(kind==FusionRules.ELASTIC){var from=source.getSourcePosition();if(from!=null)target.knockback(.65,from.x-target.getX(),from.z-target.getZ(),source,0,true);}
+        boolean applied=false;
+        if(kind==FusionRules.FIRE){int before=target.getRemainingFireTicks();target.igniteForSeconds(3);applied=target.getRemainingFireTicks()>before;}
+        else if(kind==FusionRules.ICE)applied=target.addEffect(new MobEffectInstance(MobEffects.SLOWNESS,60,0),source.getEntity());
+        else if(kind==FusionRules.ELASTIC){var from=source.getSourcePosition();if(from!=null){var before=target.getDeltaMovement();target.knockback(.65,from.x-target.getX(),from.z-target.getZ(),source,0,true);applied=!target.getDeltaMovement().equals(before);}}
+        if(applied&&target.level() instanceof ServerLevel level)dev.wildcraft.art.ArtFeedback.send(level,target.getUUID(),target.position().add(0,target.getBbHeight()*.6,0),null,kind-FusionRules.FIRE);
     }
     public static void use(ItemStack host,ServerLevel level){var d=host.get(FusionContent.DATA);if(d==null||d.isProjection())return;if(d.remaining()==1){host.remove(FusionContent.DATA);host.remove(FusionContent.VIEW);}else{d=d.used();host.set(FusionContent.DATA,d);var m=d.material(level.registryAccess());if(m.isPresent())host.set(FusionContent.VIEW,new FusionVisual(BuiltInRegistries.ITEM.getKey(m.get().getItem()),FusionRules.kind(m.get()),d.remaining(),m.get().hasFoil()));}}
     public static void clearArrow(AbstractArrow arrow){var s=arrow.getPickupItemStackOrigin();s.remove(FusionContent.DATA);s.remove(FusionContent.VIEW);arrow.removeAttached(ARROW_VIEW);}

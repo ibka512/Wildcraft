@@ -1,0 +1,547 @@
+{
+  "asset": "F03-04",
+  "allPassed": true,
+  "eventCases": [
+    {
+      "name": "fire confirmed",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fire model-only",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fire refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "not-confirmed"
+    },
+    {
+      "name": "fire inactive",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "material-data-unavailable"
+    },
+    {
+      "name": "fire reduced",
+      "accepted": true,
+      "spawned": 3,
+      "reason": "accepted"
+    },
+    {
+      "name": "fire minimal",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "minimal-particle-setting"
+    },
+    {
+      "name": "fire near-camera",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "near-camera"
+    },
+    {
+      "name": "fire duplicate",
+      "passed": true
+    },
+    {
+      "name": "ice confirmed",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "ice model-only",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "ice refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "not-confirmed"
+    },
+    {
+      "name": "ice inactive",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "material-data-unavailable"
+    },
+    {
+      "name": "ice reduced",
+      "accepted": true,
+      "spawned": 3,
+      "reason": "accepted"
+    },
+    {
+      "name": "ice minimal",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "minimal-particle-setting"
+    },
+    {
+      "name": "ice near-camera",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "near-camera"
+    },
+    {
+      "name": "ice duplicate",
+      "passed": true
+    },
+    {
+      "name": "elastic confirmed",
+      "accepted": true,
+      "spawned": 5,
+      "reason": "accepted"
+    },
+    {
+      "name": "elastic model-only",
+      "accepted": true,
+      "spawned": 5,
+      "reason": "accepted"
+    },
+    {
+      "name": "elastic refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "not-confirmed"
+    },
+    {
+      "name": "elastic inactive",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "material-data-unavailable"
+    },
+    {
+      "name": "elastic reduced",
+      "accepted": true,
+      "spawned": 3,
+      "reason": "accepted"
+    },
+    {
+      "name": "elastic minimal",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "minimal-particle-setting"
+    },
+    {
+      "name": "elastic near-camera",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "near-camera"
+    },
+    {
+      "name": "elastic duplicate",
+      "passed": true
+    },
+    {
+      "name": "fuse confirmed",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fuse model-only",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fuse refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "not-confirmed"
+    },
+    {
+      "name": "fuse inactive",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "material-data-unavailable"
+    },
+    {
+      "name": "fuse reduced",
+      "accepted": true,
+      "spawned": 3,
+      "reason": "accepted"
+    },
+    {
+      "name": "fuse minimal",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "minimal-particle-setting"
+    },
+    {
+      "name": "fuse near-camera",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "near-camera"
+    },
+    {
+      "name": "fuse duplicate",
+      "passed": true
+    },
+    {
+      "name": "split confirmed",
+      "accepted": true,
+      "spawned": 4,
+      "reason": "accepted"
+    },
+    {
+      "name": "split model-only",
+      "accepted": true,
+      "spawned": 4,
+      "reason": "accepted"
+    },
+    {
+      "name": "split refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "not-confirmed"
+    },
+    {
+      "name": "split inactive",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "material-data-unavailable"
+    },
+    {
+      "name": "split reduced",
+      "accepted": true,
+      "spawned": 2,
+      "reason": "accepted"
+    },
+    {
+      "name": "split minimal",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "minimal-particle-setting"
+    },
+    {
+      "name": "split near-camera",
+      "accepted": true,
+      "spawned": 0,
+      "reason": "near-camera"
+    },
+    {
+      "name": "split duplicate",
+      "passed": true
+    },
+    {
+      "name": "fire melee",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fire shield-melee",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fire arrow-entity",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "fire arrow-block",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "fire shield-ranged",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "fire shield-partial",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "fire dead",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-applied-effect"
+    },
+    {
+      "name": "fire empty-swing",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-damage"
+    },
+    {
+      "name": "fire no-effect",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-applied-effect"
+    },
+    {
+      "name": "fire partial-block",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-counter"
+    },
+    {
+      "name": "fire not-living",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-counter"
+    },
+    {
+      "name": "fire arrow-refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "arrow-damage-not-accepted"
+    },
+    {
+      "name": "fire nonliving-arrow-target",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "arrow-damage-not-accepted"
+    },
+    {
+      "name": "ice melee",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "ice shield-melee",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "ice arrow-entity",
+      "accepted": true,
+      "spawned": 6,
+      "reason": "accepted"
+    },
+    {
+      "name": "ice arrow-block",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "ice shield-ranged",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "ice shield-partial",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "ice dead",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-applied-effect"
+    },
+    {
+      "name": "ice empty-swing",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-damage"
+    },
+    {
+      "name": "ice no-effect",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-applied-effect"
+    },
+    {
+      "name": "ice partial-block",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-counter"
+    },
+    {
+      "name": "ice not-living",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-counter"
+    },
+    {
+      "name": "ice arrow-refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "arrow-damage-not-accepted"
+    },
+    {
+      "name": "ice nonliving-arrow-target",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "arrow-damage-not-accepted"
+    },
+    {
+      "name": "elastic melee",
+      "accepted": true,
+      "spawned": 5,
+      "reason": "accepted"
+    },
+    {
+      "name": "elastic shield-melee",
+      "accepted": true,
+      "spawned": 5,
+      "reason": "accepted"
+    },
+    {
+      "name": "elastic arrow-entity",
+      "accepted": true,
+      "spawned": 5,
+      "reason": "accepted"
+    },
+    {
+      "name": "elastic arrow-block",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "elastic shield-ranged",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "elastic shield-partial",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-trigger"
+    },
+    {
+      "name": "elastic dead",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-applied-effect"
+    },
+    {
+      "name": "elastic empty-swing",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-damage"
+    },
+    {
+      "name": "elastic no-effect",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-applied-effect"
+    },
+    {
+      "name": "elastic partial-block",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-counter"
+    },
+    {
+      "name": "elastic not-living",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "no-elemental-counter"
+    },
+    {
+      "name": "elastic arrow-refused",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "arrow-damage-not-accepted"
+    },
+    {
+      "name": "elastic nonliving-arrow-target",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "arrow-damage-not-accepted"
+    },
+    {
+      "name": "fuse uncommitted",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "transaction-not-committed"
+    },
+    {
+      "name": "fuse keypress-only",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "transaction-not-committed"
+    },
+    {
+      "name": "split uncommitted",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "transaction-not-committed"
+    },
+    {
+      "name": "split keypress-only",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "transaction-not-committed"
+    },
+    {
+      "name": "bad-sequence",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "duplicate-or-old-sequence"
+    },
+    {
+      "name": "old-epoch",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "connection-epoch"
+    },
+    {
+      "name": "future-time",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "stale-or-invalid-time"
+    },
+    {
+      "name": "expired",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "stale-or-invalid-time"
+    },
+    {
+      "name": "bad-anchor",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "invalid-display-input"
+    },
+    {
+      "name": "bad-distance",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "invalid-display-input"
+    },
+    {
+      "name": "unknown-result",
+      "accepted": false,
+      "spawned": 0,
+      "reason": "unknown-result"
+    }
+  ],
+  "eventCaseCount": 90,
+  "timeSamplesPerPreset": 49,
+  "totalTimeSamples": 245,
+  "highFrequencyEvents": 1200,
+  "highFrequencyMaximumLive": 48,
+  "maximumPerOrigin": 12,
+  "memory": "particle array <=48; ordered connection sequence scalar; no delayed queue",
+  "deterministicFivePresets": true,
+  "movementDirectionsVerified": true,
+  "invalidDisplaysRejected": true,
+  "notMinecraftRuntimeVerified": true
+}

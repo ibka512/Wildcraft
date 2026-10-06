@@ -1,0 +1,5202 @@
+{
+  "allPassed": true,
+  "actualNodeMotionViewCases": 126,
+  "rotationChangesRotorOnly": true,
+  "actualChangedPixels": 59638,
+  "changedOutsideRotorOpening": 0,
+  "keyboardAgePassed": true,
+  "playPausePassed": true,
+  "previewStaticPassed": true,
+  "depthTest": true,
+  "noViewCropping": true,
+  "gameIntegrated": false,
+  "cases": [
+    {
+      "state": {
+        "node": -1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 76,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 36.54873747646729,
+            "cx": -0.748034323281038,
+            "cy": 0.4957141797417557
+          }
+        }
+      },
+      "coloredPixels": 101590,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 24,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 42.02586206896551,
+            "cx": 4.440892098500626e-16,
+            "cy": -4.440892098500626e-16
+          }
+        }
+      },
+      "coloredPixels": 103212,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 55,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 40.94839473107222,
+            "cx": -4.440892098500626e-16,
+            "cy": -0.5469600800436574
+          }
+        }
+      },
+      "coloredPixels": 112057,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 31,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 42.02586206896551,
+            "cx": 1.9,
+            "cy": -4.440892098500626e-16
+          }
+        }
+      },
+      "coloredPixels": 37350,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 55,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 48,
+            "cx": 4.440892098500626e-16,
+            "cy": 1.8205480694297387
+          }
+        }
+      },
+      "coloredPixels": 64207,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 76,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 41.78857821829153,
+            "cx": -0.748034323281038,
+            "cy": -1.4538670345725877
+          }
+        }
+      },
+      "coloredPixels": 95600,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 76,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 36.54873747646729,
+            "cx": -0.748034323281038,
+            "cy": 0.4957141797417557
+          }
+        }
+      },
+      "coloredPixels": 101590,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 24,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 42.02586206896551,
+            "cx": 4.440892098500626e-16,
+            "cy": -4.440892098500626e-16
+          }
+        }
+      },
+      "coloredPixels": 103212,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 55,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 40.94839473107222,
+            "cx": -4.440892098500626e-16,
+            "cy": -0.5469600800436574
+          }
+        }
+      },
+      "coloredPixels": 112057,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 31,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 42.02586206896551,
+            "cx": 1.9,
+            "cy": -4.440892098500626e-16
+          }
+        }
+      },
+      "coloredPixels": 37350,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 55,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 48,
+            "cx": 4.440892098500626e-16,
+            "cy": 1.8205480694297387
+          }
+        }
+      },
+      "coloredPixels": 64207,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 76,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 41.78857821829153,
+            "cx": -0.748034323281038,
+            "cy": -1.4538670345725877
+          }
+        }
+      },
+      "coloredPixels": 95600,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 76,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 36.54873747646729,
+            "cx": -0.748034323281038,
+            "cy": 0.4957141797417557
+          }
+        }
+      },
+      "coloredPixels": 101590,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 24,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 42.02586206896551,
+            "cx": 4.440892098500626e-16,
+            "cy": -4.440892098500626e-16
+          }
+        }
+      },
+      "coloredPixels": 103212,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 55,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 40.94839473107222,
+            "cx": -4.440892098500626e-16,
+            "cy": -0.5469600800436574
+          }
+        }
+      },
+      "coloredPixels": 112057,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 31,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 42.02586206896551,
+            "cx": 1.9,
+            "cy": -4.440892098500626e-16
+          }
+        }
+      },
+      "coloredPixels": 37350,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 55,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 48,
+            "cx": 4.440892098500626e-16,
+            "cy": 1.8205480694297387
+          }
+        }
+      },
+      "coloredPixels": 64207,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": -1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": -1,
+          "visibleFaces": 76,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": false,
+          "depthTest": true,
+          "fit": {
+            "scale": 41.78857821829153,
+            "cx": -0.748034323281038,
+            "cy": -1.4538670345725877
+          }
+        }
+      },
+      "coloredPixels": 95600,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172525,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -6.460000000000001
+          }
+        }
+      },
+      "coloredPixels": 159757,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.20585879785733,
+            "cx": 0,
+            "cy": -5.32047593166009
+          }
+        }
+      },
+      "coloredPixels": 192381,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -6.460000000000001
+          }
+        }
+      },
+      "coloredPixels": 159529,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172525,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -6.460000000000001
+          }
+        }
+      },
+      "coloredPixels": 159757,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.20585879785733,
+            "cx": 0,
+            "cy": -5.32047593166009
+          }
+        }
+      },
+      "coloredPixels": 192381,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -6.460000000000001
+          }
+        }
+      },
+      "coloredPixels": 159529,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172525,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -6.460000000000001
+          }
+        }
+      },
+      "coloredPixels": 159757,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.20585879785733,
+            "cx": 0,
+            "cy": -5.32047593166009
+          }
+        }
+      },
+      "coloredPixels": 192381,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -6.460000000000001
+          }
+        }
+      },
+      "coloredPixels": 159529,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 0,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          1,
+          0
+        ],
+        "thrust": [
+          0,
+          -1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 0,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.952554196764244
+          }
+        }
+      },
+      "coloredPixels": 172530,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -3.94
+          }
+        }
+      },
+      "coloredPixels": 159853,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.084457337603677,
+            "cx": 0,
+            "cy": -4.618784829619374
+          }
+        }
+      },
+      "coloredPixels": 190614,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -3.94
+          }
+        }
+      },
+      "coloredPixels": 159618,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.952554196764244
+          }
+        }
+      },
+      "coloredPixels": 172530,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -3.94
+          }
+        }
+      },
+      "coloredPixels": 159853,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.084457337603677,
+            "cx": 0,
+            "cy": -4.618784829619374
+          }
+        }
+      },
+      "coloredPixels": 190614,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -3.94
+          }
+        }
+      },
+      "coloredPixels": 159618,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.952554196764244
+          }
+        }
+      },
+      "coloredPixels": 172530,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -3.94
+          }
+        }
+      },
+      "coloredPixels": 159853,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.084457337603677,
+            "cx": 0,
+            "cy": -4.618784829619374
+          }
+        }
+      },
+      "coloredPixels": 190614,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -3.94
+          }
+        }
+      },
+      "coloredPixels": 159618,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 0,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 140655,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 1,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          -1,
+          0
+        ],
+        "thrust": [
+          0,
+          1,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 1,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 90932,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172521,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146721,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.578496668573536,
+            "cx": 0,
+            "cy": -4.811988059263635
+          }
+        }
+      },
+      "coloredPixels": 197534,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130207,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.69394547955965,
+            "cx": 0,
+            "cy": -1.7477526756558461
+          }
+        }
+      },
+      "coloredPixels": 119965,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 94460,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172521,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146721,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.578496668573536,
+            "cx": 0,
+            "cy": -4.811988059263635
+          }
+        }
+      },
+      "coloredPixels": 197534,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130207,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.69394547955965,
+            "cx": 0,
+            "cy": -1.7477526756558461
+          }
+        }
+      },
+      "coloredPixels": 119965,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 94460,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172521,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146721,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.578496668573536,
+            "cx": 0,
+            "cy": -4.811988059263635
+          }
+        }
+      },
+      "coloredPixels": 197534,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130207,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.69394547955965,
+            "cx": 0,
+            "cy": -1.7477526756558461
+          }
+        }
+      },
+      "coloredPixels": 119965,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 2,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          -1
+        ],
+        "thrust": [
+          0,
+          0,
+          1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 2,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 94460,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172535,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146721,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.70540610064493,
+            "cx": 0,
+            "cy": -5.127272702015828
+          }
+        }
+      },
+      "coloredPixels": 199862,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130200,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.678174526304156,
+            "cx": 0,
+            "cy": 0.8270741803969655
+          }
+        }
+      },
+      "coloredPixels": 119890,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 94456,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172535,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146721,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.70540610064493,
+            "cx": 0,
+            "cy": -5.127272702015828
+          }
+        }
+      },
+      "coloredPixels": 199862,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130200,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.678174526304156,
+            "cx": 0,
+            "cy": 0.8270741803969655
+          }
+        }
+      },
+      "coloredPixels": 119890,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 94456,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 172535,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146721,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.70540610064493,
+            "cx": 0,
+            "cy": -5.127272702015828
+          }
+        }
+      },
+      "coloredPixels": 199862,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130200,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 191,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 14.678174526304156,
+            "cx": 0,
+            "cy": 0.8270741803969655
+          }
+        }
+      },
+      "coloredPixels": 119890,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 3,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          0,
+          0,
+          1
+        ],
+        "thrust": [
+          0,
+          0,
+          -1
+        ],
+        "info": {
+          "angle": 0,
+          "node": 3,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 94456,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 173995,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130397,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -4.993766876544665
+          }
+        }
+      },
+      "coloredPixels": 200929,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146483,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": -1.2599999999999998,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 146505,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 95367,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 173995,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130397,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -4.993766876544665
+          }
+        }
+      },
+      "coloredPixels": 200929,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146483,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": -1.2599999999999998,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 146505,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 95367,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 173995,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130397,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -4.993766876544665
+          }
+        }
+      },
+      "coloredPixels": 200929,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146483,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": -1.2599999999999998,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 146505,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 4,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          -1,
+          0,
+          0
+        ],
+        "thrust": [
+          1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 4,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 95367,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 173999,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130398,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -4.993766876544665
+          }
+        }
+      },
+      "coloredPixels": 200928,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146483,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 1.2599999999999998,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 146508,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "idle",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 95361,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 173999,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130398,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -4.993766876544665
+          }
+        }
+      },
+      "coloredPixels": 200928,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146483,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 1.2599999999999998,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 146508,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "running",
+        "age": 0,
+        "angle": 0,
+        "active": true,
+        "ghost": false,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 95361,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": 18,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 19.48404666059434,
+            "cx": 0,
+            "cy": -4.984618940037834
+          }
+        }
+      },
+      "coloredPixels": 173999,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 0,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 99,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": 1.2599999999999998,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 130398,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 180,
+        "pitch": 18,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 22.070015220700153,
+            "cx": -1.2599999999999998,
+            "cy": -4.993766876544665
+          }
+        }
+      },
+      "coloredPixels": 200928,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 90,
+        "pitch": 0,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 92,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 24.410774410774412,
+            "cx": 0,
+            "cy": -5.2
+          }
+        }
+      },
+      "coloredPixels": 146483,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": 0,
+        "pitch": 85,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 188,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 16.26289113165663,
+            "cx": 1.2599999999999998,
+            "cy": -0.4674686329710589
+          }
+        }
+      },
+      "coloredPixels": 146508,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    },
+    {
+      "state": {
+        "node": 5,
+        "state": "preview",
+        "age": 0,
+        "angle": 0,
+        "active": false,
+        "ghost": true,
+        "yaw": -25,
+        "pitch": -65,
+        "exhaust": [
+          1,
+          0,
+          0
+        ],
+        "thrust": [
+          -1,
+          0,
+          0
+        ],
+        "info": {
+          "angle": 0,
+          "node": 5,
+          "visibleFaces": 280,
+          "fanParts": 24,
+          "movingParts": 6,
+          "fixedParts": 18,
+          "referenceBody": true,
+          "depthTest": true,
+          "fit": {
+            "scale": 12.430616080612634,
+            "cx": 0,
+            "cy": -2.197614961051637
+          }
+        }
+      },
+      "coloredPixels": 95361,
+      "borderColoredPixels": 0,
+      "glError": 0,
+      "overflow": false
+    }
+  ],
+  "reducedMotionPreference": false,
+  "defaultManualPlayback": true,
+  "reducedMotionRuntimeGuardTested": false,
+  "finalOutwardMeshReloadPassed": true,
+  "finalMeshCases": [
+    {
+      "motion": "idle",
+      "angle": 0,
+      "depthTest": true
+    },
+    {
+      "motion": "running",
+      "angle": 70,
+      "depthTest": true
+    },
+    {
+      "motion": "preview",
+      "angle": 0,
+      "depthTest": true
+    }
+  ]
+}

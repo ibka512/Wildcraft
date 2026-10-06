@@ -1,0 +1,422 @@
+{
+  "asset": "F03-02",
+  "allPassed": true,
+  "adopted": true,
+  "integrated": false,
+  "reusedLegacySymbols": 2,
+  "newCornerMark": 1,
+  "sourceFiles": 4,
+  "pngFiles": 4,
+  "atlasSize": [
+    64,
+    32
+  ],
+  "atlasLayers": 3,
+  "legacyPixelsUnchanged": true,
+  "sourceAndPNGReopenedReadbackCases": 8,
+  "usesLanguageLayoutCases": 768,
+  "referenceCornerOcclusionCases": 12,
+  "actualButtonsHoverKeyboardVerified": true,
+  "previousAssetAdopted": true,
+  "previousArchiveUnchanged": true,
+  "referencesAndCodeBaselineUnchanged": true,
+  "gameRuntimeVerified": false,
+  "version": "v01",
+  "created": "2026-10-06",
+  "status": "user_approved",
+  "remainingRange": [
+    1,
+    32
+  ],
+  "lowUsesThreshold": 4,
+  "numbersBaked": false,
+  "newFuseScreen": false,
+  "unknownFallbackArtCreated": false,
+  "font": "browser approximation; native runtime font pending",
+  "glint": "review-only mask; native runtime pending",
+  "nextAfterAdoption": "F03-03 未知材料通用回退外观",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2846,
+      "sha256": "49b3d3c619afd6a2d67533bea37296766a82574d98b40350d47b7a3f80f5ad48"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 230,
+      "sha256": "7d1a3e39f4ac1209d49c1d3f28f833ab00a0a80a7a519209707c1ee4a71ac787"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1614,
+      "sha256": "c3610547802b6726d1a0e6994f22fc3454269b35c51fff7303888f50f9a5023e"
+    },
+    {
+      "path": "exports/atlas-layout.json",
+      "bytes": 796,
+      "sha256": "db5b74deb941c183f5fb5ded5e231d8affb9a7eccbd2f11296cc326106f9aed9"
+    },
+    {
+      "path": "exports/fuse-corner-5.png",
+      "bytes": 146,
+      "sha256": "c071f07442cf9bc73ef1b30757303aa2c6f77a604597c4e09673e5636c0f0ffa"
+    },
+    {
+      "path": "exports/fuse-status-16.png",
+      "bytes": 309,
+      "sha256": "ad3c62d3b4a56babd2542d2a2e4e418cb61417989b711cd0ce9f8abc0a46cbb1"
+    },
+    {
+      "path": "exports/fuse-status-32.png",
+      "bytes": 429,
+      "sha256": "265497922d855b724fe9ead274cf3f11e5c87924e2356105060d6d76d7839af2"
+    },
+    {
+      "path": "exports/fuse-status-atlas-64x32.png",
+      "bytes": 1200,
+      "sha256": "757ea9c6fe5b54a67b546817ebe1f4d74a5c7d9d56d3667478cb3dcece1a89c9"
+    },
+    {
+      "path": "exports/status-layout.json",
+      "bytes": 2090,
+      "sha256": "3b101071e0ba8921268ea099108a2ca9ac99edde37ab750beed1389dc9e54394"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2821,
+      "sha256": "0b36def803a98c8fe21a8e3315f53d0ca4af463a447dc0500829f1698773b684"
+    },
+    {
+      "path": "references/FusionCombat.java",
+      "bytes": 4090,
+      "sha256": "1d03da91fff0512fc01449212db400fff15af828d4672f68a8f8fe3f34a61512"
+    },
+    {
+      "path": "references/FusionData.java",
+      "bytes": 5439,
+      "sha256": "e19a6b6bae4fdefee9828e09ddcb63b2bbb79607848dbf2fc998916b3f3f5140"
+    },
+    {
+      "path": "references/FusionItems.java",
+      "bytes": 1615,
+      "sha256": "f0888f0901e124243115868115ee84174e8026871545d2db19c25a1892ef9e8e"
+    },
+    {
+      "path": "references/FusionPresentation.java",
+      "bytes": 2044,
+      "sha256": "cd1641b77377c3c45ab1a8bf7c51befd6dcff0142d0a11a7ac7601acd8d1d14b"
+    },
+    {
+      "path": "references/FusionRules.java",
+      "bytes": 812,
+      "sha256": "94256d379370359a1da2a4e5c616f266f09ae57561a9c9d2ba34233ad54b84ae"
+    },
+    {
+      "path": "references/FusionViews.java",
+      "bytes": 2273,
+      "sha256": "f9766453d02a184a4e1c2b21844881f502b525a13b1bfa6152a48f0b1c9adca2"
+    },
+    {
+      "path": "references/FusionVisual.java",
+      "bytes": 1225,
+      "sha256": "49a0115bb602b42b1b59beda538a83674016ca0a7b7ee16ab9ab46ee992fb54c"
+    },
+    {
+      "path": "references/adopted-fuse-review.js",
+      "bytes": 5657,
+      "sha256": "ce575ba3a24bb78c981289700afc791196912f166ae7cb0bfe392420a0487bf4"
+    },
+    {
+      "path": "references/adopted-mount-spec.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "references/adopted-reference-meshes.json",
+      "bytes": 786336,
+      "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 1577,
+      "sha256": "67cb6dccd8fc7db92907f782f7306dce69736ac8ead1067e8b4fc3a94f764b0e"
+    },
+    {
+      "path": "references/en_us.json",
+      "bytes": 9104,
+      "sha256": "959459db08fd520642b93735cf36eff857170446ca0af78f809b738b3211fe83"
+    },
+    {
+      "path": "references/historical-p9-inventory.png",
+      "bytes": 67214,
+      "sha256": "a94eeddc77d584dab506dff93f9ac8dbeb90d52fe8dbf3ac647a85228c4d4853"
+    },
+    {
+      "path": "references/legacy-fuse-status-16.aseprite",
+      "bytes": 526,
+      "sha256": "1d171b966ab0dda4e1027f1c419b243b1fb4f4a7f0a716c97a3309252eff5fdd"
+    },
+    {
+      "path": "references/legacy-fuse-status-16.png",
+      "bytes": 242,
+      "sha256": "267fd79bdf3c7b82d3335f7310ac694ded1603faa2fb70d5cc77ce27a35b2e9b"
+    },
+    {
+      "path": "references/legacy-fuse-status-32.aseprite",
+      "bytes": 644,
+      "sha256": "287e2bf34d6cd7ca87d2569a9914a1f0c36d91594d9c740e2d7e40ccd8c1127f"
+    },
+    {
+      "path": "references/legacy-fuse-status-32.png",
+      "bytes": 475,
+      "sha256": "04101391b0257ea36b78ebc60ac74354be20d91426f62869b1afebd157195c45"
+    },
+    {
+      "path": "references/legacy-status.json",
+      "bytes": 1434,
+      "sha256": "669ffcbe88c2ab32eb7c587d8fbbbf4152a838c203e238eb63345e89c773ce48"
+    },
+    {
+      "path": "references/legacy-verification.json",
+      "bytes": 474,
+      "sha256": "dbb35a89c7688538f554f5ceed9a689ae736dc2f406c0a636f10acba86213e78"
+    },
+    {
+      "path": "references/legacy-说明.md",
+      "bytes": 2269,
+      "sha256": "711dea33ac81f8fba1da1571abc0d9a2ba333af14bfae7935e91612c8e51ee33"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 5231,
+      "sha256": "2b4c7f08df3e08a253f683e905b82cbcbdce3e5b2dbf3353dbad2aa501e74451"
+    },
+    {
+      "path": "references/zh_cn.json",
+      "bytes": 8959,
+      "sha256": "72c6941cfe83c5f52df8946271d6cb2c23b4b018242d081f4cc1463ec45dac30"
+    },
+    {
+      "path": "review/aseprite-atlas-created.json",
+      "bytes": 3081,
+      "sha256": "d730cea9af8a81816a11f60babfe19f955135b39a8957ed505bd9e58f4e2ec82"
+    },
+    {
+      "path": "review/aseprite-atlas-reopen.json",
+      "bytes": 4831,
+      "sha256": "d040b3e00f38bf77160bab84cdb715a9baf0b29cdbfe11986eea06ce6876e4fa"
+    },
+    {
+      "path": "review/aseprite-before.json",
+      "bytes": 5702,
+      "sha256": "148a1bdea86fb5455274af6e79393aed563a29efbf481aeae15f3cda87f7fefb"
+    },
+    {
+      "path": "review/aseprite-corner-reopen.json",
+      "bytes": 3161,
+      "sha256": "ffeccde9c58518db575acfa4711ae16dd423627ab406be84fa6cd04c41f64573"
+    },
+    {
+      "path": "review/aseprite-symbol-16-open.json",
+      "bytes": 3182,
+      "sha256": "c7c02cb32e5f583d608e45b192aec3983222b36623670bed7bcfeb98f0b41c66"
+    },
+    {
+      "path": "review/aseprite-symbol-16-reopen.json",
+      "bytes": 3168,
+      "sha256": "487e4af5ba60a67f270fe41c6195ca43d39d8ddc6dedbafaa0a9b1767b4c7136"
+    },
+    {
+      "path": "review/aseprite-symbol-32-open.json",
+      "bytes": 3182,
+      "sha256": "37d00259ec37f53c3505a4ef7e8dec4ccfae7d178ae213d84e0b2302f89c77e3"
+    },
+    {
+      "path": "review/aseprite-symbol-32-reopen.json",
+      "bytes": 3168,
+      "sha256": "819b14ad67f9630555a6dc38d1a516ae457b9ee62ca25febe68727f5b477c634"
+    },
+    {
+      "path": "review/atlas-reopen-pixels.json",
+      "bytes": 35060,
+      "sha256": "ace833a508db32c513890da8235c9d1f64f6b8f526f55a6ff57b7ce0d08dfbbe"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 1543,
+      "sha256": "258410733e79766cf4274bf62ae7bcdc4f98f5eea0be2ec4f8315b929e679cf8"
+    },
+    {
+      "path": "review/corner-reopen-pixels.json",
+      "bytes": 667,
+      "sha256": "e880da7eb66a3dc9c5cedad302bf69fa27c5cb7f9b24d165fa287a2cb734da5e"
+    },
+    {
+      "path": "review/fuse-corner-5-aseprite-readback.json",
+      "bytes": 667,
+      "sha256": "44a4a0a87260ee1af60d6873d44ef1c92de8dddf7cac050043d2672a3e784c3b"
+    },
+    {
+      "path": "review/fuse-corner-5-png-readback.json",
+      "bytes": 667,
+      "sha256": "b7059243ed1c61a01cfbc9f286932ae183126294ee217ffd4179e44607f2db21"
+    },
+    {
+      "path": "review/fuse-status-16-aseprite-readback.json",
+      "bytes": 4596,
+      "sha256": "61ce2b8676bfba784b0eb56549f96f4fa6034b4c6c3835f17adc69f02c9745ce"
+    },
+    {
+      "path": "review/fuse-status-16-png-readback.json",
+      "bytes": 4596,
+      "sha256": "b63a777eda6f1eb640c7e7495d15426357efb5d2a3f364c0a52b9043afdb8e5c"
+    },
+    {
+      "path": "review/fuse-status-32-aseprite-readback.json",
+      "bytes": 17652,
+      "sha256": "5139a72577cdab96daa4c072634b61e79bd945669b4b525adc811b102697e834"
+    },
+    {
+      "path": "review/fuse-status-32-png-readback.json",
+      "bytes": 17652,
+      "sha256": "6e5eab953e6da30f7e2948aad44f75209bb5c9bdd5af1784d99aee21f918b34e"
+    },
+    {
+      "path": "review/fuse-status-atlas-64x32-aseprite-readback.json",
+      "bytes": 35060,
+      "sha256": "746567fdd6fd58ccb6d37249d01f8c587db2c070ceebe281980b88463f7fd0ef"
+    },
+    {
+      "path": "review/fuse-status-atlas-64x32-png-readback.json",
+      "bytes": 35060,
+      "sha256": "e60c58b7ce99de975e5d0afd356ee0f5a59802c9a19f747304052c867191644b"
+    },
+    {
+      "path": "review/fuse-status-review.png",
+      "bytes": 274767,
+      "sha256": "71e8fc415fc76a08d37a30f5d548d81a386a8f9be37d76020b4d78d892bbcea6"
+    },
+    {
+      "path": "review/fused-en.png",
+      "bytes": 26953,
+      "sha256": "11d6b64490b1fa95c7d70ca19e25b2a6587434ec72c64d6c9b5e5111f3a7ff49"
+    },
+    {
+      "path": "review/fused-zh.png",
+      "bytes": 28661,
+      "sha256": "5950e163e637aac8325847d51c73461ac5fc33e24f374168c3d603aac4521111"
+    },
+    {
+      "path": "review/inactive-en.png",
+      "bytes": 27752,
+      "sha256": "031796a40b3b35ba5dc64582e9b81a05f23daf82e500591b6da6aa71475ccd02"
+    },
+    {
+      "path": "review/inactive-zh.png",
+      "bytes": 29024,
+      "sha256": "c14e32808169d51090c450ccd03361620d0ccd9c3d85a4dd74460cf83c1bec3a"
+    },
+    {
+      "path": "review/inventory-tooltip-zh.png",
+      "bytes": 25881,
+      "sha256": "6d772e3a4beda634aa08a76730fa1b61bdc12df862dda72443eb1c3c6605738f"
+    },
+    {
+      "path": "review/layout-checks.json",
+      "bytes": 169650,
+      "sha256": "15837d347beb9534a9b385683f7af6ea1c82a43c600126fc219f4238933bb861"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 572,
+      "sha256": "00b275b7b5850c108592fe9e2d4c4181a400722463d19e0f594bb0b7a1d9e877"
+    },
+    {
+      "path": "review/pixel-checks.json",
+      "bytes": 1701,
+      "sha256": "dd2d5c06061f17b61c0614690b8af2cdae188b1e12c5d62235a86955a9598c73"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 834400,
+      "sha256": "41086b9901c415018c41c8db9e36db5b11e9d96e98f0745783951e91c1536308"
+    },
+    {
+      "path": "review/returned-en.png",
+      "bytes": 18380,
+      "sha256": "90ce1b36b3dbfb4e7840c3361c781caddef5d888904e12ed5a8be2eebabfefe0"
+    },
+    {
+      "path": "review/returned-zh.png",
+      "bytes": 20299,
+      "sha256": "f33b4bb3947798df387a594ad33101c2625ec9b4c49db9ad46634b724d0c1056"
+    },
+    {
+      "path": "review/source-reopen-16.png",
+      "bytes": 309,
+      "sha256": "ad3c62d3b4a56babd2542d2a2e4e418cb61417989b711cd0ce9f8abc0a46cbb1"
+    },
+    {
+      "path": "review/source-reopen-32.png",
+      "bytes": 429,
+      "sha256": "265497922d855b724fe9ead274cf3f11e5c87924e2356105060d6d76d7839af2"
+    },
+    {
+      "path": "review/spent-en.png",
+      "bytes": 18384,
+      "sha256": "29936e47dc8eab5e7ce80449bdcb168411cc5193d04d58266e6154ef7651d580"
+    },
+    {
+      "path": "review/spent-zh.png",
+      "bytes": 19499,
+      "sha256": "facf2da9eb6626d0602065475b197767c6d176fb828e58dac89ed5006d7297e2"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 5950,
+      "sha256": "b305f02fa6cd0c7574c460f7d1cc9f3f60881e8fd7cae6a299e10bfa153e053b"
+    },
+    {
+      "path": "source/fuse-corner-5.aseprite",
+      "bytes": 402,
+      "sha256": "0ea607e67eab944f1aa653a508656023d1d96b512719bb288dd38830117ba4e4"
+    },
+    {
+      "path": "source/fuse-status-16.aseprite",
+      "bytes": 526,
+      "sha256": "1d171b966ab0dda4e1027f1c419b243b1fb4f4a7f0a716c97a3309252eff5fdd"
+    },
+    {
+      "path": "source/fuse-status-32.aseprite",
+      "bytes": 644,
+      "sha256": "287e2bf34d6cd7ca87d2569a9914a1f0c36d91594d9c740e2d7e40ccd8c1127f"
+    },
+    {
+      "path": "source/fuse-status-atlas-64x32.aseprite",
+      "bytes": 1160,
+      "sha256": "9ae98535679ebf477a7f7283a632fad486db5506e23393b5c3a8b84e98d958e4"
+    },
+    {
+      "path": "source/native-reference-renderer.js",
+      "bytes": 5700,
+      "sha256": "2596beebce9b991fc223e8ecccfdf3a6a9637b480ca612923ffdadb37b7f1cbc"
+    },
+    {
+      "path": "source/prepare-pixel-assets.py",
+      "bytes": 6331,
+      "sha256": "646cf40c92e87309e81145c9659ab3924459519fb3bdc8382bde9a18ae89acac"
+    },
+    {
+      "path": "source/status-review.js",
+      "bytes": 13740,
+      "sha256": "681daad8fb7f1d3e196aaa82b0f90199b9677b5f6eee92d143376f4a5a4a19d7"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1819,
+      "sha256": "6d63364214caac925d718aa7149140bdfcac9d9cea75704d0ac45e6328ac5b53"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项"
+}

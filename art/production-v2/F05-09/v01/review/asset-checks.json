@@ -1,0 +1,50 @@
+{
+  "asset": "F05-09",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "buoyancy-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:0b1052c27674120b",
+      "visibleColors": 16,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 394
+    },
+    {
+      "name": "buoyancy-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:aa5bc9ea34ed7e48",
+      "visibleColors": 11,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 106
+    }
+  ],
+  "atlasBytesExact": true,
+  "newProductionTexturePixels": 0,
+  "parts": 15,
+  "movingMeshes": 0,
+  "indicatorMeshes": 0,
+  "outwardFaces": 94,
+  "blockbenchStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "javaAndDev14Unchanged": true,
+  "gameIntegrated": false
+}

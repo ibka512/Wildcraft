@@ -1,0 +1,46 @@
+[
+  {
+    "path": "source/geometry-and-uv.json",
+    "sha256": "64ef35f89d80ccaf8014d29af2970d30de5062e1053c491b62183d6ff1d47ffe"
+  },
+  {
+    "path": "exports/fabricator-atlas-64.png",
+    "sha256": "37e0f8b3d2d120ae5977e9e667637297729f07e9d1798ef23e51f8814f798ec3"
+  },
+  {
+    "path": "review/fabricator-state-0.png",
+    "sha256": "933733ff6d5b12c37dc198376d62cd19a0ebaf07b79da733cb08c2514a26f233"
+  },
+  {
+    "path": "review/fabricator-state-1.png",
+    "sha256": "673cdefaea931cf2fbd2581dd0af8833190004ea2675907edb7382039c602829"
+  },
+  {
+    "path": "review/fabricator-state-2.png",
+    "sha256": "b347db2c688529a8f4223e3b34886ed1ac981ec5f236d89822319f93571697a6"
+  },
+  {
+    "path": "review/fabricator-front.png",
+    "sha256": "60e0c2299b17d1984975342dc3188d27dd397339dcb2dccf272c79394d11e39d"
+  },
+  {
+    "path": "review/fabricator-back.png",
+    "sha256": "d05eddf23424e3f1822e821147e4536eb1256a505cfb6e1e21009535f86f0d32"
+  },
+  {
+    "path": "review/fabricator-side.png",
+    "sha256": "1ab3c25dc57c40d6fa7aaf2efe8e18ddcd778bed5e88bd824eae2b718ce37dce"
+  },
+  {
+    "path": "review/fabricator-top.png",
+    "sha256": "5ac0fe72ec328676c937cd4594cdb90f681b42822605b75966d782a794f3954f"
+  },
+  {
+    "path": "review/fabricator-input-closeup.png",
+    "sha256": "6fc0ca249939875f60b2e9196dc777c97f282a4c16a94e0dbd956439c895d426"
+  },
+  {
+    "path": "review/fabricator-output-closeup.png",
+    "sha256": "b3d8dd1bde267f66ff0d58b1c847fc1295a29c6f03db88271195cbd0cb28b4f4"
+  }
+]

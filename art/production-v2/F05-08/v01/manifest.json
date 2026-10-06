@@ -1,0 +1,354 @@
+{
+  "asset": "F05-08",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "sourceAssets": [
+    "F05-01 shared64 atlas"
+  ],
+  "productionMeshes": 25,
+  "movingMeshes": 0,
+  "indicatorMeshes": 1,
+  "indicatorTechnique": "state RGB material/vertex colour; no production emission",
+  "actualStates": [
+    "inactive",
+    "active"
+  ],
+  "powerFailureColourReferenceOnly": true,
+  "blockbenchLampTintNeedsHostRenderer": true,
+  "nativeIconSizes": [
+    32,
+    16
+  ],
+  "nativeIcons": 2,
+  "nativeIconsIndependentlyAuthored": true,
+  "productionAtlasSize": [
+    64,
+    64
+  ],
+  "newProductionTexturePixels": 0,
+  "newAsepriteSources": 2,
+  "reusedAsepriteSources": 1,
+  "actualRenderViews": 15,
+  "blenderNodeColourCases": 30,
+  "browserUiCases": 49,
+  "conceptUse": "reference only; exact prompt archived",
+  "nextAfterAdoption": "F05-09 浮力装置",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3008,
+      "sha256": "66b8b478960fd7cfd279993206e35285cc42b839cb3ecfee371e4aaf83ea90a8"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 338,
+      "sha256": "605541ade571b39190884a246fa1680d63cdbd4f83c1839eac126667e2419fe0"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1456,
+      "sha256": "5018989cedc3ca26a99b6f048568496ef17cf6a33266cc28e33f678560e1d979"
+    },
+    {
+      "path": "exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "exports/stabilizer-geometry.json",
+      "bytes": 93851,
+      "sha256": "c105a0e4f47adbdedf642164457dc09a3434dd86a457b6e1f5eafbcb12480a26"
+    },
+    {
+      "path": "exports/stabilizer-item-16.png",
+      "bytes": 425,
+      "sha256": "613323859a02036b9d170791ad2bf573fac7b50bd5e880ffec27369d833fe159"
+    },
+    {
+      "path": "exports/stabilizer-item-32.png",
+      "bytes": 695,
+      "sha256": "7a646228843ddd385f3bb883db7d5e2c7850aca00b00faa4cc2d40b83a507295"
+    },
+    {
+      "path": "exports/stabilizer-state.json",
+      "bytes": 1287,
+      "sha256": "1b742fe876ccd9b8f23cefb8c5adc596eecbe553ddc227ac3ac08994524fec9b"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2927,
+      "sha256": "440192ff30655b03646f42c8b3c90c38707337197cbb76775d293b5fcbebd0c1"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 819,
+      "sha256": "8dc7f5c9adb8e0f768a0c01f0713c778d5aa2fd9d112532936c30e5fd8567fba"
+    },
+    {
+      "path": "references/imagegen-prompt.txt",
+      "bytes": 1695,
+      "sha256": "aefd3b7360883c7178518ca234f972f0268b0f0e01b99e81d95a1cf709585eea"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1236,
+      "sha256": "0e660a615ab7eeb771caac2be9366bf5997300c40cad14308996f9b364c917c6"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/stabilizer-concept.png",
+      "bytes": 1254418,
+      "sha256": "50d2f6c7b934432f27d8979caddf4eae78f1283721047b75a18dd91c3a270a29"
+    },
+    {
+      "path": "references/stabilizer.json",
+      "bytes": 298,
+      "sha256": "f661ece518c12baa766f858d87d5bdee617f4ea0489e69bd00e037bfd4e11c1e"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "review/aseprite-start.json",
+      "bytes": 271,
+      "sha256": "62fee38e43e738dae76965077d3c26392e8d2029d3a5ed19931c0199ef0011d1"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 1094,
+      "sha256": "ea6a059f28ac5cd817077cd8b586f5a82d75fe201dd4970f47e3953a40bcfb31"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 6117,
+      "sha256": "9ddf952676965765ebacb58f75ee8d12d815e37581080f75ce3e5fc9fa58932b"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 10525,
+      "sha256": "cbbdadd8b5b842e2084476102acf56fd9e64b68b6a85c2ddf5838acee071a728"
+    },
+    {
+      "path": "review/contract-checks.json",
+      "bytes": 335,
+      "sha256": "165ef543aa288730b8f92d82674c11b651362a9ebf0581f321e504e0f946313c"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 469,
+      "sha256": "750230e255f8c3b0541265b28ef273241f97695369a047865a66af95799db119"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 13507942,
+      "sha256": "08950c2442835409d2d00aafd92071c188f0fba0239be801cdaf6298629a6dd7"
+    },
+    {
+      "path": "review/stabilizer-active-indicator.png",
+      "bytes": 631040,
+      "sha256": "5e22bd4b4836baedbde2704af5f1a6c74193e279f5e06bd4f4bf061839af0de1"
+    },
+    {
+      "path": "review/stabilizer-active-three-quarter.png",
+      "bytes": 673841,
+      "sha256": "b6cb1cb4f79fde2f36e66a9c4a90885c8114273cb8128ede51c77bed87b25fc4"
+    },
+    {
+      "path": "review/stabilizer-back.png",
+      "bytes": 638842,
+      "sha256": "155100a3983f10cfbca9d8b44f1fd8f180377b538f35b6cf149cceaef49aa0af"
+    },
+    {
+      "path": "review/stabilizer-front.png",
+      "bytes": 569825,
+      "sha256": "81e9a56922a7117892eacef401488f8608a5fab3e776f0744c1b1cf066642f71"
+    },
+    {
+      "path": "review/stabilizer-inactive-indicator.png",
+      "bytes": 618700,
+      "sha256": "f507ac7fd3398aadf973b98c41a7fb03d7f4aa096fdcedb5636d780485be20b7"
+    },
+    {
+      "path": "review/stabilizer-inactive-three-quarter.png",
+      "bytes": 675184,
+      "sha256": "54186eed1636dd15b8497f08d6dcdaa9b92dcd27e56594de8faa80cdf907694f"
+    },
+    {
+      "path": "review/stabilizer-live-review.png",
+      "bytes": 24540,
+      "sha256": "60c40c8d945360ea9c7421e64b96189294680be797a29e0b6b237e7323020679"
+    },
+    {
+      "path": "review/stabilizer-mounted-0.png",
+      "bytes": 770914,
+      "sha256": "44a404f838b32f2c69f4f4d9d61d041034ff65ab78c5b8bbe640a743533d58bc"
+    },
+    {
+      "path": "review/stabilizer-mounted-1.png",
+      "bytes": 622932,
+      "sha256": "68a30ac6ffa46a664a50cb680008169b6a8628bb2af2cf0ad8a4cfa54fdb6b2f"
+    },
+    {
+      "path": "review/stabilizer-mounted-2.png",
+      "bytes": 725584,
+      "sha256": "e3082961064f9c4fbb7a214bedc520bdb521026e53b4e18fb767274d67312c0c"
+    },
+    {
+      "path": "review/stabilizer-mounted-3.png",
+      "bytes": 767618,
+      "sha256": "f86c767d038d55b7131100d4250531d61193178f6012853e5dfd74096b585493"
+    },
+    {
+      "path": "review/stabilizer-mounted-4.png",
+      "bytes": 763809,
+      "sha256": "f64d86ff9cfb04ba3c8976d667c760d79518f8885a421f1aab89a789d1c5c503"
+    },
+    {
+      "path": "review/stabilizer-mounted-5.png",
+      "bytes": 767383,
+      "sha256": "a4abb1b22eadc6875c092573ddd69810555c17975b9ae66431ab2cf834cb32dd"
+    },
+    {
+      "path": "review/stabilizer-power-reference-indicator.png",
+      "bytes": 632239,
+      "sha256": "49dbb3661e792ff862c076f65d2324fa00eb3e403701b6965129104f1a4c29c7"
+    },
+    {
+      "path": "review/stabilizer-power-reference.png",
+      "bytes": 677467,
+      "sha256": "db6bbf68b5708f38d4dc4059303186839def00894742be90527c62d8ad61171f"
+    },
+    {
+      "path": "review/stabilizer-review.png",
+      "bytes": 1192690,
+      "sha256": "795257d1179384b4d5d427e719b93f4d7801c904c4ceae6d161bbff7e51786a1"
+    },
+    {
+      "path": "review/stabilizer-side.png",
+      "bytes": 522901,
+      "sha256": "f1d54819d43fac57a001c63d877e2656fec00a886e7ca807fd6fde7e9aa7c742"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 6171,
+      "sha256": "84fc64699ed490e04e0482ec8efeeabbf71d3591dc935876b20e4afc3d62fdd1"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 12000,
+      "sha256": "253aac7724137a945009f414f6d284e7e496227561509e8c0062c33140a9be94"
+    },
+    {
+      "path": "source/create-pixels.py",
+      "bytes": 5540,
+      "sha256": "e2c992f6358d470fbe51596a3b5cc2907f5b61dab1cdd7a5a3d5e3294b74cd3c"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 93851,
+      "sha256": "c105a0e4f47adbdedf642164457dc09a3434dd86a457b6e1f5eafbcb12480a26"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 33041,
+      "sha256": "53f14bdabf271b0f426337a53780c3d72e222bf629c5068a76eeba8f2cd7c08a"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 6872,
+      "sha256": "e1a456f254211bd3b7a9ee153505757bb37c5a8df24617f25281e3d59432847c"
+    },
+    {
+      "path": "source/review-snapshots.json",
+      "bytes": 961,
+      "sha256": "bd87b68742a9c009a1eb2a49d64cd98e8fe55f57602a32715e9e41e1a37b35d9"
+    },
+    {
+      "path": "source/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "source/stabilizer-item-16.aseprite",
+      "bytes": 755,
+      "sha256": "052e3afc8f6467ddcf6a99c67a34a946abf0feb0903a2ba079fb008d698cfca2"
+    },
+    {
+      "path": "source/stabilizer-item-32.aseprite",
+      "bytes": 943,
+      "sha256": "7176ad75ecbbcc57cc29dbe6ab90296dc62f581dd539451a94333468564c6d52"
+    },
+    {
+      "path": "source/stabilizer-preview.js",
+      "bytes": 6859,
+      "sha256": "5957251630d36acd5dde1c6617e034f0edd559a7d2af79e5406b0ffd827224f2"
+    },
+    {
+      "path": "source/stabilizer-v01.bbmodel",
+      "bytes": 99448,
+      "sha256": "3568afb58ee89679f37f6182125f2c41565bca9f9aed6331163976932da7e779"
+    },
+    {
+      "path": "source/stabilizer-v01.blend",
+      "bytes": 149108,
+      "sha256": "b526ecedecffddb47bb1ad28082a1cbeb55711b87a76e81e6e25b71aecc968be"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 3705,
+      "sha256": "6616d9731e4891bb49c7c31881b5dd68315eff597130c40324b39f525eb4234d"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 3244,
+      "sha256": "e87890c455d95bc4b9c1f0e2855d3c67c8b15d1c4a650651c472f06d2cf69971"
+    },
+    {
+      "path": "source/verify-contract.mjs",
+      "bytes": 2602,
+      "sha256": "d3fd0c6f9149c04a54cb955b4a81b696f7d4210d0421fe1f6c671990d31dcdc2"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2153,
+      "sha256": "502888f412b58bb39ae35a7125c3dc8e52161edf41841a2dde7757741a1b6926"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项",
+  "scope": "稳定器固定模型、独立32/16图标、当前两态灯与六向安装；琥珀灯仅设计参考，游戏接入待验证"
+}

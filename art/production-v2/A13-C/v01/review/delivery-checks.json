@@ -1,0 +1,229 @@
+{
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "Thirty protected originals unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Original focus OGG unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Original focus masters unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Twelve S01 OGG unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Historical design cue values match adopted S01",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Fourteen original own OGG embedded",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No native audio files bundled",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "No native embedded audio",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Only own portable mixed exports",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Own OGG codec mono48k verified",
+      "passed": true,
+      "details": [
+        {
+          "id": "focus_enter",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "charger_start",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "fabricator_start",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "fabricator_complete",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "mechanic_remove",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "mechanic_install",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "mechanic_stop",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "mechanic_start",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "fuse_join",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "charger_full",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "cooking_start",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "fuse_split",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "cooking_complete",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        },
+        {
+          "id": "focus_exit",
+          "codec": "vorbis",
+          "sampleRate": "48000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "name": "Inline script0 syntax",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Inline script1 syntax",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Inline script2 syntax",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Inline script3 syntax",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Policy verified",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Audio decoded and reference mixes not clipping",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Browser scheduling verified",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unavailable native fails without playback",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Actual WebAudio dry and crowded output",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Mobile layout no horizontal overflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Allowed server route /native/bow.ogg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Allowed server route /native/snow1.ogg",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Allowed server route /preview.html",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unlisted server route rejected /native/../references/baseline.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unlisted server route rejected /references/native-local-map.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Unlisted server route rejected /etc/passwd",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "Draft and not integrated",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "protectedFiles": 30,
+  "newProductionSounds": 0,
+  "humanListeningVerified": false,
+  "gameRuntimeVerified": false
+}

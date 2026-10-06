@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-05",
+  "allPassed": true,
+  "size": [
+    176,
+    182
+  ],
+  "sourceLayers": 4,
+  "sourceColorMode": "rgb",
+  "alphaValues": [
+    0,
+    255
+  ],
+  "opaqueColors": 16,
+  "sourceHash": "fnv1a64:d44cd9af779f39d2",
+  "pngHash": "fnv1a64:d44cd9af779f39d2",
+  "matchesAuthoredPixels": true,
+  "pixelIdentity": true,
+  "pngSha256": "7ddf060bc06da1df4c9e942ee31763e98b2d0ff755964df24f67bffc052000c3",
+  "sourceSha256": "44c388c56437e2f3ad92e3e8ec9a823d22c148f94bb6843c7b329551045fde05",
+  "resizedConcept": false,
+  "adopted": false,
+  "integrated": false
+}

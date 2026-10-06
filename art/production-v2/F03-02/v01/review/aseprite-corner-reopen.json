@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 520,
+    "layerId": 521,
+    "frame": 0,
+    "celId": 522,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 520,
+      "objectVersion": 0,
+      "revisionToken": "rev1:a1703ff88a344e0a",
+      "name": "1791219596373_fuse-corner-5.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791219596373_fuse-corner-5.aseprite",
+      "modified": false,
+      "active": true,
+      "width": 5,
+      "height": 5,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 521,
+          "stableId": "layer:521",
+          "name": "图层 1",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 522,
+              "frame": 0,
+              "imageId": 525,
+              "dataId": 524,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 5,
+                "h": 5
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:849842b31cc97546"
+      }
+    }
+  ],
+  "totalDocumentCount": 46
+}

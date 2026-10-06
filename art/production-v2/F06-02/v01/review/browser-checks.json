@@ -1,0 +1,757 @@
+{
+  "asset": "F06-02",
+  "allPassed": true,
+  "stateLanguageScaleCases": 40,
+  "cases": [
+    {
+      "language": "zh",
+      "status": 0,
+      "scale": 1,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 0,
+      "scale": 2,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 0,
+      "scale": 3,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 0,
+      "scale": 4,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "scale": 1,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "scale": 2,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "scale": 3,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "scale": 4,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "scale": 1,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "scale": 2,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "scale": 3,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "scale": 4,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "scale": 1,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "scale": 2,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "scale": 3,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "scale": 4,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "scale": 1,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "scale": 2,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "scale": 3,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "scale": 4,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "scale": 1,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "scale": 2,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "scale": 3,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "scale": 4,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": true,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "scale": 1,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "scale": 2,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "scale": 3,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "scale": 4,
+      "barWidth": 0,
+      "sourceProgress": 0,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "scale": 1,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "scale": 2,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "scale": 3,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "scale": 4,
+      "barWidth": 20,
+      "sourceProgress": 50,
+      "output": null,
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "scale": 1,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "scale": 2,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "scale": 3,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "scale": 4,
+      "barWidth": 41,
+      "sourceProgress": 100,
+      "output": "battery",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "scale": 1,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "scale": 2,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "scale": 3,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "scale": 4,
+      "barWidth": 41,
+      "sourceProgress": 0,
+      "output": "wing",
+      "buttonEnabled": false,
+      "labelsNoOverlap": true
+    }
+  ],
+  "tooltipCases": 40,
+  "tooltips": [
+    {
+      "language": "zh",
+      "status": 0,
+      "kind": "status",
+      "lines": 3,
+      "height": 45,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 0,
+      "kind": "pool",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 0,
+      "kind": "cost",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 0,
+      "kind": "output",
+      "lines": 2,
+      "height": 34,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "kind": "status",
+      "lines": 3,
+      "height": 45,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "kind": "pool",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "kind": "cost",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 1,
+      "kind": "output",
+      "lines": 2,
+      "height": 34,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "kind": "status",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "kind": "pool",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "kind": "cost",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 2,
+      "kind": "output",
+      "lines": 2,
+      "height": 34,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "kind": "status",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "kind": "pool",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "kind": "cost",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 3,
+      "kind": "output",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "kind": "status",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "kind": "pool",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "kind": "cost",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "zh",
+      "status": 4,
+      "kind": "output",
+      "lines": 3,
+      "height": 45,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "kind": "status",
+      "lines": 5,
+      "height": 67,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "kind": "pool",
+      "lines": 6,
+      "height": 78,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "kind": "cost",
+      "lines": 8,
+      "height": 100,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 0,
+      "kind": "output",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "kind": "status",
+      "lines": 6,
+      "height": 78,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "kind": "pool",
+      "lines": 6,
+      "height": 78,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "kind": "cost",
+      "lines": 8,
+      "height": 100,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 1,
+      "kind": "output",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "kind": "status",
+      "lines": 7,
+      "height": 89,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "kind": "pool",
+      "lines": 6,
+      "height": 78,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "kind": "cost",
+      "lines": 8,
+      "height": 100,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 2,
+      "kind": "output",
+      "lines": 4,
+      "height": 56,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "kind": "status",
+      "lines": 9,
+      "height": 111,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "kind": "pool",
+      "lines": 6,
+      "height": 78,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "kind": "cost",
+      "lines": 8,
+      "height": 100,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 3,
+      "kind": "output",
+      "lines": 9,
+      "height": 111,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "kind": "status",
+      "lines": 8,
+      "height": 100,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "kind": "pool",
+      "lines": 6,
+      "height": 78,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "kind": "cost",
+      "lines": 8,
+      "height": 100,
+      "allInCanvas": true
+    },
+    {
+      "language": "en",
+      "status": 4,
+      "kind": "output",
+      "lines": 5,
+      "height": 67,
+      "allInCanvas": true
+    }
+  ],
+  "actualProgressPixelCases": 102,
+  "actualSlotCoordinatesPreserved": true,
+  "buttonPreserved": true,
+  "uncommittedResultShown": false,
+  "completedOutcomeAtZeroSourceTicks": true,
+  "font": "browser approximate",
+  "gameIntegrated": false,
+  "actualCanvasStart": true,
+  "actualRepeatClickRejected": true,
+  "actualProgressInput99And100": true,
+  "actualCollectAndBlockedTransfer": true,
+  "collectBrowserWrapper": "element click reported main intercept; actual center hit-tested and native mouse clicks verified",
+  "viewports": [
+    {
+      "width": 390,
+      "scroll": 375
+    },
+    {
+      "width": 900,
+      "scroll": 885
+    },
+    {
+      "width": 1280,
+      "scroll": 1265
+    }
+  ],
+  "actualAutomaticMouseHover": true
+}

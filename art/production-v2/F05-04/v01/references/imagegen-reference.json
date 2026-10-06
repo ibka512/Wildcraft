@@ -1,0 +1,9 @@
+{
+  "role": "concept reference only, not production native pixels or model",
+  "provider": "built-in imagegen",
+  "created": "2026-10-05",
+  "file": "rocket-concept-imagegen.png",
+  "sha256": "d73bd4f3fdbaee04c04846430f50b651fad31ccd6fb4e429e172502f932f4100",
+  "prompt": "imagegen-prompt.json",
+  "materialReference": "shared-machine-atlas-64.png"
+}

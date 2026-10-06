@@ -1,0 +1,121 @@
+{
+  "asset": "F05-04",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "rocket-atlas-128x64",
+      "nativeSize": [
+        128,
+        64
+      ],
+      "sourceLayers": 2,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:1a28cec66df6c637",
+      "visibleColors": 26,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 3936
+    },
+    {
+      "name": "rocket-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:ea8e04056a3ca2d9",
+      "visibleColors": 13,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 678
+    },
+    {
+      "name": "rocket-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:7e436e9981ddfc10",
+      "visibleColors": 12,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 153
+    },
+    {
+      "name": "spent-rocket-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:cdb5e7638afdcaa5",
+      "visibleColors": 14,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 678
+    },
+    {
+      "name": "spent-rocket-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:1c5d5c9b78114262",
+      "visibleColors": 13,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 153
+    }
+  ],
+  "machine64RegionExact": true,
+  "newPaperPixels": 256,
+  "sharedBaseParts": 44,
+  "variantMeshes": {
+    "loaded": 53,
+    "spent": 68
+  },
+  "faceChecks": {
+    "loaded": 326,
+    "spent": 412
+  },
+  "outwardMeshWinding": true,
+  "identicalMountAndEnvelope": true,
+  "spentPropellantRemoved": true,
+  "iconStateDifferences": [
+    {
+      "nativeSize": 32,
+      "changedPixels": 65,
+      "independentlyAuthored": true
+    },
+    {
+      "nativeSize": 16,
+      "changedPixels": 8,
+      "independentlyAuthored": true
+    }
+  ],
+  "blockbenchJsonStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "javaAndDev14Unchanged": true,
+  "gameIntegrated": false
+}

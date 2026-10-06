@@ -1,0 +1,76 @@
+{
+  "asset": "F03-02",
+  "version": "v01",
+  "date": "2026-10-06",
+  "adopted": true,
+  "integrated": false,
+  "slotSize": [
+    18,
+    18
+  ],
+  "itemRect": [
+    1,
+    1,
+    16,
+    16
+  ],
+  "fusedMarkRect": [
+    0,
+    0,
+    5,
+    5
+  ],
+  "count": "native item count at lower right; never fusion uses",
+  "durability": "native host bar; never fusion uses",
+  "tooltipSymbol": {
+    "region": "16px 完整融合符号",
+    "displaySize": [
+      16,
+      16
+    ]
+  },
+  "largeSymbol": {
+    "region": "32px 完整融合符号",
+    "use": "larger informational layouts only; not a 32px slot overlay"
+  },
+  "remainingUses": {
+    "source": "FusionVisual.uses for valid fusion view; FusionContent.WEAR for detached material only",
+    "range": [
+      1,
+      32
+    ],
+    "lowUsesThreshold": 4,
+    "style": "exact live text; <=4 amber; no flash or extra bar",
+    "exhaustion": "remove fusion layers/mark/uses; keep actual host stack/count/durability/glint; no fused zero view"
+  },
+  "showMarkForKinds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "inactive": "mark means data attached, not active effects; state text explicitly disabled; no new fallback art here",
+  "unfused": "no mark or fusion uses",
+  "returnedMaterial": "no fused mark; show preserved WEAR uses in tooltip",
+  "nativeFirst": "real ItemStack model, text, count, glint and durability rendered natively on future integration",
+  "atlas": "fuse-status-atlas-64x32.png",
+  "atlasSize": [
+    64,
+    32
+  ],
+  "newMarkCount": 1,
+  "reusedSymbolCount": 2,
+  "numbersBaked": false,
+  "elementSpecificMarks": 0,
+  "newFuseScreen": false,
+  "slotReviewCases": "inventory/chest-style 18px cells and hotbar layout; native GUI item transforms pending",
+  "compatibility": "only 12 reference item/material silhouettes checked; custom item models entering corner region need game-specific review and may use tooltip-only mark",
+  "runtimeVerified": false,
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项",
+  "gameRuntimeVerified": false
+}

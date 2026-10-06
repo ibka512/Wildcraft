@@ -1,0 +1,333 @@
+{
+  "asset": "F05-09",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "productionMeshes": 15,
+  "movingMeshes": 0,
+  "productionAtlasSize": [
+    128,
+    64
+  ],
+  "reusedSource": "adopted F05-02 fabric and machine atlas",
+  "newProductionTexturePixels": 0,
+  "newAsepriteSources": 2,
+  "reusedAsepriteSources": 1,
+  "nativeIconSizes": [
+    32,
+    16
+  ],
+  "nativeIconsIndependentlyAuthored": true,
+  "actualRenderViews": 12,
+  "browserUiCases": 56,
+  "capacityPerDevice": 1.75,
+  "energyPerTick": 0,
+  "physicsChanged": false,
+  "collisionChanged": false,
+  "waterlineReferenceOnly": true,
+  "conceptUse": "built-in imagegen reference only; prompt archived",
+  "blockbenchAppOpened": false,
+  "nextAfterAdoption": "F05-10八类机械预览与状态全件复核，随后F06-01古代装置制造机",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2587,
+      "sha256": "f4fba73810728998d6be3376c14d4186ae9b4fdaa3fa6a850b58bff7ac20e2c6"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 331,
+      "sha256": "da45eb1f7078e710e4f970b5e1407a15201405c5f9d96171359decfcc08b0f6c"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1125,
+      "sha256": "7caf5c0c797963f1ffa2d1a5c4087d2b98554713592badeee3b6a1de4e2982a6"
+    },
+    {
+      "path": "exports/buoyancy-geometry.json",
+      "bytes": 57541,
+      "sha256": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2"
+    },
+    {
+      "path": "exports/buoyancy-item-16.png",
+      "bytes": 397,
+      "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+    },
+    {
+      "path": "exports/buoyancy-item-32.png",
+      "bytes": 750,
+      "sha256": "79acb0b77a53928c20fcef443e503cec53593a9b4b9641c57d9a61b5683346e3"
+    },
+    {
+      "path": "exports/buoyancy-state.json",
+      "bytes": 1385,
+      "sha256": "85192f9e57f849a901eb020c66d6e196d3288aa2d48cf59e2c01b2922766f83f"
+    },
+    {
+      "path": "exports/shared-fabric-machine-atlas-128x64.png",
+      "bytes": 8217,
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2583,
+      "sha256": "a8eff28288eae8c197b603ada5fa17e567bdf46a63f1a3a2bc1fe1fd99f6e196"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/buoyancy-concept.png",
+      "bytes": 1516941,
+      "sha256": "caa321c438fac25162801ab08d688371dff8da8fb222ecd138f4f4f6cb7ade12"
+    },
+    {
+      "path": "references/buoyancy.json",
+      "bytes": 258,
+      "sha256": "8d36d2970d42a36647d0d0c77595fad8d2746e6763a089f67b71bdb033292167"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 817,
+      "sha256": "9120a4845ed1841ff5e7cf2c11f819c28f7d2eafc677e4d7fde0046cb7d30404"
+    },
+    {
+      "path": "references/imagegen-prompt.txt",
+      "bytes": 1048,
+      "sha256": "e4824114d0ec1a96d232421f167c3e0a3736faf8eccd984b6d55bf8665432f74"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1260,
+      "sha256": "ada702bfee0a5b8c850d1a1400dfb3978ceaf9dd359807f9f3f32f628970b4a9"
+    },
+    {
+      "path": "references/shared-fabric-machine-atlas-128x64.aseprite",
+      "bytes": 4505,
+      "sha256": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f"
+    },
+    {
+      "path": "references/shared-fabric-machine-atlas-128x64.png",
+      "bytes": 8217,
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "review/aseprite-start.json",
+      "bytes": 274,
+      "sha256": "0cbbcb387af2a9c6eb6fb3499dde4fb2e9cd5ff2dd1cedfda433efba365bfb5c"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 1039,
+      "sha256": "73cd877b63aff61550adaf3eb14631f99d9e1e97d9b6f43b0c221707e176ef90"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 886,
+      "sha256": "0f0a0f1fada6c8f27b71cb16996e2d946c2c2c10482ba54e1298cf3e532ee9b1"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 7792,
+      "sha256": "c134a78bc69e9b60967f9ad93752ee4d9a80abd226d870d871ed79233e88aa85"
+    },
+    {
+      "path": "review/buoyancy-back.png",
+      "bytes": 701946,
+      "sha256": "92624edcd1073f726f8014fc11f0cd0521e3ccbf9fb409415c52b5d87202a741"
+    },
+    {
+      "path": "review/buoyancy-front.png",
+      "bytes": 565305,
+      "sha256": "87464b4fd55b51f97fb05f23b125f87601955967df124cee4075e5c6e44bdfa0"
+    },
+    {
+      "path": "review/buoyancy-live-review.png",
+      "bytes": 64783,
+      "sha256": "694735c11f46a602ff9a8e6c519a6aac7abea8baf1bb1f28188ee9ec54bae140"
+    },
+    {
+      "path": "review/buoyancy-mounted-0.png",
+      "bytes": 797188,
+      "sha256": "2d030bc260dc2c2be780057ad16efcfbee2a87a24c6d0e9c7c73465053d70674"
+    },
+    {
+      "path": "review/buoyancy-mounted-1.png",
+      "bytes": 651028,
+      "sha256": "10fe577cb73079b7313f526ee79c0419d7ae3a8062d89ae078a77695e55f19af"
+    },
+    {
+      "path": "review/buoyancy-mounted-2.png",
+      "bytes": 751862,
+      "sha256": "d570717b9827fd70780fbfc8c25e9ca23da4a021306c14d96187c8cede2acdbb"
+    },
+    {
+      "path": "review/buoyancy-mounted-3.png",
+      "bytes": 793427,
+      "sha256": "810496814a9fa10f8b968c6bffe63036428613012f160681c61432000c3ac48f"
+    },
+    {
+      "path": "review/buoyancy-mounted-4.png",
+      "bytes": 788719,
+      "sha256": "48a95d7b94426896879cbb38816f1eb1244423db5122f02897bce8ccedbd5857"
+    },
+    {
+      "path": "review/buoyancy-mounted-5.png",
+      "bytes": 797489,
+      "sha256": "5718586969a36b7ab7c58afd41964e955f5c6f3486c5b9856d43bca5d440747f"
+    },
+    {
+      "path": "review/buoyancy-review.png",
+      "bytes": 1425883,
+      "sha256": "5f37dcda329128e8098abd8b4786a983b39a883e656c44b5fda47935da9bd8fc"
+    },
+    {
+      "path": "review/buoyancy-side.png",
+      "bytes": 579465,
+      "sha256": "37e25ec6ad29987b0d634e2a9dde2b1aeb22b7e5ee67127e200265ca091ec800"
+    },
+    {
+      "path": "review/buoyancy-submerged-reference.png",
+      "bytes": 656436,
+      "sha256": "acde5b5e34d5cfff390b2a66330d2fa9f0eeb9dd039b0a4685eeaf8d167ddda6"
+    },
+    {
+      "path": "review/buoyancy-three-quarter.png",
+      "bytes": 749603,
+      "sha256": "3eb567379c702c5575285af36d3965b9f8e46d3da56fb7f1316891ad8889853d"
+    },
+    {
+      "path": "review/buoyancy-waterline.png",
+      "bytes": 725381,
+      "sha256": "daa26c560f3b53607e2a1c60fc6284e92207a83b1d22ed24ab16308dcffaedeb"
+    },
+    {
+      "path": "review/contract-checks.json",
+      "bytes": 361,
+      "sha256": "e77c3a2c6e655d8184e89a55b8eb251cf6523d4618003e09b7c00ac131da8f84"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 463,
+      "sha256": "441241945cac56e673947d33b4547e6617fb2fb2f9019bee3b23d1913bccd406"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 11505543,
+      "sha256": "3f7373d345ac22ba3e30e8be28ccc2fa34fdda7705aff989b40b13ce1d628ca2"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 4872,
+      "sha256": "c72bc032a6a036efbf16a436a4bb86756a3b2eafa3b71918224397b6347d2c5c"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 10572,
+      "sha256": "949ace4ddfb00c4dd670a48ba7cf5211483b29f544a5d9f0b3a289f42b737d1f"
+    },
+    {
+      "path": "source/buoyancy-item-16.aseprite",
+      "bytes": 713,
+      "sha256": "afc157002343dc1538a79460de7dd6c5d6f4aed258531f16ee3a91a9ce577bfb"
+    },
+    {
+      "path": "source/buoyancy-item-32.aseprite",
+      "bytes": 953,
+      "sha256": "a11dd08a075ea4a1e1471937b56ebdade0912261f6683f45f321dbb8b09bbb1d"
+    },
+    {
+      "path": "source/buoyancy-preview.js",
+      "bytes": 6881,
+      "sha256": "99035c948811c738fee90dcf79540030a5c1c7ddcd51ad20002aca244ab105b9"
+    },
+    {
+      "path": "source/buoyancy-v01.bbmodel",
+      "bytes": 70757,
+      "sha256": "204a7136d21f5548ec2aeac934944cd24e1ef6a17f0b3d49975dff945a5c773c"
+    },
+    {
+      "path": "source/buoyancy-v01.blend",
+      "bytes": 149545,
+      "sha256": "6a05f2b9471617f7bdb87dc6092031f561ba72a836f0d55bf2869e3836366bd4"
+    },
+    {
+      "path": "source/create-pixels.py",
+      "bytes": 5510,
+      "sha256": "28f5597b178b6846abfba0a63702c1bc5d5f9a5b0fb1fd08964d95be77badc73"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 57541,
+      "sha256": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 27750,
+      "sha256": "1c30543e7fe824a7f460f3bf5eaa1ab2fed550156d17343ec9f787f49c44b298"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 6039,
+      "sha256": "bf42d6e455a99774149be15f117081eb0251a14e4e5e1ac95b24c5e99135253b"
+    },
+    {
+      "path": "source/review-snapshots.json",
+      "bytes": 1420,
+      "sha256": "4883489d4af3ca0dffa888132098ab4895f00f2916d3db053f42303be9949985"
+    },
+    {
+      "path": "source/shared-fabric-machine-atlas-128x64.aseprite",
+      "bytes": 4505,
+      "sha256": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 3677,
+      "sha256": "d52bfc518c355cd0267afb7aadef51f253cb1d1d6dc93249327109e4c8170cfe"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 2464,
+      "sha256": "c9a93fd00ad5b3a733a450503f3696a8e78da2bf198a1c8e79449de3da698b63"
+    },
+    {
+      "path": "source/verify-contract.mjs",
+      "bytes": 2522,
+      "sha256": "a6f9afb39ce8181530bdf622829c5e0c262759bf1e2a2694a11ed5f3c64f968a"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1748,
+      "sha256": "4c676507e1a593e8bce9343a305ebc153b3d9cc4dacd07ebba84faefd39ea849"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一步",
+  "scope": "浮力装置模型、独立32/16源图、六向安装及水线参考；实际游戏水下/载重/碰撞待接入验证"
+}

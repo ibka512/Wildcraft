@@ -1,0 +1,80 @@
+{
+  "allPassed": true,
+  "sceneCount": 8,
+  "openedWithoutSaving": true,
+  "checks": [
+    {
+      "scene": "A09C_slim_crouch",
+      "meshObjects": 14,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_slim_glide",
+      "meshObjects": 36,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_slim_stand",
+      "meshObjects": 14,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_slim_swim",
+      "meshObjects": 14,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_standard_crouch",
+      "meshObjects": 14,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_standard_glide",
+      "meshObjects": 36,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_standard_stand",
+      "meshObjects": 14,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    },
+    {
+      "scene": "A09C_standard_swim",
+      "meshObjects": 14,
+      "referenceOnly": true,
+      "fiveItems": true,
+      "notAdopted": true,
+      "proxyGuides": true,
+      "engine": "BLENDER_WORKBENCH"
+    }
+  ],
+  "gameRuntimeVerified": false
+}

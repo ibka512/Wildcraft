@@ -1,0 +1,51 @@
+{
+  "asset": "F05-08",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "stabilizer-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:d80eca734bff4f9d",
+      "visibleColors": 13,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 361
+    },
+    {
+      "name": "stabilizer-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:129b2c27f40b8b6c",
+      "visibleColors": 12,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 82
+    }
+  ],
+  "atlasBytesExact": true,
+  "newProductionTexturePixels": 0,
+  "parts": 25,
+  "movingMeshes": 0,
+  "indicatorMeshes": 1,
+  "outwardFaces": 154,
+  "blockbenchStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "blockbenchLampTintRequiresStateMaterial": true,
+  "javaAndDev14Unchanged": true,
+  "gameIntegrated": false
+}

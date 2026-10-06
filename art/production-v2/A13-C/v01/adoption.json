@@ -1,0 +1,17 @@
+{
+  "asset": "A13-C",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "acceptedProfile": "proposed",
+  "acceptedVolumes": {
+    "enter": 0.22,
+    "exit": 0.28
+  },
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "userReviewApproved": true,
+  "scope": "八场景专注混音复核与B方案已采用：进入0.22／退出0.28；复用原双短音，保留UI分类、单声替换及S01六声预算；未接入游戏，实机类别音量、空间声场与辨识仍待验证"
+}

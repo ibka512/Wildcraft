@@ -1,0 +1,75 @@
+[
+  {
+    "id": "dry",
+    "label": "陆地 · 无浮力",
+    "fluid": "air",
+    "waterHeight": 0,
+    "mass": 1.1,
+    "active": false
+  },
+  {
+    "id": "shallow",
+    "label": "浅水 · 有限浮力",
+    "fluid": "water",
+    "waterHeight": 0.1,
+    "waterY": 2,
+    "mass": 1.1,
+    "active": true
+  },
+  {
+    "id": "water",
+    "label": "水中 · 载重范围内",
+    "fluid": "water",
+    "waterHeight": 0.4,
+    "waterY": 4,
+    "mass": 1.1,
+    "active": true
+  },
+  {
+    "id": "threshold",
+    "label": "载重1.75 · 临界仍有效",
+    "fluid": "water",
+    "waterHeight": 0.4,
+    "waterY": 4,
+    "mass": 1.75,
+    "active": true
+  },
+  {
+    "id": "overload",
+    "label": "载重1.85 · 超载无浮力",
+    "fluid": "water",
+    "waterHeight": 0.4,
+    "waterY": 8.64,
+    "mass": 1.85,
+    "active": false
+  },
+  {
+    "id": "disabled",
+    "label": "整机关闭/无电 · 被动浮力仍有效",
+    "fluid": "water",
+    "waterHeight": 0.4,
+    "waterY": 4,
+    "mass": 1.1,
+    "enabled": false,
+    "energy": 0,
+    "active": true
+  },
+  {
+    "id": "lava",
+    "label": "岩浆 · 不提供浮力",
+    "fluid": "lava",
+    "waterHeight": 0,
+    "mass": 1.1,
+    "active": false
+  },
+  {
+    "id": "ghost",
+    "label": "水中安装预览 · 不提供浮力",
+    "fluid": "water",
+    "waterHeight": 0.4,
+    "waterY": 4,
+    "mass": 1.1,
+    "active": false,
+    "ghost": true
+  }
+]

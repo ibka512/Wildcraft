@@ -1,0 +1,9 @@
+{
+  "asset": "F04-01",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项",
+  "integrated": false,
+  "scope": "有限电池模型、32px材质、原生16/32物品图及三格动态窗口规范"
+}

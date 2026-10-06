@@ -1,0 +1,715 @@
+{
+  "allPassed": true,
+  "stateRotationCases": 30,
+  "charges": [
+    {
+      "e": 0,
+      "fractions": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "e": 1,
+      "fractions": [
+        0.003,
+        0,
+        0
+      ]
+    },
+    {
+      "e": 333,
+      "fractions": [
+        0.9990000000000001,
+        0,
+        0
+      ]
+    },
+    {
+      "e": 334,
+      "fractions": [
+        1,
+        0.0020000000000000018,
+        0
+      ]
+    },
+    {
+      "e": 500,
+      "fractions": [
+        1,
+        0.5,
+        0
+      ]
+    },
+    {
+      "e": 666,
+      "fractions": [
+        1,
+        0.9980000000000002,
+        0
+      ]
+    },
+    {
+      "e": 667,
+      "fractions": [
+        1,
+        1,
+        0.001000000000000334
+      ]
+    },
+    {
+      "e": 999,
+      "fractions": [
+        1,
+        1,
+        0.9969999999999999
+      ]
+    },
+    {
+      "e": 1000,
+      "fractions": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "pitchCases": 3,
+  "cases": [
+    {
+      "s": 0,
+      "e": 0,
+      "present": false,
+      "info": {
+        "energy": 0,
+        "fractions": [
+          0,
+          0,
+          0
+        ],
+        "visibleFaces": 60,
+        "yaw": -90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 0,
+        "state": 0,
+        "present": false,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 0,
+      "e": 0,
+      "present": false,
+      "info": {
+        "energy": 0,
+        "fractions": [
+          0,
+          0,
+          0
+        ],
+        "visibleFaces": 91,
+        "yaw": -25,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 0,
+        "state": 0,
+        "present": false,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 0,
+      "e": 0,
+      "present": false,
+      "info": {
+        "energy": 0,
+        "fractions": [
+          0,
+          0,
+          0
+        ],
+        "visibleFaces": 61,
+        "yaw": 0,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 0,
+        "state": 0,
+        "present": false,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 0,
+      "e": 0,
+      "present": false,
+      "info": {
+        "energy": 0,
+        "fractions": [
+          0,
+          0,
+          0
+        ],
+        "visibleFaces": 91,
+        "yaw": 45,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 0,
+        "state": 0,
+        "present": false,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 0,
+      "e": 0,
+      "present": false,
+      "info": {
+        "energy": 0,
+        "fractions": [
+          0,
+          0,
+          0
+        ],
+        "visibleFaces": 60,
+        "yaw": 90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 0,
+        "state": 0,
+        "present": false,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 0,
+      "e": 0,
+      "present": false,
+      "info": {
+        "energy": 0,
+        "fractions": [
+          0,
+          0,
+          0
+        ],
+        "visibleFaces": 60,
+        "yaw": 180,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 0,
+        "state": 0,
+        "present": false,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 1,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": -90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 1,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 1,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 141,
+        "yaw": -25,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 1,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 1,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 95,
+        "yaw": 0,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 1,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 1,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 141,
+        "yaw": 45,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 1,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 1,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": 90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 1,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 1,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": 180,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 1,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 2,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": -90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 2,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 2,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 141,
+        "yaw": -25,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 2,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 2,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 95,
+        "yaw": 0,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 2,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 2,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 141,
+        "yaw": 45,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 2,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 2,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": 90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 2,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 2,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": 180,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 2,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 3,
+      "e": 1000,
+      "present": true,
+      "info": {
+        "energy": 1000,
+        "fractions": [
+          1,
+          1,
+          1
+        ],
+        "visibleFaces": 92,
+        "yaw": -90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 3,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 3,
+      "e": 1000,
+      "present": true,
+      "info": {
+        "energy": 1000,
+        "fractions": [
+          1,
+          1,
+          1
+        ],
+        "visibleFaces": 142,
+        "yaw": -25,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 3,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 3,
+      "e": 1000,
+      "present": true,
+      "info": {
+        "energy": 1000,
+        "fractions": [
+          1,
+          1,
+          1
+        ],
+        "visibleFaces": 96,
+        "yaw": 0,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 3,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 3,
+      "e": 1000,
+      "present": true,
+      "info": {
+        "energy": 1000,
+        "fractions": [
+          1,
+          1,
+          1
+        ],
+        "visibleFaces": 142,
+        "yaw": 45,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 3,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 3,
+      "e": 1000,
+      "present": true,
+      "info": {
+        "energy": 1000,
+        "fractions": [
+          1,
+          1,
+          1
+        ],
+        "visibleFaces": 92,
+        "yaw": 90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 3,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 3,
+      "e": 1000,
+      "present": true,
+      "info": {
+        "energy": 1000,
+        "fractions": [
+          1,
+          1,
+          1
+        ],
+        "visibleFaces": 92,
+        "yaw": 180,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 3,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 4,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": -90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 4,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 4,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 141,
+        "yaw": -25,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 4,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 4,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 95,
+        "yaw": 0,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 4,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 4,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 141,
+        "yaw": 45,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 4,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 4,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": 90,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 4,
+        "present": true,
+        "depthTest": true
+      }
+    },
+    {
+      "s": 4,
+      "e": 500,
+      "present": true,
+      "info": {
+        "energy": 500,
+        "fractions": [
+          1,
+          0.5,
+          0
+        ],
+        "visibleFaces": 92,
+        "yaw": 180,
+        "pitch": 18,
+        "modelCuboids": 30,
+        "batteryCuboids": 16,
+        "state": 4,
+        "present": true,
+        "depthTest": true
+      }
+    }
+  ],
+  "worldSyncImplemented": false,
+  "gameIntegrated": false,
+  "actualUiControlsPassed": true,
+  "noDocumentOverflow": true
+}

@@ -1,0 +1,480 @@
+{
+  "allPassed": true,
+  "cases": 118,
+  "checks": [
+    {
+      "name": "scale and rigid geometry standard/stand/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/stand/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/stand/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/stand/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/stand/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/crouch/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/crouch/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/crouch/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/crouch/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/crouch/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/swim/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/swim/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/swim/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/swim/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/swim/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/glide/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/glide/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/glide/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/glide/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry standard/glide/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/stand/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/stand/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/stand/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/stand/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/stand/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/crouch/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/crouch/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/crouch/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/crouch/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/crouch/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/swim/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/swim/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/swim/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/swim/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/swim/crossbow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/glide/sword",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/glide/axe",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/glide/shield",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/glide/bow",
+      "passed": true
+    },
+    {
+      "name": "scale and rigid geometry slim/glide/crossbow",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-bow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/sword-shield-crossbow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-bow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records cape/axe-shield-crossbow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-bow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/sword-shield-crossbow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-bow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/standard/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/standard/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/standard/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/standard/glide",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/slim/stand",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/slim/crouch",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/slim/swim",
+      "passed": true
+    },
+    {
+      "name": "three actual records elytra/axe-shield-crossbow/slim/glide",
+      "passed": true
+    },
+    {
+      "name": "slim evaluated reference preserves intrinsic 3-unit cross edge",
+      "passed": true
+    },
+    {
+      "name": "standard intrinsic cross edge4",
+      "passed": true
+    },
+    {
+      "name": "none preserves old back targets",
+      "passed": true
+    },
+    {
+      "name": "legacy cape hides three",
+      "passed": true
+    },
+    {
+      "name": "legacy elytra keeps melee only",
+      "passed": true
+    },
+    {
+      "name": "both uses elytra proxy alone",
+      "passed": true
+    },
+    {
+      "name": "same-reference held removes melee",
+      "passed": true
+    },
+    {
+      "name": "same-reference held removes shield",
+      "passed": true
+    },
+    {
+      "name": "same-reference held removes ranged",
+      "passed": true
+    },
+    {
+      "name": "same-looking spare does not remove recorded item",
+      "passed": true
+    },
+    {
+      "name": "gliding hands preserve registered equipment",
+      "passed": true
+    },
+    {
+      "name": "no ranged Fuse material invented",
+      "passed": true
+    },
+    {
+      "name": "only three record categories",
+      "passed": true
+    },
+    {
+      "name": "no production texture mesh or inventory slot",
+      "passed": true
+    }
+  ],
+  "gameRuntimeVerified": false,
+  "scope": "rigid scale, five profiles, three record combinations, adopted arm evaluation, proxy visibility and reference eligibility"
+}

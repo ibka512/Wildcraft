@@ -1,0 +1,636 @@
+{
+  "asset": "F03-04",
+  "allPassed": true,
+  "actualPresetSettingCases": [
+    {
+      "type": "fire",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 6
+      },
+      "draw": {
+        "shown": 6,
+        "culled": 0,
+        "alive": 6
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "fire",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "reduced",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 3
+      },
+      "draw": {
+        "shown": 3,
+        "culled": 0,
+        "alive": 3
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "fire",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "minimal",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "minimal-particle-setting",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "ice",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 6
+      },
+      "draw": {
+        "shown": 6,
+        "culled": 0,
+        "alive": 6
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "ice",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "reduced",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 3
+      },
+      "draw": {
+        "shown": 3,
+        "culled": 0,
+        "alive": 3
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "ice",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "minimal",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "minimal-particle-setting",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "elastic",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 5
+      },
+      "draw": {
+        "shown": 5,
+        "culled": 0,
+        "alive": 5
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "elastic",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "reduced",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 3
+      },
+      "draw": {
+        "shown": 3,
+        "culled": 0,
+        "alive": 3
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "elastic",
+      "channel": "melee",
+      "result": "confirmed",
+      "mode": "minimal",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "minimal-particle-setting",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+    },
+    {
+      "type": "fuse",
+      "channel": "action",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 6
+      },
+      "draw": {
+        "shown": 6,
+        "culled": 0,
+        "alive": 6
+      },
+      "stress": false,
+      "description": "服务端事务已成功提交：物品立即更新，只补充一次短反馈。"
+    },
+    {
+      "type": "fuse",
+      "channel": "action",
+      "result": "confirmed",
+      "mode": "reduced",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 3
+      },
+      "draw": {
+        "shown": 3,
+        "culled": 0,
+        "alive": 3
+      },
+      "stress": false,
+      "description": "服务端事务已成功提交：物品立即更新，只补充一次短反馈。"
+    },
+    {
+      "type": "fuse",
+      "channel": "action",
+      "result": "confirmed",
+      "mode": "minimal",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "minimal-particle-setting",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "服务端事务已成功提交：物品立即更新，只补充一次短反馈。"
+    },
+    {
+      "type": "split",
+      "channel": "action",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 4
+      },
+      "draw": {
+        "shown": 4,
+        "culled": 0,
+        "alive": 4
+      },
+      "stress": false,
+      "description": "服务端事务已成功提交：物品立即更新，只补充一次短反馈。"
+    },
+    {
+      "type": "split",
+      "channel": "action",
+      "result": "confirmed",
+      "mode": "reduced",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 2
+      },
+      "draw": {
+        "shown": 2,
+        "culled": 0,
+        "alive": 2
+      },
+      "stress": false,
+      "description": "服务端事务已成功提交：物品立即更新，只补充一次短反馈。"
+    },
+    {
+      "type": "split",
+      "channel": "action",
+      "result": "confirmed",
+      "mode": "minimal",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "minimal-particle-setting",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "服务端事务已成功提交：物品立即更新，只补充一次短反馈。"
+    }
+  ],
+  "noExtraFeedbackCases": [
+    {
+      "type": "fire",
+      "channel": "arrow-block",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 12,
+      "playing": false,
+      "receipt": {
+        "accepted": false,
+        "reason": "no-elemental-trigger",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "射中方块：原版碰撞和融合清除照常；没有元素命中反馈。"
+    },
+    {
+      "type": "fire",
+      "channel": "shield-ranged",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 12,
+      "playing": false,
+      "receipt": {
+        "accepted": false,
+        "reason": "no-elemental-trigger",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "完整格挡投射物：没有符合条件的近战攻击者，不播放元素反击反馈。"
+    },
+    {
+      "type": "fire",
+      "channel": "shield-partial",
+      "result": "confirmed",
+      "mode": "all",
+      "light": false,
+      "time": 12,
+      "playing": false,
+      "receipt": {
+        "accepted": false,
+        "reason": "no-elemental-trigger",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "部分格挡：当前合同没有触发元素反击，不播放该反馈。"
+    },
+    {
+      "type": "fire",
+      "channel": "shield-melee",
+      "result": "refused",
+      "mode": "all",
+      "light": false,
+      "time": 12,
+      "playing": false,
+      "receipt": {
+        "accepted": false,
+        "reason": "not-confirmed",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "没有实际生效：没有额外元素反馈。"
+    },
+    {
+      "type": "fire",
+      "channel": "shield-melee",
+      "result": "inactive",
+      "mode": "all",
+      "light": false,
+      "time": 12,
+      "playing": false,
+      "receipt": {
+        "accepted": false,
+        "reason": "material-data-unavailable",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "材料数据不可用：没有元素反馈；保留已有回退外观。"
+    },
+    {
+      "type": "fire",
+      "channel": "shield-melee",
+      "result": "duplicate",
+      "mode": "all",
+      "light": false,
+      "time": 12,
+      "playing": false,
+      "receipt": {
+        "accepted": false,
+        "reason": "duplicate-or-old-sequence",
+        "spawned": 0
+      },
+      "draw": {
+        "shown": 0,
+        "culled": 0,
+        "alive": 0
+      },
+      "stress": false,
+      "description": "同一确认事件已处理：重复通知不重新播放。"
+    }
+  ],
+  "ended": {
+    "type": "fire",
+    "channel": "melee",
+    "result": "confirmed",
+    "mode": "all",
+    "light": false,
+    "time": 12,
+    "playing": false,
+    "receipt": {
+      "accepted": true,
+      "reason": "accepted",
+      "spawned": 6
+    },
+    "draw": {
+      "shown": 0,
+      "culled": 0,
+      "alive": 0
+    },
+    "stress": false,
+    "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+  },
+  "rewind": {
+    "type": "fire",
+    "channel": "melee",
+    "result": "confirmed",
+    "mode": "all",
+    "light": false,
+    "time": 0,
+    "playing": false,
+    "receipt": {
+      "accepted": true,
+      "reason": "accepted",
+      "spawned": 6
+    },
+    "draw": {
+      "shown": 6,
+      "culled": 0,
+      "alive": 6
+    },
+    "stress": false,
+    "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+  },
+  "dense": {
+    "type": "fire",
+    "channel": "melee",
+    "result": "confirmed",
+    "mode": "all",
+    "light": false,
+    "time": 2,
+    "playing": false,
+    "receipt": {
+      "accepted": true,
+      "reason": "dense-reference",
+      "spawned": 48
+    },
+    "draw": {
+      "shown": 48,
+      "culled": 0,
+      "alive": 48
+    },
+    "stress": true,
+    "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+  },
+  "denseReset": {
+    "type": "fire",
+    "channel": "melee",
+    "result": "confirmed",
+    "mode": "all",
+    "light": false,
+    "time": 0,
+    "playing": true,
+    "receipt": {
+      "accepted": true,
+      "reason": "accepted",
+      "spawned": 6
+    },
+    "draw": {
+      "shown": 6,
+      "culled": 0,
+      "alive": 6
+    },
+    "stress": false,
+    "description": "实际元素效果已生效：一次短促命中反馈，不改变原版伤害或持续时间。"
+  },
+  "duplicateDense": {
+    "type": "fire",
+    "channel": "shield-melee",
+    "result": "duplicate",
+    "mode": "all",
+    "light": false,
+    "time": 2,
+    "playing": false,
+    "receipt": {
+      "accepted": false,
+      "reason": "dense-reference",
+      "spawned": 0
+    },
+    "draw": {
+      "shown": 0,
+      "culled": 0,
+      "alive": 0
+    },
+    "stress": true,
+    "description": "同一确认事件已处理：重复通知不重新播放。"
+  },
+  "modelOnly": {
+    "type": "fire",
+    "channel": "shield-melee",
+    "result": "model-only",
+    "mode": "all",
+    "light": false,
+    "time": 2,
+    "playing": false,
+    "receipt": {
+      "accepted": true,
+      "reason": "accepted",
+      "spawned": 6
+    },
+    "draw": {
+      "shown": 6,
+      "culled": 0,
+      "alive": 6
+    },
+    "stress": false,
+    "description": "显示资源缺失：真实效果仍生效，按实际服务端确认播放。"
+  },
+  "transaction": {
+    "state": {
+      "type": "fuse",
+      "channel": "action",
+      "result": "model-only",
+      "mode": "all",
+      "light": false,
+      "time": 2,
+      "playing": false,
+      "receipt": {
+        "accepted": true,
+        "reason": "accepted",
+        "spawned": 6
+      },
+      "draw": {
+        "shown": 6,
+        "culled": 0,
+        "alive": 6
+      },
+      "stress": false,
+      "description": "物品事务已成功；仅显示资源缺失，操作短反馈仍可播放。"
+    },
+    "disabled": true,
+    "value": "action"
+  },
+  "environment": {
+    "type": "fuse",
+    "channel": "action",
+    "result": "model-only",
+    "mode": "all",
+    "light": true,
+    "time": 2,
+    "playing": false,
+    "receipt": {
+      "accepted": true,
+      "reason": "accepted",
+      "spawned": 6
+    },
+    "draw": {
+      "shown": 6,
+      "culled": 0,
+      "alive": 6
+    },
+    "stress": false,
+    "description": "物品事务已成功；仅显示资源缺失，操作短反馈仍可播放。"
+  },
+  "widths": [
+    {
+      "width": 390,
+      "scrollWidth": 375
+    },
+    {
+      "width": 900,
+      "scrollWidth": 885
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1265
+    }
+  ],
+  "gameRuntimeVerified": false
+}

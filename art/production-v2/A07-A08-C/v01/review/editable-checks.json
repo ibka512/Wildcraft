@@ -1,0 +1,179 @@
+{
+  "allPassed": true,
+  "sceneCount": 24,
+  "reopened": true,
+  "checks": [
+    {
+      "scene": "slim_blocked_climb",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_climb_glide",
+      "meshObjects": 33,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_climb_turn",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_glide_block",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_glide_bow",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_glide_close",
+      "meshObjects": 33,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_glide_sword",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_loss_reset",
+      "meshObjects": 33,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_mantle_restore",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_rapid_glide",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_release_empty",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "slim_same_spare",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_blocked_climb",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_climb_glide",
+      "meshObjects": 33,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_climb_turn",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_glide_block",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_glide_bow",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_glide_close",
+      "meshObjects": 33,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_glide_sword",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_loss_reset",
+      "meshObjects": 33,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_mantle_restore",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_rapid_glide",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_release_empty",
+      "meshObjects": 11,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    },
+    {
+      "scene": "standard_same_spare",
+      "meshObjects": 34,
+      "referenceOnly": true,
+      "frameEnd": 109,
+      "fps": 60
+    }
+  ],
+  "sampledVertexComparisons": 3536,
+  "maximumVertexErrorBlocks": 3.03925246810483e-07,
+  "visibilityErrors": [],
+  "gameRuntimeVerified": false
+}

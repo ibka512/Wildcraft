@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 75,
+    "layerId": 76,
+    "frame": 0,
+    "celId": 77,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 75,
+      "objectVersion": 0,
+      "revisionToken": "rev1:0bd78e55497c0f2f",
+      "name": "fuse-shared-atlas-64x32.png",
+      "filename": "/home/web_user/aseprite-web/files/fuse-shared-atlas-64x32.png",
+      "modified": false,
+      "active": true,
+      "width": 64,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 76,
+          "stableId": "layer:76",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 77,
+              "frame": 0,
+              "imageId": 80,
+              "dataId": 79,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 48,
+        "colors": [
+          "#00000000",
+          "#1a171bff",
+          "#171a1dff",
+          "#18181bff",
+          "#2f1703ff",
+          "#2d1808ff",
+          "#3f210aff",
+          "#1e1d22ff",
+          "#232328ff",
+          "#24242bff",
+          "#292930ff",
+          "#30343aff",
+          "#4b290fff",
+          "#59310fff",
+          "#683c19ff",
+          "#74441dff",
+          "#7c4719ff",
+          "#794820ff",
+          "#3e3d46ff",
+          "#44444fff",
+          "#474651ff",
+          "#464b52ff",
+          "#4e505cff",
+          "#575a68ff",
+          "#60666eff",
+          "#6a6a77ff",
+          "#8d5727ff",
+          "#9a612eff",
+          "#a16126ff",
+          "#b37235ff",
+          "#c07f3cff",
+          "#c6823cff",
+          "#d69749ff",
+          "#f6cc71ff",
+          "#747789ff",
+          "#737989ff",
+          "#7d8296ff",
+          "#818890ff",
+          "#9294a4ff",
+          "#9697a6ff",
+          "#a5abbaff",
+          "#e8c38aff",
+          "#fddb83ff",
+          "#b4b7c5ff",
+          "#ced2d6ff",
+          "#dadde6ff",
+          "#e2e3e8ff",
+          "#eef0f1ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:d1a5025701ad3bfb"
+      }
+    }
+  ],
+  "totalDocumentCount": 6
+}

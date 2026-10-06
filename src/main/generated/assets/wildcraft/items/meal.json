@@ -1,6 +1,40 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "wildcraft:item/meal"
+    "type": "minecraft:range_dispatch",
+    "entries": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "wildcraft:item/meal_vegetable"
+        },
+        "threshold": 0
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "wildcraft:item/meal_warming"
+        },
+        "threshold": 1
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "wildcraft:item/meal_cooling"
+        },
+        "threshold": 2
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "wildcraft:item/meal_recovery"
+        },
+        "threshold": 3
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "wildcraft:item/meal_vegetable"
+    },
+    "property": "wildcraft:meal_kind"
   }
 }

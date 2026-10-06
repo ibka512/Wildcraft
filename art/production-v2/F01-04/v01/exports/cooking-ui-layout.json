@@ -1,0 +1,466 @@
+{
+  "asset": "F01-04",
+  "version": "v01",
+  "date": "2026-10-05",
+  "status": "已采用，未接入",
+  "adopted": true,
+  "integrated": false,
+  "size": [
+    176,
+    182
+  ],
+  "units": "Minecraft logical GUI pixels",
+  "texture": "cooking-ui-176x182.png",
+  "sourceLayers": 4,
+  "potSlotCount": 5,
+  "playerSlotCount": 36,
+  "slots": [
+    {
+      "id": 0,
+      "x": 26,
+      "y": 33,
+      "role": "ingredient"
+    },
+    {
+      "id": 1,
+      "x": 46,
+      "y": 33,
+      "role": "ingredient"
+    },
+    {
+      "id": 2,
+      "x": 66,
+      "y": 33,
+      "role": "ingredient"
+    },
+    {
+      "id": 3,
+      "x": 46,
+      "y": 58,
+      "role": "bowl"
+    },
+    {
+      "id": 4,
+      "x": 134,
+      "y": 45,
+      "role": "output"
+    },
+    {
+      "id": 5,
+      "x": 8,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 6,
+      "x": 26,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 7,
+      "x": 44,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 8,
+      "x": 62,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 9,
+      "x": 80,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 10,
+      "x": 98,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 11,
+      "x": 116,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 12,
+      "x": 134,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 13,
+      "x": 152,
+      "y": 100,
+      "role": "inventory"
+    },
+    {
+      "id": 14,
+      "x": 8,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 15,
+      "x": 26,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 16,
+      "x": 44,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 17,
+      "x": 62,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 18,
+      "x": 80,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 19,
+      "x": 98,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 20,
+      "x": 116,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 21,
+      "x": 134,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 22,
+      "x": 152,
+      "y": 118,
+      "role": "inventory"
+    },
+    {
+      "id": 23,
+      "x": 8,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 24,
+      "x": 26,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 25,
+      "x": 44,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 26,
+      "x": 62,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 27,
+      "x": 80,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 28,
+      "x": 98,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 29,
+      "x": 116,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 30,
+      "x": 134,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 31,
+      "x": 152,
+      "y": 136,
+      "role": "inventory"
+    },
+    {
+      "id": 32,
+      "x": 8,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 33,
+      "x": 26,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 34,
+      "x": 44,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 35,
+      "x": 62,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 36,
+      "x": 80,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 37,
+      "x": 98,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 38,
+      "x": 116,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 39,
+      "x": 134,
+      "y": 158,
+      "role": "hotbar"
+    },
+    {
+      "id": 40,
+      "x": 152,
+      "y": 158,
+      "role": "hotbar"
+    }
+  ],
+  "states": [
+    {
+      "id": 0,
+      "key": "unmatched",
+      "zh": "放入匹配食材",
+      "en": "Add matching ingredients",
+      "color": "#716b51",
+      "glyph": "ellipsis"
+    },
+    {
+      "id": 1,
+      "key": "missing_heat",
+      "zh": "锅下需要点燃的营火",
+      "en": "Light a campfire below",
+      "color": "#966c35",
+      "glyph": "heat"
+    },
+    {
+      "id": 2,
+      "key": "cooking",
+      "zh": "烹饪中",
+      "en": "Cooking",
+      "color": "#9c662f",
+      "glyph": "steam"
+    },
+    {
+      "id": 3,
+      "key": "missing_bowl",
+      "zh": "放入空碗",
+      "en": "Add an empty bowl",
+      "color": "#966c35",
+      "glyph": "bowl"
+    },
+    {
+      "id": 4,
+      "key": "output_waiting",
+      "zh": "请先取走成品",
+      "en": "Take the finished meal",
+      "color": "#527046",
+      "glyph": "check"
+    }
+  ],
+  "rules": {
+    "width": 176,
+    "height": 182,
+    "slotSize": 16,
+    "progress": {
+      "x": 92,
+      "y": 49,
+      "maxWidth": 30,
+      "height": 5,
+      "cookTicks": 100
+    },
+    "title": {
+      "x": 8,
+      "y": 7
+    },
+    "ingredients": {
+      "x": 16,
+      "y": 21
+    },
+    "bowl": {
+      "x": 67,
+      "y": 61
+    },
+    "output": {
+      "x": 127,
+      "y": 30
+    },
+    "status": {
+      "x": 24,
+      "y": 77,
+      "width": 144,
+      "glyphX": 11,
+      "glyphY": 78
+    },
+    "inventory": {
+      "x": 8,
+      "y": 89
+    }
+  },
+  "labels": {
+    "zh": {
+      "title": "料理锅",
+      "ingredients": "食材",
+      "bowl": "空碗",
+      "output": "成品",
+      "inventory": "物品栏"
+    },
+    "en": {
+      "title": "Cooking Pot",
+      "ingredients": "Ingredients",
+      "bowl": "Bowl",
+      "output": "Meal",
+      "inventory": "Inventory"
+    }
+  },
+  "fixtures": {
+    "unmatched": {
+      "status": 0,
+      "progress": 0,
+      "slots": {
+        "0": "potato"
+      },
+      "heat": true,
+      "recipe": false,
+      "description": "只有土豆，配方未匹配；输出保持为空"
+    },
+    "missing_heat": {
+      "status": 1,
+      "progress": 0,
+      "slots": {
+        "0": "beetroot",
+        "1": "potato",
+        "2": "carrot",
+        "3": "bowl"
+      },
+      "heat": false,
+      "recipe": true,
+      "description": "已匹配保暖II并有空碗；锅下缺有效热源"
+    },
+    "cooking": {
+      "status": 2,
+      "progress": 56,
+      "slots": {
+        "0": "beetroot",
+        "1": "potato",
+        "2": "carrot",
+        "3": "bowl"
+      },
+      "heat": true,
+      "recipe": true,
+      "description": "实际进度56/100；提交前输出槽为空"
+    },
+    "missing_bowl": {
+      "status": 3,
+      "progress": 0,
+      "slots": {
+        "0": "beetroot",
+        "1": "potato",
+        "2": "carrot"
+      },
+      "heat": true,
+      "recipe": true,
+      "description": "已匹配食材，但缺少真实空碗"
+    },
+    "output_waiting": {
+      "status": 4,
+      "progress": 0,
+      "slots": {
+        "4": "warming"
+      },
+      "heat": true,
+      "recipe": false,
+      "description": "料理已提交至成品槽；示例输入各1件已消耗"
+    }
+  },
+  "statusPriority": [
+    "output occupied -> 4",
+    "recipe unmatched -> 0",
+    "missing empty bowl -> 3",
+    "missing valid heat below -> 1",
+    "otherwise cooking -> 2"
+  ],
+  "progress": {
+    "cookTicks": 100,
+    "maximumFill": 30,
+    "formula": "floor(30*progress/100)",
+    "mask": "shared pixel arrow",
+    "pausedProgressRetained": true,
+    "resetOnOutputCommit": true
+  },
+  "dynamicContent": [
+    "translated titles and labels",
+    "five status glyphs and text",
+    "progress fill",
+    "actual item stacks and counts",
+    "vanilla slot hover",
+    "vanilla item tooltip with meal kind/strength/duration"
+  ],
+  "reuse": {
+    "approvedMealArt": "F01-02/v01 native16",
+    "vanillaItems": "local vanilla reference; not new authored art",
+    "runtimeTextureCount": 1,
+    "runtimeStateTextureCount": 0,
+    "newShaderCount": 0
+  },
+  "constraints": {
+    "fuelSlot": false,
+    "startButton": false,
+    "newIngredient": false,
+    "newRecipe": false,
+    "changesMenuSlots": false,
+    "changesHeatRule": false,
+    "earlyOutputPreview": false,
+    "bakedText": false,
+    "bakedStrengthOrDuration": false
+  },
+  "fontValidation": "browser approximate; actual Minecraft font and tooltip require later runtime verification",
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，继续吧"
+}

@@ -1,0 +1,244 @@
+{
+  "allPassed": true,
+  "decodedAudioFiles": 22,
+  "sampleRate": 48000,
+  "comparisonNormalization": false,
+  "nativeAudioBundled": false,
+  "nativeMixedExports": 0,
+  "newProductionOgg": 0,
+  "portablePreviewWavs": 8,
+  "focusOriginal": {
+    "focus_enter": {
+      "seconds": 0.47733333333333333,
+      "peak": 0.4053621292114258,
+      "peakDbFS": -7.843136550588852,
+      "rmsDbFS": -21.1042475030998
+    },
+    "focus_exit": {
+      "seconds": 0.46,
+      "peak": 0.32006701827049255,
+      "peakDbFS": -9.895181519998324,
+      "rmsDbFS": -23.58508907159407
+    }
+  },
+  "effectiveFocus": {
+    "current": {
+      "enter": {
+        "seconds": 0.47733333333333333,
+        "peak": 0.08917966842651368,
+        "peakDbFS": -20.994682934144727,
+        "rmsDbFS": -34.255793886655674
+      },
+      "exit": {
+        "seconds": 0.46,
+        "peak": 0.07041474401950837,
+        "peakDbFS": -23.0467279035542,
+        "rmsDbFS": -36.736635455149944
+      }
+    },
+    "proposed": {
+      "enter": {
+        "seconds": 0.47733333333333333,
+        "peak": 0.08917966842651368,
+        "peakDbFS": -20.994682934144727,
+        "rmsDbFS": -34.255793886655674
+      },
+      "exit": {
+        "seconds": 0.46,
+        "peak": 0.08961876511573792,
+        "peakDbFS": -20.952020893153943,
+        "rmsDbFS": -34.64192844474968
+      }
+    }
+  },
+  "exitGainDeltaDb": 2.094707010400261,
+  "mixes": [
+    {
+      "scene": "quiet",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.08917966842651368,
+      "peakDbFS": -20.994682934144727,
+      "rmsDbFS": -42.56991172848124,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/quiet-current.wav"
+    },
+    {
+      "scene": "quiet",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.08961876511573792,
+      "peakDbFS": -20.952020893153943,
+      "rmsDbFS": -41.71176414621357,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/quiet-proposed.wav"
+    },
+    {
+      "scene": "rain",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.14405392069369555,
+      "peakDbFS": -16.829498341914274,
+      "rmsDbFS": -36.071242903853104,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "rain",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.14405392069369555,
+      "peakDbFS": -16.829498341914274,
+      "rmsDbFS": -35.86559803013594,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "snow",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.08896556735038758,
+      "peakDbFS": -21.015560946468547,
+      "rmsDbFS": -41.30739296175821,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "snow",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.08958918742951938,
+      "peakDbFS": -20.954888048510917,
+      "rmsDbFS": -40.650296689835706,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "combat",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.4453860863969021,
+      "peakDbFS": -7.025267083957507,
+      "rmsDbFS": -32.81368405427751,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "combat",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.4453860863969021,
+      "peakDbFS": -7.025267083957507,
+      "rmsDbFS": -32.71381133841725,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "machines",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.1824888245910406,
+      "peakDbFS": -14.77527452190903,
+      "rmsDbFS": -38.15404284137097,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/machines-current.wav"
+    },
+    {
+      "scene": "machines",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.19216276215016842,
+      "peakDbFS": -14.326615346829747,
+      "rmsDbFS": -37.81683055979571,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/machines-proposed.wav"
+    },
+    {
+      "scene": "crowded",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.18001016296632588,
+      "peakDbFS": -14.894059498422942,
+      "rmsDbFS": -36.971143493097934,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/crowded-current.wav"
+    },
+    {
+      "scene": "crowded",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.18493618089146913,
+      "peakDbFS": -14.659562304198403,
+      "rmsDbFS": -36.707866499846375,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/crowded-proposed.wav"
+    },
+    {
+      "scene": "rain_combat",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.4631148053663783,
+      "peakDbFS": -6.686226695555488,
+      "rmsDbFS": -31.272109659312022,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "rain_combat",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.4631148053663783,
+      "peakDbFS": -6.686226695555488,
+      "rmsDbFS": -31.203881317323653,
+      "nativeInMemoryOnly": true
+    },
+    {
+      "scene": "rapid",
+      "profile": "current",
+      "seconds": 5.0,
+      "peak": 0.08917966842651368,
+      "peakDbFS": -20.994682934144727,
+      "rmsDbFS": -41.939094097604446,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/rapid-current.wav"
+    },
+    {
+      "scene": "rapid",
+      "profile": "proposed",
+      "seconds": 5.0,
+      "peak": 0.08961876511573792,
+      "peakDbFS": -20.952020893153943,
+      "rmsDbFS": -40.73676791668643,
+      "nativeInMemoryOnly": false,
+      "preview": "exports/preview-mixes/rapid-proposed.wav"
+    }
+  ],
+  "checks": [
+    {
+      "scene": "quiet",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "rain",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "snow",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "combat",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "machines",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "crowded",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "rain_combat",
+      "sameBackgroundAB": true
+    },
+    {
+      "scene": "rapid",
+      "sameBackgroundAB": true
+    }
+  ],
+  "limit": "Electrical waveform measurements only. Human audibility and in-game category/spatial mixing remain unverified."
+}

@@ -1,0 +1,210 @@
+{
+  "asset": "A09-C",
+  "allPassed": true,
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "profiles": 5,
+  "editableScenes": 8,
+  "previewPng": 7,
+  "newProductionModels": 0,
+  "newTextures": 0,
+  "baseSingleItemCases": 80,
+  "baseThreeRecordCases": 64,
+  "geometryScenarioCases": 128,
+  "layoutCases": 118,
+  "actualBrowserRenderCases": 144,
+  "browserChecks": 154,
+  "baselineFilesUnchanged": 16,
+  "previousAssetAdoptedAndManifestUnchanged": true,
+  "embeddedGeometryConfigAndSourceExact": true,
+  "readableEditableSource": true,
+  "nextAssetUntouched": true,
+  "version": "v01",
+  "date": "2026-10-06",
+  "status": "user_approved",
+  "humanVisualApproved": true,
+  "nextAfterAdoption": "A07-A08-C 探索动作衔接复核",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3411,
+      "sha256": "84dd013f445ea0de513e215497262a1fd4baa477ffc78e31637741594ef1c924"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 397,
+      "sha256": "789de84a8b019ad07cf5008937f34a85068f3294379e5b7b7bda79caa24a2c29"
+    },
+    {
+      "path": "exports/waist-layout.json",
+      "bytes": 5963,
+      "sha256": "09310084531281bcd93287920c0d9aab172fd2bc400d06b45b0e6eb96949e4fa"
+    },
+    {
+      "path": "exports/waist-profile-map.csv",
+      "bytes": 409,
+      "sha256": "93ad967e7a92d673bb7b5163ea1d335acbfd6311499082731669b9768805bb23"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 3955,
+      "sha256": "03c479a89ab119383ba6910a742f16c3360048f170732754d4ce21cb8245d6d1"
+    },
+    {
+      "path": "references/adopted-back-layout.json",
+      "bytes": 5755,
+      "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104"
+    },
+    {
+      "path": "references/adopted-fuse-layout.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "references/adopted-glide-grip.json",
+      "bytes": 5633,
+      "sha256": "f2e4f2f1a4a9db117c83200cec886f4e0afc7d2d973b557ac6ca7e1249afd7b8"
+    },
+    {
+      "path": "references/baseline.json",
+      "bytes": 2724,
+      "sha256": "66f27b12782a879f8579092d1c6bf21e6d25d399ea0ef41fd0162a00e09b1934"
+    },
+    {
+      "path": "review/adoption-checks.json",
+      "bytes": 672,
+      "sha256": "9327c2820e4881b9f6b92f8022882375358c650837524ded083609bf53fd7a6a"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 13368,
+      "sha256": "92f17d61cff475a8877d24f539271c20a7dbfc3785a6c92211f493c40a9f2385"
+    },
+    {
+      "path": "review/editable-checks.json",
+      "bytes": 1860,
+      "sha256": "a7c1862df9523f248bf8fd86e1949bdd7f7633d1307fa2121858e78472261697"
+    },
+    {
+      "path": "review/geometry-checks.json",
+      "bytes": 29742,
+      "sha256": "5af0bf96b45b89cde77e080260a66d0a18a94acb9f177a46109c3f129b117c6b"
+    },
+    {
+      "path": "review/layout-checks.json",
+      "bytes": 12262,
+      "sha256": "23fa66aa4d66970f3c989209d7a0a494b71a082f260f6aa9daa2bf7461f9ef4f"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 594,
+      "sha256": "7d0fdac8ef644f8a4523e115fa36dd87d7f7c9ffb9b8c482f008d8478cb69329"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 531051,
+      "sha256": "80996d58d525e86f2aa3a4c5417b97dd54cf105719ca01ab306f0d4f4f79c1f1"
+    },
+    {
+      "path": "review/same-scale-held.png",
+      "bytes": 21236,
+      "sha256": "2d1ed76c5cf68809d35e1a596964e8cc42b7b6a02576772058cb7d043364c101"
+    },
+    {
+      "path": "review/same-scale-waist.png",
+      "bytes": 18064,
+      "sha256": "2322b899ddfab80b2b7231fb7f9cdb0806cee01319ae945b89236907a431d325"
+    },
+    {
+      "path": "review/waist-cape-back.png",
+      "bytes": 45650,
+      "sha256": "8a168e20aca1b4a40594f821b4706df27e3260e34b1476a207cf64c69a528b0d"
+    },
+    {
+      "path": "review/waist-default.png",
+      "bytes": 43219,
+      "sha256": "d005ed13d5025622ee1cb9249a5432987eabf75a14251e4c154763b67050ae71"
+    },
+    {
+      "path": "review/waist-elytra-back.png",
+      "bytes": 41458,
+      "sha256": "dd15afcc9a700259e2416c13795a2e0befaa7c19299f74c72b0e53d5f1429815"
+    },
+    {
+      "path": "review/waist-five-items.png",
+      "bytes": 75085,
+      "sha256": "7733d4456b6d73621599a43eb6cf79e24be2c41bfb6963fa8750c3ce7833b87a"
+    },
+    {
+      "path": "review/waist-pose-review.png",
+      "bytes": 419273,
+      "sha256": "87615b03d4535c8b24a27725f801f7e12d8e0ad06b59a94d18f969cb4906da41"
+    },
+    {
+      "path": "source/build-editable.py",
+      "bytes": 8572,
+      "sha256": "43288fa1a284d2c0dba4ab8922bf39d5b1c9fe3274d38053a40982b49dbbdf71"
+    },
+    {
+      "path": "source/build-review.py",
+      "bytes": 7519,
+      "sha256": "0bcdefeb939a2e64e26d26dcf9d57a31eef6f59d0f132aba42efe7d6ae0247b5"
+    },
+    {
+      "path": "source/check-layout.cjs",
+      "bytes": 4205,
+      "sha256": "9c7981f6014d3ce3e289aeb4b38f307ec2449d0b4b43c2ffcb2cdcc3b3b7de85"
+    },
+    {
+      "path": "source/extract-reference.py",
+      "bytes": 3819,
+      "sha256": "eb2a32310aa0921663e33ab5c7dce779b5fcdd42d46614ffd3c654f88ead8b6a"
+    },
+    {
+      "path": "source/package-assets.py",
+      "bytes": 8737,
+      "sha256": "3338bf1435c4060ce93df46e009147997f7fac4cea07c4e67a7df87726f7e8ce"
+    },
+    {
+      "path": "source/reference-geometry.json",
+      "bytes": 500451,
+      "sha256": "5794409c93a08ceafc880f17e39e782e786b94f2135891e9666a53bf205342eb"
+    },
+    {
+      "path": "source/serve-preview.py",
+      "bytes": 504,
+      "sha256": "d87fb3cf917fd791a6db1a877128ff912a1a810380cb9bbd67a8886c0828cc2b"
+    },
+    {
+      "path": "source/verify-editable.py",
+      "bytes": 1586,
+      "sha256": "b13f4fb8c9456d059c14222eba6cfffc51a695e2fb4c48463fbdc8fc96a88567"
+    },
+    {
+      "path": "source/waist-engine.js",
+      "bytes": 7370,
+      "sha256": "85469003587ee4258fbcce9d25b2cc157eb236ff813413589dc9b4667a4ea68f"
+    },
+    {
+      "path": "source/waist-placement-v01.blend",
+      "bytes": 340463,
+      "sha256": "3b0075b04725adf567f4531f4c5ab64819838ea573cb470d98543b82f595c5b3"
+    },
+    {
+      "path": "source/waist-review.js",
+      "bytes": 5178,
+      "sha256": "5cc41ae8436bfc60d0ffa73d749c48208396297e70c45ce95abb135bfa1e6b6e"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2361,
+      "sha256": "edf4ce7b9895053b27a250184ce9afaf2e9d63eacbe77785a8622389431bce44"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "historicalArchive": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/A09-C/A09-C-披风鞘翅侧腰摆放-v01-审稿包.zip",
+  "historicalArchiveSha256": "3bcd267e8b2833385df5efd537a4f29deccee28b2c37c2cf851d425f14ba5c6b",
+  "originalManifestSha256": "012cc75424ceb606230cfe5601893141edc886c5f5f904841f4dd0dabf1583d0"
+}

@@ -1,0 +1,56 @@
+{
+  "asset": "F05-06",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "spring-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:32cd6eb7c20fc598",
+      "visibleColors": 11,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 523
+    },
+    {
+      "name": "spring-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:a47e3b85755d9a28",
+      "visibleColors": 11,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 131
+    }
+  ],
+  "atlasBytesExact": true,
+  "newProductionTexturePixels": 0,
+  "parts": 44,
+  "groups": {
+    "fixed": 12,
+    "moving": 8,
+    "coil": 24
+  },
+  "bothPosesOutwardWinding": true,
+  "constantWireThickness": 0.48,
+  "pushPlateTravel": 3.2,
+  "fixedBaseUnchanged": true,
+  "blockbenchStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "javaAndDev14Unchanged": true,
+  "gameIntegrated": false
+}

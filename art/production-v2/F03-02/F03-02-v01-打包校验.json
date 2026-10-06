@@ -1,0 +1,9 @@
+{
+  "asset": "F03-02",
+  "allPassed": true,
+  "zipBytes": 775114,
+  "zipSha256": "fb026219dd662f2eea5413aa185445dd0ffbeb8415c617ee5f7dfd203ca6a0a9",
+  "manifestSha256": "7eb72c2f9a47f4e695a91c1f69f4d158b43282534c5553ae051041db10d3daa3",
+  "zipEntries": 76,
+  "zipCRCAndFileHashesVerified": true
+}

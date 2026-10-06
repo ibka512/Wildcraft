@@ -1,0 +1,32 @@
+{
+  "asset": "F05-07",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "pivot": [
+    0,
+    0,
+    4
+  ],
+  "axis": [
+    0,
+    0,
+    1
+  ],
+  "angle": "active && !ghost ? ageInTicks * .4 : 0",
+  "fixedGroup": "fixed",
+  "rotatingGroup": "rotating",
+  "rate": 0.4,
+  "ghostAngle": 0,
+  "stopAngle": 0,
+  "sourceRenderer": "current tire box fixed, face marker rotates",
+  "artAdaptation": "apply existing face-marker angle to tread, rim, spokes and cap together",
+  "notDistanceBased": true,
+  "noReverseVisualDirection": true,
+  "independentWheelCollision": false,
+  "suspension": false,
+  "newPhysics": false,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

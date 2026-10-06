@@ -1,0 +1,1391 @@
+{
+  "asset": "F05-04",
+  "allPassed": true,
+  "actualUiCases": [
+    {
+      "snapshot": "loaded",
+      "node": -1,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": -1,
+        "visibleFaces": 164,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": false,
+        "depthTest": true,
+        "fit": {
+          "scale": 60.920108541633574,
+          "cx": -1.8257108907198216,
+          "cy": 1.130317118666448
+        }
+      },
+      "drawnPixels": 112729,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "loaded",
+      "node": 0,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 0,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.10984730326054,
+          "cx": 0,
+          "cy": -6.7975454485727145
+        }
+      },
+      "drawnPixels": 137605,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "loaded",
+      "node": 1,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 1,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.05131113830355,
+          "cx": 0,
+          "cy": -3.1325673761999147
+        }
+      },
+      "drawnPixels": 136633,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "loaded",
+      "node": 2,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 2,
+        "visibleFaces": 366,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "loaded",
+      "node": 3,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 3,
+        "visibleFaces": 368,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171159,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "loaded",
+      "node": 4,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 4,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": -1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142460,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "loaded",
+      "node": 5,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 5,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": 1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142462,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "burning",
+      "node": -1,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": -1,
+        "visibleFaces": 167,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": false,
+        "depthTest": true,
+        "fit": {
+          "scale": 53.36033596148269,
+          "cx": -2.680328369718376,
+          "cy": 1.5838033634439719
+        }
+      },
+      "drawnPixels": 108418,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "burning",
+      "node": 0,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 0,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 13.877733629651633,
+          "cx": 0,
+          "cy": -9.45188547948029
+        }
+      },
+      "drawnPixels": 94097,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "burning",
+      "node": 1,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 1,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 13.839199118100172,
+          "cx": 0,
+          "cy": -0.4782273452923427
+        }
+      },
+      "drawnPixels": 93472,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "burning",
+      "node": 2,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 2,
+        "visibleFaces": 369,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 172249,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "burning",
+      "node": 3,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 3,
+        "visibleFaces": 371,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 172244,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "burning",
+      "node": 4,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 4,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 15.244557334049226,
+          "cx": -4.139210996578283,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 112067,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "burning",
+      "node": 5,
+      "presentation": {
+        "fuel": 37,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 5,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 15.244557334049226,
+          "cx": 4.139210996578283,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 112067,
+      "glError": 0,
+      "label": "燃料 37 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": -1,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": -1,
+        "visibleFaces": 167,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": false,
+        "depthTest": true,
+        "fit": {
+          "scale": 53.36033596148269,
+          "cx": -2.680328369718376,
+          "cy": 1.5838033634439719
+        }
+      },
+      "drawnPixels": 108418,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": 0,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 0,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 13.877733629651633,
+          "cx": 0,
+          "cy": -9.45188547948029
+        }
+      },
+      "drawnPixels": 94097,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": 1,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 1,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 13.839199118100172,
+          "cx": 0,
+          "cy": -0.4782273452923427
+        }
+      },
+      "drawnPixels": 93472,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": 2,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 2,
+        "visibleFaces": 369,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 172249,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": 3,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 3,
+        "visibleFaces": 371,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 172244,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": 4,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 4,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 15.244557334049226,
+          "cx": -4.139210996578283,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 112067,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "shutdown-burning",
+      "node": 5,
+      "presentation": {
+        "fuel": 19,
+        "variant": "loaded",
+        "flameVisible": true,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 5,
+        "visibleFaces": 370,
+        "productionParts": 53,
+        "flameVisible": true,
+        "ghost": false,
+        "fxFaces": 3,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 15.244557334049226,
+          "cx": 4.139210996578283,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 112067,
+      "glError": 0,
+      "label": "燃料 19 / 80 世界刻燃烧中 · 尾焰外向电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": -1,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": -1,
+        "visibleFaces": 205,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": false,
+        "depthTest": true,
+        "fit": {
+          "scale": 60.920108541633574,
+          "cx": -1.8257108907198216,
+          "cy": 1.130317118666448
+        }
+      },
+      "drawnPixels": 112601,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": 0,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 0,
+        "visibleFaces": 400,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.10984730326054,
+          "cx": 0,
+          "cy": -6.7975454485727145
+        }
+      },
+      "drawnPixels": 137578,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": 1,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 1,
+        "visibleFaces": 420,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.05131113830355,
+          "cx": 0,
+          "cy": -3.1325673761999147
+        }
+      },
+      "drawnPixels": 136610,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": 2,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 2,
+        "visibleFaces": 412,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": 3,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 3,
+        "visibleFaces": 409,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": 4,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 4,
+        "visibleFaces": 419,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": -1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142444,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "spent",
+      "node": 5,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 5,
+        "visibleFaces": 400,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": 1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142447,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": -1,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": -1,
+        "visibleFaces": 205,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": false,
+        "depthTest": true,
+        "fit": {
+          "scale": 60.920108541633574,
+          "cx": -1.8257108907198216,
+          "cy": 1.130317118666448
+        }
+      },
+      "drawnPixels": 112601,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": 0,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 0,
+        "visibleFaces": 400,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.10984730326054,
+          "cx": 0,
+          "cy": -6.7975454485727145
+        }
+      },
+      "drawnPixels": 137578,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": 1,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 1,
+        "visibleFaces": 420,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.05131113830355,
+          "cx": 0,
+          "cy": -3.1325673761999147
+        }
+      },
+      "drawnPixels": 136610,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": 2,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 2,
+        "visibleFaces": 412,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": 3,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 3,
+        "visibleFaces": 409,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": 4,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 4,
+        "visibleFaces": 419,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": -1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142444,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "final-tick",
+      "node": 5,
+      "presentation": {
+        "fuel": 0,
+        "variant": "spent",
+        "flameVisible": false,
+        "ghost": false,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 5,
+        "visibleFaces": 400,
+        "productionParts": 68,
+        "flameVisible": false,
+        "ghost": false,
+        "fxFaces": 0,
+        "ghostFaces": 0,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": 1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142447,
+      "glError": 0,
+      "label": "燃料 0 / 80 世界刻燃尽空壳 · 无尾焰电池费用：0 · 整机已启用"
+    },
+    {
+      "snapshot": "ghost",
+      "node": -1,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": -1,
+        "visibleFaces": 164,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 164,
+        "referenceBody": false,
+        "depthTest": true,
+        "fit": {
+          "scale": 60.920108541633574,
+          "cx": -1.8257108907198216,
+          "cy": 1.130317118666448
+        }
+      },
+      "drawnPixels": 112767,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "ghost",
+      "node": 0,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 0,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 163,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.10984730326054,
+          "cx": 0,
+          "cy": -6.7975454485727145
+        }
+      },
+      "drawnPixels": 137615,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "ghost",
+      "node": 1,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 1,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 163,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.05131113830355,
+          "cx": 0,
+          "cy": -3.1325673761999147
+        }
+      },
+      "drawnPixels": 136646,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "ghost",
+      "node": 2,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 2,
+        "visibleFaces": 366,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 162,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "ghost",
+      "node": 3,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 3,
+        "visibleFaces": 368,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 164,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 19.48404666059434,
+          "cx": 0,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 171160,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "ghost",
+      "node": 4,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 4,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 163,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": -1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142485,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    },
+    {
+      "snapshot": "ghost",
+      "node": 5,
+      "presentation": {
+        "fuel": 80,
+        "variant": "loaded",
+        "flameVisible": false,
+        "ghost": true,
+        "energyCost": 0
+      },
+      "render": {
+        "node": 5,
+        "visibleFaces": 367,
+        "productionParts": 53,
+        "flameVisible": false,
+        "ghost": true,
+        "fxFaces": 0,
+        "ghostFaces": 163,
+        "referenceBody": true,
+        "depthTest": true,
+        "fit": {
+          "scale": 17.48877622410136,
+          "cx": 1.6980918746090108,
+          "cy": -4.984618940037834
+        }
+      },
+      "drawnPixels": 142472,
+      "glError": 0,
+      "label": "燃料 80 / 80 世界刻未燃烧 · 无尾焰电池费用：0 · 整机已停机"
+    }
+  ],
+  "rotationCases": [
+    {
+      "yaw": -150,
+      "pitch": -60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": -150,
+      "pitch": 0,
+      "visibleFaces": 148,
+      "depthTest": true
+    },
+    {
+      "yaw": -150,
+      "pitch": 60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": -60,
+      "pitch": -60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": -60,
+      "pitch": 0,
+      "visibleFaces": 150,
+      "depthTest": true
+    },
+    {
+      "yaw": -60,
+      "pitch": 60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": 60,
+      "pitch": -60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": 60,
+      "pitch": 0,
+      "visibleFaces": 150,
+      "depthTest": true
+    },
+    {
+      "yaw": 60,
+      "pitch": 60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": 150,
+      "pitch": -60,
+      "visibleFaces": 163,
+      "depthTest": true
+    },
+    {
+      "yaw": 150,
+      "pitch": 0,
+      "visibleFaces": 148,
+      "depthTest": true
+    },
+    {
+      "yaw": 150,
+      "pitch": 60,
+      "visibleFaces": 163,
+      "depthTest": true
+    }
+  ],
+  "nativeIconCases": [
+    {
+      "name": "rocket-item-32.png",
+      "size": [
+        32,
+        32
+      ],
+      "pixelHash": "fnv1a64:ea8e04056a3ca2d9"
+    },
+    {
+      "name": "rocket-item-16.png",
+      "size": [
+        16,
+        16
+      ],
+      "pixelHash": "fnv1a64:7e436e9981ddfc10"
+    },
+    {
+      "name": "spent-rocket-item-32.png",
+      "size": [
+        32,
+        32
+      ],
+      "pixelHash": "fnv1a64:cdb5e7638afdcaa5"
+    },
+    {
+      "name": "spent-rocket-item-16.png",
+      "size": [
+        16,
+        16
+      ],
+      "pixelHash": "fnv1a64:1c5d5c9b78114262"
+    }
+  ],
+  "responsiveLayoutCases": [
+    {
+      "width": 320,
+      "documentWidth": 305
+    },
+    {
+      "width": 768,
+      "documentWidth": 753
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1265
+    }
+  ],
+  "noResidualFlameAtZeroFuelOrGhost": true,
+  "gameIntegrated": false,
+  "finalPreviewRebuilt": true
+}

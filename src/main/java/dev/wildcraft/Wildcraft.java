@@ -25,6 +25,7 @@ public final class Wildcraft implements ModInitializer {
     @Override
     public void onInitialize() {
         ServerPlayerEvents.AFTER_RESPAWN.addPhaseOrdering(Event.DEFAULT_PHASE, AFTER_ATTACHMENT_TRANSFER);
+        dev.wildcraft.art.ArtFeedback.initialize();
         WildcraftItems.initialize();
         dev.wildcraft.energy.EnergyContent.initialize();
         dev.wildcraft.mechanics.MechanicsContent.initialize();
@@ -42,6 +43,6 @@ public final class Wildcraft implements ModInitializer {
         StaminaCommands.initialize();
         dev.wildcraft.temperature.EnvironmentTemperature.initialize();
         dev.wildcraft.temperature.TemperatureCommands.initialize();
-        LOGGER.info("Wildcraft P9 work in progress initialized; fusion, fabrication, mechanics, energy, cooking, temperature and traversal registered.");
+        LOGGER.info("Wildcraft second art integration initialized; fusion, fabrication, mechanics, energy, cooking, temperature and traversal registered.");
     }
 }

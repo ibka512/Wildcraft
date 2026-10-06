@@ -1,0 +1,10 @@
+{
+  "asset": "F06-01",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，下一项",
+  "integrated": false,
+  "scope": "制造机固定箱体模型、原生64图集、双材料与三态及物品显示参考；世界状态同步和游戏接入待完成"
+}

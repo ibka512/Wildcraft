@@ -1,0 +1,12 @@
+{
+  "allPassed": true,
+  "archive": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/A13-C/A13-C-专注音效混音复核-v01-审稿包.zip",
+  "archiveSha256": "afd9356a7ed8b47a7f7ca7a8a803dbf1ee654aee36285921f34c8a7825492820",
+  "archiveBytes": 1606726,
+  "files": 59,
+  "matchingFiles": 59,
+  "manifestSha256": "c7958737eabb21214a6789b0bb0f7ae760ea66a61ccc771a599e8f948b06de3e",
+  "adopted": false,
+  "integrated": false,
+  "nativeAudioBundled": 0
+}

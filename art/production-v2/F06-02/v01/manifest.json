@@ -1,0 +1,305 @@
+{
+  "asset": "F06-02",
+  "version": "v01",
+  "created": "2026-10-05",
+  "packaged": "2026-10-06",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "newProductionPanels": 1,
+  "nativePanelSize": [
+    176,
+    192
+  ],
+  "sourceLayers": 4,
+  "slotCount": 39,
+  "inputSlots": 2,
+  "outputSlots": 1,
+  "playerSlots": 36,
+  "button": [
+    104,
+    30,
+    64,
+    20
+  ],
+  "stateCount": 5,
+  "newStateGlyphs": 0,
+  "reusedGlyphAtlases": [
+    "F06-01",
+    "F04-03"
+  ],
+  "independentItemIcons": 0,
+  "bakedText": false,
+  "bakedItems": false,
+  "bakedProgress": false,
+  "completedBarIsOutcome": true,
+  "previewMaterials": "adopted8px slot hints; production uses vanilla items",
+  "conceptUse": "extend adopted native UI language; no generated bitmap required",
+  "font": "browser approximate; Minecraft font pending integration",
+  "nextAfterAdoption": "F03-01 Fuse通用组合外观与挂点",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3013,
+      "sha256": "bdd20b88f18e339aeee856a06e407762513e20195f3af388ba974a2f913210d5"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 345,
+      "sha256": "873c05e63a42d9505c1e68f41f7f6d661dc4c3bda8fd4f6d9417d0b005d0a3ee"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 2396,
+      "sha256": "fd4476edebf24ef27f8e131a0dbdc9da8e2dec006d8cce1f1796442cf493daf8"
+    },
+    {
+      "path": "exports/fabricator-ui-176x192.png",
+      "bytes": 1544,
+      "sha256": "ad1cc37cf160d35c4597f77598ac1246f023a7999fbd551710ca79687d1c2c3f"
+    },
+    {
+      "path": "exports/fabricator-ui-labels-candidate.json",
+      "bytes": 3045,
+      "sha256": "5da949f5778b5ccb417218169c14c45ea380c6e26cd461d857c2a2bf0a24a023"
+    },
+    {
+      "path": "exports/fabricator-ui-layout.json",
+      "bytes": 5948,
+      "sha256": "5e949b3a52049aae39320829f375535004b60bf1df89db4fcc0a135ca7230522"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2809,
+      "sha256": "607c477fadb2b556b614670d18141ddec39be543905c602f1c9fd2cea3710839"
+    },
+    {
+      "path": "references/FabricationPool.java",
+      "bytes": 777,
+      "sha256": "c018c056b0619a4dd455c96634a866f98f83118948052c6f251d1a050c2e35bf"
+    },
+    {
+      "path": "references/FabricatorEntity.java",
+      "bytes": 4772,
+      "sha256": "98c93898dbdee806475ef7ec379f24cfc3752a1394dd437c79e7aaacefd5cdd4"
+    },
+    {
+      "path": "references/FabricatorMenu.java",
+      "bytes": 2293,
+      "sha256": "633ed16c28bdaa0211f89e670139f7c2394346a7dd55c3dd250075ce19e47f8e"
+    },
+    {
+      "path": "references/FabricatorScreen.java",
+      "bytes": 1793,
+      "sha256": "e57175fef3559d4f0985f78041d8dc0980b5fa1a88f1ae5f1d635e474f967eb8"
+    },
+    {
+      "path": "references/P8-SPEC.md",
+      "bytes": 2331,
+      "sha256": "551a895f637407970a8409779a3a7cdf86cbdb16281496350c7abc3805a9c98b"
+    },
+    {
+      "path": "references/adopted-charger-create-ui.py",
+      "bytes": 4300,
+      "sha256": "97e3b0b4ded9571d814950fb689b436f70ace0a938fbbeeeec1301b880afccb6"
+    },
+    {
+      "path": "references/adoption.json",
+      "bytes": 338,
+      "sha256": "b919fa1c27ea7aaa88c3cbe99eddab3fa0e8a94d219ac877b4e9afe729167ae7"
+    },
+    {
+      "path": "references/battery-item-16.png",
+      "bytes": 306,
+      "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f"
+    },
+    {
+      "path": "references/charger-atlas-64.png",
+      "bytes": 1008,
+      "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0"
+    },
+    {
+      "path": "references/charger-ui-176x166.png",
+      "bytes": 1400,
+      "sha256": "9371d9d8df8af68ab052fb4b865117312865531c8b2d4958bbddd9e0f14db351"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 1270,
+      "sha256": "feaa7a7983f475618f064553577f3cdf9a76f0eee7351d05bd3d6e69f04d4e7c"
+    },
+    {
+      "path": "references/en_us.json",
+      "bytes": 9104,
+      "sha256": "959459db08fd520642b93735cf36eff857170446ca0af78f809b738b3211fe83"
+    },
+    {
+      "path": "references/fabricator-atlas-64.png",
+      "bytes": 1251,
+      "sha256": "37e0f8b3d2d120ae5977e9e667637297729f07e9d1798ef23e51f8814f798ec3"
+    },
+    {
+      "path": "references/fabricator-state-0.png",
+      "bytes": 768961,
+      "sha256": "933733ff6d5b12c37dc198376d62cd19a0ebaf07b79da733cb08c2514a26f233"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 4137,
+      "sha256": "142a159e994d05d47bb01bc0b0c7a9acbee257e0b1f1c55a1ddf27428a62559c"
+    },
+    {
+      "path": "references/wing-item-16.png",
+      "bytes": 409,
+      "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8"
+    },
+    {
+      "path": "references/zh_cn.json",
+      "bytes": 8959,
+      "sha256": "72c6941cfe83c5f52df8946271d6cb2c23b4b018242d081f4cc1463ec45dac30"
+    },
+    {
+      "path": "review/aseprite-starting-document.json",
+      "bytes": 278,
+      "sha256": "d1aa2830163f52b64f558f439b1b1fbadaa61dc61e38479c4ce17a2282eed175"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 681,
+      "sha256": "84decd7a1489ffd4b816a9a654ef18cb6331c243f71d5d72d731f904cd63307f"
+    },
+    {
+      "path": "review/blocked-help-en.png",
+      "bytes": 24461,
+      "sha256": "045f195a10b0c734a17fe988117ff32eee2fc1631a3c8292014940962e3ba418"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 14859,
+      "sha256": "bd87e5161969b7dd0df07f02b250d425046799ecba2b1bb4ef217b4afbaf3444"
+    },
+    {
+      "path": "review/contract-checks.json",
+      "bytes": 404,
+      "sha256": "c37772803d1d15b988e4d6c6b880829f562535ff53c8edc10447a97f4eca686e"
+    },
+    {
+      "path": "review/fabricator-blocked-en.png",
+      "bytes": 11386,
+      "sha256": "067059b9f8fb6bec398602fccb9b3c4b36a807802f62f8a9c3ce0086919fba90"
+    },
+    {
+      "path": "review/fabricator-blocked-zh.png",
+      "bytes": 10337,
+      "sha256": "12770dca5f35ca5891e542385550d75909871b804328ec38db5e0a1c4c596296"
+    },
+    {
+      "path": "review/fabricator-collect-en.png",
+      "bytes": 10712,
+      "sha256": "e85b2ff6c45f26a79e1e08dbc2736fb51e17e01fd7979f3280b20a1328fbacac"
+    },
+    {
+      "path": "review/fabricator-collect-zh.png",
+      "bytes": 10111,
+      "sha256": "711784940079599ee2eb477c64668c53f90fd777ff0fb3ef8f792a473d23dab6"
+    },
+    {
+      "path": "review/fabricator-insufficient-en.png",
+      "bytes": 11169,
+      "sha256": "566b35f3666a672c4c03730dce618e2b69948a532210c1395215f714de48b796"
+    },
+    {
+      "path": "review/fabricator-insufficient-zh.png",
+      "bytes": 10189,
+      "sha256": "7ad6a6fba84eea8ae9fa139d2063b7cadc1fa4ef34e22f6baf99a55e278cca75"
+    },
+    {
+      "path": "review/fabricator-ready-en.png",
+      "bytes": 10617,
+      "sha256": "186a69d508a350dfabec2ff442e73be288c0bb86f5a1f8e784b78cbc80a7fa51"
+    },
+    {
+      "path": "review/fabricator-ready-zh.png",
+      "bytes": 10406,
+      "sha256": "c76beb17ee6db694cf767ad889bc74fe9ab922ba1051a5edba2666ced6f5fc7e"
+    },
+    {
+      "path": "review/fabricator-ui-review.png",
+      "bytes": 552821,
+      "sha256": "75523bbbb447677dce7dbcb4e6bf34d6100477f89e194a19cda83aeb19395c60"
+    },
+    {
+      "path": "review/fabricator-ui-working-native.png",
+      "bytes": 10296,
+      "sha256": "bff6f2726d615f7dfe5f7958e30d038ed5065f907a2f04ac1ad841a9ba2dc55b"
+    },
+    {
+      "path": "review/fabricator-working-en.png",
+      "bytes": 11030,
+      "sha256": "48aa7761b81fe55173cbb7d3e337198bb9c110e513417da3814fc11ac1589310"
+    },
+    {
+      "path": "review/fabricator-working-zh.png",
+      "bytes": 10296,
+      "sha256": "bff6f2726d615f7dfe5f7958e30d038ed5065f907a2f04ac1ad841a9ba2dc55b"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 690,
+      "sha256": "66f04793da88d88d81b7031d6e4d24f253315e9eef115341b92933937009e823"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 1051932,
+      "sha256": "ea82e6685f72781b3faf84cbfcbef4e8152f0c338129712db9f02deca2d0c4d3"
+    },
+    {
+      "path": "source/build-review.py",
+      "bytes": 15971,
+      "sha256": "2a1dcebfb0a2d47cae4e83f3858ff3c3a16e39b26141e4daf9b9af83339b7da2"
+    },
+    {
+      "path": "source/check-contract.cjs",
+      "bytes": 2571,
+      "sha256": "aa9e494e70b7a37debb0b22206e487820401bc0b5bd9645e645dfe10e10375d9"
+    },
+    {
+      "path": "source/create-ui.py",
+      "bytes": 4494,
+      "sha256": "0145c6ccbc5c6eb231889f35de8c79917c6e9b523d8856fac2951527f81d49bc"
+    },
+    {
+      "path": "source/export-layout.cjs",
+      "bytes": 879,
+      "sha256": "4a46ee19d7d7e70d3562adf0611788dc6ab6f7bbf61d2376b357e5085181f43e"
+    },
+    {
+      "path": "source/fabricator-ui-176x192.aseprite",
+      "bytes": 2269,
+      "sha256": "9efc014aba955549f62e7012c881b5307ee3ae5295ad8afd3e0191857a7c32af"
+    },
+    {
+      "path": "source/fabricator-ui.js",
+      "bytes": 5134,
+      "sha256": "e532f43f4479acb1554cd6e6e6190082449a954243e35d6282d00c1e8f926d21"
+    },
+    {
+      "path": "source/ui-pixel-design.json",
+      "bytes": 302826,
+      "sha256": "d32e595fb64931c7e960e9a7e2b4ff2e4dea9c4382a1721e359193a2fc7f5379"
+    },
+    {
+      "path": "source/verify-ui.py",
+      "bytes": 3154,
+      "sha256": "5feed2444d6ad7b3f311b45fc3809841f56d61a887e4cc3256db3de7c01cc341"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2117,
+      "sha256": "5a6ffdfd00a04fb35f33a5811fe4a3d0851446725d36aa1bfabafa0385577f2f"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项",
+  "scope": "制造机原生176×192界面/四层源稿/五态中英/槽位与按钮/悬停和交互审稿；游戏字体与容器同步待接入"
+}

@@ -1,0 +1,65 @@
+{
+  "asset": "F05-01",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "machine-atlas-64",
+      "nativeSize": [
+        64,
+        64
+      ],
+      "sourceLayers": 4,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:c0e6173e67aa13d8",
+      "visibleColors": 22,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "machine-body-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:3cc88bb8d981c33a",
+      "visibleColors": 14,
+      "alphaValues": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "machine-body-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:e766e5fa89d3467e",
+      "visibleColors": 11,
+      "alphaValues": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bodyAndControlCuboids": 20,
+  "sharedNodeCuboids": 8,
+  "nodeInstances": 6,
+  "atlasBatteryRegionPixelIdentity": true,
+  "exactNodePoints": true,
+  "controlArtWithinExistingHitbox": true,
+  "batteryScale": 1,
+  "batteryEnvelopeUnchanged": true,
+  "blockbenchJsonStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "gameIntegrated": false
+}

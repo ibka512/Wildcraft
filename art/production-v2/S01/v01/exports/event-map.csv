@@ -1,0 +1,13 @@
+﻿编号,事件,声音,系统,时长秒,建议音量,距离格,优先级,真实触发点,禁止触发
+1,cooking.start,料理开始,料理,0.28,0.26,8,2,CookingPotEntity.tick：有效配方、碗和热源齐备，新一锅首次 progress 0→1。,热源短暂中断后恢复、打开界面、读档恢复、已存在输出，不重新报开始。
+2,cooking.complete,料理完成,料理,0.46,0.3,10,3,CookingPotEntity.tick：items[4] 写入成品且食材与碗扣除的真实完成事务。,只进度到头但未提交、领取已有料理、载入已有输出不播放。
+3,charger.start,开始充电,能源,0.24,0.22,6,2,ChargerEntity.tick：Batteries.charge 返回正值，当前电池会话首次实际注入。,插入但无源、等待轮流供电、读档、短暂零分配、仅状态2同步，不重复。
+4,charger.full,电池充满,能源,0.35,0.25,8,3,ChargerEntity.tick：同一次成功充电前余量<容量，之后余量==容量。,原已满电池插入/载入不播放；同事务开始并充满时只播充满。
+5,mechanic.install,安装部件,机械,0.18,0.3,8,4,MachineEntity.install 返回 true，物品转移和节点同步成功之后。,安装失败、空壳拒绝、节点被占用、单纯预览不播放。
+6,mechanic.remove,拆卸部件,机械,0.22,0.27,8,4,MachineEntity.recover 返回 true，回收完成并清空节点之后。,背包不足、运行中拒绝、燃烧火箭拒绝、主体回收暂用原版物品行为。
+7,mechanic.start,机械开始工作,机械,0.34,0.24,10,2,MachineEntity.tick：有效提交后，供能风扇/轮子/稳定器位(kind 1/6/7)由无工作转为工作；连续2世界刻确认。,仅 enabled=true、被动翼/浮体、弹簧单刻冲量、火箭点火、客户端初见实体都不触发。
+8,mechanic.stop,机械停止工作,机械,0.27,0.22,10,2,有效提交的供能工作位由有变无，连续4世界刻确认；明确关机导致停止可立即确认。,仅轮子离地瞬变、短暂供电抖动、读档或卸载无告别提示音；已停时再关机不播放。
+9,fabricator.start,制造开始,制造,0.38,0.26,10,2,FabricatorEntity.start 返回 true，铜锭/红石扣除且 pending 记录真实写入之后。,按钮点击但被拒、读档恢复未完工、菜单开启不播放。
+10,fabricator.complete,制造完成,制造,0.48,0.3,12,3,FabricatorEntity.tick：输出槽空时 pending 写入 items[2]，pending 清空的真实事务。,进度到100但输出堵塞不能播；载入已有输出和取走输出不播。
+11,fuse.join,融合成功,Fuse,0.3,0.3,8,4,FusionActions.fuse 实际完成且返回 true 后；与F03-04融合内收粒子共享确认事件。,按V、失败、物品VIEW恢复、次数变化、重复结果包都不播放。
+12,fuse.split,拆分成功,Fuse,0.3,0.28,8,4,FusionActions.split 材料真实回收并移除融合数据且返回 true 后；与F03-04外散粒子共事件。,按Shift+V、背包不足、无融合材料、重复包或读档都不播放。

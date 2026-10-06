@@ -1,0 +1,624 @@
+{
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "actual-select-and-back-button",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:stand:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:crouch:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:swim:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:standard:glide:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:stand:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:crouch:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:swim:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:cape:crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:sword-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:sword-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:axe-shield-bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:axe-shield-crossbow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:sword",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:axe",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:shield",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:bow",
+      "pass": true
+    },
+    {
+      "name": "render:slim:glide:elytra:crossbow",
+      "pass": true
+    },
+    {
+      "name": "legacy-cape-hidden",
+      "pass": true
+    },
+    {
+      "name": "legacy-elytra-melee-only",
+      "pass": true
+    },
+    {
+      "name": "no-cover-original-back",
+      "pass": true
+    },
+    {
+      "name": "in-hand-category-hide",
+      "pass": true
+    },
+    {
+      "name": "spare-keeps-records",
+      "pass": true
+    },
+    {
+      "name": "gliding-controls-and-records",
+      "pass": true
+    },
+    {
+      "name": "fuse-motion-endpoint-render",
+      "pass": true
+    },
+    {
+      "name": "no-browser-errors",
+      "pass": true
+    },
+    {
+      "name": "mobile-no-horizontal-overflow",
+      "pass": true
+    }
+  ],
+  "browserCases": 144,
+  "gameRuntimeVerified": false,
+  "scope": "Real WebGL renders and review controls; art reference only"
+}

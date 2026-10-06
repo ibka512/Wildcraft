@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-05",
+  "tool": "ego-browser",
+  "scope": "浏览器布局模拟；不是游戏验证",
+  "allPassed": true,
+  "scenarios": [
+    {
+      "scenario": "normal",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 3,
+      "fits": true,
+      "temperatureY": 50,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "single",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 1,
+      "fits": true,
+      "temperatureY": 50,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "hearts",
+      "passed": true,
+      "mode": "compact",
+      "cols": 2,
+      "count": 3,
+      "fits": true,
+      "temperatureY": 74,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "hidden",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 3,
+      "fits": true,
+      "temperatureY": 26,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "english",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 3,
+      "fits": true,
+      "temperatureY": 50,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "short",
+      "passed": true,
+      "mode": "compact",
+      "cols": 2,
+      "count": 3,
+      "fits": true,
+      "temperatureY": 59,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "focus",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 3,
+      "fits": true,
+      "temperatureY": 50,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "warmth",
+          "opaquePixelCount": 91,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "expired",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 2,
+      "fits": true,
+      "temperatureY": 50,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": [
+        {
+          "key": "cooling",
+          "opaquePixelCount": 95,
+          "unchangedOpaqueRGB": true
+        },
+        {
+          "key": "recovery",
+          "opaquePixelCount": 59,
+          "unchangedOpaqueRGB": true
+        }
+      ]
+    },
+    {
+      "scenario": "none",
+      "passed": true,
+      "mode": "full",
+      "cols": 1,
+      "count": 0,
+      "fits": true,
+      "temperatureY": 26,
+      "allBelowTemperature": true,
+      "allAboveBottom": true,
+      "allInsideViewport": true,
+      "clearAim": true,
+      "noRowOverlap": true,
+      "timersFit": true,
+      "samplePixels": []
+    }
+  ],
+  "interactions": {
+    "rangeMaximum600": {
+      "count": 3,
+      "time": "10:00",
+      "x": 126
+    },
+    "expiryAtZero": {
+      "count": 2,
+      "first": "cooling",
+      "y": 64
+    },
+    "staminaHiddenShift24": true,
+    "languageSwitch": true,
+    "integerDisplayScale123": true
+  },
+  "fontIsApproximation": true,
+  "gameRuntimeTested": false
+}

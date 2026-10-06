@@ -1,0 +1,10 @@
+{
+  "asset": "F05-09",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一步",
+  "integrated": false,
+  "scope": "浮力装置模型、独立32/16源图、六向安装及水线参考；实际游戏水下/载重/碰撞待接入验证"
+}

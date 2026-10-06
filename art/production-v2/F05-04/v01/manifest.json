@@ -1,0 +1,432 @@
+{
+  "asset": "F05-04",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，火箭及空壳模型/原生图标/六向/有限尾焰齐全，未接入；末刻/底装/组合待游戏验证",
+  "adopted": true,
+  "integrated": false,
+  "sourceAssets": [
+    "F05-01",
+    "F05-03 shared node contract"
+  ],
+  "productionModels": "one shared base with loaded/spent variants",
+  "sharedParts": 44,
+  "variantPartCounts": {
+    "loaded": 53,
+    "spent": 68
+  },
+  "movingParts": 0,
+  "nativeIconSizes": [
+    32,
+    16
+  ],
+  "nativeIcons": 4,
+  "nativeIconsIndependentlyAuthored": true,
+  "productionAtlasSize": [
+    128,
+    64
+  ],
+  "preservedMachinePixels": 4096,
+  "newPaperPixels": 256,
+  "newAsepriteSources": 5,
+  "reusedAsepriteSources": 1,
+  "actualRenderViews": 20,
+  "conceptUse": "reference only",
+  "finiteFuelCases": 648,
+  "browserUiCases": 42,
+  "nextAfterAdoption": "F05-06 弹簧",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3006,
+      "sha256": "eea58b7ec22fa5e3c5a66ffc7c7d74282efa30734942dbba3b463f0d3f9b4b11"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 323,
+      "sha256": "8fd22401df183a97df1f5cf2e1dbe55ab14ba3f0321f947bdbf8d0253169dae0"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1633,
+      "sha256": "906238b74141eb2383110a3bf89a467b833b987092ba528c15942dbfe36c7366"
+    },
+    {
+      "path": "exports/rocket-atlas-128x64.png",
+      "bytes": 1544,
+      "sha256": "4ba17e47b802f387de718dc0b46f02e80dd9ff06f2370bed7046be47a47b8afe"
+    },
+    {
+      "path": "exports/rocket-geometry.json",
+      "bytes": 202199,
+      "sha256": "b56f42675d4c2fcbaa3116631bdef3dad243fd456c8894b78c0fd336b3f2c1e7"
+    },
+    {
+      "path": "exports/rocket-item-16.png",
+      "bytes": 403,
+      "sha256": "14b767978f3a671f6b723d1eb049c66b0ae63e03d934a56ca1ad05d9481f18c7"
+    },
+    {
+      "path": "exports/rocket-item-32.png",
+      "bytes": 770,
+      "sha256": "a49885072e0ff4f6b34fb9dae9f19faa34e940cfa4c9b90b2a236fd7a13cf266"
+    },
+    {
+      "path": "exports/rocket-state-and-flame.json",
+      "bytes": 3201,
+      "sha256": "d02665975876e2f76dfb109aceebcc36f29e812ef15625b9e96684c85d8600b1"
+    },
+    {
+      "path": "exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "exports/spent-rocket-geometry.json",
+      "bytes": 254919,
+      "sha256": "f5263c363dff7bf12a3e6c8b810e76919c8bfa22baa2e248f98609e9cb5eb819"
+    },
+    {
+      "path": "exports/spent-rocket-item-16.png",
+      "bytes": 400,
+      "sha256": "baea49dd770b381e6b1d23706b1087b118999b7f9455a1ef53253a22c24d7c8b"
+    },
+    {
+      "path": "exports/spent-rocket-item-32.png",
+      "bytes": 757,
+      "sha256": "1f39fe1c43ad3dd1cb46b0fc6120defa6ee9881bb4cc71ecb7f0ad67bcc9f8bf"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2794,
+      "sha256": "d8b5eb259c07a99f59cb1be08db6f1602bdb4d4e8b77d66322b86116e43e9559"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/MechanicsContent.java",
+      "bytes": 4178,
+      "sha256": "5384916e7bc24011281c4983949eed893cf4157a9dd9bb56ccc9b2324219bae1"
+    },
+    {
+      "path": "references/RocketData.java",
+      "bytes": 1204,
+      "sha256": "1c572e29d28a91027c84223dfe7748052dff2250b80308c3c767de0566c5c7ac"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 981,
+      "sha256": "d026b8ed420f72fa2d6d64c8131a9bebb00f4495425c06900fef700a00d3f1ff"
+    },
+    {
+      "path": "references/fan-preview.js",
+      "bytes": 5434,
+      "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2"
+    },
+    {
+      "path": "references/imagegen-prompt.json",
+      "bytes": 1644,
+      "sha256": "1a84143d9ff9065630be908541b78f74fe2a0d85b5a9526d89029cac09c54af2"
+    },
+    {
+      "path": "references/imagegen-reference.json",
+      "bytes": 351,
+      "sha256": "3feb80399842a7285b409e0756a5ba8c0c16efff27e45e5e05d6df34f0e17d97"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1525,
+      "sha256": "96bb5c0d31583793cde7a68a74ee500f3ebceb25e75262d2918edef1b2b0d0ca"
+    },
+    {
+      "path": "references/rocket-concept-imagegen.png",
+      "bytes": 1423208,
+      "sha256": "d73bd4f3fdbaee04c04846430f50b651fad31ccd6fb4e429e172502f932f4100"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "review/aseprite-start.json",
+      "bytes": 271,
+      "sha256": "62fee38e43e738dae76965077d3c26392e8d2029d3a5ed19931c0199ef0011d1"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 2485,
+      "sha256": "12f31c988386a085f8a70e13277708674722cd847e4109f1693c82945de5c83d"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 1533,
+      "sha256": "3e00860bea64e655afc0cd45db5bfc57a59b1500ef5644a2d1835ac78b038eaf"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 34266,
+      "sha256": "566cde53ba6fb548045bdaa66957b7549e2cd078f740913698127036d2edbe39"
+    },
+    {
+      "path": "review/contract-checks.json",
+      "bytes": 244,
+      "sha256": "0fb768173425b6e9908386c3e430f9f9608b1f60d1eeb41a1f54a57764dc5bca"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 424,
+      "sha256": "6706ae14dbe6c982c745a07857776fe595ffeaf24f36a9ee087c5a28fa1992a8"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 18890877,
+      "sha256": "3f028f17d4902c4b7a025b7982e4521cce7d4e16394812de7c56a5b329df1f14"
+    },
+    {
+      "path": "review/rocket-burning-native-flame.png",
+      "bytes": 662627,
+      "sha256": "411bcc869729cd0ce3c7c0763037f8561613a93bdbcbace39844596d542917ef"
+    },
+    {
+      "path": "review/rocket-live-review.png",
+      "bytes": 46473,
+      "sha256": "706cebb405ddededa0f232ca9db83f36eaad5f75c87e428a12c808de2dbe8766"
+    },
+    {
+      "path": "review/rocket-mounted-0.png",
+      "bytes": 773847,
+      "sha256": "dd4b5aa4c58ac8e241aa04de3ece68faac1b966a997b5aeaeb79026177f700e4"
+    },
+    {
+      "path": "review/rocket-mounted-1.png",
+      "bytes": 628809,
+      "sha256": "14c6eaaac5c1811406bc161db863e6bfca7a7e9338428871d05fea60becbf1db"
+    },
+    {
+      "path": "review/rocket-mounted-2.png",
+      "bytes": 735195,
+      "sha256": "498fa055cc641234e073e47cd0e3421aacd9fdd35ad57cc050394cb54aae7d86"
+    },
+    {
+      "path": "review/rocket-mounted-3.png",
+      "bytes": 777584,
+      "sha256": "f12d6e2a595c6a57e5d5d1938b8f7f7044a9bf8fd1a39f19beebe41485a8cc7c"
+    },
+    {
+      "path": "review/rocket-mounted-4.png",
+      "bytes": 773462,
+      "sha256": "bb588fb57e36e1e096696f052607d583635650730d545f5da7cc97ca7c8859b7"
+    },
+    {
+      "path": "review/rocket-mounted-5.png",
+      "bytes": 777446,
+      "sha256": "90d9dd9ec75734cfe49a3841dece89d62a915d8462cf6299f967975753a18fe4"
+    },
+    {
+      "path": "review/rocket-nozzle.png",
+      "bytes": 671265,
+      "sha256": "a01f0d298ce3334f9d059d3ff729c3acad68ec8233883a07b76447fd053df87e"
+    },
+    {
+      "path": "review/rocket-review.png",
+      "bytes": 1795628,
+      "sha256": "ff743f6370b03a7676d89ca02846e6d76ae66f79fee78c70a4e686ada54a7ea1"
+    },
+    {
+      "path": "review/rocket-root.png",
+      "bytes": 638315,
+      "sha256": "81dc04c9160076ac218812d8ff2b8c2b04e05bbbfe33987850bd1815a5b5c05c"
+    },
+    {
+      "path": "review/rocket-side.png",
+      "bytes": 525940,
+      "sha256": "3210ee9403d7e452f06021139a84842da84101d966b4a859eea0bd0bc30867ab"
+    },
+    {
+      "path": "review/rocket-three-quarter.png",
+      "bytes": 700272,
+      "sha256": "c29687a7ba5f13675f32787881e1f623dd2c8c02ac77c7970475263baf50839e"
+    },
+    {
+      "path": "review/spent-rocket-mounted-0.png",
+      "bytes": 773372,
+      "sha256": "b91d027af57ea4eddbcbc05b5ebb0c7133f9f72a2846b24da91a902f5c64098b"
+    },
+    {
+      "path": "review/spent-rocket-mounted-1.png",
+      "bytes": 628646,
+      "sha256": "48e64f061e2815d42a03dbc5600c6230427740a208a72312a3f88f1a351cbf76"
+    },
+    {
+      "path": "review/spent-rocket-mounted-2.png",
+      "bytes": 734670,
+      "sha256": "71cabeb21704995e1960a06dadfa3cfd1219472e5ac1b312fe4e548a8963ae70"
+    },
+    {
+      "path": "review/spent-rocket-mounted-3.png",
+      "bytes": 776817,
+      "sha256": "8a805d87fa9c33d3ce0c8fed48fe57f6c6d6118288dcf2edabae02f91ff3ef34"
+    },
+    {
+      "path": "review/spent-rocket-mounted-4.png",
+      "bytes": 773061,
+      "sha256": "7cf7bcb47dd358d95be566b5efc58c28a3757bf1ac07b905759b76bb0e37eda5"
+    },
+    {
+      "path": "review/spent-rocket-mounted-5.png",
+      "bytes": 777570,
+      "sha256": "5de61293049511259f2c545adae26346a2d2adf37408586f31e1fb81d5180fe1"
+    },
+    {
+      "path": "review/spent-rocket-nozzle.png",
+      "bytes": 657824,
+      "sha256": "4ea87e8b02b2cd175cf41962e33cbcb62afa30e3a3e35a268b3b40a56e577050"
+    },
+    {
+      "path": "review/spent-rocket-side.png",
+      "bytes": 536197,
+      "sha256": "428210e813a2978c533686afb78bde08f8335b52c0d9a67680aeb1e323319749"
+    },
+    {
+      "path": "review/spent-rocket-three-quarter.png",
+      "bytes": 696035,
+      "sha256": "2a939c00fdc89b23348ee9000d95fce318cac4d0ae652b7c77dac1694ea22499"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 6840,
+      "sha256": "d26253522ddcda689c41aee14439fd62a53ae835e742c7d655e77d60da82e0be"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 11039,
+      "sha256": "dddc4dbdd7084ac57b4c6d05803619ff8ab324b4a222e4964932e7c1dc947cb9"
+    },
+    {
+      "path": "source/create-pixels.py",
+      "bytes": 7515,
+      "sha256": "0813a15b77de1932a81cea29c033789a6e3934b8d97825ec47ee4cea86b2877e"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 562548,
+      "sha256": "de6a842c408a5db8f961909e1ad03499572b5a2284079c7fdbfda3a190640d26"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 119498,
+      "sha256": "11d0935cf22d1f5c43a00a9341996f683a4c13fb7c519da21c39da354018a20a"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 7229,
+      "sha256": "e4cc17ab67b32f265a936037c15e5e16debcdf118248d702fd089c28b54ad165"
+    },
+    {
+      "path": "source/review-snapshots.json",
+      "bytes": 1034,
+      "sha256": "9dedfce2f3c1a4e7e24854c3f64296c3792aaaa5b4106ad7a2a15ac9c0dcb7b1"
+    },
+    {
+      "path": "source/rocket-and-spent-v01.blend",
+      "bytes": 197573,
+      "sha256": "eaafa064e232e0b306d2d7f1bea32241a4b571f41600b4bd6782c0a6de94aa72"
+    },
+    {
+      "path": "source/rocket-atlas-128x64.aseprite",
+      "bytes": 1465,
+      "sha256": "e6a5125c886adb373d79a2c84a51860a6c0644770de64582dbdf962ee67b149b"
+    },
+    {
+      "path": "source/rocket-item-16.aseprite",
+      "bytes": 708,
+      "sha256": "7e69ce6254757236e906aab5e42edd46ce31a944b7fec11639583c63fb3e7e20"
+    },
+    {
+      "path": "source/rocket-item-32.aseprite",
+      "bytes": 885,
+      "sha256": "5cf00c5cfabc2d2bfb943e9a4b61363f6daae94e2d89da0a28b480d517b07347"
+    },
+    {
+      "path": "source/rocket-preview.js",
+      "bytes": 6409,
+      "sha256": "a1e45e1094f239cc11558092a4649da6040dffe1035bf21e291962854dcb373b"
+    },
+    {
+      "path": "source/rocket-v01.bbmodel",
+      "bytes": 212337,
+      "sha256": "57670e378bcd63cba90c65b96d03f4e3f9b7a8d91b4bb165731fe4b760567372"
+    },
+    {
+      "path": "source/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "source/spent-rocket-item-16.aseprite",
+      "bytes": 718,
+      "sha256": "d325712165f244b278cf30ee6ab152c97da8db7bd461846c47803e2b909661dd"
+    },
+    {
+      "path": "source/spent-rocket-item-32.aseprite",
+      "bytes": 893,
+      "sha256": "4a38b79afed6f4e6317ce34817b459e68f01b39ab21244b9516ea7ed18c7b218"
+    },
+    {
+      "path": "source/spent-rocket-v01.bbmodel",
+      "bytes": 267065,
+      "sha256": "c30933f4ee784471b29148a3e4c7b651d1f983d6f7edc0fa4e7dbcbf657417ad"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 4579,
+      "sha256": "7c67e90bea6d487f7b41d107691f557ce959775d5aaefd28224b8b135f8c7961"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 3121,
+      "sha256": "e10ce675a4e6e372353457ea8d24b223472684e885084edf5b3f29d78b2abe83"
+    },
+    {
+      "path": "source/verify-contract.mjs",
+      "bytes": 1187,
+      "sha256": "7de45ec088ca3ef801780f8d6b1d0ea92f0c3b56ddfbbdab3d4aca47e87197a0"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2148,
+      "sha256": "957904968dba239d15446c75d2d8519b9c1a79b27e697de0d06b7bab4660aa38"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

@@ -81,7 +81,7 @@ public final class FocusClient {
             if (currentSound != null) c.getSoundManager().stop(currentSound);
             currentSound = null;
             if (!c.isPaused() && c.gui.screen() == null && c.player.isAlive()) {
-                currentSound = SimpleSoundInstance.forUI(audible ? WildcraftSounds.FOCUS_ENTER : WildcraftSounds.FOCUS_EXIT, 1, 0.22F);
+                currentSound = SimpleSoundInstance.forUI(audible ? WildcraftSounds.FOCUS_ENTER : WildcraftSounds.FOCUS_EXIT, 1, audible ? .22F : .28F);
                 c.getSoundManager().play(currentSound);
             }
             audibleActive = audible;

@@ -1,0 +1,122 @@
+[
+  {
+    "path": "art/approved-v1/A13-专注进入退出音效-v1/source/focus-enter-master.wav",
+    "sha256": "4e8252e50f68946b92a38d15a19351e1b1282cbfd0314cd195329f08f27ba925"
+  },
+  {
+    "path": "art/approved-v1/A13-专注进入退出音效-v1/source/focus-exit-master.wav",
+    "sha256": "994bea3ef737e449a2869aa8b488ec67840c102628b811ebc29600bd6bffc68d"
+  },
+  {
+    "path": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus_enter.ogg",
+    "sha256": "a819c1a006a93af80e59bb712e23886e7e19c8c7d200f14e4a19fe160e590021"
+  },
+  {
+    "path": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus_exit.ogg",
+    "sha256": "5668f8ef538dd0e0f8dbeb84cbd4acd6559b563fbd4e4a3c525926b5669950ae"
+  },
+  {
+    "path": "art/approved-v1/A13-专注进入退出音效-v1/deliverable/focus-sound-spec.json",
+    "sha256": "16b370fef3340bf4954bdd1df6ee1014bf9ebdc30ddbd136c56124f58918eb92"
+  },
+  {
+    "path": "art/production-v2/S01/v01/adoption.json",
+    "sha256": "a1c09b9775a02fd4a4b1893a29ab5800bcaf376d9273b350eff86e360a270503"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/playback-spec.json",
+    "sha256": "36eaee76e1a21390b7fa7bfab2702a937a5b282fa6a0a7394f42393909e76871"
+  },
+  {
+    "path": "art/production-v2/S01/v01/source/audio-policy.js",
+    "sha256": "437f65f2814a1328e6da49f70ad74c1fddb291912ec999026ee1fc19e5a3c69d"
+  },
+  {
+    "path": "art/production-v2/A07-A08-C/v01/adoption.json",
+    "sha256": "dc9da3f6a9549215ef346c32ba7e8771ab595a190480e1428ad2e4e1acbd264e"
+  },
+  {
+    "path": "art/production-v2/A07-A08-C/A07-A08-C-探索动作衔接复核-v01-审稿包.zip",
+    "sha256": "130466b9932372be9b3b2fbef28ed4131304da9854809d493a507b656b7fe77c"
+  },
+  {
+    "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
+    "sha256": "663a2f726112007be9edac179b88205eca8d92ad228d0d4a0e51fec1010861e2"
+  },
+  {
+    "path": "src/main/java/dev/wildcraft/registry/WildcraftSounds.java",
+    "sha256": "7935a9984bd5704d9e171af315007f4c456ab461a4c8fe8557f1ef8b6e672e38"
+  },
+  {
+    "path": "src/main/resources/assets/wildcraft/sounds.json",
+    "sha256": "8bea9e79bcd8dc50c58f01b4e00e79a50b388fa8fef9876fe654d1740732ad58"
+  },
+  {
+    "path": "src/main/resources/assets/wildcraft/sounds/focus_enter.ogg",
+    "sha256": "a819c1a006a93af80e59bb712e23886e7e19c8c7d200f14e4a19fe160e590021"
+  },
+  {
+    "path": "src/main/resources/assets/wildcraft/sounds/focus_exit.ogg",
+    "sha256": "5668f8ef538dd0e0f8dbeb84cbd4acd6559b563fbd4e4a3c525926b5669950ae"
+  },
+  {
+    "path": "src/main/generated/assets/wildcraft/lang/zh_cn.json",
+    "sha256": "72c6941cfe83c5f52df8946271d6cb2c23b4b018242d081f4cc1463ec45dac30"
+  },
+  {
+    "path": "src/main/generated/assets/wildcraft/lang/en_us.json",
+    "sha256": "959459db08fd520642b93735cf36eff857170446ca0af78f809b738b3211fe83"
+  },
+  {
+    "path": "development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar",
+    "sha256": "c81ce6d7a960d67c3cd2125a2c426a62216e3b5f784c8e2b99d8afc6792a91ac"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/charger_full.ogg",
+    "sha256": "4ec65d18c13c3fe2a703df89f91f057031d0259a53b2b78b880704575c462b8b"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/charger_start.ogg",
+    "sha256": "2c861c5226ebe96701168f03cb6e1bb16732791cfdf564978bc7bdf60cfa15b4"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/cooking_complete.ogg",
+    "sha256": "b3276c575503f2e1a877cf607812b4ea4ae702b0fa92f0c2284ed808cd0e5048"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/cooking_start.ogg",
+    "sha256": "ae6256f984625751a571b4e3d76fd32f1c29e0d811b83d8092942867b4dc2a2a"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/fabricator_complete.ogg",
+    "sha256": "ef2cfe78ad4c4922787a1003038bd2adca0c87fb62fe35ae5999316102c8addc"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/fabricator_start.ogg",
+    "sha256": "b2dfa064fb768031e4a48e1a17ded0a2264c302cdd44bbab58985d94fcb4a5fb"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/fuse_join.ogg",
+    "sha256": "f5478a4c817dbaaeab8f23db34bea2c4bb2279fad1d71b0e60a81ea52d5c27f4"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/fuse_split.ogg",
+    "sha256": "00b927f8081df7e5c52f57bda46450fdfac49d1e11219932b0e895d0862c495d"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/mechanic_install.ogg",
+    "sha256": "0fbe63da6b1acf11bae90052e8ca926d79af26ca5e514523dee40a5da98f67bb"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/mechanic_remove.ogg",
+    "sha256": "72906dc0905ffa54f6ac459d0af20e1084fabc0c213f6fe8ab8a9f5f90cf66e7"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/mechanic_start.ogg",
+    "sha256": "4757b06618eb2f2d2c2d4d0b99a3b8ce73092d40165e3d05e51a881460f8752c"
+  },
+  {
+    "path": "art/production-v2/S01/v01/exports/sounds/mechanic_stop.ogg",
+    "sha256": "23acc8f5735391458cdfc1f34fd21427a74a00cd3f6d43e6abd82635bdd93337"
+  }
+]

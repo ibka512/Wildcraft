@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 56,
+    "layerId": 57,
+    "frame": 0,
+    "celId": 58,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 56,
+      "objectVersion": 0,
+      "revisionToken": "rev1:9b5c9849c70eee7e",
+      "name": "1791223198645_fuse-shared-atlas-64x32.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791223198645_fuse-shared-atlas-64x32.aseprite",
+      "modified": false,
+      "active": true,
+      "width": 64,
+      "height": 32,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 4,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 57,
+          "stableId": "layer:57",
+          "name": "32px 完整融合符号",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 58,
+              "frame": 0,
+              "imageId": 61,
+              "dataId": 60,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 62,
+          "stableId": "layer:62",
+          "name": "16px 完整融合符号",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 63,
+              "frame": 0,
+              "imageId": 65,
+              "dataId": 64,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 66,
+          "stableId": "layer:66",
+          "name": "5px 槽位连接角标",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 67,
+              "frame": 0,
+              "imageId": 69,
+              "dataId": 68,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 70,
+          "stableId": "layer:70",
+          "name": "16px 不可用连接方片",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 71,
+              "frame": 0,
+              "imageId": 73,
+              "dataId": 72,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 32
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:d1a5025701ad3bfb"
+      }
+    }
+  ],
+  "totalDocumentCount": 5
+}

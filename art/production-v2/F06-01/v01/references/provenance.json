@@ -1,0 +1,68 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/exports/charger-atlas-64.png",
+    "copy": "references/charger-charger-atlas-64.png",
+    "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/source/uv-regions.json",
+    "copy": "references/charger-uv-regions.json",
+    "sha256": "0bcee20394d288cc6424fca8624ca8b22258a99e3cc7e2d694c8565f35e4cdbe",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/adoption.json",
+    "copy": "references/charger-adoption.json",
+    "sha256": "1773e3982783fb7b9e7081cd1e7aea62c36d35a445751d2680b08d8f40794f18",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/review/charger-state-0.png",
+    "copy": "references/charger-charger-state-0.png",
+    "sha256": "d006751032e3b09dcc7f9230acf3ad1853a09acafbe612622798969658bd04e7",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/docs/P8-SPEC.md",
+    "copy": "references/P8-SPEC.md",
+    "sha256": "551a895f637407970a8409779a3a7cdf86cbdb16281496350c7abc3805a9c98b",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricatorBlock.java",
+    "copy": "references/FabricatorBlock.java",
+    "sha256": "ffd67113c5133a4badcf2909588d31198fdb9a29394cf5af9a9aabf33a08be5a",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricatorEntity.java",
+    "copy": "references/FabricatorEntity.java",
+    "sha256": "98c93898dbdee806475ef7ec379f24cfc3752a1394dd437c79e7aaacefd5cdd4",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricatorMenu.java",
+    "copy": "references/FabricatorMenu.java",
+    "sha256": "633ed16c28bdaa0211f89e670139f7c2394346a7dd55c3dd250075ce19e47f8e",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fabrication/FabricatorScreen.java",
+    "copy": "references/FabricatorScreen.java",
+    "sha256": "e57175fef3559d4f0985f78041d8dc0980b5fa1a88f1ae5f1d635e474f967eb8",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/models/block/fabricator.json",
+    "copy": "references/fabricator.json",
+    "sha256": "a80fc0ac9eb7f8d8a723d0d776c75bf18c831fec1d5608cca0354cd6131db578",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/source/charger-preview.js",
+    "copy": "references/charger-preview.js",
+    "sha256": "1d74f7a2b183bb0e6127e791dc6552d75e3f8f7c4aa2644b24fd8b11de60c010",
+    "changed": false
+  }
+]

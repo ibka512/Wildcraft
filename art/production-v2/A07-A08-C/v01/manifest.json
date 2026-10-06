@@ -1,0 +1,267 @@
+{
+  "asset": "A07-A08-C",
+  "allPassed": true,
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "scenarios": 12,
+  "editableTimelines": 24,
+  "localJoinTemplates": 3,
+  "newAuthoredClipSets": 0,
+  "newProductionModels": 0,
+  "newTextures": 0,
+  "previewPng": 8,
+  "previewVideo": 1,
+  "transitionChecks": 291,
+  "sampledFrames": 10416,
+  "browserConfigurations": 480,
+  "actualBrowserRenderCalls": 1440,
+  "browserChecks": 487,
+  "editableVertexComparisons": 3536,
+  "baselineFilesUnchanged": 23,
+  "previousAssetAdoptedAndManifestUnchanged": true,
+  "nextAssetUntouched": true,
+  "embeddedSourceAndConfigsExact": true,
+  "version": "v01",
+  "date": "2026-10-06",
+  "status": "user_approved",
+  "humanVisualApproved": true,
+  "nextAfterAdoption": "A13-C 专注音效混音复核",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3963,
+      "sha256": "ac94891f24823860dc5591308cf014af3b1c6c4790ddf83d531d7307bb9b8a0a"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 447,
+      "sha256": "dc9da3f6a9549215ef346c32ba7e8771ab595a190480e1428ad2e4e1acbd264e"
+    },
+    {
+      "path": "exports/scenario-map.csv",
+      "bytes": 1461,
+      "sha256": "f1faa1b443198bffaed5bdd99ada281273b1f94f80a2b1da2d988bf11f331030"
+    },
+    {
+      "path": "exports/transition-spec.json",
+      "bytes": 4662,
+      "sha256": "4c5adbc38835823ed30fae31ae8d54d9f190a1a07ae0001e4609df96ba961ad7"
+    },
+    {
+      "path": "exports/transition-tracks.json",
+      "bytes": 13723202,
+      "sha256": "2a2d66c2e57280f8bd54ef85634e72d583022c0c621c6a80f6d894976178a79b"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 4604,
+      "sha256": "a2fea9bc08887cd9c3179d4af6c105c8efd5813d5b9b24a08bfe8981e21a13e9"
+    },
+    {
+      "path": "references/adopted-back.json",
+      "bytes": 5755,
+      "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104"
+    },
+    {
+      "path": "references/adopted-climb.json",
+      "bytes": 4599,
+      "sha256": "c3711fb75ac0a4c7ddea1024dba29df4bbb39e991e8ea5849a33701a29d8e215"
+    },
+    {
+      "path": "references/adopted-fuse.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "references/adopted-grip.json",
+      "bytes": 5633,
+      "sha256": "f2e4f2f1a4a9db117c83200cec886f4e0afc7d2d973b557ac6ca7e1249afd7b8"
+    },
+    {
+      "path": "references/adopted-settle.json",
+      "bytes": 98861,
+      "sha256": "23fdb85bf18261bbcbf43bd973f872c9a3b6b69689f11d5deac6d330cbb52fda"
+    },
+    {
+      "path": "references/adopted-waist.json",
+      "bytes": 5963,
+      "sha256": "09310084531281bcd93287920c0d9aab172fd2bc400d06b45b0e6eb96949e4fa"
+    },
+    {
+      "path": "references/baseline.json",
+      "bytes": 3887,
+      "sha256": "ff89ff46193a96ddcc007da56169cd816cb1c484dfcdb1726b5154324999701c"
+    },
+    {
+      "path": "references/first-person-frame.json",
+      "bytes": 9333,
+      "sha256": "071ca5d35f1e21ba87e9ef6935f481b1f96ac89fedc47079c77a210da0ceab44"
+    },
+    {
+      "path": "references/runtime-clips.json",
+      "bytes": 74353,
+      "sha256": "dde4c4d93665778364606825aaf88e4e2c1c525e03703ff766b9c364b0185067"
+    },
+    {
+      "path": "references/waist-engine.js",
+      "bytes": 7370,
+      "sha256": "85469003587ee4258fbcce9d25b2cc157eb236ff813413589dc9b4667a4ea68f"
+    },
+    {
+      "path": "review/adoption-checks.json",
+      "bytes": 682,
+      "sha256": "7e48959cebfe53001a7dec440e24f394bac5ce17cc572209131b501f1b4a4b3f"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 44330,
+      "sha256": "16f02d6829a26cb29b0663bee41812ba99744dc5d17dc4704bb4c2d7d8e9d59c"
+    },
+    {
+      "path": "review/capture-receipt.json",
+      "bytes": 235,
+      "sha256": "1bcacf22ef161e80eaac5720fa9054484f33fdeaa2aaf4ae440d794ada798bb5"
+    },
+    {
+      "path": "review/editable-checks.json",
+      "bytes": 3664,
+      "sha256": "232df8d96675d4fa47d8312a9c9737f1b0503ae5eede9199ac81bfda70f3c3a4"
+    },
+    {
+      "path": "review/exploration-joins-comparison.mp4",
+      "bytes": 101958,
+      "sha256": "054fb5e1456e1edf860d3a8b8d0f2c866529a85c92ef6bdcf7ee02f964c6bd39"
+    },
+    {
+      "path": "review/motion-board.png",
+      "bytes": 233494,
+      "sha256": "eb51d1c00a766e9c9f91eed1f664ed990e778efbff615f28375be70b126da71d"
+    },
+    {
+      "path": "review/motion-bow-takeover.png",
+      "bytes": 33232,
+      "sha256": "28a433e72f584e2f13f516444c541583132346a18008770dd53495105ab6f11e"
+    },
+    {
+      "path": "review/motion-current.png",
+      "bytes": 35179,
+      "sha256": "41e5f2381fcb3c6ad0d31b77405ae578126dc0b43baf62ef90392b24c844035f"
+    },
+    {
+      "path": "review/motion-first.png",
+      "bytes": 18027,
+      "sha256": "1ea4e5187fb792bff564658867d4affddf8211c2c5d8fe67502625a72648e627"
+    },
+    {
+      "path": "review/motion-revised.png",
+      "bytes": 39009,
+      "sha256": "9e1d84c9556c15699edc0a8d644d216c0eed7445310797c2ef5d8a03834fca1c"
+    },
+    {
+      "path": "review/motion-sword-takeover.png",
+      "bytes": 28507,
+      "sha256": "2fe71873dc3c9f4009dcc2c4c2551570e3da1e3b201989f1be98aa8f9dddc343"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 649,
+      "sha256": "c1b0e98b73d5d1bb5187617ae7224f09dcca2659a2ba32fe0075511f9d652492"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 624363,
+      "sha256": "ffb8a05a9288e6846fc9b1180983bfc8a3dcb53586c3475b54358e32a090767f"
+    },
+    {
+      "path": "review/release-current.png",
+      "bytes": 32219,
+      "sha256": "712fc5516a4707c710fa7889720e9c8caf65dcf06e03651d0e0d550e934d1cdb"
+    },
+    {
+      "path": "review/release-revised.png",
+      "bytes": 29861,
+      "sha256": "7965f4bce07dd2cfc2ec223c53f57f067f0dcf62f3d914e937ea3d008f9a1b65"
+    },
+    {
+      "path": "review/source-audit.json",
+      "bytes": 770,
+      "sha256": "69cd700e39b1757a4b2f202219fbd1001b947387217bcb21f69144d76f829384"
+    },
+    {
+      "path": "review/transition-checks.json",
+      "bytes": 28609,
+      "sha256": "49cf8edd382f9ebf8c8d6448aa893c580fefbe31168907e63b1540ac1a90462e"
+    },
+    {
+      "path": "review/video-checks.json",
+      "bytes": 277,
+      "sha256": "f8be3726fb5363d607ad5a0cfaad82b382bddd212e616d660148d66d2cf1cf08"
+    },
+    {
+      "path": "source/build-editable.py",
+      "bytes": 5854,
+      "sha256": "a27026d4c1a29615c72be70099745b20dbba9366a42b411ccc9a70d7b3608038"
+    },
+    {
+      "path": "source/build-review.py",
+      "bytes": 7461,
+      "sha256": "79600b703e488e4c6ad375632d873321112011c92e7af3ba68f068a559cbbd54"
+    },
+    {
+      "path": "source/check-and-bake.cjs",
+      "bytes": 5925,
+      "sha256": "cf815dc7ecc16de4e9074bddd2864731d5d1dd83cebbff36026b6173406067be"
+    },
+    {
+      "path": "source/exploration-joins-v01.blend",
+      "bytes": 950220,
+      "sha256": "528ecca2f4cb9145efed46ed170201511857895571d89d20abff46b85ae2e7fa"
+    },
+    {
+      "path": "source/motion-review.js",
+      "bytes": 4983,
+      "sha256": "747fb0f0a5990b6e8249abcb44717de86c3de21134d4b523e16af3d43e354070"
+    },
+    {
+      "path": "source/motion-viewer.js",
+      "bytes": 2848,
+      "sha256": "fcdeea173e7a1e4cba55c1e2d7e075c24701d073a5c9338d96024be88151fca4"
+    },
+    {
+      "path": "source/package-assets.py",
+      "bytes": 8985,
+      "sha256": "399837d1b86db77f724b4c76b34ee28e21b1623a05147ddd94747a2f190f6463"
+    },
+    {
+      "path": "source/prepare-reference.py",
+      "bytes": 8453,
+      "sha256": "a78cd63a0dc94f8c200125e3e72b04f1d218d1e6921d1abe5108273f1de5c29f"
+    },
+    {
+      "path": "source/reference-geometry.json",
+      "bytes": 500451,
+      "sha256": "5794409c93a08ceafc880f17e39e782e786b94f2135891e9666a53bf205342eb"
+    },
+    {
+      "path": "source/serve-preview.py",
+      "bytes": 517,
+      "sha256": "27fddf6574e90f505c0ff847e4b53a5bc80b9256cd98aa15d9fe567399f096fa"
+    },
+    {
+      "path": "source/transition-engine.js",
+      "bytes": 8908,
+      "sha256": "b7231d5cd9806ab6c41c750c717688c1c30ec2e30dce4ee26e3c319dad076948"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2854,
+      "sha256": "1a1bdb4a73448dd80455d8416df8541b693d5d8974b1218fec77717d44935b52"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "historicalArchive": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/A07-A08-C/A07-A08-C-探索动作衔接复核-v01-审稿包.zip",
+  "historicalArchiveSha256": "130466b9932372be9b3b2fbef28ed4131304da9854809d493a507b656b7fe77c",
+  "originalManifestSha256": "81c26ac063125e6443c017c8b8bc2eb0aecd7fd417ec981f3f7e4035d765c00c"
+}

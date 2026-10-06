@@ -1,0 +1,434 @@
+{
+  "asset": "F05-09",
+  "allPassed": true,
+  "uiCases": [
+    {
+      "scene": "dry",
+      "node": -1,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "dry",
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "dry",
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "dry",
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "dry",
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "dry",
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "dry",
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": -1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "shallow",
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": -1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "water",
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": -1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "threshold",
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": -1,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "overload",
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": -1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": 0,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": 1,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": 2,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": 3,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": 4,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "disabled",
+      "node": 5,
+      "active": true,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": -1,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": 0,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": 1,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": 2,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": 3,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": 4,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "lava",
+      "node": 5,
+      "active": false,
+      "ghost": false,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": -1,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": 0,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": 1,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": 2,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": 3,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": 4,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    },
+    {
+      "scene": "ghost",
+      "node": 5,
+      "active": false,
+      "ghost": true,
+      "allPassed": true
+    }
+  ],
+  "embeddedImagesMatch": [
+    "buoyancy-back.png",
+    "buoyancy-waterline.png",
+    "buoyancy-mounted-0.png",
+    "buoyancy-mounted-1.png",
+    "buoyancy-three-quarter.png",
+    "buoyancy-mounted-3.png",
+    "buoyancy-mounted-2.png",
+    "buoyancy-front.png",
+    "buoyancy-mounted-5.png",
+    "buoyancy-submerged-reference.png",
+    "buoyancy-mounted-4.png",
+    "buoyancy-side.png",
+    "buoyancy-item-32.png",
+    "buoyancy-item-16.png",
+    "shared-fabric-machine-atlas-128x64.png"
+  ],
+  "layouts": [
+    {
+      "w": 320,
+      "scroll": 319
+    },
+    {
+      "w": 768,
+      "scroll": 753
+    },
+    {
+      "w": 1280,
+      "scroll": 1265
+    }
+  ],
+  "boardSaved": true,
+  "liveSaved": true,
+  "waterlineReferenceOnly": true,
+  "gameIntegrated": false,
+  "bodyUvCorrectedAndRechecked": true
+}

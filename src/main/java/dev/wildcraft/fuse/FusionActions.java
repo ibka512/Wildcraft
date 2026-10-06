@@ -21,7 +21,7 @@ public final class FusionActions{
         if(!eligible(p))return false;var host=p.getMainHandItem();var material=p.getOffhandItem();if(host==material||!FusionItems.host(host)||host.has(FusionContent.DATA)||host.has(FusionContent.VIEW))return false;
         int free=host.getCount()>1?emptySlot(p):-1;if(host.getCount()>1&&(!FusionRules.arrow(host)||free<0))return false;
         var target=host.getCount()==1?host:host.copyWithCount(1);if(!FusionItems.attach(target,material,p.registryAccess()))return false;
-        if(host!=target){host.shrink(1);p.getInventory().setItem(free,host);p.setItemInHand(InteractionHand.MAIN_HAND,target);}return true;
+        if(host!=target){host.shrink(1);p.getInventory().setItem(free,host);p.setItemInHand(InteractionHand.MAIN_HAND,target);}feedback(p,false);return true;
     }
     public static boolean split(ServerPlayer p){
         if(!eligible(p))return false;var host=p.getMainHandItem();var recovered=FusionItems.splitMaterial(host,p.registryAccess());if(recovered.isEmpty())return false;var mat=recovered.get();var off=p.getOffhandItem();
@@ -31,7 +31,8 @@ public final class FusionActions{
         var single=host.getCount()==1?host:host.copyWithCount(1);
         if(inHand){if(off.isEmpty())p.setItemInHand(InteractionHand.OFF_HAND,mat);else off.grow(1);}else p.getInventory().setItem(free,mat);
         if(single!=host){host.shrink(1);p.getInventory().setItem(remainderSlot,host);p.setItemInHand(InteractionHand.MAIN_HAND,single);}
-        single.remove(FusionContent.DATA);single.remove(FusionContent.VIEW);return true;
+        single.remove(FusionContent.DATA);single.remove(FusionContent.VIEW);feedback(p,true);return true;
     }
     public static boolean rejectsCreativeEdit(ServerPlayer p,int slot,ItemStack incoming){return incoming.has(FusionContent.DATA)||incoming.has(FusionContent.VIEW)||slot>=0&&slot<p.inventoryMenu.slots.size()&&(p.inventoryMenu.getSlot(slot).getItem().has(FusionContent.DATA)||p.inventoryMenu.getSlot(slot).getItem().has(FusionContent.VIEW));}
+    private static void feedback(ServerPlayer p,boolean split){dev.wildcraft.art.ArtFeedback.send(p.level(),p.getUUID(),p.position().add(0,1.15,0),split?dev.wildcraft.art.ArtFeedback.Cue.SPLIT:dev.wildcraft.art.ArtFeedback.Cue.FUSE,split?4:3);}
 }

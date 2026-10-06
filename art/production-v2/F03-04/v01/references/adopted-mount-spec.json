@@ -1,0 +1,175 @@
+{
+  "asset": "F03-01",
+  "version": "v01",
+  "date": "2026-10-06",
+  "adopted": true,
+  "integrated": false,
+  "referenceBasis": "centered design coordinates, X right / Y surface outward / Z up, 1 unit = 1 block; candidate points converted to native host-local basis before inherited context/local transform",
+  "profiles": {
+    "sword": {
+      "label": "剑尖附着",
+      "contact": [
+        0.3,
+        0.03125,
+        0.32
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "maxSpan": 0.28,
+      "penetration": 0.008,
+      "nativeHostSurface": [
+        0.8,
+        0.82,
+        0.53125
+      ],
+      "nativeHostBasis": "generated item 0..1",
+      "heldEffectiveScale": 0.85,
+      "backEffectiveScale": 0.85,
+      "backToHeldRatio": 1.0,
+      "protected": "grip and lower blade"
+    },
+    "axe": {
+      "label": "斧头附着",
+      "contact": [
+        0.16,
+        0.03125,
+        0.2
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "maxSpan": 0.3,
+      "penetration": 0.008,
+      "nativeHostSurface": [
+        0.66,
+        0.7,
+        0.53125
+      ],
+      "nativeHostBasis": "generated item 0..1",
+      "heldEffectiveScale": 0.85,
+      "backEffectiveScale": 0.85,
+      "backToHeldRatio": 1.0,
+      "protected": "grip and shaft"
+    },
+    "shield": {
+      "label": "盾牌上缘附着",
+      "contact": [
+        0.25,
+        0.125,
+        0.54
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "maxSpan": 0.24,
+      "penetration": 0.006,
+      "nativeHostSurface": [
+        0.25,
+        -0.54,
+        -0.125
+      ],
+      "nativeHostNormal": [
+        0,
+        0,
+        -1
+      ],
+      "nativeHostBasis": "native ShieldModel BEFORE inherited local flip; not generated-item 0..1",
+      "heldEffectiveScale": 1.0,
+      "backEffectiveScale": 1.0,
+      "fixedScaleCompensation": 1.8181818181818181,
+      "backToHeldRatio": 1.0,
+      "protectedPatternRect": {
+        "x": [
+          -0.2,
+          0.2
+        ],
+        "z": [
+          -0.4,
+          0.4
+        ]
+      }
+    },
+    "arrow": {
+      "label": "箭物品尖端附着",
+      "contact": [
+        0.27,
+        0.03125,
+        0.27
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "maxSpan": 0.2,
+      "penetration": 0.008,
+      "nativeHostSurface": [
+        0.77,
+        0.77,
+        0.53125
+      ],
+      "nativeHostBasis": "generated item 0..1",
+      "heldEffectiveScale": 0.55,
+      "backEffectiveScale": null,
+      "backRecord": false,
+      "flight": {
+        "contact": [
+          0.215,
+          0,
+          0
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "maxSpan": 0.18,
+        "penetration": 0.008,
+        "nativeArrowEnvelope": {
+          "x": [
+            -0.675,
+            0.225
+          ]
+        },
+        "reference": "ArrowModel 26.3 cross planes, 0.9 root scale; preserve original yRot/xRot and shake"
+      }
+    }
+  },
+  "normalization": "materialSpan / longest side of actual FIXED render-state bounding box; center that actual bounding box; offset along host surface normal by material half-extent minus small penetration",
+  "materialRotation": "retain native FIXED display; do not use arbitrary forced model rotation or private components",
+  "guard": {
+    "minimumLongestSide": 0.001,
+    "maximumLongestSide": 100,
+    "requireFinite": true
+  },
+  "materialExamples": [
+    "minecraft:stone",
+    "minecraft:diamond",
+    "minecraft:feather"
+  ],
+  "rules": {
+    "preserveNativeHostLayers": true,
+    "preserveHostDyeShieldPatternsAndGlint": true,
+    "preserveMaterialGlint": true,
+    "noPrivateNameContainerComponents": true,
+    "noBowOrCrossbowFuseHost": true,
+    "noArrowBackRecord": true,
+    "noGameplayOrCollisionChange": true,
+    "newProductionModels": 0,
+    "newTextures": 0,
+    "sharedConnectorModels": 0
+  },
+  "extents": "future item renderer must report actual transformed host+material union, not reuse current hardcoded layer bounds",
+  "support": "native representatives reviewed only; third-party procedural/transparent/animated/oversized models still need integration-specific checks",
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项",
+  "gameRuntimeVerified": false
+}

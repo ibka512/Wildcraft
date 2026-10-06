@@ -1,0 +1,30 @@
+{
+  "asset": "F06-01",
+  "allPassed": true,
+  "nativeAtlas": [
+    64,
+    64
+  ],
+  "sourceLayers": 4,
+  "sourceReopened": true,
+  "pngReopened": true,
+  "sourcePngPixelIdentity": true,
+  "pixelHash": "fnv1a64:2aaa8e54c32690ec",
+  "visibleColors": 18,
+  "alphaValues": [
+    255
+  ],
+  "reusedMaterialPatches": 6,
+  "materialPixelsNotResampled": true,
+  "cuboids": 43,
+  "planesInStaticModel": 3,
+  "blockbenchStructurallyValid": true,
+  "blockbenchApplicationOpened": false,
+  "envelope": [
+    16,
+    16,
+    16
+  ],
+  "baselineJavaResourcesJarUnchanged": true,
+  "gameIntegrated": false
+}

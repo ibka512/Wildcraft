@@ -1,0 +1,43 @@
+{
+  "asset": "F04-03",
+  "allPassed": true,
+  "date": "2026-10-05",
+  "nativeAtlas": [
+    64,
+    64
+  ],
+  "sourceLayers": 4,
+  "pixelHash": "fnv1a64:2212c142e7fbe2e1",
+  "sourcePngIdentity": true,
+  "binaryAlpha": [
+    0,
+    255
+  ],
+  "matchesAuthoredPixels": true,
+  "batteryPixelsUnchanged": true,
+  "batteryGeometryUnscaled": true,
+  "chargerCuboids": 30,
+  "batteryReferenceCuboids": 16,
+  "noChargerBatteryIntersection": true,
+  "contacts": [
+    {
+      "contact": 0,
+      "coordinatesMatch": true,
+      "depthTouchesWithoutOverlap": true
+    },
+    {
+      "contact": 1,
+      "coordinatesMatch": true,
+      "depthTouchesWithoutOverlap": true
+    }
+  ],
+  "allUVsOpaqueAndInBounds": true,
+  "allGeometryWithinOneBlock": true,
+  "statusGlyphs": 5,
+  "staticModelHasNoBattery": true,
+  "blockbenchEmbeddedTextureIdentity": true,
+  "blockbenchOpened": false,
+  "sixNeighborPositionsChecked": true,
+  "sixNeighborSourceGameplayTested": false,
+  "gameIntegrated": false
+}

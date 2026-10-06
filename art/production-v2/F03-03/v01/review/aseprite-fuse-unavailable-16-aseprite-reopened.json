@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 38,
+    "layerId": 39,
+    "frame": 0,
+    "celId": 40,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 38,
+      "objectVersion": 0,
+      "revisionToken": "rev1:8b31912a0358bb74",
+      "name": "1791223197489_fuse-unavailable-16.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/1791223197489_fuse-unavailable-16.aseprite",
+      "modified": false,
+      "active": true,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 2,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 39,
+          "stableId": "layer:39",
+          "name": "断开轮廓",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 40,
+              "frame": 0,
+              "imageId": 43,
+              "dataId": 42,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 44,
+          "stableId": "layer:44",
+          "name": "金属亮暗面",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 45,
+              "frame": 0,
+              "imageId": 47,
+              "dataId": 46,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:3f7366d2ed22aa27"
+      }
+    }
+  ],
+  "totalDocumentCount": 3
+}

@@ -1,0 +1,3617 @@
+{
+  "units": "1/16 block",
+  "front": "+Z / fixed south, existing block has no facing property",
+  "textureSize": [
+    64,
+    64
+  ],
+  "parts": [
+    {
+      "name": "base_plinth",
+      "from": [
+        0,
+        1,
+        0
+      ],
+      "to": [
+        16,
+        3.5,
+        15.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "foot_0",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        2.5,
+        1,
+        2.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "foot_1",
+      "from": [
+        13.5,
+        0,
+        0
+      ],
+      "to": [
+        16.0,
+        1,
+        2.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "foot_2",
+      "from": [
+        0,
+        0,
+        13.5
+      ],
+      "to": [
+        2.5,
+        1,
+        16.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "foot_3",
+      "from": [
+        13.5,
+        0,
+        13.5
+      ],
+      "to": [
+        16.0,
+        1,
+        16.0
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "front_fascia_left",
+      "from": [
+        0,
+        1,
+        15.5
+      ],
+      "to": [
+        6.5,
+        3.5,
+        15.95
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "front_fascia_right",
+      "from": [
+        9.5,
+        1,
+        15.5
+      ],
+      "to": [
+        16,
+        3.5,
+        15.95
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "rear_housing",
+      "from": [
+        3.3,
+        3.5,
+        2
+      ],
+      "to": [
+        12.7,
+        13.7,
+        10.6
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            8.0,
+            16.0,
+            12.0
+          ],
+          "materialRegion": "rearplate"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "left_pillar",
+      "from": [
+        1,
+        3.5,
+        2
+      ],
+      "to": [
+        3.3,
+        13.7,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            8.0,
+            12.0,
+            12.0
+          ],
+          "materialRegion": "vent"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "right_pillar",
+      "from": [
+        12.7,
+        3.5,
+        2
+      ],
+      "to": [
+        15,
+        13.7,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            8.0,
+            12.0,
+            12.0
+          ],
+          "materialRegion": "vent"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            8.0,
+            4.0,
+            12.0
+          ],
+          "materialRegion": "housing"
+        }
+      }
+    },
+    {
+      "name": "top_canopy",
+      "from": [
+        1.5,
+        13.7,
+        2
+      ],
+      "to": [
+        14.5,
+        15.6,
+        11
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            14.0,
+            10.0,
+            16.0
+          ],
+          "materialRegion": "top"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "left_top_step",
+      "from": [
+        2,
+        15.6,
+        3
+      ],
+      "to": [
+        5,
+        16,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "right_top_step",
+      "from": [
+        11,
+        15.6,
+        3
+      ],
+      "to": [
+        14,
+        16,
+        7
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "top_copper_trim",
+      "from": [
+        5.5,
+        15.6,
+        3.5
+      ],
+      "to": [
+        10.5,
+        16,
+        5.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "pocket_floor",
+      "from": [
+        3.3,
+        3.5,
+        10.6
+      ],
+      "to": [
+        12.7,
+        4.8,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        }
+      }
+    },
+    {
+      "name": "retaining_lip",
+      "from": [
+        4.4,
+        4.8,
+        12.9
+      ],
+      "to": [
+        11.6,
+        5.65,
+        13.5
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "left_socket_rail",
+      "from": [
+        4.3,
+        5.8,
+        10.6
+      ],
+      "to": [
+        4.6,
+        12.9,
+        13.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "right_socket_rail",
+      "from": [
+        11.4,
+        5.8,
+        10.6
+      ],
+      "to": [
+        11.7,
+        12.9,
+        13.2
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            4.0,
+            12.0,
+            8.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "battery_rear_contact_0",
+      "from": [
+        6.0,
+        6.88,
+        10.6
+      ],
+      "to": [
+        7.3,
+        8.28,
+        10.99
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "battery_rear_contact_1",
+      "from": [
+        8.7,
+        6.88,
+        10.6
+      ],
+      "to": [
+        10.0,
+        8.28,
+        10.99
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "front_fastener_0",
+      "from": [
+        1.7,
+        1.7,
+        15.95
+      ],
+      "to": [
+        2.7,
+        2.7,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "front_fastener_1",
+      "from": [
+        13.3,
+        1.7,
+        15.95
+      ],
+      "to": [
+        14.3,
+        2.7,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "rear_conduction_plate",
+      "from": [
+        6,
+        6,
+        1.9
+      ],
+      "to": [
+        10,
+        10,
+        2.001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "left_conduction_plate",
+      "from": [
+        0.9,
+        6,
+        6
+      ],
+      "to": [
+        1.001,
+        10,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "right_conduction_plate",
+      "from": [
+        14.999,
+        6,
+        6
+      ],
+      "to": [
+        15.1,
+        10,
+        10
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            12.0,
+            4.0,
+            16.0,
+            8.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "status_background",
+      "from": [
+        6.9,
+        1.25,
+        15.5
+      ],
+      "to": [
+        9.1,
+        3.15,
+        15.66
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            4.0,
+            8.0,
+            8.0,
+            12.0
+          ],
+          "materialRegion": "inset"
+        }
+      }
+    },
+    {
+      "name": "status_bezel_left",
+      "from": [
+        6.5,
+        1.1,
+        15.5
+      ],
+      "to": [
+        6.9,
+        3.3,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "status_bezel_right",
+      "from": [
+        9.1,
+        1.1,
+        15.5
+      ],
+      "to": [
+        9.5,
+        3.3,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "status_bezel_bottom",
+      "from": [
+        6.9,
+        1.1,
+        15.5
+      ],
+      "to": [
+        9.1,
+        1.25,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    },
+    {
+      "name": "status_bezel_top",
+      "from": [
+        6.9,
+        3.15,
+        15.5
+      ],
+      "to": [
+        9.1,
+        3.3,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            8.0,
+            0.0,
+            16.0,
+            4.0
+          ],
+          "materialRegion": "steel"
+        }
+      }
+    }
+  ],
+  "batteryParts": [
+    {
+      "name": "battery/shell_flat_back",
+      "from": [
+        4.8,
+        5.800000000000001,
+        11.0
+      ],
+      "to": [
+        11.2,
+        12.43,
+        12.52
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            4.0,
+            3.0,
+            8.0
+          ],
+          "materialRegion": "rear"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            0.0,
+            0.0,
+            3.0,
+            4.0
+          ],
+          "materialRegion": "front"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        }
+      }
+    },
+    {
+      "name": "battery/bottom_steel_cap",
+      "from": [
+        4.8,
+        5.800000000000001,
+        12.52
+      ],
+      "to": [
+        11.2,
+        6.279999999999999,
+        12.919999999999998
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "battery/top_stepped_cap",
+      "from": [
+        5.2,
+        12.18,
+        12.52
+      ],
+      "to": [
+        10.8,
+        12.84,
+        12.919999999999998
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "battery/top_cap_back",
+      "from": [
+        5.2,
+        12.43,
+        11.0
+      ],
+      "to": [
+        10.8,
+        12.84,
+        12.52
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "battery/left_steel_rail",
+      "from": [
+        4.8,
+        6.279999999999999,
+        12.52
+      ],
+      "to": [
+        5.2,
+        12.18,
+        12.919999999999998
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "battery/right_steel_rail",
+      "from": [
+        10.8,
+        6.279999999999999,
+        12.52
+      ],
+      "to": [
+        11.2,
+        12.18,
+        12.919999999999998
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            0.0,
+            8.0,
+            3.0
+          ],
+          "materialRegion": "rim"
+        }
+      }
+    },
+    {
+      "name": "battery/top_copper_contact",
+      "from": [
+        6.6,
+        12.84,
+        11.3
+      ],
+      "to": [
+        9.4,
+        13.16,
+        12.219999999999999
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "battery/window_recess_0",
+      "from": [
+        5.7,
+        6.529999999999999,
+        12.52
+      ],
+      "to": [
+        10.3,
+        7.93,
+        12.600000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        }
+      }
+    },
+    {
+      "name": "battery/window_recess_1",
+      "from": [
+        5.7,
+        8.36,
+        12.52
+      ],
+      "to": [
+        10.3,
+        9.76,
+        12.600000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        }
+      }
+    },
+    {
+      "name": "battery/window_recess_2",
+      "from": [
+        5.7,
+        10.190000000000001,
+        12.52
+      ],
+      "to": [
+        10.3,
+        11.590000000000002,
+        12.600000000000001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            6.0,
+            6.0,
+            8.0
+          ],
+          "materialRegion": "window"
+        }
+      }
+    },
+    {
+      "name": "battery/separator_0",
+      "from": [
+        5.2,
+        7.93,
+        12.52
+      ],
+      "to": [
+        10.8,
+        8.36,
+        12.719999999999999
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        }
+      }
+    },
+    {
+      "name": "battery/separator_1",
+      "from": [
+        5.2,
+        9.76,
+        12.52
+      ],
+      "to": [
+        10.8,
+        10.19,
+        12.719999999999999
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            3.0,
+            0.0,
+            6.0,
+            4.0
+          ],
+          "materialRegion": "shell"
+        }
+      }
+    },
+    {
+      "name": "battery/rear_copper_pad_0",
+      "from": [
+        6.0,
+        6.880000000000001,
+        10.99
+      ],
+      "to": [
+        7.3,
+        8.28,
+        11.001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "battery/rear_copper_pad_1",
+      "from": [
+        8.7,
+        6.880000000000001,
+        10.99
+      ],
+      "to": [
+        10.0,
+        8.28,
+        11.001
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "battery/left_fastener",
+      "from": [
+        5.28,
+        11.780000000000001,
+        12.52
+      ],
+      "to": [
+        5.65,
+        12.13,
+        12.649999999999999
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    },
+    {
+      "name": "battery/right_fastener",
+      "from": [
+        10.35,
+        6.390000000000001,
+        12.52
+      ],
+      "to": [
+        10.72,
+        6.74,
+        12.649999999999999
+      ],
+      "faces": {
+        "north": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "south": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "east": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "west": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "up": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        },
+        "down": {
+          "texture": "#atlas",
+          "uv": [
+            6.0,
+            3.0,
+            8.0,
+            5.0
+          ],
+          "materialRegion": "copper"
+        }
+      }
+    }
+  ],
+  "batteryOriginalEnvelope": {
+    "from": [
+      4.8,
+      4.32,
+      7.19
+    ],
+    "to": [
+      11.2,
+      11.68,
+      9.12
+    ],
+    "size": [
+      6.4,
+      7.36,
+      1.93
+    ]
+  },
+  "batteryOffset": [
+    0,
+    1.48,
+    3.8
+  ],
+  "batteryScale": 1,
+  "batteryWindows": [
+    {
+      "indexBottomUp": 0,
+      "from": [
+        5.7,
+        6.529999999999999,
+        12.611
+      ],
+      "to": [
+        10.3,
+        7.93,
+        12.611
+      ],
+      "direction": "south",
+      "materialRegion": "energy",
+      "fill": "height from bottom",
+      "fraction": "clamp(energy/1000*3-indexBottomUp,0,1)"
+    },
+    {
+      "indexBottomUp": 1,
+      "from": [
+        5.7,
+        8.36,
+        12.611
+      ],
+      "to": [
+        10.3,
+        9.76,
+        12.611
+      ],
+      "direction": "south",
+      "materialRegion": "energy",
+      "fill": "height from bottom",
+      "fraction": "clamp(energy/1000*3-indexBottomUp,0,1)"
+    },
+    {
+      "indexBottomUp": 2,
+      "from": [
+        5.7,
+        10.190000000000001,
+        12.611
+      ],
+      "to": [
+        10.3,
+        11.590000000000002,
+        12.611
+      ],
+      "direction": "south",
+      "materialRegion": "energy",
+      "fill": "height from bottom",
+      "fraction": "clamp(energy/1000*3-indexBottomUp,0,1)"
+    }
+  ],
+  "batteryEnergyUV": [
+    3,
+    4,
+    6,
+    6
+  ],
+  "statusPanel": {
+    "from": [
+      7,
+      1.3,
+      15.671
+    ],
+    "to": [
+      9,
+      3.1,
+      15.671
+    ],
+    "normal": [
+      0,
+      0,
+      1
+    ],
+    "tiles": {
+      "0": [
+        0.0,
+        12.0,
+        2.0,
+        14.0
+      ],
+      "1": [
+        2.0,
+        12.0,
+        4.0,
+        14.0
+      ],
+      "2": [
+        4.0,
+        12.0,
+        6.0,
+        14.0
+      ],
+      "3": [
+        6.0,
+        12.0,
+        8.0,
+        14.0
+      ],
+      "4": [
+        8.0,
+        12.0,
+        10.0,
+        14.0
+      ]
+    },
+    "nonEmissive": true,
+    "symbols": {
+      "0": "empty outline",
+      "1": "broken line",
+      "2": "chevron",
+      "3": "check",
+      "4": "pause"
+    },
+    "source": "future world presentation snapshot; current states synchronized only to menu"
+  },
+  "envelope": {
+    "from": [
+      0,
+      0,
+      0
+    ],
+    "to": [
+      16,
+      16,
+      16
+    ]
+  },
+  "collision": "existing full cube unchanged; art does not change VoxelShape",
+  "capacity": 1000,
+  "worldDisplayImplemented": false
+}

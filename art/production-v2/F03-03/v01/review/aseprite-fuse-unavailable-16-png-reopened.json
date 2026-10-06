@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 49,
+    "layerId": 50,
+    "frame": 0,
+    "celId": 51,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 49,
+      "objectVersion": 0,
+      "revisionToken": "rev1:42dfb114f34a61c5",
+      "name": "fuse-unavailable-16.png",
+      "filename": "/home/web_user/aseprite-web/files/fuse-unavailable-16.png",
+      "modified": false,
+      "active": true,
+      "width": 16,
+      "height": 16,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 1,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 50,
+          "stableId": "layer:50",
+          "name": "Layer",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 0,
+          "cels": [
+            {
+              "id": 51,
+              "frame": 0,
+              "imageId": 54,
+              "dataId": 53,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 7,
+        "colors": [
+          "#00000000",
+          "#30343aff",
+          "#464b52ff",
+          "#60666eff",
+          "#818890ff",
+          "#ced2d6ff",
+          "#eef0f1ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": false,
+        "canRedo": false,
+        "undoSteps": 0,
+        "redoSteps": 0,
+        "nextUndoLabel": "",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:3f7366d2ed22aa27"
+      }
+    }
+  ],
+  "totalDocumentCount": 4
+}

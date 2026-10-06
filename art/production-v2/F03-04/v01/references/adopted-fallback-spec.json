@@ -1,0 +1,149 @@
+{
+  "asset": "F03-03",
+  "version": "v01",
+  "date": "2026-10-06",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "runtimeVerified": false,
+  "productionAssetsCreated": true,
+  "plannedSprite": {
+    "name": "fuse-unavailable-16",
+    "size": [
+      16,
+      16
+    ],
+    "format": "RGBA PNG + layered Aseprite",
+    "style": "neutral broken silver connection plate; chamfered contour; diagonal transparent break; directional pixel bevel",
+    "opaqueBoundsPlan": [
+      2,
+      2,
+      12,
+      12
+    ],
+    "palettePlan": [
+      "#30343a",
+      "#464b52",
+      "#60666e",
+      "#818890",
+      "#a8afb5",
+      "#ced2d6",
+      "#eef0f1"
+    ],
+    "alpha": [
+      0,
+      255
+    ],
+    "emissive": false,
+    "newMaterialItem": false,
+    "native32Design": false,
+    "display32": "nearest 2x of native16, clearly labelled as display enlargement",
+    "actualPalette": [
+      "#30343aff",
+      "#464b52ff",
+      "#60666eff",
+      "#818890ff",
+      "#ced2d6ff",
+      "#eef0f1ff"
+    ],
+    "actualColorCount": 6,
+    "actualOpaqueBounds": [
+      2,
+      2,
+      12,
+      12
+    ],
+    "actualLayers": 2
+  },
+  "atlasPlan": {
+    "size": [
+      64,
+      32
+    ],
+    "newRegion": [
+      32,
+      16,
+      16,
+      16
+    ],
+    "reuse": "F03-02 adopted atlas",
+    "writeToNewSourceAndExport": true,
+    "preserveExistingRegionsPixels": true,
+    "layerCountPlan": 4,
+    "filter": "nearest",
+    "mipmaps": false
+  },
+  "states": {
+    "data-unavailable": {
+      "trigger": "FusionVisual.kind==6, including known material ID with failed full snapshot decode",
+      "appearance": "neutral fallback + retained fusion-record badge",
+      "effects": "disabled by existing server rules",
+      "splitting": "disabled by existing server rules",
+      "uses": "read actual retained FusionVisual.uses, 1..32; no fake zero or countdown",
+      "tooltip": "材料不可用：效果和拆卸已停用，原始数据保留；公开ID和实际剩余次数"
+    },
+    "model-unavailable": {
+      "trigger": "valid server kind0..5, but client display model missing/empty/invalid bounds",
+      "appearance": "same neutral fallback + retained fusion-record badge",
+      "effects": "follow actual server state; do not disable based on display failure",
+      "splitting": "follow actual server validation",
+      "uses": "actual synchronized value",
+      "tooltip": "显示资源不可用；保留真实类别及实际剩余次数；不显示材料停用文案"
+    },
+    "restored-reference": {
+      "trigger": "review fixture only; future appearance switches upon actual valid model/data refresh",
+      "appearance": "actual restored native material model",
+      "uses": "same actual value; never replenish automatically",
+      "repairButton": false
+    },
+    "unfused": {
+      "trigger": "no fusion view",
+      "appearance": "native host only; no fallback or fusion badge"
+    }
+  },
+  "mounts": {
+    "source": "references/adopted-mount-spec.json",
+    "hostMaxSpan": {
+      "sword": 0.28,
+      "axe": 0.3,
+      "shield": 0.24,
+      "arrow": 0.2,
+      "flight": 0.18
+    },
+    "handBackScale": "preserve adopted F03-01/A09 equal scales; no extra fallback size preset",
+    "arrowBack": false,
+    "geometry": "future thin generated extrusion or quad from same16 sprite, no additional authored model",
+    "contact": "check actual opaque geometry near contact, not only full16 canvas or overall bounding box"
+  },
+  "plannedVerification": [
+    "Aseprite source and PNG reopened pixel identity",
+    "alpha0/255 and bounded palette",
+    "old atlas regions unchanged pixelwise",
+    "four item hosts and flight; front/side views",
+    "native16 and32 reference GUI renders; label32 as display enlargement",
+    "dark/light contrast",
+    "server inactive versus client model failure semantic separation",
+    "Host glint/durability preservation specified; native runtime/glint layers not tested this art turn",
+    "finite bounds and actual mount contact; invalid/empty model fixture",
+    "no duplicated material model when native display restored",
+    "original code/locales/JAR and previous archive hashes unchanged"
+  ],
+  "counts": {
+    "newGlyphs": 1,
+    "plannedAsepriteSources": 2,
+    "plannedPNGs": 2,
+    "currentAsepriteSources": 2,
+    "currentPNGs": 2
+  },
+  "nextAsset": "F03-04 only after visual adoption of completed F03-03",
+  "editorBlockerResolved": true,
+  "verificationEvidence": {
+    "pixel": "../review/pixel-checks.json",
+    "geometry": "../review/geometry-checks.json",
+    "browser": "../review/browser-checks.json",
+    "render": "../review/render-checks.json"
+  },
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一版",
+  "gameRuntimeVerified": false
+}

@@ -1,0 +1,493 @@
+{
+  "asset": "F05-08",
+  "allPassed": true,
+  "uiCases": 49,
+  "cases": [
+    {
+      "snapshot": "inactive",
+      "node": -1,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": false
+    },
+    {
+      "snapshot": "inactive",
+      "node": 0,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "inactive",
+      "node": 1,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "inactive",
+      "node": 2,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "inactive",
+      "node": 3,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "inactive",
+      "node": 4,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "inactive",
+      "node": 5,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": -1,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": 0,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": 1,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": 2,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": 3,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": 4,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "active",
+      "node": 5,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": -1,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": 0,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": 1,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": 2,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": 3,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": 4,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "enabled-inactive",
+      "node": 5,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": -1,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": 0,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": 1,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": 2,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": 3,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": 4,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "zero-energy",
+      "node": 5,
+      "lampState": "inactive",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": -1,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": 0,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": 1,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": 2,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": 3,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": 4,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "last-payment",
+      "node": 5,
+      "lampState": "active",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": -1,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": 0,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": 1,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": 2,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": 3,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": 4,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "power-reference",
+      "node": 5,
+      "lampState": "powerFailureReference",
+      "designReferenceOnly": true,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": false
+    },
+    {
+      "snapshot": "ghost",
+      "node": -1,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 77,
+      "ghost": true
+    },
+    {
+      "snapshot": "ghost",
+      "node": 0,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": true
+    },
+    {
+      "snapshot": "ghost",
+      "node": 1,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": true
+    },
+    {
+      "snapshot": "ghost",
+      "node": 2,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": true
+    },
+    {
+      "snapshot": "ghost",
+      "node": 3,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": true
+    },
+    {
+      "snapshot": "ghost",
+      "node": 4,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": true
+    },
+    {
+      "snapshot": "ghost",
+      "node": 5,
+      "lampState": "ghost",
+      "designReferenceOnly": false,
+      "bodyRoll": 0,
+      "faces": 281,
+      "ghost": true
+    }
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "documentWidth": 305,
+      "liveWidth": 239,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "documentWidth": 753,
+      "liveWidth": 687,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1265,
+      "liveWidth": 743.328125,
+      "overflow": false
+    }
+  ],
+  "nativeImages": [
+    {
+      "name": "stabilizer-item-32",
+      "width": 32,
+      "height": 32,
+      "pixelHash": "fnv1a64:d80eca734bff4f9d"
+    },
+    {
+      "name": "stabilizer-item-16",
+      "width": 16,
+      "height": 16,
+      "pixelHash": "fnv1a64:129b2c27f40b8b6c"
+    }
+  ],
+  "manualBodyRollClampedByActive": true,
+  "ghostDoesNotSuppressRoll": true,
+  "powerReferenceLabelVisible": true,
+  "noFalseMissingPowerOnZeroEnergy": true,
+  "lastPaymentActiveStillMint": true,
+  "actualRenderFilesMatch": 15,
+  "reviewBoardSaved": true,
+  "liveCaptureSaved": true,
+  "gameIntegrated": false,
+  "finalActualRendersMatched": 15,
+  "finalColourAlignedSourceRechecked": true
+}

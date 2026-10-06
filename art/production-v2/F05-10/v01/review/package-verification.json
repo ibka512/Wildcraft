@@ -1,0 +1,79 @@
+{
+  "allPassed": true,
+  "adoptedSourceCopies": 16,
+  "inputHashesMatch": true,
+  "adoptedPackageManifestsChecked": [
+    "F04-02",
+    "F05-01",
+    "F05-03",
+    "F05-05"
+  ],
+  "codeAndDev14HashesUnchanged": true,
+  "baseline": [
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineNodes.java",
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineEntity.java",
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/RocketData.java",
+      "sha256": "1c572e29d28a91027c84223dfe7748052dff2250b80308c3c767de0566c5c7ac"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/SpringData.java",
+      "sha256": "f12df3690d77bd11a7ac51aab900c161dc4f968d4d44fb70a3839e5fa04489bb"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
+      "sha256": "96eaecea453bb79546de6ee7ff874e44dabb5f8e62302b56f68064e4d9a042e1"
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar",
+      "sha256": "c81ce6d7a960d67c3cd2125a2c426a62216e3b5f784c8e2b99d8afc6792a91ac"
+    }
+  ],
+  "localMarkdownLinks": 16,
+  "reviewScenePNGs": 18,
+  "boardDimensions": [
+    1200,
+    1890
+  ],
+  "previewHTTP": 200,
+  "representativeModels": [
+    "body",
+    "fan",
+    "battery"
+  ],
+  "nativeIconEndpointMasksPassed": true,
+  "actualTransparencyDepthCases": 24,
+  "finalFontMeasuredLayoutCases": 108,
+  "actualBrowserUICases": 108,
+  "gameIntegrated": false,
+  "gameTested": false,
+  "B3AllModelsVerified": false,
+  "knownLimits": [
+    "B3六类实际模型未制作，全件透明/遮挡仍待复核",
+    "浏览器字体/定位示意不代替实际Minecraft GUI和准星",
+    "实际服务器装拆、拒绝、所有权与多人跟踪未在本轮验证",
+    "F05-05底装落地问题保留"
+  ],
+  "gitChangedFiles": [
+    " M art/README.md",
+    " M art/production-docs/README.md",
+    "?? art/production-docs/ART-DESIGN-PRODUCTION-PLAN-2026-10-04.md",
+    "?? art/production-docs/ART-DESIGN-PRODUCTION-SCHEDULE-2026-10-04.csv",
+    "?? art/production-docs/PENDING-ART-ASSETS-2026-10-04.csv",
+    "?? art/production-docs/PENDING-ART-ASSETS-2026-10-04.md",
+    "?? art/production-docs/PENDING-ART-ASSETS-AUDIT-2026-10-04.csv",
+    "?? art/production-docs/PENDING-ART-ASSETS-AUDIT-2026-10-04.json",
+    "?? art/production-docs/PENDING-ART-ASSETS-AUDIT-2026-10-04.md",
+    "?? art/production-v2/"
+  ]
+}

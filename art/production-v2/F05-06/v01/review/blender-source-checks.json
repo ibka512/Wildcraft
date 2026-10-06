@@ -1,0 +1,314 @@
+{
+  "asset": "F05-06",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionMeshes": 44,
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "hiddenReferenceMeshes": 68,
+  "exactPoseCases": [
+    {
+      "node": 0,
+      "cooldown": 0,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 0,
+      "cooldown": 10,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 0,
+      "cooldown": 30,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 0,
+      "cooldown": 31,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 0,
+      "cooldown": 35,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 0,
+      "cooldown": 40,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 0,
+      "cooldown": 40,
+      "ghost": true,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 0,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 10,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 30,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 31,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 35,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 40,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 1,
+      "cooldown": 40,
+      "ghost": true,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 0,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 10,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 30,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 31,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 35,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 40,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 2,
+      "cooldown": 40,
+      "ghost": true,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 0,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 10,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 30,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 31,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 35,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 40,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 3,
+      "cooldown": 40,
+      "ghost": true,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 0,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 10,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 30,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 31,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 35,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 40,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 4,
+      "cooldown": 40,
+      "ghost": true,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 0,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 10,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 30,
+      "ghost": false,
+      "extended": false,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 31,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 35,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 40,
+      "ghost": false,
+      "extended": true,
+      "vertexChecks": 352
+    },
+    {
+      "node": 5,
+      "cooldown": 40,
+      "ghost": true,
+      "extended": false,
+      "vertexChecks": 352
+    }
+  ],
+  "totalEvaluatedVertexChecks": 14784,
+  "actualShapeKeysEvaluated": true,
+  "wireThicknessPreserved": true,
+  "actualRigidTranslationDriver": true,
+  "sourceDefaultCompressed": true,
+  "noProductionEmission": true,
+  "gameIntegrated": false
+}

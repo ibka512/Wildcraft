@@ -1,0 +1,17 @@
+/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/source/render-model.py:14: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('Cast iron / rim / wood / copper — actual pixel UV');mat.use_nodes=True
+/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/source/render-model.py:43: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True;next(n for n in m.node_tree.nodes if n.type=='BSDF_PRINCIPLED').inputs['Base Color'].default_value=(*color,1);next(n for n in m.node_tree.nodes if n.type=='BSDF_PRINCIPLED').inputs['Roughness'].default_value=.92
+00:11.073  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/review/cooking-pot-idle.png'
+00:16.328  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/review/cooking-pot-front.png'
+00:22.354  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/review/cooking-pot-top.png'
+/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/source/render-model.py:85: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  steam.use_nodes=True;next(n for n in steam.node_tree.nodes if n.type=='BSDF_PRINCIPLED').inputs['Alpha'].default_value=.25
+00:33.062  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/review/cooking-pot-paired-review.png'
+00:38.925  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F01-01/v01/review/cooking-pot-heat-source-mockup.png'
+信息: 已另存为 "cooking-pot-v01.blend"
+信息: 已另存为 "cooking-pot-demonstration.blend"
+Rendered actual cuboid model, explicit UV, clean source and cooking-only demonstration.
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:31:22)
+
+Blender quit

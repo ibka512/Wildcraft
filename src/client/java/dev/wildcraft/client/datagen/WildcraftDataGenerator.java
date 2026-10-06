@@ -9,6 +9,7 @@ public final class WildcraftDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = generator.createPack();
         pack.addProvider(WildcraftModelProvider::new);
         pack.addProvider(FocusEffectProvider::new);
+        pack.addProvider(SecondArtModelProvider::new);
         pack.addProvider((output, lookup) -> new WildcraftLanguageProvider(output, "en_us", lookup));
         pack.addProvider((output, lookup) -> new WildcraftLanguageProvider(output, "zh_cn", lookup));
     }

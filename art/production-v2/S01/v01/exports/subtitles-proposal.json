@@ -1,0 +1,30 @@
+{
+  "zh_cn": {
+    "subtitles.wildcraft.cooking.start": "料理开始",
+    "subtitles.wildcraft.cooking.complete": "料理完成",
+    "subtitles.wildcraft.charger.start": "开始充电",
+    "subtitles.wildcraft.charger.full": "电池充满",
+    "subtitles.wildcraft.mechanic.install": "安装部件",
+    "subtitles.wildcraft.mechanic.remove": "拆卸部件",
+    "subtitles.wildcraft.mechanic.start": "机械开始工作",
+    "subtitles.wildcraft.mechanic.stop": "机械停止工作",
+    "subtitles.wildcraft.fabricator.start": "制造开始",
+    "subtitles.wildcraft.fabricator.complete": "制造完成",
+    "subtitles.wildcraft.fuse.join": "融合成功",
+    "subtitles.wildcraft.fuse.split": "拆分成功"
+  },
+  "en_us": {
+    "subtitles.wildcraft.cooking.start": "Cooking starts",
+    "subtitles.wildcraft.cooking.complete": "Cooking finishes",
+    "subtitles.wildcraft.charger.start": "Charger engages",
+    "subtitles.wildcraft.charger.full": "Battery charged",
+    "subtitles.wildcraft.mechanic.install": "Part installed",
+    "subtitles.wildcraft.mechanic.remove": "Part removed",
+    "subtitles.wildcraft.mechanic.start": "Machine starts working",
+    "subtitles.wildcraft.mechanic.stop": "Machine stops working",
+    "subtitles.wildcraft.fabricator.start": "Fabrication starts",
+    "subtitles.wildcraft.fabricator.complete": "Fabrication finishes",
+    "subtitles.wildcraft.fuse.join": "Materials fuse",
+    "subtitles.wildcraft.fuse.split": "Materials separate"
+  }
+}

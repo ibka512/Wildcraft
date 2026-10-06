@@ -1,0 +1,337 @@
+{
+  "asset": "A13-C",
+  "version": "v01",
+  "date": "2026-10-06",
+  "allPassed": true,
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "humanListeningVerified": false,
+  "scenarios": 8,
+  "profiles": 2,
+  "reusedFocusOgg": 2,
+  "reusedS01Ogg": 12,
+  "nativeLocalReferenceOnly": 8,
+  "newProductionAudio": 0,
+  "newProductionMasters": 0,
+  "nativeAudioBundled": 0,
+  "portablePreviewWav": 8,
+  "policyChecks": 143,
+  "browserChecks": 98,
+  "deliveryChecks": 27,
+  "protectedOriginals": 30,
+  "files": [
+    {
+      "path": "EDITING.md",
+      "bytes": 2641,
+      "sha256": "320a50058033bb6a06820a0e8a4a93b6eb87d73f5fccc815a12df9ff7b094cb1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3700,
+      "sha256": "838c5989e92d90571ba68304d9c9fbc9c5f2007b68437fd127715deb827c1f0d"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 571,
+      "sha256": "6cc4a93ca53cbc7f37863a553f2eb2bcefc0e3fa8fff680685052aa888e7f297"
+    },
+    {
+      "path": "exports/focus-mix-spec.json",
+      "bytes": 2582,
+      "sha256": "a3b16d7f384cebbd71071717f674c401967b6b8f4a1916804b09083a8ec8c299"
+    },
+    {
+      "path": "exports/focus-volume-map.csv",
+      "bytes": 202,
+      "sha256": "a09883271c755c6c433cc8391dd76ea87f3166a4c3d0c80c95d285c12583dcfe"
+    },
+    {
+      "path": "exports/preview-mixes/crowded-current.wav",
+      "bytes": 720102,
+      "sha256": "42693e0e2a5cb45a506c2a56e8dac76c576ffbd19b71ad0e8037bc51ee83e18d"
+    },
+    {
+      "path": "exports/preview-mixes/crowded-proposed.wav",
+      "bytes": 720102,
+      "sha256": "be23fb080164c6d4ef05181090ae204432c5c05a8a2573a3cb3e03067f570289"
+    },
+    {
+      "path": "exports/preview-mixes/machines-current.wav",
+      "bytes": 720102,
+      "sha256": "34ab30388393a43c410ab17a94415a4798fe41e4db9a1022fb5dc4a4d88972a2"
+    },
+    {
+      "path": "exports/preview-mixes/machines-proposed.wav",
+      "bytes": 720102,
+      "sha256": "9a02e04dfaa4aff3e299bebfbdec5191809292ba53634eaf8eeb01f249a5b158"
+    },
+    {
+      "path": "exports/preview-mixes/quiet-current.wav",
+      "bytes": 720102,
+      "sha256": "b8ea9526edf873fb37a3b48423ce7a32f88a085c7832e62d89d713e373fc3ef6"
+    },
+    {
+      "path": "exports/preview-mixes/quiet-proposed.wav",
+      "bytes": 720102,
+      "sha256": "c091ce33da5fd76fb4a8de55038358f559670bf97fbe5fc624315ded48e7175f"
+    },
+    {
+      "path": "exports/preview-mixes/rapid-current.wav",
+      "bytes": 720102,
+      "sha256": "61838249e63e94c2b3766361cf094d05f486ed89cad1c43d318ad815d2902837"
+    },
+    {
+      "path": "exports/preview-mixes/rapid-proposed.wav",
+      "bytes": 720102,
+      "sha256": "0858a61ab38e7535f7b7c3150f179a9ca51356c2f7fc169f2c38a90689a765c7"
+    },
+    {
+      "path": "exports/scenario-plans.json",
+      "bytes": 41245,
+      "sha256": "7e2c1d645c5d622bc9c39e1224c25fcc5b89155a567c70517fa754be116e6b98"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2696,
+      "sha256": "9e694db0d947eedca657c549fe398bc9ac9b543fe32cd2d188a042447a3e586a"
+    },
+    {
+      "path": "references/adopted-focus-spec.json",
+      "bytes": 5239,
+      "sha256": "16b370fef3340bf4954bdd1df6ee1014bf9ebdc30ddbd136c56124f58918eb92"
+    },
+    {
+      "path": "references/adopted-s01-design.json",
+      "bytes": 14259,
+      "sha256": "09455eabc783db4e24c95beb8e10a31514074ed99bf0d0dc60d0102b91d25307"
+    },
+    {
+      "path": "references/adopted-s01-playback.json",
+      "bytes": 3179,
+      "sha256": "36eaee76e1a21390b7fa7bfab2702a937a5b282fa6a0a7394f42393909e76871"
+    },
+    {
+      "path": "references/baseline.json",
+      "bytes": 4968,
+      "sha256": "8a08ff8e9b665b799550cc1e0828f1aa0395ecefae0501a45a93d006462cb893"
+    },
+    {
+      "path": "references/charger_full.ogg",
+      "bytes": 5682,
+      "sha256": "4ec65d18c13c3fe2a703df89f91f057031d0259a53b2b78b880704575c462b8b"
+    },
+    {
+      "path": "references/charger_start.ogg",
+      "bytes": 4931,
+      "sha256": "2c861c5226ebe96701168f03cb6e1bb16732791cfdf564978bc7bdf60cfa15b4"
+    },
+    {
+      "path": "references/cooking_complete.ogg",
+      "bytes": 6291,
+      "sha256": "b3276c575503f2e1a877cf607812b4ea4ae702b0fa92f0c2284ed808cd0e5048"
+    },
+    {
+      "path": "references/cooking_start.ogg",
+      "bytes": 5094,
+      "sha256": "ae6256f984625751a571b4e3d76fd32f1c29e0d811b83d8092942867b4dc2a2a"
+    },
+    {
+      "path": "references/fabricator_complete.ogg",
+      "bytes": 6659,
+      "sha256": "ef2cfe78ad4c4922787a1003038bd2adca0c87fb62fe35ae5999316102c8addc"
+    },
+    {
+      "path": "references/fabricator_start.ogg",
+      "bytes": 5628,
+      "sha256": "b2dfa064fb768031e4a48e1a17ded0a2264c302cdd44bbab58985d94fcb4a5fb"
+    },
+    {
+      "path": "references/focus-enter-master.wav",
+      "bytes": 69164,
+      "sha256": "4e8252e50f68946b92a38d15a19351e1b1282cbfd0314cd195329f08f27ba925"
+    },
+    {
+      "path": "references/focus-exit-master.wav",
+      "bytes": 63404,
+      "sha256": "994bea3ef737e449a2869aa8b488ec67840c102628b811ebc29600bd6bffc68d"
+    },
+    {
+      "path": "references/focus_enter.ogg",
+      "bytes": 5744,
+      "sha256": "a819c1a006a93af80e59bb712e23886e7e19c8c7d200f14e4a19fe160e590021"
+    },
+    {
+      "path": "references/focus_exit.ogg",
+      "bytes": 5474,
+      "sha256": "5668f8ef538dd0e0f8dbeb84cbd4acd6559b563fbd4e4a3c525926b5669950ae"
+    },
+    {
+      "path": "references/fuse_join.ogg",
+      "bytes": 5603,
+      "sha256": "f5478a4c817dbaaeab8f23db34bea2c4bb2279fad1d71b0e60a81ea52d5c27f4"
+    },
+    {
+      "path": "references/fuse_split.ogg",
+      "bytes": 5525,
+      "sha256": "00b927f8081df7e5c52f57bda46450fdfac49d1e11219932b0e895d0862c495d"
+    },
+    {
+      "path": "references/mechanic_install.ogg",
+      "bytes": 4892,
+      "sha256": "0fbe63da6b1acf11bae90052e8ca926d79af26ca5e514523dee40a5da98f67bb"
+    },
+    {
+      "path": "references/mechanic_remove.ogg",
+      "bytes": 5096,
+      "sha256": "72906dc0905ffa54f6ac459d0af20e1084fabc0c213f6fe8ab8a9f5f90cf66e7"
+    },
+    {
+      "path": "references/mechanic_start.ogg",
+      "bytes": 5376,
+      "sha256": "4757b06618eb2f2d2c2d4d0b99a3b8ce73092d40165e3d05e51a881460f8752c"
+    },
+    {
+      "path": "references/mechanic_stop.ogg",
+      "bytes": 4967,
+      "sha256": "23acc8f5735391458cdfc1f34fd21427a74a00cd3f6d43e6abd82635bdd93337"
+    },
+    {
+      "path": "references/native-local-map.json",
+      "bytes": 3776,
+      "sha256": "4735e36689f180766673799395b270ebc5297a8cf36cbf29aab3174b618e2e09"
+    },
+    {
+      "path": "references/s01-policy.js",
+      "bytes": 2163,
+      "sha256": "437f65f2814a1328e6da49f70ad74c1fddb291912ec999026ee1fc19e5a3c69d"
+    },
+    {
+      "path": "review/adoption-checks.json",
+      "bytes": 799,
+      "sha256": "df9da7c13f2c0a85b4c8487528e4c1bf24b562c407a6858d986b99ecb104ff6d"
+    },
+    {
+      "path": "review/audio-checks.json",
+      "bytes": 6325,
+      "sha256": "f8f11925eacd88805755543a6a2e2d404399259a772d75147bedc3125df06452"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 120578,
+      "sha256": "7c143927433239187c378a17aa954ffc27074a8a91f2837cdd0925067468ce4d"
+    },
+    {
+      "path": "review/browser-supplement.json",
+      "bytes": 809,
+      "sha256": "51e381edce8c637e8e3d32171997004e3ae41b155ceef44d2e8aec3adc94490b"
+    },
+    {
+      "path": "review/delivery-checks.json",
+      "bytes": 5060,
+      "sha256": "e1caec8f3714cfe7c6dec682d7811bc4157a69220361130970b8b6f05b1f9b7a"
+    },
+    {
+      "path": "review/focus-waveforms.svg",
+      "bytes": 95217,
+      "sha256": "09ce296f57be3ba15f6be0bcafbecc3126659de6c439d1c72fab2bba6c7e1625"
+    },
+    {
+      "path": "review/policy-checks.json",
+      "bytes": 11346,
+      "sha256": "9439c02479ef955a0091c9a7e4e3f5062495bbc11a325937fd20d8cb90439b1a"
+    },
+    {
+      "path": "review/preview-controls.png",
+      "bytes": 98912,
+      "sha256": "69d572e1ae6eed247bfa116729a3c7840eb674223fe860587363e353d01cba80"
+    },
+    {
+      "path": "review/preview-desktop.png",
+      "bytes": 165445,
+      "sha256": "7abd2466461246b1a0f5758230cf736b870d331fdf51324235e60334214e2a92"
+    },
+    {
+      "path": "review/preview-mobile.png",
+      "bytes": 93473,
+      "sha256": "028f28ed17a34ec0ec0911929f0d0eafdc2803fee7c7f516b3da9b1b11334c46"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 228149,
+      "sha256": "5b8bcfc946f8a7be946792ff9a3fcf98cded373de08a572c6396a93dba0e0d21"
+    },
+    {
+      "path": "review/source-audit.json",
+      "bytes": 478,
+      "sha256": "124934e6d7d56bb9803f5ab1bc6bd3578fba1d794180d39a47c84c5a684e1453"
+    },
+    {
+      "path": "source/analyze-audio.py",
+      "bytes": 3951,
+      "sha256": "c709282e8ddece3ec8e29ecae0d71912e2d48a9267b9636f2490734ecad43f07"
+    },
+    {
+      "path": "source/browser-qa.mjs",
+      "bytes": 3790,
+      "sha256": "3e3aaf709f90d41625b7cb0122fb2b7a2f2688ec968032ab554597abcb35ca09"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 7750,
+      "sha256": "45b40bf677587c7559a179f9b1507e5be8462ae4c4e684e1652a71fdb5b8c26b"
+    },
+    {
+      "path": "source/check-delivery.py",
+      "bytes": 4811,
+      "sha256": "858e29d4923936d283c6e039243e45004b49f0bd623961970811470234833809"
+    },
+    {
+      "path": "source/check-policy.cjs",
+      "bytes": 3264,
+      "sha256": "91f7a0f36f50ace0a09dfa7df9feee936b122467ddb1ebd0aff38be6ec4e0067"
+    },
+    {
+      "path": "source/mix-policy.js",
+      "bytes": 3107,
+      "sha256": "7d71e18e6c7075ce822a5576a7e8d41a5f16212161566f082e8e79f84155b58c"
+    },
+    {
+      "path": "source/mix-review.js",
+      "bytes": 5591,
+      "sha256": "66d715defe8b2efbf1190e9ddd7ba11490764b60ac97890c254ace3a5d1a6cf4"
+    },
+    {
+      "path": "source/package-delivery.py",
+      "bytes": 1884,
+      "sha256": "ccffee4d5992d3aa150ff7373dfbefdaf1cc67833f3115b40fd7e9142982c472"
+    },
+    {
+      "path": "source/prepare-reference.py",
+      "bytes": 7326,
+      "sha256": "c0cc02d1df268f64c11acd76c8e6490ce24b392fd6b612299b7727fec134dd07"
+    },
+    {
+      "path": "source/serve-preview.py",
+      "bytes": 1125,
+      "sha256": "2ef4ab29dbec01d3f5f23131bbbaf1553306870a12ad3b6fea7202af747af114"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 3754,
+      "sha256": "c83b8880a309128b1d9f6ca5dc4fda28128dbd6b411ccd510923de2f1fc43a3f"
+    }
+  ],
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "acceptedProfile": "proposed",
+  "acceptedVolumes": {
+    "enter": 0.22,
+    "exit": 0.28
+  },
+  "userReviewApproved": true,
+  "historicalArchive": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/A13-C/A13-C-专注音效混音复核-v01-审稿包.zip",
+  "historicalArchiveSha256": "afd9356a7ed8b47a7f7ca7a8a803dbf1ee654aee36285921f34c8a7825492820",
+  "originalManifestSha256": "c7958737eabb21214a6789b0bb0f7ae760ea66a61ccc771a599e8f948b06de3e"
+}

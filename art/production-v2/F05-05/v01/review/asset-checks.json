@@ -1,0 +1,607 @@
+{
+  "allPassed": true,
+  "unchangedBatteryParts": 16,
+  "unchangedDimensions": true,
+  "unchangedUVPixelAreas": true,
+  "scale": 1,
+  "contacts": [
+    {
+      "index": 0,
+      "overlapXY": [
+        0.2999999999999998,
+        1.3999999999999995
+      ],
+      "surfaceGap": 0
+    },
+    {
+      "index": 1,
+      "overlapXY": [
+        0.3000000000000007,
+        1.3999999999999995
+      ],
+      "surfaceGap": 0
+    }
+  ],
+  "bodyOrOtherNodeIntersections": [],
+  "intentionalSameNodeInterfaceOverlaps": [
+    {
+      "node": 0,
+      "battery": "battery/shell_flat_back",
+      "body": "node0/rim_left",
+      "overlapModelUnits": [
+        0.56,
+        0.009999999999999787,
+        3.8599999999999994
+      ]
+    },
+    {
+      "node": 0,
+      "battery": "battery/shell_flat_back",
+      "body": "node0/rim_right",
+      "overlapModelUnits": [
+        0.56,
+        0.009999999999999787,
+        3.8599999999999994
+      ]
+    },
+    {
+      "node": 0,
+      "battery": "battery/shell_flat_back",
+      "body": "node0/rim_top",
+      "overlapModelUnits": [
+        3.04,
+        0.009999999999999787,
+        0.56
+      ]
+    },
+    {
+      "node": 0,
+      "battery": "battery/shell_flat_back",
+      "body": "node0/rim_bottom",
+      "overlapModelUnits": [
+        3.04,
+        0.009999999999999787,
+        0.25999999999999934
+      ]
+    },
+    {
+      "node": 0,
+      "battery": "battery/shell_flat_back",
+      "body": "node0/key",
+      "overlapModelUnits": [
+        0.6,
+        0.03999999999999915,
+        0.3999999999999999
+      ]
+    },
+    {
+      "node": 0,
+      "battery": "battery/rear_copper_pad_0",
+      "body": "node0/rim_left",
+      "overlapModelUnits": [
+        0.48,
+        0.010999999999999233,
+        1.3999999999999995
+      ]
+    },
+    {
+      "node": 0,
+      "battery": "battery/rear_copper_pad_1",
+      "body": "node0/rim_right",
+      "overlapModelUnits": [
+        0.48,
+        0.010999999999999233,
+        1.3999999999999995
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/shell_flat_back",
+      "body": "node1/rim_left",
+      "overlapModelUnits": [
+        0.56,
+        0.01000000000000012,
+        3.8599999999999994
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/shell_flat_back",
+      "body": "node1/rim_right",
+      "overlapModelUnits": [
+        0.56,
+        0.01000000000000012,
+        3.8599999999999994
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/shell_flat_back",
+      "body": "node1/rim_top",
+      "overlapModelUnits": [
+        3.04,
+        0.01000000000000012,
+        0.56
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/shell_flat_back",
+      "body": "node1/rim_bottom",
+      "overlapModelUnits": [
+        3.04,
+        0.01000000000000012,
+        0.25999999999999934
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/shell_flat_back",
+      "body": "node1/key",
+      "overlapModelUnits": [
+        0.6,
+        0.040000000000000036,
+        0.3999999999999999
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/rear_copper_pad_0",
+      "body": "node1/rim_left",
+      "overlapModelUnits": [
+        0.48,
+        0.010999999999999233,
+        1.3999999999999995
+      ]
+    },
+    {
+      "node": 1,
+      "battery": "battery/rear_copper_pad_1",
+      "body": "node1/rim_right",
+      "overlapModelUnits": [
+        0.48,
+        0.010999999999999233,
+        1.3999999999999995
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/shell_flat_back",
+      "body": "node2/rim_left",
+      "overlapModelUnits": [
+        0.56,
+        3.8599999999999994,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/shell_flat_back",
+      "body": "node2/rim_right",
+      "overlapModelUnits": [
+        0.56,
+        3.8599999999999994,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/shell_flat_back",
+      "body": "node2/rim_top",
+      "overlapModelUnits": [
+        3.04,
+        0.5599999999999996,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/shell_flat_back",
+      "body": "node2/rim_bottom",
+      "overlapModelUnits": [
+        3.04,
+        0.25999999999999934,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/shell_flat_back",
+      "body": "node2/key",
+      "overlapModelUnits": [
+        0.6,
+        0.40000000000000036,
+        0.03999999999999915
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/rear_copper_pad_0",
+      "body": "node2/rim_left",
+      "overlapModelUnits": [
+        0.48,
+        1.3999999999999995,
+        0.010999999999999233
+      ]
+    },
+    {
+      "node": 2,
+      "battery": "battery/rear_copper_pad_1",
+      "body": "node2/rim_right",
+      "overlapModelUnits": [
+        0.48,
+        1.3999999999999995,
+        0.010999999999999233
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/shell_flat_back",
+      "body": "node3/rim_left",
+      "overlapModelUnits": [
+        0.56,
+        3.8599999999999994,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/shell_flat_back",
+      "body": "node3/rim_right",
+      "overlapModelUnits": [
+        0.56,
+        3.8599999999999994,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/shell_flat_back",
+      "body": "node3/rim_top",
+      "overlapModelUnits": [
+        3.04,
+        0.5599999999999996,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/shell_flat_back",
+      "body": "node3/rim_bottom",
+      "overlapModelUnits": [
+        3.04,
+        0.25999999999999934,
+        0.010000000000001563
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/shell_flat_back",
+      "body": "node3/key",
+      "overlapModelUnits": [
+        0.6,
+        0.40000000000000036,
+        0.03999999999999915
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/rear_copper_pad_0",
+      "body": "node3/rim_left",
+      "overlapModelUnits": [
+        0.48,
+        1.3999999999999995,
+        0.010999999999999233
+      ]
+    },
+    {
+      "node": 3,
+      "battery": "battery/rear_copper_pad_1",
+      "body": "node3/rim_right",
+      "overlapModelUnits": [
+        0.48,
+        1.3999999999999995,
+        0.010999999999999233
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/shell_flat_back",
+      "body": "node4/rim_left",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        3.8599999999999994,
+        0.56
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/shell_flat_back",
+      "body": "node4/rim_right",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        3.8599999999999994,
+        0.56
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/shell_flat_back",
+      "body": "node4/rim_top",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        0.5599999999999996,
+        3.04
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/shell_flat_back",
+      "body": "node4/rim_bottom",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        0.25999999999999934,
+        3.04
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/shell_flat_back",
+      "body": "node4/key",
+      "overlapModelUnits": [
+        0.03999999999999915,
+        0.40000000000000036,
+        0.6
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/rear_copper_pad_0",
+      "body": "node4/rim_left",
+      "overlapModelUnits": [
+        0.010999999999999233,
+        1.3999999999999995,
+        0.48
+      ]
+    },
+    {
+      "node": 4,
+      "battery": "battery/rear_copper_pad_1",
+      "body": "node4/rim_right",
+      "overlapModelUnits": [
+        0.010999999999999233,
+        1.3999999999999995,
+        0.48
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/shell_flat_back",
+      "body": "node5/rim_left",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        3.8599999999999994,
+        0.56
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/shell_flat_back",
+      "body": "node5/rim_right",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        3.8599999999999994,
+        0.56
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/shell_flat_back",
+      "body": "node5/rim_top",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        0.5599999999999996,
+        3.04
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/shell_flat_back",
+      "body": "node5/rim_bottom",
+      "overlapModelUnits": [
+        0.010000000000001563,
+        0.25999999999999934,
+        3.04
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/shell_flat_back",
+      "body": "node5/key",
+      "overlapModelUnits": [
+        0.03999999999999915,
+        0.40000000000000036,
+        0.6
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/rear_copper_pad_0",
+      "body": "node5/rim_left",
+      "overlapModelUnits": [
+        0.010999999999999233,
+        1.3999999999999995,
+        0.48
+      ]
+    },
+    {
+      "node": 5,
+      "battery": "battery/rear_copper_pad_1",
+      "body": "node5/rim_right",
+      "overlapModelUnits": [
+        0.010999999999999233,
+        1.3999999999999995,
+        0.48
+      ]
+    }
+  ],
+  "maxAllowedInterfaceEmbeddingBlock": 0.003125,
+  "topControlClearanceBlock": 0.20875000000000005,
+  "bottomProtrusionBlock": 0.15937499999999993,
+  "provenanceHashesMatch": true,
+  "gameTested": false,
+  "chargerSame16PartsScale1Verified": true,
+  "heldDisplayScale1Retained": true,
+  "batteryFanDistinctNodePairs": [
+    {
+      "batteryNode": 0,
+      "fanNode": 1,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 0,
+      "fanNode": 2,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 0,
+      "fanNode": 3,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 0,
+      "fanNode": 4,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 0,
+      "fanNode": 5,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 1,
+      "fanNode": 0,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 1,
+      "fanNode": 2,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 1,
+      "fanNode": 3,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 1,
+      "fanNode": 4,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 1,
+      "fanNode": 5,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 2,
+      "fanNode": 0,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 2,
+      "fanNode": 1,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 2,
+      "fanNode": 3,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 2,
+      "fanNode": 4,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 2,
+      "fanNode": 5,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 3,
+      "fanNode": 0,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 3,
+      "fanNode": 1,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 3,
+      "fanNode": 2,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 3,
+      "fanNode": 4,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 3,
+      "fanNode": 5,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 4,
+      "fanNode": 0,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 4,
+      "fanNode": 1,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 4,
+      "fanNode": 2,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 4,
+      "fanNode": 3,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 4,
+      "fanNode": 5,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 5,
+      "fanNode": 0,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 5,
+      "fanNode": 1,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 5,
+      "fanNode": 2,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 5,
+      "fanNode": 3,
+      "conservativeEnvelopeNoIntersection": true
+    },
+    {
+      "batteryNode": 5,
+      "fanNode": 4,
+      "conservativeEnvelopeNoIntersection": true
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "asset": "F05-03",
+  "allPassed": true,
+  "nativeIconFiles": [
+    {
+      "name": "fan-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:09295732ddff18b5",
+      "visibleColors": 14,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 543
+    },
+    {
+      "name": "fan-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:d46209604df96ee7",
+      "visibleColors": 11,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 107
+    }
+  ],
+  "sharedAtlasReopened": true,
+  "sharedAtlasSourcePngIdentity": true,
+  "sharedAtlasPixelHash": "fnv1a64:c0e6173e67aa13d8",
+  "sharedAtlasNewPixels": 0,
+  "meshParts": 24,
+  "fixedParts": 18,
+  "rotatingParts": 6,
+  "blades": 4,
+  "fullRotationClearanceCases": 361,
+  "minClearanceModelUnits": 0.2382643073095987,
+  "bladesDoNotTouchFrame": true,
+  "outwardMeshWinding": true,
+  "pivotMatchesExisting": true,
+  "blockbenchJsonStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "gameIntegrated": false
+}

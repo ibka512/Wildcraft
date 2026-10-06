@@ -1,0 +1,114 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-05/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-05-geometry-and-uv.json",
+    "sha256": "147b1eae005f4e16cd1972e3c30e149a0eeb7b0b3b2a320f05e963db59d7d4ad",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-05/v01/source/battery-mount-preview.js",
+    "copy": "references/F05-05-battery-mount-preview.js",
+    "sha256": "173910f237441b4f4c5b8e4f215ed56b9bd3f3213828433c8bf764a655ea00c9",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-05/v01/exports/battery-mount-adaptation.json",
+    "copy": "references/F05-05-battery-mount-adaptation.json",
+    "sha256": "4a840c860d9717a1ff6be06abea50d52a993c49038036e769c363928337d0241",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/source/geometry-and-uv.json",
+    "copy": "references/F05-03-geometry-and-uv.json",
+    "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/source/fan-preview.js",
+    "copy": "references/F05-03-fan-preview.js",
+    "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/exports/machine-atlas-64.png",
+    "copy": "references/F05-01-machine-atlas-64.png",
+    "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-empty-16.png",
+    "copy": "references/F04-02-battery-empty-16.png",
+    "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-full-16.png",
+    "copy": "references/F04-02-battery-full-16.png",
+    "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-empty-32.png",
+    "copy": "references/F04-02-battery-empty-32.png",
+    "sha256": "0a4cecad045e8bfb06086e91e46c94512e57333667f611e754e3695d246b3759",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-full-32.png",
+    "copy": "references/F04-02-battery-full-32.png",
+    "sha256": "fee8d98b8bae980f68e955c0135653470999c021b4b774965d6267a4c3af75d6",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/energy-regions.json",
+    "copy": "references/F04-02-energy-regions.json",
+    "sha256": "d949e65f3b704b2f1515ba00602fd7d73e4d85a3fb855eaf4b9ca3098ccaaa75",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/exports/battery-readout-layout.json",
+    "copy": "references/F04-02-battery-readout-layout.json",
+    "sha256": "68971e2d8e909df302363a730a09f5090001ca537414aeceaef245e918fa77f6",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/source/battery-empty-16.aseprite",
+    "copy": "references/F04-02-battery-empty-16.aseprite",
+    "sha256": "d91c3b2a40d96f767a3c2cc39c6f3f8b79b23450b43b386f88e57772eb6f396c",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/source/battery-full-16.aseprite",
+    "copy": "references/F04-02-battery-full-16.aseprite",
+    "sha256": "22aac33efafbeff685222ab3d25d256ea1b04f7fcbebb9df9fb42ecb68cc9869",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/source/battery-empty-32.aseprite",
+    "copy": "references/F04-02-battery-empty-32.aseprite",
+    "sha256": "486cf7867897100a0fd893667f67e640f6c981d5b702337f2db21b3109a76dd6",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-02/v01/source/battery-full-32.aseprite",
+    "copy": "references/F04-02-battery-full-32.aseprite",
+    "sha256": "13feb85856128a23f5372d669c7ca37e9596535ab5364ede8799c1b119f2ef7f",
+    "adopted": true,
+    "changed": false
+  }
+]

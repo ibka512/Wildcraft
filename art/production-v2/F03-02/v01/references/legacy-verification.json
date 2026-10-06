@@ -1,0 +1,30 @@
+{
+  "32": {
+    "dimensions": [
+      32,
+      32
+    ],
+    "sourcePngPixelsEqual": true,
+    "savedPixelsEqual": true,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "visibleColors": 29,
+    "hash": "fnv1a64:987455c8cb28f39e"
+  },
+  "16": {
+    "dimensions": [
+      16,
+      16
+    ],
+    "sourcePngPixelsEqual": true,
+    "savedPixelsEqual": true,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "visibleColors": 21,
+    "hash": "fnv1a64:898d85d509224ac5"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "asset": "F05-09",
+  "allPassed": true,
+  "referenceFormulaCases": 1152,
+  "nodeVertexChecks": 3072,
+  "bodyUvMatchesAdoptedAtlasPixels": true,
+  "capacityThresholdInclusive": true,
+  "airAndLavaNoLift": true,
+  "disabledAndZeroEnergyPassiveLift": true,
+  "zeroFloatNoLift": true,
+  "ghostNoLift": true,
+  "geometryFixed": true,
+  "gameIntegrated": false
+}

@@ -95,3 +95,7 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 ## P9.1 组合验收交接
 
 沿用同一dev.14正式JAR。72服务端与完整17类客户端通过，[验收](../docs/P9.1-VERIFICATION.md)、[源码](Wildcraft-P91-source.zip)、[证据](verification/p91/README.md)、[校验](Wildcraft-P91-SHA256SUMS.txt)。R2是下一阶段研究，未含入这些计数。公开GitHub仍dev.7。
+
+## 第二批美术 dev.15 本机交付
+
+[正式 JAR](wildcraft-0.1.0-dev.15+mc26.3.jar)、[生产源码 JAR](wildcraft-0.1.0-dev.15-sources.jar)、[真实证据](verification/second-art-v2/README.md)、[校验](Wildcraft-Second-Art-SHA256SUMS.txt)与[清单](Wildcraft-Second-Art-manifest.json)。29 项当前采用任务、30 份原始版本，F05-10 使用 v02。75 服务端、18 类完整候选回归、最终两类专项、两个普通 TCP 客户端与无测试模组独立服务端通过；候选/最终包范围详见 [验证说明](../docs/SECOND-ART-VERIFICATION.md)。旧里程碑均保留，公开 GitHub 仍 dev.7。

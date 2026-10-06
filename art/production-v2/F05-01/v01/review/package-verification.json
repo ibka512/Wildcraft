@@ -1,0 +1,169 @@
+{
+  "asset": "F05-01",
+  "allPassed": true,
+  "adoptedInputs": [
+    {
+      "path": "references/battery-atlas-32.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/geometry-and-uv.json",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/uv-regions.json",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-item-16.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    },
+    {
+      "path": "references/battery-item-32.png",
+      "sourceUnchanged": true,
+      "copyIdentity": true
+    }
+  ],
+  "baselineCodeAndJar": [
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineNodes.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineEntity.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MechanicsContent.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "unchanged": true
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
+      "unchanged": true
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.14+mc26.3.jar",
+      "unchanged": true
+    }
+  ],
+  "priorAdoptedPackages": [
+    {
+      "asset": "F04-01",
+      "adopted": true,
+      "manifestMatches": true,
+      "mismatches": [],
+      "fileCount": 54
+    },
+    {
+      "asset": "F04-03",
+      "adopted": true,
+      "manifestMatches": true,
+      "mismatches": [],
+      "fileCount": 55
+    },
+    {
+      "asset": "F04-04",
+      "adopted": true,
+      "manifestMatches": true,
+      "mismatches": [],
+      "fileCount": 52
+    }
+  ],
+  "relativeLinks": [
+    {
+      "file": "README.md",
+      "target": "review/machine-review.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "source/machine-body-v01.blend",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "source/machine-body-v01.bbmodel",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "exports/machine-atlas-64.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "source/machine-atlas-64.aseprite",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "exports/machine-body-item-32.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "exports/machine-body-item-16.png",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "source/machine-body-item-32.aseprite",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "source/machine-body-item-16.aseprite",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "integration-map.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "verification.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "brief.md",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/asset-checks.json",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/blender-source-checks.json",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/browser-verification.json",
+      "exists": true
+    },
+    {
+      "file": "verification.md",
+      "target": "review/package-verification.json",
+      "exists": true
+    }
+  ],
+  "reviewChecks": {
+    "asset-checks.json": true,
+    "blender-source-checks.json": true,
+    "browser-verification.json": true
+  },
+  "previewHttpStatus": 200,
+  "integrated": false
+}

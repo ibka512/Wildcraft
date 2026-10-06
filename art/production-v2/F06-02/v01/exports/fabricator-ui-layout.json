@@ -1,0 +1,389 @@
+{
+  "asset": "F06-02",
+  "version": "v01",
+  "adopted": true,
+  "integrated": false,
+  "layout": {
+    "size": [
+      176,
+      192
+    ],
+    "title": {
+      "x": 8,
+      "y": 7,
+      "maxWidth": 144
+    },
+    "cost": {
+      "x": 8,
+      "y": 19,
+      "maxWidth": 160
+    },
+    "button": {
+      "x": 104,
+      "y": 30,
+      "w": 64,
+      "h": 20,
+      "vanilla": true
+    },
+    "progressTrack": {
+      "x": 80,
+      "y": 59,
+      "w": 43,
+      "h": 7
+    },
+    "progressFill": {
+      "x": 81,
+      "y": 60,
+      "w": 41,
+      "h": 5
+    },
+    "progressText": {
+      "centerX": 101.5,
+      "y": 50
+    },
+    "pool": {
+      "x": 8,
+      "y": 76,
+      "maxWidth": 160,
+      "hover": {
+        "x": 8,
+        "y": 75,
+        "w": 160,
+        "h": 10
+      }
+    },
+    "status": {
+      "glyphX": 10,
+      "glyphY": 88,
+      "textX": 22,
+      "textY": 88,
+      "maxWidth": 146,
+      "hover": {
+        "x": 8,
+        "y": 86,
+        "w": 160,
+        "h": 12
+      }
+    },
+    "inventoryTitle": {
+      "x": 8,
+      "y": 100
+    },
+    "inputSlots": [
+      {
+        "x": 26,
+        "y": 35,
+        "w": 16,
+        "h": 16
+      },
+      {
+        "x": 54,
+        "y": 35,
+        "w": 16,
+        "h": 16
+      }
+    ],
+    "outputSlot": {
+      "x": 134,
+      "y": 54,
+      "w": 16,
+      "h": 16
+    },
+    "completedBarShowsOutcome": true
+  },
+  "slots": [
+    {
+      "id": 0,
+      "x": 26,
+      "y": 35,
+      "role": "copper"
+    },
+    {
+      "id": 1,
+      "x": 54,
+      "y": 35,
+      "role": "redstone"
+    },
+    {
+      "id": 2,
+      "x": 134,
+      "y": 54,
+      "role": "output"
+    },
+    {
+      "id": 3,
+      "x": 8,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 4,
+      "x": 26,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 5,
+      "x": 44,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 6,
+      "x": 62,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 7,
+      "x": 80,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 8,
+      "x": 98,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 9,
+      "x": 116,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 10,
+      "x": 134,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 11,
+      "x": 152,
+      "y": 110,
+      "role": "inventory"
+    },
+    {
+      "id": 12,
+      "x": 8,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 13,
+      "x": 26,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 14,
+      "x": 44,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 15,
+      "x": 62,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 16,
+      "x": 80,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 17,
+      "x": 98,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 18,
+      "x": 116,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 19,
+      "x": 134,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 20,
+      "x": 152,
+      "y": 128,
+      "role": "inventory"
+    },
+    {
+      "id": 21,
+      "x": 8,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 22,
+      "x": 26,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 23,
+      "x": 44,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 24,
+      "x": 62,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 25,
+      "x": 80,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 26,
+      "x": 98,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 27,
+      "x": 116,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 28,
+      "x": 134,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 29,
+      "x": 152,
+      "y": 146,
+      "role": "inventory"
+    },
+    {
+      "id": 30,
+      "x": 8,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 31,
+      "x": 26,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 32,
+      "x": 44,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 33,
+      "x": 62,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 34,
+      "x": 80,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 35,
+      "x": 98,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 36,
+      "x": 116,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 37,
+      "x": 134,
+      "y": 168,
+      "role": "hotbar"
+    },
+    {
+      "id": 38,
+      "x": 152,
+      "y": 168,
+      "role": "hotbar"
+    }
+  ],
+  "states": [
+    {
+      "id": 0,
+      "key": "ready",
+      "glyph": {
+        "atlas": "fabricator",
+        "x": 32,
+        "y": 48
+      }
+    },
+    {
+      "id": 1,
+      "key": "insufficient",
+      "glyph": {
+        "atlas": "charger",
+        "x": 8,
+        "y": 48
+      }
+    },
+    {
+      "id": 2,
+      "key": "working",
+      "glyph": {
+        "atlas": "fabricator",
+        "x": 40,
+        "y": 48
+      }
+    },
+    {
+      "id": 3,
+      "key": "blocked",
+      "glyph": {
+        "atlas": "charger",
+        "x": 32,
+        "y": 48
+      }
+    },
+    {
+      "id": 4,
+      "key": "collect",
+      "glyph": {
+        "atlas": "fabricator",
+        "x": 48,
+        "y": 48
+      }
+    }
+  ],
+  "authoritativeStatusOnly": true,
+  "buttonMessage": {
+    "button": 0,
+    "transport": "existing container button protocol"
+  },
+  "noBakedTextItemsProgress": true,
+  "inventorySlotsUnchanged": true,
+  "completedBarShowsOutcome": true,
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项",
+  "scope": "制造机原生176×192界面/四层源稿/五态中英/槽位与按钮/悬停和交互审稿；游戏字体与容器同步待接入"
+}

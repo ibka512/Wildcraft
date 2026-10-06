@@ -185,13 +185,12 @@ public final class BackEquipment {
         ItemStack[] visible = new ItemStack[3];
         BackVisual.Entry[] owners = new BackVisual.Entry[3];
         boolean glide = Gliding.active(p);
-        boolean wings = p.getItemBySlot(EquipmentSlot.CHEST).is(Items.ELYTRA);
         boolean bowUse = holstersShield(p);
         for (int c = 0; c < 3; c++) {
             ItemStack stack = s.stacks[c];
             if (stack != s.seen[c]) { s.seen[c] = stack; s.tokens[c] = stack == null ? 0 : TOKENS.incrementAndGet(); }
             boolean held = (stack == p.getMainHandItem() || stack == p.getOffhandItem()) && !(bowUse && c == SHIELD);
-            visible[c] = stack == null || !p.isAlive() || p.isSpectator() || held && !glide || wings && c != MELEE
+            visible[c] = stack == null || !p.isAlive() || p.isSpectator() || held && !glide
                     ? ItemStack.EMPTY : displayStack(stack);
             int owner = stack == null || !p.isAlive() || p.isSpectator() ? 0
                     : !visible[c].isEmpty() ? 3

@@ -1,0 +1,11 @@
+{
+  "asset": "F05-04",
+  "allPassed": true,
+  "finiteFuelCases": 648,
+  "spentIdentityOverrides": 3,
+  "shutdownDoesNotCancelFlame": true,
+  "zeroFuelHasNoFlame": true,
+  "ghostHasNoFlame": true,
+  "batteryCost": 0,
+  "gameIntegrated": false
+}

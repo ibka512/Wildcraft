@@ -1,0 +1,16 @@
+/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/source/render-model.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('Approved 64px shared machine atlas');mat.use_nodes=True;bs=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');bs.inputs['Roughness'].default_value=.9;bs.inputs['Metallic'].default_value=.04;tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(R/'exports/shared-machine-atlas-64.png'));tex.image.pack();tex.interpolation='Closest';mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
+/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/source/render-model.py:31: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  fmat=bpy.data.materials.new('Review neutral ground');fmat.use_nodes=True;b=next(n for n in fmat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');b.inputs['Base Color'].default_value=(.20,.22,.21,1);b.inputs['Roughness'].default_value=.95;bpy.ops.mesh.primitive_plane_add(size=200,location=(0,0,-.295));floor=bpy.context.object;floor.name='REVIEW ground';floor.data.materials.append(fmat)
+00:04.386  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-idle-three-quarter.png'
+00:07.629  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-front.png'
+00:10.632  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-back.png'
+00:12.009  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-side.png'
+00:14.773  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-running-phase.png'
+00:17.695  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-mounted-front.png'
+00:20.661  render           | Saved: '/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/review/fan-mounted-top.png'
+信息: 已另存为 "fan-v01.blend"
+Saved fan source with fixed housing, exact rotor pivot and hidden adopted chassis reference; rendered 7 actual views.
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:31:22)
+
+Blender quit

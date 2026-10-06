@@ -1,6 +1,161 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "wildcraft:item/battery"
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "entries": [
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_0"
+              },
+              "threshold": 0
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_1"
+              },
+              "threshold": 56
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_2"
+              },
+              "threshold": 112
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_3"
+              },
+              "threshold": 167
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_4"
+              },
+              "threshold": 223
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_5"
+              },
+              "threshold": 278
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_6"
+              },
+              "threshold": 334
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_7"
+              },
+              "threshold": 389
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_8"
+              },
+              "threshold": 445
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_9"
+              },
+              "threshold": 500
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_10"
+              },
+              "threshold": 556
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_11"
+              },
+              "threshold": 612
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_12"
+              },
+              "threshold": 667
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_13"
+              },
+              "threshold": 723
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_14"
+              },
+              "threshold": 778
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_15"
+              },
+              "threshold": 834
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_16"
+              },
+              "threshold": 889
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_17"
+              },
+              "threshold": 945
+            },
+            {
+              "model": {
+                "type": "minecraft:model",
+                "model": "wildcraft:item/battery_charge_18"
+              },
+              "threshold": 1000
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "wildcraft:item/battery_charge_0"
+          },
+          "property": "wildcraft:battery_energy"
+        },
+        "when": "gui"
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:special",
+      "base": "wildcraft:item/battery_3d",
+      "model": {
+        "type": "wildcraft:battery"
+      }
+    },
+    "property": "minecraft:display_context"
   }
 }

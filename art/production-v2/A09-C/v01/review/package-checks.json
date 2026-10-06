@@ -1,0 +1,23 @@
+{
+  "asset": "A09-C",
+  "allPassed": true,
+  "adopted": false,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "profiles": 5,
+  "editableScenes": 8,
+  "previewPng": 7,
+  "newProductionModels": 0,
+  "newTextures": 0,
+  "baseSingleItemCases": 80,
+  "baseThreeRecordCases": 64,
+  "geometryScenarioCases": 128,
+  "layoutCases": 118,
+  "actualBrowserRenderCases": 144,
+  "browserChecks": 154,
+  "baselineFilesUnchanged": 16,
+  "previousAssetAdoptedAndManifestUnchanged": true,
+  "embeddedGeometryConfigAndSourceExact": true,
+  "readableEditableSource": true,
+  "nextAssetUntouched": true
+}

@@ -1,0 +1,72 @@
+{
+  "asset": "F03-03",
+  "version": "v01",
+  "adopted": true,
+  "integrated": false,
+  "size": [
+    64,
+    32
+  ],
+  "filter": "nearest",
+  "mipmaps": false,
+  "regions": [
+    {
+      "name": "32px 完整融合符号",
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 32,
+      "originalStandaloneName": "fuse-status-32.png",
+      "sourceAtlas": "../references/adopted-fuse-status-atlas-64x32.png",
+      "sourceRect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "name": "16px 完整融合符号",
+      "x": 32,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "originalStandaloneName": "fuse-status-16.png",
+      "sourceAtlas": "../references/adopted-fuse-status-atlas-64x32.png",
+      "sourceRect": [
+        32,
+        0,
+        16,
+        16
+      ]
+    },
+    {
+      "name": "5px 槽位连接角标",
+      "x": 48,
+      "y": 0,
+      "width": 5,
+      "height": 5,
+      "originalStandaloneName": "fuse-corner-5.png",
+      "sourceAtlas": "../references/adopted-fuse-status-atlas-64x32.png",
+      "sourceRect": [
+        48,
+        0,
+        5,
+        5
+      ]
+    },
+    {
+      "name": "16px 不可用连接方片",
+      "source": "fuse-unavailable-16.png",
+      "x": 32,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "reusedRegionSources": "references/adopted-atlas-layout.json; old regions are reused, not separate new production sprites",
+  "status": "user_approved",
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一版",
+  "gameRuntimeVerified": false
+}

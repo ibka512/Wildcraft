@@ -1,0 +1,15 @@
+{
+  "asset": "F03-04",
+  "allPassed": true,
+  "scope": "adoption metadata integrity, not a new runtime test",
+  "userEvidence": "采用",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "presetsUnchanged": true,
+  "sourceReviewAndReferencesUnchanged": true,
+  "historicalArchiveUnchanged": true,
+  "historicalArchiveSha256": "1e219ef7afe12fcecad617be1adb426b9dcb8303d59324c8d3ceaebe223ec20b",
+  "originalManifestSha256": "a91985074719000fd061e3fc627519cb40014e4dfd55f50441e44f032561c36a",
+  "codeLocalesAndJarUnchanged": true
+}

@@ -1,0 +1,571 @@
+{
+  "asset": "F03-03",
+  "allPassed": true,
+  "mounts": [
+    {
+      "host": "sword",
+      "maxSpan": 0.28,
+      "actualLongestSide": 0.28,
+      "minimum": [
+        0.15999999999999998,
+        0.02325,
+        0.18
+      ],
+      "maximum": [
+        0.44,
+        0.04658333333333333,
+        0.46
+      ],
+      "penetration": 0.008,
+      "opaqueBoxesTouchingActualHostTriangles": 74,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "axe",
+      "maxSpan": 0.3,
+      "actualLongestSide": 0.3,
+      "minimum": [
+        0.010000000000000009,
+        0.02325,
+        0.05000000000000002
+      ],
+      "maximum": [
+        0.31,
+        0.048249999999999994,
+        0.35
+      ],
+      "penetration": 0.008,
+      "opaqueBoxesTouchingActualHostTriangles": 82,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "shield",
+      "maxSpan": 0.24,
+      "actualLongestSide": 0.24,
+      "minimum": [
+        0.13,
+        0.11900000000000001,
+        0.42000000000000004
+      ],
+      "maximum": [
+        0.37,
+        0.139,
+        0.66
+      ],
+      "penetration": 0.006,
+      "opaqueBoxesTouchingActualHostTriangles": 84,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "arrow",
+      "maxSpan": 0.2,
+      "actualLongestSide": 0.19999999999999998,
+      "minimum": [
+        0.17,
+        0.02325,
+        0.17
+      ],
+      "maximum": [
+        0.37,
+        0.03991666666666666,
+        0.37
+      ],
+      "penetration": 0.008,
+      "opaqueBoxesTouchingActualHostTriangles": 76,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "flight",
+      "maxSpan": 0.18,
+      "actualLongestSide": 0.18000000000000002,
+      "minimum": [
+        0.207,
+        -0.0075,
+        -0.09
+      ],
+      "maximum": [
+        0.387,
+        0.0075,
+        0.09
+      ],
+      "penetration": 0.008,
+      "opaqueBoxesTouchingActualHostTriangles": 4,
+      "protectedPatternClear": true
+    }
+  ],
+  "handBackScaleCases": [
+    {
+      "host": "sword",
+      "held": 0.85,
+      "back": 0.85,
+      "ratio": 1
+    },
+    {
+      "host": "axe",
+      "held": 0.85,
+      "back": 0.85,
+      "ratio": 0.9999999999999976
+    },
+    {
+      "host": "shield",
+      "held": 1,
+      "back": 1,
+      "ratio": 1
+    }
+  ],
+  "invalidBoundsRejected": 6,
+  "transformedSceneCases": 64,
+  "sceneCases": [
+    {
+      "host": "sword",
+      "context": "gui",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "sword",
+      "context": "gui",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "sword",
+      "context": "gui",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "sword",
+      "context": "gui",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "material": "fallback",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "material": "fallback",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "material": "stone",
+      "fused": true,
+      "objects": 8
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "material": "stone",
+      "fused": false,
+      "objects": 7
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "material": "fallback",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "material": "fallback",
+      "fused": false,
+      "objects": 1
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "material": "stone",
+      "fused": true,
+      "objects": 2
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "material": "stone",
+      "fused": false,
+      "objects": 1
+    }
+  ],
+  "contactMethod": "clip actual native host triangles against every transformed opaque-pixel box; not overall bounds alone",
+  "referenceOnly": true,
+  "gameRuntimeVerified": false
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "2.2",
+  "ready": true,
+  "readOnly": true,
+  "active": {
+    "documentId": 6,
+    "layerId": 14,
+    "frame": 0,
+    "celId": 15,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  },
+  "ui": {
+    "visibleWindowCount": 2,
+    "modal": false,
+    "topWindowId": "",
+    "topWindowTitle": ""
+  },
+  "documents": [
+    {
+      "id": 6,
+      "objectVersion": 1,
+      "revisionToken": "rev1:239ae1bd7de1438a",
+      "name": "cooking-pot-atlas-64.aseprite",
+      "filename": "/home/web_user/aseprite-web/files/cooking-pot-atlas-64.aseprite",
+      "modified": false,
+      "active": true,
+      "width": 64,
+      "height": 64,
+      "colorMode": "rgb",
+      "frameCount": 1,
+      "layerCount": 2,
+      "activeFrame": 0,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 100
+        }
+      ],
+      "layers": [
+        {
+          "id": 7,
+          "stableId": "layer:7",
+          "name": "01 材质分区与体积色阶",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 8,
+              "frame": 0,
+              "imageId": 11,
+              "dataId": 10,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 64
+              }
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": 14,
+          "stableId": "layer:14",
+          "name": "02 金属锻面与木纹像素簇",
+          "type": "image",
+          "visible": true,
+          "editable": true,
+          "movable": true,
+          "background": false,
+          "reference": false,
+          "collapsed": false,
+          "opacity": 255,
+          "blendMode": 0,
+          "version": 1,
+          "cels": [
+            {
+              "id": 15,
+              "frame": 0,
+              "imageId": 17,
+              "dataId": 16,
+              "opacity": 255,
+              "zIndex": 0,
+              "links": 0,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 64,
+                "h": 64
+              }
+            }
+          ],
+          "children": []
+        }
+      ],
+      "tags": [],
+      "slices": [],
+      "palette": {
+        "size": 32,
+        "colors": [
+          "#000000ff",
+          "#222034ff",
+          "#45283cff",
+          "#663931ff",
+          "#8f563bff",
+          "#df7126ff",
+          "#d9a066ff",
+          "#eec39aff",
+          "#fbf236ff",
+          "#99e550ff",
+          "#6abe30ff",
+          "#37946eff",
+          "#4b692fff",
+          "#524b24ff",
+          "#323c39ff",
+          "#3f3f74ff",
+          "#306082ff",
+          "#5b6ee1ff",
+          "#639bffff",
+          "#5fcde4ff",
+          "#cbdbfcff",
+          "#ffffffff",
+          "#9badb7ff",
+          "#847e87ff",
+          "#696a6aff",
+          "#595652ff",
+          "#76428aff",
+          "#ac3232ff",
+          "#d95763ff",
+          "#d77bbaff",
+          "#8f974aff",
+          "#8a6f30ff"
+        ]
+      },
+      "selection": {
+        "visible": false,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "undo": {
+        "canUndo": true,
+        "canRedo": false,
+        "undoSteps": 4,
+        "redoSteps": 0,
+        "nextUndoLabel": "Codex Pixel Runs",
+        "nextRedoLabel": ""
+      },
+      "pixelHash": {
+        "frame": 0,
+        "value": "fnv1a64:5ce39b7ee558540a"
+      }
+    }
+  ]
+}

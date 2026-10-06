@@ -1,0 +1,562 @@
+{
+  "asset": "F03-03",
+  "allPassed": true,
+  "actualWebGLReferenceCases": [
+    {
+      "host": "sword",
+      "context": "gui",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 33,
+      "triangles": 2016
+    },
+    {
+      "host": "sword",
+      "context": "gui",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 33,
+      "triangles": 2016
+    },
+    {
+      "host": "sword",
+      "context": "gui",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 35,
+      "triangles": 4080
+    },
+    {
+      "host": "sword",
+      "context": "gui",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 32,
+      "triangles": 1008
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 62,
+      "triangles": 2088
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 62,
+      "triangles": 2088
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 64,
+      "triangles": 4152
+    },
+    {
+      "host": "sword",
+      "context": "held",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 62,
+      "triangles": 1080
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 47,
+      "triangles": 2088
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 47,
+      "triangles": 2088
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 48,
+      "triangles": 4152
+    },
+    {
+      "host": "sword",
+      "context": "back",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 47,
+      "triangles": 1080
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 14,
+      "triangles": 2016
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 14,
+      "triangles": 2016
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 14,
+      "triangles": 4080
+    },
+    {
+      "host": "sword",
+      "context": "ground",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 13,
+      "triangles": 1008
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 23,
+      "triangles": 1728
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 23,
+      "triangles": 1728
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 25,
+      "triangles": 3792
+    },
+    {
+      "host": "axe",
+      "context": "gui",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 22,
+      "triangles": 720
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 61,
+      "triangles": 1800
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 61,
+      "triangles": 1800
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 61,
+      "triangles": 3864
+    },
+    {
+      "host": "axe",
+      "context": "held",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 61,
+      "triangles": 792
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 45,
+      "triangles": 1800
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 45,
+      "triangles": 1800
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 45,
+      "triangles": 3864
+    },
+    {
+      "host": "axe",
+      "context": "back",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 45,
+      "triangles": 792
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 10,
+      "triangles": 1728
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 10,
+      "triangles": 1728
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 10,
+      "triangles": 3792
+    },
+    {
+      "host": "axe",
+      "context": "ground",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 10,
+      "triangles": 720
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 66,
+      "triangles": 4188
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 66,
+      "triangles": 4188
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 66,
+      "triangles": 6252
+    },
+    {
+      "host": "shield",
+      "context": "gui",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 66,
+      "triangles": 3180
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 84,
+      "triangles": 4260
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 84,
+      "triangles": 4260
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 84,
+      "triangles": 6324
+    },
+    {
+      "host": "shield",
+      "context": "held",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 84,
+      "triangles": 3252
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 50,
+      "triangles": 4260
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 50,
+      "triangles": 4260
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 50,
+      "triangles": 6324
+    },
+    {
+      "host": "shield",
+      "context": "back",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 50,
+      "triangles": 3252
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 4188
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 4188
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 6252
+    },
+    {
+      "host": "shield",
+      "context": "ground",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 3180
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 17,
+      "triangles": 1464
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 17,
+      "triangles": 1464
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 18,
+      "triangles": 3528
+    },
+    {
+      "host": "arrow",
+      "context": "gui",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 17,
+      "triangles": 456
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 59,
+      "triangles": 1536
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 59,
+      "triangles": 1536
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 59,
+      "triangles": 3600
+    },
+    {
+      "host": "arrow",
+      "context": "held",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 59,
+      "triangles": 528
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 6,
+      "triangles": 1464
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 6,
+      "triangles": 1464
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 6,
+      "triangles": 3528
+    },
+    {
+      "host": "arrow",
+      "context": "ground",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 6,
+      "triangles": 456
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "phase": "data-unavailable",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 1154
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "phase": "model-unavailable",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 1154
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "phase": "restored-reference",
+      "glError": 0,
+      "opaquePixels": 8,
+      "triangles": 3218
+    },
+    {
+      "host": "arrow",
+      "context": "flight",
+      "phase": "unfused",
+      "glError": 0,
+      "opaquePixels": 6,
+      "triangles": 146
+    }
+  ],
+  "referenceCornerOcclusionCases": [
+    {
+      "host": "sword",
+      "material": "fallback",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "sword",
+      "material": "stone",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "axe",
+      "material": "fallback",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "axe",
+      "material": "stone",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "shield",
+      "material": "fallback",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "shield",
+      "material": "stone",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "arrow",
+      "material": "fallback",
+      "opaqueMarkOverlap": 0
+    },
+    {
+      "host": "arrow",
+      "material": "stone",
+      "opaqueMarkOverlap": 0
+    }
+  ],
+  "onlyRepresentatives": true,
+  "nativeGameGUITransformVerified": false
+}

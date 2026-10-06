@@ -1,0 +1,54 @@
+{
+  "archive": "/Volumes/仕事/Wildcraft/开发环境/cache/gradle/caches/fabric-loom/26.3/minecraft-client.jar",
+  "archiveSha256": "4508d006323f24fa02876310c192d739af56516eb259000ac50f0909a68c9a2d",
+  "checkedResources": [
+    {
+      "particle": "flame",
+      "entry": "assets/minecraft/particles/flame.json",
+      "sha256": "69e323238364e8061f3836ac2f9fd09756c443dc8b6cf1a05934f7d67f580e65",
+      "textureReferences": [
+        "minecraft:flame"
+      ]
+    },
+    {
+      "particle": "snowflake",
+      "entry": "assets/minecraft/particles/snowflake.json",
+      "sha256": "40da6e690115a66fab5e9aa0ace19f373fe32d213ea2e6dc7a82b9e9cd3ea4fe",
+      "textureReferences": [
+        "minecraft:generic_7",
+        "minecraft:generic_6",
+        "minecraft:generic_5",
+        "minecraft:generic_4",
+        "minecraft:generic_3",
+        "minecraft:generic_2",
+        "minecraft:generic_1",
+        "minecraft:generic_0"
+      ]
+    },
+    {
+      "particle": "dust",
+      "entry": "assets/minecraft/particles/dust.json",
+      "sha256": "6167163ecc541c935260294984013dc0d962e61bcdcbda24e31b2bf283505123",
+      "textureReferences": [
+        "minecraft:generic_7",
+        "minecraft:generic_6",
+        "minecraft:generic_5",
+        "minecraft:generic_4",
+        "minecraft:generic_3",
+        "minecraft:generic_2",
+        "minecraft:generic_1",
+        "minecraft:generic_0"
+      ]
+    },
+    {
+      "particle": "item_slime",
+      "entry": "net/minecraft/core/particles/ParticleTypes.class",
+      "sha256": "8146c416c7b88d10ffdbdae3a8d73ba628b730e76827260ac0ace0c7312145e9",
+      "registrationFieldPresent": true,
+      "standaloneSpriteJSON": false,
+      "note": "Item fragment renderer; no standalone particle texture JSON. Exact provider mapping/lifetime pending runtime integration."
+    }
+  ],
+  "rawMinecraftImagesOrClassesCopied": false,
+  "previewSprites": "procedural visual proxies; not exact native particle screenshots"
+}

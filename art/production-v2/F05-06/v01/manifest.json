@@ -1,0 +1,388 @@
+{
+  "asset": "F05-06",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "已采用，弹簧模型/两姿态/原生图标与六向齐全，未接入；弹射、复位、底装待游戏验证",
+  "adopted": true,
+  "integrated": false,
+  "sourceAssets": [
+    "F05-01 shared64 atlas",
+    "F05-03 shared node contract"
+  ],
+  "productionMeshes": 44,
+  "fixedMeshes": 12,
+  "movingMeshes": 8,
+  "coilSegments": 24,
+  "coilTurns": 3,
+  "wireThickness": 0.48,
+  "pushPlateTravel": 3.2,
+  "cooldownMapping": "31-40 extended, 0-30 compressed, ghost compressed",
+  "nativeIconSizes": [
+    32,
+    16
+  ],
+  "nativeIcons": 2,
+  "nativeIconsIndependentlyAuthored": true,
+  "nativeIconPose": "expanded spacing for identification",
+  "productionAtlasSize": [
+    64,
+    64
+  ],
+  "newProductionTexturePixels": 0,
+  "newAsepriteSources": 2,
+  "reusedAsepriteSources": 1,
+  "actualRenderViews": 19,
+  "blenderPoseCases": 42,
+  "browserUiCases": 49,
+  "conceptUse": "reference only; exact prompt archived",
+  "nextAfterAdoption": "F05-07 车轮",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2894,
+      "sha256": "1c29dda8849cf0537db66f17e89f728ba9bd7628f3004f767fdd5f8af64ecec6"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 312,
+      "sha256": "9b462e436eb5d6e6e8c7e9a992cef3f89ebc754a486cb9092a68f51ed50c24ca"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1493,
+      "sha256": "5b06ee8898f6c2f707c5bdecc66d5e7c0a9a02ec117ac72d57c88b5d81dd73d7"
+    },
+    {
+      "path": "exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "exports/spring-geometry.json",
+      "bytes": 202631,
+      "sha256": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b"
+    },
+    {
+      "path": "exports/spring-item-16.png",
+      "bytes": 427,
+      "sha256": "8718db8c3fb21c2ca4da5a91e88199dc93adceeafbcdb4a853d74905eec2fa58"
+    },
+    {
+      "path": "exports/spring-item-32.png",
+      "bytes": 870,
+      "sha256": "95e473e7e2ede05d7ac08fcd7af0281b81dd032abc33f4b37481b6ef74b4ad74"
+    },
+    {
+      "path": "exports/spring-state-and-motion.json",
+      "bytes": 840,
+      "sha256": "b38b92d64ab40412bc6915653c5b27d9f25e8e0b48291111a6fbf6e5bb824f00"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2606,
+      "sha256": "d41e767612dfac93448ee44894344fd2d4389f8f9c6d1a3bad6c82bd88ba7950"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 17905,
+      "sha256": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 8104,
+      "sha256": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc"
+    },
+    {
+      "path": "references/SpringData.java",
+      "bytes": 1171,
+      "sha256": "f12df3690d77bd11a7ac51aab900c161dc4f968d4d44fb70a3839e5fa04489bb"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 816,
+      "sha256": "aeb3244d2853a7a746e7968aa9d3c3f1d16c2db9f7e02dab38951f040fe23260"
+    },
+    {
+      "path": "references/fan-preview.js",
+      "bytes": 5434,
+      "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2"
+    },
+    {
+      "path": "references/imagegen-prompt.txt",
+      "bytes": 1731,
+      "sha256": "f482b76757cceda2db05c605d91cc596c97ff22d1ad22cfd41a3fc9f2af14a51"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 1820,
+      "sha256": "e6e7b03d558542a03f751b3a57348128c50a72e678fba31df5e843401c936293"
+    },
+    {
+      "path": "references/rocket-preview.js",
+      "bytes": 6409,
+      "sha256": "a1e45e1094f239cc11558092a4649da6040dffe1035bf21e291962854dcb373b"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/spring-concept.png",
+      "bytes": 1389216,
+      "sha256": "90b96e56e533b24b826a3813179075a088367935c00cfbed33da311038ec4513"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "review/aseprite-start.json",
+      "bytes": 271,
+      "sha256": "62fee38e43e738dae76965077d3c26392e8d2029d3a5ed19931c0199ef0011d1"
+    },
+    {
+      "path": "review/asset-checks.json",
+      "bytes": 1160,
+      "sha256": "1888d2b08da812b891002517a8cfa4f5de6abcd4ad44fc16234a8fc09d425d01"
+    },
+    {
+      "path": "review/blender-source-checks.json",
+      "bytes": 5656,
+      "sha256": "955ac83730ba9d77b70dc24437c1339f72c96d261b5d5847e802204cc5f70fd4"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 12662,
+      "sha256": "2e369fae1625c87ace19f841267d601452b71d5591bef3d79625d12c6c61a27a"
+    },
+    {
+      "path": "review/contract-checks.json",
+      "bytes": 313,
+      "sha256": "17b067c296c6c071e98ce85a9a56ffb660ba0dcccb7d10676bb646431ddf4aef"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 427,
+      "sha256": "bfb27c9989856dfbb3b6250159a9e4b6c80901133cb2d56b8baf16204968510b"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 17616741,
+      "sha256": "078751b365bc750029b801980665f3d702face2c9ea61da2f9f3b364b7c9930d"
+    },
+    {
+      "path": "review/spring-compressed-front.png",
+      "bytes": 523600,
+      "sha256": "bbfd7b3db2369e747e199e99b6a7dffb99177429ce487e826f78300717ac64f6"
+    },
+    {
+      "path": "review/spring-compressed-mounted-0.png",
+      "bytes": 774647,
+      "sha256": "1441e310307728fe3113c965e77338224345180e2e0014f983323d073f1fd1f8"
+    },
+    {
+      "path": "review/spring-compressed-mounted-1.png",
+      "bytes": 626802,
+      "sha256": "22f2c1fd822449283e9fa34728110351580a7375dbeed75ee5c314a2cca3c919"
+    },
+    {
+      "path": "review/spring-compressed-mounted-2.png",
+      "bytes": 726393,
+      "sha256": "0b3926ca85c9c375ca2a4da22a44ba65615ac579e3932ce54be4e612b0434f2a"
+    },
+    {
+      "path": "review/spring-compressed-mounted-3.png",
+      "bytes": 767937,
+      "sha256": "b2d3fc81be5292a293909b20ce9fc752365ee26ea8a52ef3fcf5b9dc09530965"
+    },
+    {
+      "path": "review/spring-compressed-mounted-4.png",
+      "bytes": 767344,
+      "sha256": "873eb7aa20c61475980ea721a68eda4b3eb87a59d819a33b3326c03a950d4cc8"
+    },
+    {
+      "path": "review/spring-compressed-mounted-5.png",
+      "bytes": 770439,
+      "sha256": "4b071fc95908effc177676733100648a1755c152d116bd62e993d87c990368e8"
+    },
+    {
+      "path": "review/spring-compressed-side.png",
+      "bytes": 519964,
+      "sha256": "8db72777b31e87174ee0bd5f67772f799c7383b1febc8aefa3849f5a72b37760"
+    },
+    {
+      "path": "review/spring-compressed-three-quarter.png",
+      "bytes": 680720,
+      "sha256": "45489cd94cfb4251dce62b1bd5f1c94972f2fa77164ed373a0d824f5af0b5fa7"
+    },
+    {
+      "path": "review/spring-extended-front.png",
+      "bytes": 559330,
+      "sha256": "14d966ed695e1b7e38f89cb93e8114d885328902784c8d5120a3dc2796b2dec8"
+    },
+    {
+      "path": "review/spring-extended-mounted-0.png",
+      "bytes": 781636,
+      "sha256": "66c68b6402d54e7706fdcbc650f7f272c7ffeaa6f00ad8626fb0e72d779febad"
+    },
+    {
+      "path": "review/spring-extended-mounted-1.png",
+      "bytes": 636347,
+      "sha256": "aaa23d13450d5f30bd035a106888ca4d57beff92e5d72f31445d3dbf34462be7"
+    },
+    {
+      "path": "review/spring-extended-mounted-2.png",
+      "bytes": 732944,
+      "sha256": "ad0ec02dc9861bcc3d08a6598182f397dddbf4fe57c5ea80b05b3da36cd48245"
+    },
+    {
+      "path": "review/spring-extended-mounted-3.png",
+      "bytes": 774178,
+      "sha256": "e665ea5836e592587b3fc2d55187b12e93a701ce7c7a6370c5197430a9a5bb6b"
+    },
+    {
+      "path": "review/spring-extended-mounted-4.png",
+      "bytes": 772785,
+      "sha256": "6a3e0687e0782b802b6ecc9beb430f513a6a6f3f57911c0a4a1daa44cd54aa46"
+    },
+    {
+      "path": "review/spring-extended-mounted-5.png",
+      "bytes": 778255,
+      "sha256": "164a732674911b67ba1eeafc249b53f0295f14f38b74e69be73b4b7d7d724c25"
+    },
+    {
+      "path": "review/spring-extended-side.png",
+      "bytes": 555507,
+      "sha256": "21020d97af9e7a0b249583b98708724fbf63352f206d9262fe773067cc7aff7f"
+    },
+    {
+      "path": "review/spring-extended-three-quarter.png",
+      "bytes": 718317,
+      "sha256": "435573ea1a96df92263fd66a14ac780de10496a53bcc41d3cc0a58ba205f11b0"
+    },
+    {
+      "path": "review/spring-live-review.png",
+      "bytes": 35153,
+      "sha256": "842753154c878bbb48b403ebd8950063fd2cbb3b993357b9de5a90023925bc61"
+    },
+    {
+      "path": "review/spring-review.png",
+      "bytes": 1663742,
+      "sha256": "55876599142119333b7eb82146e2a70b83d916dedac5d99fcb7cb9f46af6c936"
+    },
+    {
+      "path": "review/spring-root.png",
+      "bytes": 643703,
+      "sha256": "d8f1d563dd571193d321b7a7d65a14949f81219cc7f8d514ab97dbca40069ccc"
+    },
+    {
+      "path": "source/build-model.py",
+      "bytes": 6090,
+      "sha256": "db48ff15b2147d2be22ac45f85591c8571879b68473a81f25c8416743277eab4"
+    },
+    {
+      "path": "source/build-preview.py",
+      "bytes": 10931,
+      "sha256": "e848fd044ff88c2694cb290b6a1bcd91f834b44a7b0a2043186e160311d07f10"
+    },
+    {
+      "path": "source/create-pixels.py",
+      "bytes": 5637,
+      "sha256": "e0b0073e34318142ee92828854851812186f35ced8d00527e92d08959322482a"
+    },
+    {
+      "path": "source/geometry-and-uv.json",
+      "bytes": 202631,
+      "sha256": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b"
+    },
+    {
+      "path": "source/pixel-designs.json",
+      "bytes": 32709,
+      "sha256": "c331e55acecd710af6732adcad8330330b0d6568e07541943c24e6ac783fa677"
+    },
+    {
+      "path": "source/render-model.py",
+      "bytes": 6725,
+      "sha256": "6a26a56ac906c204a2151b9f0e20e19983d956e8ff7fbc6358396bedbb1b3a87"
+    },
+    {
+      "path": "source/review-snapshots.json",
+      "bytes": 926,
+      "sha256": "abb75921c1b5ce4fa27a6018aee3b0dc2f1b4265b24503f0ecc0eb423e9dd239"
+    },
+    {
+      "path": "source/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "source/spring-compressed-v01.bbmodel",
+      "bytes": 173308,
+      "sha256": "bb05c564f5a970bb2899f85c2a2b0796ccc051832c64872a92c3ef7feb332ddc"
+    },
+    {
+      "path": "source/spring-extended-v01.bbmodel",
+      "bytes": 173330,
+      "sha256": "bf5b01ec81aac304e94d7a347bba7de3ab56cab74ae1a81921315f207669cf4a"
+    },
+    {
+      "path": "source/spring-item-16.aseprite",
+      "bytes": 739,
+      "sha256": "a7d1899c5fdeae5099925048e27047d362a9d49e51ae1518e7fe7d652df68c8a"
+    },
+    {
+      "path": "source/spring-item-32.aseprite",
+      "bytes": 959,
+      "sha256": "baffe71afe78691c14f87d14f8306b519e80698049c91a3fc4dafcae398b6664"
+    },
+    {
+      "path": "source/spring-preview.js",
+      "bytes": 6023,
+      "sha256": "b7851bbf9b068f1ebede80173015141d7cfd24aed038e171ac1710fc24c70157"
+    },
+    {
+      "path": "source/spring-v01.blend",
+      "bytes": 161879,
+      "sha256": "5bce45a2753d0925c8a550cb18a56180096ae748a0ba0a49c306efb1cee83d30"
+    },
+    {
+      "path": "source/verify-assets.py",
+      "bytes": 4294,
+      "sha256": "2f1859922aacda6b56e9a1ecfd544eb0386561f87a346904ec45864b0d82e238"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 3180,
+      "sha256": "9f90400f35f6b11fb1c5831931bf7d3197eb5864dfec01401ab91d6b62222212"
+    },
+    {
+      "path": "source/verify-contract.mjs",
+      "bytes": 1796,
+      "sha256": "37ebb7166118921984d3f0071400a0c5680c67961c05ad86ae7fbd304e08394e"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 2038,
+      "sha256": "78ae8a709479e2e5797cb1fc7887133f9ec80fe0fe6f1934f27af72124466fe0"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项吧"
+}

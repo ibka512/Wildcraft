@@ -1,0 +1,1212 @@
+{
+  "allPassed": true,
+  "sampledFrames": 10416,
+  "checks": [
+    {
+      "name": "finite-owner-and-action:standard:right:climb_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:climb_glide:0.65",
+      "pass": true,
+      "delta": 8.901672641495826e-8
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:release_empty",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:release_empty:0.65",
+      "pass": true,
+      "delta": 4.2146848510894035e-8
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:climb_turn",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:climb_turn:0.65",
+      "pass": true,
+      "delta": 8.901672641495826e-8
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:glide_close",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:glide_close:0.65",
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:rapid_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:rapid_glide:0.65",
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "snapshot-continuity:standard:right:rapid_glide:0.73",
+      "pass": true,
+      "delta": 0.0000033524603314125066
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:mantle_restore",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:mantle_restore:0.65",
+      "pass": true,
+      "delta": 2.1900144899933154e-7
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:loss_reset",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:blocked_climb",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:right:blocked_climb:0.65",
+      "pass": true,
+      "delta": 8.901672641495826e-8
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:climb_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:climb_glide:0.65",
+      "pass": true,
+      "delta": 8.901672641495826e-8
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:release_empty",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:release_empty:0.65",
+      "pass": true,
+      "delta": 4.2146848510894035e-8
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:climb_turn",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:climb_turn:0.65",
+      "pass": true,
+      "delta": 8.901672641495826e-8
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:glide_close",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:glide_close:0.65",
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:rapid_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:rapid_glide:0.65",
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "snapshot-continuity:standard:left:rapid_glide:0.73",
+      "pass": true,
+      "delta": 0.0000033524603314125066
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:mantle_restore",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:mantle_restore:0.65",
+      "pass": true,
+      "delta": 2.1900144899933154e-7
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:loss_reset",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:blocked_climb",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:standard:left:blocked_climb:0.65",
+      "pass": true,
+      "delta": 8.901672641495826e-8
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:standard:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:climb_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:climb_glide:0.65",
+      "pass": true,
+      "delta": 6.676724873162749e-8
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:release_empty",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:release_empty:0.65",
+      "pass": true,
+      "delta": 4.2146848510894035e-8
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:climb_turn",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:climb_turn:0.65",
+      "pass": true,
+      "delta": 5.7294960683485826e-8
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:glide_close",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:glide_close:0.65",
+      "pass": true,
+      "delta": 2.9802322387695312e-8
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:rapid_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:rapid_glide:0.65",
+      "pass": true,
+      "delta": 2.9802322387695312e-8
+    },
+    {
+      "name": "snapshot-continuity:slim:right:rapid_glide:0.73",
+      "pass": true,
+      "delta": 0.0000033187969688848884
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:mantle_restore",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:mantle_restore:0.65",
+      "pass": true,
+      "delta": 2.1900144899933154e-7
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:loss_reset",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:blocked_climb",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:right:blocked_climb:0.65",
+      "pass": true,
+      "delta": 6.676724873162749e-8
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:right:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:climb_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:climb_glide:0.65",
+      "pass": true,
+      "delta": 6.676724873162749e-8
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:release_empty",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:release_empty:0.65",
+      "pass": true,
+      "delta": 4.2146848510894035e-8
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:climb_turn",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:climb_turn:0.65",
+      "pass": true,
+      "delta": 5.7294960683485826e-8
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:glide_close",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:glide_close:0.65",
+      "pass": true,
+      "delta": 2.9802322387695312e-8
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:rapid_glide",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:rapid_glide:0.65",
+      "pass": true,
+      "delta": 2.9802322387695312e-8
+    },
+    {
+      "name": "snapshot-continuity:slim:left:rapid_glide:0.73",
+      "pass": true,
+      "delta": 0.0000033187969688848884
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:mantle_restore",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:mantle_restore:0.65",
+      "pass": true,
+      "delta": 2.1900144899933154e-7
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:loss_reset",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:blocked_climb",
+      "pass": true
+    },
+    {
+      "name": "snapshot-continuity:slim:left:blocked_climb:0.65",
+      "pass": true,
+      "delta": 6.676724873162749e-8
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "finite-owner-and-action:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_sword",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_bow",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:glide_block",
+      "pass": true
+    },
+    {
+      "name": "immediate-takeover:slim:left:same_spare",
+      "pass": true
+    },
+    {
+      "name": "first-grip:standard:0",
+      "pass": true,
+      "error": 0
+    },
+    {
+      "name": "first-grip:standard:1",
+      "pass": true,
+      "error": 0
+    },
+    {
+      "name": "wrap-shortest-path:standard",
+      "pass": true,
+      "rawMidpointDegrees": 176.51004792533342,
+      "revisedMidpointDegrees": 4.9853275526354155
+    },
+    {
+      "name": "empty-exit-endpoint:standard:release_empty",
+      "pass": true
+    },
+    {
+      "name": "empty-exit-endpoint:standard:glide_close",
+      "pass": true
+    },
+    {
+      "name": "empty-exit-endpoint:standard:mantle_restore",
+      "pass": true
+    },
+    {
+      "name": "entry-endpoint:standard",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-entry:standard",
+      "pass": true
+    },
+    {
+      "name": "reference-scale:standard",
+      "pass": true
+    },
+    {
+      "name": "first-grip:slim:0",
+      "pass": true,
+      "error": 0
+    },
+    {
+      "name": "first-grip:slim:1",
+      "pass": true,
+      "error": 0
+    },
+    {
+      "name": "wrap-shortest-path:slim",
+      "pass": true,
+      "rawMidpointDegrees": 176.49641521181965,
+      "revisedMidpointDegrees": 4.998803305259582
+    },
+    {
+      "name": "empty-exit-endpoint:slim:release_empty",
+      "pass": true
+    },
+    {
+      "name": "empty-exit-endpoint:slim:glide_close",
+      "pass": true
+    },
+    {
+      "name": "empty-exit-endpoint:slim:mantle_restore",
+      "pass": true
+    },
+    {
+      "name": "entry-endpoint:slim",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion-entry:slim",
+      "pass": true
+    },
+    {
+      "name": "reference-scale:slim",
+      "pass": true
+    },
+    {
+      "name": "zero-production-geometry-and-textures",
+      "pass": true
+    }
+  ],
+  "gameRuntimeVerified": false,
+  "scope": "Independent endpoint/ownership/interrupt/wrap checks against actual bake and native pose formulas; synthetic input"
+}

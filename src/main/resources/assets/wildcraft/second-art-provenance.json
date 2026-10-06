@@ -1,0 +1,242 @@
+[
+  {
+    "source": "art/production-v2/F01-01/v01/exports/cooking-pot-atlas-64.png",
+    "target": "src/main/resources/assets/wildcraft/textures/block/cooking_pot.png",
+    "sha256": "b8ee70402e8aa984a70508278415e488ba9315e13f680e98352ec1f435219ab8"
+  },
+  {
+    "source": "art/production-v2/F01-01/v01/exports/cooking-pot.block-model.json",
+    "target": "src/main/resources/assets/wildcraft/models/block/cooking_pot.json",
+    "sha256": "72d8de3cd63afb680130fda18c5bc95a300c6d4cd1e8c3b453e948e07227922d"
+  },
+  {
+    "source": "art/production-v2/F01-02/v01/exports/meal-vegetable-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/meal_vegetable.png",
+    "sha256": "5a251e657578a7563e1168e6b945203a1450ff92645abc6b5129487e8c02a225"
+  },
+  {
+    "source": "art/production-v2/F01-02/v01/exports/meal-warming-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/meal_warming.png",
+    "sha256": "849622c3faf5eca0d66438bf57d9be8368d8744358f770a4f16110f54057fb1a"
+  },
+  {
+    "source": "art/production-v2/F01-02/v01/exports/meal-cooling-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/meal_cooling.png",
+    "sha256": "f5fdb08e5f027f273fc36a073d80378f5dd6d21ea01c760cc7767cd2e1ea7e23"
+  },
+  {
+    "source": "art/production-v2/F01-02/v01/exports/meal-recovery-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/meal_recovery.png",
+    "sha256": "57c18feada1b16908c77f7952a6efbcc8b6ef6f473ce253aa761f588ccfc17b0"
+  },
+  {
+    "source": "art/production-v2/F01-03/v01/exports/warmth-meal-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/warmth-meal.png",
+    "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e"
+  },
+  {
+    "source": "art/production-v2/F01-03/v01/exports/cooling-meal-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/cooling-meal.png",
+    "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a"
+  },
+  {
+    "source": "art/production-v2/F01-03/v01/exports/stamina-recovery-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/stamina-recovery.png",
+    "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93"
+  },
+  {
+    "source": "art/production-v2/F02-01/v01/exports/ambient-temperature-color-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/ambient-temperature.png",
+    "sha256": "5586acb51dd6c19823181141c6ee7fee5e63413aad184401f204895412337ee2"
+  },
+  {
+    "source": "art/production-v2/F01-04/v01/exports/cooking-ui-176x182.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/cooking.png",
+    "sha256": "7ddf060bc06da1df4c9e942ee31763e98b2d0ff755964df24f67bffc052000c3"
+  },
+  {
+    "source": "art/production-v2/F04-04/v01/exports/charger-ui-176x166.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/charger.png",
+    "sha256": "9371d9d8df8af68ab052fb4b865117312865531c8b2d4958bbddd9e0f14db351"
+  },
+  {
+    "source": "art/production-v2/F06-02/v01/exports/fabricator-ui-176x192.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/fabricator.png",
+    "sha256": "ad1cc37cf160d35c4597f77598ac1246f023a7999fbd551710ca79687d1c2c3f"
+  },
+  {
+    "source": "art/production-v2/F04-03/v01/exports/charger-static-model.json",
+    "target": "src/main/resources/assets/wildcraft/models/block/charger.json",
+    "sha256": "bd10f081be8d18c71527a0eaf2c88e3ae48f7aa5f73241391ac23b13d136d703"
+  },
+  {
+    "source": "art/production-v2/F04-03/v01/exports/charger-atlas-64.png",
+    "target": "src/main/resources/assets/wildcraft/textures/block/charger_atlas.png",
+    "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0"
+  },
+  {
+    "source": "art/production-v2/F06-01/v01/exports/fabricator-static-model.json",
+    "target": "src/main/resources/assets/wildcraft/models/block/fabricator.json",
+    "sha256": "ec2f8b0b39d1ba1dfae4445e76f326958c6d692dd38f9ddcd02f276aec6a6159"
+  },
+  {
+    "source": "art/production-v2/F06-01/v01/exports/fabricator-atlas-64.png",
+    "target": "src/main/resources/assets/wildcraft/textures/block/fabricator_atlas.png",
+    "sha256": "37e0f8b3d2d120ae5977e9e667637297729f07e9d1798ef23e51f8814f798ec3"
+  },
+  {
+    "source": "art/production-v2/F04-02/v01/exports/battery-empty-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/battery-empty.png",
+    "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7"
+  },
+  {
+    "source": "art/production-v2/F04-02/v01/exports/battery-full-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/battery-full.png",
+    "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665"
+  },
+  {
+    "source": "art/production-v2/F04-01/v01/exports/battery-atlas-32.png",
+    "target": "src/main/resources/assets/wildcraft/textures/entity/battery.png",
+    "sha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba"
+  },
+  {
+    "source": "art/production-v2/F04-01/v01/exports/battery-static-model.json",
+    "target": "src/main/resources/assets/wildcraft/models/item/battery_3d.json",
+    "sha256": "b259cac4722fd28ac481e1de444d1b60fc60cb89ab3ab0fd98a8e32ad7abd71a"
+  },
+  {
+    "source": "art/production-v2/F04-01/v01/exports/battery-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/battery.png",
+    "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f"
+  },
+  {
+    "source": "art/production-v2/F05-01/v01/exports/machine-atlas-64.png",
+    "target": "src/main/resources/assets/wildcraft/textures/entity/machine_atlas.png",
+    "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+  },
+  {
+    "source": "art/production-v2/F05-01/v01/exports/machine-body-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/machine_body.png",
+    "sha256": "24f9c906997fbd4761d67827c34135bbed010014093d685ca1f6a9ffcfbc9ee2"
+  },
+  {
+    "source": "art/production-v2/F05-02/v01/exports/wing-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/wing.png",
+    "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8"
+  },
+  {
+    "source": "art/production-v2/F05-03/v01/exports/fan-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/fan.png",
+    "sha256": "bdcb2aa8319d550b2133205b4b3ad13f1e2c6ab3c7bc7642ce4b00e05b524ad2"
+  },
+  {
+    "source": "art/production-v2/F05-04/v01/exports/rocket-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/rocket.png",
+    "sha256": "14b767978f3a671f6b723d1eb049c66b0ae63e03d934a56ca1ad05d9481f18c7"
+  },
+  {
+    "source": "art/production-v2/F05-06/v01/exports/spring-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/spring.png",
+    "sha256": "8718db8c3fb21c2ca4da5a91e88199dc93adceeafbcdb4a853d74905eec2fa58"
+  },
+  {
+    "source": "art/production-v2/F05-07/v01/exports/wheel-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/wheel.png",
+    "sha256": "cc7b1721f658ae5ddd31c31a1a5748a86bf96d013d19abcd8581483f096c9429"
+  },
+  {
+    "source": "art/production-v2/F05-08/v01/exports/stabilizer-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/stabilizer.png",
+    "sha256": "613323859a02036b9d170791ad2bf573fac7b50bd5e880ffec27369d833fe159"
+  },
+  {
+    "source": "art/production-v2/F05-09/v01/exports/buoyancy-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/buoyancy.png",
+    "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+  },
+  {
+    "source": "art/production-v2/F05-02/v01/exports/wing-atlas-128x64.png",
+    "target": "src/main/resources/assets/wildcraft/textures/entity/fabric_atlas.png",
+    "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+  },
+  {
+    "source": "art/production-v2/F05-04/v01/exports/rocket-atlas-128x64.png",
+    "target": "src/main/resources/assets/wildcraft/textures/entity/rocket_atlas.png",
+    "sha256": "4ba17e47b802f387de718dc0b46f02e80dd9ff06f2370bed7046be47a47b8afe"
+  },
+  {
+    "source": "art/production-v2/F05-04/v01/exports/spent-rocket-item-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/spent_rocket.png",
+    "sha256": "baea49dd770b381e6b1d23706b1087b118999b7f9455a1ef53253a22c24d7c8b"
+  },
+  {
+    "source": "art/production-v2/F03-03/v01/exports/fuse-shared-atlas-64x32.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/fuse-status.png",
+    "sha256": "6796a496b82b2da2ca6a0686fe36fd64a1ec6d6bbc65c5b4e0c2ea5052a51899"
+  },
+  {
+    "source": "art/production-v2/F03-03/v01/exports/fuse-unavailable-16.png",
+    "target": "src/main/resources/assets/wildcraft/textures/item/fuse_unavailable.png",
+    "sha256": "d0d48aad969645410157b2a0ab16c8c0fd30b3cd111545a085c6fb5a061cd199"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/charger_start.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/charger_start.ogg",
+    "sha256": "2c861c5226ebe96701168f03cb6e1bb16732791cfdf564978bc7bdf60cfa15b4"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/fabricator_start.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/fabricator_start.ogg",
+    "sha256": "b2dfa064fb768031e4a48e1a17ded0a2264c302cdd44bbab58985d94fcb4a5fb"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/fabricator_complete.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/fabricator_complete.ogg",
+    "sha256": "ef2cfe78ad4c4922787a1003038bd2adca0c87fb62fe35ae5999316102c8addc"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/mechanic_remove.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_remove.ogg",
+    "sha256": "72906dc0905ffa54f6ac459d0af20e1084fabc0c213f6fe8ab8a9f5f90cf66e7"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/mechanic_install.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_install.ogg",
+    "sha256": "0fbe63da6b1acf11bae90052e8ca926d79af26ca5e514523dee40a5da98f67bb"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/mechanic_stop.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_stop.ogg",
+    "sha256": "23acc8f5735391458cdfc1f34fd21427a74a00cd3f6d43e6abd82635bdd93337"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/mechanic_start.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_start.ogg",
+    "sha256": "4757b06618eb2f2d2c2d4d0b99a3b8ce73092d40165e3d05e51a881460f8752c"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/fuse_join.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/fuse_join.ogg",
+    "sha256": "f5478a4c817dbaaeab8f23db34bea2c4bb2279fad1d71b0e60a81ea52d5c27f4"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/charger_full.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/charger_full.ogg",
+    "sha256": "4ec65d18c13c3fe2a703df89f91f057031d0259a53b2b78b880704575c462b8b"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/cooking_start.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/cooking_start.ogg",
+    "sha256": "ae6256f984625751a571b4e3d76fd32f1c29e0d811b83d8092942867b4dc2a2a"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/fuse_split.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/fuse_split.ogg",
+    "sha256": "00b927f8081df7e5c52f57bda46450fdfac49d1e11219932b0e895d0862c495d"
+  },
+  {
+    "source": "art/production-v2/S01/v01/exports/sounds/cooking_complete.ogg",
+    "target": "src/main/resources/assets/wildcraft/sounds/s01/cooking_complete.ogg",
+    "sha256": "b3276c575503f2e1a877cf607812b4ea4ae702b0fa92f0c2284ed808cd0e5048"
+  }
+]

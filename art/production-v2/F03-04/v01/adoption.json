@@ -1,0 +1,11 @@
+{
+  "asset": "F03-04",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用",
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "scope": "五种反馈的方向、时序、事件语义、复用与预算方案；原版提供器精确表现待游戏接入验证"
+}

@@ -1,0 +1,1820 @@
+{
+  "quiet": {
+    "current": {
+      "scene": "quiet",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "quiet",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "rain": {
+    "current": {
+      "scene": "rain",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "rain1",
+          "at": 0,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_0"
+        },
+        {
+          "id": "rain2",
+          "at": 0.8,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_0.8"
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "rain1",
+          "at": 1.6,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_1.6"
+        },
+        {
+          "id": "rain2",
+          "at": 2.4000000000000004,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_2.4000000000000004"
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "rain1",
+          "at": 3.2,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_3.2"
+        },
+        {
+          "id": "rain2",
+          "at": 4,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_4"
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "rain",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "rain1",
+          "at": 0,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_0"
+        },
+        {
+          "id": "rain2",
+          "at": 0.8,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_0.8"
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "rain1",
+          "at": 1.6,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_1.6"
+        },
+        {
+          "id": "rain2",
+          "at": 2.4000000000000004,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_2.4000000000000004"
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "rain1",
+          "at": 3.2,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_3.2"
+        },
+        {
+          "id": "rain2",
+          "at": 4,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_4"
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "snow": {
+    "current": {
+      "scene": "snow",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "snow1",
+          "at": 0.4,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_0.4"
+        },
+        {
+          "id": "snow2",
+          "at": 1,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_1"
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "snow1",
+          "at": 1.6,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_1.6"
+        },
+        {
+          "id": "snow2",
+          "at": 2.1999999999999997,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_2.1999999999999997"
+        },
+        {
+          "id": "snow1",
+          "at": 2.8,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_2.8"
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "snow2",
+          "at": 3.4,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_3.4"
+        },
+        {
+          "id": "snow1",
+          "at": 3.9999999999999996,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_3.9999999999999996"
+        },
+        {
+          "id": "snow2",
+          "at": 4.6000000000000005,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_4.6000000000000005"
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "snow",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "snow1",
+          "at": 0.4,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_0.4"
+        },
+        {
+          "id": "snow2",
+          "at": 1,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_1"
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "snow1",
+          "at": 1.6,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_1.6"
+        },
+        {
+          "id": "snow2",
+          "at": 2.1999999999999997,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_2.1999999999999997"
+        },
+        {
+          "id": "snow1",
+          "at": 2.8,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_2.8"
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "snow2",
+          "at": 3.4,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_3.4"
+        },
+        {
+          "id": "snow1",
+          "at": 3.9999999999999996,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow1_3.9999999999999996"
+        },
+        {
+          "id": "snow2",
+          "at": 4.6000000000000005,
+          "gain": 0.28,
+          "kind": "native",
+          "source": "native_snow2_4.6000000000000005"
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "combat": {
+    "current": {
+      "scene": "combat",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "strong",
+          "at": 0.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_0.75"
+        },
+        {
+          "id": "bow",
+          "at": 0.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_0.96"
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "bow_hit",
+          "at": 1.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_1.1"
+        },
+        {
+          "id": "hit",
+          "at": 1.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_1.18"
+        },
+        {
+          "id": "strong",
+          "at": 2.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_2.75"
+        },
+        {
+          "id": "bow",
+          "at": 2.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_2.96"
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "bow_hit",
+          "at": 3.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_3.1"
+        },
+        {
+          "id": "hit",
+          "at": 3.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_3.18"
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "combat",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "strong",
+          "at": 0.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_0.75"
+        },
+        {
+          "id": "bow",
+          "at": 0.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_0.96"
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "bow_hit",
+          "at": 1.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_1.1"
+        },
+        {
+          "id": "hit",
+          "at": 1.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_1.18"
+        },
+        {
+          "id": "strong",
+          "at": 2.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_2.75"
+        },
+        {
+          "id": "bow",
+          "at": 2.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_2.96"
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "bow_hit",
+          "at": 3.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_3.1"
+        },
+        {
+          "id": "hit",
+          "at": 3.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_3.18"
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "machines": {
+    "current": {
+      "scene": "machines",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "mechanic_start",
+          "at": 1,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "charger_full",
+          "at": 1,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.35
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 1,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "mechanic_start",
+          "at": 3,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "charger_full",
+          "at": 3,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.35
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 3,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [
+        {
+          "at": 1,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": null
+        }
+      ],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "machines",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "mechanic_start",
+          "at": 1,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "charger_full",
+          "at": 1,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.35
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 1,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "mechanic_start",
+          "at": 3,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "charger_full",
+          "at": 3,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.35
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 3,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [
+        {
+          "at": 1,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": null
+        }
+      ],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "crowded": {
+    "current": {
+      "scene": "crowded",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "mechanic_start",
+          "at": 1,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.34
+        },
+        {
+          "id": "fabricator_start",
+          "at": 1,
+          "gain": 0.20800000000000002,
+          "kind": "s01",
+          "source": "machine3",
+          "seconds": 0.38
+        },
+        {
+          "id": "mechanic_install",
+          "at": 1,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine4",
+          "seconds": 0.18
+        },
+        {
+          "id": "fuse_join",
+          "at": 1,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine5",
+          "seconds": 0.3
+        },
+        {
+          "id": "cooking_complete",
+          "at": 1,
+          "gain": 0.24,
+          "kind": "s01",
+          "source": "machine6",
+          "seconds": 0.46
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 1,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine7",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "mechanic_start",
+          "at": 3,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.34
+        },
+        {
+          "id": "fabricator_start",
+          "at": 3,
+          "gain": 0.20800000000000002,
+          "kind": "s01",
+          "source": "machine3",
+          "seconds": 0.38
+        },
+        {
+          "id": "mechanic_install",
+          "at": 3,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine4",
+          "seconds": 0.18
+        },
+        {
+          "id": "fuse_join",
+          "at": 3,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine5",
+          "seconds": 0.3
+        },
+        {
+          "id": "cooking_complete",
+          "at": 3,
+          "gain": 0.24,
+          "kind": "s01",
+          "source": "machine6",
+          "seconds": 0.46
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 3,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine7",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [
+        {
+          "at": 1,
+          "id": "cooking_start",
+          "accepted": true,
+          "gain": 0.195,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "charger_start",
+          "accepted": true,
+          "gain": 0.1466666666666667,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "fabricator_start",
+          "accepted": true,
+          "gain": 0.20800000000000002,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "fuse_join",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "cooking_complete",
+          "accepted": true,
+          "gain": 0.24,
+          "replaced": "machine0"
+        },
+        {
+          "at": 1,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": "machine1"
+        },
+        {
+          "at": 3,
+          "id": "cooking_start",
+          "accepted": true,
+          "gain": 0.195,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "charger_start",
+          "accepted": true,
+          "gain": 0.1466666666666667,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "fabricator_start",
+          "accepted": true,
+          "gain": 0.20800000000000002,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "fuse_join",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "cooking_complete",
+          "accepted": true,
+          "gain": 0.24,
+          "replaced": "machine0"
+        },
+        {
+          "at": 3,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": "machine1"
+        }
+      ],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "crowded",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "mechanic_start",
+          "at": 1,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.34
+        },
+        {
+          "id": "fabricator_start",
+          "at": 1,
+          "gain": 0.20800000000000002,
+          "kind": "s01",
+          "source": "machine3",
+          "seconds": 0.38
+        },
+        {
+          "id": "mechanic_install",
+          "at": 1,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine4",
+          "seconds": 0.18
+        },
+        {
+          "id": "fuse_join",
+          "at": 1,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine5",
+          "seconds": 0.3
+        },
+        {
+          "id": "cooking_complete",
+          "at": 1,
+          "gain": 0.24,
+          "kind": "s01",
+          "source": "machine6",
+          "seconds": 0.46
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 1,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine7",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "mechanic_start",
+          "at": 3,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.34
+        },
+        {
+          "id": "fabricator_start",
+          "at": 3,
+          "gain": 0.20800000000000002,
+          "kind": "s01",
+          "source": "machine3",
+          "seconds": 0.38
+        },
+        {
+          "id": "mechanic_install",
+          "at": 3,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine4",
+          "seconds": 0.18
+        },
+        {
+          "id": "fuse_join",
+          "at": 3,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine5",
+          "seconds": 0.3
+        },
+        {
+          "id": "cooking_complete",
+          "at": 3,
+          "gain": 0.24,
+          "kind": "s01",
+          "source": "machine6",
+          "seconds": 0.46
+        },
+        {
+          "id": "fabricator_complete",
+          "at": 3,
+          "gain": 0.25,
+          "kind": "s01",
+          "source": "machine7",
+          "seconds": 0.48
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [
+        {
+          "at": 1,
+          "id": "cooking_start",
+          "accepted": true,
+          "gain": 0.195,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "charger_start",
+          "accepted": true,
+          "gain": 0.1466666666666667,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "fabricator_start",
+          "accepted": true,
+          "gain": 0.20800000000000002,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "fuse_join",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "cooking_complete",
+          "accepted": true,
+          "gain": 0.24,
+          "replaced": "machine0"
+        },
+        {
+          "at": 1,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": "machine1"
+        },
+        {
+          "at": 3,
+          "id": "cooking_start",
+          "accepted": true,
+          "gain": 0.195,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "charger_start",
+          "accepted": true,
+          "gain": 0.1466666666666667,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "fabricator_start",
+          "accepted": true,
+          "gain": 0.20800000000000002,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "fuse_join",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "cooking_complete",
+          "accepted": true,
+          "gain": 0.24,
+          "replaced": "machine0"
+        },
+        {
+          "at": 3,
+          "id": "fabricator_complete",
+          "accepted": true,
+          "gain": 0.25,
+          "replaced": "machine1"
+        }
+      ],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "rain_combat": {
+    "current": {
+      "scene": "rain_combat",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "rain1",
+          "at": 0,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_0"
+        },
+        {
+          "id": "strong",
+          "at": 0.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_0.75"
+        },
+        {
+          "id": "rain2",
+          "at": 0.8,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_0.8"
+        },
+        {
+          "id": "bow",
+          "at": 0.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_0.96"
+        },
+        {
+          "id": "mechanic_start",
+          "at": 1,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "mechanic_install",
+          "at": 1,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.18
+        },
+        {
+          "id": "charger_full",
+          "at": 1,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.35
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "bow_hit",
+          "at": 1.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_1.1"
+        },
+        {
+          "id": "hit",
+          "at": 1.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_1.18"
+        },
+        {
+          "id": "rain1",
+          "at": 1.6,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_1.6"
+        },
+        {
+          "id": "rain2",
+          "at": 2.4000000000000004,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_2.4000000000000004"
+        },
+        {
+          "id": "strong",
+          "at": 2.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_2.75"
+        },
+        {
+          "id": "bow",
+          "at": 2.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_2.96"
+        },
+        {
+          "id": "mechanic_start",
+          "at": 3,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "mechanic_install",
+          "at": 3,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.18
+        },
+        {
+          "id": "charger_full",
+          "at": 3,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.35
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "bow_hit",
+          "at": 3.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_3.1"
+        },
+        {
+          "id": "hit",
+          "at": 3.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_3.18"
+        },
+        {
+          "id": "rain1",
+          "at": 3.2,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_3.2"
+        },
+        {
+          "id": "rain2",
+          "at": 4,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_4"
+        }
+      ],
+      "log": [
+        {
+          "at": 1,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        }
+      ],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "rain_combat",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "rain1",
+          "at": 0,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_0"
+        },
+        {
+          "id": "strong",
+          "at": 0.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_0.75"
+        },
+        {
+          "id": "rain2",
+          "at": 0.8,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_0.8"
+        },
+        {
+          "id": "bow",
+          "at": 0.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_0.96"
+        },
+        {
+          "id": "mechanic_start",
+          "at": 1,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "mechanic_install",
+          "at": 1,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.18
+        },
+        {
+          "id": "charger_full",
+          "at": 1,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.35
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 2
+        },
+        {
+          "id": "bow_hit",
+          "at": 1.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_1.1"
+        },
+        {
+          "id": "hit",
+          "at": 1.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_1.18"
+        },
+        {
+          "id": "rain1",
+          "at": 1.6,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_1.6"
+        },
+        {
+          "id": "rain2",
+          "at": 2.4000000000000004,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_2.4000000000000004"
+        },
+        {
+          "id": "strong",
+          "at": 2.75,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_strong_2.75"
+        },
+        {
+          "id": "bow",
+          "at": 2.96,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_bow_2.96"
+        },
+        {
+          "id": "mechanic_start",
+          "at": 3,
+          "gain": 0.192,
+          "kind": "s01",
+          "source": "machine0",
+          "seconds": 0.34
+        },
+        {
+          "id": "mechanic_install",
+          "at": 3,
+          "gain": 0.22499999999999998,
+          "kind": "s01",
+          "source": "machine1",
+          "seconds": 0.18
+        },
+        {
+          "id": "charger_full",
+          "at": 3,
+          "gain": 0.1875,
+          "kind": "s01",
+          "source": "machine2",
+          "seconds": 0.35
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 3,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        },
+        {
+          "id": "bow_hit",
+          "at": 3.1,
+          "gain": 0.3,
+          "kind": "native",
+          "source": "native_bow_hit_3.1"
+        },
+        {
+          "id": "hit",
+          "at": 3.18,
+          "gain": 0.35,
+          "kind": "native",
+          "source": "native_hit_3.18"
+        },
+        {
+          "id": "rain1",
+          "at": 3.2,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain1_3.2"
+        },
+        {
+          "id": "rain2",
+          "at": 4,
+          "gain": 0.22,
+          "kind": "native",
+          "source": "native_rain2_4"
+        }
+      ],
+      "log": [
+        {
+          "at": 1,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 1,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_start",
+          "accepted": true,
+          "gain": 0.192,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "mechanic_install",
+          "accepted": true,
+          "gain": 0.22499999999999998,
+          "replaced": null
+        },
+        {
+          "at": 3,
+          "id": "charger_full",
+          "accepted": true,
+          "gain": 0.1875,
+          "replaced": null
+        }
+      ],
+      "duration": 5,
+      "focusEvents": 2,
+      "maxFocusVoices": 1
+    }
+  },
+  "rapid": {
+    "current": {
+      "scene": "rapid",
+      "profile": "current",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 0.1200000000000001
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 1.12,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 0.11999999999999988
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 3,
+          "at": 1.24,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 0.1200000000000001
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 4,
+          "at": 1.36,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 4,
+      "maxFocusVoices": 1
+    },
+    "proposed": {
+      "scene": "rapid",
+      "profile": "proposed",
+      "distance": 2,
+      "backgroundGain": 1,
+      "events": [
+        {
+          "id": "focus_enter",
+          "sequence": 1,
+          "at": 1,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 0.1200000000000001
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 2,
+          "at": 1.12,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 0.11999999999999988
+        },
+        {
+          "id": "focus_enter",
+          "sequence": 3,
+          "at": 1.24,
+          "gain": 0.22,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": 0.1200000000000001
+        },
+        {
+          "id": "focus_exit",
+          "sequence": 4,
+          "at": 1.36,
+          "gain": 0.28,
+          "kind": "focus",
+          "source": "focus",
+          "cutAfterSeconds": null
+        }
+      ],
+      "log": [],
+      "duration": 5,
+      "focusEvents": 4,
+      "maxFocusVoices": 1
+    }
+  }
+}

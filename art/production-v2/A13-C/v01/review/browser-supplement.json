@@ -1,0 +1,35 @@
+{
+  "failure": {
+    "errors": [
+      "本机原版声音缓存读取失败，请重试或改选自有音效场景。"
+    ],
+    "stopped": true,
+    "loading": false,
+    "nodes": 0,
+    "status": "本机原版声音缓存读取失败，请重试或改选自有音效场景。"
+  },
+  "dry": {
+    "signal": 0.053771261125802994,
+    "schedule": [
+      {
+        "id": "focus_exit",
+        "kind": "focus",
+        "at": 0.1,
+        "gain": 0.28,
+        "cutAfterSeconds": null,
+        "span": 0.43866666666666665,
+        "actualGain": 0.2800000011920929,
+        "rate": 1
+      }
+    ]
+  },
+  "layout": {
+    "width": 390,
+    "scroll": 390,
+    "overflow": false
+  },
+  "priorMixedSignal": 0.0241719838231802,
+  "priorNaturalEndNodes": 0,
+  "noAutoPlay": true,
+  "humanListeningVerified": false
+}

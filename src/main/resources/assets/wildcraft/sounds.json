@@ -1,10 +1,134 @@
 {
   "focus.enter": {
     "subtitle": "subtitles.wildcraft.focus.enter",
-    "sounds": ["wildcraft:focus_enter"]
+    "sounds": [
+      "wildcraft:focus_enter"
+    ]
   },
   "focus.exit": {
     "subtitle": "subtitles.wildcraft.focus.exit",
-    "sounds": ["wildcraft:focus_exit"]
+    "sounds": [
+      "wildcraft:focus_exit"
+    ]
+  },
+  "cooking.start": {
+    "subtitle": "subtitles.wildcraft.cooking.start",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/cooking_start",
+        "stream": false,
+        "attenuation_distance": 8
+      }
+    ]
+  },
+  "cooking.complete": {
+    "subtitle": "subtitles.wildcraft.cooking.complete",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/cooking_complete",
+        "stream": false,
+        "attenuation_distance": 10
+      }
+    ]
+  },
+  "charger.start": {
+    "subtitle": "subtitles.wildcraft.charger.start",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/charger_start",
+        "stream": false,
+        "attenuation_distance": 6
+      }
+    ]
+  },
+  "charger.full": {
+    "subtitle": "subtitles.wildcraft.charger.full",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/charger_full",
+        "stream": false,
+        "attenuation_distance": 8
+      }
+    ]
+  },
+  "mechanic.install": {
+    "subtitle": "subtitles.wildcraft.mechanic.install",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/mechanic_install",
+        "stream": false,
+        "attenuation_distance": 8
+      }
+    ]
+  },
+  "mechanic.remove": {
+    "subtitle": "subtitles.wildcraft.mechanic.remove",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/mechanic_remove",
+        "stream": false,
+        "attenuation_distance": 8
+      }
+    ]
+  },
+  "mechanic.start": {
+    "subtitle": "subtitles.wildcraft.mechanic.start",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/mechanic_start",
+        "stream": false,
+        "attenuation_distance": 10
+      }
+    ]
+  },
+  "mechanic.stop": {
+    "subtitle": "subtitles.wildcraft.mechanic.stop",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/mechanic_stop",
+        "stream": false,
+        "attenuation_distance": 10
+      }
+    ]
+  },
+  "fabricator.start": {
+    "subtitle": "subtitles.wildcraft.fabricator.start",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/fabricator_start",
+        "stream": false,
+        "attenuation_distance": 10
+      }
+    ]
+  },
+  "fabricator.complete": {
+    "subtitle": "subtitles.wildcraft.fabricator.complete",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/fabricator_complete",
+        "stream": false,
+        "attenuation_distance": 12
+      }
+    ]
+  },
+  "fuse.join": {
+    "subtitle": "subtitles.wildcraft.fuse.join",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/fuse_join",
+        "stream": false,
+        "attenuation_distance": 8
+      }
+    ]
+  },
+  "fuse.split": {
+    "subtitle": "subtitles.wildcraft.fuse.split",
+    "sounds": [
+      {
+        "name": "wildcraft:s01/fuse_split",
+        "stream": false,
+        "attenuation_distance": 8
+      }
+    ]
   }
 }

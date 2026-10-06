@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-05",
+  "allPassed": true,
+  "modified": false,
+  "adopted": false,
+  "checks": [
+    {
+      "name": "ambient-temperature-color-16",
+      "size": [
+        16,
+        16
+      ],
+      "sourceColorMode": "indexed",
+      "sourceLayers": 1,
+      "binaryAlpha": true,
+      "sourceHash": "fnv1a64:f712c9fbc6472d90",
+      "pngHash": "fnv1a64:f712c9fbc6472d90",
+      "matchesHistoricalV2Hash": true,
+      "pixelIdentity": true,
+      "pngSha256": "5586acb51dd6c19823181141c6ee7fee5e63413aad184401f204895412337ee2",
+      "sourceSha256": "e1952b220a839fd5dd6db2a321582f034f4cf0c74ba50c2462c74a0a7ecb1db9"
+    },
+    {
+      "name": "ambient-temperature-color-32",
+      "size": [
+        32,
+        32
+      ],
+      "sourceColorMode": "indexed",
+      "sourceLayers": 1,
+      "binaryAlpha": true,
+      "sourceHash": "fnv1a64:a31f4c6d893b485f",
+      "pngHash": "fnv1a64:a31f4c6d893b485f",
+      "matchesHistoricalV2Hash": true,
+      "pixelIdentity": true,
+      "pngSha256": "8995d1a8701c73967cb6506f48daf4111be623cf26dbe4451073b704b747a2bc",
+      "sourceSha256": "8220bbd09628fe5c93ce52aa552f8288778d11587a702d8824dc8307997d5a78"
+    }
+  ]
+}

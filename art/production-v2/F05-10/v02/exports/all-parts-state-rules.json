@@ -1,0 +1,114 @@
+{
+  "asset": "F05-10",
+  "version": "v02",
+  "status": "user_approved",
+  "integrated": false,
+  "scope": "八类部件及空壳、六向透明预览、状态和四组合美术复核；实际游戏碰撞与装配待接入验证",
+  "candidate": {
+    "source": "MachinePresentation.selectedNode / canPreview",
+    "requirements": [
+      "local selected node",
+      "stopped",
+      "empty node",
+      "accepted real held stack",
+      "not spent rocket",
+      "held battery requires no existing battery"
+    ],
+    "label": "位置可用，右键尝试安装",
+    "serverResultRequired": true,
+    "doesNotPredict": [
+      "owner permission",
+      "server eye ray",
+      "inventory room",
+      "action cooldown"
+    ]
+  },
+  "invalid": {
+    "ghostVisible": false,
+    "marker": "amber corner brackets",
+    "glyph": "blocked",
+    "reasonTextRequired": true
+  },
+  "states": {
+    "off": "!enabled",
+    "working": "enabled && working",
+    "waiting": "enabled && !working",
+    "low": "battery present && energy < 100; not equal to stopped",
+    "noBattery": "batteryNode < 0; — / 1000",
+    "nodeActivity": "per-node ACTIVE distinct from global off/working/waiting; passive wing/float and ignited rocket may continue when disabled"
+  },
+  "fanRotation": {
+    "source": "node ACTIVE bit only",
+    "angle": "ageInTicks * .7",
+    "ghostAngle": 0
+  },
+  "batteryGhost": {
+    "source": "actual held BatteryData",
+    "capacity": 1000,
+    "modelScale": 1,
+    "fill": "clamp(E/1000*3-i,0,1)",
+    "differentFromMachineEnergy": true
+  },
+  "resources": {
+    "machineEnergy": "body.energy / actual battery node",
+    "rocket": "selected node rocketFuel / 80 world ticks",
+    "spring": "selected node springCooldown, 0..40 world ticks; zero does not prove armed"
+  },
+  "keys": {
+    "riding": "actual translated TOGGLE binding; W/S and A/D",
+    "groundStop": "sneak empty-hand RMB on control panel",
+    "remove": "stopped, sneak empty-hand RMB; burning rocket cannot remove; inventory must have room"
+  },
+  "feedback": {
+    "source": "actual existing machine.wildcraft feedback keys",
+    "scope": "current target only; clear on target/held item change or bounded response display lifetime",
+    "doesNotAddNetworkFields": true,
+    "owner": "无操作权限",
+    "inventory": "背包空间不足",
+    "aim": "请对准接口"
+  },
+  "visibility": {
+    "hud": "alive nonspectator HUD visible no screen within five blocks and target/riding same machine",
+    "ghost": "selectedNode eligibility; hide on no target/screen/HUD hidden"
+  },
+  "deferredChecks": [
+    "Minecraft native font and GUI scale",
+    "real install/remove/rejection/inventory/ownership",
+    "client synchronization and actual resource consumption",
+    "bottom mounting through floor and wheel gap",
+    "all possible multi-part combinations and actual collisions"
+  ],
+  "adopted": true,
+  "ghost": {
+    "color": "#5DD7B7",
+    "alpha": 0.5333333333333333,
+    "sameGeometry": true,
+    "scale": 1,
+    "stationary": true,
+    "noFx": true,
+    "depthTest": true,
+    "depthWrite": false,
+    "sorting": "global far-to-near across all3 original atlases",
+    "material": "uniform mint; retain exact geometry including battery-window area, no active indicator tint"
+  },
+  "partRendering": {
+    "fan": "active && !ghost -> age*.7; rotor only",
+    "battery": "actual body or held charge, same adapted geometry/UV/window masks",
+    "wing": "fixed; per-node active shown in detail, passive even when off",
+    "rocket": "actual fuel0/spent -> spent model; actual active && fuel>0 -> existing cuboid flame; ghost has no flame",
+    "spring": "!ghost && cooldown>30 -> extended vertices; ghost compressed; active does not drive pose",
+    "wheel": "active && !ghost -> age*.4, rotating group; no reverse/distance-based assumption",
+    "stabilizer": "active -> mint; otherwise muted; no inferred amber failure; any actual active kind7 -> body roll0",
+    "float": "fixed; node active shown in detail, passive even when off; no lamp/animation/independent collision"
+  },
+  "atlases": [
+    "machine64x64 byte exact",
+    "fabric128x64 byte exact",
+    "rocket128x64 byte exact"
+  ],
+  "newProductionTextures": 0,
+  "newProductionModels": 0,
+  "newGlyphs": 0,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

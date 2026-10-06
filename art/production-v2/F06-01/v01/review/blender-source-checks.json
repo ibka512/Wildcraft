@@ -1,0 +1,31 @@
+{
+  "asset": "F06-01",
+  "allPassed": true,
+  "sourceReopened": true,
+  "cuboids": 43,
+  "outwardFacesAndExactUV": 258,
+  "materialBadges": 2,
+  "statePlanes": 3,
+  "reviewStateCases": [
+    {
+      "reviewState": 0,
+      "oneTileVisible": true
+    },
+    {
+      "reviewState": 1,
+      "oneTileVisible": true
+    },
+    {
+      "reviewState": 2,
+      "oneTileVisible": true
+    }
+  ],
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "nearestTexture": true,
+  "noEmission": true,
+  "defaultIdle": true,
+  "worldSyncImplemented": false
+}

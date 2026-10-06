@@ -1,0 +1,71 @@
+{
+  "allPassed": true,
+  "modelReopened": true,
+  "fixedCuboids": 16,
+  "dynamicWindowPlanes": 3,
+  "packedAtlasSize": [
+    32,
+    32
+  ],
+  "noFitFixturesInSource": true,
+  "windowNormalsFrontFacing": true,
+  "windowDriverChecks": [
+    {
+      "energy": 0,
+      "bottomMiddleTopFraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "energy": 1,
+      "bottomMiddleTopFraction": [
+        0.003000000026077032,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "energy": 333,
+      "bottomMiddleTopFraction": [
+        0.9990000128746033,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "energy": 500,
+      "bottomMiddleTopFraction": [
+        1.0,
+        0.4999999403953552,
+        0.0
+      ]
+    },
+    {
+      "energy": 667,
+      "bottomMiddleTopFraction": [
+        1.0,
+        1.0,
+        0.0010000000474974513
+      ]
+    },
+    {
+      "energy": 999,
+      "bottomMiddleTopFraction": [
+        1.0,
+        1.0,
+        0.996999979019165
+      ]
+    },
+    {
+      "energy": 1000,
+      "bottomMiddleTopFraction": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "gameIntegrationTested": false
+}

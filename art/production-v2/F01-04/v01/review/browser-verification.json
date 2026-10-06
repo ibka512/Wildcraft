@@ -1,0 +1,1691 @@
+{
+  "date": "2026-10-05",
+  "scope": "Browser UI simulation; no game-font or runtime integration check",
+  "allPassed": true,
+  "caseCount": 40,
+  "checks": [
+    {
+      "name": "exactly five pot and 36 player slots",
+      "passed": true
+    },
+    {
+      "name": "five locked slot positions",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/zh/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "unmatched/en/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/zh/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_heat/en/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/zh/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "cooking/en/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/zh/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "missing_bowl/en/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/zh/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/1/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/2/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/3/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/native canvas and integer scale",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/state matches real priority",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/empty output before commit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/all slots inside frame",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/status fits",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/labels fit",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/output pixel contract",
+      "passed": true
+    },
+    {
+      "name": "output_waiting/en/4/progress enabled only cooking",
+      "passed": true
+    },
+    {
+      "name": "progress 0 actual width",
+      "passed": true
+    },
+    {
+      "name": "progress 1 actual width",
+      "passed": true
+    },
+    {
+      "name": "progress 33 actual width",
+      "passed": true
+    },
+    {
+      "name": "progress 56 actual width",
+      "passed": true
+    },
+    {
+      "name": "progress 99 actual width",
+      "passed": true
+    },
+    {
+      "name": "output tooltip opens beyond panel",
+      "passed": true
+    },
+    {
+      "name": "no phantom tooltip when output empty",
+      "passed": true
+    },
+    {
+      "name": "boundary toggle active",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "key": "unmatched",
+      "language": "zh",
+      "scale": 1,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "zh",
+      "scale": 2,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "zh",
+      "scale": 3,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "zh",
+      "scale": 4,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "en",
+      "scale": 1,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "en",
+      "scale": 2,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "en",
+      "scale": 3,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "unmatched",
+      "language": "en",
+      "scale": 4,
+      "status": 0,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "zh",
+      "scale": 1,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "zh",
+      "scale": 2,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "zh",
+      "scale": 3,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "zh",
+      "scale": 4,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "en",
+      "scale": 1,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "en",
+      "scale": 2,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "en",
+      "scale": 3,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_heat",
+      "language": "en",
+      "scale": 4,
+      "status": 1,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "zh",
+      "scale": 1,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "zh",
+      "scale": 2,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "zh",
+      "scale": 3,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "zh",
+      "scale": 4,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "en",
+      "scale": 1,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "en",
+      "scale": 2,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "en",
+      "scale": 3,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "cooking",
+      "language": "en",
+      "scale": 4,
+      "status": 2,
+      "progress": 56,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "zh",
+      "scale": 1,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "zh",
+      "scale": 2,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "zh",
+      "scale": 3,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "zh",
+      "scale": 4,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "en",
+      "scale": 1,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "en",
+      "scale": 2,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "en",
+      "scale": 3,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "missing_bowl",
+      "language": "en",
+      "scale": 4,
+      "status": 3,
+      "progress": 0,
+      "output": false,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "zh",
+      "scale": 1,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "zh",
+      "scale": 2,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "zh",
+      "scale": 3,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "zh",
+      "scale": 4,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "en",
+      "scale": 1,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "en",
+      "scale": 2,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "en",
+      "scale": 3,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    },
+    {
+      "key": "output_waiting",
+      "language": "en",
+      "scale": 4,
+      "status": 4,
+      "progress": 0,
+      "output": true,
+      "passed": true
+    }
+  ],
+  "failures": []
+}

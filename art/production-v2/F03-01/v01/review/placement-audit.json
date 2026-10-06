@@ -1,0 +1,284 @@
+{
+  "asset": "F03-01",
+  "cases": [
+    {
+      "host": "sword",
+      "material": "stone",
+      "maxSpan": 0.28,
+      "scale": 0.2800000011920929,
+      "materialFrom": [
+        0.1600000113248825,
+        0.023249998688697815,
+        0.17999999225139618
+      ],
+      "materialTo": [
+        0.4399999976158142,
+        0.3032500147819519,
+        0.4599999785423279
+      ],
+      "contact": [
+        0.3,
+        0.03125,
+        0.32
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "sword",
+      "material": "diamond",
+      "maxSpan": 0.28,
+      "scale": 0.3446153700351715,
+      "materialFrom": [
+        0.17076924443244934,
+        0.023250002413988113,
+        0.17999999225139618
+      ],
+      "materialTo": [
+        0.42923077940940857,
+        0.044788461178541183,
+        0.4599999785423279
+      ],
+      "contact": [
+        0.3,
+        0.03125,
+        0.32
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "sword",
+      "material": "feather",
+      "maxSpan": 0.28,
+      "scale": 0.3446153700351715,
+      "materialFrom": [
+        0.1600000113248825,
+        0.023250002413988113,
+        0.17999999225139618
+      ],
+      "materialTo": [
+        0.4399999976158142,
+        0.044788461178541183,
+        0.4599999785423279
+      ],
+      "contact": [
+        0.3,
+        0.03125,
+        0.32
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "axe",
+      "material": "stone",
+      "maxSpan": 0.3,
+      "scale": 0.30000001192092896,
+      "materialFrom": [
+        0.009999990463256836,
+        0.023249998688697815,
+        0.04999999701976776
+      ],
+      "materialTo": [
+        0.3100000023841858,
+        0.3232499957084656,
+        0.3500000238418579
+      ],
+      "contact": [
+        0.16,
+        0.03125,
+        0.2
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "axe",
+      "material": "diamond",
+      "maxSpan": 0.3,
+      "scale": 0.3692307770252228,
+      "materialFrom": [
+        0.021538451313972473,
+        0.023250002413988113,
+        0.04999999701976776
+      ],
+      "materialTo": [
+        0.29846155643463135,
+        0.04632692411541939,
+        0.3500000238418579
+      ],
+      "contact": [
+        0.16,
+        0.03125,
+        0.2
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "axe",
+      "material": "feather",
+      "maxSpan": 0.3,
+      "scale": 0.3692307770252228,
+      "materialFrom": [
+        0.009999990463256836,
+        0.023250002413988113,
+        0.04999999701976776
+      ],
+      "materialTo": [
+        0.3100000023841858,
+        0.04632692411541939,
+        0.3500000238418579
+      ],
+      "contact": [
+        0.16,
+        0.03125,
+        0.2
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "shield",
+      "material": "stone",
+      "maxSpan": 0.24,
+      "scale": 0.23999999463558197,
+      "materialFrom": [
+        0.12999999523162842,
+        0.11899999529123306,
+        0.42000001668930054
+      ],
+      "materialTo": [
+        0.3700000047683716,
+        0.35899999737739563,
+        0.6600000262260437
+      ],
+      "contact": [
+        0.25,
+        0.125,
+        0.54
+      ],
+      "penetration": 0.006,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "shield",
+      "material": "diamond",
+      "maxSpan": 0.24,
+      "scale": 0.29538461565971375,
+      "materialFrom": [
+        0.13923077285289764,
+        0.11899999529123306,
+        0.4200000464916229
+      ],
+      "materialTo": [
+        0.36076921224594116,
+        0.13746152818202972,
+        0.6600000262260437
+      ],
+      "contact": [
+        0.25,
+        0.125,
+        0.54
+      ],
+      "penetration": 0.006,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "shield",
+      "material": "feather",
+      "maxSpan": 0.24,
+      "scale": 0.29538461565971375,
+      "materialFrom": [
+        0.12999999523162842,
+        0.11899999529123306,
+        0.4200000464916229
+      ],
+      "materialTo": [
+        0.3700000047683716,
+        0.13746152818202972,
+        0.6600000262260437
+      ],
+      "contact": [
+        0.25,
+        0.125,
+        0.54
+      ],
+      "penetration": 0.006,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "arrow",
+      "material": "stone",
+      "maxSpan": 0.2,
+      "scale": 0.20000000298023224,
+      "materialFrom": [
+        0.17000001668930054,
+        0.023249998688697815,
+        0.17000001668930054
+      ],
+      "materialTo": [
+        0.3700000047683716,
+        0.22325000166893005,
+        0.3700000047683716
+      ],
+      "contact": [
+        0.27,
+        0.03125,
+        0.27
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "arrow",
+      "material": "diamond",
+      "maxSpan": 0.2,
+      "scale": 0.2461538463830948,
+      "materialFrom": [
+        0.17769232392311096,
+        0.023250000551342964,
+        0.17000001668930054
+      ],
+      "materialTo": [
+        0.36230769753456116,
+        0.03863461688160896,
+        0.3700000047683716
+      ],
+      "contact": [
+        0.27,
+        0.03125,
+        0.27
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    },
+    {
+      "host": "arrow",
+      "material": "feather",
+      "maxSpan": 0.2,
+      "scale": 0.2461538463830948,
+      "materialFrom": [
+        0.17000001668930054,
+        0.023250000551342964,
+        0.17000001668930054
+      ],
+      "materialTo": [
+        0.3700000047683716,
+        0.03863461688160896,
+        0.3700000047683716
+      ],
+      "contact": [
+        0.27,
+        0.03125,
+        0.27
+      ],
+      "penetration": 0.008,
+      "protectedPatternClear": true
+    }
+  ],
+  "gameIntegrated": false,
+  "exactVanillaSpecialRenderer": false,
+  "newProductionMeshes": 0
+}

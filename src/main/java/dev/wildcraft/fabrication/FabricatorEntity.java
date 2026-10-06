@@ -10,6 +10,7 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TypedEntityData;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.*;
@@ -40,9 +41,12 @@ public final class FabricatorEntity extends BaseContainerBlockEntity {
     public boolean start(Player player){
         if(level==null||level.isClientSide()||isRemoved()||!player.isAlive()||player.isSpectator()||player.level()!=level||!stillValid(player)||status()!=0)return false;
         var result=FabricationPool.result(level.getRandom().nextInt(FabricationPool.PARTS.size()));
-        items.get(0).shrink(4);items.get(1).shrink(2);pending=result;progress=0;setChanged();return true;
+        items.get(0).shrink(4);items.get(1).shrink(2);pending=result;progress=0;setChanged();syncArt();
+        if(level instanceof net.minecraft.server.level.ServerLevel server)dev.wildcraft.art.ArtFeedback.send(server,dev.wildcraft.art.ArtFeedback.blockSource(worldPosition),net.minecraft.world.phys.Vec3.atCenterOf(worldPosition),dev.wildcraft.art.ArtFeedback.Cue.FABRICATE_START,-1);
+        return true;
     }
     @Override protected void loadAdditional(ValueInput in){
+        if(in.getBooleanOr("WildcraftArtSnapshot",false)){clientArtStatus=Math.clamp(in.getIntOr("ArtState",0),0,4);return;}
         super.loadAdditional(in);if(in.getIntOr("FabricationSchema",1)!=1)throw new IllegalArgumentException("Unsupported fabrication schema");
         items=NonNullList.withSize(3,ItemStack.EMPTY);ContainerHelper.loadAllItems(in,items);
         pending=in.read("PendingOutput",ItemStack.OPTIONAL_CODEC).orElse(ItemStack.EMPTY);progress=in.getIntOr("FabricationTicks",0);
@@ -60,9 +64,25 @@ public final class FabricatorEntity extends BaseContainerBlockEntity {
     // Contents travel in the machine's single loot stack; the native default would scatter another copy.
     @Override public void preRemoveSideEffects(BlockPos pos,BlockState state){ }
     public static void tick(Level level,BlockPos pos,BlockState state,FabricatorEntity machine){
+        machine.syncArt();
         if(!machine.hasJob())return;
         if(machine.progress<DURATION)machine.progress++;
-        if(machine.progress>=DURATION&&machine.items.get(2).isEmpty()){machine.items.set(2,machine.pending);machine.pending=ItemStack.EMPTY;machine.progress=0;}
-        machine.setChanged();
+        if(machine.progress>=DURATION&&machine.items.get(2).isEmpty()){machine.items.set(2,machine.pending);machine.pending=ItemStack.EMPTY;machine.progress=0;
+            if(level instanceof net.minecraft.server.level.ServerLevel server)dev.wildcraft.art.ArtFeedback.send(server,dev.wildcraft.art.ArtFeedback.blockSource(pos),net.minecraft.world.phys.Vec3.atCenterOf(pos),dev.wildcraft.art.ArtFeedback.Cue.FABRICATE_DONE,-1);
+        }
+        machine.setChanged();machine.syncArt();
+    }
+
+    private int clientArtStatus,lastArtStatus=-1;
+    public int artStatus(){return level!=null&&level.isClientSide()?clientArtStatus:status();}
+    @Override public net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket getUpdatePacket(){return net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket.create(this);}
+    @Override public net.minecraft.nbt.CompoundTag getUpdateTag(net.minecraft.core.HolderLookup.Provider registries){var out=new net.minecraft.nbt.CompoundTag();out.putBoolean("WildcraftArtSnapshot",true);out.putInt("ArtState",status());return out;}
+
+    public void syncArt(){
+        if(level==null||level.isClientSide())return;
+        int state=status();
+        if(lastArtStatus==state )return;
+        lastArtStatus=state;
+        level.sendBlockUpdated(worldPosition,getBlockState(),getBlockState(),Block.UPDATE_CLIENTS);
     }
 }

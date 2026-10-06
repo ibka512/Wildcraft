@@ -1,0 +1,985 @@
+{
+  "asset": "F05-10",
+  "version": "v02",
+  "allPassed": true,
+  "scope": "geometric clearance screening; not collision/game validation",
+  "clearances": [
+    {
+      "kind": 1,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -4.64,
+          11,
+          -4.640000000000001
+        ],
+        "max": [
+          4.640000000000001,
+          13.600000000000001,
+          4.64
+        ]
+      },
+      "groundPlaneGapBlocks": 0.6875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 1,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -4.64,
+          -3.2,
+          -4.64
+        ],
+        "max": [
+          4.640000000000001,
+          -0.6,
+          4.640000000000001
+        ]
+      },
+      "groundPlaneGapBlocks": -0.2,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 1,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -4.640000000000001,
+          0.5600000000000005,
+          -14.399999999999999
+        ],
+        "max": [
+          4.64,
+          9.84,
+          -11.799999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.03500000000000003,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 1,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -4.64,
+          0.5600000000000005,
+          11.799999999999999
+        ],
+        "max": [
+          4.640000000000001,
+          9.84,
+          14.399999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.03500000000000003,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 1,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -14.399999999999999,
+          0.5600000000000005,
+          -4.64
+        ],
+        "max": [
+          -11.799999999999999,
+          9.84,
+          4.640000000000001
+        ]
+      },
+      "groundPlaneGapBlocks": 0.03500000000000003,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 1,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.799999999999999,
+          0.5600000000000005,
+          -4.640000000000001
+        ],
+        "max": [
+          14.399999999999999,
+          9.84,
+          4.64
+        ]
+      },
+      "groundPlaneGapBlocks": 0.03500000000000003,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 2,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -3.2,
+          11.02,
+          -5.58
+        ],
+        "max": [
+          3.1999999999999993,
+          12.95,
+          1.7799999999999994
+        ]
+      },
+      "groundPlaneGapBlocks": 0.68875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 2,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -3.2,
+          -2.549999999999999,
+          -1.7799999999999994
+        ],
+        "max": [
+          3.1999999999999993,
+          -0.6200000000000001,
+          5.58
+        ]
+      },
+      "groundPlaneGapBlocks": -0.15937499999999993,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 2,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -3.1999999999999993,
+          3.420000000000001,
+          -13.749999999999998
+        ],
+        "max": [
+          3.2,
+          10.780000000000001,
+          -11.82
+        ]
+      },
+      "groundPlaneGapBlocks": 0.21375000000000005,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 2,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -3.2,
+          3.420000000000001,
+          11.82
+        ],
+        "max": [
+          3.1999999999999993,
+          10.780000000000001,
+          13.749999999999998
+        ]
+      },
+      "groundPlaneGapBlocks": 0.21375000000000005,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 2,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -13.749999999999998,
+          3.420000000000001,
+          -3.2
+        ],
+        "max": [
+          -11.82,
+          10.780000000000001,
+          3.1999999999999993
+        ]
+      },
+      "groundPlaneGapBlocks": 0.21375000000000005,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 2,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.82,
+          3.420000000000001,
+          -3.1999999999999993
+        ],
+        "max": [
+          13.749999999999998,
+          10.780000000000001,
+          3.2
+        ]
+      },
+      "groundPlaneGapBlocks": 0.21375000000000005,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 3,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -9.48,
+          11,
+          -1.28
+        ],
+        "max": [
+          9.48,
+          19.200000000000003,
+          1.28
+        ]
+      },
+      "groundPlaneGapBlocks": 0.6875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 3,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -9.48,
+          -8.8,
+          -1.28
+        ],
+        "max": [
+          9.48,
+          -0.6,
+          1.28
+        ]
+      },
+      "groundPlaneGapBlocks": -0.55,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 3,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -9.48,
+          3.92,
+          -20
+        ],
+        "max": [
+          9.48,
+          6.48,
+          -11.799999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.245,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 3,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -9.48,
+          3.92,
+          11.799999999999999
+        ],
+        "max": [
+          9.48,
+          6.48,
+          20
+        ]
+      },
+      "groundPlaneGapBlocks": 0.245,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 3,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -20,
+          3.92,
+          -9.48
+        ],
+        "max": [
+          -11.799999999999999,
+          6.48,
+          9.48
+        ]
+      },
+      "groundPlaneGapBlocks": 0.245,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 3,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.799999999999999,
+          3.92,
+          -9.48
+        ],
+        "max": [
+          20,
+          6.48,
+          9.48
+        ]
+      },
+      "groundPlaneGapBlocks": 0.245,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 4,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -2.08,
+          11,
+          -2.08
+        ],
+        "max": [
+          2.08,
+          18.4,
+          2.08
+        ]
+      },
+      "groundPlaneGapBlocks": 0.6875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 4,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -2.08,
+          -8,
+          -2.08
+        ],
+        "max": [
+          2.08,
+          -0.6,
+          2.08
+        ]
+      },
+      "groundPlaneGapBlocks": -0.5,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 4,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -2.08,
+          3.12,
+          -19.2
+        ],
+        "max": [
+          2.08,
+          7.28,
+          -11.799999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.195,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 4,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -2.08,
+          3.12,
+          11.799999999999999
+        ],
+        "max": [
+          2.08,
+          7.28,
+          19.2
+        ]
+      },
+      "groundPlaneGapBlocks": 0.195,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 4,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -19.2,
+          3.12,
+          -2.08
+        ],
+        "max": [
+          -11.799999999999999,
+          7.28,
+          2.08
+        ]
+      },
+      "groundPlaneGapBlocks": 0.195,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 4,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.799999999999999,
+          3.12,
+          -2.08
+        ],
+        "max": [
+          19.2,
+          7.28,
+          2.08
+        ]
+      },
+      "groundPlaneGapBlocks": 0.195,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 5,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -3.52,
+          11,
+          -3.52
+        ],
+        "max": [
+          3.52,
+          16.16,
+          3.52
+        ]
+      },
+      "groundPlaneGapBlocks": 0.6875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 5,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -3.52,
+          -5.76,
+          -3.52
+        ],
+        "max": [
+          3.52,
+          -0.6,
+          3.52
+        ]
+      },
+      "groundPlaneGapBlocks": -0.36,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 5,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -3.52,
+          1.6800000000000002,
+          -16.96
+        ],
+        "max": [
+          3.52,
+          8.72,
+          -11.799999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.10500000000000001,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 5,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -3.52,
+          1.6800000000000002,
+          11.799999999999999
+        ],
+        "max": [
+          3.52,
+          8.72,
+          16.96
+        ]
+      },
+      "groundPlaneGapBlocks": 0.10500000000000001,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 5,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -16.96,
+          1.6800000000000002,
+          -3.52
+        ],
+        "max": [
+          -11.799999999999999,
+          8.72,
+          3.52
+        ]
+      },
+      "groundPlaneGapBlocks": 0.10500000000000001,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 5,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.799999999999999,
+          1.6800000000000002,
+          -3.52
+        ],
+        "max": [
+          16.96,
+          8.72,
+          3.52
+        ]
+      },
+      "groundPlaneGapBlocks": 0.10500000000000001,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 6,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -3.9986480761609506,
+          11,
+          -3.9986480761609506
+        ],
+        "max": [
+          3.9986480761609506,
+          14.72,
+          3.9986480761609506
+        ]
+      },
+      "groundPlaneGapBlocks": 0.6875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 6,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -3.9986480761609506,
+          -4.32,
+          -3.9986480761609506
+        ],
+        "max": [
+          3.9986480761609506,
+          -0.6,
+          3.9986480761609506
+        ]
+      },
+      "groundPlaneGapBlocks": -0.27,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 6,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -3.9986480761609506,
+          1.2013519238390495,
+          -15.52
+        ],
+        "max": [
+          3.9986480761609506,
+          9.19864807616095,
+          -11.799999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.0750844952399406,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 6,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -3.9986480761609506,
+          1.2013519238390495,
+          11.799999999999999
+        ],
+        "max": [
+          3.9986480761609506,
+          9.19864807616095,
+          15.52
+        ]
+      },
+      "groundPlaneGapBlocks": 0.0750844952399406,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 6,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -15.52,
+          1.2013519238390495,
+          -3.9986480761609506
+        ],
+        "max": [
+          -11.799999999999999,
+          9.19864807616095,
+          3.9986480761609506
+        ]
+      },
+      "groundPlaneGapBlocks": 0.0750844952399406,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 6,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.799999999999999,
+          1.2013519238390495,
+          -3.9986480761609506
+        ],
+        "max": [
+          15.52,
+          9.19864807616095,
+          3.9986480761609506
+        ]
+      },
+      "groundPlaneGapBlocks": 0.0750844952399406,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 7,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -2.88,
+          11,
+          -4.16
+        ],
+        "max": [
+          2.88,
+          14.4,
+          4.16
+        ]
+      },
+      "groundPlaneGapBlocks": 0.6875,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 7,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -2.88,
+          -4,
+          -4.16
+        ],
+        "max": [
+          2.88,
+          -0.6,
+          4.16
+        ]
+      },
+      "groundPlaneGapBlocks": -0.25,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 7,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -2.88,
+          1.04,
+          -15.2
+        ],
+        "max": [
+          2.88,
+          9.36,
+          -11.799999999999999
+        ]
+      },
+      "groundPlaneGapBlocks": 0.065,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 7,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -2.88,
+          1.04,
+          11.799999999999999
+        ],
+        "max": [
+          2.88,
+          9.36,
+          15.2
+        ]
+      },
+      "groundPlaneGapBlocks": 0.065,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 7,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -15.2,
+          1.04,
+          -2.88
+        ],
+        "max": [
+          -11.799999999999999,
+          9.36,
+          2.88
+        ]
+      },
+      "groundPlaneGapBlocks": 0.065,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 7,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.799999999999999,
+          1.04,
+          -2.88
+        ],
+        "max": [
+          15.2,
+          9.36,
+          2.88
+        ]
+      },
+      "groundPlaneGapBlocks": 0.065,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 8,
+      "node": 0,
+      "bounds": {
+        "min": [
+          -5.12,
+          10.72,
+          -3.2
+        ],
+        "max": [
+          5.12,
+          16.8,
+          3.2
+        ]
+      },
+      "groundPlaneGapBlocks": 0.67,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 8,
+      "node": 1,
+      "bounds": {
+        "min": [
+          -5.12,
+          -6.4,
+          -3.2
+        ],
+        "max": [
+          5.12,
+          -0.32,
+          3.2
+        ]
+      },
+      "groundPlaneGapBlocks": -0.4,
+      "belowBodyBottomPlane": true,
+      "classification": "visual extends below body bottom; actual game floor check required"
+    },
+    {
+      "kind": 8,
+      "node": 2,
+      "bounds": {
+        "min": [
+          -5.12,
+          2,
+          -17.6
+        ],
+        "max": [
+          5.12,
+          8.4,
+          -11.52
+        ]
+      },
+      "groundPlaneGapBlocks": 0.125,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 8,
+      "node": 3,
+      "bounds": {
+        "min": [
+          -5.12,
+          2,
+          11.52
+        ],
+        "max": [
+          5.12,
+          8.4,
+          17.6
+        ]
+      },
+      "groundPlaneGapBlocks": 0.125,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 8,
+      "node": 4,
+      "bounds": {
+        "min": [
+          -17.6,
+          2,
+          -5.12
+        ],
+        "max": [
+          -11.52,
+          8.4,
+          5.12
+        ]
+      },
+      "groundPlaneGapBlocks": 0.125,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    },
+    {
+      "kind": 8,
+      "node": 5,
+      "bounds": {
+        "min": [
+          11.52,
+          2,
+          -5.12
+        ],
+        "max": [
+          17.6,
+          8.4,
+          5.12
+        ]
+      },
+      "groundPlaneGapBlocks": 0.125,
+      "belowBodyBottomPlane": false,
+      "classification": "reference only; does not prove ground contact"
+    }
+  ],
+  "combinations": [
+    {
+      "id": "combo-drive",
+      "installedKinds": [
+        2,
+        0,
+        1,
+        3,
+        6,
+        6
+      ],
+      "mass": 1.75,
+      "aabbCandidates": [],
+      "notConfirmedTriangleIntersections": true
+    },
+    {
+      "id": "combo-float",
+      "installedKinds": [
+        2,
+        0,
+        8,
+        1,
+        8,
+        8
+      ],
+      "mass": 1.75,
+      "aabbCandidates": [],
+      "notConfirmedTriangleIntersections": true
+    },
+    {
+      "id": "combo-spring",
+      "installedKinds": [
+        2,
+        5,
+        1,
+        7,
+        6,
+        6
+      ],
+      "mass": 1.85,
+      "aabbCandidates": [],
+      "notConfirmedTriangleIntersections": true
+    },
+    {
+      "id": "combo-rocket",
+      "installedKinds": [
+        2,
+        0,
+        4,
+        3,
+        1,
+        7
+      ],
+      "mass": 1.75,
+      "aabbCandidates": [],
+      "notConfirmedTriangleIntersections": true
+    }
+  ],
+  "collisionUnchanged": true,
+  "collisionSource": {
+    "width": 1.4,
+    "height": 0.65,
+    "unchanged": true
+  },
+  "gameIntegrated": false
+}

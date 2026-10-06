@@ -1,0 +1,37 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/source/geometry-and-uv.json",
+    "copy": "references/approved-machine-geometry.json",
+    "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/exports/machine-atlas-64.png",
+    "copy": "references/shared-machine-atlas-64.png",
+    "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-01/v01/source/machine-atlas-64.aseprite",
+    "copy": "references/shared-machine-atlas-64.aseprite",
+    "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/references/uv-regions.json",
+    "copy": "references/uv-regions.json",
+    "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719",
+    "adopted": true,
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-03/v01/source/fan-preview.js",
+    "copy": "references/fan-preview.js",
+    "sha256": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2",
+    "adopted": true,
+    "changed": false
+  }
+]

@@ -1,0 +1,946 @@
+{
+  "asset": "F01-03",
+  "version": "v01",
+  "date": "2026-10-05",
+  "status": "布局已采用；图标原件已采用",
+  "gameIntegrated": false,
+  "units": "Minecraft逻辑GUI像素",
+  "rules": {
+    "x": 12,
+    "iconSize": 16,
+    "fullWidth": 148,
+    "fullRowHeight": 16,
+    "fullRowStride": 20,
+    "compactWidth": 53,
+    "compactHeight": 20,
+    "compactGap": 6,
+    "compactRowStride": 24,
+    "bottomReserve": 46,
+    "temperatureOffsetVisible": 29,
+    "temperatureOffsetHidden": 5,
+    "mealOffset": 14
+  },
+  "order": [
+    "warmth",
+    "cooling",
+    "recovery"
+  ],
+  "anchors": {
+    "heartBottom": "StaminaHud.heartBottom()，含原版多排心和吸收心的实际界限",
+    "staminaVisible": "StaminaHud.showStamina()",
+    "temperatureY": "TemperatureHud.rowY()，现实现heartBottom+(visible?29:5)",
+    "mealStartY": "TemperatureHud.rowY()+14",
+    "bottom": "guiHeight-46",
+    "aimExclusion": "中心±10逻辑像素"
+  },
+  "textures": {
+    "warmth": {
+      "file": "warmth-meal-16.png",
+      "levelField": "MealView.warmth",
+      "secondsField": "MealView.warmSeconds"
+    },
+    "cooling": {
+      "file": "cooling-meal-16.png",
+      "levelField": "MealView.cooling",
+      "secondsField": "MealView.coolSeconds"
+    },
+    "recovery": {
+      "file": "stamina-recovery-16.png",
+      "levelField": "MealView.recovery",
+      "secondsField": "MealView.recoverySeconds"
+    }
+  },
+  "states": {
+    "active": "level>0 && seconds>0",
+    "hidden": "level==0 || seconds==0；立即移除该项并收拢",
+    "levelLabels": [
+      "I",
+      "II"
+    ],
+    "lowTime": "0<seconds<=10，仅倒计时文字改为琥珀色",
+    "timeFormat": "分钟:两位秒；以服务端已同步的向上取整秒数显示，不自行再按墙钟扣时"
+  },
+  "text": {
+    "font": "游戏原版字体；图中字体仅近似",
+    "defaultNameAndLevel": "#e1d7ae",
+    "timer": "#d4dccb",
+    "lowTimer": "#f0b84d",
+    "background": "#15231b / alpha 0.44",
+    "full": {
+      "nameX": "itemX+20",
+      "nameY": "itemY+4",
+      "timerX": "itemX+114",
+      "timerY": "itemY+4",
+      "timerWidth": 34
+    },
+    "compact": {
+      "levelX": "itemX+19",
+      "levelY": "itemY",
+      "timerX": "itemX+19",
+      "timerY": "itemY+10",
+      "iconY": "itemY+2"
+    }
+  },
+  "responsive": {
+    "full": "148px宽、16px高，下一项Y+20；与底部或准星冲突则转紧凑",
+    "compact": "53×20，每列X+59，每行Y+24；按可用宽度换行，接近准星时限制到其左侧",
+    "insufficient": "超出可容纳条件时fit=false；此布局稿不覆盖红心、准星或底部。正式极端视窗处理仍需实机核对"
+  },
+  "preserved": {
+    "hudHidden": "沿用c.gui.hud.isHidden()",
+    "spectator": "沿用旁观者隐藏",
+    "death": "沿用死亡隐藏",
+    "focus": "保持料理有效时间语义；沿用温度专注时关闭边缘色调",
+    "pausedOffline": "沿用服务端ActivePlayClock，不新增计时数据",
+    "ordinaryMeals": "普通料理没有效果，不显示该HUD项"
+  },
+  "assetReuse": {
+    "newIcons": 0,
+    "newIconSources": 0,
+    "reusedPng": 6,
+    "reusedAseprite": 6,
+    "runtimeChoice": "当前排布使用原生16px；32px保留源稿与放大参考，不当成等级差异",
+    "customAtlasLoader": false,
+    "bakedText": false
+  },
+  "examples": {
+    "normal": {
+      "input": {
+        "title": "三效果并存",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": true,
+        "levels": [
+          2,
+          1,
+          2
+        ],
+        "seconds": [
+          127,
+          84,
+          56
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 104,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 104,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 108,
+            "nameX": 32,
+            "nameY": 108,
+            "levelX": 31,
+            "levelY": 104,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    },
+    "single": {
+      "input": {
+        "title": "单一保暖效果",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": true,
+        "levels": [
+          2,
+          0,
+          0
+        ],
+        "seconds": [
+          127,
+          0,
+          0
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 1,
+        "height": 16,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    },
+    "hearts": {
+      "input": {
+        "title": "多排红心与吸收心",
+        "w": 320,
+        "h": 180,
+        "rows": 4,
+        "rowHeight": 8,
+        "stamina": true,
+        "levels": [
+          2,
+          1,
+          2
+        ],
+        "seconds": [
+          127,
+          84,
+          56
+        ],
+        "language": "zh",
+        "absorption": true,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 150,
+          "right": 170,
+          "top": 80,
+          "bottom": 100
+        },
+        "heartBottom": 45,
+        "temperatureY": 74,
+        "startY": 88,
+        "bottom": 134,
+        "mode": "compact",
+        "cols": 2,
+        "rows": 2,
+        "height": 44,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 88,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 90,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 31,
+            "timerY": 98,
+            "nameX": 32,
+            "nameY": 92,
+            "levelX": 31,
+            "levelY": 88,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 71,
+            "y": 88,
+            "width": 53,
+            "height": 20,
+            "iconX": 71,
+            "iconY": 90,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 90,
+            "timerY": 98,
+            "nameX": 91,
+            "nameY": 92,
+            "levelX": 90,
+            "levelY": 88,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 112,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 114,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 31,
+            "timerY": 122,
+            "nameX": 32,
+            "nameY": 116,
+            "levelX": 31,
+            "levelY": 112,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 51,
+        "staminaTrackY": 62
+      }
+    },
+    "hidden": {
+      "input": {
+        "title": "精力自动隐藏",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": false,
+        "levels": [
+          2,
+          1,
+          2
+        ],
+        "seconds": [
+          127,
+          84,
+          56
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 26,
+        "startY": 40,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 40,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 40,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 44,
+            "nameX": 32,
+            "nameY": 44,
+            "levelX": 31,
+            "levelY": 40,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 60,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 60,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 64,
+            "nameX": 32,
+            "nameY": 64,
+            "levelX": 31,
+            "levelY": 60,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 80,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 80,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 84,
+            "nameX": 32,
+            "nameY": 84,
+            "levelX": 31,
+            "levelY": 80,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    },
+    "english": {
+      "input": {
+        "title": "英文排布",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": true,
+        "levels": [
+          2,
+          1,
+          2
+        ],
+        "seconds": [
+          127,
+          84,
+          56
+        ],
+        "language": "en",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "Warmth",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "Cooling",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 104,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 104,
+            "name": "Recovery",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 108,
+            "nameX": 32,
+            "nameY": 108,
+            "levelX": 31,
+            "levelY": 104,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    },
+    "short": {
+      "input": {
+        "title": "小视窗紧凑排列",
+        "w": 320,
+        "h": 164,
+        "rows": 2,
+        "rowHeight": 9,
+        "stamina": true,
+        "levels": [
+          2,
+          1,
+          2
+        ],
+        "seconds": [
+          127,
+          84,
+          56
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 150,
+          "right": 170,
+          "top": 72,
+          "bottom": 92
+        },
+        "heartBottom": 30,
+        "temperatureY": 59,
+        "startY": 73,
+        "bottom": 118,
+        "mode": "compact",
+        "cols": 2,
+        "rows": 2,
+        "height": 44,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 127,
+            "x": 12,
+            "y": 73,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 75,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "2:07",
+            "timerX": 31,
+            "timerY": 83,
+            "nameX": 32,
+            "nameY": 77,
+            "levelX": 31,
+            "levelY": 73,
+            "lowTime": false
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 71,
+            "y": 73,
+            "width": 53,
+            "height": 20,
+            "iconX": 71,
+            "iconY": 75,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 90,
+            "timerY": 83,
+            "nameX": 91,
+            "nameY": 77,
+            "levelX": 90,
+            "levelY": 73,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 97,
+            "width": 53,
+            "height": 20,
+            "iconX": 12,
+            "iconY": 99,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 31,
+            "timerY": 107,
+            "nameX": 32,
+            "nameY": 101,
+            "levelX": 31,
+            "levelY": 97,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 36,
+        "staminaTrackY": 47
+      }
+    },
+    "focus": {
+      "input": {
+        "title": "专注与临近结束",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": true,
+        "levels": [
+          2,
+          1,
+          2
+        ],
+        "seconds": [
+          9,
+          84,
+          56
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": true
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 3,
+        "height": 56,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "warmth",
+            "level": 2,
+            "seconds": 9,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "保暖",
+            "levelText": "II",
+            "timeText": "0:09",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": true
+          },
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 104,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 104,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 108,
+            "nameX": 32,
+            "nameY": 108,
+            "levelX": 31,
+            "levelY": 104,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    },
+    "expired": {
+      "input": {
+        "title": "保暖结束后重排",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": true,
+        "levels": [
+          0,
+          1,
+          2
+        ],
+        "seconds": [
+          0,
+          84,
+          56
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 50,
+        "startY": 64,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 2,
+        "height": 36,
+        "fits": true,
+        "boxes": [
+          {
+            "key": "cooling",
+            "level": 1,
+            "seconds": 84,
+            "x": 12,
+            "y": 64,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 64,
+            "name": "耐热",
+            "levelText": "I",
+            "timeText": "1:24",
+            "timerX": 126,
+            "timerY": 68,
+            "nameX": 32,
+            "nameY": 68,
+            "levelX": 31,
+            "levelY": 64,
+            "lowTime": false
+          },
+          {
+            "key": "recovery",
+            "level": 2,
+            "seconds": 56,
+            "x": 12,
+            "y": 84,
+            "width": 148,
+            "height": 16,
+            "iconX": 12,
+            "iconY": 84,
+            "name": "精力恢复",
+            "levelText": "II",
+            "timeText": "0:56",
+            "timerX": 126,
+            "timerY": 88,
+            "nameX": 32,
+            "nameY": 88,
+            "levelX": 31,
+            "levelY": 84,
+            "lowTime": false
+          }
+        ],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    },
+    "none": {
+      "input": {
+        "title": "无料理效果",
+        "w": 426,
+        "h": 240,
+        "rows": 1,
+        "rowHeight": 9,
+        "stamina": false,
+        "levels": [
+          0,
+          0,
+          0
+        ],
+        "seconds": [
+          0,
+          0,
+          0
+        ],
+        "language": "zh",
+        "absorption": false,
+        "focus": false
+      },
+      "layout": {
+        "aim": {
+          "left": 203,
+          "right": 223,
+          "top": 110,
+          "bottom": 130
+        },
+        "heartBottom": 21,
+        "temperatureY": 26,
+        "startY": 40,
+        "bottom": 194,
+        "mode": "full",
+        "cols": 1,
+        "rows": 0,
+        "height": 0,
+        "fits": true,
+        "boxes": [],
+        "staminaLabelY": 27,
+        "staminaTrackY": 38
+      }
+    }
+  },
+  "layoutAdopted": true,
+  "adopted_date": "2026-10-05"
+}

@@ -1,0 +1,53 @@
+{
+  "asset": "F05-07",
+  "allPassed": true,
+  "nativeFiles": [
+    {
+      "name": "wheel-item-32",
+      "nativeSize": [
+        32,
+        32
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:406418c28ad838ef",
+      "visibleColors": 10,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 472
+    },
+    {
+      "name": "wheel-item-16",
+      "nativeSize": [
+        16,
+        16
+      ],
+      "sourceLayers": 3,
+      "reopened": true,
+      "sourcePngPixelIdentity": true,
+      "pixelHash": "fnv1a64:f2dd156c398d7332",
+      "visibleColors": 10,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "transparentPixels": 119
+    }
+  ],
+  "atlasBytesExact": true,
+  "newProductionTexturePixels": 0,
+  "parts": 67,
+  "groups": {
+    "fixed": 9,
+    "rotating": 58
+  },
+  "outwardFaces": 410,
+  "allRotatingVerticesWithinRadius4": true,
+  "blockbenchStructurallyValid": true,
+  "blockbenchAppOpened": false,
+  "javaAndDev14Unchanged": true,
+  "gameIntegrated": false
+}

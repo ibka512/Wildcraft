@@ -1,0 +1,186 @@
+{
+  "asset": "F01-03",
+  "version": "v01",
+  "created": "2026-10-05",
+  "status": "布局已采用，未接入",
+  "layoutAdopted": true,
+  "integrated": false,
+  "reusedPng": 6,
+  "reusedAseprite": 6,
+  "newPixelAssets": 0,
+  "reviewScenes": 9,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3079,
+      "sha256": "97278c31bc23d56292f384115232219ee8b862357967d0b6297555fc95842d06"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1816,
+      "sha256": "c81ca1501c584b1db37d28ec84ddc31aeec540cc7f2dbccf069caca37daa3444"
+    },
+    {
+      "path": "exports/cooling-meal-16.png",
+      "bytes": 274,
+      "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a"
+    },
+    {
+      "path": "exports/cooling-meal-32.png",
+      "bytes": 530,
+      "sha256": "cbf5139c1d358e260264adcd320629e6ae4f31b132489c6bf008c89b71980873"
+    },
+    {
+      "path": "exports/meal-hud-layout.json",
+      "bytes": 22177,
+      "sha256": "41df9b34307058187b7286f00985c8490b42891ba86299ba2f00ec759c96b8da"
+    },
+    {
+      "path": "exports/stamina-recovery-16.png",
+      "bytes": 241,
+      "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93"
+    },
+    {
+      "path": "exports/stamina-recovery-32.png",
+      "bytes": 487,
+      "sha256": "fdd99efbb786fe60384aecea902c784aa155ef09dc455c516e64e4eaffef41dc"
+    },
+    {
+      "path": "exports/warmth-meal-16.png",
+      "bytes": 282,
+      "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e"
+    },
+    {
+      "path": "exports/warmth-meal-32.png",
+      "bytes": 533,
+      "sha256": "c8a47e2b364d08dbc436dd2b15cc2258c4796f91f7fa1244706fc8e0f79ff494"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 2087,
+      "sha256": "a9112b8c8077c07e2a8b9657a13cebfb306610a0d1743bb6e4d7121064386995"
+    },
+    {
+      "path": "references/reused-assets.json",
+      "bytes": 4809,
+      "sha256": "7e00ed08aa73052febe26402db9454d9de59f8c03a8e63cd9bd2e9638b3cf41c"
+    },
+    {
+      "path": "references/stamina-hud-atlas.png",
+      "bytes": 256,
+      "sha256": "50713b9af2f997ff68b135b67fe3176e7128182fcd02dcefc28565822499b8c3"
+    },
+    {
+      "path": "review/aseprite-starting-document.json",
+      "bytes": 185,
+      "sha256": "cdecbf10147e659296a9eb77f053323e6fb33314ebdffa97105ba0c238b600af"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 6374,
+      "sha256": "fe563d8793792b65d6e55eb0c234a3ef8ae9cae7f3bd47618d4a8a5f9c6ebc0f"
+    },
+    {
+      "path": "review/hud-hearts-simulation.png",
+      "bytes": 12419,
+      "sha256": "a2c3fa18126ccda46d0269a6e9b953ce0163820c676b0ba2fda844cae6de8933"
+    },
+    {
+      "path": "review/hud-short-simulation.png",
+      "bytes": 11609,
+      "sha256": "4e9e963308ef9c41f6cbbd08bc3c80fc05d0776988906455d75af52918ef11c4"
+    },
+    {
+      "path": "review/hud-standard-simulation.png",
+      "bytes": 15700,
+      "sha256": "671937673a0c619b9247140df88b34bbc618b49a7a2da24a9ddd76366320fc1f"
+    },
+    {
+      "path": "review/icon-verification.json",
+      "bytes": 2860,
+      "sha256": "f05d0f12430a18593bea20a37a77ceefb6ea6c98c0b815befdc239507472fb38"
+    },
+    {
+      "path": "review/layout-scenarios.json",
+      "bytes": 12650,
+      "sha256": "b504ee6ecc67785a30e34c59f715ca6de57f2f932ca30a9386f137d8720ac61b"
+    },
+    {
+      "path": "review/meal-hud-review.png",
+      "bytes": 213923,
+      "sha256": "78f2b0a88c2e2bbb5fa7a20e288af973d09bad1575ce2a5c73ef2243ee52bdb8"
+    },
+    {
+      "path": "review/preview-server.json",
+      "bytes": 156,
+      "sha256": "d47d1d558d22b0a57a870b0871f83e0ee40ab1e4636a14b87c4a77d303989c1d"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 15046,
+      "sha256": "fbd7544e815b36e642bcadd99c3344609ad4aee884857fb4871139ccd9fbd994"
+    },
+    {
+      "path": "source/build-review.py",
+      "bytes": 10058,
+      "sha256": "a968aacbfa71c402b3c08e5801ee7ca0f611e03646dbe166ca95b522678d28c4"
+    },
+    {
+      "path": "source/cooling-meal-16.aseprite",
+      "bytes": 553,
+      "sha256": "b24b439f917c3c434bfcef2bdf8c7b8fa9570065c10fc74bfd42a17695885342"
+    },
+    {
+      "path": "source/cooling-meal-32.aseprite",
+      "bytes": 703,
+      "sha256": "88da409e5818e904b4e6983201dea9d2b00184312ac4e2c8bc7a4454d2ada50b"
+    },
+    {
+      "path": "source/export-layout.cjs",
+      "bytes": 2758,
+      "sha256": "a01fe1dd71c6533d4a5de481476dc0fb55fc1c77358ee8a6c5c02ba0677e8396"
+    },
+    {
+      "path": "source/hud-layout.js",
+      "bytes": 4113,
+      "sha256": "f971c0710a9c7c73ffbeeb2b8f78eef4469842e2353aff1bffa7ef211594ab5a"
+    },
+    {
+      "path": "source/stamina-recovery-16.aseprite",
+      "bytes": 542,
+      "sha256": "b2e6e675d29891a85b5d233d2a48086176ffdeb89a89a2cc83f2a3617c97bd3f"
+    },
+    {
+      "path": "source/stamina-recovery-32.aseprite",
+      "bytes": 671,
+      "sha256": "e6312f52471a4025459b55b04863f9252514185fa7f024da735e26237f931f36"
+    },
+    {
+      "path": "source/verify-reused-icons.py",
+      "bytes": 1851,
+      "sha256": "2abe35354395d254ace7360b777cff4b5e3c26ee5964d8fb7ad2d4764400f111"
+    },
+    {
+      "path": "source/warmth-meal-16.aseprite",
+      "bytes": 545,
+      "sha256": "91344bd660a3c31fa2a4a0d8eaedb4844152fc45b8571a5b80d19cea136894d0"
+    },
+    {
+      "path": "source/warmth-meal-32.aseprite",
+      "bytes": 693,
+      "sha256": "7d75b02d772e29abae051c9d27764c7d755c2148fc5c7965b25bc20e531ab868"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1698,
+      "sha256": "6840e448e7b0196387fab209fac8e8c2e10d992c5981c840c0fa86affe7a1e40"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 392,
+      "sha256": "3df4226dc316a1b01bd1cb683ed1e705109c106eb6c5af04160bd578581c90b1"
+    }
+  ],
+  "adopted_date": "2026-10-05",
+  "adoption_evidence": "用户：采用，继续"
+}

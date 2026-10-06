@@ -1,0 +1,634 @@
+{
+  "asset": "F05-06",
+  "allPassed": true,
+  "uiCases": 49,
+  "cases": [
+    {
+      "snapshot": "compressed",
+      "node": -1,
+      "extended": false,
+      "faces": 132,
+      "ghost": false,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "compressed",
+      "node": 0,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "compressed",
+      "node": 1,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "compressed",
+      "node": 2,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "compressed",
+      "node": 3,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "compressed",
+      "node": 4,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "compressed",
+      "node": 5,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": -1,
+      "extended": true,
+      "faces": 132,
+      "ghost": false,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": 0,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": 1,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": 2,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": 3,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": 4,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "fired",
+      "node": 5,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": -1,
+      "extended": true,
+      "faces": 132,
+      "ghost": false,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": 0,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": 1,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": 2,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": 3,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": 4,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling",
+      "node": 5,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": -1,
+      "extended": true,
+      "faces": 132,
+      "ghost": false,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": 0,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": 1,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": 2,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": 3,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": 4,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary31",
+      "node": 5,
+      "extended": true,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": -1,
+      "extended": false,
+      "faces": 132,
+      "ghost": false,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": 0,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": 1,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": 2,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": 3,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": 4,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "boundary30",
+      "node": 5,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": -1,
+      "extended": false,
+      "faces": 132,
+      "ghost": false,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": 0,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": 1,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": 2,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": 3,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": 4,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "cooling10",
+      "node": 5,
+      "extended": false,
+      "faces": 336,
+      "ghost": false,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": -1,
+      "extended": false,
+      "faces": 132,
+      "ghost": true,
+      "fit": {
+        "scale": 36.43061025389036,
+        "cx": 0,
+        "cy": -4.515791990215967
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 0,
+      "extended": false,
+      "faces": 336,
+      "ghost": true,
+      "fit": {
+        "scale": 16.010626737893325,
+        "cx": 0,
+        "cy": -7.580010573711672
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 1,
+      "extended": false,
+      "faces": 336,
+      "ghost": true,
+      "fit": {
+        "scale": 15.959359002983424,
+        "cx": 0,
+        "cy": -2.35010225106096
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 2,
+      "extended": false,
+      "faces": 336,
+      "ghost": true,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 3,
+      "extended": false,
+      "faces": 336,
+      "ghost": true,
+      "fit": {
+        "scale": 19.48404666059434,
+        "cx": 0,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 4,
+      "extended": false,
+      "faces": 336,
+      "ghost": true,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": -2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    },
+    {
+      "snapshot": "ghost",
+      "node": 5,
+      "extended": false,
+      "faces": 336,
+      "ghost": true,
+      "fit": {
+        "scale": 16.791481108153384,
+        "cx": 2.386690569431023,
+        "cy": -4.984618940037834
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "documentWidth": 305,
+      "liveWidth": 239,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "documentWidth": 753,
+      "liveWidth": 687,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "documentWidth": 1265,
+      "liveWidth": 743.328125,
+      "overflow": false
+    }
+  ],
+  "nativeImages": [
+    {
+      "name": "spring-item-32",
+      "width": 32,
+      "height": 32,
+      "pixelHash": "fnv1a64:32cd6eb7c20fc598"
+    },
+    {
+      "name": "spring-item-16",
+      "width": 16,
+      "height": 16,
+      "pixelHash": "fnv1a64:a47e3b85755d9a28"
+    }
+  ],
+  "manualThirtyThirtyOneBoundary": true,
+  "defaultStatic": true,
+  "reviewBoardSaved": true,
+  "liveCaptureSaved": true,
+  "gameIntegrated": false
+}

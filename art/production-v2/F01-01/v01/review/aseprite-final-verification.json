@@ -1,0 +1,18 @@
+{
+  "dimensions": [
+    64,
+    64
+  ],
+  "layers": 2,
+  "color_mode": "RGB",
+  "source_reopened_hash": {
+    "frame": 0,
+    "value": "fnv1a64:5ce39b7ee558540a"
+  },
+  "png_reopened_hash": {
+    "frame": 0,
+    "value": "fnv1a64:5ce39b7ee558540a"
+  },
+  "pixel_identity": true,
+  "editor_note": "64px保存重开通过；512px审稿放大导出失败，改用SVG最近邻UV示意；原件保持64px。"
+}

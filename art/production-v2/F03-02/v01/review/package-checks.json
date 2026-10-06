@@ -1,0 +1,24 @@
+{
+  "asset": "F03-02",
+  "allPassed": true,
+  "adopted": false,
+  "integrated": false,
+  "reusedLegacySymbols": 2,
+  "newCornerMark": 1,
+  "sourceFiles": 4,
+  "pngFiles": 4,
+  "atlasSize": [
+    64,
+    32
+  ],
+  "atlasLayers": 3,
+  "legacyPixelsUnchanged": true,
+  "sourceAndPNGReopenedReadbackCases": 8,
+  "usesLanguageLayoutCases": 768,
+  "referenceCornerOcclusionCases": 12,
+  "actualButtonsHoverKeyboardVerified": true,
+  "previousAssetAdopted": true,
+  "previousArchiveUnchanged": true,
+  "referencesAndCodeBaselineUnchanged": true,
+  "gameRuntimeVerified": false
+}

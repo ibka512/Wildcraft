@@ -1,0 +1,447 @@
+{
+  "asset": "F04-04",
+  "version": "v01",
+  "date": "2026-10-05",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "size": [
+    176,
+    166
+  ],
+  "units": "Minecraft logical GUI pixels",
+  "texture": "charger-ui-176x166.png",
+  "sourceLayers": 4,
+  "chargerSlotCount": 1,
+  "playerSlotCount": 36,
+  "slots": [
+    {
+      "id": 0,
+      "x": 26,
+      "y": 35,
+      "role": "battery"
+    },
+    {
+      "id": 1,
+      "x": 8,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 2,
+      "x": 26,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 3,
+      "x": 44,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 4,
+      "x": 62,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 5,
+      "x": 80,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 6,
+      "x": 98,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 7,
+      "x": 116,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 8,
+      "x": 134,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 9,
+      "x": 152,
+      "y": 84,
+      "role": "inventory"
+    },
+    {
+      "id": 10,
+      "x": 8,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 11,
+      "x": 26,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 12,
+      "x": 44,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 13,
+      "x": 62,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 14,
+      "x": 80,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 15,
+      "x": 98,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 16,
+      "x": 116,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 17,
+      "x": 134,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 18,
+      "x": 152,
+      "y": 102,
+      "role": "inventory"
+    },
+    {
+      "id": 19,
+      "x": 8,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 20,
+      "x": 26,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 21,
+      "x": 44,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 22,
+      "x": 62,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 23,
+      "x": 80,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 24,
+      "x": 98,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 25,
+      "x": 116,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 26,
+      "x": 134,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 27,
+      "x": 152,
+      "y": 120,
+      "role": "inventory"
+    },
+    {
+      "id": 28,
+      "x": 8,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 29,
+      "x": 26,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 30,
+      "x": 44,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 31,
+      "x": 62,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 32,
+      "x": 80,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 33,
+      "x": 98,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 34,
+      "x": 116,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 35,
+      "x": 134,
+      "y": 142,
+      "role": "hotbar"
+    },
+    {
+      "id": 36,
+      "x": 152,
+      "y": 142,
+      "role": "hotbar"
+    }
+  ],
+  "states": [
+    {
+      "id": 0,
+      "key": "empty",
+      "zh": "放入有限电池",
+      "en": "Insert a battery",
+      "color": "#637066",
+      "helpZh": "放入有限电池；充电槽为空，不表示电池电量为零。",
+      "helpEn": "Insert a finite battery. An empty slot is different from a battery with no charge."
+    },
+    {
+      "id": 1,
+      "key": "missing_source",
+      "zh": "缺少固定红石源",
+      "en": "No redstone source",
+      "color": "#805014",
+      "helpZh": "充电器需要紧邻已放置的红石块，任一相邻方向均可。手持红石块和红石信号不能供电。",
+      "helpEn": "Place a fixed redstone block beside the charger, on any of its six adjacent sides. Held blocks and redstone signals do not supply energy."
+    },
+    {
+      "id": 2,
+      "key": "charging",
+      "zh": "充电中",
+      "en": "Charging",
+      "color": "#354438",
+      "helpZh": "正在从相邻红石块获得供电，数字显示电池当前余量。",
+      "helpEn": "Receiving supply from an adjacent redstone block. The number shows the battery’s current charge."
+    },
+    {
+      "id": 3,
+      "key": "full",
+      "zh": "电量已满",
+      "en": "Fully charged",
+      "color": "#354438",
+      "helpZh": "电池余量为1000，可以取走使用；无电源时仍保持满电状态。",
+      "helpEn": "The battery holds 1000 units and is ready to use. A full battery stays full without a source."
+    },
+    {
+      "id": 4,
+      "key": "waiting",
+      "zh": "等待共享供电",
+      "en": "Waiting for supply",
+      "color": "#805014",
+      "helpZh": "红石源存在，正在等候共享供电。电池已有余量保留。",
+      "helpEn": "A redstone source is present. Waiting for its shared supply; the battery keeps its existing charge."
+    }
+  ],
+  "fixtures": {
+    "empty": {
+      "present": false,
+      "energy": 0,
+      "source": false,
+      "receiving": false
+    },
+    "missing_source": {
+      "present": true,
+      "energy": 500,
+      "source": false,
+      "receiving": false
+    },
+    "charging": {
+      "present": true,
+      "energy": 500,
+      "source": true,
+      "receiving": true
+    },
+    "full": {
+      "present": true,
+      "energy": 1000,
+      "source": false,
+      "receiving": false
+    },
+    "waiting": {
+      "present": true,
+      "energy": 500,
+      "source": true,
+      "receiving": false
+    }
+  },
+  "labels": {
+    "zh": {
+      "title": "充电器",
+      "battery": "电池",
+      "charge": "电量",
+      "inventory": "物品栏"
+    },
+    "en": {
+      "title": "Charger",
+      "battery": "Battery",
+      "charge": "Charge",
+      "inventory": "Inventory"
+    }
+  },
+  "rules": {
+    "size": [
+      176,
+      166
+    ],
+    "title": {
+      "x": 8,
+      "y": 7
+    },
+    "batteryLabel": {
+      "x": 14,
+      "y": 22
+    },
+    "chargeLabel": {
+      "x": 78,
+      "y": 22
+    },
+    "readout": {
+      "x": 54,
+      "y": 29,
+      "numberX": 74,
+      "numberY": 32,
+      "width": 114
+    },
+    "bar": {
+      "x": 55,
+      "y": 48,
+      "width": 105,
+      "height": 5
+    },
+    "status": {
+      "glyphX": 10,
+      "glyphY": 60,
+      "textX": 22,
+      "textY": 60,
+      "width": 146,
+      "hover": {
+        "x": 8,
+        "y": 57,
+        "w": 160,
+        "h": 14
+      }
+    },
+    "inventoryLabel": {
+      "x": 8,
+      "y": 72
+    },
+    "batterySlot": {
+      "x": 26,
+      "y": 35,
+      "w": 16,
+      "h": 16
+    },
+    "previousStatusAnchor": [
+      8,
+      64
+    ],
+    "statusMovedForInventoryClearance": true
+  },
+  "capacity": 1000,
+  "statusSource": "actual ChargerMenu.status(); deriveStatus only for review fixtures",
+  "energySource": "actual ChargerMenu.energy() and actual battery ItemStack",
+  "barFormula": "floor(105*E/1000)",
+  "barColor": "#608865",
+  "readout": "adopted F04-02 native16 mask + precise E / 1000",
+  "statusGlyph": "adopted F04-03 atlas crop [8*status,48,8,8]",
+  "layoutRefinement": {
+    "previousStatus": [
+      8,
+      64
+    ],
+    "currentStatusGlyph": [
+      10,
+      60
+    ],
+    "currentStatusText": [
+      22,
+      60
+    ],
+    "reason": "9px status text ends before original inventory label y72; dedicated strip y57..71",
+    "actualSlotsChanged": false,
+    "readoutChanged": false,
+    "barChanged": false
+  },
+  "tooltip": {
+    "battery": "original item title + exact charge + original battery help",
+    "status": "wrap complete short status explanation to viewport width; never clip critical source requirements",
+    "uiPreviewNotGameTooltip": true
+  },
+  "constraints": {
+    "newSlots": false,
+    "startButton": false,
+    "chargePauseButton": false,
+    "outputSlot": false,
+    "fuelSlot": false,
+    "newEnergyRule": false,
+    "sharedOutputLimitChanged": false,
+    "newPersistentHud": false,
+    "bakedText": false,
+    "bakedStates": false,
+    "bakedPercent": false
+  },
+  "reuse": {
+    "runtimePanelTextures": 1,
+    "runtimeStatePanelTextures": 0,
+    "approvedBatteryItem": "F04-01",
+    "approvedReadout": "F04-02",
+    "approvedGlyphAtlas": "F04-03",
+    "newShaderCount": 0
+  },
+  "fontValidation": "browser approximate; actual Minecraft font and tooltip need runtime verification",
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

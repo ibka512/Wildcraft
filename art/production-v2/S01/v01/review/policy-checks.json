@@ -1,0 +1,112 @@
+{
+  "allPassed": true,
+  "cases": 26,
+  "checks": [
+    {
+      "name": "unconfirmed transaction rejected",
+      "passed": true
+    },
+    {
+      "name": "confirmed first operation accepted",
+      "passed": true
+    },
+    {
+      "name": "duplicate packet cannot replay even after original voice ended",
+      "passed": true
+    },
+    {
+      "name": "different dimension uses different source identity",
+      "passed": true
+    },
+    {
+      "name": "reset on reconnect permits future operations",
+      "passed": true
+    },
+    {
+      "name": "reject distance -1",
+      "passed": true
+    },
+    {
+      "name": "reject distance 10",
+      "passed": true
+    },
+    {
+      "name": "reject distance 11",
+      "passed": true
+    },
+    {
+      "name": "reject distance NaN",
+      "passed": true
+    },
+    {
+      "name": "reject distance Infinity",
+      "passed": true
+    },
+    {
+      "name": "distance falloff is actual volume times linear factor",
+      "passed": true
+    },
+    {
+      "name": "two identical nearby machine starts maximum",
+      "passed": true
+    },
+    {
+      "name": "six mixed voices maximum and low priority dropped",
+      "passed": true
+    },
+    {
+      "name": "priority completion replaces oldest low priority",
+      "passed": true
+    },
+    {
+      "name": "one source cannot layer equal priority operations",
+      "passed": true
+    },
+    {
+      "name": "manual success replaces background on same source",
+      "passed": true
+    },
+    {
+      "name": "low priority cannot replace high priority same source",
+      "passed": true
+    },
+    {
+      "name": "finished voice expires before new operation",
+      "passed": true
+    },
+    {
+      "name": "cooldown applies after very short sound ends",
+      "passed": true
+    },
+    {
+      "name": "cooldown permits later fresh operation",
+      "passed": true
+    },
+    {
+      "name": "mechanical cooldown can be set to 600ms",
+      "passed": true
+    },
+    {
+      "name": "source removal stops only that source",
+      "passed": true
+    },
+    {
+      "name": "dedup memory bounded at 256 keys under burst",
+      "passed": true
+    },
+    {
+      "name": "dedup keys expire after 5s",
+      "passed": true
+    },
+    {
+      "name": "reset clears pending voices and memory",
+      "passed": true
+    },
+    {
+      "name": "eight mixed events retain manual and complete over starts",
+      "passed": true
+    }
+  ],
+  "gameRuntimeVerified": false,
+  "scope": "art review admission policy; no Minecraft event integration or debounce implementation"
+}

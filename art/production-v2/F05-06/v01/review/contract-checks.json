@@ -1,0 +1,12 @@
+{
+  "asset": "F05-06",
+  "allPassed": true,
+  "cooldownGhostActiveCases": 164,
+  "webMeshVertexChecks": 1039104,
+  "exactThirtyThirtyOneBoundary": true,
+  "activeDoesNotDrivePose": true,
+  "ghostAlwaysCompressed": true,
+  "armedNotInferred": true,
+  "constantScaleReviewBounds": true,
+  "gameIntegrated": false
+}

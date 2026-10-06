@@ -1,0 +1,229 @@
+{
+  "asset": "F05-01",
+  "allPassed": true,
+  "sourceReopened": true,
+  "productionCuboids": 68,
+  "bodyAndControl": 20,
+  "nodeCuboids": 48,
+  "referenceBatteryCuboids": 16,
+  "dynamicWindowPlanes": 3,
+  "packedAtlas": [
+    64,
+    64
+  ],
+  "noEmission": true,
+  "nodeChargeCases": [
+    {
+      "node": 0,
+      "energy": 0,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 0,
+      "energy": 1,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 0,
+      "energy": 500,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 0,
+      "energy": 999,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 0,
+      "energy": 1000,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 1,
+      "energy": 0,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 1,
+      "energy": 1,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 1,
+      "energy": 500,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 1,
+      "energy": 999,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 1,
+      "energy": 1000,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 2,
+      "energy": 0,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 2,
+      "energy": 1,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 2,
+      "energy": 500,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 2,
+      "energy": 999,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 2,
+      "energy": 1000,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 3,
+      "energy": 0,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 3,
+      "energy": 1,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 3,
+      "energy": 500,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 3,
+      "energy": 999,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 3,
+      "energy": 1000,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 4,
+      "energy": 0,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 4,
+      "energy": 1,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 4,
+      "energy": 500,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 4,
+      "energy": 999,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 4,
+      "energy": 1000,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 5,
+      "energy": 0,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 5,
+      "energy": 1,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 5,
+      "energy": 500,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 5,
+      "energy": 999,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    },
+    {
+      "node": 5,
+      "energy": 1000,
+      "orientationCorrect": true,
+      "scale": 1,
+      "windowFractionsCorrect": true
+    }
+  ],
+  "fullSixMountRuntimeFitTested": false,
+  "gameIntegrated": false
+}

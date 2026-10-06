@@ -35,7 +35,13 @@ public final class FusionMultiplayerProbe {
             if(!prepared){
                 prepared=true;
                 for(int x=-5;x<=5;x++)for(int z=-5;z<=5;z++)for(int y=119;y<=124;y++)level.setBlock(new BlockPos(x,y,z),y==119?Blocks.STONE.defaultBlockState():Blocks.AIR.defaultBlockState(),3);
+                level.getEntitiesOfClass(net.minecraft.world.entity.npc.villager.Villager.class,AREA).forEach(net.minecraft.world.entity.Entity::discard);
                 var target=net.minecraft.world.entity.EntityTypes.VILLAGER.create(level,net.minecraft.world.entity.EntitySpawnReason.COMMAND);target.setNoAi(true);target.setPos(.5,120,2.5);level.addFreshEntity(target);
+                // Real chunk packets expose only adopted world-art state, never block inventories.
+                var chargerPos=new BlockPos(-3,120,0);level.setBlockAndUpdate(chargerPos,dev.wildcraft.energy.EnergyContent.CHARGER.defaultBlockState());
+                var charger=(dev.wildcraft.energy.ChargerEntity)level.getBlockEntity(chargerPos);var battery=new ItemStack(dev.wildcraft.energy.EnergyContent.BATTERY);dev.wildcraft.energy.Batteries.charge(battery,333);charger.setItem(0,battery);
+                var fabPos=new BlockPos(-3,120,2);level.setBlockAndUpdate(fabPos,dev.wildcraft.fabrication.FabricationContent.BLOCK.defaultBlockState());
+                ((dev.wildcraft.fabrication.FabricatorEntity)level.getBlockEntity(fabPos)).setItem(2,new ItemStack(Items.DIAMOND));
             }
             p.setGameMode(GameType.SURVIVAL);p.setHealth(20);p.getInventory().clearContent();p.teleportTo(level,p.getGameProfile().name().equals("WCActor")?.5:3.5,120,.5,Set.of(),0,0,false);
             if(p.getGameProfile().name().equals("WCActor")){

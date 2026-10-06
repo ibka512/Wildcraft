@@ -1,0 +1,92 @@
+[
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F06-01/v01/exports/fabricator-atlas-64.png",
+    "copy": "references/fabricator-atlas-64.png",
+    "sha256": "37e0f8b3d2d120ae5977e9e667637297729f07e9d1798ef23e51f8814f798ec3",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F06-01/v01/review/fabricator-state-0.png",
+    "copy": "references/fabricator-state-0.png",
+    "sha256": "933733ff6d5b12c37dc198376d62cd19a0ebaf07b79da733cb08c2514a26f233",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F06-01/v01/adoption.json",
+    "copy": "references/adoption.json",
+    "sha256": "b919fa1c27ea7aaa88c3cbe99eddab3fa0e8a94d219ac877b4e9afe729167ae7",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-03/v01/exports/charger-atlas-64.png",
+    "copy": "references/charger-atlas-64.png",
+    "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-04/v01/source/create-ui.py",
+    "copy": "references/adopted-charger-create-ui.py",
+    "sha256": "97e3b0b4ded9571d814950fb689b436f70ace0a938fbbeeeec1301b880afccb6",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-04/v01/exports/charger-ui-176x166.png",
+    "copy": "references/charger-ui-176x166.png",
+    "sha256": "9371d9d8df8af68ab052fb4b865117312865531c8b2d4958bbddd9e0f14db351",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-02/v01/exports/wing-item-16.png",
+    "copy": "references/wing-item-16.png",
+    "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F04-01/v01/exports/battery-item-16.png",
+    "copy": "references/battery-item-16.png",
+    "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/docs/P8-SPEC.md",
+    "copy": "references/P8-SPEC.md",
+    "sha256": "551a895f637407970a8409779a3a7cdf86cbdb16281496350c7abc3805a9c98b",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricatorEntity.java",
+    "copy": "references/FabricatorEntity.java",
+    "sha256": "98c93898dbdee806475ef7ec379f24cfc3752a1394dd437c79e7aaacefd5cdd4",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricatorMenu.java",
+    "copy": "references/FabricatorMenu.java",
+    "sha256": "633ed16c28bdaa0211f89e670139f7c2394346a7dd55c3dd250075ce19e47f8e",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/java/dev/wildcraft/fabrication/FabricationPool.java",
+    "copy": "references/FabricationPool.java",
+    "sha256": "c018c056b0619a4dd455c96634a866f98f83118948052c6f251d1a050c2e35bf",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/client/java/dev/wildcraft/client/fabrication/FabricatorScreen.java",
+    "copy": "references/FabricatorScreen.java",
+    "sha256": "e57175fef3559d4f0985f78041d8dc0980b5fa1a88f1ae5f1d635e474f967eb8",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/lang/zh_cn.json",
+    "copy": "references/zh_cn.json",
+    "sha256": "72c6941cfe83c5f52df8946271d6cb2c23b4b018242d081f4cc1463ec45dac30",
+    "changed": false
+  },
+  {
+    "source": "/Volumes/仕事/Wildcraft/开发环境/project/src/main/generated/assets/wildcraft/lang/en_us.json",
+    "copy": "references/en_us.json",
+    "sha256": "959459db08fd520642b93735cf36eff857170446ca0af78f809b738b3211fe83",
+    "changed": false
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "asset": "A09-C",
+  "allPassed": true,
+  "zipBytes": 1110964,
+  "zipSha256": "3bcd267e8b2833385df5efd537a4f29deccee28b2c37c2cf851d425f14ba5c6b",
+  "manifestSha256": "012cc75424ceb606230cfe5601893141edc886c5f5f904841f4dd0dabf1583d0",
+  "zipEntries": 34,
+  "zipCRCAndFileHashesVerified": true
+}

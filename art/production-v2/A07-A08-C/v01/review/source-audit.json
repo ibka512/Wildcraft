@@ -1,0 +1,34 @@
+{
+  "observed": [
+    {
+      "variant": "standard",
+      "clip": "release",
+      "largestRawEulerStepDegrees": 352.9706496903437,
+      "betweenFrameIndices": [
+        4,
+        5
+      ],
+      "limb": 1,
+      "axis": 3,
+      "runtimeWindowFrames": 6,
+      "sourceLastFrameIndex": 18
+    },
+    {
+      "variant": "slim",
+      "clip": "release",
+      "largestRawEulerStepDegrees": 352.93741813822606,
+      "betweenFrameIndices": [
+        4,
+        5
+      ],
+      "limb": 1,
+      "axis": 3,
+      "runtimeWindowFrames": 6,
+      "sourceLastFrameIndex": 18
+    }
+  ],
+  "scope": "Local CharacterPoses and adopted bake inspection; not a fresh game capture",
+  "firstPersonUsesSteadyGrip": true,
+  "thirdPersonOpenSeconds": 0.3,
+  "noGameplayPatch": true
+}

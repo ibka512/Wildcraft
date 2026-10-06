@@ -1,0 +1,580 @@
+{
+  "allPassed": true,
+  "cases": 143,
+  "checks": [
+    {
+      "name": "background-identical:quiet:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:quiet:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:quiet:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:quiet:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:quiet:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:quiet:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:quiet:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:quiet:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:quiet:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:quiet:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:quiet:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:quiet:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:quiet:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:quiet:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:quiet:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:quiet:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:snow:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:snow:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:snow:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:snow:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:snow:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:snow:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:snow:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:snow:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:snow:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:snow:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:snow:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:snow:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:snow:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:snow:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:snow:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:snow:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:combat:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:combat:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:combat:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:combat:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:combat:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:combat:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:combat:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:combat:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:combat:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:combat:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:combat:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:combat:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:combat:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:combat:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:combat:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:combat:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:machines:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:machines:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:machines:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:machines:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:machines:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:machines:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:machines:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:machines:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:machines:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:machines:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:machines:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:machines:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:machines:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:machines:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:machines:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:machines:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:crowded:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:crowded:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:crowded:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:crowded:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:crowded:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:crowded:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:crowded:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:crowded:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:crowded:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:crowded:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:crowded:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:crowded:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:crowded:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:crowded:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:crowded:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:crowded:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain_combat:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain_combat:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain_combat:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain_combat:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain_combat:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain_combat:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain_combat:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain_combat:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain_combat:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain_combat:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain_combat:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain_combat:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rain_combat:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rain_combat:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rain_combat:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rain_combat:14",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rapid:0",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rapid:0",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rapid:0",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rapid:0",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rapid:2",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rapid:2",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rapid:2",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rapid:2",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rapid:8",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rapid:8",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rapid:8",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rapid:8",
+      "pass": true
+    },
+    {
+      "name": "background-identical:rapid:14",
+      "pass": true
+    },
+    {
+      "name": "focus-enter-same-exit-compensated:rapid:14",
+      "pass": true
+    },
+    {
+      "name": "s01-budget:rapid:14",
+      "pass": true
+    },
+    {
+      "name": "focus-only-cut:rapid:14",
+      "pass": true
+    },
+    {
+      "name": "crowded-eight-resolves-six",
+      "pass": true
+    },
+    {
+      "name": "distance14-no-s01-still-focus",
+      "pass": true
+    },
+    {
+      "name": "rapid-four-edges-not-five-samples",
+      "pass": true
+    },
+    {
+      "name": "zero-background-keeps-focus",
+      "pass": true
+    },
+    {
+      "name": "silent-paused",
+      "pass": true
+    },
+    {
+      "name": "no-replay-after-paused",
+      "pass": true
+    },
+    {
+      "name": "silent-menu",
+      "pass": true
+    },
+    {
+      "name": "no-replay-after-menu",
+      "pass": true
+    },
+    {
+      "name": "silent-alive",
+      "pass": true
+    },
+    {
+      "name": "no-replay-after-alive",
+      "pass": true
+    },
+    {
+      "name": "silent-connected",
+      "pass": true
+    },
+    {
+      "name": "first-confirmed-enter",
+      "pass": true
+    },
+    {
+      "name": "duplicate-no-replay",
+      "pass": true
+    },
+    {
+      "name": "exit-once",
+      "pass": true
+    },
+    {
+      "name": "reset-new-session-enter",
+      "pass": true
+    }
+  ],
+  "gameRuntimeVerified": false,
+  "scope": "Audition plans, adopted S01 budget and duplicate/silent focus edges; not a replacement runtime implementation"
+}

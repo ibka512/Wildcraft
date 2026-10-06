@@ -1,0 +1,14 @@
+{
+  "active": {
+    "documentId": 32,
+    "layerId": 33,
+    "frame": 0,
+    "celId": 34,
+    "focus": 1,
+    "tool": "pencil",
+    "foregroundColor": "rgb{255,255,255,255}",
+    "backgroundColor": "rgb{0,0,0,255}",
+    "selectedLayerIds": [],
+    "selectedFrames": []
+  }
+}

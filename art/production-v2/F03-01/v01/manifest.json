@@ -1,0 +1,480 @@
+{
+  "asset": "F03-01",
+  "version": "v01",
+  "created": "2026-10-06",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "gameRuntimeVerified": false,
+  "hostProfiles": 4,
+  "flightProfiles": 1,
+  "materialRepresentatives": [
+    "minecraft:stone",
+    "minecraft:diamond",
+    "minecraft:feather"
+  ],
+  "newProductionModels": 0,
+  "newProductionTextures": 0,
+  "newProductionIcons": 0,
+  "sharedConnectorModels": 0,
+  "blenderReferenceRenders": 28,
+  "guiReferencePNGs": 24,
+  "worldScalePolicy": "A09; sword/axe/shield back to held ratio 1.00",
+  "inputBasis": "actual native renderer bounds required on integration; reference mesh approximation",
+  "componentPolicy": "keep native layers/dye/shield patterns/glint; runtime unverified",
+  "nextAfterAdoption": "F03-02 融合标识与剩余次数提示",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2634,
+      "sha256": "e356fdbc6674abcac3e755e6c0cf92a72576fc0f0f38d6dbd83e4cf4a02c13c0"
+    },
+    {
+      "path": "adoption.json",
+      "bytes": 230,
+      "sha256": "e48e0325387b99cdf4097a9a4dbd675c144508057d63c07b38d9beaf734d2484"
+    },
+    {
+      "path": "brief.md",
+      "bytes": 1604,
+      "sha256": "f8f612190df026a11baa231db95ee22015aca2fec365e5b4c9bbc32cab3330ec"
+    },
+    {
+      "path": "exports/fuse-mount-layout.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "integration-map.md",
+      "bytes": 4343,
+      "sha256": "bd5195f0024785d818f7d80a3af5f2aa9c7b26ab1542cb781ccfde2755a7a939"
+    },
+    {
+      "path": "references/0083_p9-native-fused-hand.png",
+      "bytes": 128056,
+      "sha256": "8aaa9db6c572494bd0922997ded714e3882db24fd940a8bb591c50f15b8bb8ca"
+    },
+    {
+      "path": "references/0085_p9-native-fused-back.png",
+      "bytes": 199949,
+      "sha256": "f6d2b14b2909e249d1e902ae9d60eac3e68f756cb442e5f8fb8b2618636914d1"
+    },
+    {
+      "path": "references/0088_p9-native-fused-arrow-flight.png",
+      "bytes": 151667,
+      "sha256": "4a01543015fd7d63bd74fe60b544399013656bf46bb95c166fb5e2acc2dad69b"
+    },
+    {
+      "path": "references/BackEquipmentLayer.java",
+      "bytes": 4643,
+      "sha256": "382e050d9222490f59e10f6c71516ff1bc629a72f6e55ed2bc3c486e168d4088"
+    },
+    {
+      "path": "references/FusionArrowRenderer.java",
+      "bytes": 1897,
+      "sha256": "82a1509a38331164886290d5f678cd08a5805f9bc2365b3d06ba8cb6a210fe0b"
+    },
+    {
+      "path": "references/FusionItemRenderer.java",
+      "bytes": 2867,
+      "sha256": "42860d16033d8f5f3e12b38595966fd347204269ef3664fbf36ece393972c1f2"
+    },
+    {
+      "path": "references/FusionPresentation.java",
+      "bytes": 2044,
+      "sha256": "cd1641b77377c3c45ab1a8bf7c51befd6dcff0142d0a11a7ac7601acd8d1d14b"
+    },
+    {
+      "path": "references/FusionRules.java",
+      "bytes": 812,
+      "sha256": "94256d379370359a1da2a4e5c616f266f09ae57561a9c9d2ba34233ad54b84ae"
+    },
+    {
+      "path": "references/FusionVisual.java",
+      "bytes": 1225,
+      "sha256": "49a0115bb602b42b1b59beda538a83674016ca0a7b7ee16ab9ab46ee992fb54c"
+    },
+    {
+      "path": "references/P9-SPEC.md",
+      "bytes": 3040,
+      "sha256": "b0bd38f7d4236594a25a6e1354c4e545bbbe22775c586f664f11630616129033"
+    },
+    {
+      "path": "references/P9.1-SPEC.md",
+      "bytes": 1024,
+      "sha256": "c3872f82aa054d24fcd8c65a41424a3ca0c82838364e9ea077ce6aab70acd1b9"
+    },
+    {
+      "path": "references/adopted-back-layout.json",
+      "bytes": 5755,
+      "sha256": "c18f275e9cc7dac533ec9d1436eb9ef04996f5402a682749cb034d7e64105104"
+    },
+    {
+      "path": "references/adopted-back-reference.blend",
+      "bytes": 291480,
+      "sha256": "bbb8981f581747cc4b1104857061a956c008aa610547aa0f7fd35e012f4037e4"
+    },
+    {
+      "path": "references/code-baseline.json",
+      "bytes": 1403,
+      "sha256": "385456363126b22a9248b3142b356e54d030fc0812ac4f266bdbcbe9454ec08d"
+    },
+    {
+      "path": "references/native-color-reference.json",
+      "bytes": 25629,
+      "sha256": "048c7591673ce4137215d09ec27d672c072b0cdcdfc439cda0ef62f59f6c1faa"
+    },
+    {
+      "path": "references/native-input-hashes.json",
+      "bytes": 1169,
+      "sha256": "bd38f41b9711eb770c542d919436675edf3bdb821ad20a2fd9c1aef0dbf659b4"
+    },
+    {
+      "path": "references/provenance.json",
+      "bytes": 3704,
+      "sha256": "dcbbc6972ced29aa597287464f07747a5b9ac201a72f477bc8500dabb6611b71"
+    },
+    {
+      "path": "review/arrow-diamond-front.png",
+      "bytes": 281964,
+      "sha256": "62a6d0c70858f9f54bd1b6d6ee8f0f33bdd35841e2642fcd5abd92e90aae39d9"
+    },
+    {
+      "path": "review/arrow-diamond-gui-16.png",
+      "bytes": 257,
+      "sha256": "110bcbaa01cf50873ebcebcb44df7100bdb278baffd1977c9300b58325c9c480"
+    },
+    {
+      "path": "review/arrow-diamond-gui-32.png",
+      "bytes": 385,
+      "sha256": "7b3eb167a1a7a6e3961e7aa6b274dc2e6418d47104d203c11ad03f1db926687f"
+    },
+    {
+      "path": "review/arrow-feather-front.png",
+      "bytes": 280511,
+      "sha256": "2ba5d378b1c218d18a0c260217308ab184cd6c6dba746bfc9deff605e6e6a652"
+    },
+    {
+      "path": "review/arrow-feather-gui-16.png",
+      "bytes": 253,
+      "sha256": "eb129b49395466aab794bf2c79bc81c7652c7617a4e62a47238fdd5ea71b37ed"
+    },
+    {
+      "path": "review/arrow-feather-gui-32.png",
+      "bytes": 384,
+      "sha256": "65d47c4d6979585e6c5c4b0a13180c1c7d473efda663cb0475df4e51f1b9fb29"
+    },
+    {
+      "path": "review/arrow-ground.png",
+      "bytes": 279063,
+      "sha256": "50da131cc0acb2db7f26b30e1afb6d44fe705ee9102a87fe3815e94657e45209"
+    },
+    {
+      "path": "review/arrow-stone-front.png",
+      "bytes": 279146,
+      "sha256": "46625882063f3d78f1fb12a75714202356f33d079612e3ec16973339baa73955"
+    },
+    {
+      "path": "review/arrow-stone-gui-16.png",
+      "bytes": 254,
+      "sha256": "ec46355a8e2f4ca6d4a8e812e060f54590f1f05ece26e10247092e8aa7e6ba2c"
+    },
+    {
+      "path": "review/arrow-stone-gui-32.png",
+      "bytes": 381,
+      "sha256": "23a783276909cc147296362632ad2a13bbcd19bcea6c554ebe043a0c05cb00fc"
+    },
+    {
+      "path": "review/arrow-stone-side.png",
+      "bytes": 282633,
+      "sha256": "a1e8fbb23bbef548411eeb035fa07feaf02f1799cbabf15bf2a8ddc597515a6a"
+    },
+    {
+      "path": "review/axe-diamond-front.png",
+      "bytes": 286659,
+      "sha256": "3018cca572ec16d936fae2ba005c9c6407027c51d32f90be3745df176b1a3ae4"
+    },
+    {
+      "path": "review/axe-diamond-gui-16.png",
+      "bytes": 272,
+      "sha256": "6c044291e717683e0d1a2a92dc7cc9f97b8bd69c0a97335ac634a5491f0b712d"
+    },
+    {
+      "path": "review/axe-diamond-gui-32.png",
+      "bytes": 480,
+      "sha256": "b0a9ef89a3c73c78d50f32b132c563f4963b1c78eac48f52026ac9b1f565b3fe"
+    },
+    {
+      "path": "review/axe-feather-front.png",
+      "bytes": 286747,
+      "sha256": "0a6bdf6838f5920420dd6277ef1074986da8a99f13b9bf07c630333998decafa"
+    },
+    {
+      "path": "review/axe-feather-gui-16.png",
+      "bytes": 261,
+      "sha256": "9f8c9c1171ca2106a4145be938b6069469dc67d7f7082d63247b2d36678ccbda"
+    },
+    {
+      "path": "review/axe-feather-gui-32.png",
+      "bytes": 456,
+      "sha256": "0900294d8225d6da4909b181067162ca77f19fafe78e89de96d38695d95eb9d5"
+    },
+    {
+      "path": "review/axe-ground.png",
+      "bytes": 282631,
+      "sha256": "bc842b316f431fc9ca62f002dc57e81bb313133cb4271f51e0c6710ea9845bab"
+    },
+    {
+      "path": "review/axe-held-back-pose.png",
+      "bytes": 291706,
+      "sha256": "9fffb3fd14d3ac5eaed5cbf2e9a92806744704d9b046189652a46b0f35bc93e2"
+    },
+    {
+      "path": "review/axe-stone-front.png",
+      "bytes": 283117,
+      "sha256": "81e9545f78fa3227d4eed4802728e3a6252f252980275073cdc4cec05428eb0e"
+    },
+    {
+      "path": "review/axe-stone-gui-16.png",
+      "bytes": 267,
+      "sha256": "d5d82f771fd077aaa9c194e8b75048ce7f7aea9ed23d08f55130d5f08c388bb6"
+    },
+    {
+      "path": "review/axe-stone-gui-32.png",
+      "bytes": 446,
+      "sha256": "092132730648ded8532a809836801b388dc4cbdff0102ddf5edccfc1a79aaea3"
+    },
+    {
+      "path": "review/axe-stone-side.png",
+      "bytes": 288987,
+      "sha256": "70142e994dc729e284e1849df78800c01c848a7cbdbee7f6b9e08a7fde06fe51"
+    },
+    {
+      "path": "review/browser-checks.json",
+      "bytes": 27334,
+      "sha256": "3fcd79a5b3343754d92d43f22d4c836152b5282e7ee6b62cecc172f2d8561053"
+    },
+    {
+      "path": "review/flight-diamond-front.png",
+      "bytes": 276032,
+      "sha256": "e49f152b02dc5ea02e312fcd332abf778ce0d454a36a58bf0459fa586f671e24"
+    },
+    {
+      "path": "review/flight-feather-front.png",
+      "bytes": 274365,
+      "sha256": "05a67a87dc6d8b2297d81a33e467b8e7c247a32882fa920e784330e5640c0e24"
+    },
+    {
+      "path": "review/flight-stone-front.png",
+      "bytes": 274344,
+      "sha256": "e89228334dc7d552af32ba6d668899b03462499f33463c5711305beb7df19e1a"
+    },
+    {
+      "path": "review/flight-stone-side.png",
+      "bytes": 279951,
+      "sha256": "3c0feb3187a05b2374d7d619c880ca3508489e6b1b1a76112c74f75e83fb67ce"
+    },
+    {
+      "path": "review/fuse-mount-review.png",
+      "bytes": 671700,
+      "sha256": "884752ba1ab8be337eb159cfdd5275bebf78d3eced4aa0b875ae3398092e6d33"
+    },
+    {
+      "path": "review/geometry-checks.json",
+      "bytes": 5640,
+      "sha256": "041a763a811b67687946c29498111cf495f58a8803719e12b4ef075f1363d0e5"
+    },
+    {
+      "path": "review/hand-back-same-scale.png",
+      "bytes": 294369,
+      "sha256": "044844defbb3f429eb7c6c0b1111f9102db12822776d8c3670bba0c155d4f331"
+    },
+    {
+      "path": "review/live-sword-stone.png",
+      "bytes": 14639,
+      "sha256": "8df556afcb69c1447c272c5cfc8b3bd7e61e4f14fa9d2137f7f89515f73631fe"
+    },
+    {
+      "path": "review/package-checks.json",
+      "bytes": 649,
+      "sha256": "90185f95a20b5cbad6468673f097282df035165a867b17827ff0b346ef7bb8d1"
+    },
+    {
+      "path": "review/placement-audit.json",
+      "bytes": 6040,
+      "sha256": "e8821df438f29e9d2621fcfcef0ac3270d44d227474dc78bdb7155c03db12feb"
+    },
+    {
+      "path": "review/preview.html",
+      "bytes": 11598735,
+      "sha256": "41615710328aa3cabe383dc078b6560d830e84999e3e3131a18a1b491566e86c"
+    },
+    {
+      "path": "review/shield-diamond-front.png",
+      "bytes": 312877,
+      "sha256": "c49da98911416850b605d692d84f8a1e1d1fce5fcb33fe002ee4e6e15029d359"
+    },
+    {
+      "path": "review/shield-diamond-gui-16.png",
+      "bytes": 307,
+      "sha256": "9c66d7ecf6304be0a34a3605bd4da26135f4b73264068429a12c024e5a46d310"
+    },
+    {
+      "path": "review/shield-diamond-gui-32.png",
+      "bytes": 594,
+      "sha256": "3e064ce4d208c46af05ea4a67a28cbbcdacf2f352ee988a61656a2a6919dbd3f"
+    },
+    {
+      "path": "review/shield-feather-front.png",
+      "bytes": 311867,
+      "sha256": "42b1acc3cb6e7a728eb7a78c3f66a673b8eb23f6afcf99bd5dc12d42e698a5d0"
+    },
+    {
+      "path": "review/shield-feather-gui-16.png",
+      "bytes": 308,
+      "sha256": "2a051a18b6d5bc5ec467f672dde6e74072cdb318727950ef35d8b9d501385eec"
+    },
+    {
+      "path": "review/shield-feather-gui-32.png",
+      "bytes": 593,
+      "sha256": "46653906b7b508f1bf2bd172bbc055fc9dbb3b7642a09532db9fcf8f893ba4d7"
+    },
+    {
+      "path": "review/shield-ground.png",
+      "bytes": 278898,
+      "sha256": "6e8b4c96a7d8499850026d36f5ec0ed4e2b8213a635aaa4fdd74dfc0ee6124e2"
+    },
+    {
+      "path": "review/shield-held-back-pose.png",
+      "bytes": 293826,
+      "sha256": "69a4872da17d08db95e2c89614754fb84d36b0257b9a51fdc985d14e282773e7"
+    },
+    {
+      "path": "review/shield-stone-front.png",
+      "bytes": 310520,
+      "sha256": "8561093ccf5b351ded44422d6a95a6f1b2f7a9b9bcbf4b4f642ff6e54229f348"
+    },
+    {
+      "path": "review/shield-stone-gui-16.png",
+      "bytes": 312,
+      "sha256": "6d07029c61acc5a869945b482547dbcb27e34e6a87b5f4f87b7c357e09498959"
+    },
+    {
+      "path": "review/shield-stone-gui-32.png",
+      "bytes": 599,
+      "sha256": "dfd1cee29468b018ccc134c512518a07770693e95d1cafaadef058866ca610de"
+    },
+    {
+      "path": "review/shield-stone-side.png",
+      "bytes": 307621,
+      "sha256": "4531ce2a29293218dee24eb46fc7f6fa2d33b8ffcb0512cdc256cb69a460b1e9"
+    },
+    {
+      "path": "review/sword-diamond-front.png",
+      "bytes": 293101,
+      "sha256": "774564c85b795bc48c10bf6ba727110f5783010fcf7b79acf61318f109042c70"
+    },
+    {
+      "path": "review/sword-diamond-gui-16.png",
+      "bytes": 323,
+      "sha256": "44a6e2585c519c03e442b767615ed448aff47694e964887f134d7dd1c25d54ea"
+    },
+    {
+      "path": "review/sword-diamond-gui-32.png",
+      "bytes": 550,
+      "sha256": "fa7389f7630fccbcc9841338287b15bb3c4048adefda386e61d110f41115c320"
+    },
+    {
+      "path": "review/sword-feather-front.png",
+      "bytes": 293289,
+      "sha256": "67b01a023d2640a7f179a892e5572469cee366e91ba66396a22c25c8e9d9001e"
+    },
+    {
+      "path": "review/sword-feather-gui-16.png",
+      "bytes": 318,
+      "sha256": "7f07a9e61516b8c22437c5a27d9aebd3c256bdca85d8dba3c0968e2705ca90bc"
+    },
+    {
+      "path": "review/sword-feather-gui-32.png",
+      "bytes": 524,
+      "sha256": "afd915f3479cb577c35a1d872fa40a66e9a0c3631c39c27c475151fa84e13e24"
+    },
+    {
+      "path": "review/sword-ground.png",
+      "bytes": 288418,
+      "sha256": "f52750c67a4dd1b169e47afa6e705a866fe2c5751c983f1607ae7246401f0d73"
+    },
+    {
+      "path": "review/sword-held-back-pose.png",
+      "bytes": 292423,
+      "sha256": "4c5d9822b3b35463ee5f6975b3baaa8e8bbb37d4ffa165ad2714ecaca83498bf"
+    },
+    {
+      "path": "review/sword-stone-front.png",
+      "bytes": 289129,
+      "sha256": "c2449e23816bda571771f31ee3a57a08fa4e21e5a0bb34ef3e27a4711f115c41"
+    },
+    {
+      "path": "review/sword-stone-gui-16.png",
+      "bytes": 321,
+      "sha256": "7337c61e8a8435d7dc86ccc0dc75d45921c100abc32ad3104556616209b8aab6"
+    },
+    {
+      "path": "review/sword-stone-gui-32.png",
+      "bytes": 532,
+      "sha256": "81f581bb4c9bf54a2c7751815d2b338a6a5db6ecf5e9d59b5c9786d599a5d937"
+    },
+    {
+      "path": "review/sword-stone-side.png",
+      "bytes": 295214,
+      "sha256": "eebde1fe6a7d93d4d46e375521826e87cf3bbf556e4215c9a4fbad3e2ee633a9"
+    },
+    {
+      "path": "source/build-reference.py",
+      "bytes": 14364,
+      "sha256": "e3209423686459b7b24a11a273ff93761f8b09146815d573d5c7ce2a13f68789"
+    },
+    {
+      "path": "source/fuse-mount-review-v01.blend",
+      "bytes": 425088,
+      "sha256": "ef475779892ce552d9dcd8d5d78bea3f4ede105aefa1b78f1c61b1b0844bb39f"
+    },
+    {
+      "path": "source/fuse-review.js",
+      "bytes": 5657,
+      "sha256": "ce575ba3a24bb78c981289700afc791196912f166ae7cb0bfe392420a0487bf4"
+    },
+    {
+      "path": "source/mount-spec.json",
+      "bytes": 4372,
+      "sha256": "dad7dafae597a27580e4a61647abf83f673fe99b1708fe7a6d6119b306b07a6a"
+    },
+    {
+      "path": "source/read-native-reference.py",
+      "bytes": 979,
+      "sha256": "b72a683392e41cda8b8c1894190b205bf5d35d8dae2661656d035c9db5dda816"
+    },
+    {
+      "path": "source/reference-meshes.json",
+      "bytes": 786336,
+      "sha256": "5e17dc793ba0e7035342a67093db2e339fd4e6677389e6c10b7e0c6bc3f11e44"
+    },
+    {
+      "path": "source/render-preview.py",
+      "bytes": 13050,
+      "sha256": "34bea7b6cf32cde91fb600edb1216b13cee2e64a700cd5c3df2c63dc770c782a"
+    },
+    {
+      "path": "source/verify-reference.py",
+      "bytes": 2946,
+      "sha256": "c7ea69b07db1789bbfde3c30310f967d3328d8ee54607de1c124259d0d5fcc26"
+    },
+    {
+      "path": "verification.md",
+      "bytes": 1968,
+      "sha256": "1cc19e5eb1ab0a844347e7499435331890d15b5f9d14a05c917bc03dacc54dc5"
+    }
+  ],
+  "adopted_date": "2026-10-06",
+  "evidence": "用户：采用，开始下一项"
+}
