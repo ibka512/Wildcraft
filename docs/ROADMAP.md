@@ -1,13 +1,13 @@
 # Wildcraft 开发路线（规划 v2）
 
-> 本机dev.18完成品牌双版本接入，公开交接仍dev.17；不改变单人开发方向，见[品牌验证](BRAND-ICONS-VERIFICATION.md)。
+> dev.18完成品牌双版本接入，当前公开交接为dev.18；不改变单人开发方向，见[品牌验证](BRAND-ICONS-VERIFICATION.md)。
 
 
 更新：2026-10-06。最新执行顺序、阶段验收和第一批任务见 [后续开发计划](NEXT-DEVELOPMENT-PLAN.md)；完整设计背景见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。本页为执行索引，旧路线保存在 [历史快照](ROADMAP-before-plan-v2.md)。
 
 ## 当前基线
 
-P0、R0、P1、P2、P3、P3.1 与 P3.2 已完成本机验收；R1 已完成隔离实验，见 [研究结论](R1-FINDINGS.md)。当前公开开发交接版本为 `0.1.0-dev.17`，第二批29项采用美术已接入，P4A环境温度、P4B料理、P5能源与P6/P7机械及P8制造机/P9正式Fuse已完成；P10风天气与P10.2取得入口/单人显示收尾已验收；公开交接为handoff-dev17-2026-10-06，历史包保留。P3.1 交付三类背负和左上角红心/精力，见 [本阶段验证](P3.1-VERIFICATION.md)。保留 Minecraft 26.3 / Fabric / JDK 25 / macOS 开发环境。单人林克时间见 [P3.2 规格](P3.2-SPEC.md) 与 [验证](P3.2-VERIFICATION.md)；温度规则见 [P4A 规格](P4A-SPEC.md)，验收见 [P4A 验证](P4A-VERIFICATION.md)。
+P0、R0、P1、P2、P3、P3.1 与 P3.2 已完成本机验收；R1 已完成隔离实验，见 [研究结论](R1-FINDINGS.md)。当前公开开发交接版本为 `0.1.0-dev.18`，第二批29项采用美术已接入，P4A环境温度、P4B料理、P5能源与P6/P7机械及P8制造机/P9正式Fuse已完成；P10风天气与P10.2取得入口/单人显示收尾已验收；公开交接为handoff-dev18-2026-10-06，历史包保留。P3.1 交付三类背负和左上角红心/精力，见 [本阶段验证](P3.1-VERIFICATION.md)。保留 Minecraft 26.3 / Fabric / JDK 25 / macOS 开发环境。单人林克时间见 [P3.2 规格](P3.2-SPEC.md) 与 [验证](P3.2-VERIFICATION.md)；温度规则见 [P4A 规格](P4A-SPEC.md)，验收见 [P4A 验证](P4A-VERIFICATION.md)。
 
 ## 调整方向
 

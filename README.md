@@ -2,27 +2,27 @@
 
 <img src="art/brand-v2/A14/v02/exports/wildcraft-brand-detailed-512.png" width="280" alt="Wildcraft：滑翔伞与原版世界探索" />
 
-> 本机dev.18已接入新版品牌图标：精细版用于项目展示，简单版用于Mod与设置页。[品牌资产与导出](art/brand-v2/A14/v02/README.md)。公开GitHub与Release仍为下述dev.17；本次本机更新尚未上传，旧公开交接与校验保持不变。
+> dev.18已接入新版品牌图标：精细版用于项目展示，简单版用于Mod与设置页。[品牌资产与导出](art/brand-v2/A14/v02/README.md)。当前公开交接为 dev.18；dev.17 历史交接与校验继续保留。
 
-Wildcraft 是面向 **Minecraft Java Edition 的 Fabric Mod**，在原版世界中加入精力成长、攀爬、滑翔、单人林克时间、料理、Fuse 和有限能源机械。当前公开开发版本为 **0.1.0-dev.17 / Minecraft 26.3**，功能推进到 P10.2，开发重点是单人体验。
+Wildcraft 是面向 **Minecraft Java Edition 的 Fabric Mod**，在原版世界中加入精力成长、攀爬、滑翔、单人林克时间、料理、Fuse 和有限能源机械。当前公开开发版本为 **0.1.0-dev.18 / Minecraft 26.3**，功能推进到 P10.2，开发重点是单人体验。
 
 这是可运行的开发交接版。自动验证已覆盖主要玩法循环，人工长期生存、最终平衡和部分美术仍待完成；尚未标记为稳定版。
 
-[下载 dev.17](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev17-2026-10-06) · [AI 接手说明](docs/AI-HANDOFF.md) · [已采用美术台账](art/ADOPTED-ASSETS.md) · [下一步计划](docs/NEXT-DEVELOPMENT-PLAN.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
+[下载 dev.18](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev18-2026-10-06) · [AI 接手说明](docs/AI-HANDOFF.md) · [已采用美术台账](art/ADOPTED-ASSETS.md) · [下一步计划](docs/NEXT-DEVELOPMENT-PLAN.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
 
 ## 下载与安装
 
 1. 准备 Minecraft **26.3**、Java **25** 和 Fabric Loader **0.19.5**。
-2. 将 [Wildcraft dev.17 正式 JAR](https://github.com/ibka512/Wildcraft/releases/download/handoff-dev17-2026-10-06/wildcraft-0.1.0-dev.17%2Bmc26.3.jar) 与 Fabric API **0.161.0+26.3** 放入实例的 `mods/`。
+2. 将 [Wildcraft dev.18 正式 JAR](https://github.com/ibka512/Wildcraft/releases/download/handoff-dev18-2026-10-06/wildcraft-0.1.0-dev.18%2Bmc26.3.jar) 与 Fabric API **0.161.0+26.3** 放入实例的 `mods/`。
 3. 用独立测试世界游玩，升级前备份世界。`-sources.jar` 和 `-gametest.jar` 用于开发，不安装到游玩实例。
 
 正式 JAR SHA-256：
 
 ```text
-e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35
+daaa39c4395511671a8ae9d1dcb5f0eca0ea399fe2d9b0ce4ef1ff47f15a869c
 ```
 
-[交接 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev17-2026-10-06) 提供正式 JAR、源码 JAR、完整工程交接包、第二批原始采用交付，以及下载校验清单。完整工程含当前源码、测试、美术源稿、文档和历史开发证据；较大的第一批完整交付仍在 [dev.7 历史 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)，链接和用途见 [资产下载说明](docs/ASSET-DOWNLOADS.md)。
+[交接 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev18-2026-10-06) 提供正式 JAR、源码 JAR、完整工程交接包、品牌原图与导出包，以及下载校验清单。完整工程含当前源码、测试、美术源稿、文档和历史开发证据；较大的第一批完整交付仍在 [dev.7 历史 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)，链接和用途见 [资产下载说明](docs/ASSET-DOWNLOADS.md)。
 
 ## 已实现的玩法
 
@@ -41,7 +41,7 @@ e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35
 | Fuse | 主手宿主＋副手单件材料融合，拆分、次数、耐久、维修与保存；剑/斧/盾/箭及飞箭外观和有限特效。未知材料保留快照并通用回退，不承诺每个物品都有专属效果 |
 | 风与天气 | 有界自然水平风，当地雨雪、屋顶与水中修正；滑翔伞和离地机械翼响应。临时风提示已经可用，B6 正式美术待制作 |
 
-最新 dev.17 补齐配方书发现提示和料理锅指引，并修复弹簧与原版指南针配方冲突（原料成本不变）；侧装轮子已调整接地显示。详见 [P10.2 规格](docs/P10.2-SPEC.md) 和 [验收](docs/P10.2-VERIFICATION.md)。
+dev.17 补齐配方书发现提示和料理锅指引，并修复弹簧与原版指南针配方冲突（原料成本不变）；侧装轮子已调整接地显示。详见 [P10.2 规格](docs/P10.2-SPEC.md) 和 [验收](docs/P10.2-VERIFICATION.md)。
 
 | 默认操作 | 用途 |
 | --- | --- |
@@ -106,7 +106,9 @@ development-assets/   正式历史包、截图、日志与冻结校验
 
 ## 验证与当前限制
 
-最新 dev.17 在 macOS 的实际结果：**83 项服务端检查、21 类成品客户端回归通过**；另通过中英料理指引、实际 GUI 缩放 1/2/3、F1/暂停和无测试 Mod 独立服务端检查。原料合成→料理→攀爬/滑翔/射箭→Fuse→充电/驾驶→拆卸/制造→保存重开已走原生路径，完整证据见 [P10.2-VERIFICATION](docs/P10.2-VERIFICATION.md)。该场景提供原版原料并自动布置、定位，未覆盖从零采矿和人工长程生存。
+dev.18 品牌更新在 macOS 重新通过 **83 项服务端检查和一类核心美术客户端专项**，验证 Mod 图标、设置页原生 20px 图标和滑翔姿态；通过数据生成及构建。它没有重新运行 dev.17 的全部 21 类客户端回归。证据见 [品牌验收](docs/BRAND-ICONS-VERIFICATION.md)。
+
+dev.17 在 macOS 的历史验证结果：**83 项服务端检查、21 类成品客户端回归通过**；另通过中英料理指引、实际 GUI 缩放 1/2/3、F1/暂停和无测试 Mod 独立服务端检查。原料合成→料理→攀爬/滑翔/射箭→Fuse→充电/驾驶→拆卸/制造→保存重开已走原生路径，完整证据见 [P10.2-VERIFICATION](docs/P10.2-VERIFICATION.md)。该场景提供原版原料并自动布置、定位，未覆盖从零采矿和人工长程生存。
 
 ```sh
 python3 tools/verify-adopted-assets.py
@@ -124,7 +126,7 @@ GitHub [Actions](https://github.com/ibka512/Wildcraft/actions) 检查 Wrapper、
 
 接手顺序：[AGENTS](AGENTS.md) → [AI-HANDOFF](docs/AI-HANDOFF.md) → [下一阶段计划](docs/NEXT-DEVELOPMENT-PLAN.md) → 当前规格和验证。下一步先按 [人工试玩单](docs/SINGLEPLAYER-PLAYTEST.md) 记录真实单人生存，再根据 [数值基线](docs/SINGLEPLAYER-BALANCE.md) 定向调整；同步准备 B6 与机械底部美术，之后进行 P11 候选版检查。
 
-保留完整 Git 历史、dev.1–dev.17 游戏标签、旧包和研究资料。dev.17 游戏标签固定功能版本；`handoff-dev17-2026-10-06` 固定本次交接快照。公开记录见 [PUBLICATION](docs/PUBLICATION.md)，各阶段资产见 [development-assets](development-assets/README.md)。
+保留完整 Git 历史、dev.1–dev.18 游戏标签、旧包和研究资料。dev.18 游戏标签固定品牌更新版本；`handoff-dev18-2026-10-06` 固定本次交接快照。公开记录见 [PUBLICATION](docs/PUBLICATION.md)，各阶段资产见 [development-assets](development-assets/README.md)。
 
 继续排除究极手、时间倒流、大型 Boss、完整神庙、大型新维度、复杂剧情、大量新矿石/资源体系、小型世界事件、环境谜题和机械蓝图；超复杂机械物理暂缓。任意物品 Fuse 的专属外观、效果与第三方兼容继续作为研究方向。
 

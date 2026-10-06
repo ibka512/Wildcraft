@@ -11,7 +11,7 @@ A10,背负装备收取过渡,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A1
 A11,林克时间画面,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A11-林克时间画面-v1,art/approved-v1/SOURCE-MANIFEST.json,林克时间画面,
 A12,专注准星与低精力提示,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A12-专注准星与低精力提示-v1,art/approved-v1/SOURCE-MANIFEST.json,专注准星与低精力提示,
 A13,专注进入/退出音效,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A13-专注进入退出音效-v1,art/approved-v1/SOURCE-MANIFEST.json,专注进入/退出音效,dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留
-A14,模组品牌图标,core-v1,v02,True,True,0.1.0-dev.7,art/brand-v2/A14/v02,art/brand-v2/A14/v02/manifest.json,精细版用于README展示；简单128用于Mod、原生20用于设置页,本机dev.18；旧A14 v1原件保留；原图已采用，清理为授权范围派生整理
+A14,模组品牌图标,core-v1,v02,True,True,0.1.0-dev.7,art/brand-v2/A14/v02,art/brand-v2/A14/v02/manifest.json,精细版用于README展示；简单128用于Mod、原生20用于设置页,公开dev.18；旧A14 v1原件保留；原图已采用，清理为授权范围派生整理
 A15,表现设置页,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A15-表现设置页-v1,art/approved-v1/SOURCE-MANIFEST.json,表现设置页,
 A07-A08-C,探索动作衔接,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/A07-A08-C/v01,art/production-v2/A07-A08-C/v01/manifest.json,攀爬/滑翔短衔接、最短旋转路径、取用物品即时接管,
 A09-C,披风/鞘翅下侧腰装备,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/A09-C/v01,art/production-v2/A09-C/v01/manifest.json,披风/鞘翅下五类装备改放侧腰，真实归属立即生效,

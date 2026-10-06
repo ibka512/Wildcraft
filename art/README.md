@@ -1,9 +1,9 @@
 # Wildcraft 美术与可编辑资产
 
-> 本机dev.18已接入[A14品牌双版本](brand-v2/A14/v02/README.md)，核心采用编号仍14、总计43；精细展示与简单Mod/设置页分工，原A14 v1保留。
+> 当前公开dev.18已接入[A14品牌双版本](brand-v2/A14/v02/README.md)，核心采用编号仍14、总计43；精细展示与简单Mod/设置页分工，原A14 v1保留。
 
 
-2026-10-06，当前dev.17：核心14编号＋第二批29编号已采用且接入，统一状态见[ADOPTED-ASSETS](ADOPTED-ASSETS.md)、[CSV](ADOPTED-ASSETS.csv)、[JSON](ADOPTED-ASSETS.json)。
+2026-10-06，当前dev.18：核心14编号＋第二批29编号已采用且接入，统一状态见[ADOPTED-ASSETS](ADOPTED-ASSETS.md)、[CSV](ADOPTED-ASSETS.csv)、[JSON](ADOPTED-ASSETS.json)。
 
 | 目录 | 用途 |
 | --- | --- |

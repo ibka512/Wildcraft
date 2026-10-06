@@ -1,6 +1,6 @@
 # Wildcraft 已采用与已接入美术台账
 
-2026-10-06，当前本机开发版 **dev.18 / Minecraft 26.3**（公开交接仍dev.17）。核心14编号＋第二批29编号，共43项当前资产已采用且接入。第二批保留30份版本；F05-10当前v02，v01历史保留。
+2026-10-06，当前公开开发版 **dev.18 / Minecraft 26.3**（handoff-dev18-2026-10-06）。核心14编号＋第二批29编号，共43项当前资产已采用且接入。第二批保留30份版本；F05-10当前v02，v01历史保留。
 
 [CSV](ADOPTED-ASSETS.csv) · [JSON及运行文件校验](ADOPTED-ASSETS.json) · [下载原件与交接包](../docs/ASSET-DOWNLOADS.md)
 
@@ -61,7 +61,7 @@
 
 ## 验证、后续与原件保护
 
-- [核心接入](../docs/CORE-ART-INTEGRATION.md) / [核心验收](../docs/CORE-ART-VERIFICATION.md)；[第二批接入](../docs/SECOND-ART-INTEGRATION.md) / [第二批验收](../docs/SECOND-ART-VERIFICATION.md)；当前 [dev.17验收](../docs/P10.2-VERIFICATION.md)。
+- [核心接入](../docs/CORE-ART-INTEGRATION.md) / [核心验收](../docs/CORE-ART-VERIFICATION.md)；[第二批接入](../docs/SECOND-ART-INTEGRATION.md) / [第二批验收](../docs/SECOND-ART-VERIFICATION.md)；历史玩法 [dev.17验收](../docs/P10.2-VERIFICATION.md)。
 - 原稿、exports、references、review、adoption、manifest与17份历史审稿ZIP保持原字节。台账JSON关联来源清单和当前运行入口SHA-256；运行入口是便于定位的关键文件，完整运行资源仍以源码与导入工具为准。
 - A09-C、A07-A08-C、A13-C分别叠加侧腰布局、衔接和混音参数；不删除核心A07–A13原件。F03-04复用原版粒子，不将原版游戏文件当原创源资产分发。
 - dev.17仅调整侧装轮显示并修复弹簧配方，原美术未修改；底部部件仍可能穿地，见[机械修订](production-docs/P10.2-MECHANICAL-ART-REPAIR.md)。
@@ -69,3 +69,5 @@
 - 图形回归不替代人工长期生存、第三方模型兼容或最终混音听审；当前用户不考虑多人专项。
 
 在项目根运行`python3 tools/verify-adopted-assets.py`，校验43项当前状态、CSV/JSON一致性、原件和运行文件。更新玩法或资源后需按真实结果更新台账，不能自动重设历史原件校验。
+
+当前品牌接入与验收见 [dev.18品牌验证](../docs/BRAND-ICONS-VERIFICATION.md)，报告保留发布前状态；新版公开下载以 [ASSET-DOWNLOADS](../docs/ASSET-DOWNLOADS.md) 为准。

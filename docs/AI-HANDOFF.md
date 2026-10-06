@@ -1,9 +1,9 @@
 # Wildcraft AI 开发交接说明
 
-> 本机品牌dev.18已接入，公开main/Release仍dev.17。本批只改A14双版本、Mod128与设置页原生20、README展示，游戏规则/保存/依赖不变；入口见[品牌验证](BRAND-ICONS-VERIFICATION.md)。旧公开快照/标签/包不移动。
+> 品牌dev.18已接入并公开，main/Release交接标签为handoff-dev18-2026-10-06。本批只改A14双版本、Mod128与设置页原生20、README展示，游戏规则/保存/依赖不变；入口见[品牌验证](BRAND-ICONS-VERIFICATION.md)。旧公开快照/标签/包不移动。
 
 
-更新：2026-10-06。当前公开开发交接版 **0.1.0-dev.17 / Minecraft 26.3**，GitHub默认分支`main`，交接标签`handoff-dev17-2026-10-06`。游戏标签`v0.1.0-dev.17+mc26.3`固定P10.2功能提交`b92fe77`；本次只更新交接与资产台账，不改变正式JAR。P10.2单人取得入口、原生循环和显示收尾已完成，最终证据见[P10.2合同](P10.2-SPEC.md)/[验收](P10.2-VERIFICATION.md)。保留dev.16风天气、dev.15第二批29项美术和既有玩法；下一步人工单人生存、定向平衡与B6/机械底部美术。多人R2/P10.1暂缓。
+更新：2026-10-06。当前公开开发交接版 **0.1.0-dev.18 / Minecraft 26.3**，GitHub默认分支`main`，交接标签`handoff-dev18-2026-10-06`。游戏标签`v0.1.0-dev.18+mc26.3`固定品牌更新提交`d3a0033`；正式JAR已更新品牌图标，玩法和保存格式保持。P10.2单人取得入口、原生循环和显示收尾已完成，最终证据见[P10.2合同](P10.2-SPEC.md)/[验收](P10.2-VERIFICATION.md)。保留dev.16风天气、dev.15第二批29项美术和既有玩法；下一步人工单人生存、定向平衡与B6/机械底部美术。多人R2/P10.1暂缓。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -158,14 +158,14 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## 当前授权、版本与下一任务
 
-用户授权按推荐路线持续开发，当前先完成单人体验，不重复询问既有选择。本次明确授权上传GitHub、更新README/已采用资产/交接文档，范围为dev.17开发交接，不代表稳定发行或自动授权未来每次发布。新增生产依赖、真实数据迁移和破坏兼容仍需对应授权。任一有效Codex额度窗口剩余≤5%先保存停止，不自动消耗额度重置；重新读取工具，不使用历史数字。
+用户授权按推荐路线持续开发，当前先完成单人体验，不重复询问既有选择。本次明确授权上传GitHub、更新README/已采用资产/交接文档，2026-10-06再次明确“更新github”，范围为dev.18开发交接，不代表稳定发行或自动授权未来每次发布。新增生产依赖、真实数据迁移和破坏兼容仍需对应授权。任一有效Codex额度窗口剩余≤5%先保存停止，不自动消耗额度重置；重新读取工具，不使用历史数字。
 
 下一步按[NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md)：人工单人试玩及定向平衡、B6风提示与底部机械外形、之后P11候选检查。不能将测试布置场景写成人工从零生存，不继续R2/P10.1，不凭理论重调成长或电池。
 
 - 机械公共入口`mechanics/MachineEntity`、`MachineNodes`、`MechanicsContent`、`MachineBodyItem`、`MachineToggle`；客户端`MachineRenderer`/`MachinePresentation`。服务端重算眼睛命中，创造也真实转移一件；R请求只读取真实乘坐主体。主体格式1保存6个完整堆栈、所有者、开关及原版实体状态；跟踪视图只包含部件、电量、燃料、冷却与工作位。缺失目的区块不扣资源或推进冷却，主体仍为单碰撞盒。
 - 制造入口`fabrication/FabricatorEntity`、`FabricatorBlock`、`FabricatorItem`、`FabricatorMenu`；客户端`FabricatorScreen`。格式1保存3槽、已经决定的完整结果与进度；未完成结果不公开。原版Container和BlockEntityData须同时携带，创造放置也转移一件，不能引入复制或重抽。
 - Fuse正式系统在`fuse/`，保存和原子事务边界见[架构](ARCHITECTURE.md)、[P9](P9-SPEC.md)、[P9.1](P9.1-VERIFICATION.md)。原材料完整快照与有限次数保留；未知材料回退不等于任意第三方效果兼容。
-- 当前正式JAR为[dev.17](../development-assets/wildcraft-0.1.0-dev.17+mc26.3.jar)，SHA-256：`e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35`。旧包、历史标签与研究资料不覆盖。
+- 当前正式JAR为[dev.18](../development-assets/wildcraft-0.1.0-dev.18+mc26.3.jar)，SHA-256：`daaa39c4395511671a8ae9d1dcb5f0eca0ea399fe2d9b0ce4ef1ff47f15a869c`。旧包、历史标签与研究资料不覆盖。
 
 ## 第二批美术后续入口
 
@@ -197,6 +197,10 @@ P10.2已跑原生循环并记录费用，侧轮显示已修正；下一批仍需
 
 ## 公共下载与历史证据
 
-[ASSET-DOWNLOADS](ASSET-DOWNLOADS.md)列出当前工程与原始第二批ZIP，第一批完整交付继续从dev.7历史Release下载。根README、AGENTS和本文件是当前接手入口；旧设计、原稿和阶段报告保留历史身份。历史manifest中源码/文档哈希按对应游戏标签检验，不覆盖旧清单使它匹配新文档。当前全部公开文件快照见[dev.17清单](../development-assets/PUBLIC-ASSET-MANIFEST-dev17.json)，以交接标签为准。
+[ASSET-DOWNLOADS](ASSET-DOWNLOADS.md)列出当前工程与原始第二批ZIP，第一批完整交付继续从dev.7历史Release下载。根README、AGENTS和本文件是当前接手入口；旧设计、原稿和阶段报告保留历史身份。历史manifest中源码/文档哈希按对应游戏标签检验，不覆盖旧清单使它匹配新文档。当前全部公开文件快照见[dev.18清单](../development-assets/PUBLIC-ASSET-MANIFEST-dev18.json)，以交接标签为准。
 
 仓库保留所有权利，许可与NOTICE不变；不上传个人世界、账号、游戏/反编译源码、依赖缓存、协议接受文件、AppleDouble或编辑器运行配置。
+
+## dev.18 品牌更新与当前验收
+
+A14 当前 v02：精细版用于 README，简单版用于 Mod 128px 与设置页原生 20px。原始两张 PNG、清理派生、导出脚本和来源清单保留；总计仍 43 个采用编号。macOS 重新通过数据生成、构建、83 项服务端检查与一类核心美术客户端专项，证据见 [品牌验证](BRAND-ICONS-VERIFICATION.md)。没有重跑完整 21 类客户端或长期人工生存。该报告记录发布前本机状态；当前公开状态以本文件和下载说明为准。

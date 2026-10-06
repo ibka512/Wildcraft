@@ -3,8 +3,8 @@
   "date": "2026-10-06",
   "game_version": "0.1.0-dev.18",
   "game_tag": "v0.1.0-dev.18+mc26.3",
-  "game_commit": null,
-  "handoff_tag": null,
+  "game_commit": "d3a0033d1421871466ce6ccdefa70938272a994a",
+  "handoff_tag": "handoff-dev18-2026-10-06",
   "counts": {
     "core_asset_ids": 14,
     "second_batch_asset_ids": 29,
@@ -328,7 +328,7 @@
       "integration_document": "docs/BRAND-ICONS-VERIFICATION.md",
       "verification_document": "docs/BRAND-ICONS-VERIFICATION.md",
       "use": "精细版用于README展示；简单128用于Mod、原生20用于设置页",
-      "notes": "本机dev.18；旧A14 v1原件保留；原图已采用，清理为授权范围派生整理",
+      "notes": "公开dev.18；旧A14 v1原件保留；原图已采用，清理为授权范围派生整理",
       "runtime_files": [
         {
           "path": "src/main/resources/assets/wildcraft/icon.png",
@@ -1267,5 +1267,5 @@
       ]
     }
   ],
-  "publication_status": "local_dev18; public handoff-dev17-2026-10-06 remains unchanged"
+  "publication_status": "public handoff-dev18-2026-10-06; dev17 history preserved"
 }

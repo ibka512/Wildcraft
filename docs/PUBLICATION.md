@@ -1,6 +1,14 @@
 # GitHub 公开交接记录
 
-## 2026-10-06：dev.17当前公开交接
+## 2026-10-06：dev.18 当前公开交接
+
+用户明确“更新github”，本次交接为 [handoff-dev18-2026-10-06](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev18-2026-10-06)，开发预览。main 快进纳入品牌功能提交 d3a0033 与当前交接文档；游戏标签 v0.1.0-dev.18+mc26.3 保持固定。
+
+新版包含双版本品牌原图、清理来源、五份导出、Mod 128px 与设置页原生 20px、正式 dev.18 JAR/源码 JAR、完整工程 ZIP 及校验。A14 更新到 v02，总采用编号仍 43，旧 A14、dev.17 及大包保留。
+
+macOS 品牌阶段已通过数据生成、构建、83 项服务端与一类核心美术客户端专项；本次仅更新公开文档和资产索引，未重复完整 21 类客户端验证。Linux 远程结果见 [Actions](https://github.com/ibka512/Wildcraft/actions)；不代表 Linux 图形验收。当前完整快照以 PUBLIC-ASSET-MANIFEST-dev18 及新交接标签核对，旧冻结清单不覆盖。人工长期生存、B6、底部机械修订仍待完成；多人工作暂缓。
+
+## 历史：2026-10-06 dev.17公开交接
 
 本轮用户明确授权“上传github，更新readme，更新github上的已经被采用的游戏资产数据，更新交接文档”。公开仓库默认分支仍为[main](https://github.com/ibka512/Wildcraft)，当前交接为[handoff-dev17-2026-10-06](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev17-2026-10-06)，标记开发预览。本次将dev.8–dev.17之间的源码、资源、测试、原稿和证据纳入公开历史；不改游戏玩法、正式JAR、依赖、持久化格式或许可。
 
