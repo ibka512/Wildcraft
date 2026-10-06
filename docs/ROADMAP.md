@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-P0、R0、P1、P2、P3、P3.1 与 P3.2 已完成本机验收；R1 已完成隔离实验，见 [研究结论](R1-FINDINGS.md)。当前本机游戏版本为 `0.1.0-dev.15`，第二批29项采用美术已接入，P4A环境温度、P4B料理、P5能源与P6/P7机械及P8制造机/P9正式Fuse已完成；公开 main/Release 仍为 dev.7，尚未上传本次改动，历史包保留。P3.1 交付三类背负和左上角红心/精力，见 [本阶段验证](P3.1-VERIFICATION.md)。保留 Minecraft 26.3 / Fabric / JDK 25 / macOS 开发环境。单人林克时间见 [P3.2 规格](P3.2-SPEC.md) 与 [验证](P3.2-VERIFICATION.md)；温度规则见 [P4A 规格](P4A-SPEC.md)，验收见 [P4A 验证](P4A-VERIFICATION.md)。
+P0、R0、P1、P2、P3、P3.1 与 P3.2 已完成本机验收；R1 已完成隔离实验，见 [研究结论](R1-FINDINGS.md)。当前公开开发交接版本为 `0.1.0-dev.17`，第二批29项采用美术已接入，P4A环境温度、P4B料理、P5能源与P6/P7机械及P8制造机/P9正式Fuse已完成；P10风天气与P10.2取得入口/单人显示收尾已验收；公开交接为handoff-dev17-2026-10-06，历史包保留。P3.1 交付三类背负和左上角红心/精力，见 [本阶段验证](P3.1-VERIFICATION.md)。保留 Minecraft 26.3 / Fabric / JDK 25 / macOS 开发环境。单人林克时间见 [P3.2 规格](P3.2-SPEC.md) 与 [验证](P3.2-VERIFICATION.md)；温度规则见 [P4A 规格](P4A-SPEC.md)，验收见 [P4A 验证](P4A-VERIFICATION.md)。
 
 ## 调整方向
 
@@ -47,6 +47,6 @@ R1 未通过只阻塞 P3.2 的相关部分，P3.1 与 P4 可继续推进。R2 �
 
 ## 下一批任务
 
-P6/P7已完成本机dev.12，见P7-SPEC/P7-VERIFICATION。P8也已完成，见P8-SPEC/P8-VERIFICATION；P9.1组合已通过72服务端/17类客户端，按2026-10-06用户决定暂缓多人，P10单人首版已实现，下一步单人生存平衡；旧检查点与原规划保留其历史身份。
+P6/P7已完成本机dev.12，见P7-SPEC/P7-VERIFICATION。P8也已完成，见P8-SPEC/P8-VERIFICATION；P9.1组合已通过72服务端/17类客户端，按2026-10-06用户决定暂缓多人，P10单人首版已实现，P10.2/dev.17也已完成，下一步人工单人生存与定向平衡、B6及底部美术，再做候选检查；旧检查点与原规划保留历史身份。
 
 用户已授权按新版计划开始执行。新增生产依赖、真实数据迁移和发布仍遵守对应授权。版本、资源、测试、数据保存与回退以 [新规划](DEVELOPMENT-PLAN-V2.md) 和 [架构记录](ARCHITECTURE.md) 为准。

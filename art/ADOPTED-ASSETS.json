@@ -1,0 +1,1262 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "game_version": "0.1.0-dev.17",
+  "game_tag": "v0.1.0-dev.17+mc26.3",
+  "game_commit": "b92fe77",
+  "handoff_tag": "handoff-dev17-2026-10-06",
+  "counts": {
+    "core_asset_ids": 14,
+    "second_batch_asset_ids": 29,
+    "second_batch_delivery_versions": 30,
+    "current_asset_ids": 43
+  },
+  "original_records_policy": "Original manifests/adoption files describe delivery-time state and remain byte-identical. This registry records current integration, not complete manual QA. Runtime hashes describe this handoff snapshot; update deliberately after later source edits.",
+  "pending": [
+    {
+      "id": "F07-01/F07-02",
+      "status": "not_produced_or_adopted",
+      "contract": "art/production-docs/B6-WIND-ART-BRIEF.md"
+    },
+    {
+      "id": "mechanical_bottom_revision",
+      "status": "not_delivered_or_adopted",
+      "contract": "art/production-docs/P10.2-MECHANICAL-ART-REPAIR.md"
+    }
+  ],
+  "assets": [
+    {
+      "id": "A01",
+      "name": "精力 HUD",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A01-精力HUD-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "精力 HUD",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/hud/StaminaHud.java",
+          "sha256": "a20caa9536b508ea78d4c1c5489b8eee37d13f1b1613f7c2c40764bf3b8b288a"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "name": "展开滑翔伞模型",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A03-A04-展开滑翔伞-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "展开滑翔伞模型",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/ParagliderLayer.java",
+          "sha256": "9f08ab6bb02547e3c44284eb84a47b8db033e620256a44045a9e5752ee81a219"
+        },
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/ParagliderMesh.java",
+          "sha256": "ea3cf8a7878d9ed787f96bac5931df7cbacb48cc70c481175443fd706f99522a"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "name": "展开滑翔伞纹理",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A03-A04-展开滑翔伞-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "展开滑翔伞纹理",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/entity/paraglider.png",
+          "sha256": "db7425988c24047f07fba15f0601b9a591940639c616d50add7c7938a2a10da6"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "name": "滑翔伞物品图标",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "滑翔伞物品图标",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/paraglider.png",
+          "sha256": "4c18ed2b21b5171ef0e4c83441bd607d0e1b11b33c1202fdff23d2bb67794ddc"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "name": "滑翔伞装备空槽",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "滑翔伞装备空槽",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/sprites/container/slot/paraglider.png",
+          "sha256": "5a1b7a6527a2fb4586e49282dab762b8c9bae3580d559f4803ef4c5cf2addfcf"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "name": "滑翔握持与姿态",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A07-滑翔握持与姿态-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "滑翔握持与姿态",
+      "notes": "dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/CharacterPoses.java",
+          "sha256": "2afb3a05b56971272db09c2265a383799d947b3ce2259c154011d1905e9c7725"
+        },
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/GliderHands.java",
+          "sha256": "5d517ae0367408dcc2e5c27352070002f24dedae2b6b94f6c3c8b2f5b2bb3624"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "name": "攀爬动作",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A08-攀爬动作-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "攀爬动作",
+      "notes": "dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/CharacterPoses.java",
+          "sha256": "2afb3a05b56971272db09c2265a383799d947b3ce2259c154011d1905e9c7725"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "name": "背负装备摆放与挂点",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A09-背负装备挂点-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "背负装备摆放与挂点",
+      "notes": "dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
+          "sha256": "0161c985ebc6b2f73ccfdd246aca8ef75b1aef81aeb9638da81555c931784020"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "name": "背负装备收取过渡",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A10-背负装备收取过渡-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "背负装备收取过渡",
+      "notes": "dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/BackTransitions.java",
+          "sha256": "42f60ba4132cea9a7f16e61b210df12538a66be327e0a41d1d07680f9bf273e8"
+        }
+      ]
+    },
+    {
+      "id": "A11",
+      "name": "林克时间画面",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A11-林克时间画面-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "林克时间画面",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
+          "sha256": "205dadadde1130d5be1018ab321dfb7291ead24ca5b751950ead985ac61252dd"
+        }
+      ]
+    },
+    {
+      "id": "A12",
+      "name": "专注准星与低精力提示",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A12-专注准星与低精力提示-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "专注准星与低精力提示",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
+          "sha256": "205dadadde1130d5be1018ab321dfb7291ead24ca5b751950ead985ac61252dd"
+        }
+      ]
+    },
+    {
+      "id": "A13",
+      "name": "专注进入/退出音效",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A13-专注进入退出音效-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "专注进入/退出音效",
+      "notes": "dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/focus_enter.ogg",
+          "sha256": "a819c1a006a93af80e59bb712e23886e7e19c8c7d200f14e4a19fe160e590021"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/focus_exit.ogg",
+          "sha256": "5668f8ef538dd0e0f8dbeb84cbd4acd6559b563fbd4e4a3c525926b5669950ae"
+        }
+      ]
+    },
+    {
+      "id": "A14",
+      "name": "模组品牌图标",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A14-模组品牌图标-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "模组品牌图标",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/icon.png",
+          "sha256": "45545136b98319f187b3a9036e1ca3077884a1d63d718d580d8562f7f1342984"
+        }
+      ]
+    },
+    {
+      "id": "A15",
+      "name": "表现设置页",
+      "batch": "core-v1",
+      "current_version": "v1",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.7",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/approved-v1/A15-表现设置页-v1",
+      "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
+      "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
+      "integration_document": "docs/CORE-ART-INTEGRATION.md",
+      "verification_document": "docs/CORE-ART-VERIFICATION.md",
+      "use": "表现设置页",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/focus/FocusSettingsScreen.java",
+          "sha256": "7155ea5b1fe3b551c48931921e6c69e6cade3953abbaf23ea22978b59d1b5a7d"
+        }
+      ]
+    },
+    {
+      "id": "A07-A08-C",
+      "name": "探索动作衔接",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/A07-A08-C/v01",
+      "source_manifest": "art/production-v2/A07-A08-C/v01/manifest.json",
+      "source_manifest_sha256": "776eb9a60eb48ed3db61cd97b83febc251ded9f2dcd1682fdd3fefe69cd21672",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "攀爬/滑翔短衔接、最短旋转路径、取用物品即时接管",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/CharacterPoses.java",
+          "sha256": "2afb3a05b56971272db09c2265a383799d947b3ce2259c154011d1905e9c7725"
+        }
+      ]
+    },
+    {
+      "id": "A09-C",
+      "name": "披风/鞘翅下侧腰装备",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/A09-C/v01",
+      "source_manifest": "art/production-v2/A09-C/v01/manifest.json",
+      "source_manifest_sha256": "7dd691c9f0431034cce656710524f9a81804511b90aa05e7f4c3c3439eb1321a",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "披风/鞘翅下五类装备改放侧腰，真实归属立即生效",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
+          "sha256": "0161c985ebc6b2f73ccfdd246aca8ef75b1aef81aeb9638da81555c931784020"
+        }
+      ]
+    },
+    {
+      "id": "A13-C",
+      "name": "专注音效混音",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/A13-C/v01",
+      "source_manifest": "art/production-v2/A13-C/v01/manifest.json",
+      "source_manifest_sha256": "334e3528343f63e27a8647e6569ea77bb96755b2b0a53e51992eb4fb8583411a",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "原专注音的进入 0.22 / 退出 0.28 混音参数",
+      "notes": "采用B方案进入0.22/退出0.28；复用原音，不新增生产音源",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
+          "sha256": "205dadadde1130d5be1018ab321dfb7291ead24ca5b751950ead985ac61252dd"
+        }
+      ]
+    },
+    {
+      "id": "F01-01",
+      "name": "料理锅",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F01-01/v01",
+      "source_manifest": "art/production-v2/F01-01/v01/manifest.json",
+      "source_manifest_sha256": "da13bfbbb93e3f262cc614157429e8cdec6d7dd41859ea81ceaf302a4129a50e",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "料理锅原生方块模型与 64px 图集",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/ArtBlockRenderer.java",
+          "sha256": "1d4d5b5e6bf91af9a0b1a62553eda0e20de8038eacd613e9ea6ae9a5385cae02"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/models/block/cooking_pot.json",
+          "sha256": "72d8de3cd63afb680130fda18c5bc95a300c6d4cd1e8c3b453e948e07227922d"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/block/cooking_pot.png",
+          "sha256": "b8ee70402e8aa984a70508278415e488ba9315e13f680e98352ec1f435219ab8"
+        }
+      ]
+    },
+    {
+      "id": "F01-02",
+      "name": "四类料理",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F01-02/v01",
+      "source_manifest": "art/production-v2/F01-02/v01/manifest.json",
+      "source_manifest_sha256": "dafef1055c4d990ee55f8391a7d55f27013c4b023afb04789ff126ff7ab4f73a",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "四种实际料理类别分流，强度 I/II 共用同类图标",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/MealKindProperty.java",
+          "sha256": "5747ee25bcaa20d302a94f2c65d5db792ad2b7cd7d5017a371209f1883175785"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/meal_cooling.png",
+          "sha256": "f5fdb08e5f027f273fc36a073d80378f5dd6d21ea01c760cc7767cd2e1ea7e23"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/meal_recovery.png",
+          "sha256": "57c18feada1b16908c77f7952a6efbcc8b6ef6f473ce253aa761f588ccfc17b0"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/meal_vegetable.png",
+          "sha256": "5a251e657578a7563e1168e6b945203a1450ff92645abc6b5129487e8c02a225"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/meal_warming.png",
+          "sha256": "849622c3faf5eca0d66438bf57d9be8368d8744358f770a4f16110f54057fb1a"
+        }
+      ]
+    },
+    {
+      "id": "F01-03",
+      "name": "料理效果HUD",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F01-03/v01",
+      "source_manifest": "art/production-v2/F01-03/v01/manifest.json",
+      "source_manifest_sha256": "901ccff1c92981ef8f9743509d14ad91faec74d7db7095fb89db098c874030ec",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "三效果 HUD，真实等级与有限倒计时、窄屏排布",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/cooking/MealHud.java",
+          "sha256": "91dc1ad253c59e0e16b9db7609d041dfc837b154364c8070cc14ee0886d1cb26"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/cooling-meal.png",
+          "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/stamina-recovery.png",
+          "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/warmth-meal.png",
+          "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e"
+        }
+      ]
+    },
+    {
+      "id": "F01-04",
+      "name": "料理锅界面",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F01-04/v01",
+      "source_manifest": "art/production-v2/F01-04/v01/manifest.json",
+      "source_manifest_sha256": "ad0c608bbd74620ab75909440028f343c31a9613354b79aa575ae36869bf1867",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "176×182 料理界面，真实五槽、五状态与进度",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/cooking/CookingScreen.java",
+          "sha256": "a456db583c3eba25791f8f22b783fbbd5e860ab5830123f9510673196c280a70"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/cooking.png",
+          "sha256": "7ddf060bc06da1df4c9e942ee31763e98b2d0ff755964df24f67bffc052000c3"
+        }
+      ]
+    },
+    {
+      "id": "F02-01",
+      "name": "七档温度HUD",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F02-01/v01",
+      "source_manifest": "art/production-v2/F02-01/v01/manifest.json",
+      "source_manifest_sha256": "d450f9c520f462eca9e60c4aefb708d7d77b7656c7e1caca59ad215818de73e0",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "七档温度图标、读数及弱边缘反馈，专注层优先",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/temperature/TemperatureHud.java",
+          "sha256": "dc465344eb903c34ad65cb481f738e42b36a72642b66de49e9d96f1e782393cf"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/ambient-temperature.png",
+          "sha256": "5586acb51dd6c19823181141c6ee7fee5e63413aad184401f204895412337ee2"
+        }
+      ]
+    },
+    {
+      "id": "F03-01",
+      "name": "Fuse组合与挂点",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F03-01/v01",
+      "source_manifest": "art/production-v2/F03-01/v01/manifest.json",
+      "source_manifest_sha256": "ade1d6ef182ace5818366ed9208984acdabfca385f636a717a17aea7d53b486a",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "剑/斧/盾/箭及飞箭融合挂点，保留原版宿主外观",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/fuse/FusionArrowRenderer.java",
+          "sha256": "05d8e487339f9f27f7f8553cdef3c393504ca8c9b2a487ced4ac5dac9dcf2c8b"
+        },
+        {
+          "path": "src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java",
+          "sha256": "7c75668971b06b8a3e4c26916f8c5b382b8a2bf9c737b1d1a5de8eea9b2e6df8"
+        },
+        {
+          "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+          "sha256": "007c955bd715e681503f1f902c9ebb8b979e3bd522509752b644698510ebf2ea"
+        }
+      ]
+    },
+    {
+      "id": "F03-02",
+      "name": "融合标记与次数",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F03-02/v01",
+      "source_manifest": "art/production-v2/F03-02/v01/manifest.json",
+      "source_manifest_sha256": "1983aed3f135f0c4b833ed0f617b03e8acee891978866216078c7f067fd0b4aa",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "原生 5px 槽位角标、真实剩余次数、低次数提示",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+          "sha256": "007c955bd715e681503f1f902c9ebb8b979e3bd522509752b644698510ebf2ea"
+        },
+        {
+          "path": "src/client/java/dev/wildcraft/mixin/client/FusionSlotMarkMixin.java",
+          "sha256": "a4c1ffede20a8c0430baa12d8ddcc0a496d192108b3979835c0e7dd5ab1fa95e"
+        }
+      ]
+    },
+    {
+      "id": "F03-03",
+      "name": "未知材料回退",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F03-03/v01",
+      "source_manifest": "art/production-v2/F03-03/v01/manifest.json",
+      "source_manifest_sha256": "96fe15b307884b6d05905f46f782eab2cdb3cc9393b055724070cf67bd809c56",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "未知或缺失材料模型的中性回退，原材料数据保留",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
+          "sha256": "007c955bd715e681503f1f902c9ebb8b979e3bd522509752b644698510ebf2ea"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/fuse-status.png",
+          "sha256": "6796a496b82b2da2ca6a0686fe36fd64a1ec6d6bbc65c5b4e0c2ea5052a51899"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/fuse_unavailable.png",
+          "sha256": "d0d48aad969645410157b2a0ab16c8c0fd30b3cd111545a085c6fb5a061cd199"
+        }
+      ]
+    },
+    {
+      "id": "F03-04",
+      "name": "Fuse有限特效",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F03-04/v01",
+      "source_manifest": "art/production-v2/F03-04/v01/manifest.json",
+      "source_manifest_sha256": "f56bee5b9ca6900eb28eb10d6f5f0d8b166e039ed751264b14b296eb8481e2a4",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "火、冰、弹性与融合/拆分的五种有限原版粒子反馈",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/ArtFeedbackClient.java",
+          "sha256": "3b10655207adef8f95d98fbebbde61fe6cd2cb458e0b530ca444bc750f9917b1"
+        }
+      ]
+    },
+    {
+      "id": "F04-01",
+      "name": "有限电池",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F04-01/v01",
+      "source_manifest": "art/production-v2/F04-01/v01/manifest.json",
+      "source_manifest_sha256": "514c6eba88770a6db3b26b9be77a7a31aea9aac565eeea79dd53431ae49728d6",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "有限电池三维模型，真实电量驱动三个窗口",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/BatteryItemRenderer.java",
+          "sha256": "84b9f000fdd2ab1d7a7248b74e8338170c36e2fed64b0e0a1d50afc4a0bc40ab"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/battery_item.json",
+          "sha256": "c3e200a376c15dcb693ec7ddabb8d025a0f1de0150d4e8e7b45e9de832d0053e"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/models/item/battery_3d.json",
+          "sha256": "b259cac4722fd28ac481e1de444d1b60fc60cb89ab3ab0fd98a8e32ad7abd71a"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/entity/battery.png",
+          "sha256": "d3f0a2dbb5736dda421eb95a40a21ca874862c77b2895612298e6580467a17ba"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/battery.png",
+          "sha256": "f381c1393b0f71ce760123a0dee01db30f75a7418a5be9d3761852126f61900f"
+        }
+      ]
+    },
+    {
+      "id": "F04-02",
+      "name": "电量图标与读数",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F04-02/v01",
+      "source_manifest": "art/production-v2/F04-02/v01/manifest.json",
+      "source_manifest_sha256": "878c136c70c56feb9d85a9dc41ca6fd13a990e8f47a0d2f4c3f30042cb370f1c",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "空/满图标及中间遮罩、精确 0–1000 读数",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/ArtGui.java",
+          "sha256": "a3dfa927b366d102f57a909769469dc08476369d74aaef025f7a949b0c6ec26a"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/battery-empty.png",
+          "sha256": "c09a85919a915281de969ee869b5317af839c620ef6ce77cf76bbd61065409f7"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/battery-full.png",
+          "sha256": "049b9401bc7fe1d69fb9dfe138c99aaa277392d68c4c22e2c516316d5f163665"
+        }
+      ]
+    },
+    {
+      "id": "F04-03",
+      "name": "充电器",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F04-03/v01",
+      "source_manifest": "art/production-v2/F04-03/v01/manifest.json",
+      "source_manifest_sha256": "1c60c8bb782be3b61acc2b7ad2747cc881652e6361eda733b66512d3cc84bb39",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "充电器世界模型，原尺度电池与五态面板",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/ArtBlockRenderer.java",
+          "sha256": "1d4d5b5e6bf91af9a0b1a62553eda0e20de8038eacd613e9ea6ae9a5385cae02"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/models/block/charger.json",
+          "sha256": "bd10f081be8d18c71527a0eaf2c88e3ae48f7aa5f73241391ac23b13d136d703"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/block/charger_atlas.png",
+          "sha256": "1cae8b8b67f856418a1a723478ad530f0c16d4277b3e22348bf55cac023a9cb0"
+        }
+      ]
+    },
+    {
+      "id": "F04-04",
+      "name": "充电器界面",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F04-04/v01",
+      "source_manifest": "art/production-v2/F04-04/v01/manifest.json",
+      "source_manifest_sha256": "9248dc2d66b7982dcbe3dfa59b2fa1e19b8aa076ddf25e72154442fe08f10e9b",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "176×166 充电界面，五态文字与完整悬停说明",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/energy/ChargerScreen.java",
+          "sha256": "0d9bac9a7b1e1dbcce699589d94cb7f5cd6e490ad2bc56dda20ff0d594991f0d"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/charger.png",
+          "sha256": "9371d9d8df8af68ab052fb4b865117312865531c8b2d4958bbddd9e0f14db351"
+        }
+      ]
+    },
+    {
+      "id": "F05-01",
+      "name": "机械主体与节点",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-01/v01",
+      "source_manifest": "art/production-v2/F05-01/v01/manifest.json",
+      "source_manifest_sha256": "40feccdd36a911340c489af0ae2db3918463de90f5fe4232b53f6fb45bd8a3a2",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "机械主体、六节点和控制板模型",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/machine.json",
+          "sha256": "6170012ee6ed87e7b477f31078d50c32d70e1d81988190834a37db75b9837fc7"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/entity/machine_atlas.png",
+          "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/machine_body.png",
+          "sha256": "24f9c906997fbd4761d67827c34135bbed010014093d685ca1f6a9ffcfbc9ee2"
+        }
+      ]
+    },
+    {
+      "id": "F05-02",
+      "name": "机械翼",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-02/v01",
+      "source_manifest": "art/production-v2/F05-02/v01/manifest.json",
+      "source_manifest_sha256": "80d9890753ae4446249099f879a3555f677659a6f54563c07c928e5884bbe887",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "被动机械翼，128×64 布木图集",
+      "notes": "已接入；底部安装可能穿地，见P10.2机械修正合同",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/wing.json",
+          "sha256": "3ae3c27ba40cbfe4ee80e6f5aab62f424cee46bd8b9dfb47c54aa95ced9bd85b"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/entity/fabric_atlas.png",
+          "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/wing.png",
+          "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8"
+        }
+      ]
+    },
+    {
+      "id": "F05-03",
+      "name": "风扇",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-03/v01",
+      "source_manifest": "art/production-v2/F05-03/v01/manifest.json",
+      "source_manifest_sha256": "6a50b911fb57d9b6e7a671ffa4a48940ee781cd7c9f58cabad5c68a3a061370a",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "风扇护框、轮毂和真实工作转动",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/fan.json",
+          "sha256": "0317002516b00740896b144aeef2f30730a21f718b2b4905c7e39394e01b31a8"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/fan.png",
+          "sha256": "bdcb2aa8319d550b2133205b4b3ad13f1e2c6ab3c7bc7642ce4b00e05b524ad2"
+        }
+      ]
+    },
+    {
+      "id": "F05-04",
+      "name": "火箭及燃尽空壳",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-04/v01",
+      "source_manifest": "art/production-v2/F05-04/v01/manifest.json",
+      "source_manifest_sha256": "509dd6d983fc7fd48dd99edeb669a822b0eda51eb4cc0cd6e12d7a03cc764030",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "有限火箭、燃尽空壳与既有尾焰",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/rocket.json",
+          "sha256": "a44aadfefb1243b933892bc180384f9d5f1e0ba3e3dc582a24a208ec04f59341"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/spent_rocket.json",
+          "sha256": "455c5cd3ac5d8d695ffe789297c91aac77000e87f7f5fe940d57ccbe0d29a47d"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/entity/rocket_atlas.png",
+          "sha256": "4ba17e47b802f387de718dc0b46f02e80dd9ff06f2370bed7046be47a47b8afe"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/rocket.png",
+          "sha256": "14b767978f3a671f6b723d1eb049c66b0ae63e03d934a56ca1ad05d9481f18c7"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/spent_rocket.png",
+          "sha256": "baea49dd770b381e6b1d23706b1087b118999b7f9455a1ef53253a22c24d7c8b"
+        }
+      ]
+    },
+    {
+      "id": "F05-05",
+      "name": "电池安装适配",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-05/v01",
+      "source_manifest": "art/production-v2/F05-05/v01/manifest.json",
+      "source_manifest_sha256": "70bcda437b6d1575c322016cd848a7f3641f154c313e4bc4e5fbe64ed2922576",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "同一电池的六向安装，采用 v02 复核后的偏移",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/battery.json",
+          "sha256": "8c3e55d06de4c321cda255142ea2be9d08e2cc42a91899da206fd1e32a8108ae"
+        }
+      ]
+    },
+    {
+      "id": "F05-06",
+      "name": "弹簧",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-06/v01",
+      "source_manifest": "art/production-v2/F05-06/v01/manifest.json",
+      "source_manifest_sha256": "f97f02ee9196c40c6a61e4584ba2594321ac30ae3754de14759389f783ac42ea",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "弹簧压缩/伸展，由现有冷却状态驱动",
+      "notes": "dev.17修复弹簧与原版指南针配方冲突；底部穿地另行修订",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/spring.json",
+          "sha256": "7374a0d6fd7941775614915ab6e7f837d399b02ba61dac8200555c2d67a8e7a3"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/spring.png",
+          "sha256": "8718db8c3fb21c2ca4da5a91e88199dc93adceeafbcdb4a853d74905eec2fa58"
+        }
+      ]
+    },
+    {
+      "id": "F05-07",
+      "name": "车轮",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-07/v01",
+      "source_manifest": "art/production-v2/F05-07/v01/manifest.json",
+      "source_manifest_sha256": "c471ba3cd940fef6fc6cf7d57fc9256a7bfedaf001dcb672c188fb385a6954cb",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "车轮网格和既有转速驱动",
+      "notes": "dev.17侧装轮显示下移0.075格；安装命中/碰撞/原件不变",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/wheel.json",
+          "sha256": "8a53595b26c46f8d53aadf37b8fa5e4f14f8589ea96668c0061c13ca2ea6b4aa"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/wheel.png",
+          "sha256": "cc7b1721f658ae5ddd31c31a1a5748a86bf96d013d19abcd8581483f096c9429"
+        }
+      ]
+    },
+    {
+      "id": "F05-08",
+      "name": "稳定器",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-08/v01",
+      "source_manifest": "art/production-v2/F05-08/v01/manifest.json",
+      "source_manifest_sha256": "8235e6c2e2e4afd0a319691ad13e2c1b985432f34e13187e52ad473ebcbd1a83",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "稳定器壳体、真实 active 工作灯",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/stabilizer.json",
+          "sha256": "040a20632f91a504b7ff48a7ed77d4f5f38c06a1d86127cdd0c80d48d00f824a"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/stabilizer.png",
+          "sha256": "613323859a02036b9d170791ad2bf573fac7b50bd5e880ffec27369d833fe159"
+        }
+      ]
+    },
+    {
+      "id": "F05-09",
+      "name": "浮力装置",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-09/v01",
+      "source_manifest": "art/production-v2/F05-09/v01/manifest.json",
+      "source_manifest_sha256": "90f54d6d130aa8fb3edb5162b6f4ea8c3a4d931e7f0c48cb9314f1e164817c37",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "浮力装置，复用布木图集和现有载重规则",
+      "notes": "已接入；底部安装可能穿地，见P10.2机械修正合同",
+      "runtime_files": [
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/buoyancy.json",
+          "sha256": "ff7fe18ea1978c55e92e7c61a9cc00d45ba887c81cedf4027a692192f0d89025"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/item/buoyancy.png",
+          "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+        }
+      ]
+    },
+    {
+      "id": "F05-10",
+      "name": "统一吸附预览与状态",
+      "batch": "second-v2",
+      "current_version": "v02",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F05-10/v02",
+      "source_manifest": "art/production-v2/F05-10/v02/manifest.json",
+      "source_manifest_sha256": "3b71e0ec5d6dcbcc6fdff5f090aa7a3980ee3ea1728b5f390d26e706de19fbe5",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "统一透明吸附预览、节点与可用/受阻/工作文字",
+      "notes": "v01保留历史；v02当前；dev.17调整侧轮显示，底部部件仍待修订",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
+          "sha256": "029fd46409d297c7eecba0d479b42e108f0421b1e7fa162f07a532bee144d6af"
+        },
+        {
+          "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+        }
+      ]
+    },
+    {
+      "id": "F06-01",
+      "name": "古代装置制造机",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F06-01/v01",
+      "source_manifest": "art/production-v2/F06-01/v01/manifest.json",
+      "source_manifest_sha256": "33821a5c820f0a3be85a51781fc6a0282e4bd6a5a3fbe4001f3952c58400a316",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "制造机原生方块模型与空闲/工作/完成面板",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/ArtBlockRenderer.java",
+          "sha256": "1d4d5b5e6bf91af9a0b1a62553eda0e20de8038eacd613e9ea6ae9a5385cae02"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/models/block/fabricator.json",
+          "sha256": "ec2f8b0b39d1ba1dfae4445e76f326958c6d692dd38f9ddcd02f276aec6a6159"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/block/fabricator_atlas.png",
+          "sha256": "37e0f8b3d2d120ae5977e9e667637297729f07e9d1798ef23e51f8814f798ec3"
+        }
+      ]
+    },
+    {
+      "id": "F06-02",
+      "name": "制造机界面",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/F06-02/v01",
+      "source_manifest": "art/production-v2/F06-02/v01/manifest.json",
+      "source_manifest_sha256": "6208e22af073b6586ff08143aad666d70bc251762d9daedaaca32c957614eae4",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "176×192 制造界面，真实 39 槽与原按钮协议",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/fabrication/FabricatorScreen.java",
+          "sha256": "6b2d7285e54cecff1fdc12cdda1d8e52d93f20b9420d97e1a7f745fcd53ef46c"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/fabricator.png",
+          "sha256": "ad1cc37cf160d35c4597f77598ac1246f023a7999fbd551710ca79687d1c2c3f"
+        }
+      ]
+    },
+    {
+      "id": "S01",
+      "name": "12段原创短音",
+      "batch": "second-v2",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.15",
+      "current_game_version": "0.1.0-dev.17",
+      "source_directory": "art/production-v2/S01/v01",
+      "source_manifest": "art/production-v2/S01/v01/manifest.json",
+      "source_manifest_sha256": "9ad62e34b999b89e45b4ac10563ca9aebd934785deb09362ba629cd9ce1a3b94",
+      "integration_document": "docs/SECOND-ART-INTEGRATION.md",
+      "verification_document": "docs/SECOND-ART-VERIFICATION.md",
+      "use": "12 段原创短音，服务端确认事件后播放",
+      "notes": "",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/art/ArtFeedbackClient.java",
+          "sha256": "3b10655207adef8f95d98fbebbde61fe6cd2cb458e0b530ca444bc750f9917b1"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds.json",
+          "sha256": "c939610e5a7d70ed0a2484699184d8f4b09a2e50e32ba3ff70e59c949676772e"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/charger_full.ogg",
+          "sha256": "4ec65d18c13c3fe2a703df89f91f057031d0259a53b2b78b880704575c462b8b"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/charger_start.ogg",
+          "sha256": "2c861c5226ebe96701168f03cb6e1bb16732791cfdf564978bc7bdf60cfa15b4"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/cooking_complete.ogg",
+          "sha256": "b3276c575503f2e1a877cf607812b4ea4ae702b0fa92f0c2284ed808cd0e5048"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/cooking_start.ogg",
+          "sha256": "ae6256f984625751a571b4e3d76fd32f1c29e0d811b83d8092942867b4dc2a2a"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/fabricator_complete.ogg",
+          "sha256": "ef2cfe78ad4c4922787a1003038bd2adca0c87fb62fe35ae5999316102c8addc"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/fabricator_start.ogg",
+          "sha256": "b2dfa064fb768031e4a48e1a17ded0a2264c302cdd44bbab58985d94fcb4a5fb"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/fuse_join.ogg",
+          "sha256": "f5478a4c817dbaaeab8f23db34bea2c4bb2279fad1d71b0e60a81ea52d5c27f4"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/fuse_split.ogg",
+          "sha256": "00b927f8081df7e5c52f57bda46450fdfac49d1e11219932b0e895d0862c495d"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_install.ogg",
+          "sha256": "0fbe63da6b1acf11bae90052e8ca926d79af26ca5e514523dee40a5da98f67bb"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_remove.ogg",
+          "sha256": "72906dc0905ffa54f6ac459d0af20e1084fabc0c213f6fe8ab8a9f5f90cf66e7"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_start.ogg",
+          "sha256": "4757b06618eb2f2d2c2d4d0b99a3b8ce73092d40165e3d05e51a881460f8752c"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/sounds/s01/mechanic_stop.ogg",
+          "sha256": "23acc8f5735391458cdfc1f34fd21427a74a00cd3f6d43e6abd82635bdd93337"
+        }
+      ]
+    }
+  ]
+}

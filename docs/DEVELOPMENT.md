@@ -1,12 +1,12 @@
 # 开发环境、运行与操作手册
 
-Minecraft Java Edition 的 Fabric Mod。当前本机开发版本为 **P4A 环境温度**，版本 `0.1.0-dev.8`，包含核心美术 v1；公开 main/Release 仍为 dev.7，本次尚未上传。
+Minecraft Java Edition的Fabric Mod。当前公开开发交接版 **0.1.0-dev.17 / P10.2**，包含核心/第二批采用美术、探索、料理温度、能源机械、制造、Fuse与单人风天气。当前规格与验收见[AI-HANDOFF](AI-HANDOFF.md)，操作新增部分见本页后续各阶段章节。
 
 当前可用：七档环境温度、当地雨雪/水/热源修正、平滑读数及独立可关闭边缘色调；空中拉弓自动单人慢动作、有效实际时间扣精力、原版一次射箭与保留摔落、F8 画面设置；按实际使用登记的近战/盾/弓背负、左上角红心与其下方精力显示、独立滑翔伞装备位、合成与装备保存、空中跳跃键开收伞、双手持伞与取用物品自动收伞，以及按键攀爬、历史最高等级、精力保存与恢复、中英显示和管理员验证命令。测试核心 `wildcraft:test_core` 继续用于物品与资源回归。
 
 完整开发顺序见 [开发路线](ROADMAP.md)，三项新设计的范围、衔接和验收见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)，系统边界见 [架构计划](ARCHITECTURE.md)，精力规则见 [P1 规则](P1-RULES.md)，研究结论见 [R0 结论](R0-FINDINGS.md)。攀爬操作见 [P2 规则](P2-RULES.md)，滑翔操作见 [P3 规则](P3-RULES.md)，背负与界面见 [P3.1 规则](P3.1-RULES.md)，本次验证见 [P3.1 验证记录](P3.1-VERIFICATION.md)。历史验证保留为 [P3](P3-VERIFICATION.md)、[P2](P2-VERIFICATION.md)、[P1](P1-VERIFICATION.md) 与 [P0](VERIFICATION.md)。
 
-攀爬与滑翔已接入实际精力消耗；R0 机械与 Fuse 样例继续只在测试模组中运行。料理、温度、正式机械与 Fuse 按后续路线推进。
+攀爬与滑翔已接入实际精力消耗；R0 机械与 Fuse 样例继续只在测试模组中运行。料理、温度、正式机械、Fuse与风天气已实现，后续按当前单人计划推进。
 
 新版路线的 R1 单人时间边界实验和 P3.1 正式背负/界面均已完成本机验证，见 [R1 结论与证据](R1-FINDINGS.md) 与 [P3.1 规格](P3.1-SPEC.md)。林克时间已经接入正式模组，见 [规格](P3.2-SPEC.md)、[操作](P3.2-RULES.md) 和 [本机验收](P3.2-VERIFICATION.md)。
 
@@ -101,7 +101,7 @@ IntelliJ IDEA 统一版的基础 Java 功能可免费使用；本项目不需要
 
 ## 安装构建结果
 
-构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.8.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
+构建出的游戏 Mod 在 `dist/wildcraft-0.1.0-dev.17.jar`。构建缓存中的 `-sources` 文件用于查看源代码，`-gametest` 文件用于自动验证，均不安装到日常游玩实例。
 
 在独立的 Minecraft 26.3 实例中安装 Fabric Loader 0.19.5，将 Wildcraft 游戏 JAR 与 Fabric API 0.161.0+26.3 放进该实例的 `mods` 目录。客户端和服务端都需要安装。
 
@@ -167,9 +167,9 @@ macOS 运行目录位于 `~/Library/Caches/Wildcraft/builds/<项目路径标识>
 
 ## 后续工作
 
-P3.1 已补齐背负与左上角 HUD，P3.2 完成正式单人林克时间，与共享精力、攀爬和滑翔衔接；联机不启用全服减速。P4A 已完成环境温度，下一计划 P4B 完成料理与有限细雪辅助。原有能源、机械、制造机、Fuse 和天气继续保留，完整顺序见 [开发规划 v2](DEVELOPMENT-PLAN-V2.md)。
+P3.1 已补齐背负与左上角 HUD，P3.2 完成正式单人林克时间，与共享精力、攀爬和滑翔衔接；联机不启用全服减速。当前已推进到P10.2，下一步人工单人生存、定向平衡、B6与底部美术，见[NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md)。旧阶段计数与目标保留历史身份。
 
-运行依赖只有 Fabric Loader 与 Fabric API。公开发行许可证尚未选择；模板与第三方工具来源见 `NOTICE.md`。
+运行依赖只有 Fabric Loader 与 Fabric API。项目当前按LICENSE保留所有权利，公开交接不改变许可；模板与第三方工具来源见 `NOTICE.md`。
 
 版本固定在 `gradle.properties`。不跟随快照或每日构建自动升级；Minecraft 升级在独立分支中完成，确认存档、联网与资源兼容后再合并。
 

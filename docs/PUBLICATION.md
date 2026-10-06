@@ -1,5 +1,22 @@
 # GitHub 公开交接记录
 
+## 2026-10-06：dev.17当前公开交接
+
+本轮用户明确授权“上传github，更新readme，更新github上的已经被采用的游戏资产数据，更新交接文档”。公开仓库默认分支仍为[main](https://github.com/ibka512/Wildcraft)，当前交接为[handoff-dev17-2026-10-06](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev17-2026-10-06)，标记开发预览。本次将dev.8–dev.17之间的源码、资源、测试、原稿和证据纳入公开历史；不改游戏玩法、正式JAR、依赖、持久化格式或许可。
+
+- README重新组织为安装、操作、玩法、美术、构建、验证和接手入口；AI-HANDOFF、下一阶段计划和当前文档已更新到dev.17。
+- [采用台账](../art/ADOPTED-ASSETS.md)/CSV/JSON登记核心14＋第二批29当前编号、30份第二批版本；F05-10当前v02。原件及历史采用/校验不改写。
+- 本机只读校验：43个当前编号、CSV/JSON一致性、30份原交付manifest、1,767条原件记录、48份原样运行资源全部匹配。dev.17正式JAR仍为`e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35`。
+- [下载说明](ASSET-DOWNLOADS.md)提供当前完整工程、原始第二批ZIP和校验，第一批历史大包继续沿用dev.7已公开链接。当前公开文件快照独立命名PUBLIC-ASSET-MANIFEST-dev17，旧清单不覆写。
+- GitHub Actions在main更新后重新执行，当前运行事实以[Actions](https://github.com/ibka512/Wildcraft/actions)为准。本次文档发布不将历史macOS83项/21类测试写成重新执行，也不将Linux构建写成图形验收。
+
+当前仍待人工长期单人生存/定向平衡、B6正式美术、底部机械修订、第三方兼容和候选版检查；多人R2/P10.1暂缓。本次开发交接授权不覆盖未来稳定发布、生产依赖或真实数据迁移。
+
+## 历史：2026-10-03 dev.5/dev.7
+
+以下保留当时的发布事实与验证；旧“下一阶段”和“未发布”只描述当时状态，当前入口以上文和README为准。
+
+
 > 当前公开主分支已更新到 dev.7，最新交接为 [handoff-dev7-2026-10-03](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)。下面初次发布内容保留为 dev.5 历史；本次记录见 [迁移与交接](MIGRATION-HANDOFF-2026-10-03.md)。
 
 日期：2026-10-03（Asia/Shanghai）。项目所有者明确授权建立公开 GitHub 仓库、上传接手说明、源码及全部当前开发资产，并完善 README。本次不改变游戏玩法、技术栈、保存格式或许可证。

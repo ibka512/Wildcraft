@@ -1,52 +1,19 @@
-# Wildcraft 美术源文件
+# Wildcraft 美术与可编辑资产
 
-2026-10-06 当前接入状态：第二批 B1–B5 的 29 项采用资产已进入 dev.15，F05-10 使用 v02，原件和 v01 历史保留。接入说明与真实验收以 [SECOND-ART-INTEGRATION](../docs/SECOND-ART-INTEGRATION.md) / [SECOND-ART-VERIFICATION](../docs/SECOND-ART-VERIFICATION.md) 为准。下方未接入、待采用等文字是制作时间线，不能覆盖本条当前状态。
+2026-10-06，当前dev.17：核心14编号＋第二批29编号已采用且接入，统一状态见[ADOPTED-ASSETS](ADOPTED-ASSETS.md)、[CSV](ADOPTED-ASSETS.csv)、[JSON](ADOPTED-ASSETS.json)。
 
-2026-10-03 核心美术接入采用用户交付的 `Wildcraft-核心美术成果-2026-10-03.zip`。当前原始源稿与规格在 [approved-v1](approved-v1/README.md)，实际接入范围、转换方法和验证边界见 [核心美术接入](../docs/CORE-ART-INTEGRATION.md)。
+| 目录 | 用途 |
+| --- | --- |
+| [approved-v1](approved-v1/README.md) | 核心原件：伞、姿态、背负、精力、专注、品牌与设置；55份精选原件有来源校验 |
+| [production-v2](production-v2/README.md) | 第二批29项当前编号、30份交付版本；模型、像素、音效、参考、采用与原始校验 |
+| [production-docs](production-docs/README.md) | 历史制作进度、当前合同、待办与机械修正依据 |
+| [mechanics-v1](mechanics-v1/README.md)、[fabrication-v1](fabrication-v1/README.md)、[focus](focus/README.md) | 历史可编辑原型；不替代当前采用状态 |
+| tools | 核心网格与姿态烘焙，读取原件但不保存修改 |
 
-`approved-v1/SOURCE-MANIFEST.json` 保留收到的 ZIP 哈希及 55 份精选原件的 SHA-256。源稿保持原字节；其中 `gameIntegrated: false` 等字段表示交付当时的状态，当前状态以开发记录为准。文件中的建议是资料，不能替代用户决定或项目规范。
+核心转换见[CORE-ART-INTEGRATION](../docs/CORE-ART-INTEGRATION.md)，第二批转换见[SECOND-ART-INTEGRATION](../docs/SECOND-ART-INTEGRATION.md)。实际游戏资源在src，采用原件保持原字节；只对派生资源运行导入或烘焙，再执行资源生成和构建。
 
-游戏采用 5 张交付 PNG、2 段原创 OGG、展开伞的 22 部件网格，以及标准/细手臂两套动画烘焙数据。攀爬、滑翔和背负显示继续使用原版玩家皮肤与真实物品模型，不加入通用动画依赖。
+第二批导入使用`tools/import-second-art.py`，需要Python3和Pillow；核心角色烘焙需要Blender。普通Gradle构建不需要美术编辑器或Pillow，也不新增生产动画依赖。游戏保留真实原版玩家皮肤和物品模型。
 
-`tools/bake-paraglider-mesh.py` 只需 Python 标准库；`tools/bake-character-poses.py` 通过 Blender 后台烘焙。命令、坐标和生成文件见接入文档。工具只读取源稿，不保存修改 Blender 原件。
+当前待制作[B6风提示](production-docs/B6-WIND-ART-BRIEF.md)，待修订[机械底部](production-docs/P10.2-MECHANICAL-ART-REPAIR.md)；dev.17已调整侧轮接地，未改原件或碰撞。
 
-`paraglider.svg`、`test-core.pixels.json` 和 [focus](focus/README.md) 中的旧说明保留开发历史。初始伞图标 SVG 已由交付的 A05 源稿替代；旧 JAR、标签和原始验证图片保持不动。[重设计计划](ASSET-REDESIGN-PLAN.md) 与 [CSV](asset-redesign.csv) 是制作时清单，不能单独作为当前接入状态。
-
-P6–P7原创机械原型源见[mechanics-v1](mechanics-v1/README.md)：主体、八类部件图标与实体几何、节点吸附预览、电量条、火箭尾焰、弹簧伸展和稳定器工作灯。当前为可编辑原型，最终美术仍可替换。
-
-P8制造机原创像素源见[fabrication-v1](fabrication-v1/README.md)，运行贴图由generate_mechanics_art.py生成；当前方块与界面均为可替换原型。
-
-2026-10-04当前待制作/待接入资产见[美术待办清单](production-docs/PENDING-ART-ASSETS-2026-10-04.md)与[CSV台账](production-docs/PENDING-ART-ASSETS-2026-10-04.csv)。核心14编号已接入；后续料理、能源、机械、制造与Fuse多为功能原型，已有采用图标储备另行列出，避免重复制作。
-
-2026-10-05：[F06-01制造机正式外观v01](production-v2/F06-01/v01/README.md)已采用未接入，原型运行资源保持；F05-10 v02已采用但未接入。
-
-2026-10-06：[F06-02制造机界面v01](production-v2/F06-02/v01/README.md)已采用；原生176×192与五态中英审稿齐全，未接入游戏。
-
-2026-10-06：[F03-01 Fuse通用组合外观与挂点v01](production-v2/F03-01/v01/README.md)已采用；四宿主与独立飞箭、三材料多场景、手背同尺度及16/32直接渲染参考齐全，未接入游戏。
-
-2026-10-06：[F03-02融合标记与剩余次数v01](production-v2/F03-02/v01/README.md)已采用；16/32完整符号、原生5px角标及64×32图集、槽位与次数状态参考齐全，未接入。
-
-2026-10-06：[F03-03未知材料回退设计](production-v2/F03-03/v01/README.md)设计与接入规范完成；Aseprite两次START_TIMEOUT导致像素制作受阻，未交付源稿/PNG，未采用未接入。
-
-2026-10-06续作：[F03-03未知材料回退v01](production-v2/F03-03/v01/README.md)制作已完成，草稿待视觉审稿；连接阻塞已解除，原生16符号与64×32扩展图集共2源稿/2PNG及五挂点、四状态审稿齐全，未采用未接入。
-
-2026-10-06：[F03-03未知材料回退](production-v2/F03-03/v01/README.md)已采用；[F03-04特殊材料及融合过程反馈](production-v2/F03-04/v01/README.md)已采用，五套原版复用参数、动态审稿与时序齐全，新增原创贴图0，未接入。
-
-2026-10-06：F03-04 v01已按用户「采用」登记，原审稿包及源保持，未接入游戏；下一项S01音效配套仍计划未启动。
-
-2026-10-06：[S01音效配套v01](production-v2/S01/v01/README.md)草稿已交付，12原创短音/12母带/36分层、便携试听与事件规范齐全，0循环，待用户试听采用，未接入；原专注音和历史采用包保持。
-
-2026-10-06：[S01音效配套v01](production-v2/S01/v01/README.md)已按用户「采用」登记，12原创短音及播放方案已采用；原声、分层和历史审稿包保持，未接入游戏。下一项A09-C仍未启动。
-
-2026-10-06：[A09-C披风／鞘翅下的侧腰摆放v01](production-v2/A09-C/v01/README.md)草稿已交付；五类装备保持手持尺度，8可编辑场景与披风/鞘翅避让审稿齐全，待用户视觉采用，未接入。下一项A07-A08-C仍计划未启动。
-
-2026-10-06：[A09-C侧腰装备v01](production-v2/A09-C/v01/README.md)已按用户「采用」登记；五类装备位置与同尺度方案已采用，原源稿、参考图和历史审稿ZIP保持，未接入游戏。下一项A07-A08-C仍计划未启动。
-
-2026-10-06：[A07-A08-C探索动作衔接v01](production-v2/A07-A08-C/v01/README.md)草稿已交付，12场景/24可编辑时间线、当前采样与修订对照、第一人称占用及即时接管规范齐全；待用户视觉采用，未接入游戏。A13-C专注混音仍计划未启动。
-
-2026-10-06：[A07-A08-C探索动作衔接v01](production-v2/A07-A08-C/v01/README.md)已按用户「采用」登记；12场景、24条可编辑参考时间线与即时接管规范已采用，原源稿、轨迹、图像、视频及历史审稿ZIP保持，未接入游戏。下一项A13-C仍计划未启动。
-
-
-2026-10-06：[A13-C专注音效混音复核v01](production-v2/A13-C/v01/README.md)草稿已交付；原双短音保持，8场景/2方案A-B试听、8份自有混音参考及接入建议齐全；建议仅退出0.22→0.28，待用户听审采用，未接入游戏。B6仍待机制合同，本轮未启动。
-
-2026-10-06：[A13-C专注混音v01](production-v2/A13-C/v01/README.md)已按用户「采用」登记；B方案进入0.22／退出0.28，原音、混音参考和历史审稿包保持，未接入游戏。B5排队资产均已采用；B6仍待机制合同，未启动。
+原交付的未接入字段、旧排期、模拟预览与失败日志保持历史身份，不能覆盖当前实现。完整交付、母带和历史大包见[下载说明](../docs/ASSET-DOWNLOADS.md)。

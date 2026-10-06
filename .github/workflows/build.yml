@@ -23,6 +23,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '25'
+      - name: Verify adopted asset provenance
+        run: python3 tools/verify-adopted-assets.py
       - name: Generate resources
         run: |
           chmod +x gradlew

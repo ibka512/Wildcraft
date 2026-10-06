@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-06。当前本机开发版本 **0.1.0-dev.17 / Minecraft 26.3**，分支 `feature/singleplayer-polish`。P10.2单人取得入口、原生循环和显示收尾已完成，最终证据见[P10.2合同](P10.2-SPEC.md)/[验收](P10.2-VERIFICATION.md)。保留dev.16风天气、dev.15第二批29项美术及P9/P9.1。下一步人工单人生存试玩、定向平衡与B6/机械底部美术，用户当前不考虑多人，R2/P10.1继续暂缓。公开main/Release仍dev.7，dev.8–dev.17未上传。旧标签/包/源稿/证据保留；未新增生产依赖或迁移真实存档。
+更新：2026-10-06。当前公开开发交接版 **0.1.0-dev.17 / Minecraft 26.3**，GitHub默认分支`main`，交接标签`handoff-dev17-2026-10-06`。游戏标签`v0.1.0-dev.17+mc26.3`固定P10.2功能提交`b92fe77`；本次只更新交接与资产台账，不改变正式JAR。P10.2单人取得入口、原生循环和显示收尾已完成，最终证据见[P10.2合同](P10.2-SPEC.md)/[验收](P10.2-VERIFICATION.md)。保留dev.16风天气、dev.15第二批29项美术和既有玩法；下一步人工单人生存、定向平衡与B6/机械底部美术。多人R2/P10.1暂缓。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -45,7 +45,7 @@
 | P3.1 | 正式背负、最小展示同步、左上角 HUD 与双客户端；[记录](P3.1-VERIFICATION.md) |
 | P3.2 | 正式单人林克时间、有效时间费用、原版一次射箭、缓降保留摔落与画面设置；[记录](P3.2-VERIFICATION.md) |
 | 核心美术 v1 | 交付的 14 编号资源已接入；[规格](CORE-ART-INTEGRATION.md)、[验收](CORE-ART-VERIFICATION.md) |
-| P4A | 本机环境温度完成；[规格](P4A-SPEC.md)、[验证](P4A-VERIFICATION.md)；dev.8 尚未上传 |
+| P4A | 本机环境温度完成；[规格](P4A-SPEC.md)、[验证](P4A-VERIFICATION.md) |
 | P4B | 本机料理完成，见 [规格](P4B-SPEC.md) / [验收](P4B-VERIFICATION.md) |
 | P5 | 本机能源与有限电池完成，见P5-SPEC/VERIFICATION |
 | P6 | 主体、六节点、风扇/电池、实际吸附安装/拆卸、启停/乘坐、保存与回收闭环；见[P6规则](P6-SPEC.md) / [完整验证](P6-VERIFICATION.md) |
@@ -147,40 +147,32 @@ P3.2 真实计时重现：创建名为 R1Realtime 的可丢弃测试世界后运
 
 ## 资源、Git 与交付
 
-原创源稿在 [art](../art/README.md)：伞图标 SVG、测试核心像素 JSON；运行贴图和伞几何随源码。模型/语言由数据生成维护，手写配方/贴图/标签保留来源。核心美术原件在 `art/approved-v1`，含 Blockbench / Blender / Aseprite；运行伞网格和四肢数据由 `art/tools` 烘焙，重生成不修改原件。新增公开的 `climb_visual` / `back_equipment_visual` 是非持久化外观附件，不含精力、库存槽位或保存签名；原格式 1 和客户端设置不变。复杂机械仍待对应阶段。
+原创源稿在 [art](../art/README.md)：伞图标 SVG、测试核心像素 JSON；运行贴图和伞几何随源码。模型/语言由数据生成维护，手写配方/贴图/标签保留来源。核心美术原件在 `art/approved-v1`，含 Blockbench / Blender / Aseprite；运行伞网格和四肢数据由 `art/tools` 烘焙，重生成不修改原件。新增公开的 `climb_visual` / `back_equipment_visual` 是非持久化外观附件，不含精力、库存槽位或保存签名；原格式 1 和客户端设置不变。八类有限机械已实现，超复杂机械物理暂缓。
 
 保持一个 Gradle 项目、一份正式 Mod JAR。使用 `feature/<功能>`、`fix/<问题>`、`spike/<实验>`、`upgrade/mc-<版本>`；不要新增长期 develop 分支。每阶段更新规则、相关验收和实际包版本，不移历史标签、不给实验提前起正式版名。历史源码/JAR/证据在开发资产目录，诊断失败日志不等于最终结果。
 
 生产依赖仍只有 Loader/Fabric API；新依赖先检查已有能力和官方维护/许可，然后按明确授权添加。项目保留所有权利，公开仓库不自动改变许可；模板与 Wrapper 见 NOTICE。绝不把第三方 Minecraft 源码、缓存、账号或个人世界放进交接。
 
-## 当前连续开发授权与下一任务
+## 当前授权、版本与下一任务
 
-用户已要求阶段完成后连续开发，按推荐方案、不重复询问既有选择；任一有效额度窗口剩余≤5%先保存停止，不自动使用额度重置。重新读取当前工具结果，不使用历史额度数字。新增生产依赖、真实数据迁移和公开发布仍需对应明确授权；本机测试目录的原EULA接受仍有效。
+用户授权按推荐路线持续开发，当前先完成单人体验，不重复询问既有选择。本次明确授权上传GitHub、更新README/已采用资产/交接文档，范围为dev.17开发交接，不代表稳定发行或自动授权未来每次发布。新增生产依赖、真实数据迁移和破坏兼容仍需对应授权。任一有效Codex额度窗口剩余≤5%先保存停止，不自动消耗额度重置；重新读取工具，不使用历史数字。
 
-最新完整P7/dev.12，本机56服务端、14类成品客户端、两个普通独立客户端和无测试Mod服务端通过，同一正式JAR SHA-256为986706154f0ead68ea57a1a22177ab1a23cd0cde8b8c4c2751298c2da66d3568。源码和证据见Wildcraft-P7-source.zip、manifest/SHA256SUMS与verification/p7。P7-CHECKPOINT、wing-wheel先行包及所有P6冻结资产保持历史身份，不能改标签或覆盖包。
+下一步按[NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md)：人工单人试玩及定向平衡、B6风提示与底部机械外形、之后P11候选检查。不能将测试布置场景写成人工从零生存，不继续R2/P10.1，不凭理论重调成长或电池。
 
-机械公共入口为mechanics/MachineEntity、MachineNodes、MechanicsContent、MachineBodyItem、MachineToggle，客户端MachineRenderer/MachinePresentation。安装是服务端从眼睛重算命中，创造模式也转移一件；R包无参数，只取真实乘坐主体。机器格式1保存完整6堆栈、所有者、开关和原版实体状态；跟踪仅发类型、电量、燃料、冷却和工作位。RocketData/SpringData独立严格格式1；缺失目的区块不消费资源或推进冷却，回退必须对应世界备份。
-
-最新完整P8/dev.13，60服务端（59项目+1原版）、15类成品客户端（5分40秒）、两个普通独立客户端和无测试Mod服务端均通过。正式JAR SHA-256为157a0beafb07a58cbded94776f2e37aa375dafc5577a554fba6c82699d100d8d，证据/源码/校验在development-assets的P8文件，所有旧资产保持历史身份。
-
-制造机入口fabrication/FabricationContent、FabricatorEntity、FabricatorBlock、FabricatorItem、FabricatorMenu；客户端FabricatorScreen。格式1保存真实3槽、已确定完整结果与0–100进度。菜单只传进度/状态/可见槽，未完成结果不公布。原版Container和BlockEntityData必须同时携带：默认应用组件会覆盖items，仅BE数据会丢库存。默认容器散落关闭，loot_table使用26.3的modifier/copy_components；创造放置也真实转移一件以避免原版包装器恢复数量。
-
-下一任务按P9-PREPARATION：先正式原始材料快照/未知ID降级/数据上限/原子消费，再真实交互、武器盾箭效果、耐久附魔维修与模型，最后P9.1整合。P9仅准备文档，尚无正式组件或玩家入口。额度任一窗口≤5%先保存停止；重新读工具数字。公开GitHub仍dev.7，本机新阶段未上传。
-
-P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复现见DEVELOPMENT。完整材料只服务端，4字节投影桥接固定26.3容器CRC；不能删除这个Codec的HashOps路径。最新包及源码/校验在development-assets的P9索引，下一步R2按R2-PREPARATION研究；P9.1完整交接在development-assets的P91索引。
-
-## 本轮额度停线
-
-2026-10-04最终检测5小时余量3%/周85%，已按≤5%停止。P9和P9.1完整完成；R2候选实验尚未编译/接入/执行，不算通过，下一回先按[R2-CHECKPOINT](R2-CHECKPOINT.md)恢复。没有公开上传、生产依赖或真实存档迁移；正式多人林克时间保持关闭。
+- 机械公共入口`mechanics/MachineEntity`、`MachineNodes`、`MechanicsContent`、`MachineBodyItem`、`MachineToggle`；客户端`MachineRenderer`/`MachinePresentation`。服务端重算眼睛命中，创造也真实转移一件；R请求只读取真实乘坐主体。主体格式1保存6个完整堆栈、所有者、开关及原版实体状态；跟踪视图只包含部件、电量、燃料、冷却与工作位。缺失目的区块不扣资源或推进冷却，主体仍为单碰撞盒。
+- 制造入口`fabrication/FabricatorEntity`、`FabricatorBlock`、`FabricatorItem`、`FabricatorMenu`；客户端`FabricatorScreen`。格式1保存3槽、已经决定的完整结果与进度；未完成结果不公开。原版Container和BlockEntityData须同时携带，创造放置也转移一件，不能引入复制或重抽。
+- Fuse正式系统在`fuse/`，保存和原子事务边界见[架构](ARCHITECTURE.md)、[P9](P9-SPEC.md)、[P9.1](P9.1-VERIFICATION.md)。原材料完整快照与有限次数保留；未知材料回退不等于任意第三方效果兼容。
+- 当前正式JAR为[dev.17](../development-assets/wildcraft-0.1.0-dev.17+mc26.3.jar)，SHA-256：`e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35`。旧包、历史标签与研究资料不覆盖。
 
 ## 第二批美术后续入口
 
-运行资源与原件分别在 src/main/resources、art/production-v2；导入工具 tools/import-second-art.py 需要 Pillow，普通构建无需美术编辑器。新增 ArtSnapshot 不保存库存或私有制造结果，既有数据格式不迁移。首次接手先看 SECOND-ART-VERIFICATION 的准确验证范围，再看 R2-CHECKPOINT；R2 候选依然未注册、未验证，不因美术整合而算已完成。
+运行资源与原件分别在 src/main/resources、art/production-v2；导入工具 tools/import-second-art.py 需要 Pillow，普通构建无需美术编辑器。新增 ArtSnapshot 不保存库存或私有制造结果，既有数据格式不迁移。首次接手先看[当前资产台账](../art/ADOPTED-ASSETS.md)和SECOND-ART-VERIFICATION的准确范围；R2 候选依然未注册、未验证，不因美术整合而算已完成。
 
-## 当前用户优先级：先完成单人体验
+## 当前验证范围
 
-2026-10-06用户明确「目前不用考虑多人模式」。R2局部时间研究、P10.1正式多人林克时间与新增多人专项暂缓，不再列为下一阶段或P10的前置条件。先对dev.15做有限操作/视觉检查，再为P10风与天气编写规则与验收场景，随后完善单人生存循环。旧R2候选、研究文档和已有正常保存/同步边界保留；本次仅调整规划，不表示新功能已经实现。
+[P10.2验收](P10.2-VERIFICATION.md)：83项服务端、21类成品客户端完整回归；另有实际GUI1/2/3中英专项和无测试Mod服务端保存退出。完整日志、XML和148张截图见[verification/p102](../development-assets/verification/p102/README.md)。这些是dev.17 macOS实测，不是本次文档更新重新运行的测试。
 
+人工长期单人生存、从零原料采集、续航手感、第三方模型和多平台图形仍未完成；Linux CI结果单独看[Actions](https://github.com/ibka512/Wildcraft/actions)。原稿审稿与实际游戏验证分别记录。第二批29项采用并接入、30份版本保留，当前F05-10 v02，运行与原件关联见[台账JSON](../art/ADOPTED-ASSETS.json)。
 
 ## P10 接手入口
 
@@ -188,7 +180,7 @@ P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复�
 
 复现：先`./dev.sh --no-configuration-cache runDatagen`，再`build`；本机EULA已由所有者接受，当前机器可以用`-PacceptMinecraftEula=true runGameTest runWindClientTest`；其他操作者须自行接受。纯规则`verifyWindRules`纳入`check`。完整客户端保留既有历史回归，没有新增多人专项；本阶段不代表R2或多人林克时间完成。
 
-下一批在单人存档副本中跑完整生存循环，量化精力成长、三料理效果、电池/火箭/制造成本和风中的控制；再根据实测调参。继续检查机械底部穿插、轮子间隙、腰侧与第三方模型，并准备正式B6风提示。雷击能源未定稿，不能当成本轮已实现；不升级依赖、不改持久格式、不自动上传GitHub。
+P10.2已跑原生循环并记录费用，侧轮显示已修正；下一批仍需人工生存和自然地形记录，再定向调参。底部穿插、腰侧与第三方模型继续检查。雷击能源未定稿，不作为已实现功能；不升级依赖或改持久格式。
 
 ## P10.2/dev.17 接手要点
 
@@ -198,4 +190,10 @@ P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复�
 - `SurvivalClientTest`只提供原版原料与场景。合成/料理/装备/攀爬/滑翔/射箭/Fuse/充电/安装/驾驶/回收/制造/重开均用真实游戏路径；站点间传送、经验20与停止后的测试场景复位不代表自然探索。
 - 完整回归和GUI专项分开留证，GUI必须核对实际`Window.getGuiScale()`，不能把小窗将选项3自动夹为2算成实际3。后者用1280×960窗口支持真实1/2/3。
 - [数值基线](SINGLEPLAYER-BALANCE.md)/[逐项成本](SINGLEPLAYER-RECIPE-COSTS.csv)记录当前参数；本轮没有凭理论改成长或电池。下一批先做[人工试玩单](SINGLEPLAYER-PLAYTEST.md)或用户明确的新任务。B6可制作，见[合同](../art/production-docs/B6-WIND-ART-BRIEF.md)，正式资产仍未制作/采用。
-- 不新增多人工作，不把本机检查算成已上传GitHub或正式候选发布。
+- 不新增多人工作。本次dev.17为公开开发交接版，不能写成P11稳定候选或人工平衡已完成。
+
+## 公共下载与历史证据
+
+[ASSET-DOWNLOADS](ASSET-DOWNLOADS.md)列出当前工程与原始第二批ZIP，第一批完整交付继续从dev.7历史Release下载。根README、AGENTS和本文件是当前接手入口；旧设计、原稿和阶段报告保留历史身份。历史manifest中源码/文档哈希按对应游戏标签检验，不覆盖旧清单使它匹配新文档。当前全部公开文件快照见[dev.17清单](../development-assets/PUBLIC-ASSET-MANIFEST-dev17.json)，以交接标签为准。
+
+仓库保留所有权利，许可与NOTICE不变；不上传个人世界、账号、游戏/反编译源码、依赖缓存、协议接受文件、AppleDouble或编辑器运行配置。

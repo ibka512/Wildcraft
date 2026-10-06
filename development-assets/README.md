@@ -1,5 +1,8 @@
 # 全部开发资产与历史证据
 
+> 2026-10-06当前公开交接：dev.17 / handoff-dev17-2026-10-06。下方按时间记录各阶段，当时“未上传/公开dev.7”仅描述历史。本次纳入dev.8–dev.17源码、包、原稿与证据，下载见[ASSET-DOWNLOADS](../docs/ASSET-DOWNLOADS.md)。当前全仓库文件校验见[PUBLIC-ASSET-MANIFEST-dev17](PUBLIC-ASSET-MANIFEST-dev17.json)和[SHA256SUMS](PUBLIC-ASSET-SHA256SUMS-dev17.txt)，以交接标签复核。旧PUBLIC-ASSET-MANIFEST及阶段清单不覆写。
+
+
 归档日期：2026-10-03。这里镜像原有交付文件，保存其原始字节、哈希和当时的验证状态，不覆盖原版本。当前源码在仓库根目录；最新交接见 [AI-HANDOFF](../docs/AI-HANDOFF.md)。
 
 ## 可运行包与源码快照
@@ -107,4 +110,4 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 
 ## P10.2 单人生存入口与表现 / dev.17（2026-10-06）
 
-[正式包](wildcraft-0.1.0-dev.17+mc26.3.jar)、[正式main/client源码](wildcraft-0.1.0-dev.17-sources.jar)、[实际证据](verification/p102/README.md)、[manifest](Wildcraft-P10.2-manifest.json)/[校验](Wildcraft-P10.2-SHA256SUMS.txt)。完整测试和交接文档在当前仓库中，见[P10.2验收](../docs/P10.2-VERIFICATION.md)。83服务端/21类客户端与实际GUI1/2/3专项均通过，无测试Mod服务端保存退出通过。费用和原资产保持，底部/B6美术另列待办；本轮未上传GitHub或发布。
+[正式包](wildcraft-0.1.0-dev.17+mc26.3.jar)、[正式main/client源码](wildcraft-0.1.0-dev.17-sources.jar)、[实际证据](verification/p102/README.md)、[manifest](Wildcraft-P10.2-manifest.json)/[校验](Wildcraft-P10.2-SHA256SUMS.txt)。完整测试和交接文档在当前仓库中，见[P10.2验收](../docs/P10.2-VERIFICATION.md)。83服务端/21类客户端与实际GUI1/2/3专项均通过，无测试Mod服务端保存退出通过。费用和原资产保持，底部/B6美术另列待办；本段记录阶段完成时状态，后续公开交接见顶部。

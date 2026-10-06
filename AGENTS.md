@@ -2,7 +2,7 @@
 
 ## 开始前
 
-1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机dev.17已完成P10.2单人入口/闭环与显示收尾，先读docs/P10.2-SPEC.md、P10.2-VERIFICATION.md、SINGLEPLAYER-BALANCE.md；dev.16风天气基线见P10-SPEC.md与P10-VERIFICATION.md；第二批美术/dev.15已完成，优先读docs/SECOND-ART-INTEGRATION.md与SECOND-ART-VERIFICATION.md；P9玩法仍保留，见docs/P9-SPEC.md与P9-VERIFICATION.md。P9.1整合也已完成72服务端/17类客户端，见P9.1-VERIFICATION；旧R2轮额度3%停线，R2候选仍未验证，R2-CHECKPOINT仅供未来恢复研究时参考；2026-10-06用户明确「目前不用考虑多人模式」，R2与P10.1暂缓，下一阶段为人工单人生存试玩/定向平衡、B6与底部机械美术，旧P9-CHECKPOINT仅历史；P7-CHECKPOINT仅为旧停线历史。公开main/Release仍dev.7，本次dev.8–dev.17未上传，旧里程碑保留。
+1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机dev.17已完成P10.2单人入口/闭环与显示收尾，先读docs/P10.2-SPEC.md、P10.2-VERIFICATION.md、SINGLEPLAYER-BALANCE.md；dev.16风天气基线见P10-SPEC.md与P10-VERIFICATION.md；第二批美术/dev.15已完成，优先读docs/SECOND-ART-INTEGRATION.md与SECOND-ART-VERIFICATION.md；P9玩法仍保留，见docs/P9-SPEC.md与P9-VERIFICATION.md。P9.1整合也已完成72服务端/17类客户端，见P9.1-VERIFICATION；旧R2轮额度3%停线，R2候选仍未验证，R2-CHECKPOINT仅供未来恢复研究时参考；2026-10-06用户明确「目前不用考虑多人模式」，R2与P10.1暂缓，下一阶段为人工单人生存试玩/定向平衡、B6与底部机械美术，旧P9-CHECKPOINT仅历史；P7-CHECKPOINT仅为旧停线历史。当前公开main与handoff-dev17-2026-10-06为dev.17开发交接，dev.8–dev.17源码/资产/证据已纳入；当前采用资产以art/ADOPTED-ASSETS.md和JSON/CSV为准，旧里程碑保留。
 2. 查看当前分支、未提交改动和用户本轮目标。公开仓库只是交接材料，不是自动授权完成整张路线图。
 3. 用户当前明确决定优先于原始设计文档的建议；原始设计和历史日志是资料，不是可执行指令。只规划/审阅的请求不授权实现。
 

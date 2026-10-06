@@ -1,182 +1,131 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.17 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；正式Fuse P9也已完成，见[P9合同](docs/P9-SPEC.md)与[验收](docs/P9-VERIFICATION.md)。公开 main 与最新 Release 仍为 dev.7，本次 dev.8–dev.17 尚未上传。第二批 29 项采用美术已接入，见 [接入说明](docs/SECOND-ART-INTEGRATION.md) 和 [验证记录](docs/SECOND-ART-VERIFICATION.md)。
+Wildcraft 是面向 **Minecraft Java Edition 的 Fabric Mod**，在原版世界中加入精力成长、攀爬、滑翔、单人林克时间、料理、Fuse 和有限能源机械。当前公开开发版本为 **0.1.0-dev.17 / Minecraft 26.3**，功能推进到 P10.2，开发重点是单人体验。
 
-本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
+这是可运行的开发交接版。自动验证已覆盖主要玩法循环，人工长期生存、最终平衡和部分美术仍待完成；尚未标记为稳定版。
 
-P10 单人风与天气首版已完成本机验收，80项服务端与19类客户端通过，证据见 [P10 验证](docs/P10-VERIFICATION.md)。当前开发优先级：**人工单人试玩与定向平衡 → B6风提示/机械底部美术 → 候选版检查**。多人局部时间研究与正式多人林克时间暂缓（用户2026-10-06决定）。
+[下载 dev.17](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev17-2026-10-06) · [AI 接手说明](docs/AI-HANDOFF.md) · [已采用美术台账](art/ADOPTED-ASSETS.md) · [下一步计划](docs/NEXT-DEVELOPMENT-PLAN.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
 
-P10.2/dev.17补齐8条配方书提示、料理锅四类配方指引与侧轮接地显示，并修复弹簧与原版指南针配方冲突（成本不变）。原料→合成→探索战斗→充电驾驶→回收制造→保存重开已通过原生单人操作检查；自动布置的场景不替代从零采矿或人工手感。见 [本批合同](docs/P10.2-SPEC.md)、[验收](docs/P10.2-VERIFICATION.md)、[数值基线](docs/SINGLEPLAYER-BALANCE.md)和[人工试玩单](docs/SINGLEPLAYER-PLAYTEST.md)。
+## 下载与安装
 
-**接手入口：[AGENTS.md](AGENTS.md) → [AI 开发交接](docs/AI-HANDOFF.md) → [下一阶段执行计划](docs/NEXT-DEVELOPMENT-PLAN.md)。**
+1. 准备 Minecraft **26.3**、Java **25** 和 Fabric Loader **0.19.5**。
+2. 将 [Wildcraft dev.17 正式 JAR](https://github.com/ibka512/Wildcraft/releases/download/handoff-dev17-2026-10-06/wildcraft-0.1.0-dev.17%2Bmc26.3.jar) 与 Fabric API **0.161.0+26.3** 放入实例的 `mods/`。
+3. 用独立测试世界游玩，升级前备份世界。`-sources.jar` 和 `-gametest.jar` 用于开发，不安装到游玩实例。
 
-[下载本次交接](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03) · [开发手册](docs/DEVELOPMENT.md) · [架构与保存边界](docs/ARCHITECTURE.md) · [路线图](docs/ROADMAP.md) · [全部历史资产](development-assets/README.md) · [构建状态](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
+正式 JAR SHA-256：
+
+```text
+e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35
+```
+
+[交接 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev17-2026-10-06) 提供正式 JAR、源码 JAR、完整工程交接包、第二批原始采用交付，以及下载校验清单。完整工程含当前源码、测试、美术源稿、文档和历史开发证据；较大的第一批完整交付仍在 [dev.7 历史 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)，链接和用途见 [资产下载说明](docs/ASSET-DOWNLOADS.md)。
 
 ## 已实现的玩法
 
 | 系统 | 当前行为 |
 | --- | --- |
-| 精力与成长 | 记录安装后的历史最高经验等级；基础上限 `100 + 2 × 历史最高等级`；消费经验不降低上限；保存精力与恢复等待 |
-| 攀爬 | 按住 G 抓墙，W/S 上下、A/D 横移；可在碰撞允许时翻越墙顶；放手、耗尽或受击下落 |
-| 滑翔伞 | 生存合成；专用真实装备位；空中重新按跳跃键开收伞；双手持伞，取用物品自动收伞，真实物品仍在库存 |
-| 背负装备 | 剑/斧、盾、弓/弩实际使用后登记；仅切快捷栏不登记；三个视觉引用不增加容量，失去真实物品后清除 |
-| 探索界面 | 原版红心在左上角，精力数值与短条在下方；多行红心自动适配；底部保留原版经验、饥饿和骑乘显示 |
-| 单人林克时间 | 未开放 LAN 的单人生存世界，空中实际拉弓自动真减速；共享精力，保持原版射箭语义，有限缓降且保留摔落伤害；F8 调整画面 |
-| 环境温度 P4A | 群系、当地雨雪、浸水和可见热源影响七档读数；左上角平滑显示；F8 关闭边缘色调；普通冷热无额外惩罚，原版细雪/皮革规则保留 |
-| 料理 P4B | 四类悬停配方指引、独立料理锅与七条原版食材配方，吃完返还空碗；三类有限效果、有效实际计时；暂停/离线停止，死亡清除，保暖不能完全免疫细雪 |
-| 红石能源 P5 | 固定红石块无限储量、每源/每充电器20能量/世界刻上限；相邻充电器共享并轮流供电，信号和随身红石块不产生电量 |
-| 有限电池 P5 | 空电池容量1000，充电器显示进度；实际堆栈存余量，取出消费、掉落或重载不回满；作为已实现机械动力供给 |
-| 机械安装 P6 | 六个固定节点；手持部件右键安装、吸附预览；蹲下空手右键拆下；顶部控制板启停；空手乘坐、A/D转向、R启停；拆空后蹲下空手攻击回收主体 |
-| 八类部件 P7 | 被动翼、接地轮子、一次性火箭、冷却弹簧、有限稳定器、水中浮力，以及已有风扇/电池；W/S驱动、载重限制、真实资源保存 |
-| 制造机 P8 | 实际投入4铜＋2红石，100世界刻产出一个既定池内部件；结果保存、不因重开或搬运重抽 |
-| Fuse P9 | V将副手单件材料融合到宿主，Shift＋V拆分；真实材料、次数与保存保留，未知材料不保证专属效果 |
-| 风与天气 P10 | 自然水平风、当地雨雪、屋顶避风；伞与离地机械翼响应，开伞/有翼骑乘时显示临时风提示 |
-| 第二批美术 v2 | 四类料理、新温度/料理/能源/制造界面、机械模型与透明预览、Fuse 显示和有限音效粒子、腰侧装备与动作衔接；[记录](docs/SECOND-ART-VERIFICATION.md) |
-| 核心美术 v1 | 原创滑翔伞网格、标准/细手臂握持和攀爬姿态、五类背负挂点与短落定、精力图集、专注画面/音效及设置页 |
+| 精力成长 | 记录安装后历史最高经验等级；上限 `100 + 2 × 历史最高等级`，消费经验不降低峰值。普通走路、跳跃、疾跑和游泳不新增费用 |
+| 攀爬 | 按住专用键抓墙，上下和横向移动；允许时翻越墙顶；放手、耗尽或受击下落 |
+| 滑翔伞 | 生存合成，唯一独立真实装备位；空中再次按跳跃开收伞，双手持伞；取用物品自动收伞，库存不增加或复制 |
+| 背负装备与 HUD | 实际使用后登记近战、盾和弓三类视觉引用；披风/鞘翅下使用侧腰布局。左上角红心、下方精力；底部保留原版经验与饥饿 |
+| 单人林克时间 | 未开放 LAN 的单人生存世界，空中实际拉弓触发真减速，共享精力；原版一次射箭，有限缓降保留摔落伤害；弩不触发 |
+| 料理与温度 | 独立料理锅、七条原版食材配方、四类悬停指引，返还空碗；三种有限效果按有效实际时间计时。七档环境读数，普通冷热不新增普遍惩罚，耐热不等于抗火 |
+| 红石与电池 | 固定红石块无限储量但供电限速，相邻充电器共享额度；随身红石块和红石信号不产生电量。电池容量 1000，真实余量保存，重开不回满 |
+| 机械安装与回收 | 单主体六节点，右键安装与吸附预览，蹲下空手拆卸，乘坐控制；拆空后回收主体 |
+| 八类机械部件 | 翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置；有限电量、一次性燃料、冷却、载重与原版碰撞 |
+| 古代装置制造机 | 投入 4 铜＋2 红石，100 世界刻产出一个既定池内部件；一次决定结果并保存，重开或搬运不重抽 |
+| Fuse | 主手宿主＋副手单件材料融合，拆分、次数、耐久、维修与保存；剑/斧/盾/箭及飞箭外观和有限特效。未知材料保留快照并通用回退，不承诺每个物品都有专属效果 |
+| 风与天气 | 有界自然水平风，当地雨雪、屋顶与水中修正；滑翔伞和离地机械翼响应。临时风提示已经可用，B6 正式美术待制作 |
 
-![第三人称滑翔](development-assets/verification/core-art-v1/glider-third-person-front.png)
+最新 dev.17 补齐配方书发现提示和料理锅指引，并修复弹簧与原版指南针配方冲突（原料成本不变）；侧装轮子已调整接地显示。详见 [P10.2 规格](docs/P10.2-SPEC.md) 和 [验收](docs/P10.2-VERIFICATION.md)。
 
-![第一人称握持](development-assets/verification/core-art-v1/glider-first-person.png)
-
-![背负装备](development-assets/verification/core-art-v1/back-equipment.png)
-
-当前披风或鞘翅下使用侧腰布局，三个背负记录仍只引用真实库存。弩不触发林克时间；多人局部林克时间尚未实现，联机不会降低全服速率。精力目前采用数值加短条。详细操作与限制见 [开发手册](docs/DEVELOPMENT.md) 和各阶段规则。
-
-## 下载与安装
-
-- **本机最新开发包：[wildcraft-0.1.0-dev.17+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.17+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
-- [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
-- [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
-
-在独立 Minecraft **26.3** 实例安装 Fabric Loader **0.19.5**，将 Wildcraft 正式 JAR 与 Fabric API **0.161.0+26.3** 放入 `mods/`；客户端与服务端均需安装。不要安装 `-gametest.jar` 或 `-sources.jar`。开发阶段使用专用测试世界，升级前保留世界备份。
-
-已公开 dev.7 JAR SHA-256（历史包保持不变）：
-
-```text
-91b8a92e9eb69119b8a663c29d0f259e9a0bff4fd98ba2d1a6ad87305af6232a
-```
-
-本机 dev.8 JAR SHA-256：`8207d202de9a6375057b046cf497d6fd377043dcaa22cfe53149e2238caee1fa`。本阶段 [验证](docs/P4A-VERIFICATION.md)、[资产校验](development-assets/Wildcraft-P4A-SHA256SUMS.txt) 随开发分支保存。
-
-`v0.1.0-dev.*+mc26.3` 标签固定游戏里程碑；`handoff-dev7-2026-10-03` 固定本次交接文档与构建入口。旧交接 [handoff-2026-10-03](https://github.com/ibka512/Wildcraft/releases/tag/handoff-2026-10-03) 仍对应 dev.5，不代表当前版本。
-
-## 从源码构建
-
-| 工具 | 固定版本 |
+| 默认操作 | 用途 |
 | --- | --- |
-| Minecraft Java Edition | 26.3 |
-| JDK | 25 |
-| Fabric Loader | 0.19.5 |
-| Fabric API | 0.161.0+26.3 |
-| Loom | 1.18.2 |
-| Gradle Wrapper | 9.7.1 |
+| G 按住；W/S、A/D | 攀爬和沿墙移动 |
+| 物品栏独立伞槽；空中再次按跳跃 | 装备、开伞和收伞 |
+| 空中使用弓 | 单人林克时间 |
+| V / Shift＋V | 融合 / 拆分；材料在副手 |
+| 手持部件右键节点 | 安装；蹲下空手右键拆卸 |
+| 空手乘坐；R、W/S、A/D | 机械启停、驱动和转向 |
+| F8 | 客户端画面设置，关闭表现不关闭技能或费用 |
 
-版本集中于 [gradle.properties](gradle.properties)。使用项目 Wrapper，不需要安装全局 Gradle。推荐 IntelliJ IDEA，继续使用已验证技术栈。
+按键可在原版设置中修改。完整操作、配方与管理员验证入口见 [开发手册](docs/DEVELOPMENT.md)。
+
+![单人滑翔、料理、风与多排红心](development-assets/verification/p102/screenshots/presentation/0013_polish-wind-multiheart-food-zh_cn-scale3.png)
+
+## 已采用游戏美术
+
+**核心 14 个编号＋第二批 29 个编号已接入游戏。** 第二批保存 30 份版本交付，F05-10 当前使用 v02，v01 保留历史。模型、像素源稿、动画参考、音效母带、导出、审稿和采用记录均保留来源。
+
+- [当前采用/接入台账](art/ADOPTED-ASSETS.md)：43 项编号的用途、当前版本、源稿和运行入口；提供 [CSV](art/ADOPTED-ASSETS.csv) 和 [JSON](art/ADOPTED-ASSETS.json)。
+- [核心原稿](art/approved-v1/README.md) / [核心接入](docs/CORE-ART-INTEGRATION.md)：滑翔伞、角色姿态、背负、精力与专注表现。
+- [第二批原稿](art/production-v2/README.md) / [第二批接入](docs/SECOND-ART-INTEGRATION.md)：料理、温度、能源、机械、制造、Fuse、12 段短音及角色复核。
+- 待制作：[B6 风与天气](art/production-docs/B6-WIND-ART-BRIEF.md)；待修订：[机械底部部件](art/production-docs/P10.2-MECHANICAL-ART-REPAIR.md)。二者不计入已采用资产。
+
+原交付中的 `integrated: false` 和旧进度文字描述交付当时状态，原件不改写。当前状态以新台账、实际源码与阶段验收为准；审稿模拟不等于实机验收。
+
+## 从源码开发
+
+| 工具 | 锁定版本 |
+| --- | --- |
+| Minecraft / JDK | 26.3 / 25 |
+| Fabric Loader / Fabric API | 0.19.5 / 0.161.0+26.3 |
+| Loom / Gradle Wrapper | 1.18.2 / 9.7.1 |
+
+版本集中于 [gradle.properties](gradle.properties)，继续使用已验证环境。推荐 IntelliJ IDEA，项目 Wrapper 管理 Gradle。
 
 ```sh
 git clone https://github.com/ibka512/Wildcraft.git
 cd Wildcraft
-# macOS 先安装 JDK 25；必要时设置 WILDCRAFT_JAVA_HOME
+# macOS：安装 JDK 25；必要时设置 WILDCRAFT_JAVA_HOME
 ./dev.sh --version
 ./dev.sh runDatagen
 ./dev.sh build gameTestJar
 ./dev.sh runClient
 ```
 
-Linux 设置 JDK 25 后使用 `./gradlew`，Windows 使用 `gradlew.bat`。首次构建需要联网下载依赖。`build` 将正式安装包导出至项目 `dist/`；生成资源由 `runDatagen` 维护，不手改 `src/main/generated/`。
+Linux 设置 `JAVA_HOME` 后使用 `./gradlew`，Windows 使用 `gradlew.bat`。资源生成和构建分两次执行；生成资源不手改。`build` 导出安装包到项目 `dist/`。
 
-macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`。可用 `WILDCRAFT_CACHE_HOME` 将缓存、输出和双客户端实验目录统一放在其他 **APFS** 位置；`GRADLE_USER_HOME` 与 `WILDCRAFT_PROJECT_CACHE` 的显式设置仍优先。默认克隆不要求本机外置盘或开发磁盘映像。
-
-项目所有者当前本机工程已集中至 `/Volumes/仕事/Wildcraft`，采用盘内 APFS 磁盘映像保存工程、JDK、缓存与测试目录。挂载后工程在 `开发环境/project`，`dev.sh` 自动识别相邻的本机运行标记；详情见 [本机迁移与开发入口](docs/LOCAL-DEVELOPMENT.md)。该本机环境及游戏缓存不随 GitHub 分发。
-
-## 验证与可信范围
-
-本批最终结果见 [P10.2 验收](docs/P10.2-VERIFICATION.md)：83项服务端、21类成品客户端，以及实际GUI1/2/3专项和无测试Mod服务端。保留旧阶段证据，不把模拟布置和自动计数当成人工长期试玩。
-
-P10 新增确定性风规则、当地天气/屋顶/水中检查、翼与有限能源组合、实际开伞/收伞/林克时间与保存重开；本次完整证据及人工未验范围见 [P10 验证](docs/P10-VERIFICATION.md)。历史检查的计数属于各自版本。
-
-核心美术基线已在 macOS 实际通过：精力 **13 个示例 + 1000 组边界检查**、有效时钟 **10 项检查**、**28 项服务端 GameTest**、**9 类成品客户端回归**、两个独立普通客户端观察，以及无测试模组独立服务端启动和保存退出。本机 P4A 已扩展到 **32 项服务端 / 10 类成品客户端回归**，新增温度规则、专项客户端与生命周期检查，见 [P4A 验证](docs/P4A-VERIFICATION.md)。另有 120fps、30fps、附魔及服务端阻塞四种普通客户端真实计时。证据见 [核心美术验收](docs/CORE-ART-VERIFICATION.md)；本次迁移验证单独记录在 [迁移与交接记录](docs/MIGRATION-HANDOFF-2026-10-03.md)。
-
-```sh
-./dev.sh runDatagen
-./dev.sh build gameTestJar
-```
-
-图形测试及普通服务端需要操作者自行阅读并接受 [Minecraft EULA](https://www.minecraft.net/en-us/eula)。接受后才添加以下参数：
-
-```sh
-./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runPackagedClientTest
-./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runCoreArtClientTest
-```
-
-普通 `test` 没有测试来源，不算测试通过。GitHub CI 检查 Wrapper、资源生成一致性、编译、规则和无图形服务端测试；实际图形、手感与长期多人另外验收，以 [Actions](https://github.com/ibka512/Wildcraft/actions) 的具体运行结果为准。
-
-未覆盖：所有真实账号皮肤/披风、第三方动画与模型、主观混音、长期高延迟或丢包、Windows/Linux 图形游玩。历史证据保留其当时状态，不把研究成功写成正式系统完成。
-
-## 下一阶段
-
-P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，P9正式Fuse也已完成，P9.1组合验收也已完成，P10风天气首版已实现；P10.2单人取得入口与显示收尾也已完成；下一步按人工试玩单定向平衡并修正B6/底部美术。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
-
-| 顺序 | 后续范围 |
-| --- | --- |
-| P4B（已完成） | 独立料理锅、七条配方、有效实际时长、有限细雪与恢复辅助 |
-| P5（已完成） | 红石信号与电量分离、固定无限能源限速、充电器和有限电池 |
-| P6 / P7（本机已完成） | 主体、有限安装节点、吸附/拆卸回收；翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置 |
-| P8（本机已完成） | 古代装置制造机；投入一次、确定结果保存、中断恢复 |
-| P9 / P9.1 | 正式 Fuse 与背负/空中箭整合；任意物品 Fuse 的保存、通用规则、专属效果和外观分别研究 |
-| P10（首版） | 自然水平风、当地雨雪、避风；开伞和离地机械翼响应，见[P10规格](docs/P10-SPEC.md) |
-| R2 / P10.1（暂缓） | 多人局部时间研究与多人林克时间 |
-| P10.2（本批完成） | 单人取得入口、实际循环、轮子表现与数值基线；底部部件/B6正式美术仍待后续 |
-| P11 | 人工单人生存与定向平衡、兼容、性能、候选版；多人另行恢复 |
-
-具体任务和各阶段验收见 [下一阶段计划](docs/NEXT-DEVELOPMENT-PLAN.md)。继续排除究极手、时间倒流、大型 Boss、完整神庙、大型新维度、复杂剧情、大量新矿石/资源体系、小型世界事件、环境谜题及机械蓝图；超复杂机械物理暂缓。
-
-## 文件地图与接手顺序
+macOS 默认缓存位于 `~/Library/Caches/Wildcraft`；可用 `WILDCRAFT_CACHE_HOME` 指向其他 APFS 位置。本机工程位于 `/Volumes/仕事/Wildcraft/开发环境/project`，环境详情见 [LOCAL-DEVELOPMENT](docs/LOCAL-DEVELOPMENT.md)，其他电脑不需要本机磁盘映像。
 
 ```text
-AGENTS.md                  用户决定、工程边界及执行规则
-src/main/                  服务端可加载的公共逻辑与运行资源
-src/client/                输入、HUD、渲染、界面和数据生成
-src/main/generated/        生成模型与中英文资源
-src/gametest/              服务端/客户端检查及隔离研究
-src/rulesTest/             精力、有效时钟和温度平滑/回差规则检查
-art/approved-v1/           当前采用的 Blender、像素、配置等源稿
-art/tools/                 网格和角色姿态转换工具
-art/production-docs/       美术制作进度、资产清单与后续制作规划
-docs/                      规则、架构、路线、原设计、验收、AI 交接
-development-assets/        历史 JAR/源码包、截图、日志和校验清单
+src/main/             公共玩法、数据、资源；独立服务端可加载
+src/client/           输入、HUD、模型、界面与数据生成
+src/main/generated/   生成配方、模型、语言与发现提示
+src/gametest/         服务端/客户端验证与隔离研究
+src/rulesTest/        精力、有效时钟、温度和风规则
+art/                  已采用原稿、原型、当前台账与制作合同
+tools/                美术导入与台账校验
+docs/                 设计、规则、架构、验收与 AI 交接
+development-assets/   正式历史包、截图、日志与冻结校验
 ```
 
-- [AI-HANDOFF](docs/AI-HANDOFF.md)：已有决定、代码入口、保存与网络边界、复现流程和下一任务。
-- [核心美术接入](docs/CORE-ART-INTEGRATION.md) / [源文件索引](art/README.md)：运行资源和可编辑原件的对应关系。
-- [原始设计来源](docs/design-inputs/2026-10-02/SOURCES.json)：四份设计与输入哈希；原文示例、旧建议不覆盖用户后续决定。
-- [大文件与原始资产索引](docs/ASSET-DOWNLOADS.md)：Release 下载、采用状态、来源和校验。
-- [公开交接记录](docs/PUBLICATION.md)：dev.5 初次交接及本次 dev.7 更新。
+## 验证与当前限制
 
-源码克隆加本次 Release 的美术包，可取得接手所需的当前实现和全部设计/开发美术资料。个人存档、账号、已接受 EULA 的运行文件、Minecraft 游戏文件、反编译源码及依赖缓存只在本机保存，不公开分发。
+最新 dev.17 在 macOS 的实际结果：**83 项服务端检查、21 类成品客户端回归通过**；另通过中英料理指引、实际 GUI 缩放 1/2/3、F1/暂停和无测试 Mod 独立服务端检查。原料合成→料理→攀爬/滑翔/射箭→Fuse→充电/驾驶→拆卸/制造→保存重开已走原生路径，完整证据见 [P10.2-VERIFICATION](docs/P10.2-VERIFICATION.md)。该场景提供原版原料并自动布置、定位，未覆盖从零采矿和人工长程生存。
+
+```sh
+python3 tools/verify-adopted-assets.py
+./dev.sh runDatagen
+./dev.sh build gameTestJar
+# 操作者自行阅读并接受 Minecraft EULA 后：
+./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runPackagedClientTest
+```
+
+GitHub [Actions](https://github.com/ibka512/Wildcraft/actions) 检查 Wrapper、生成资源一致性、编译和规则，具体结果以运行记录为准。普通 `test` 没有测试来源，不作为通过证据；Linux 构建不等于 Linux 图形验收。历史报告和校验保持各自阶段身份，按对应 `v0.1.0-dev.*+mc26.3` 标签复核源码，不能要求旧源码校验匹配今天的文档。
+
+仍待完成：人工长期单人生存与续航平衡、B6 正式美术、底部部件穿地修正、第三方模型/装备兼容、多平台图形与性能验收。机械仍采用一个主体碰撞盒，未实现逐部件复杂刚体。**多人局部时间 R2 / P10.1 暂缓**；普通已有同步保留，当前不开展新增多人专项。
+
+## 继续开发与交接
+
+接手顺序：[AGENTS](AGENTS.md) → [AI-HANDOFF](docs/AI-HANDOFF.md) → [下一阶段计划](docs/NEXT-DEVELOPMENT-PLAN.md) → 当前规格和验证。下一步先按 [人工试玩单](docs/SINGLEPLAYER-PLAYTEST.md) 记录真实单人生存，再根据 [数值基线](docs/SINGLEPLAYER-BALANCE.md) 定向调整；同步准备 B6 与机械底部美术，之后进行 P11 候选版检查。
+
+保留完整 Git 历史、dev.1–dev.17 游戏标签、旧包和研究资料。dev.17 游戏标签固定功能版本；`handoff-dev17-2026-10-06` 固定本次交接快照。公开记录见 [PUBLICATION](docs/PUBLICATION.md)，各阶段资产见 [development-assets](development-assets/README.md)。
+
+继续排除究极手、时间倒流、大型 Boss、完整神庙、大型新维度、复杂剧情、大量新矿石/资源体系、小型世界事件、环境谜题和机械蓝图；超复杂机械物理暂缓。任意物品 Fuse 的专属外观、效果与第三方兼容继续作为研究方向。
 
 ## 权利与来源
 
-源码与原创美术按 [LICENSE](LICENSE) 保留所有权利。公开可查看不代表采用 MIT 等开放许可证，本次交接不改变许可。Fabric 模板与 Gradle Wrapper 来源见 [NOTICE.md](NOTICE.md)。本项目不是 Nintendo、Mojang 或 Microsoft 的官方产品；原创资产未复制塞尔达贴图或模型。
+源码与原创美术按 [LICENSE](LICENSE) 保留所有权利；公开可查看不代表采用 MIT 等开放许可证。本次交接不改变许可，Fabric 模板与 Gradle Wrapper 来源见 [NOTICE](NOTICE.md)。项目不是 Nintendo、Mojang 或 Microsoft 的官方产品。
 
-本机 P4B：37 项服务端、11 类成品客户端候选回归及无测试模组服务端通过；原型美术可编辑，详见 P4B-VERIFICATION。当前未发布，长期多人争抢与最终生存平衡仍待后续验收。
-
-本机dev.9安装包 SHA-256：`37cd31c0e716edb07e4d7d14c6d5d25e2357addb53bda500e1e2daf1598c566d`。
-
-本机dev.10：40项服务端、12类候选客户端回归、最终能源专项和独立服务端通过；SHA-256：`1e7a0ec8e3fb6b630b62f071fb660771a8d816fa454a6a418163864f3986ca39`。验证和限制见P5-VERIFICATION。
-
-当前完整本机阶段P7/dev.12：56项服务端、14类成品客户端、两个普通独立客户端及无测试Mod服务端通过。JAR SHA-256：`986706154f0ead68ea57a1a22177ab1a23cd0cde8b8c4c2751298c2da66d3568`。原翼/轮子停线检查点保留其历史状态，最新入口见[P7验收](docs/P7-VERIFICATION.md)。公开GitHub仍dev.7，当前没有上传新发布。
-
-## P8 制造机
-
-独立古代装置制造机，每批4铜锭+2红石，100加载世界刻，八类部件各12.5%。服务端启动时扣料并保存一次结果；关闭、暂停、离线或搬运不会重抽。满库存保留成品，挖下再放置携带实际库存和进度。见[P8规格](docs/P8-SPEC.md)、[完整验收](docs/P8-VERIFICATION.md)和[资产](development-assets/verification/p8/README.md)。
-
-P9正式Fuse已完成，见[完整验收](docs/P9-VERIFICATION.md)；P9.1组合验收也已完成，P10风天气首版已实现；下一步单人生存平衡与表现完善空中箭、林克时间、背负和料理。
-
-V融合、Shift+V拆卸；生存/冒险主手剑/斧/盾/箭、副手材料。32次材料磨损不会通过拆装补满；Infinity仍消费融合箭。通用外观为可替换原型，任意材料的第三方能力/模型仍需专项研究。
-
-P9本机dev.14新增正式Fuse；71服务端检查、16类完整客户端、两个普通客户端及独立服务端通过。[源码](development-assets/Wildcraft-P9-source.zip) / [资产与校验](development-assets/Wildcraft-P9-SHA256SUMS.txt)。
-
-P9.1沿用同一dev.14正式包，72服务端/17类完整客户端回归通过；[组合验收](docs/P9.1-VERIFICATION.md)、[交接源码](development-assets/Wildcraft-P91-source.zip)、[校验](development-assets/Wildcraft-P91-SHA256SUMS.txt)。下一步多人局部时间仅研究，规则见[R2准备](docs/R2-PREPARATION.md)。
-
-2026-10-04额度停线：P9/P9.1完成，R2仅准备候选实验，未编译运行；恢复入口[R2检查点](docs/R2-CHECKPOINT.md)。
+GitHub 分发源码、原创资产和开发证据；个人存档、账号、协议接受文件、Minecraft 游戏/反编译源码及依赖缓存不进入交接包。

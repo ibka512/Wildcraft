@@ -1,0 +1,44 @@
+id,name,batch,current_version,adopted,integrated,first_integrated_game_version,source_directory,source_manifest,use,notes
+A01,精力 HUD,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A01-精力HUD-v1,art/approved-v1/SOURCE-MANIFEST.json,精力 HUD,
+A03,展开滑翔伞模型,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A03-A04-展开滑翔伞-v1,art/approved-v1/SOURCE-MANIFEST.json,展开滑翔伞模型,
+A04,展开滑翔伞纹理,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A03-A04-展开滑翔伞-v1,art/approved-v1/SOURCE-MANIFEST.json,展开滑翔伞纹理,
+A05,滑翔伞物品图标,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1,art/approved-v1/SOURCE-MANIFEST.json,滑翔伞物品图标,
+A06,滑翔伞装备空槽,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1,art/approved-v1/SOURCE-MANIFEST.json,滑翔伞装备空槽,
+A07,滑翔握持与姿态,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A07-滑翔握持与姿态-v1,art/approved-v1/SOURCE-MANIFEST.json,滑翔握持与姿态,dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留
+A08,攀爬动作,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A08-攀爬动作-v1,art/approved-v1/SOURCE-MANIFEST.json,攀爬动作,dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留
+A09,背负装备摆放与挂点,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A09-背负装备挂点-v1,art/approved-v1/SOURCE-MANIFEST.json,背负装备摆放与挂点,dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留
+A10,背负装备收取过渡,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A10-背负装备收取过渡-v1,art/approved-v1/SOURCE-MANIFEST.json,背负装备收取过渡,dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留
+A11,林克时间画面,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A11-林克时间画面-v1,art/approved-v1/SOURCE-MANIFEST.json,林克时间画面,
+A12,专注准星与低精力提示,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A12-专注准星与低精力提示-v1,art/approved-v1/SOURCE-MANIFEST.json,专注准星与低精力提示,
+A13,专注进入/退出音效,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A13-专注进入退出音效-v1,art/approved-v1/SOURCE-MANIFEST.json,专注进入/退出音效,dev.15侧腰/衔接/混音复核叠加于原核心资产；原件继续保留
+A14,模组品牌图标,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A14-模组品牌图标-v1,art/approved-v1/SOURCE-MANIFEST.json,模组品牌图标,
+A15,表现设置页,core-v1,v1,True,True,0.1.0-dev.7,art/approved-v1/A15-表现设置页-v1,art/approved-v1/SOURCE-MANIFEST.json,表现设置页,
+A07-A08-C,探索动作衔接,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/A07-A08-C/v01,art/production-v2/A07-A08-C/v01/manifest.json,攀爬/滑翔短衔接、最短旋转路径、取用物品即时接管,
+A09-C,披风/鞘翅下侧腰装备,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/A09-C/v01,art/production-v2/A09-C/v01/manifest.json,披风/鞘翅下五类装备改放侧腰，真实归属立即生效,
+A13-C,专注音效混音,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/A13-C/v01,art/production-v2/A13-C/v01/manifest.json,原专注音的进入 0.22 / 退出 0.28 混音参数,采用B方案进入0.22/退出0.28；复用原音，不新增生产音源
+F01-01,料理锅,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F01-01/v01,art/production-v2/F01-01/v01/manifest.json,料理锅原生方块模型与 64px 图集,
+F01-02,四类料理,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F01-02/v01,art/production-v2/F01-02/v01/manifest.json,四种实际料理类别分流，强度 I/II 共用同类图标,
+F01-03,料理效果HUD,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F01-03/v01,art/production-v2/F01-03/v01/manifest.json,三效果 HUD，真实等级与有限倒计时、窄屏排布,
+F01-04,料理锅界面,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F01-04/v01,art/production-v2/F01-04/v01/manifest.json,176×182 料理界面，真实五槽、五状态与进度,
+F02-01,七档温度HUD,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F02-01/v01,art/production-v2/F02-01/v01/manifest.json,七档温度图标、读数及弱边缘反馈，专注层优先,
+F03-01,Fuse组合与挂点,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F03-01/v01,art/production-v2/F03-01/v01/manifest.json,剑/斧/盾/箭及飞箭融合挂点，保留原版宿主外观,
+F03-02,融合标记与次数,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F03-02/v01,art/production-v2/F03-02/v01/manifest.json,原生 5px 槽位角标、真实剩余次数、低次数提示,
+F03-03,未知材料回退,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F03-03/v01,art/production-v2/F03-03/v01/manifest.json,未知或缺失材料模型的中性回退，原材料数据保留,
+F03-04,Fuse有限特效,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F03-04/v01,art/production-v2/F03-04/v01/manifest.json,火、冰、弹性与融合/拆分的五种有限原版粒子反馈,
+F04-01,有限电池,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F04-01/v01,art/production-v2/F04-01/v01/manifest.json,有限电池三维模型，真实电量驱动三个窗口,
+F04-02,电量图标与读数,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F04-02/v01,art/production-v2/F04-02/v01/manifest.json,空/满图标及中间遮罩、精确 0–1000 读数,
+F04-03,充电器,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F04-03/v01,art/production-v2/F04-03/v01/manifest.json,充电器世界模型，原尺度电池与五态面板,
+F04-04,充电器界面,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F04-04/v01,art/production-v2/F04-04/v01/manifest.json,176×166 充电界面，五态文字与完整悬停说明,
+F05-01,机械主体与节点,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-01/v01,art/production-v2/F05-01/v01/manifest.json,机械主体、六节点和控制板模型,
+F05-02,机械翼,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-02/v01,art/production-v2/F05-02/v01/manifest.json,被动机械翼，128×64 布木图集,已接入；底部安装可能穿地，见P10.2机械修正合同
+F05-03,风扇,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-03/v01,art/production-v2/F05-03/v01/manifest.json,风扇护框、轮毂和真实工作转动,
+F05-04,火箭及燃尽空壳,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-04/v01,art/production-v2/F05-04/v01/manifest.json,有限火箭、燃尽空壳与既有尾焰,
+F05-05,电池安装适配,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-05/v01,art/production-v2/F05-05/v01/manifest.json,同一电池的六向安装，采用 v02 复核后的偏移,
+F05-06,弹簧,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-06/v01,art/production-v2/F05-06/v01/manifest.json,弹簧压缩/伸展，由现有冷却状态驱动,dev.17修复弹簧与原版指南针配方冲突；底部穿地另行修订
+F05-07,车轮,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-07/v01,art/production-v2/F05-07/v01/manifest.json,车轮网格和既有转速驱动,dev.17侧装轮显示下移0.075格；安装命中/碰撞/原件不变
+F05-08,稳定器,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-08/v01,art/production-v2/F05-08/v01/manifest.json,稳定器壳体、真实 active 工作灯,
+F05-09,浮力装置,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-09/v01,art/production-v2/F05-09/v01/manifest.json,浮力装置，复用布木图集和现有载重规则,已接入；底部安装可能穿地，见P10.2机械修正合同
+F05-10,统一吸附预览与状态,second-v2,v02,True,True,0.1.0-dev.15,art/production-v2/F05-10/v02,art/production-v2/F05-10/v02/manifest.json,统一透明吸附预览、节点与可用/受阻/工作文字,v01保留历史；v02当前；dev.17调整侧轮显示，底部部件仍待修订
+F06-01,古代装置制造机,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F06-01/v01,art/production-v2/F06-01/v01/manifest.json,制造机原生方块模型与空闲/工作/完成面板,
+F06-02,制造机界面,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F06-02/v01,art/production-v2/F06-02/v01/manifest.json,176×192 制造界面，真实 39 槽与原按钮协议,
+S01,12段原创短音,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/S01/v01,art/production-v2/S01/v01/manifest.json,12 段原创短音，服务端确认事件后播放,

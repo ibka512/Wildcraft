@@ -1,11 +1,10 @@
 # 第二批已采用美术成果归档入口
 
-2026-10-06。用户要求总结整理当前这批采用成果，已汇总B1–B5的29项任务和30份版本交付。F05-10当前使用v02，v01历史规范保留。归档时所有本批交付均未接入；随后用户授权接入，当前 dev.15 已接入 29 项。原总表保留归档时状态，当前验收见 [接入说明](../../docs/SECOND-ART-INTEGRATION.md) / [验证记录](../../docs/SECOND-ART-VERIFICATION.md)。
+本批B1–B5共29项当前编号和30份版本交付，F05-10当前v02、v01历史保留。原始归档描述交付时未接入状态；随后29项在dev.15接入，当前dev.17沿用。
 
-- [统一文件夹](/Volumes/仕事/Wildcraft/第二批已采用美术成果-2026-10-06/README-从这里开始.md)
-- [成果总结](/Volumes/仕事/Wildcraft/第二批已采用美术成果-2026-10-06/清单与说明/本批成果总结.md)
-- [总表CSV](/Volumes/仕事/Wildcraft/第二批已采用美术成果-2026-10-06/清单与说明/已采用资产总表.csv)
-- [接入与待验证](/Volumes/仕事/Wildcraft/第二批已采用美术成果-2026-10-06/清单与说明/接入与待验证清单.md)
-- [图文总览](http://127.0.0.1:8831/总览.html)
+- [当前采用/接入台账](../ADOPTED-ASSETS.md)、[CSV](../ADOPTED-ASSETS.csv)、[JSON](../ADOPTED-ASSETS.json)。
+- [原件目录](../production-v2/README.md)：source、exports、references、review、adoption、manifest和17份历史审稿ZIP。
+- [接入](../../docs/SECOND-ART-INTEGRATION.md) / [真实验收](../../docs/SECOND-ART-VERIFICATION.md)。
+- [GitHub下载](../../docs/ASSET-DOWNLOADS.md)：原始第二批ZIP及当前完整工程，不需要本机绝对路径或本地网页服务。
 
-复制保留source/exports/references/review/adoption/manifest和17份历史审稿ZIP；两份Python运行缓存不归档。原采用资产未改写或移动，不将审稿模拟作为实机验收。早期核心美术归档不重复统计，B6天气与多人三项未启动。校验结果及完整源路径见统一文件夹清单。
+核心14编号单独统计，不重复计入本批。B6尚未制作或采用，多人专项暂缓。原件不移动或追溯改写，不把审稿模拟作为实机验收。
