@@ -1,6 +1,6 @@
 # Wildcraft 后续开发计划
 
-> 当前优先级（2026-10-06）：P10单人风与天气首版/dev.16已实现，证据和仍需人工验收的内容见[P10-VERIFICATION](P10-VERIFICATION.md)。下一批为**单人生存平衡→角色和机械表现完善→候选版检查**。用户明确「目前不用考虑多人模式」，R2/P10.1及新增多人专项继续暂缓；下方早期多人排期只保留历史。
+> 当前优先级（2026-10-06）：P10/dev.16与P10.2/dev.17均已完成本机验收，见P10.2-VERIFICATION、SINGLEPLAYER-BALANCE与SINGLEPLAYER-PLAYTEST。下一步人工单人试玩/定向平衡、B6与底部美术，之后P11候选检查；用户明确当前不考虑多人，R2/P10.1暂缓。以下旧阶段起点属于历史，不能覆盖此行。
 
 > 2026-10-04 进度：P4A 已在本机 dev.8 完成，规格及证据见 [P4A-SPEC](P4A-SPEC.md) / [P4A-VERIFICATION](P4A-VERIFICATION.md)。公开 main/Release 仍为 dev.7，本次尚未上传。下一阶段为第 5 节 P4B。以下保留最初起点、完整顺序及已执行任务，不能把历史起点当成当前状态。
 

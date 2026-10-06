@@ -21,6 +21,10 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        String[] recipeZh={"蔬","暖","凉","力"},recipeEn={"V","W","C","S"};
+        for(int n=0;n<4;n++)translations.add("cooking.wildcraft.guide.short."+n,chinese?recipeZh[n]:recipeEn[n]);
+        translations.add("cooking.wildcraft.guide.bowl",chinese?"每份需要一个空碗；食材顺序不限":"One empty bowl per meal; any ingredient order");
+        translations.add("cooking.wildcraft.guide.heat",chinese?"锅下点燃营火或火焰，等待烹饪":"Light a campfire or fire beneath the pot");
         translations.add("hud.wildcraft.wind.sheltered",chinese?"避风处":"Sheltered");
         translations.add("hud.wildcraft.wind.light",chinese?"微风":"Light wind");
         translations.add("hud.wildcraft.wind.moderate",chinese?"有风":"Moderate wind");

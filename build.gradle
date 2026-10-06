@@ -633,3 +633,45 @@ tasks.register('runWindClientTest', net.fabricmc.loom.task.prod.ClientProduction
     outputs.upToDateWhen { false }; mods.from(windTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
     runDir = layout.buildDirectory.dir('run/wind-client-test')
 }
+
+
+// Native singleplayer survival loop, with raw-material fixtures.
+def survivalMetadataDirectory = layout.buildDirectory.dir('survival-test-metadata').get().asFile
+def survivalMetadata = tasks.register('survivalTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(survivalMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.SurvivalClientTest']
+        def destination = new File(survivalMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def survivalTestJar = tasks.register('survivalTestJar', Jar) {
+    dependsOn survivalMetadata; archiveClassifier = 'survival-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(survivalMetadataDirectory)
+}
+tasks.register('runSurvivalClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(survivalTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/survival-client-test')
+}
+
+
+// Actual rendering combinations for singleplayer polish.
+def polishPresentationMetadataDirectory = layout.buildDirectory.dir('polishPresentation-test-metadata').get().asFile
+def polishPresentationMetadata = tasks.register('polishPresentationTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(polishPresentationMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.PolishPresentationClientTest']
+        def destination = new File(polishPresentationMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def polishPresentationTestJar = tasks.register('polishPresentationTestJar', Jar) {
+    dependsOn polishPresentationMetadata; archiveClassifier = 'polishPresentation-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(polishPresentationMetadataDirectory)
+}
+tasks.register('runPolishPresentationClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(polishPresentationTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/polishPresentation-client-test')
+}

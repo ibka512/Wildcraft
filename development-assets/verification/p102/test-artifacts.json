@@ -1,0 +1,11 @@
+{
+  "fullRegressionTestJar": {
+    "sha256": "38d46a4ece1d52926605eee0d8e587e3895d70f1b030f3210c18c0c1198b97ed",
+    "note": "21类完整回归；随后另跑真实1280×960 GUI1/2/3专项，正式Mod同包。"
+  },
+  "formalJarSha256": "e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35",
+  "presentationActualScalesTestJar": {
+    "sha256": "614885d75edb5b68cf370623db3cbed6b8d9ed997b1f848e9d0f73a9685ce34f",
+    "note": "最终专项；1280×960下assert实际Window.getGuiScale()==1/2/3，中英文真实开伞；其它指南/机械/隐藏/暂停同样执行。"
+  }
+}

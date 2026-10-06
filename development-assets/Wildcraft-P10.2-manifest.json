@@ -1,0 +1,1009 @@
+{
+  "version": "0.1.0-dev.17",
+  "minecraft": "26.3",
+  "serverTests": 83,
+  "clientClasses": 21,
+  "actualGuiScales": [
+    1,
+    2,
+    3
+  ],
+  "publication": "local only; GitHub main/Release remains dev.7",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 4214,
+      "sha256": "fbc795e078eccd3375aa80168150d1d5a1cd9fbeb99a1b21fd5710f97d853b7f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17895,
+      "sha256": "d635d1c88cf4616a3f757c68d187f773a138965ddc826205cfc5b0376d601a74"
+    },
+    {
+      "path": "art/production-docs/B6-WIND-ART-BRIEF.md",
+      "bytes": 2219,
+      "sha256": "8cb69831c82a783c1dbe3e7cbfb0f5ced633f32c587364389602ff6a8b77f01c"
+    },
+    {
+      "path": "art/production-docs/P10.2-MECHANICAL-ART-REPAIR.md",
+      "bytes": 2108,
+      "sha256": "a00260e95d419d2a0c6959dfc1d8ceaa374b86232ae8fa561f7598f5a7959c99"
+    },
+    {
+      "path": "art/production-docs/README.md",
+      "bytes": 5534,
+      "sha256": "a8ef8f15b0ca57054df69ec817cd9563860c22de7d2677c0d3ea17e61fd1a1b1"
+    },
+    {
+      "path": "build.gradle",
+      "bytes": 36798,
+      "sha256": "f5e215c550b094484dbe0229cbd1ac97dc970a6b3d5669aceb21eba147fbefd2"
+    },
+    {
+      "path": "development-assets/README.md",
+      "bytes": 11164,
+      "sha256": "ad5abf500a0e0fd827c5ad11d4d797b3b455dd1a120b1b9de24a9dcc05faed5a"
+    },
+    {
+      "path": "development-assets/verification/p102/README.md",
+      "bytes": 1080,
+      "sha256": "a6fa888c37dc2370b9c76da402b2c27f83bf77ed521866069f58e6694e5cb2c5"
+    },
+    {
+      "path": "development-assets/verification/p102/datagen.log",
+      "bytes": 6360,
+      "sha256": "e9f22ce7c14ae9f3182f2f1302f79fa9712c62d6a4276f3857c99f164ae353f4"
+    },
+    {
+      "path": "development-assets/verification/p102/full-regression.log",
+      "bytes": 677178,
+      "sha256": "576300a676b0955b83293c2c99b6741f194067f71f6f5dcf985c27b28a055ede"
+    },
+    {
+      "path": "development-assets/verification/p102/mechanical-geometry-bounds.json",
+      "bytes": 2906,
+      "sha256": "99dda255abe64ffc005e64702065b46a14a21b7e1501419935184dbccef355bb"
+    },
+    {
+      "path": "development-assets/verification/p102/native-survival-and-presentation.log",
+      "bytes": 186565,
+      "sha256": "75ba8916f68411da0080f87169335338323217b73f800aa3fa1eed8d23e42f49"
+    },
+    {
+      "path": "development-assets/verification/p102/presentation-actual-scales.log",
+      "bytes": 148742,
+      "sha256": "cea6be6a7976ee882d7806c3eacfb73a093ff4ee1daf5a1db44021aa358edb6c"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0000_p0-test-core-in-world.png",
+      "bytes": 331173,
+      "sha256": "df6a744c20910893e593fd96a7184949e2e8349f9fbf8cedc0a4b29198478b46"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0001_p0-test-core-after-reload.png",
+      "bytes": 171118,
+      "sha256": "1b3647998169e0e3919e071d6777650ac896ec6c4e5dd365e9c58aa5ffe5a6cb"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0002_p0-test-core-on-server.png",
+      "bytes": 159666,
+      "sha256": "f98cf4f53ba72ee8896c885441acfdbfaa633a069ef78eed55e4d60730be33ca"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0003_p1-stamina-peak30-after-xp-spend-en.png",
+      "bytes": 282435,
+      "sha256": "3b096acf6507857509abf02eba264dacc9ada567317faeb92239625c8e3b123f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0004_p1-stamina-peak30-after-xp-spend-zh.png",
+      "bytes": 271254,
+      "sha256": "78ea347cab677ff942cdd818355417368a56dd299945f4d9c50b2837fd618a59"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0005_p1-stamina-after-server-reconnect.png",
+      "bytes": 221172,
+      "sha256": "b03abaf153a717a37ee9944a7d33282346342b960805294304c8330ac0d85029"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0006_p2-climbing-wall-zh.png",
+      "bytes": 130521,
+      "sha256": "f593539c5b4365c5631cb9f1895d0cc18cc9d358e93ebb416797123c70eaa67b"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0007_p2-climbing-over-ledge.png",
+      "bytes": 143503,
+      "sha256": "a5a44f3a8fb7a06c4137cc4813a0b44e342ac6312aecf83035791fac4c33c061"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0008_p2-climbing-outer-corner.png",
+      "bytes": 75889,
+      "sha256": "af3827597922134b53a32263c9c0fa6c07823bd72556fac977c5de88460fa61b"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0009_p2-climbing-on-tcp-server.png",
+      "bytes": 99857,
+      "sha256": "1fe0723abcc985338965c82b88b5933021fcbe56f3fea85f8cbe67984008474c"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0010_p3-paraglider-equipment-slot-zh.png",
+      "bytes": 67898,
+      "sha256": "a00e5064c713881e80f091025d904397719ca7e5b32c36d49f4ab6683537e02e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0011_p3-paraglider-creative-slot-zh.png",
+      "bytes": 74439,
+      "sha256": "f4636e38c0bbc4e829547698dc47a4d24599c820da86a2fbe816c428a8165f00"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0012_p3-paraglider-gliding-zh.png",
+      "bytes": 66242,
+      "sha256": "1d5a77c14204d35ed22e08c84cc0354163e4e55c6712084aaefa4b1ae2f64754"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0013_p3-climb-to-glide.png",
+      "bytes": 204026,
+      "sha256": "fdf1a982a7c3a11ed3bc3b650ea5cd0c536a162e9451e0b3c440d03e2828d270"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0014_p3-gliding-tcp-en.png",
+      "bytes": 90695,
+      "sha256": "fdf8b276858221df71aee5d75c5baa75f7feb528344ec01898b0ce1f323202da"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0015_r1-native-back-anchor.png",
+      "bytes": 211670,
+      "sha256": "1dbbdc493ee3b94e1242e0b26b590ca04f758e948e9b55964362d57ce4a4579f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0016_r1-color-normal.png",
+      "bytes": 232355,
+      "sha256": "a2986dfe0133160e1012180d49981f7a4532c7c90ee7edf8833eecb839914869"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0017_r1-color-desaturated.png",
+      "bytes": 225229,
+      "sha256": "2d380f06d1b5c1746b2604fe175cfe45a296d3a147f74c28de028cebb7d43c08"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0018_p31-bow-draw-shield-stowed.png",
+      "bytes": 82347,
+      "sha256": "acf9779d002c4ad9c6281908cfbfa27b85446356c748dd2b8ae68cdc5cdd3c6d"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0019_p31-back-all-native-models.png",
+      "bytes": 81475,
+      "sha256": "128a330aa8e8526fca7a4146b348908fbb707afbdbd0af12ec012df860430de3"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0020_p31-crouching-back-models.png",
+      "bytes": 82339,
+      "sha256": "e134459ebfe5d9d64ef9e66ac2f5cb99dec9016a78283ea545c25880f9a864db"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0021_p31-swimming-back-models.png",
+      "bytes": 162714,
+      "sha256": "d9f12c0a62c0adb62fa6b358afc969e8f4cb83dcca489e019a6f2e172a029889"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0022_p31-first-person-no-own-back.png",
+      "bytes": 85229,
+      "sha256": "692ca3026e495c4af6ff55914a9c76a26bbffb346e6409cb7eaf4b21aeec95d4"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0023_p31-merged-hud-low-en.png",
+      "bytes": 85260,
+      "sha256": "4ff7ec4ba1370fe8bc6864f2cf8b67f1a6d81d9e34316de7a8ef8280077023b2"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0024_p31-merged-hud-low-zh.png",
+      "bytes": 86130,
+      "sha256": "c56224fdbc03e5e6b426bd7f856b4be4e35aca8112ef697ab1934eca7acfa629"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0025_p31-hidden-hud.png",
+      "bytes": 70259,
+      "sha256": "b16d84e91aa65d737ce0f431dabab11b002e63c762b62313f11d5e40b097b69a"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0026_p31-upper-left-multiple-heart-rows-scaled.png",
+      "bytes": 86756,
+      "sha256": "639cfd7ebd70630aaf73b458838b68dfbbe507760e8765ce32c37452886380ac"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0027_p31-upper-left-large-capacity.png",
+      "bytes": 86445,
+      "sha256": "4d452edb9099e4dd9ba5250de8af2cf0169a00be0e74fd2ef129129beff743cc"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0028_p31-native-mount-bar-kept-with-upper-left-stamina.png",
+      "bytes": 89541,
+      "sha256": "66492522abda2c38cdec43f85500dfbcec0232828b7cb55ec94cbc4a3954562f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0029_p31-restored-xp-level5.png",
+      "bytes": 36729,
+      "sha256": "0b9988323a326be790c350a6ba9efcb45f44d97702a6cfa97fd5390e5167c5fe"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0030_p31-elytra-priority.png",
+      "bytes": 93684,
+      "sha256": "fa30dd6948f1c5731d4c60582fef8a33ac3bc83d5687d608b40bfb711e5e432b"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0031_p32-color-normal.png",
+      "bytes": 179198,
+      "sha256": "38e17769652f83f9c50bd7463eb650f5538907fda31c9c307a1b7b5f6a1fcd83"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0032_p32-focus-first-person.png",
+      "bytes": 219246,
+      "sha256": "bee08b979c4c875615efbbda96423d32d91e3aeb18b5b4eaa8e15bf29b2cca02"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0033_p32-focus-third-person.png",
+      "bytes": 207072,
+      "sha256": "031ca354ee366f255f888c532f6d7dd0773aaf96c8e37bc41489102be7ed3f20"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0034_p32-focus-effects-off.png",
+      "bytes": 165110,
+      "sha256": "c53fe7aad2b8af5cc0f16945fc25e6523ab606ab512f82c09db16a18f0f4197b"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0035_p32-focus-settings.png",
+      "bytes": 89820,
+      "sha256": "370c6835c87908fac1db159dc8364f07b36889d05b4f7a86060e168bbce78b82"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0036_art-glider-first-person-grips.png",
+      "bytes": 49424,
+      "sha256": "64a5d5f8afa90fb660c7de32c886e7c4b06c30d16cb0c34f03b47656ded37c49"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0037_art-glider-third-person-front.png",
+      "bytes": 61362,
+      "sha256": "163318127887bb4ecbc0b8d321873c9bbba1af9186e57227d9931d768b39423a"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0038_art-settings-normal.png",
+      "bytes": 87518,
+      "sha256": "6b1f2dc85821a3b8e762125f3d9fda152323a7dec1e98ed94f3b3fa1fee49e3e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0039_art-settings-compact-layout.png",
+      "bytes": 85635,
+      "sha256": "bc04d6389101a3221dbbcd6475d1b2d5bbcc7d301e54aa3f1f7cf1c73b0371ab"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0040_p4a-snow-cold.png",
+      "bytes": 102812,
+      "sha256": "b11719243cd228ad503c67040f56931fd67d0345d43f61bd52fd1d874c3678cf"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0041_p4a-desert-hot.png",
+      "bytes": 102866,
+      "sha256": "b5a3b43c0df178111f533970c5b777203b1dfe607981f1fe0f37c2f12697bf39"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0042_p4a-campfire-warm.png",
+      "bytes": 127955,
+      "sha256": "badb57adfbc3444397100ca871a4aeb86458da8a94dd05380ae8ca67d659633d"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0043_p4a-multiple-hearts-stamina.png",
+      "bytes": 107786,
+      "sha256": "77d1993681f8fde13a6b031b92d5068ea9d620d953ecb941cad994ed7e13c5aa"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0044_p4a-native-leather-boots.png",
+      "bytes": 72259,
+      "sha256": "e1b0fec818650dd00c427c8ef49f7969b30b27611bf4a06b50e044678f058c35"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0045_p4a-temperature-gliding.png",
+      "bytes": 66795,
+      "sha256": "275c5ca3ed65f79db8e9c5e98cd60c23e85387caaa4e748113d39dc554784877"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0046_p4a-focus-priority.png",
+      "bytes": 94844,
+      "sha256": "cd6315da7a6f2433858c979a020db43fa08e25125043b4776dddf963b1b1cd42"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0047_p4b-pot-awaiting-heat.png",
+      "bytes": 58092,
+      "sha256": "48492f6a7734b5eca0d1cfc70766d97e2961e42aa214e9a4801090ead903d6f4"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0048_p4b-cooked-meal-menu.png",
+      "bytes": 72421,
+      "sha256": "dabf511a0f0f420d6fd9e886a17bce3b8433b963a66623313417e5f3cd6ae7cb"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0049_p4b-consumed-meal-hud.png",
+      "bytes": 156822,
+      "sha256": "548ec128b4b57403489565f7ce08276d41d04c5ce404c9aa53318339ad6f34e1"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0050_p4b-warmth-still-freezes.png",
+      "bytes": 182700,
+      "sha256": "d02e8ef70e0a7c7deb55cdf7d24ca43fd3877f59983adb6ee25060af11c98af9"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0051_p4b-reloaded-effects.png",
+      "bytes": 33167,
+      "sha256": "f4dd3b2ea2e65a6687b07f8ae1b0aea10a9692128beaf71c53d8877247260bc2"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0052_p5-signal-without-energy.png",
+      "bytes": 91976,
+      "sha256": "1ea11078520f0e57c44e524e2bb381493ab9407e750bbf6289b2875435096db5"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0053_p5-charging.png",
+      "bytes": 84175,
+      "sha256": "cdc4139e008f847ae6007df11652c8fa22a6d9a6faaa525f8915605c5824f941"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0054_p5-full-battery.png",
+      "bytes": 77468,
+      "sha256": "e7e3c021d881fb78709d6c27e42427ce711648d484f2e64018b11708da2f5dca"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0055_p5-partly-used-battery.png",
+      "bytes": 182367,
+      "sha256": "b348eab400358d34cd08e69dd6e29011db1ba09a8341c3013039b8a89ee40139"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0056_p5-reloaded-charge.png",
+      "bytes": 75337,
+      "sha256": "219673fb17df1811e95decb6a4128664588a80e630267872f3eed0716de81cd6"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0057_p6-core-installed-model.png",
+      "bytes": 171648,
+      "sha256": "ee1fca06139283088129839e376cfd73be30a6ff1f710642cac4f35bcff9d79a"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0058_p6-core-fan-model.png",
+      "bytes": 207027,
+      "sha256": "b42361d55aa746025d9c4a6a45039f50c940f6034a105cd2cb676d4f6a588f2f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0059_p6-core-riding.png",
+      "bytes": 219929,
+      "sha256": "7b4f9ce7abb41f9328e96b6b0acd685d8e9f0c9044876e18eac405103d209e32"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0060_p6-core-reloaded.png",
+      "bytes": 198693,
+      "sha256": "64e404c9e8c7431460faefc350d2b3db615d127046958e3700a116a3b9faa217"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0061_p6-core-recovered.png",
+      "bytes": 207269,
+      "sha256": "03af53998b9c2e514654d2d681ea19a91763fce9c4bc997377238e6571ab4a5d"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0062_p6-control-panel.png",
+      "bytes": 170799,
+      "sha256": "4ca0c5c7c7c90092c76f7ad388047b93fbbbb27e2cf3302e7f7eec41e42fabce"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0063_p6-fan-snap-preview.png",
+      "bytes": 192639,
+      "sha256": "fe654d0c78c26c6011ef28b374d13d933c915823b89a901e2fcdeb61e1cc5f95"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0064_p6-battery-preview.png",
+      "bytes": 192805,
+      "sha256": "03300eb6d393b7ec6c98c39c4b976025244cb9b0ea6ff7e853a6f58d43bf3e37"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0065_p6-native-rider-control.png",
+      "bytes": 206557,
+      "sha256": "1376808afb80ba2e505392e9d519cae2c4062290fca455e41bd4210ddbde4039"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0066_p6-native-recovered.png",
+      "bytes": 249997,
+      "sha256": "f3f63d497eb24d650ca5aedbd59df0c7873fd2ec907e305eaae7d962000db82e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0067_p7-wing-preview.png",
+      "bytes": 184940,
+      "sha256": "4b6692951125506c7a020f272a4cce846b269338a1725a941f693b3489bdff76"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0068_p7-native-one-block-step.png",
+      "bytes": 31632,
+      "sha256": "bc334d5e73ce9db5f9816179e4fd23a2d088f58177a00ed93f8d898ea2762319"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0069_p7-wing-wheel-loaded-glide.png",
+      "bytes": 141678,
+      "sha256": "f87b04bf5c14d8bb17ecc981e0028b67f937843e24db6a773acd1ca5d43c9878"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0070_p7-spring-bottom-preview.png",
+      "bytes": 49834,
+      "sha256": "9e5951e1942759b875d099bc3acca432ed1658f99b09d2620ee67b76b5f52def"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0071_p7-native-spring-launch.png",
+      "bytes": 206930,
+      "sha256": "e6ad36975796b495b24630430ecc8953c37edb4bfdfaa91edcf91a588d366cc5"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0072_p7-buoyancy-front-preview.png",
+      "bytes": 173153,
+      "sha256": "6cf69c0a350d830c97932264a95c1f54942959e0ec6339a5df373217c205aa8e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0073_p7-rocket-rear-preview.png",
+      "bytes": 186257,
+      "sha256": "cf85188dc274469bb4e71c472acb044965851822113b7704ef59427b5b4ae3ae"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0074_p7-rocket-spring-stabilizer-powered.png",
+      "bytes": 68209,
+      "sha256": "69f683b6ec013ac165d3d73c7e84dcd1e3b29cc4e310d4d68feca153aa56abfa"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0075_p7-native-rocket-burning-off.png",
+      "bytes": 132789,
+      "sha256": "3c0a2ead4d1c3efdf82f27f023392187ab93ce00b5b1c67b6e21b227e9ebb23a"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0076_p7-water-float-loaded-parts.png",
+      "bytes": 282483,
+      "sha256": "ca1e363b361ea0d7c2cf90d7ad7553e7b2f62d9cc65fada2d57d626bf3a94db1"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0077_p8-empty-fabricator.png",
+      "bytes": 40544,
+      "sha256": "83cdbb62f9c925ac101caec2889be9c52de553531d84f279026798b8cf468730"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0078_p8-paid-job-menu.png",
+      "bytes": 86839,
+      "sha256": "ca79d615da5f12da7accafce7b4d5bfb7d61a33dc4e29b839f35b41afa019fd8"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0079_p8-carried-job-resumed.png",
+      "bytes": 84688,
+      "sha256": "d2833ae6668be1513c16c162cfdcae1b8bd48ba59b22577e84e5c3258c6ee062"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0080_p8-completed-output.png",
+      "bytes": 83485,
+      "sha256": "217c2973ae2b5bfc7913d5e7b9753fdf522d51c43e3ae5117da79c1a31cd393c"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0081_p8-output-collected-once.png",
+      "bytes": 94652,
+      "sha256": "0f2f95b1d044cebb785bf4bd8b0d85f7efa145d0b82c23004cbab05591d39eaa"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0082_p8-english-menu.png",
+      "bytes": 92229,
+      "sha256": "e461d51decbbcb4501fed04ded87f70c64f4faaacce19a511bbc3d0aba3ea048"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0083_p9-native-fused-hand.png",
+      "bytes": 129143,
+      "sha256": "c8e7d97a91bce8f8612e82875b797f1f10ec1a950672ac605644df1533b8b6db"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0084_p9-native-fused-inventory.png",
+      "bytes": 69433,
+      "sha256": "8fa76d876694b39658d8f18ab9065b2486a41707d1836e909840b6f2e77c12a9"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0085_p9-native-fused-back.png",
+      "bytes": 199663,
+      "sha256": "a0cd29e9cd15887af2cf79c3b655c704c420b177090ed3bd9012f80cf39fd248"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0086_p9-native-fused-chest.png",
+      "bytes": 80510,
+      "sha256": "0502de9e43191377fdf45bf06c1cb4eaf5bb6c261b67a7bf13c5d0106b1158e7"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0087_p9-native-split-material.png",
+      "bytes": 185210,
+      "sha256": "18d4555f1d2923de900e29d50482cd52d56463c84a51f188ae5aef45cb764460"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0088_p9-native-fused-arrow-flight.png",
+      "bytes": 153313,
+      "sha256": "2c14967c7ce778126b01f4f9d32ef680e668af79828ae15cd40c353e835716d9"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0089_p9-native-infinity-arrow-impact.png",
+      "bytes": 163321,
+      "sha256": "d82897b90d9e48627cbd6e40e629cdaf41fdc414afbfcddf10c0b94bffdd6a1f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0090_p91-native-fusion-back-food-air-focus.png",
+      "bytes": 123610,
+      "sha256": "6dfd4eda804e50d0fed9421bef1973a85e08559b09689c95fac14eb18a836f2e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0091_p91-native-ice-arrow-once.png",
+      "bytes": 98486,
+      "sha256": "9fc69d668b22c746c1974d29e1630249fabe10ded9f941c656ff152245c91e86"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0092_second-art-meals-fused-inventory.png",
+      "bytes": 61119,
+      "sha256": "03369de5c0d45040a5cdd752c3f7864eb3302121cd7ce3afa639cde7f6635fe4"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0093_second-art-three-effects-native-hud.png",
+      "bytes": 113181,
+      "sha256": "0cb88a7a986b3da144fca425dd81d8efc1947a0aef2b680ec6eb122cfa23e534"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0094_p10-native-thunder-glide-wind.png",
+      "bytes": 79256,
+      "sha256": "3db7f17bf40866394cfa5500cc9c899348d46ec68877a6ac95c787ec50f9b5c1"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0095_p10-native-roof-sheltered-glide.png",
+      "bytes": 78872,
+      "sha256": "f75de45691edaec82b41413c2e43043e7e293d7dec57db9c597f33b57512bd81"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0096_survival-native-crafted-kit.png",
+      "bytes": 83748,
+      "sha256": "f85301e55727b2b0de187c10a6eb212bd10638441220b249533d4abe4c533eca"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0097_survival-native-cooked-and-eaten.png",
+      "bytes": 48131,
+      "sha256": "cc1ce05a741527d27c747bfa03ffac1c22890939a968d52685573b75f55a582d"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0098_survival-native-climb-to-glide.png",
+      "bytes": 80595,
+      "sha256": "2bb44e5e4ed7e11bc5b7e8d4d6445a88cdb96edbdfdd51bda10645471557e0d9"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0099_survival-native-charged-crafted-battery.png",
+      "bytes": 61131,
+      "sha256": "46b1d96ad12d3c3e2b2f8ba17214123158e3339b2e669586d0cb5662f53de61c"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0100_survival-first-person-clear-riding.png",
+      "bytes": 152197,
+      "sha256": "8abaa01f6aa982718fd7f474cd252c12e1a7dc514660d3a0e38fffb1d81959fc"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0101_survival-native-fabricated-supply.png",
+      "bytes": 59009,
+      "sha256": "c17f2aecd7763032dbc2a14df5ae1454f936ec89e8266e41eaaf69e8c6fc9ff2"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0102_polish-cooking-guide-en_us-0.png",
+      "bytes": 37634,
+      "sha256": "c25e841f68ba2e2952dd52519f03b8a7b34c1edfecb200d1daf1a5336cfc32f8"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0103_polish-cooking-guide-en_us-1.png",
+      "bytes": 38431,
+      "sha256": "b52b1a36a715a908c94d7f0cbe9333820315c152c1ac078338a8a21fd6028185"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0104_polish-cooking-guide-en_us-2.png",
+      "bytes": 39187,
+      "sha256": "b294f5813e8285eb57a9bd40703f3d427b4d7e156814d88fd716828b04652a7d"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0105_polish-cooking-guide-en_us-3.png",
+      "bytes": 39908,
+      "sha256": "88e0493a016547e516d42c4dab0a3bb622fe8ff9f4b6d800bfdb114d2cb40fd2"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0106_polish-cooking-guide-zh_cn-0.png",
+      "bytes": 41672,
+      "sha256": "998f82f9fdad8c5da6269913d681983da08e3ffde30e290bbaace1dc7fd2e436"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0107_polish-cooking-guide-zh_cn-1.png",
+      "bytes": 43676,
+      "sha256": "76746dab5f2351f305bbea79ed95b788024c714d8ad160431370f70e722399c0"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0108_polish-cooking-guide-zh_cn-2.png",
+      "bytes": 43607,
+      "sha256": "da927433d2d30c109507e59b440cd89823459eb5cefebb539fcb1f81f1a0a748"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0109_polish-cooking-guide-zh_cn-3.png",
+      "bytes": 44227,
+      "sha256": "09e8456942fabbc083b658c63bdd170568a3ced6dfe95e20762df53d24973443"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0110_polish-wind-multiheart-food-en_us-scale1.png",
+      "bytes": 78457,
+      "sha256": "086e78d2582bf91ff1f4f1a7595fb6ec2bc87993b2a73490e80c346c2d1ba191"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0111_polish-wind-multiheart-food-en_us-scale2.png",
+      "bytes": 79177,
+      "sha256": "cd79eb850e4762334d599f5aaf6581d768659f5218b2b0f091c590750a1619d8"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0112_polish-wind-multiheart-food-en_us-scale3.png",
+      "bytes": 78998,
+      "sha256": "4bd0e3e8f09e6d29b3b2e3f0981477f16b92d11790a487ad96059a33ba2caa02"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0113_polish-wind-multiheart-food-zh_cn-scale1.png",
+      "bytes": 77325,
+      "sha256": "cb570285a02c192b6faa3da8a0c64380b5ff0590d155c9fbc8398f18c7db9047"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0114_polish-wind-multiheart-food-zh_cn-scale2.png",
+      "bytes": 79441,
+      "sha256": "15e1fcd258e09a4922cbabab2db1871d9b8a2b7fae6f44a56ee5611c3167bd47"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0115_polish-wind-multiheart-food-zh_cn-scale3.png",
+      "bytes": 79426,
+      "sha256": "75ab2c298c1d2b3d25e121b0cbc5531dd6a98037d6486b2940ed5e8f5216889e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0116_polish-wind-hidden-hud.png",
+      "bytes": 66489,
+      "sha256": "300439ccdaccafc9235ce8434ed2846de0e256ad3cd8cd898efe10fc10ba741f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0117_polish-wind-paused.png",
+      "bytes": 165153,
+      "sha256": "ffdc46ce6b347efd70d30f5612966d167eaf46ce6210190bcf34e43175ca3079"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0118_polish-wheel-ground-contact.png",
+      "bytes": 243666,
+      "sha256": "37b96a3a622a6d21f69f71d04107b2556dddc1d27ff8582689cb9dd69d595cec"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0119_polish-rider-first-person-level.png",
+      "bytes": 146939,
+      "sha256": "14b79c041f122c612ec484b02f199770812c9553d274802cd45602fb0f3cf47f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0120_polish-rider-third-person-wheels.png",
+      "bytes": 162598,
+      "sha256": "58fe096bac82f37256dd30cf3f291d041968e0821d19e4528e691e694bea68a2"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/full/0121_polish-bottom-spring-known-boundary.png",
+      "bytes": 250908,
+      "sha256": "6b288d891e0e30e9d73fa925a3001f585398376ac26dfec8e6a5880d75300b11"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0000_polish-cooking-guide-en_us-0.png",
+      "bytes": 80428,
+      "sha256": "8ed6a68b302602f40fba3ad216b4a33b3cd417d3ac8d67b4f12243ca6b438c78"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0001_polish-cooking-guide-en_us-1.png",
+      "bytes": 78879,
+      "sha256": "182f9761952e09c8bc59750c6ede64dc0587583e7c01c768bf59a82e4be3f38c"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0002_polish-cooking-guide-en_us-2.png",
+      "bytes": 79085,
+      "sha256": "7d2ced0b12ab610a9c9bc5b17083d69248cb740a3418b877bbf4ea66a79abea4"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0003_polish-cooking-guide-en_us-3.png",
+      "bytes": 78686,
+      "sha256": "b59ab82aaf76b6c7102071243a4578be0b89b137338d63b03096fd91d391479e"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0004_polish-cooking-guide-zh_cn-0.png",
+      "bytes": 78955,
+      "sha256": "500a9a69b40f9dd783b17463af6165eca72a86d692fd13bbff868bb86952a7c0"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0005_polish-cooking-guide-zh_cn-1.png",
+      "bytes": 77577,
+      "sha256": "eb0b0d818cb88d4e0335effc88ffc46f1cf101709bbd0ab1203cf817c6964dfd"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0006_polish-cooking-guide-zh_cn-2.png",
+      "bytes": 75389,
+      "sha256": "b3f74ad845466d55ee508fadb1d5e0b15d41585c571d6b8362ec2832ff5246da"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0007_polish-cooking-guide-zh_cn-3.png",
+      "bytes": 73494,
+      "sha256": "367e915b59d4e4df6a625b700458fdefbbba062e55137525d80d130afd691ec3"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0008_polish-wind-multiheart-food-en_us-scale1.png",
+      "bytes": 287548,
+      "sha256": "505ccdcf8f141e7a3d950a5aad5da084f5216be7816264352856fd4e58123452"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0009_polish-wind-multiheart-food-en_us-scale2.png",
+      "bytes": 276237,
+      "sha256": "40d398fdb3840a17f0b1f2b79f1bd79d79f02f487fbb5d7c6ea21c99e22679c7"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0010_polish-wind-multiheart-food-en_us-scale3.png",
+      "bytes": 260685,
+      "sha256": "5f0b5a3913ede356a91d1e70d358dfd2b08b026e65dc7afbb6bd6ae292a89a16"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0011_polish-wind-multiheart-food-zh_cn-scale1.png",
+      "bytes": 257913,
+      "sha256": "ebfe31efe285245da4c518e545affd735688c5c5abf1234de8b2cf1a560ce08f"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0012_polish-wind-multiheart-food-zh_cn-scale2.png",
+      "bytes": 252345,
+      "sha256": "76c078d6d31f79e22e524c1208a3f72c2ae57692892faad5e8131846b33e905a"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0013_polish-wind-multiheart-food-zh_cn-scale3.png",
+      "bytes": 238197,
+      "sha256": "7e35c16c9fc5ebd3291be89aafbc0ee6c697ca2f94c6e281c92cf7a89e9db17d"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0014_polish-wind-hidden-hud.png",
+      "bytes": 123019,
+      "sha256": "c289f26a33dbaea253cce525ab7571e942265a7ae715bd26148f10bf7c9561df"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0015_polish-wind-paused.png",
+      "bytes": 407481,
+      "sha256": "fac915da6799a20fb1f17278d069bdc3cb1f07d7d005a5c752c7d809eda78058"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0016_polish-wheel-ground-contact.png",
+      "bytes": 556032,
+      "sha256": "4cf464280e4a16f9e99fff38e61bca9916e36e16c4b6f61d3d8d6c675735ffc2"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0017_polish-rider-first-person-level.png",
+      "bytes": 321449,
+      "sha256": "0355e8e06b96813ef1fde52ef1f77735746565ee7ded9cae8ffcf39ea6b4cb92"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0018_polish-rider-third-person-wheels.png",
+      "bytes": 387865,
+      "sha256": "99779d928197daa506f18e476a6466b1740ef04d615a9fcb3791ebf9cde115b4"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/presentation/0019_polish-bottom-spring-known-boundary.png",
+      "bytes": 550586,
+      "sha256": "a0e9aa9ddc42d388cbaf8516044a2d5a720a2dd4effe68dcf40578fb1dba05ba"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/survival/0000_survival-native-crafted-kit.png",
+      "bytes": 91483,
+      "sha256": "7ee74387f8e38d24de3d893815e4233aa711d68af996271e2829ba49f0b91b07"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/survival/0001_survival-native-cooked-and-eaten.png",
+      "bytes": 54953,
+      "sha256": "cadb285a6020536b5910f675803d81f548e34e40480ec2957839ca3d4891f011"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/survival/0002_survival-native-climb-to-glide.png",
+      "bytes": 90847,
+      "sha256": "4b865d1aa0fde8276855659a79db56d4bc900026ab5bb3aadb034edd5eaeb331"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/survival/0003_survival-native-charged-crafted-battery.png",
+      "bytes": 61596,
+      "sha256": "6eb0a9d2a85eee69c31adf83abf940c27ac53c57fcc4663736d102feaf04b435"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/survival/0004_survival-first-person-clear-riding.png",
+      "bytes": 167873,
+      "sha256": "ded7e8697fcbc53df5432195a050ae9db5d838b05d6787330543099238f223cf"
+    },
+    {
+      "path": "development-assets/verification/p102/screenshots/survival/0005_survival-native-fabricated-supply.png",
+      "bytes": 59493,
+      "sha256": "5e2e79c2253d7b107deb1e310256e503053bee704a7d211c22565ad20774f5aa"
+    },
+    {
+      "path": "development-assets/verification/p102/server-tests.xml",
+      "bytes": 12438,
+      "sha256": "abaaec71f7cfcdfcd2e9c974da199018f3c7b8fd438c32f49b084ac2a45840ef"
+    },
+    {
+      "path": "development-assets/verification/p102/spring-conflict-before-fix.log",
+      "bytes": 68498,
+      "sha256": "9d744035859fbf5db082d280b8152cc693f5d45280d8618a96d29ebe10a795c0"
+    },
+    {
+      "path": "development-assets/verification/p102/standalone-commands.txt",
+      "bytes": 197,
+      "sha256": "596aaa9c0420130261ffca68728adb7c414cc8bc0c251db26aab3e9844dc970f"
+    },
+    {
+      "path": "development-assets/verification/p102/standalone-server.log",
+      "bytes": 6985,
+      "sha256": "9c5b0ed5c5778c4fb663db93537c5f22c863398a581a88f22a32538254f42db5"
+    },
+    {
+      "path": "development-assets/verification/p102/test-artifacts.json",
+      "bytes": 588,
+      "sha256": "c6dad791020cedbe4d333d3df79cf40ed548f93e8fefbc185093bc55cb5a943d"
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.17+mc26.3.jar",
+      "bytes": 666709,
+      "sha256": "e174921cb174e7138001f7c365e82cc426e775c49b30ea3876ee9fe7935a5e35"
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.17-sources.jar",
+      "bytes": 408165,
+      "sha256": "4d3b445fb4ca2c588f2d37788135eee8c9eeeb7f10dc5b785303c20a50d0dd7b"
+    },
+    {
+      "path": "docs/AI-HANDOFF.md",
+      "bytes": 25219,
+      "sha256": "63a54831f02a235abdd567d81c9305b8360d69f4f94f0e8bcbdf3426230e8728"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 24041,
+      "sha256": "7914918a4fcdc276f5019b12e614b09ffdc3362cc827763a81039c455291d94a"
+    },
+    {
+      "path": "docs/DEVELOPMENT.md",
+      "bytes": 21457,
+      "sha256": "b375da2b64d9a837a03314df406548332b831b95196dd96ffd834de861bd2ff2"
+    },
+    {
+      "path": "docs/NEXT-DEVELOPMENT-PLAN.md",
+      "bytes": 15175,
+      "sha256": "09a2b94b33e631ca0a29dfff37105cd368a0b6621c0f590fd202c576bc06ad3e"
+    },
+    {
+      "path": "docs/P10.2-SPEC.md",
+      "bytes": 1917,
+      "sha256": "1e9af7e94fb98031659553498f20640bf8ff456fc134b9166cabbeb73adb2f5e"
+    },
+    {
+      "path": "docs/P10.2-VERIFICATION.md",
+      "bytes": 5957,
+      "sha256": "33d862aa630d0be5a39932f583f0f2255c464233be9e698db472b909d453db47"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 5909,
+      "sha256": "9c03312b333f92149e6feea2b0597881df149ddcd8504ca5a7eb43d57d5b48c5"
+    },
+    {
+      "path": "docs/SINGLEPLAYER-BALANCE.md",
+      "bytes": 3539,
+      "sha256": "5f7daa7f9f15bbba7c2f3442bde89216127881fafeac1494dab68a6975ae633c"
+    },
+    {
+      "path": "docs/SINGLEPLAYER-PLAYTEST.md",
+      "bytes": 2515,
+      "sha256": "7c1790a79713e771c221c5e0100e50109f28c607c1a32bccc5e45d91627df400"
+    },
+    {
+      "path": "docs/SINGLEPLAYER-RECIPE-COSTS.csv",
+      "bytes": 1973,
+      "sha256": "0dbb205c13609fee877667d3066ba8fcc7eb72b8faea88c8d43d68cc11631c6c"
+    },
+    {
+      "path": "gradle.properties",
+      "bytes": 227,
+      "sha256": "1d973c9f69ce907f3b9f309371d8e04c242d890f0e2a7298bd8a49d335999f8a"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/cooking/CookingGuide.java",
+      "bytes": 1258,
+      "sha256": "ecedadfcb3fd05ab014129053f9c361f31b1a4ae20794ec58b15c651796edcf8"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/cooking/CookingScreen.java",
+      "bytes": 2526,
+      "sha256": "a456db583c3eba25791f8f22b783fbbd5e860ab5830123f9510673196c280a70"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/datagen/WildcraftLanguageProvider.java",
+      "bytes": 21143,
+      "sha256": "3c3ad9746a101fdbc6529dec82edae5876bbb8cc0e99c6702f281522fb79e2b5"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "bytes": 5642,
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "path": "src/gametest/java/dev/wildcraft/test/PolishPresentationClientTest.java",
+      "bytes": 10715,
+      "sha256": "9b08d3364f814633579c05a15eb91f4b0755c079347a7fca7fb69081ffe070d8"
+    },
+    {
+      "path": "src/gametest/java/dev/wildcraft/test/SurvivalClientTest.java",
+      "bytes": 17610,
+      "sha256": "78de6cb0d7717c10a7ac5607f9238614fc0a63aa33e6f8f0d9f90e35d3657e95"
+    },
+    {
+      "path": "src/gametest/java/dev/wildcraft/test/SurvivalGameTests.java",
+      "bytes": 4746,
+      "sha256": "956d6eabb15adc1c2534596b781016ff1de9b8ab764ba5183e89b577f7aa32f7"
+    },
+    {
+      "path": "src/gametest/java/dev/wildcraft/test/SurvivalRecipes.java",
+      "bytes": 2700,
+      "sha256": "4e9eaea587c9b0fb86a0ab2ea16c4e7f1f520b43847517842ff889f090549e39"
+    },
+    {
+      "path": "src/gametest/resources/fabric.mod.json",
+      "bytes": 2374,
+      "sha256": "8fb2bc8f201a90e956f61a80a9cb0d2b488f48149343c34f309750b0c246ed12"
+    },
+    {
+      "path": "src/main/generated/assets/wildcraft/lang/en_us.json",
+      "bytes": 13351,
+      "sha256": "63ec8d42d805f1c6e22d9b178f0dd179df9540a19b4ce740591d159c5c7e1b05"
+    },
+    {
+      "path": "src/main/generated/assets/wildcraft/lang/zh_cn.json",
+      "bytes": 12884,
+      "sha256": "2f3deaa5e93cfc2d21c0c885acf628b7ef2f49db0e160f2b872fbae7c8327281"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/buoyancy.json",
+      "bytes": 584,
+      "sha256": "b86032866c99db5b81e2d341a6fb411bfcd56dc34a808eaf63a96de12b022b8f"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/fabricator.json",
+      "bytes": 594,
+      "sha256": "b50db06c8bb0619d4d8e31669215781c9b07e3e4c65d4a780f0747515669f58a"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/rocket.json",
+      "bytes": 583,
+      "sha256": "75781cc7415ef9203440e99e30e6854c9ccb17f9761aba125ddcae7d0d75db2c"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/spent_rocket_recycling.json",
+      "bytes": 616,
+      "sha256": "a0d1c631906e17becc61cc32235d590212d90a58e283ef05eae46a2bd2d11f58"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/spring.json",
+      "bytes": 582,
+      "sha256": "9bc778c8023d5bc34952d776d0b85f784104e622461c6283e433306e1aa2e233"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/stabilizer.json",
+      "bytes": 588,
+      "sha256": "6b449d085324631c78a85ab6bd15ff34f09d1e719ce46f7b948112040b065e37"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/wheel.json",
+      "bytes": 580,
+      "sha256": "0f26f3ee26c54c7360215f4731d7bba0d1cd763f1511193c8b4bcaf85fc92035"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/advancement/recipes/misc/wing.json",
+      "bytes": 575,
+      "sha256": "2bca78952474d39fde0390c22711e394febd9f853d4cc0efce469712b44a6452"
+    },
+    {
+      "path": "src/main/resources/data/wildcraft/recipe/spring.json",
+      "bytes": 259,
+      "sha256": "ac4b0a599980c08c2078413d4c5895cd8872cd8554083f4be474e85045a25f4c"
+    }
+  ]
+}

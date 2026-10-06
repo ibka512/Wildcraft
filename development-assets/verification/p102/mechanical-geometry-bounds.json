@@ -1,0 +1,132 @@
+{
+  "unit": "Minecraft block",
+  "bottomNodeTransform": "local +z maps to world -y; fixed native body bottom y=0",
+  "meshes": [
+    {
+      "mesh": "machine",
+      "path": "src/main/resources/assets/wildcraft/geometry/machine.json",
+      "sha256": "6170012ee6ed87e7b477f31078d50c32d70e1d81988190834a37db75b9837fc7",
+      "states": {
+        "quads": {
+          "min": [
+            -0.7425,
+            -0.0425,
+            -0.7425
+          ],
+          "max": [
+            0.7425,
+            0.6925,
+            0.7425
+          ]
+        }
+      }
+    },
+    {
+      "mesh": "wheel",
+      "path": "src/main/resources/assets/wildcraft/geometry/wheel.json",
+      "sha256": "8a53595b26c46f8d53aadf37b8fa5e4f14f8589ea96668c0061c13ca2ea6b4aa",
+      "states": {
+        "quads": {
+          "min": [
+            -0.2499155,
+            -0.2499155,
+            0.0375
+          ],
+          "max": [
+            0.2499155,
+            0.2499155,
+            0.27
+          ]
+        }
+      }
+    },
+    {
+      "mesh": "spring",
+      "path": "src/main/resources/assets/wildcraft/geometry/spring.json",
+      "sha256": "7374a0d6fd7941775614915ab6e7f837d399b02ba61dac8200555c2d67a8e7a3",
+      "states": {
+        "quads": {
+          "min": [
+            -0.22,
+            -0.22,
+            0.0375
+          ],
+          "max": [
+            0.22,
+            0.22,
+            0.36
+          ]
+        },
+        "extendedQuads": {
+          "min": [
+            -0.22,
+            -0.22,
+            0.0375
+          ],
+          "max": [
+            0.22,
+            0.22,
+            0.56
+          ]
+        }
+      }
+    },
+    {
+      "mesh": "buoyancy",
+      "path": "src/main/resources/assets/wildcraft/geometry/buoyancy.json",
+      "sha256": "ff7fe18ea1978c55e92e7c61a9cc00d45ba887c81cedf4027a692192f0d89025",
+      "states": {
+        "quads": {
+          "min": [
+            -0.32,
+            -0.2,
+            0.02
+          ],
+          "max": [
+            0.32,
+            0.2,
+            0.4
+          ]
+        }
+      }
+    },
+    {
+      "mesh": "wing",
+      "path": "src/main/resources/assets/wildcraft/geometry/wing.json",
+      "sha256": "3ae3c27ba40cbfe4ee80e6f5aab62f424cee46bd8b9dfb47c54aa95ced9bd85b",
+      "states": {
+        "quads": {
+          "min": [
+            -0.5925,
+            -0.08,
+            0.0375
+          ],
+          "max": [
+            0.5925,
+            0.08,
+            0.55
+          ]
+        }
+      }
+    },
+    {
+      "mesh": "fan",
+      "path": "src/main/resources/assets/wildcraft/geometry/fan.json",
+      "sha256": "0317002516b00740896b144aeef2f30730a21f718b2b4905c7e39394e01b31a8",
+      "states": {
+        "quads": {
+          "min": [
+            -0.29,
+            -0.29,
+            0.0375
+          ],
+          "max": [
+            0.29,
+            0.29,
+            0.2
+          ]
+        }
+      }
+    }
+  ]
+}

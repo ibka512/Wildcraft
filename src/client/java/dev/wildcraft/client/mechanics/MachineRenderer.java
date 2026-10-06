@@ -22,7 +22,7 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
         super.extractRenderState(body, state, partial);
         state.active=body.activeMask();state.fuel=0;state.cooldown=0;boolean stabilized=false;
         for(int n=0;n<6;n++){state.fuel|=(long)body.rocketFuel(n)<<(7*n);state.cooldown|=(long)body.springCooldown(n)<<(6*n);if(body.kind(n)==7&&body.active(n))stabilized=true;}
-        state.roll=stabilized?0:(float)Math.clamp(MachineNodes.rotate(body.getDeltaMovement(),-body.getYRot()).x*18,-6,6);
+        state.roll=stabilized||body.onGround()?0:(float)Math.clamp(MachineNodes.rotate(body.getDeltaMovement(),-body.getYRot()).x*18,-6,6);
         state.kinds = body.kinds(); state.yaw = body.getYRot(); state.fans = body.fanMask(); state.battery = body.batteryNode();
         state.energy = body.energy(); state.working = body.working();
         state.preview = MachinePresentation.selectedNode(body);
@@ -39,13 +39,17 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
             if(ghost)kind=state.ghost;if(kind<1||kind>8)continue;
             boolean active=!ghost&&(state.active&1<<n)!=0;int fuel=(int)(state.fuel >>> (7*n)&127),cooldown=(int)(state.cooldown >>> (6*n)&63);
             String mesh=switch(kind){case 1->"fan";case 2->"battery";case 3->"wing";case 4->!ghost&&fuel==0?"spent_rocket":"rocket";case 5->"spring";case 6->"wheel";case 7->"stabilizer";default->"buoyancy";};
-            poses.pushPose();poses.translate(MachineNodes.point(n));orient(poses,n);
+            poses.pushPose();poses.translate(partPoint(n,kind));orient(poses,n);
             float angle=active?(kind==1?state.ageInTicks*.7F:kind==6?state.ageInTicks*.4F:0):0;
             dev.wildcraft.client.art.ArtMesh.get(mesh).submit(poses,collector,state.lightCoords,ghost,angle,!ghost&&cooldown>30,active,ghost?state.ghostEnergy:state.energy);
             if(kind==4&&active&&fuel>0)box(poses,collector,state.lightCoords,-.08F,-.08F,.5F,.08F,.08F,.86F,0xDDFFD58B);
             poses.popPose();
         }
         poses.popPose(); super.submit(state, poses, collector, camera);
+    }
+    /** A visual mounting adapter only; picking, saved nodes and native collision stay unchanged. */
+    public static net.minecraft.world.phys.Vec3 partPoint(int node,int kind) {
+        return MachineNodes.point(node).add(0,kind==6&&node>=2?-.075:0,0);
     }
     private static void orient(PoseStack p, int node) {
         switch (node) {

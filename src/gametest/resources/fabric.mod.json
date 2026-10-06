@@ -30,7 +30,8 @@
       "dev.wildcraft.test.FusionGameTests",
       "dev.wildcraft.test.FusionIntegrationGameTests",
       "dev.wildcraft.test.SecondArtGameTests",
-      "dev.wildcraft.test.WindGameTests"
+      "dev.wildcraft.test.WindGameTests",
+      "dev.wildcraft.test.SurvivalGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
@@ -51,7 +52,9 @@
       "dev.wildcraft.test.FusionClientSmokeTest",
       "dev.wildcraft.test.FusionIntegrationClientTest",
       "dev.wildcraft.test.SecondArtClientTest",
-      "dev.wildcraft.test.WindClientTest"
+      "dev.wildcraft.test.WindClientTest",
+      "dev.wildcraft.test.SurvivalClientTest",
+      "dev.wildcraft.test.PolishPresentationClientTest"
     ]
   }
 }

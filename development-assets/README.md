@@ -104,3 +104,7 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 ## P10 单人风与天气 / dev.16（2026-10-06）
 
 [正式包](wildcraft-0.1.0-dev.16+mc26.3.jar)、[源码](wildcraft-0.1.0-dev.16-sources.jar)、[真实证据](verification/p10/README.md)。阶段规格和执行范围见[P10-SPEC](../docs/P10-SPEC.md)/[P10-VERIFICATION](../docs/P10-VERIFICATION.md)。所有旧版本保留，GitHub上传没有在本轮执行。
+
+## P10.2 单人生存入口与表现 / dev.17（2026-10-06）
+
+[正式包](wildcraft-0.1.0-dev.17+mc26.3.jar)、[正式main/client源码](wildcraft-0.1.0-dev.17-sources.jar)、[实际证据](verification/p102/README.md)、[manifest](Wildcraft-P10.2-manifest.json)/[校验](Wildcraft-P10.2-SHA256SUMS.txt)。完整测试和交接文档在当前仓库中，见[P10.2验收](../docs/P10.2-VERIFICATION.md)。83服务端/21类客户端与实际GUI1/2/3专项均通过，无测试Mod服务端保存退出通过。费用和原资产保持，底部/B6美术另列待办；本轮未上传GitHub或发布。

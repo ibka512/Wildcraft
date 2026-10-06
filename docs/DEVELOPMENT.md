@@ -218,3 +218,15 @@ P3.2 当前共 27 项 GameTest、8 个成品客户端类，另有 4 项普通客
 ## 第二批美术接入后的验证入口
 
 先单独运行 `./dev.sh runDatagen`，再运行 `./dev.sh build gameTestJar`。接受本机测试 EULA 后使用 `./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runSecondArtClientTest runMechanicsClientTest` 做专项，或使用 runPackagedClientTest 做完整客户端回归。生产实例只安装 dev.15 正式包与指定 Fabric API，不安装测试包。导入原稿的方法及准确覆盖见 [接入说明](SECOND-ART-INTEGRATION.md) / [实测记录](SECOND-ART-VERIFICATION.md)。
+
+## P10.2 单人入口与检查
+
+获得相关原料后，翼/轮/火箭/弹簧/稳定器/浮力/制造机/空壳回收加入原版配方书。弹簧工作台图案为上排左两铁、中排中红石、下排右两铁；旧铁锭十字图案仍为原版指南针。料理锅标题右侧四类字母/汉字悬停可看食材、效果等级与时长、碗和火源说明。
+
+```sh
+./dev.sh runDatagen
+./dev.sh -PacceptMinecraftEula=true --no-configuration-cache build runPackagedClientTest
+./dev.sh -PacceptMinecraftEula=true --no-configuration-cache runSurvivalClientTest runPolishPresentationClientTest
+```
+
+这些图形任务使用隔离场景，不读写个人世界。实际人工作业与参数见SINGLEPLAYER-PLAYTEST和SINGLEPLAYER-BALANCE；GUI专项会核对真实缩放而非只设置选项。生产玩家/设备格式不变，升级用世界副本、回退用对应世界备份。

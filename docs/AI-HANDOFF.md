@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-06。当前本机开发版本 **0.1.0-dev.16 / Minecraft 26.3**，分支 `feature/wind-weather`。P10单人风天气首版已完成本机80项服务端/19类客户端验收，实际验证范围见 [P10合同](P10-SPEC.md) / [P10验证](P10-VERIFICATION.md)。dev.15三类连续操作检查通过，29项采用美术保留，P9/P9.1仍有效。下一步单人生存平衡与角色/机械表现完善；用户明确当前不考虑多人，R2/P10.1继续暂缓。公开main/Release仍dev.7，dev.8–dev.16未上传。旧标签、安装包及证据保留；没有新增生产依赖或真实存档迁移。
+更新：2026-10-06。当前本机开发版本 **0.1.0-dev.17 / Minecraft 26.3**，分支 `feature/singleplayer-polish`。P10.2单人取得入口、原生循环和显示收尾已完成，最终证据见[P10.2合同](P10.2-SPEC.md)/[验收](P10.2-VERIFICATION.md)。保留dev.16风天气、dev.15第二批29项美术及P9/P9.1。下一步人工单人生存试玩、定向平衡与B6/机械底部美术，用户当前不考虑多人，R2/P10.1继续暂缓。公开main/Release仍dev.7，dev.8–dev.17未上传。旧标签/包/源稿/证据保留；未新增生产依赖或迁移真实存档。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -54,7 +54,9 @@
 | P9 | 本机dev.14完成，71服务端/16类客户端/双普通客户端及独立服务端；[合同](P9-SPEC.md) / [完整验收](P9-VERIFICATION.md) |
 | P9.1 | 同正式dev.14，72服务端/完整17类客户端组合回归通过；[验收](P9.1-VERIFICATION.md) |
 | 第二批美术 v2 | dev.15 接入 29 项采用资产，F05-10 v02 为当前；[记录](SECOND-ART-VERIFICATION.md) |
-| 后续单人阶段 | dev.15体验收尾→P10风与天气→单人生存平衡；R2/P10.1按用户决定暂缓 |
+| P10 | dev.16单人风与当地天气首版；[验收](P10-VERIFICATION.md) |
+| P10.2 | dev.17单人取得入口、原生闭环、轮子与HUD收尾；[验收](P10.2-VERIFICATION.md) |
+| 后续单人阶段 | 人工试玩/定向平衡、B6及底部美术，再做候选版；R2/P10.1暂缓 |
 
 当前没有多人林克时间；正式Fuse已完成本机dev.14，P9.1组合也完成，R2研究暂缓，P10单人首版已实现，后续优先单人生存平衡。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风或鞘翅下改用侧腰布局；五类真实物品仍保持原有尺度和库存归属。没有环形精力样式或雨天攀爬打滑。
 
@@ -187,3 +189,13 @@ P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复�
 复现：先`./dev.sh --no-configuration-cache runDatagen`，再`build`；本机EULA已由所有者接受，当前机器可以用`-PacceptMinecraftEula=true runGameTest runWindClientTest`；其他操作者须自行接受。纯规则`verifyWindRules`纳入`check`。完整客户端保留既有历史回归，没有新增多人专项；本阶段不代表R2或多人林克时间完成。
 
 下一批在单人存档副本中跑完整生存循环，量化精力成长、三料理效果、电池/火箭/制造成本和风中的控制；再根据实测调参。继续检查机械底部穿插、轮子间隙、腰侧与第三方模型，并准备正式B6风提示。雷击能源未定稿，不能当成本轮已实现；不升级依赖、不改持久格式、不自动上传GitHub。
+
+## P10.2/dev.17 接手要点
+
+- 14条原料配方都走原版匹配器验证，8条新增advancement通过真实inventory_changed解锁，不用award命令。弹簧旧图案与指南针相同，已改为`II ` / ` R ` / ` II`，仍4铁＋1红石；旧图案仍应产出指南针。
+- 料理锅标题右侧蔬/暖/凉/力（V/W/C/S）悬停说明，`CookingGuide`读公共`CookingRecipes.ALL`的7配方，没有独立第二份规则；语言由数据生成维护。服务端菜单/食材判定/保存均不变。
+- `MachineRenderer.partPoint`仅将侧轮外观下移0.075，预览和安装同用，地面不做装饰roll。`MachineNodes`、碰撞盒、动力、安装命中和存档未改。底部部件仍可能穿地，见[美术修正依据](../art/production-docs/P10.2-MECHANICAL-ART-REPAIR.md)。
+- `SurvivalClientTest`只提供原版原料与场景。合成/料理/装备/攀爬/滑翔/射箭/Fuse/充电/安装/驾驶/回收/制造/重开均用真实游戏路径；站点间传送、经验20与停止后的测试场景复位不代表自然探索。
+- 完整回归和GUI专项分开留证，GUI必须核对实际`Window.getGuiScale()`，不能把小窗将选项3自动夹为2算成实际3。后者用1280×960窗口支持真实1/2/3。
+- [数值基线](SINGLEPLAYER-BALANCE.md)/[逐项成本](SINGLEPLAYER-RECIPE-COSTS.csv)记录当前参数；本轮没有凭理论改成长或电池。下一批先做[人工试玩单](SINGLEPLAYER-PLAYTEST.md)或用户明确的新任务。B6可制作，见[合同](../art/production-docs/B6-WIND-ART-BRIEF.md)，正式资产仍未制作/采用。
+- 不新增多人工作，不把本机检查算成已上传GitHub或正式候选发布。

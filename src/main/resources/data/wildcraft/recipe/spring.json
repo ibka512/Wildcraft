@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " I ",
-    "IRI",
-    " I "
+    "II ",
+    " R ",
+    " II"
   ],
   "key": {
     "I": "minecraft:iron_ingot",

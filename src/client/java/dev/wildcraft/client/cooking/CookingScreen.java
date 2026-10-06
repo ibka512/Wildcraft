@@ -13,6 +13,15 @@ public final class CookingScreen extends AbstractContainerScreen<CookingMenu> {
     @Override public void extractBackground(GuiGraphicsExtractor g,int mouseX,int mouseY,float delta){
         super.extractBackground(g,mouseX,mouseY,delta);int x=leftPos,y=topPos;
         ArtGui.panel(g,"cooking",x,y,176,182);
+        for(int kind=0;kind<4;kind++){
+            int gx=x+96+kind*16;
+            g.text(font,Component.translatable("cooking.wildcraft.guide.short."+kind),gx,y+7,0xFF527046,false);
+            if(mouseX>=gx-2&&mouseX<gx+14&&mouseY>=y+4&&mouseY<y+18){
+                var lines=new java.util.ArrayList<net.minecraft.util.FormattedCharSequence>();
+                for(var line:CookingGuide.lines(kind))lines.addAll(font.split(line,Math.max(80,Math.min(220,width-24))));
+                g.setTooltipForNextFrame(font,lines,mouseX,mouseY);
+            }
+        }
         g.fill(x+92,y+49,x+92+30*menu.progress()/CookingPotEntity.COOK_TICKS,y+54,0xFFC38442);
         int status=Math.clamp(menu.status(),0,4),color=COLORS[status];
         // Five small state glyphs are drawn independently of text and the actual inventory.
