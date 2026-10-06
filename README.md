@@ -1,10 +1,10 @@
 # Wildcraft
 
-Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.15 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；正式Fuse P9也已完成，见[P9合同](docs/P9-SPEC.md)与[验收](docs/P9-VERIFICATION.md)。公开 main 与最新 Release 仍为 dev.7，本次 dev.8–dev.15 尚未上传。第二批 29 项采用美术已接入，见 [接入说明](docs/SECOND-ART-INTEGRATION.md) 和 [验证记录](docs/SECOND-ART-VERIFICATION.md)。
+Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采用 **Java Edition + Fabric**。当前本机开发版本为 **0.1.0-dev.16 / Minecraft 26.3**，已完成精力、攀爬、滑翔、背负装备、单人林克时间、核心美术 v1、P4A 环境温度和 P4B料理和P5能源。P6安装与P7八类机械部件已完成本机验收，古代装置制造机P8也已完成本机验收；正式Fuse P9也已完成，见[P9合同](docs/P9-SPEC.md)与[验收](docs/P9-VERIFICATION.md)。公开 main 与最新 Release 仍为 dev.7，本次 dev.8–dev.16 尚未上传。第二批 29 项采用美术已接入，见 [接入说明](docs/SECOND-ART-INTEGRATION.md) 和 [验证记录](docs/SECOND-ART-VERIFICATION.md)。
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
-当前开发优先级：**单人体验收尾 → 风与天气 → 单人生存平衡**。多人局部时间研究与正式多人林克时间暂缓（用户2026-10-06决定）。
+P10 单人风与天气首版已完成本机验收，80项服务端与19类客户端通过，证据见 [P10 验证](docs/P10-VERIFICATION.md)。当前开发优先级：**单人生存平衡 → 角色与机械表现完善 → 候选版检查**。多人局部时间研究与正式多人林克时间暂缓（用户2026-10-06决定）。
 
 **接手入口：[AGENTS.md](AGENTS.md) → [AI 开发交接](docs/AI-HANDOFF.md) → [下一阶段执行计划](docs/NEXT-DEVELOPMENT-PLAN.md)。**
 
@@ -39,7 +39,7 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 ## 下载与安装
 
-- **本机最新开发包：[wildcraft-0.1.0-dev.15+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.15+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
+- **本机最新开发包：[wildcraft-0.1.0-dev.16+mc26.3.jar](development-assets/wildcraft-0.1.0-dev.16+mc26.3.jar)**；已公开交接包仍为 [dev.7](development-assets/wildcraft-0.1.0-dev.7+mc26.3.jar)。
 - [本次 GitHub Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03)：正式 JAR、最新源码与仓库资产 ZIP、完整美术交付再归档、桌面美术工作目录及 SHA-256 校验清单。
 - [全部历史阶段及校验](development-assets/README.md)：dev.1–dev.6 的原始包和证据继续保留。
 
@@ -86,6 +86,8 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 验证与可信范围
 
+P10 新增确定性风规则、当地天气/屋顶/水中检查、翼与有限能源组合、实际开伞/收伞/林克时间与保存重开；本次完整证据及人工未验范围见 [P10 验证](docs/P10-VERIFICATION.md)。历史检查的计数属于各自版本。
+
 核心美术基线已在 macOS 实际通过：精力 **13 个示例 + 1000 组边界检查**、有效时钟 **10 项检查**、**28 项服务端 GameTest**、**9 类成品客户端回归**、两个独立普通客户端观察，以及无测试模组独立服务端启动和保存退出。本机 P4A 已扩展到 **32 项服务端 / 10 类成品客户端回归**，新增温度规则、专项客户端与生命周期检查，见 [P4A 验证](docs/P4A-VERIFICATION.md)。另有 120fps、30fps、附魔及服务端阻塞四种普通客户端真实计时。证据见 [核心美术验收](docs/CORE-ART-VERIFICATION.md)；本次迁移验证单独记录在 [迁移与交接记录](docs/MIGRATION-HANDOFF-2026-10-03.md)。
 
 ```sh
@@ -106,7 +108,7 @@ macOS 默认将可重建缓存与运行目录放在 `~/Library/Caches/Wildcraft`
 
 ## 下一阶段
 
-P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，P9正式Fuse也已完成，P9.1组合验收也已完成，下一步R2研究。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
+P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.md) / [P5验证](docs/P5-VERIFICATION.md)。P6已完成主体、风扇/电池、实际安装预览、动力、乘坐、拆卸与保存闭环，见[P6规则](docs/P6-SPEC.md) / [完整验收](docs/P6-VERIFICATION.md)。P7八类部件已完成，见[P7规则](docs/P7-SPEC.md) / [验收](docs/P7-VERIFICATION.md)；P8制造机也已完成，P9正式Fuse也已完成，P9.1组合验收也已完成，P10风天气首版已实现；下一步单人生存平衡与表现完善。保留普通冷热无普遍惩罚、有限冻结辅助、耐热不抗火。
 
 | 顺序 | 后续范围 |
 | --- | --- |
@@ -115,8 +117,9 @@ P4A、P4B和P5已完成本机开发，规则和验收见[P5规格](docs/P5-SPEC.
 | P6 / P7（本机已完成） | 主体、有限安装节点、吸附/拆卸回收；翼、风扇、火箭、电池、弹簧、轮子、稳定器、浮力装置 |
 | P8（本机已完成） | 古代装置制造机；投入一次、确定结果保存、中断恢复 |
 | P9 / P9.1 | 正式 Fuse 与背负/空中箭整合；任意物品 Fuse 的保存、通用规则、专属效果和外观分别研究 |
-| R2 / P10 / P10.1 | 多人局部时间研究、风与天气、通过研究后实现多人林克时间 |
-| P10.2 / P11 | 剩余角色表现、平衡、兼容、长期多人、存档升级与候选版 |
+| P10（首版） | 自然水平风、当地雨雪、避风；开伞和离地机械翼响应，见[P10规格](docs/P10-SPEC.md) |
+| R2 / P10.1（暂缓） | 多人局部时间研究与多人林克时间 |
+| P10.2 / P11 | 剩余角色表现、单人生存平衡、兼容与候选版；多人另行恢复 |
 
 具体任务和各阶段验收见 [下一阶段计划](docs/NEXT-DEVELOPMENT-PLAN.md)。继续排除究极手、时间倒流、大型 Boss、完整神庙、大型新维度、复杂剧情、大量新矿石/资源体系、小型世界事件、环境谜题及机械蓝图；超复杂机械物理暂缓。
 
@@ -160,7 +163,7 @@ development-assets/        历史 JAR/源码包、截图、日志和校验清单
 
 独立古代装置制造机，每批4铜锭+2红石，100加载世界刻，八类部件各12.5%。服务端启动时扣料并保存一次结果；关闭、暂停、离线或搬运不会重抽。满库存保留成品，挖下再放置携带实际库存和进度。见[P8规格](docs/P8-SPEC.md)、[完整验收](docs/P8-VERIFICATION.md)和[资产](development-assets/verification/p8/README.md)。
 
-P9正式Fuse已完成，见[完整验收](docs/P9-VERIFICATION.md)；P9.1组合验收也已完成，下一步R2研究空中箭、林克时间、背负和料理。
+P9正式Fuse已完成，见[完整验收](docs/P9-VERIFICATION.md)；P9.1组合验收也已完成，P10风天气首版已实现；下一步单人生存平衡与表现完善空中箭、林克时间、背负和料理。
 
 V融合、Shift+V拆卸；生存/冒险主手剑/斧/盾/箭、副手材料。32次材料磨损不会通过拆装补满；Infinity仍消费融合箭。通用外观为可替换原型，任意材料的第三方能力/模型仍需专项研究。
 

@@ -37,12 +37,13 @@ public final class Wildcraft implements ModInitializer {
         GliderEquipment.initialize();
         dev.wildcraft.equipment.BackEquipment.initialize();
         Climbing.initialize();
+        dev.wildcraft.weather.WindSystem.initialize();
         Gliding.initialize();
         PlayerStamina.initialize();
         dev.wildcraft.focus.FocusTime.initialize();
         StaminaCommands.initialize();
         dev.wildcraft.temperature.EnvironmentTemperature.initialize();
         dev.wildcraft.temperature.TemperatureCommands.initialize();
-        LOGGER.info("Wildcraft second art integration initialized; fusion, fabrication, mechanics, energy, cooking, temperature and traversal registered.");
+        LOGGER.info("Wildcraft wind/weather initialized; fusion, fabrication, mechanics, energy, cooking, temperature and traversal registered.");
     }
 }

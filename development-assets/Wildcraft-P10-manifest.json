@@ -1,0 +1,558 @@
+{
+  "version": "0.1.0-dev.16",
+  "minecraft": "26.3",
+  "serverTests": 80,
+  "clientClasses": 19,
+  "files": [
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.16+mc26.3.jar",
+      "bytes": 660378,
+      "sha256": "4b50ffcebcde013b42ed7ff7b7db457b94b3c163476dc564d7f69ab189c6cdfc"
+    },
+    {
+      "path": "development-assets/wildcraft-0.1.0-dev.16-sources.jar",
+      "bytes": 403541,
+      "sha256": "e00a81c8375209fb09466002e1f359cfa122eb7d8b6288f80a884d6438359648"
+    },
+    {
+      "path": "docs/P10-SPEC.md",
+      "bytes": 4108,
+      "sha256": "1aac647eddb40164dba617859323cb50e4112163fbde4c34e57e75a535ff520d"
+    },
+    {
+      "path": "docs/P10-VERIFICATION.md",
+      "bytes": 3624,
+      "sha256": "ce64b1478d81e9e67497bea0c15d467cbc08ed44360803ef87b682f368eb0fa0"
+    },
+    {
+      "path": "development-assets/verification/p10/README.md",
+      "bytes": 452,
+      "sha256": "304bed6a3023b1b7c69de16a51c7051d19ab18f3e7791dbeb421fb6fcef24109"
+    },
+    {
+      "path": "development-assets/verification/p10/build.log",
+      "bytes": 60331,
+      "sha256": "0baf2d692d84f4c7c1a375a088a9611e893c2933b79214c713eaca5070e0f9c6"
+    },
+    {
+      "path": "development-assets/verification/p10/datagen.log",
+      "bytes": 6755,
+      "sha256": "5e761d6f6d3c8e82966e5e552f92457bf2a1c3ed79b0e44242fc4527c78d6073"
+    },
+    {
+      "path": "development-assets/verification/p10/dev15-singleplayer-baseline.log",
+      "bytes": 116715,
+      "sha256": "a00633301120083611b93267cf3b0fd781e50019be5c1d72a11254b230280127"
+    },
+    {
+      "path": "development-assets/verification/p10/full-regression.log",
+      "bytes": 581623,
+      "sha256": "721a9f9645141b332b1088cddfd6408a409c7fe643dda06f66caee0dab4b6d44"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0000_p0-test-core-in-world.png",
+      "bytes": 330436,
+      "sha256": "d07cb23b68982aa26839be9b1650678667731a8c5c089175b01c313c763f49dd"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0001_p0-test-core-after-reload.png",
+      "bytes": 169244,
+      "sha256": "a8eb137f69f433420ac1995dc3a61e30aa64a09ba0daa164f7af032a493cec84"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0002_p0-test-core-on-server.png",
+      "bytes": 160090,
+      "sha256": "6b2f4fc707f9ea4768e77a0f09cc97d06e3038522dc837716918d307a303a3a4"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0003_p1-stamina-peak30-after-xp-spend-en.png",
+      "bytes": 261777,
+      "sha256": "3655c061a9d7285572e13cb07034e86794027f316c4c7fbae583efcaca54acfe"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0004_p1-stamina-peak30-after-xp-spend-zh.png",
+      "bytes": 270214,
+      "sha256": "8e5e3bd94e3b49f04bb5f27c695f3613f6a564b00aa255dc5b4a656de7580960"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0005_p1-stamina-after-server-reconnect.png",
+      "bytes": 222404,
+      "sha256": "6848adcebc349465ad8bd608b2164ee8693862da3fe9ed4d0aa6e69c4c2b30ef"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0006_p2-climbing-wall-zh.png",
+      "bytes": 129627,
+      "sha256": "23630918d8523061534ca6a0dbd0c2e67678b746e4faec127f12a6d9c20aef44"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0007_p2-climbing-over-ledge.png",
+      "bytes": 143021,
+      "sha256": "1529f4fe5ca5ee8415f29f26f53159ea782f3a50aa63622b765d5871d7bd7e89"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0008_p2-climbing-outer-corner.png",
+      "bytes": 75653,
+      "sha256": "40f89c6614b0b4910c0ec05ff7bf99751ea1b4dba372689a40aaed16e4275010"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0009_p2-climbing-on-tcp-server.png",
+      "bytes": 98991,
+      "sha256": "1ef2f5ab8437aafa10c9660968ad9fe8a0987ea1a1a2f7af63e4b32792503397"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0010_p3-paraglider-equipment-slot-zh.png",
+      "bytes": 66946,
+      "sha256": "860146df77592155c69fd2b2c33cb08cd5678821c15c35976b91bab0879f3584"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0011_p3-paraglider-creative-slot-zh.png",
+      "bytes": 75228,
+      "sha256": "bdad8131af999f771fa768078a954465b9eed70e6f25cce5ebda4b0bd7bfca57"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0012_p3-paraglider-gliding-zh.png",
+      "bytes": 65501,
+      "sha256": "7577e26c8ad2b2d127df6b5cf095d8493143190b75429b34773061f2872c134c"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0013_p3-climb-to-glide.png",
+      "bytes": 202018,
+      "sha256": "b6e3fc1302fcf3a40bda029180594727ca62ff29416b0cf37c8b6111150e2a3d"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0014_p3-gliding-tcp-en.png",
+      "bytes": 90559,
+      "sha256": "10e60b70d89f371f495295c52afb9dc4839acc891e927abc77aba40ad38a67a3"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0015_r1-native-back-anchor.png",
+      "bytes": 211540,
+      "sha256": "9012786ab7b14fd502c42cca1121ee025d77ab6146ec6afd5a98de6f724f1452"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0016_r1-color-normal.png",
+      "bytes": 231901,
+      "sha256": "a0c033469219d9c5dd6afb0cf1ff9a0d86c7d06e17050903eb14aa0ccecbdfdd"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0017_r1-color-desaturated.png",
+      "bytes": 226104,
+      "sha256": "daf16cfb990053846416f944425431fe7dbbe8caf430119053035573ede9c52f"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0018_p31-bow-draw-shield-stowed.png",
+      "bytes": 82071,
+      "sha256": "13365320c18567a155f8ee6f2f94b938b4a39c7151b4d9c30c9c28f47d31ed27"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0019_p31-back-all-native-models.png",
+      "bytes": 81740,
+      "sha256": "1aababe0c4498194485eb8553f1fc150929bceb7f47a3e9da997d55f20d14824"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0020_p31-crouching-back-models.png",
+      "bytes": 82316,
+      "sha256": "ea6eed5b213bb363db031a14c3d3a85daf386edcb4f4a4c2a60e2c17a0b98b47"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0021_p31-swimming-back-models.png",
+      "bytes": 163473,
+      "sha256": "e598d355185cc4f387329a3ed4ed6f6d7a62df113f85b3b0c0c9b20ead65a401"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0022_p31-first-person-no-own-back.png",
+      "bytes": 84932,
+      "sha256": "c3a26b9e59e4b39eb28a973a0d18654d8c14c637d0d495b1e520f46d5399fedc"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0023_p31-merged-hud-low-en.png",
+      "bytes": 84537,
+      "sha256": "a7a4b492f3005a8eeaf18319c5a83407b5c8f0c94e518cfc163506144187d8ba"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0024_p31-merged-hud-low-zh.png",
+      "bytes": 85738,
+      "sha256": "a1e48badccb6e367b2d628965edfaa0cb1b9f92468de02466ba720f0c697ef14"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0025_p31-hidden-hud.png",
+      "bytes": 69744,
+      "sha256": "0261db5925aa3b42a4f3df77e48a154ef19111625b7b088dcb849b565653515d"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0026_p31-upper-left-multiple-heart-rows-scaled.png",
+      "bytes": 86383,
+      "sha256": "750c2282cc0cece3dbe2a8aa4fa6feae2c7fc7b3956af0c592771b6cc20c0484"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0027_p31-upper-left-large-capacity.png",
+      "bytes": 86388,
+      "sha256": "4604c6410f4fba9f77b070a5b12dd352bb3281a3b2d4f4318c6693b60bfb5e44"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0028_p31-native-mount-bar-kept-with-upper-left-stamina.png",
+      "bytes": 89042,
+      "sha256": "ee1dfb193afb8e9f9083fc8244c0919f138aabe6d5120553915572ef598dc639"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0029_p31-restored-xp-level5.png",
+      "bytes": 35286,
+      "sha256": "c98432ae73f33d24bdd73b0e3a3302be8cf181f45e0936a2d5c38ec12b0ff7b5"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0030_p31-elytra-priority.png",
+      "bytes": 90107,
+      "sha256": "015a4cde2c5098ec3185f457c6dc0020328a1f91346590abffa59dd3214dc5af"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0031_p32-color-normal.png",
+      "bytes": 187689,
+      "sha256": "556985a631d7b83916661d57f2c93b8d4248a2ef8b13d3f018fac0f720b552ab"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0032_p32-focus-first-person.png",
+      "bytes": 223483,
+      "sha256": "30736ff0a39618874ca553cd127b32ba20c9d6cc82f9a6a81b453029c5c934e5"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0033_p32-focus-third-person.png",
+      "bytes": 209756,
+      "sha256": "73eeb0d556f1deccd90ed27a3643717be23e857dc65d01bf8964c5957a638885"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0034_p32-focus-effects-off.png",
+      "bytes": 166912,
+      "sha256": "e5c1e11ff3ee8a1576ca28252a56d579c171ce86b097ab2cade0b64be94cdc54"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0035_p32-focus-settings.png",
+      "bytes": 91499,
+      "sha256": "c37685d7e25b4f35d618bf6a90311d58af8add34cefc41e2041c7b53068f68cc"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0036_art-glider-first-person-grips.png",
+      "bytes": 48814,
+      "sha256": "05d4a6fb54e6642fa5a8042188eefebb2385733c44a8a60077aefb183a726ea2"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0037_art-glider-third-person-front.png",
+      "bytes": 60787,
+      "sha256": "f5e5f6131345a35b8869642c982bfba88b1db7be34ff1d9328ff2c5c9664d381"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0038_art-settings-normal.png",
+      "bytes": 88919,
+      "sha256": "8197148e486e33c01352299ace841f5923d0a7bbc6992f9d330f1e41942e4c1b"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0039_art-settings-compact-layout.png",
+      "bytes": 89225,
+      "sha256": "41588b916eed6368e4bbd2eb6c93e9377bb15a1d65e8309ca049008f7f5b4c67"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0040_p4a-snow-cold.png",
+      "bytes": 100831,
+      "sha256": "e09c5492e450457018d83c5a8ff626d922fac8d43d8b541a355aae31f2e68aa3"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0041_p4a-desert-hot.png",
+      "bytes": 100789,
+      "sha256": "334925232963b456c0f7839427b389c08707285c10fda81f5c735e01600ab991"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0042_p4a-campfire-warm.png",
+      "bytes": 129091,
+      "sha256": "7314976e39d358a719f9824d06c7f3ef269893a1ea02dbcd8d62dae31e3d196e"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0043_p4a-multiple-hearts-stamina.png",
+      "bytes": 106389,
+      "sha256": "b2871d3f2b62fae3d3794e661c8aa7dad500248af9c56b17fdd64703959cfe02"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0044_p4a-native-leather-boots.png",
+      "bytes": 63060,
+      "sha256": "7f0338cc1ba5dd6272bfc43b78e14a4810d8770493e5dce7f9d97039e7e5f1e1"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0045_p4a-temperature-gliding.png",
+      "bytes": 67558,
+      "sha256": "0b4e6e14c723f9860e7b0285883ba6d72b642b46b1eb9db220ced92d51a7aabb"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0046_p4a-focus-priority.png",
+      "bytes": 95707,
+      "sha256": "700c67a5eabc3078226f406f4896251a6c024a168dac737ad42b8b844cf6a402"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0047_p4b-pot-awaiting-heat.png",
+      "bytes": 56291,
+      "sha256": "ef5910d84e89f8b71a67b381c23d86bbf8f179df79968dc76db25482abfe1a52"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0048_p4b-cooked-meal-menu.png",
+      "bytes": 71706,
+      "sha256": "9d5bbd463ed400b69b8d4a4996f518c6409cfd1d566e2085d924d58c1e28bf44"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0049_p4b-consumed-meal-hud.png",
+      "bytes": 156168,
+      "sha256": "05ffa5f6f56c9d5c72b561783c0a1e896c6ed945a8cba2b769c6f702623f17af"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0050_p4b-warmth-still-freezes.png",
+      "bytes": 183213,
+      "sha256": "f61870c567e19a77941710a16db8a5a0ddac1310f9795dcb486f018475baf577"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0051_p4b-reloaded-effects.png",
+      "bytes": 33266,
+      "sha256": "7a2d1ed15b9a59f404835783d21832d618f06559c5c14a5a1da1d90e800354b9"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0052_p5-signal-without-energy.png",
+      "bytes": 93132,
+      "sha256": "3bf4e3395b08e14026e8419a6760a3e5c8f8cd1e961bbccbad65b235cd0ce42f"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0053_p5-charging.png",
+      "bytes": 85632,
+      "sha256": "bee1afc76a16c485c2c226fbe020c8b31a4adff079711ee611c7f55e7c5d1ac8"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0054_p5-full-battery.png",
+      "bytes": 77423,
+      "sha256": "86e12d43e6429dd07dd202c46b270d742cd69908a63916e37a994d81595ad924"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0055_p5-partly-used-battery.png",
+      "bytes": 185767,
+      "sha256": "f54a779b3909b42591fdf4d5bf748fbd80ed89e06ed99f77758fe16dc0e0f462"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0056_p5-reloaded-charge.png",
+      "bytes": 74776,
+      "sha256": "657f9f41b516e4d74108e448b1a7cd43d7d52b17794e901a9690919a3bf77448"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0057_p6-core-installed-model.png",
+      "bytes": 172849,
+      "sha256": "15fd224ee296b46a464a4279d80efaf2ee5d42ec7209e6a571422540ffe08868"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0058_p6-core-fan-model.png",
+      "bytes": 207085,
+      "sha256": "a9cac68b7460020c88469bad9da2949ca9916a109bf16134a6c57aa6b043b2d0"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0059_p6-core-riding.png",
+      "bytes": 219745,
+      "sha256": "4611367518086d4ecedb95c152e5bb6016988958f1c8bf053c4bfcc352cd6874"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0060_p6-core-reloaded.png",
+      "bytes": 197573,
+      "sha256": "41717c86abe81bc41d5232cd471c1b0bae093daf652cb6f7d6cb4e55ea23b33e"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0061_p6-core-recovered.png",
+      "bytes": 206027,
+      "sha256": "795a57a13a13739b08f783b3410daadcfe1f8f410fde809a3ab1ad82149870f1"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0062_p6-control-panel.png",
+      "bytes": 169859,
+      "sha256": "da05c8f86916895df105971ffb7ddbd2b52525d2063c77eadcc8b8055734209c"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0063_p6-fan-snap-preview.png",
+      "bytes": 192771,
+      "sha256": "c29fd80efcd18e46cc97ab20cd8b8b37ab5fec787e290fbd498a2254d4b1802a"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0064_p6-battery-preview.png",
+      "bytes": 192805,
+      "sha256": "03300eb6d393b7ec6c98c39c4b976025244cb9b0ea6ff7e853a6f58d43bf3e37"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0065_p6-native-rider-control.png",
+      "bytes": 205355,
+      "sha256": "84354c1c3b9ab9ed12f002bb861436fd67ee7df1306d9ebfe63187c9bfbb17b5"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0066_p6-native-recovered.png",
+      "bytes": 255373,
+      "sha256": "323316f610b1aa1a8e6f8189b0a7083392d27228386d186af301506bf5245678"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0067_p7-wing-preview.png",
+      "bytes": 184940,
+      "sha256": "4b6692951125506c7a020f272a4cce846b269338a1725a941f693b3489bdff76"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0068_p7-native-one-block-step.png",
+      "bytes": 30352,
+      "sha256": "ecf657ff96e8aa5f56f0c9d52ad33075883f9e46e409118b86af790dd2adf0b9"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0069_p7-wing-wheel-loaded-glide.png",
+      "bytes": 139176,
+      "sha256": "ad6b2ef04f4cf7d6b807ff3ff3baca5dd6d72ce4764208a6a76e624ef139e4e7"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0070_p7-spring-bottom-preview.png",
+      "bytes": 50696,
+      "sha256": "48c0f7caf552b7033b3ae41b4fe43d28bd0f9e32bafe68ffa408e650b6544989"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0071_p7-native-spring-launch.png",
+      "bytes": 205640,
+      "sha256": "4943aa5f614048d356bb33c0642f2b1f8c1b2bc04a62ab00522359a47b67f8de"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0072_p7-buoyancy-front-preview.png",
+      "bytes": 173153,
+      "sha256": "6cf69c0a350d830c97932264a95c1f54942959e0ec6339a5df373217c205aa8e"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0073_p7-rocket-rear-preview.png",
+      "bytes": 186263,
+      "sha256": "d025e2563e409c87878e7caf310ebd10b8352282435e5b0c37f0dd7a78f403ad"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0074_p7-rocket-spring-stabilizer-powered.png",
+      "bytes": 66919,
+      "sha256": "c0976aa9298478150c5c25ac874e66f0574d053d2204006662450ec4b35af7bf"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0075_p7-native-rocket-burning-off.png",
+      "bytes": 131859,
+      "sha256": "5bc2e92eca7d05fe9ce7d02ce885aa0b02fe848370d84a99cff1b6de71a8f39e"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0076_p7-water-float-loaded-parts.png",
+      "bytes": 287529,
+      "sha256": "7d692f3cfcdb1893599838d175e98c3739a2f39dfe348ce352defbbc9a3cb54b"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0077_p8-empty-fabricator.png",
+      "bytes": 39225,
+      "sha256": "cbff307c4328b2c19257779b4751ef9d958f20dea1ec44a98cbc9396843c7e05"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0078_p8-paid-job-menu.png",
+      "bytes": 85100,
+      "sha256": "0310dd4fe46a98c61768ca4cdb3e5973d5a4c95dc1f666e4ef3bccdf4e46154e"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0079_p8-carried-job-resumed.png",
+      "bytes": 82466,
+      "sha256": "5bf28996f23837934425b65e083a3d68ea253d5db081edee0d88c3afd9ddf3b5"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0080_p8-completed-output.png",
+      "bytes": 82315,
+      "sha256": "819bb019df8fe34f271b73a9feef1db56822da027cc4df9e80ee1090f7607938"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0081_p8-output-collected-once.png",
+      "bytes": 94582,
+      "sha256": "e0cb0ac4a73d163960bc6c3b6d38340d0b8f2e4028f44be2a6f51bd7ae970cc3"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0082_p8-english-menu.png",
+      "bytes": 92183,
+      "sha256": "9843bef0789ce0cf8a444b41a552bee020f1e2d16e86dcaf47ee23e8aa9f92d1"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0083_p9-native-fused-hand.png",
+      "bytes": 129463,
+      "sha256": "249f073e40a783b2cb5b73be1f4243a90aa1fe6659e0de5a7f31cf98004f0953"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0084_p9-native-fused-inventory.png",
+      "bytes": 67408,
+      "sha256": "ba78e0a79b20b050dffbf64f4763b4d5a7ffe4bb0a8cc43acebb9d12eb07046d"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0085_p9-native-fused-back.png",
+      "bytes": 200019,
+      "sha256": "8a5aaf473f417e58371d5898a7e20338b482baac40b554b18e975abb169aefa4"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0086_p9-native-fused-chest.png",
+      "bytes": 82260,
+      "sha256": "6b854672abda0464e06f3c01b425e8df99463bc11df2490f1d520deae38bd388"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0087_p9-native-split-material.png",
+      "bytes": 184449,
+      "sha256": "a83b969747b2c61d85573aabc86bf1e249185cb38d54b9fa5daf2f7514d1e926"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0088_p9-native-fused-arrow-flight.png",
+      "bytes": 150365,
+      "sha256": "0b98312def7935fe24d543b5cc4b2fa64d02df8180b5b6676d7f12251c4a6583"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0089_p9-native-infinity-arrow-impact.png",
+      "bytes": 159601,
+      "sha256": "65a7db63b05bc0615b7ccc38950078dd1f2e850954b30a8e331d0ef928bb288d"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0090_p91-native-fusion-back-food-air-focus.png",
+      "bytes": 131926,
+      "sha256": "cf5e2d4ffa6c14a1481abd9ef569265c18b8ec4ea65c368d326d48e9796c40b7"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0091_p91-native-ice-arrow-once.png",
+      "bytes": 96347,
+      "sha256": "ef5538723c603336079930b3ec07b93137a391394e40551d9446ec14213e9d5d"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0092_second-art-meals-fused-inventory.png",
+      "bytes": 59339,
+      "sha256": "545400269ed00003cd31ffe6f5727470b21a45b23d0844042f5a6794a3f3f445"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0093_second-art-three-effects-native-hud.png",
+      "bytes": 113181,
+      "sha256": "0cb88a7a986b3da144fca425dd81d8efc1947a0aef2b680ec6eb122cfa23e534"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0094_p10-native-thunder-glide-wind.png",
+      "bytes": 78818,
+      "sha256": "83f34d8a67de5fadba3676d0ec8bf4f2c97712cf94ea907049b6f2d8023648d1"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/full/0095_p10-native-roof-sheltered-glide.png",
+      "bytes": 81944,
+      "sha256": "c2a67375108e27cdd36e6da760275e8e4f199f5a71b4adf199c12711390e1417"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/wind/0000_p10-native-thunder-glide-wind.png",
+      "bytes": 209609,
+      "sha256": "c4d8aafecea35c9456e677452826255f76616f77be739d889a557fc2f042d970"
+    },
+    {
+      "path": "development-assets/verification/p10/screenshots/wind/0001_p10-native-roof-sheltered-glide.png",
+      "bytes": 204041,
+      "sha256": "75cb3617e9026ac623abfe668540f2bbaa4b94fe94f5dffc4a8c285d97717081"
+    },
+    {
+      "path": "development-assets/verification/p10/server-tests.xml",
+      "bytes": 11971,
+      "sha256": "dbdfb3927f790ecb32ed685c82acab32f3f88eaffd814c11241d30515e213e11"
+    },
+    {
+      "path": "development-assets/verification/p10/standalone-server.log",
+      "bytes": 7087,
+      "sha256": "a400e072eff94054995738566c435b61542e458267672d33ac9d4feeaba43967"
+    },
+    {
+      "path": "development-assets/verification/p10/wind-client.log",
+      "bytes": 55163,
+      "sha256": "6df9175f59469f9da76a387bd3708558469f5a5f2d53b774c89fed0027b2614f"
+    }
+  ]
+}

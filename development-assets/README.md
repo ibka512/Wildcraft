@@ -99,3 +99,8 @@ P7未完成停线检查点：dev.12-p7-checkpoint.jar、Wildcraft-P7-checkpoint-
 ## 第二批美术 dev.15 本机交付
 
 [正式 JAR](wildcraft-0.1.0-dev.15+mc26.3.jar)、[生产源码 JAR](wildcraft-0.1.0-dev.15-sources.jar)、[真实证据](verification/second-art-v2/README.md)、[校验](Wildcraft-Second-Art-SHA256SUMS.txt)与[清单](Wildcraft-Second-Art-manifest.json)。29 项当前采用任务、30 份原始版本，F05-10 使用 v02。75 服务端、18 类完整候选回归、最终两类专项、两个普通 TCP 客户端与无测试模组独立服务端通过；候选/最终包范围详见 [验证说明](../docs/SECOND-ART-VERIFICATION.md)。旧里程碑均保留，公开 GitHub 仍 dev.7。
+
+
+## P10 单人风与天气 / dev.16（2026-10-06）
+
+[正式包](wildcraft-0.1.0-dev.16+mc26.3.jar)、[源码](wildcraft-0.1.0-dev.16-sources.jar)、[真实证据](verification/p10/README.md)。阶段规格和执行范围见[P10-SPEC](../docs/P10-SPEC.md)/[P10-VERIFICATION](../docs/P10-VERIFICATION.md)。所有旧版本保留，GitHub上传没有在本轮执行。

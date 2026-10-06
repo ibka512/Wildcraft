@@ -101,6 +101,14 @@ tasks.named('check') {
     dependsOn verifyRules, verifyTemperatureRules
 }
 
+def verifyWindRules = tasks.register('verifyWindRules', JavaExec) {
+    dependsOn tasks.named('rulesTestClasses')
+    classpath = sourceSets.rulesTest.runtimeClasspath
+    mainClass = 'dev.wildcraft.test.WindRulesCheck'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }
+}
+tasks.named('check') { dependsOn verifyWindRules }
+
 tasks.withType(JavaCompile).configureEach {
     options.release = 25
     options.encoding = 'UTF-8'
@@ -603,4 +611,25 @@ def secondArtTestJar = tasks.register('secondArtTestJar', Jar) {
 tasks.register('runSecondArtClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
     outputs.upToDateWhen { false }; mods.from(secondArtTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
     runDir = layout.buildDirectory.dir('run/second-art-client-test')
+}
+
+
+// Isolate P10 native singleplayer wind verification.
+def windMetadataDirectory = layout.buildDirectory.dir('wind-test-metadata').get().asFile
+def windMetadata = tasks.register('windTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(windMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.WindClientTest']
+        def destination = new File(windMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def windTestJar = tasks.register('windTestJar', Jar) {
+    dependsOn windMetadata; archiveClassifier = 'wind-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(windMetadataDirectory)
+}
+tasks.register('runWindClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(windTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/wind-client-test')
 }

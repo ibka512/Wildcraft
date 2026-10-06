@@ -152,7 +152,7 @@ public final class Gliding {
         if (!player.level().isClientSide() || !player.isLocalInstanceAuthoritative() || !canPredict(player)) {
             return false;
         }
-        Vec3 movement = movement(player.getYRot(), input);
+        Vec3 movement = movement(player.getYRot(), input, dev.wildcraft.weather.WindSystem.local(player));
         player.setSprinting(false);
         player.resetFallDistance();
         player.setDeltaMovement(movement);
@@ -169,6 +169,10 @@ public final class Gliding {
         double side = Math.clamp(input.x, -1, 1) * 0.12;
         return new Vec3(-Math.sin(radians) * forward + Math.cos(radians) * side,
                 DESCENT, Math.cos(radians) * forward + Math.sin(radians) * side);
+    }
+
+    public static Vec3 movement(float yaw, Vec3 input, dev.wildcraft.network.WindView wind) {
+        return movement(yaw, input).add(wind.x(), -dev.wildcraft.weather.WindRules.descentPenalty(wind.precipitation()), wind.z());
     }
 
     /** Checked before native movement; never disables vanilla collision or flight checks. */

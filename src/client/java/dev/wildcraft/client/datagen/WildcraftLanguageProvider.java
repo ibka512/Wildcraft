@@ -21,6 +21,11 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add(WildcraftItems.TEST_CORE,
                 language.equals("zh_cn") ? "Wildcraft 测试核心" : "Wildcraft Test Core");
         boolean chinese = language.equals("zh_cn");
+        translations.add("hud.wildcraft.wind.sheltered",chinese?"避风处":"Sheltered");
+        translations.add("hud.wildcraft.wind.light",chinese?"微风":"Light wind");
+        translations.add("hud.wildcraft.wind.moderate",chinese?"有风":"Moderate wind");
+        translations.add("hud.wildcraft.wind.strong",chinese?"强风":"Strong wind");
+        translations.add("hud.wildcraft.wind.wet",chinese?" · 雨雪":" · Precipitation");
         try (var input=getClass().getResourceAsStream("/wildcraft-datagen-labels.json")) {
             if(input==null)throw new IllegalStateException("Missing adopted translations");
             var source=com.google.gson.JsonParser.parseReader(new java.io.InputStreamReader(input,java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject().getAsJsonObject(language);

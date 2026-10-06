@@ -187,8 +187,14 @@ public final class MachineEntity extends Entity {
         if(paid && poweredWheels>0)thrust=thrust.add(0,0,.05*poweredWheels*drive);
         float previousYaw=getYRot();setYRot(previousYaw+turn*(paid && stabilizers>0?2F:3F));
         double mass=mass();Vec3 velocity=getDeltaMovement().add(MachineNodes.rotate(thrust.scale(1/mass),getYRot())).add(0,-.04,0);
+        var wind = wings>0 && !onGround() && !isInWater() && !isInLava()
+                ? dev.wildcraft.weather.WindSystem.sample((ServerLevel)level(),blockPosition())
+                : new dev.wildcraft.network.WindView(level().dimension().identifier(),0,0,0,false);
+        double gain=dev.wildcraft.weather.WindRules.wingGain(wings,mass);
+        velocity=velocity.add(wind.x()*gain,0,wind.z()*gain);
         if(paid && stabilizers>0){var local=MachineNodes.rotate(velocity,-getYRot());velocity=MachineNodes.rotate(new Vec3(local.x*Math.pow(.78,stabilizers),local.y,local.z),getYRot());}
-        if(wings>0 && velocity.y<0 && velocity.horizontalDistanceSqr()>.12*.12){velocity=new Vec3(velocity.x,Math.max(velocity.y,-.12*mass/wings),velocity.z);for(int n=0;n<6;n++)if(kind(n)==3)active|=1<<n;}
+        if(wings>0 && velocity.y<0 && velocity.subtract(wind.x(),0,wind.z()).horizontalDistanceSqr()>.12*.12){velocity=new Vec3(velocity.x,Math.max(velocity.y,-.12*mass/wings-dev.wildcraft.weather.WindRules.descentPenalty(wind.precipitation())),velocity.z);for(int n=0;n<6;n++)if(kind(n)==3)active|=1<<n;}
+        double wetDrag=1-.01*wind.precipitation();velocity=velocity.multiply(wetDrag,1,wetDrag);
         double water=getFluidHeight(net.minecraft.tags.FluidTags.WATER);
         if(floats>0 && water>0 && mass<=1.75*floats){velocity=velocity.add(0,.07*floats/mass*Math.min(1,water/.4),0);velocity=new Vec3(velocity.x,Math.min(.15,velocity.y),velocity.z);for(int n=0;n<6;n++)if(kind(n)==8)active|=1<<n;}
         double horizontal=Math.sqrt(velocity.horizontalDistanceSqr());
