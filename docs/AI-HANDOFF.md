@@ -1,6 +1,6 @@
 # Wildcraft AI 开发交接说明
 
-更新：2026-10-06。当前本机开发版本 **0.1.0-dev.15 / Minecraft 26.3**，完成到 **P9正式Fuse**；P9.1整合也已完成，72服务端/17类客户端通过，见P9.1-SPEC/P9.1-VERIFICATION；下一步R2-PREPARATION。公开main与Release仍dev.7，本次 dev.8–dev.15 未上传。当前分支 feature/second-art 完成 29 项采用美术接入，优先读 [接入说明](SECOND-ART-INTEGRATION.md) 与 [实测记录](SECOND-ART-VERIFICATION.md)。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
+更新：2026-10-06。当前本机开发版本 **0.1.0-dev.15 / Minecraft 26.3**，完成到 **P9正式Fuse**；P9.1整合也已完成，72服务端/17类客户端通过，见P9.1-SPEC/P9.1-VERIFICATION；当前按用户2026-10-06决定暂缓多人，下一步dev.15单人体验检查→P10风与天气。公开main与Release仍dev.7，本次 dev.8–dev.15 未上传。当前分支 feature/second-art 完成 29 项采用美术接入，优先读 [接入说明](SECOND-ART-INTEGRATION.md) 与 [实测记录](SECOND-ART-VERIFICATION.md)。保留旧标签、包和证据；没有新增生产依赖或真实存档迁移。
 
 当前本机入口见 [LOCAL-DEVELOPMENT](LOCAL-DEVELOPMENT.md)，其他机器按 README 克隆并安装自己的 JDK 25，不需要本机磁盘映像。后续执行以 [NEXT-DEVELOPMENT-PLAN](NEXT-DEVELOPMENT-PLAN.md) 和 [ROADMAP](ROADMAP.md) 为准；旧规划 v2 的历史完成状态不可覆盖当前事实。
 
@@ -54,9 +54,9 @@
 | P9 | 本机dev.14完成，71服务端/16类客户端/双普通客户端及独立服务端；[合同](P9-SPEC.md) / [完整验收](P9-VERIFICATION.md) |
 | P9.1 | 同正式dev.14，72服务端/完整17类客户端组合回归通过；[验收](P9.1-VERIFICATION.md) |
 | 第二批美术 v2 | dev.15 接入 29 项采用资产，F05-10 v02 为当前；[记录](SECOND-ART-VERIFICATION.md) |
-| R2及之后 | 按R2-PREPARATION与路线继续，正式多人局部时间尚未开放 |
+| 后续单人阶段 | dev.15体验收尾→P10风与天气→单人生存平衡；R2/P10.1按用户决定暂缓 |
 
-当前没有多人林克时间；正式Fuse已完成本机dev.14，P9.1组合也完成，继续R2研究。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风或鞘翅下改用侧腰布局；五类真实物品仍保持原有尺度和库存归属。没有环形精力样式或雨天攀爬打滑。
+当前没有多人林克时间；正式Fuse已完成本机dev.14，P9.1组合也完成，R2研究暂缓，优先单人体验与P10风天气。当前背负按服务端真实归属立即切换，再执行 140–200ms 局部落定；攻击/使用不延迟。披风或鞘翅下改用侧腰布局；五类真实物品仍保持原有尺度和库存归属。没有环形精力样式或雨天攀爬打滑。
 
 ## 固定环境与构建入口
 
@@ -174,3 +174,7 @@ P9详细代码和数据边界见ARCHITECTURE的Fuse小节，操作和三JVM复�
 ## 第二批美术后续入口
 
 运行资源与原件分别在 src/main/resources、art/production-v2；导入工具 tools/import-second-art.py 需要 Pillow，普通构建无需美术编辑器。新增 ArtSnapshot 不保存库存或私有制造结果，既有数据格式不迁移。首次接手先看 SECOND-ART-VERIFICATION 的准确验证范围，再看 R2-CHECKPOINT；R2 候选依然未注册、未验证，不因美术整合而算已完成。
+
+## 当前用户优先级：先完成单人体验
+
+2026-10-06用户明确「目前不用考虑多人模式」。R2局部时间研究、P10.1正式多人林克时间与新增多人专项暂缓，不再列为下一阶段或P10的前置条件。先对dev.15做有限操作/视觉检查，再为P10风与天气编写规则与验收场景，随后完善单人生存循环。旧R2候选、研究文档和已有正常保存/同步边界保留；本次仅调整规划，不表示新功能已经实现。

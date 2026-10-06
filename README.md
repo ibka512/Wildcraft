@@ -4,6 +4,8 @@ Wildcraft 是基于 Minecraft 原版世界的探索、战斗与机械 Mod，采�
 
 本仓库供继续开发与 AI 接手使用，包含当前源码、可编辑美术、玩法规则、隔离研究、测试和历史验收资产。它是开发版，尚未完成完整生存平衡或长期兼容验收。
 
+当前开发优先级：**单人体验收尾 → 风与天气 → 单人生存平衡**。多人局部时间研究与正式多人林克时间暂缓（用户2026-10-06决定）。
+
 **接手入口：[AGENTS.md](AGENTS.md) → [AI 开发交接](docs/AI-HANDOFF.md) → [下一阶段执行计划](docs/NEXT-DEVELOPMENT-PLAN.md)。**
 
 [下载本次交接](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev7-2026-10-03) · [开发手册](docs/DEVELOPMENT.md) · [架构与保存边界](docs/ARCHITECTURE.md) · [路线图](docs/ROADMAP.md) · [全部历史资产](development-assets/README.md) · [构建状态](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)

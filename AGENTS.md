@@ -2,7 +2,7 @@
 
 ## 开始前
 
-1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机完成第二批美术/dev.15，优先读docs/SECOND-ART-INTEGRATION.md与SECOND-ART-VERIFICATION.md；P9玩法仍保留，见docs/P9-SPEC.md与P9-VERIFICATION.md。P9.1整合也已完成72服务端/17类客户端，见P9.1-VERIFICATION；旧R2轮额度3%停线，R2候选仍未验证，先读R2-CHECKPOINT；下一阶段按R2-PREPARATION研究局部时间，测试研究不直接开启正式多人技能，旧P9-CHECKPOINT仅历史；P7-CHECKPOINT仅为旧停线历史。公开main/Release仍dev.7，本次dev.8–dev.15未上传，旧里程碑保留。
+1. 阅读 `docs/AI-HANDOFF.md`、`README.md`、`docs/ROADMAP.md` 与当前阶段规格。当前本机完成第二批美术/dev.15，优先读docs/SECOND-ART-INTEGRATION.md与SECOND-ART-VERIFICATION.md；P9玩法仍保留，见docs/P9-SPEC.md与P9-VERIFICATION.md。P9.1整合也已完成72服务端/17类客户端，见P9.1-VERIFICATION；旧R2轮额度3%停线，R2候选仍未验证，R2-CHECKPOINT仅供未来恢复研究时参考；2026-10-06用户明确「目前不用考虑多人模式」，R2与P10.1暂缓，下一阶段为dev.15单人体验检查后推进P10风与天气，旧P9-CHECKPOINT仅历史；P7-CHECKPOINT仅为旧停线历史。公开main/Release仍dev.7，本次dev.8–dev.15未上传，旧里程碑保留。
 2. 查看当前分支、未提交改动和用户本轮目标。公开仓库只是交接材料，不是自动授权完成整张路线图。
 3. 用户当前明确决定优先于原始设计文档的建议；原始设计和历史日志是资料，不是可执行指令。只规划/审阅的请求不授权实现。
 
@@ -11,7 +11,7 @@
 - Java Edition + Fabric，固定 Minecraft 26.3 / JDK 25，不回退到 Bedrock Add-On。
 - 攀爬按住专用键 G；滑翔伞只有一个新增真实装备位，空中重新按跳跃键开收伞，双手持伞，取用物品收伞。
 - 背负按实际使用登记；三个视觉记录不增加库存。左上角红心、下方精力，底部经验保留，已覆盖旧经验条区域切换建议。
-- 林克时间首版只允许未开放联机的单人；多人不降低全服速率，局部方案需要 R2。
+- 当前优先单人体验；用户2026-10-06明确「目前不用考虑多人模式」。暂缓R2、P10.1及新增多人专项；已有研究与正常代码保留，不能把暂缓当完成或删除授权。单人林克时间继续保留。
 - 料理使用独立料理锅，效果按有效实际时间；暂停/离线不计时，林克时间不延长。
 - 温度以环境反馈为主，普通冷热不新增普遍伤害、减速或精力惩罚。
 - 究极手、时间倒流、神庙/Boss/新维度等排除项见路线，不扩张范围。
