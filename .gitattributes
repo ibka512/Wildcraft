@@ -10,3 +10,5 @@
 
 # Historical evidence and exported packages must retain their original bytes.
 /development-assets/** -text -whitespace
+/art/production-v2/** -text -whitespace
+/art/production-docs/*.csv -text -whitespace
