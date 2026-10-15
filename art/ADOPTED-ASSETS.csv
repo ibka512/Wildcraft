@@ -30,15 +30,17 @@ F04-02,电量图标与读数,second-v2,v01,True,True,0.1.0-dev.15,art/production
 F04-03,充电器,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F04-03/v01,art/production-v2/F04-03/v01/manifest.json,充电器世界模型，原尺度电池与五态面板,
 F04-04,充电器界面,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F04-04/v01,art/production-v2/F04-04/v01/manifest.json,176×166 充电界面，五态文字与完整悬停说明,
 F05-01,机械主体与节点,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-01/v01,art/production-v2/F05-01/v01/manifest.json,机械主体、六节点和控制板模型,
-F05-02,机械翼,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-02/v01,art/production-v2/F05-02/v01/manifest.json,被动机械翼，128×64 布木图集,已接入；底部安装可能穿地，见P10.2机械修正合同
-F05-03,风扇,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-03/v01,art/production-v2/F05-03/v01/manifest.json,风扇护框、轮毂和真实工作转动,
+F05-02,机械翼,second-v2,v01 + bottom-v02,True,True,0.1.0-dev.15,art/production-v2/F05-02/v01,art/production-v2/F05-02/v01/manifest.json,被动机械翼，128×64 布木图集,其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。
+F05-03,风扇,second-v2,v01 + bottom-v02,True,True,0.1.0-dev.15,art/production-v2/F05-03/v01,art/production-v2/F05-03/v01/manifest.json,风扇护框、轮毂和真实工作转动,其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。
 F05-04,火箭及燃尽空壳,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-04/v01,art/production-v2/F05-04/v01/manifest.json,有限火箭、燃尽空壳与既有尾焰,
 F05-05,电池安装适配,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-05/v01,art/production-v2/F05-05/v01/manifest.json,同一电池的六向安装，采用 v02 复核后的偏移,
-F05-06,弹簧,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-06/v01,art/production-v2/F05-06/v01/manifest.json,弹簧压缩/伸展，由现有冷却状态驱动,dev.17修复弹簧与原版指南针配方冲突；底部穿地另行修订
+F05-06,弹簧,second-v2,v01 + bottom-v02,True,True,0.1.0-dev.15,art/production-v2/F05-06/v01,art/production-v2/F05-06/v01/manifest.json,弹簧压缩/伸展，由现有冷却状态驱动,其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。
 F05-07,车轮,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-07/v01,art/production-v2/F05-07/v01/manifest.json,车轮网格和既有转速驱动,dev.17侧装轮显示下移0.075格；安装命中/碰撞/原件不变
 F05-08,稳定器,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-08/v01,art/production-v2/F05-08/v01/manifest.json,稳定器壳体、真实 active 工作灯,
-F05-09,浮力装置,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F05-09/v01,art/production-v2/F05-09/v01/manifest.json,浮力装置，复用布木图集和现有载重规则,已接入；底部安装可能穿地，见P10.2机械修正合同
+F05-09,浮力装置,second-v2,v01 + bottom-v02,True,True,0.1.0-dev.15,art/production-v2/F05-09/v01,art/production-v2/F05-09/v01/manifest.json,浮力装置，复用布木图集和现有载重规则,其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。
 F05-10,统一吸附预览与状态,second-v2,v02,True,True,0.1.0-dev.15,art/production-v2/F05-10/v02,art/production-v2/F05-10/v02/manifest.json,统一透明吸附预览、节点与可用/受阻/工作文字,v01保留历史；v02当前；dev.17调整侧轮显示，底部部件仍待修订
 F06-01,古代装置制造机,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F06-01/v01,art/production-v2/F06-01/v01/manifest.json,制造机原生方块模型与空闲/工作/完成面板,
 F06-02,制造机界面,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/F06-02/v01,art/production-v2/F06-02/v01/manifest.json,176×192 制造界面，真实 39 槽与原按钮协议,
 S01,12段原创短音,second-v2,v01,True,True,0.1.0-dev.15,art/production-v2/S01/v01,art/production-v2/S01/v01/manifest.json,12 段原创短音，服务端确认事件后播放,
+F07-01,风向与强度HUD,wind-v1,v01,True,True,0.1.0-dev.28,art/production-v2/F07/v01,art/production-v2/F07/v01/docs/DELIVERY-MANIFEST.json,真实八方向/三强度/遮蔽，完整文字/紧凑图标/省略布局,美术原件与制作时状态不重写；不把布局模拟当实机验收
+F07-02,天气湿润提示,wind-v1,v01,True,True,0.1.0-dev.28,art/production-v2/F07/v01,art/production-v2/F07/v01/docs/DELIVERY-MANIFEST.json,真实有效降水水滴与文字；伞/翼和原版雨雪继续复用，无新粒子,美术原件与制作时状态不重写；不把布局模拟当实机验收

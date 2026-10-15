@@ -1,0 +1,28 @@
+{
+  "allPassed": true,
+  "reopenedActualBlend": true,
+  "checkedSpringMeshes": 44,
+  "checkedCoilShapeKeys": 24,
+  "packedSharedAtlas": true,
+  "states": [
+    {
+      "state": "stowed-ground",
+      "worldMinY": 0.010000001639127731,
+      "maxVertexError": 1.3113021835042815e-08,
+      "checkedVertices": 352
+    },
+    {
+      "state": "extended-clearance",
+      "worldMinY": 0.010000009089708328,
+      "maxVertexError": 3.099441525655777e-08,
+      "checkedVertices": 352
+    },
+    {
+      "state": "capped-ground",
+      "worldMinY": 0.0,
+      "maxVertexError": 1.3113021890553966e-08,
+      "checkedVertices": 352
+    }
+  ],
+  "sourceControlsManualArtOnly": true
+}

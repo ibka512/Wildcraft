@@ -17,7 +17,7 @@ public abstract class ClimbingMovementMixin {
     @Inject(method = "handlePlayerPositionChange", at = @At("HEAD"), cancellable = true)
     private void wildcraft$checkClimbMovement(double x, double y, double z, float yaw, float pitch,
                                              boolean onGround, boolean horizontalCollision, CallbackInfo info) {
-        if (!Climbing.acceptMovement(player, x, y, z) || !Gliding.acceptMovement(player, x, y, z)) {
+        if (!Climbing.acceptMovement(player, x, y, z) || !Gliding.acceptMovement(player, x, y, z) || !dev.wildcraft.combat.MeleeActions.acceptMovement(player,x,y,z)) {
             info.cancel();
         }
     }

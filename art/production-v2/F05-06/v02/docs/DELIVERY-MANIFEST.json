@@ -1,0 +1,297 @@
+{
+  "asset": "F05-06",
+  "version": "v02-structure-proposal",
+  "status": "adopted-structure-art-not-game-integrated",
+  "adopted": true,
+  "gameIntegrated": false,
+  "productionReady": false,
+  "previewURL": "http://127.0.0.1:8887/preview.html",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1446,
+      "sha256": "cc3537d9e5d74a32b6f7ac0075760077c390fbaddadb2e6f0c969a8f651d2965"
+    },
+    {
+      "path": "docs/APPROVAL.json",
+      "bytes": 679,
+      "sha256": "5f17e5c8df3669a7dcf302303c8833a03826246f5b12fee72036425b6b444dff"
+    },
+    {
+      "path": "docs/BASELINE.json",
+      "bytes": 9660,
+      "sha256": "c3778029f2cb74a0952fede4ff8171d1524fc8487a6de614377a67f28794f8c0"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "bytes": 1956,
+      "sha256": "8a81ab51e7b8f4ae1f949adcdc623ebd3130c1c5502be4d2bc3a67904f8e70a2"
+    },
+    {
+      "path": "docs/STRUCTURE-PROPOSAL.md",
+      "bytes": 6426,
+      "sha256": "5b010824d31528906d82218052167ad14f35d262e9f99006fad8ee0f2dd2e27d"
+    },
+    {
+      "path": "exports/chassis-spring-pocket-proposal.json",
+      "bytes": 226053,
+      "sha256": "f6c7044fcfc05507b02b598fdda4bc16bf97c9fa3a70f90076ffecd3f52db21d"
+    },
+    {
+      "path": "exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "exports/spring-bottom-proposal.json",
+      "bytes": 850959,
+      "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b"
+    },
+    {
+      "path": "preview.html",
+      "bytes": 7070,
+      "sha256": "88c9722009b3104bdedad0fc4d2e472dbeeb9d28d03e95f763177039cfbac811"
+    },
+    {
+      "path": "references/ADOPTED-ASSETS.json",
+      "bytes": 54860,
+      "sha256": "9a8879d36b498fff4d03dde44360b26bd20353c8320fe93c18c75e91f49f9513"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 19532,
+      "sha256": "b1b3fe63142beed15af3dcf9331d1f58731813441b34b0a5792748766ca64611"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 5642,
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "path": "references/SpringData.java",
+      "bytes": 1171,
+      "sha256": "f12df3690d77bd11a7ac51aab900c161dc4f968d4d44fb70a3839e5fa04489bb"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "references/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "references/spring-geometry.json",
+      "bytes": 202631,
+      "sha256": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b"
+    },
+    {
+      "path": "references/uv-regions.json",
+      "bytes": 2574,
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "review/adoption-verification.json",
+      "bytes": 948,
+      "sha256": "53c55b996b115d0316188fc3b90ce84f747644ac419507748d217da3fa3acdc0"
+    },
+    {
+      "path": "review/blender-build.log",
+      "bytes": 1178,
+      "sha256": "985e26e8fcb4c2521cb50b4e8212895237aa867c9508bdaa9dad1116d67160d0"
+    },
+    {
+      "path": "review/blender-extended-clearance.png",
+      "bytes": 648855,
+      "sha256": "4c354589ee48146df9e76a5bd9d6a7fd9e798fde1a44887f75aac3e9fcf28f42"
+    },
+    {
+      "path": "review/blender-first-attempt.log",
+      "bytes": 1466,
+      "sha256": "baaaa910cca96aecf5b48e08859d1efbbf5c43d305754b1c8e91464bb02af608"
+    },
+    {
+      "path": "review/blender-reopen.log",
+      "bytes": 822,
+      "sha256": "037ac4cf390f4b997e914b20978cbd4c68a90d527a3e98bd8247a558198e654e"
+    },
+    {
+      "path": "review/blender-stowed-ground.png",
+      "bytes": 645787,
+      "sha256": "d72daf3ebffdc09fae7c4f383eecb16efb25ab39dadfe808a849a93da9617112"
+    },
+    {
+      "path": "review/blender-verification.json",
+      "bytes": 676,
+      "sha256": "33fc11cbbfe6fd2b4cc4729a92a8b45231825c70ac3628609165666ab2e0415b"
+    },
+    {
+      "path": "review/browser-cap-model.png",
+      "bytes": 46965,
+      "sha256": "d3b29d772d35131441157abef473f1a6f992711e156958ce232675c42d1dabad"
+    },
+    {
+      "path": "review/browser-cap-section.png",
+      "bytes": 45898,
+      "sha256": "52cff642793335fe8fbf5c036ec734ba0b9ebf66b8e1a4c906c8bf73cfda7540"
+    },
+    {
+      "path": "review/browser-complete-body.png",
+      "bytes": 47073,
+      "sha256": "6e4014572842f2c7331bb4f18f96e72a56db0589639a7a43541666e71fd14b5c"
+    },
+    {
+      "path": "review/browser-old-model.png",
+      "bytes": 43676,
+      "sha256": "d29f97016b293e1ffdc6f2587c3c70fb83f0cf58a12628033f5fba3e0a54dfb1"
+    },
+    {
+      "path": "review/browser-old-section.png",
+      "bytes": 43504,
+      "sha256": "c95d3325364df164cc0b0d98710f82c87c87c67a89a27e6ea6f9ac856a848875"
+    },
+    {
+      "path": "review/browser-side-model.png",
+      "bytes": 48516,
+      "sha256": "e9d8602ff57176faaf509854d2e2e3e59b3b799923ec336bcf867bad38c518ba"
+    },
+    {
+      "path": "review/browser-side-section.png",
+      "bytes": 41892,
+      "sha256": "904089eb325fa2318d453a187202ce5a35548c3bb5331f013cac6c312a223629"
+    },
+    {
+      "path": "review/browser-stow-model.png",
+      "bytes": 46645,
+      "sha256": "6ed8420491f348c6ef3cf979130783ba596b5c2cf8eb06ad1cfb2c32eb9a2ac7"
+    },
+    {
+      "path": "review/browser-stow-section.png",
+      "bytes": 46198,
+      "sha256": "e4fa42a287f0a29bb27fbd6b162498cff017a75d02162b5e7a89aaea9c476c85"
+    },
+    {
+      "path": "review/browser-stowed-model.png",
+      "bytes": 36041,
+      "sha256": "34b6b95f9b82ac8e3b02bf410645aaf1f01d0e9df9ecbef2c017f5ff3b753679"
+    },
+    {
+      "path": "review/browser-stowed-section.png",
+      "bytes": 45683,
+      "sha256": "66f5e752df8d94a10bfbea227f44417ef21862d2d5cff890c44eff781cdd4893"
+    },
+    {
+      "path": "review/browser-top-model.png",
+      "bytes": 48977,
+      "sha256": "b87d54c610a30cf7af11a6d3815cb25a8301db90455c6c7065bede4a2e474916"
+    },
+    {
+      "path": "review/browser-top-section.png",
+      "bytes": 41113,
+      "sha256": "8b55f8a34e20ba2d357177741ca3809a34403f3ce57eb237c10e5e3fe59fbf8d"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 7195,
+      "sha256": "a004ae172ff2316cbeba4d4de4ccabe9135c54fa4eccaabdb3e5c8c6679816eb"
+    },
+    {
+      "path": "review/browser-work-model.png",
+      "bytes": 48640,
+      "sha256": "ef1701cd33f519deb1ede4cf80dc51265523d119d1738a9bb3c5fe9bf01d8214"
+    },
+    {
+      "path": "review/browser-work-section.png",
+      "bytes": 45102,
+      "sha256": "ecd522d87b0ba6ce17bff11d9f72471f2dba75a557af4d03c9347ec28f1faaa1"
+    },
+    {
+      "path": "review/geometry-verification.json",
+      "bytes": 928,
+      "sha256": "781fc475a43db9d93b5bc78439f3c9cca04bf9b75a201f7928ab021aa2d3465d"
+    },
+    {
+      "path": "review/visual-review.json",
+      "bytes": 954,
+      "sha256": "c7348f42eb295c9026116675728ac95eaa5d45e0ac94705b9c3fa4e64d772fec"
+    },
+    {
+      "path": "source/app.js",
+      "bytes": 2808,
+      "sha256": "f6c1d0a49873aab682b74bc4f26ca3341e47d4bba5df3b3f40c2d10ab10fc3a1"
+    },
+    {
+      "path": "source/build-proposal.py",
+      "bytes": 6092,
+      "sha256": "642fba847ad7b6ff50c4c25e4072ebc9715d6db3d61cf984680b9b91e2f5e253"
+    },
+    {
+      "path": "source/chassis-spring-pocket-proposal.bbmodel",
+      "bytes": 267908,
+      "sha256": "8bf00806b228bcea0042d8cb2421c567affdc915e85ed22458a202b829ce15e5"
+    },
+    {
+      "path": "source/check-delivery.py",
+      "bytes": 3531,
+      "sha256": "e9a405709e14118b5b1d063216d26d7a4617c5074dd0c9b79255f3c8e4a34ecc"
+    },
+    {
+      "path": "source/create-blender.py",
+      "bytes": 5050,
+      "sha256": "33eb3dfbdabeb97f5e10a29cf6b35d93669e1378a11b032aa4f5b64c3a048a36"
+    },
+    {
+      "path": "source/export-pocket.py",
+      "bytes": 1478,
+      "sha256": "9584ac84aa0883a3187cb7c716b415482a469bec260dd5f6af1b84fcb1aa0199"
+    },
+    {
+      "path": "source/proposal-preview.js",
+      "bytes": 8103,
+      "sha256": "ecc5cd74352c4f8ab554feaa047ac9a748e75c780c1fc627745f1a177ceaa272"
+    },
+    {
+      "path": "source/spring-bottom-extended.bbmodel",
+      "bytes": 174781,
+      "sha256": "26f2b8e3a527387db98638dbf88937e15766f6488d3c08590a177fa1dfdda363"
+    },
+    {
+      "path": "source/spring-bottom-stowed.bbmodel",
+      "bytes": 174779,
+      "sha256": "c466ea1879362460153993969965c7d0aeab2e11a42fa9077efeabffcc2ca941"
+    },
+    {
+      "path": "source/spring-bottom-structure-v02.blend",
+      "bytes": 157385,
+      "sha256": "39f739ff059e131938a20300c98f78545fdee0e08efd96c569b23e83b84cfdf1"
+    },
+    {
+      "path": "source/structure-geometry.json",
+      "bytes": 850959,
+      "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 1754,
+      "sha256": "b190cbb4be2399bac029c0aeb4bcd7bdb0b03f93af2cd9899723ce0f0c37729c"
+    },
+    {
+      "path": "source/verify-geometry.mjs",
+      "bytes": 3548,
+      "sha256": "2b24698fe30c282d881fe568c35ddeb0250fd32a331421020f6e702076e97088"
+    }
+  ],
+  "checkedAt": "2026-10-10T23:52:29.548695+00:00"
+}

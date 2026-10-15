@@ -1,0 +1,13 @@
+# C6AN 实际占手与装备回退边界
+
+2026-10-15准备。前置为C6AM完整47实际通过并正式保存；本文件不认定其完成，不采用新的美术源或新增依赖。
+
+下一优先补足当前真实LEFT/RIGHT主副手用弓的占另一手边界。AirBowRig已有明确other.isEmpty门槛；动画回退必须保留原生用弓/库存/弹药/耐久/林克时间规则，不因装不上源而禁用玩法。先检查真实副手盾/火把与主手弓、真实主手火把/副手弓四个使用归属，两皮肤与左右主手；只在原版实际接受的use事件测试，不强造使用手或动画Frame。
+
+每个合法场景先自然jump、真实按use，确认源未越权绘制双空手动画，原皮肤和两个真实物品仍由原生层绘制；记录真实使用臂/手/物品，停止use后原一次箭/弹药/耐久及原Focus恢复。若原版拒绝use，记录拒绝和零消耗，不能设usingItem绕过。由server同步更换另一手时验证即时交回原路，换物导致原生cancel则验证不补射而非强要求继续动画。
+
+盔甲四槽与披风/鞘翅属于当前复杂旧路径，先验证已有拒绝合同与真实渲染，不能把回退通过冒称盔甲使用源动画已完成。接入复杂源前必须有实际原生盔甲模型/蒙皮与装备GPU证据；默认源仅用于默认状态。头、根位移、源段长和真正物品尺寸保持。
+
+不在C6AM完整测试期间改活动代码/JAR。测试草稿和数值记录与正式版本分开。实际失败才最小修复相关生产代码并回归旧LEFT/RIGHT地面、空中与Focus；无变化不重复全部47。所有含私有动画资源包仅本机。人工体验、正式第一人称/其他未采用源和C6整体仍未完成。
+
+准备进度：外层2026-10-15-C6AN/draft的最初四个真实Java（排除AppleDouble）独立5秒编译通过；随后补实际原生getSkin/model选择与slim accessor，共六Java最新2秒编译和私有one-class probe JAR CRC/metadata通过，六既有任务UP-TO-DATE。只替换render-state皮肤不能证明原生slim几何，未来probe明确要求实际native PlayerModel slim与原皮肤一致；collector记录真实native PlayerModel/ItemQuads/ShieldModel、无渲染替换。init首次class namespace在Gradle配置1秒失败，改用既有Loom任务classloader加载任务类后2秒通过。没有运行native客户端或GPU/玩法验收；mixins只进私有probe，不改变活动C6AM JAR或生产Mod。等待实际full47 clean正式62后再独立原生32矩阵；后续真实换另一手/盔甲/披风和source恢复仍需按实际合法use安排。

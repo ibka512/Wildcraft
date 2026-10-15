@@ -50,11 +50,15 @@ public final class BackEquipmentLayer extends RenderLayer<AvatarRenderState, Pla
             ItemStack stack = view.item(c);
             profiles[c] = c == 1 ? new Profile(0,6.8F,8.2F,0,1/.55F,180,false)
                     : c == 2 ? (stack.is(Items.CROSSBOW) ? new Profile(6.8F,0,5.6F,35,.9F,180,false) : new Profile(6.8F,-1,5.6F,-25,.9F,180,false))
+                    : (stack.is(Items.TRIDENT)||dev.wildcraft.combat.MeleeWeapon.nativeSpear(stack)) ? new Profile(-6,0,4.6F,25,.7F,180,false)
+                    : stack.is(Items.MACE) ? new Profile(-7,4,4.8F,-70,.78F,180,false)
                     : stack.is(ItemTags.AXES) ? new Profile(-6.5F,5,4.2F,65,.85F,180,false) : new Profile(-6.4F,7,4.2F,-90,.85F,180,false);
             if(waist){
                 boolean crouch=player.isCrouching();
                 profiles[c]=c==1?new Profile(-12.5F,11.5F-(crouch?4.1F:0),-5.5F,0,1/.55F,-90,true)
                     :c==2?(stack.is(Items.CROSSBOW)?new Profile(10.8F,10.8F-(crouch?.3F:0),-6.5F,0,.9F,90,true):new Profile(10.8F,9.5F,-1.9F,-45,.9F,90,true))
+                    :(stack.is(Items.TRIDENT)||dev.wildcraft.combat.MeleeWeapon.nativeSpear(stack))?new Profile(10,9,-5.8F,-200,.65F,-90,true)
+                    :stack.is(Items.MACE)?new Profile(10,12,-5.8F,-220,.78F,-90,true)
                     :stack.is(ItemTags.AXES)?new Profile(9.2F,12.2F,-5.2F,-225,.85F,-90,true):new Profile(9.2F,13.2F-(crouch?1.1F:0),-5.5F,-225,.85F,-90,true);
             }
             items[c] = new ItemStackRenderState();
@@ -69,7 +73,9 @@ public final class BackEquipmentLayer extends RenderLayer<AvatarRenderState, Pla
         for (int c = 0; c < 3; c++) {
             if (items[c].isEmpty()) continue;
             poses.pushPose();
-            getParentModel().body.translateAndRotate(poses);
+            var rig=state.getData(dev.wildcraft.client.animation.rig.CombatRigLayer.FRAME);
+            if(rig!=null)poses.mulPose(dev.wildcraft.client.animation.rig.CombatRigLayer.body(rig));
+            else getParentModel().body.translateAndRotate(poses);
             Profile profile = state.getData(PROFILES)[c];
             poses.translate(profile.x/16,profile.y/16,profile.z/16);
             BackTransitions.back(poses,state,c,profile.waist);

@@ -1,0 +1,583 @@
+{
+  "updatedAtLocal": "2026-10-14",
+  "state": "formal dev62 scoped native RIGHT ground bow; C6 whole remains incomplete",
+  "formalVersion": "0.1.0-dev.62",
+  "formalSourceCommit": "01707b8468f84ce511658b575e37c8957dda5c34",
+  "formalLocalManifest": "development-assets/Wildcraft-dev62-local-manifest.json",
+  "meaning": "An exported source appears only under its qualified native runtime slice; NOT proof every art package clip or combination is fully integrated. Original source APPROVAL/readme gameIntegrated flags are historical and are not rewritten.",
+  "allPlayerSourceAndDataJarsLocalOnly": true,
+  "sourceClipsFormal": 337,
+  "selectedClipsFormal": 335,
+  "runtimeScopesFromVerifiedManifest": {
+    "walkScope": "locked sword/empty or actual shield carry/cardinal/flat support/no armor-cape-crouch/default scale; diagonal/moving defense/air/complex support retains prior path",
+    "distancePerCycle": {
+      "forward": 0.6,
+      "backward": 0.4,
+      "left": 0.32,
+      "right": 0.32
+    },
+    "heavyScope": "grounded stationary sword charge/strong and axe light/charge/strong; empty or actual shield carry, default scale, no armor/cape/crouch; native fallback retains complex states",
+    "heavyNativeThresholdTicks": {
+      "sword": 12,
+      "axe": 20
+    },
+    "guardScope": "actual successful native eight-world-tick event; active shield arm only over qualified current grounded static sword/real offhand guard; default/no armor-cape-crouch; moving/complex/main-shield retains existing path",
+    "hopScope": "actual six-world-tick HOP left/right/back, sword/default/no armor-cape-crouch, empty or actual carried offhand shield; actual hop releases defense and resumes by old control; no source root displacement/forced contacts/guard permissions",
+    "dodgeFeedbackScope": "actual successful serial, .24 effective real seconds; manual 24 current-native landing continuations/item-pose equality/GPU, disabled 12 native misses, GUI/fresh event/late reward/attack/native use/slot/damage exits plus previous auto24/10FPS; default unarmored/capeless sword with empty or shield carry. Complex and formal first-person source still pending.",
+    "movingGuardScope": "actual locked offhand shield use, cardinal flat slow native travel/distance phase, no armor/cape/default stand, original block/wear/Fuse/stagger; moving successful eight-tick active-arm delta leaves body/root/legs/head/opposite arm unchanged. Diagonal/other weapons/armor/complex terrain/first-person retain previous paths.",
+    "bowIdleScope": "actual stationary grounded mainhand BOW/empty or native shield carry, default unarmored/capeless stand; adopted v04/22 skin/native bow wood-grip and sprite axes/GPU. Real use/shot/ammo/wear stays native, no bow-Fusion host; move/hurt/GUI/armor/actual use and formal first-person remain previous routes.",
+    "groundBowScope": "actual LEFT used arm: mainLEFT or empty main/offbow/mainRIGHT; default grounded stationary unarmored/capeless, other hand empty. Native20tick draw/hold, original bow display-scale/glint/UV/three sprite stages; fixed source segment lengths right-arm fit to actual nock; body/legs/bow arm/source root and native head/camera retained. Actual release/current-stack/native replacement settlement preserved; unsupported states/long release-cancel/formal first-person remain previous routes.",
+    "groundBowInverseCurveError": {
+      "standard": 0.0035084276,
+      "slim": 0.003509181
+    },
+    "airBowScope": "actual LEFT used arm mainLEFT or empty main/offbow-mainRIGHT, default unarmored/capeless airborne current native use. Natural jump/native Focus5TPS/manual H/disabled20TPS/10FPS/native20tick progress and original three sprites/nock/GPU; source roots/upper/bow arm and native head retained, legs/waist use adopted airborne source. Native use ownership, backwards prediction reconciliation and native hurtTime retain current rendering; native shot/ammo/wear/time restoration untouched. Unsupported states, all advanced lifecycle/formal first-person/long release-cancel remain previous routes.",
+    "airBowInverseCurveError": {
+      "standard": 0.0035084276,
+      "slim": 0.003509181
+    },
+    "focusLegLayer": {
+      "sourceClipsUnchanged": 171,
+      "scope": "current qualified actual left used-arm AirBowRig native Focus only; ten leg bones, current pelvis axis 3/2deg; .16 entry/.20 exit from current amount, pause freeze, unsupported/actual use loss immediate handoff. Root/pelvis/upper body/head/hand/native charge-time-world-cost-shot untouched. Actual full/partial external native lease loss, presentation-off, pause and early native release/GPU; advanced complex/formal first-person still pending.",
+      "mask": [
+        "right_thigh",
+        "right_shin",
+        "right_foot",
+        "right_knee_deform",
+        "right_ankle_deform",
+        "left_thigh",
+        "left_shin",
+        "left_foot",
+        "left_knee_deform",
+        "left_ankle_deform"
+      ],
+      "referenceError": 1.0430320213083988e-06,
+      "sourceQualificationOnlyIsNotGpuProof": true
+    },
+    "airMeleeScope": "actual ordinary AIR_SWING sword/axe, native5/9worldticks, default unarmored/capeless wide/slim left/right empty or real shield carry; original one hit/wear/Fuse/free cost and actual jump/landing unchanged. Native CANCEL/pause, hurt/GUI/armor/occupied/slot and charged/drop fallback tested; advanced/long/formal first-person pending.",
+    "swordTransitionScope": "actual same-reference main sword back draw/stow, native instant hand/back owner and original .34/.38 effective-real-second Settle; default flat stationary unarmored/capeless, wide/slim left/right empty or actual shield carry. Real skin/native item and back GPU, full source and native head, first-last12% current native pose; original pause/10FPS/5TPS/actual attack-use-hurt/menu/new item/spare/elytra waist fallback. Bounded secondary gesture only, not exact hilt or all weapons/waist/formal first-person.",
+    "hurtScope": "actual unblocked native hurt6/hurtYaw, current native pose and real sword/empty-carry-active offshield guard, default unarmored/capeless. Stripped pelvis/body rigid upper delta, protected native root/pelvis/legs/head aim and arm lengths; actual damage48/normal knockback/move-air-swing, blocked no hurt, 10FPS/5TPS/look/pause/menu/newitem/armor and native expiry. No new hit-regions/attack/cost/wear/Fuse, source fixed legs/pelvis buffer/head variants excluded; complex/other weapons/formal first-person/advanced lifecycle pending.",
+    "bowTransitionScope": "actual main BOW same-reference back draw/stow, instant native hand/back owner and original .32 Settle, default stationary flat unarmored/capeless wide/slim left/right empty or real carried shield. Original native wood grip/long axis/UV-display-glint/native back layout and actual skin/items GPU; real pause/10FPS/5TPS/menu/newitem/use-and-second native shot/hurt/spare/elytra waist fallback. Bounded auxiliary gesture only, no source alternative mounts/exact hilt handoff/waist/other ranged/formal first-person.",
+    "shieldTransitionScope": "Actual main SHIELD same-reference owner1 back draw/stow only, original .32 Settle/current instant hand-back owner, default flat stationary unarmored/capeless standard/slim left/right empty or real offSword. Authored .0625 wrist grips, true native shield handle/plate and other sword hilt/axis/skin-back GPU, block wear7/Fuse31, pause/10FPS/5TPS and core exits. Native offhand Bow-Q WHACK cancels bow with zero arrow and consumed source; F-slot true intermediate main ownership preserved. Offhand source, waist, complex, advanced and formal first person remain previous paths.",
+    "axeTransitionScope": "Actual same-reference main native AXE back draw/stow owner1/3, original .34/.38 Settle and instant new ownership, default flat stationary unarmored/capeless standard/slim left-right empty or actual carried shield. Explicit .0625 auxiliary palms and true axe_reference/native hilt + native shield handle/axis/skin-back GPU. Genuine once hit wear2/Fuse31 and interrupted second hit wear4/Fuse30; pause/10FPS/5TPS/look/core use-damage-menu-newitem/spare/elytra waist fallback. No new item hook/physics/inventory/attack/cost. Waist/complex/formal first person unfinished.",
+    "tridentTransitionScope": "Actual main TRIDENT same-reference back .34/.38 Settle, current sampled wrist .0625 auxiliary palm/main reference alignment (raw source failures preserved), default flat stationary unarmored/capeless standard/slim left-right empty or real shield. True native raw pole1.10/tip0 and SpecialModel actual submit grip-axis/skin/back GPU, original display-local/default flip/UV-size-glint-Fuse. One light hit wear1/Fuse31 and second wear2/Fuse30, actual MAIN use/once native thrown trident removed inventory and no outgoing proxy, pause/10FPS/5TPS/core exits. Empty secondary is only late bounded source support path, not continuous two-hand contact; waist/complex/advanced/formal first person incomplete.",
+    "spearTransitionScope": "Actual main nativeSPEAR seven materials same-reference back .34/.38 Settle, current sampled wrist .0625 helper + true generated32px raw(.70,.30,.5)/shaft(-x,+y)/normal+Z. Original actual display-local1.7/1.7/.85 once, seven native models/textures/tips/Fuse retained; real native submitItem quads grip-axis/skin-back GPU. Sanitized back view lacks piercing component, stow only native item allowlist identity, held draw requires actual component. Original not-ready rejection with zero extra attacks/wear/Fuse/STAB, original ready clock then second piercing-stab/wear/Fuse, no generic Player.attack or nativeSTAB packet. Pause/10FPS/5TPS/core exits, base16 plus7-material28 pairs. Empty secondary is late bounded source path, not continuous two-hand contact; waist/complex/advanced/formal first person unfinished.",
+    "maceTransitionScope": "actual same-reference main native MACE back .34/.38 Settle/default flat stationary unarmored/capeless; raw art-third(.08,.08,.5), native generated16px scale1 once/source skin/current head/item-back GPU; original hit-wear-Fuse/26tick22stamina/native smash-fall reset retained; first person .23/.35 unchanged; waist/complex/exact back grasp/continuous two-hand pending",
+    "crossbowTransitionScope": "actual same-reference main native CROSSBOW .32 Settle/default flat stationary unarmored/capeless, true unloaded/loaded arrow/rocket generated16px .9 display once and raw(.90625,.09375,.5) grip/axis/native source skin-items-back GPU; real native load/fire/ammo-wear/F swaps and accepted instant use event cancellation; original sanitized nested projectile privacy and Fuse arrow/shield host boundaries preserved; waist/complex/formal first-person/exact back grasp pending",
+    "groundTridentScope": "actual main native TRIDENT ground light7/charge16/variable held-source .8 end/strong12, original14cost and one hit-wear-Fuse; default flat stationary unarmored/capeless two skins-RL-empty/actual shield; true unscaled pole SpecialModel logical1.10/source sliding main contact1.10..1.60 and skin main/free support<=.015/native head/true carry shield handle/GPU; original pause CANCEL/5TPS10FPS/GUI-slot-occupied-hurt-waist-air/insufficient/native once throw preserved; unsupported/air source/complex/formal first-person pending",
+    "groundSpearScope": "actual seven main native SPEAR materials/two skins-RL-empty or actual carry shield, ground light8/charge18-variable hold/strong13 and original16cost/once piercing-stab-wear-Fuse/no generic attack/no STAB; source axial slide0..-.6/native32px1.7 once/true generated quad reference and both palms .015/source root-head-shield-skin GPU; native kinetic/use-ready-wall-multitarget/time/physics and complex/formal FP fallback preserved",
+    "groundMaceScope": "actual main native MACE default ground stationary unarmored/capeless/two skins-RL-empty or carry shield, light12/charge26-variable hold/strong20 and original22cost/once hit-wear-Fuse; true native16px .08 third-person/.38 support and original display1/source-root-head-carry shield-skin/item GPU; native airborne smash/fall reset/FP .23-.35/use and complex fallback preserved",
+    "airTridentScope": "actual natural-jump main TRIDENT default unarmored/capeless two skins-RL-empty or carry shield, AIR light7 and real ground charge16-variable hold-jump release AIR12/native14fee/one hit-wear-Fuse/once throw; native pole original scale/logical1.10 and authored sliding1.10..1.60/free support/source root-head-shield-skin-SpecialModel GPU; immediate natural landing/actual DROP original fallback and native physics/time/FP preserved",
+    "airSpearScope": "actual seven native SPEAR materials natural-jump default unarmored/capeless two skins-RL-empty or carry shield AIR8/ground charge18-variable real hold-jump AIRstrong13/native16fee/once piercing-stab-wear-Fuse/no generic-STAB; true native32px display1.7 once/raw(.70,.30,.5)/source slide0..-.6/free support/skin-head-shield-quad GPU; actual land-DROP/MAIN kinetic/ready-wall-multitarget/original physics-time-FP preserved",
+    "airMaceScope": "actual natural-jump main native MACE default unarmored-cape two skins-RL-empty/carry shield AIR12 and ground charge26-real hold-jump AIRstrong20/native22fee/once hit-wear-Fuse; true original16px .08/.38/display1/source skin-root-head-shield/quad GPU; native canSmashAttack-DROP/smash/fall reset/land-use/physics-inventory-time and FP .23-.35 original routes preserved",
+    "jumpScope": "default main sword two skins-RL-empty/carry/actual offguard; real native ordinary positive takeoff-air-land, original apex/horizontal controls/gravity/fall damage; land starts grounded source .06 and actual collision top rejects unsupported feet; real skin/head/root/sole/native sword quads and hilt in physical distal hand, original shield; pause/10FPS/5TPS/GUI-item-hurt-air attack-armor-edge and native HOP/traversal original routes; 400 source sampling only, no input wait or native deadline change",
+    "groundBowRightScope": "derived approved LEFT source reflection / actual RIGHT mainRIGHT or empty-main offbow-mainLEFT / default grounded stationary unarmored capeless / native20tick three sprites, original wood grip-nock and fixed source segments/head/skin/item GPU, one native arrow-ammo-wear; actual slot-armor-inventory-movement relinquish; LEFT and AIR unchanged",
+    "airBowRightScope": "derived approved LEFT AIR source reflected for actual RIGHT mainRIGHT or empty-main offbow-mainLEFT, two skins/default unsupported fallback; original native20 draw, true Focus and physics, wood grip-nock/fixed source segments/head/skin-item GPU, once arrow-ammo-wear, manual-disabled and GUI-item-armor-hurt-land/native10FPS-pause exits; no pending first-person adoption"
+  },
+  "formalExportProvenance": [
+    {
+      "source": "art/player-animation-v1/climb-up/v02/exports/standard-climb-up.glb",
+      "sha256": "c3239b53ce4ed118b9b8d7a21989628bac56cb21e3a6d042470a5423d40eca2b"
+    },
+    {
+      "source": "art/player-animation-v1/climb-side/v01/exports/standard-climb-side.glb",
+      "sha256": "fa64d4b40a4ad0bdb64c2a9a8e4290e14c8276eef3d212bec760eea35d434418"
+    },
+    {
+      "source": "art/player-animation-v1/climb-idle/v01/exports/standard-climb-idle.glb",
+      "sha256": "41948f0661fcef78b4006354424189a302d97610a8896847deb86b56e2e22ea2"
+    },
+    {
+      "source": "art/player-animation-v1/glide/v01/exports/standard-glide.glb",
+      "sha256": "04c29a578456c7017faeb37cb765c6d5837933985e962c144af7d745c83954b6"
+    },
+    {
+      "source": "art/player-animation-v1/glide-turn/v01/exports/standard-glide-turn.glb",
+      "sha256": "29cd3f6305e2f4fd102aa0af62dd7aae976096dcd1a21cc1b557dbc8174d9b2f",
+      "use": "adopted live-bank/pivot/response contract; baked turn cycles are source qualification, not recurring gameplay inputs"
+    },
+    {
+      "source": "art/player-animation-v1/lock-forward/v01/exports/standard-lock-forward.glb",
+      "sha256": "916b7d452eb0d5bb0be4a7588087b804da36341e580f5ab467b94279b7f2d384"
+    },
+    {
+      "source": "art/player-animation-v1/lock-backward/v01/exports/standard-lock-backward.glb",
+      "sha256": "4938b71dd3642197e402be7394c88f17dd8ee7980769e7de0c630d15e59a22ce"
+    },
+    {
+      "source": "art/player-animation-v1/lock-left/v01/exports/standard-lock-left.glb",
+      "sha256": "aa473dc97e30e8de343c173e9412efa14bbcaf72b38c530d1cc9f9422c9caba1"
+    },
+    {
+      "source": "art/player-animation-v1/lock-right/v01/exports/standard-lock-right.glb",
+      "sha256": "ccdf4bbbec1ef5e483a192305ffd5ffd81b66d92163ed446044598a8745bde88"
+    },
+    {
+      "source": "art/player-animation-v1/sword-heavy/v01/exports/standard-sword-heavy.glb",
+      "sha256": "3186fa4347090246d3e8e3b66a9274697ff9c854e18df8c6022736710b45c794"
+    },
+    {
+      "source": "art/player-animation-v1/axe-light/v02/exports/standard-axe-light.glb",
+      "sha256": "d79b94cb819bd91ff011ff8003f4bdb59e5e4630fc7011419c9f98849a3fdc4b",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_axe_reference",
+        "right_sword_reference": "actual right_axe_reference"
+      }
+    },
+    {
+      "source": "art/player-animation-v1/axe-heavy/v01/exports/standard-axe-heavy.glb",
+      "sha256": "a9ec8beea36a03021f7854540eee3d45cfef05ca8f4457080a6e8ef4571430ef",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_axe_reference",
+        "right_sword_reference": "actual right_axe_reference"
+      }
+    },
+    {
+      "source": "art/player-animation-v1/perfect-guard/v01/exports/standard-perfect-guard.glb",
+      "sha256": "c93485106a811616c55808771b9057c29918953c845f4ad3fbe1479ff0cf01f1",
+      "use": "active shield arm delta only over current qualified guard body; preview cycle excluded"
+    },
+    {
+      "source": "art/player-animation-v1/back-hop/v01/exports/standard-back-hop.glb",
+      "sha256": "c9dfc91a034296df72d0be440d74955724e2a1f557a2a7c0f774137dd28440eb",
+      "use": "actual six-world-tick hop; empty/carry only because native hop releases defense; no preview displacement/cycles/guard or forced planted feet"
+    },
+    {
+      "source": "art/player-animation-v1/side-hop/v01/exports/standard-side-hop.glb",
+      "sha256": "9fa8e66cf8313e767b30888dfd4f188de656b242c64cc65964408e18cdf6f185",
+      "use": "actual six-world-tick hop; empty/carry only because native hop releases defense; no preview displacement/cycles/guard or forced planted feet"
+    },
+    {
+      "source": "art/player-animation-v1/perfect-dodge/v01/exports/standard-perfect-dodge.glb",
+      "sha256": "47917c7b25fbc5d884d6e74b22ee1d3e175e92086544d256bf9086e8795ce150",
+      "use": "actual native successful ReactionView serial; independent .24 effective-real-second upper-body delta only; preview normal/cycles/guard and root movement excluded"
+    },
+    {
+      "source": "art/player-animation-v1/shield-move/v01/exports/standard-shield-move.glb",
+      "sha256": "b1f2b1c7af4812c2ad23b9154e4354346387dd66963e628e399dc1fdff60cecd",
+      "use": "actual offhand shield use and cardinal native displacement; original shield slowdown/block/wear remain authoritative"
+    },
+    {
+      "source": "art/player-animation-v1/bow-hold/v04/exports/standard-bow-hold.glb",
+      "sha256": "9b3b22a4e0ce44eed65adb75053ffc1a2eb01a0fefc10922e4f80777c2bd1fe5",
+      "use": "grounded stationary actual mainhand bow idle only; no use/draw/air/first-person assets promoted",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      }
+    },
+    {
+      "source": "art/player-animation-v1/bow-ground/v05/exports/standard-bow-ground.glb",
+      "sha256": "e8f5847d71029f73d20086a5c5a657e7661bd6480e8d8b4c52129ecbaf69af84",
+      "use": "left-grip actual-use draw/hold source; geometry pull curve and native20tick charge, original native bow sprite and fixed-length drawing-arm adaptation; runtime status in C6P-GROUND-BOW-VERIFICATION",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      },
+      "excluded": "reference bow mesh/morph tracks, preview cameras, source long release/cancel; source conversion alone is not gameplay proof"
+    },
+    {
+      "source": "art/player-animation-v1/bow-air/v01/exports/standard-bow-air.glb",
+      "sha256": "dd2074fc286a96fab493248e6862fd0c47603fe876c2fc0f1ee5497cf1d54abc",
+      "use": "actual left used-arm airborne draw/hold source; native charge, physics and FocusTime unchanged; runtime status in C6Q-AIR-BOW-VERIFICATION",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      },
+      "excluded": "previewLift/root translation, reference bow meshes/morphs, preview cameras, long source release/cancel"
+    },
+    {
+      "source": "art/player-animation-v1/air-attack/v01/exports/standard-air-attack.glb",
+      "sha256": "d990f34ebad8420d234c4bdaaa019ff22dc100da568803ff5d71ba2005246a5d",
+      "use": "ordinary actual AIR_SWING sword/axe only; original recovery/world physics and native attack remain authoritative; runtime status in C6S verification",
+      "excluded": "preview lift, air idle/cycle, charged/drop and long weapons"
+    },
+    {
+      "source": "art/player-animation-v1/equipment-transitions/v01/exports/standard-equipment-transitions.glb",
+      "sha256": "d0a197d18835fd690e8dd153054c21096188b7026e3639b6ac85bb8a31bd94e4",
+      "use": "bounded same-reference native sword draw/stow at current instant hand/back ownership; existing .34/.38 actual-time Settle clock, default-back only; qualification is not runtime proof",
+      "excluded": "reference equipment meshes/textures, waist/other weapons/formal first person or exact anatomical hilt handoff"
+    },
+    {
+      "source": "art/player-animation-v1/hurt-reaction/v01/exports/standard-hurt-reaction.glb",
+      "sha256": "f7834a65f1036341fae9a1b983bd1448115c0e93d8c2832302bac2adee8fc67d",
+      "use": "ordinary actual hurt6/hurtYaw, stripped pelvis/body rigid upper delta over current native pose; source qualification is not runtime proof",
+      "excluded": "fixed source legs/pelvis buffering, head variants/new hit-region rules, reference equipment meshes/textures, heavy stagger/formal first person"
+    },
+    {
+      "source": "art/player-animation-v1/bow-transitions/v01/exports/standard-bow-transitions.glb",
+      "sha256": "820c882728c3ea984cd77aa8a069f27305b75c87a1443dfe2dcaeb4e627991c5",
+      "use": "bounded native same-reference bow back draw/stow, actual .32 Settle clock and native bow wood anchor/model; qualification alone is not runtime proof",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      },
+      "excluded": "reference equipment meshes/textures, source alternative mount layout, waist/other ranged/formal first-person/exact hilt handoff"
+    },
+    {
+      "source": "art/player-animation-v1/shield-transitions/v01/exports/standard-shield-transitions.glb",
+      "sha256": "f163b5d602af030e2db11d032d49053e99602c13b1cb728746a61ab2564cdff7",
+      "use": "bounded actual physical shield arm back gesture on same-reference native Settle owner1/2; both grip anchors use explicit authored .0625 wrist offset, no skin joint edits",
+      "excluded": "reference shield geometry/textures, source alternative dock layout, main-off direct transfer replay, waist/formal first-person/exact handle docking"
+    },
+    {
+      "source": "art/player-animation-v1/axe-transitions/v01/exports/standard-axe-transitions.glb",
+      "sha256": "dd39f5de9a6cfe769635b3a8a185ffc594674cf18f3814368b3138abcd8109e9",
+      "use": "bounded same-reference main native axe back draw/stow at original .34/.38 Settle, explicit .0625 auxiliary grip and actual axe_reference; source qualification is not gameplay proof",
+      "excluded": "reference meshes/textures/source dock layouts, waist grip with larger interpolation error, other weapons/complex/formal first-person/exact anatomical hilt handoff"
+    },
+    {
+      "source": "art/player-animation-v1/trident-transitions/v01/exports/standard-trident-transitions.glb",
+      "sha256": "3916acbe3a3192ea5bd18ed66a39ab0a3360b71242c49b60fa83a3b6be370e1b",
+      "use": "bounded same-reference main native trident .34/.38 Settle, true raw pole1.10 and sampled wrist grip reference reanchor; actual runtime proof still required",
+      "excluded": "reference meshes/textures/source dock layout, claiming continuous secondary contact from a late support path, waist/complex/formal first-person/exact anatomical back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/spear-transitions/v01/exports/standard-spear-transitions.glb",
+      "sha256": "ca04dd399c11dcc6139261758f56dd7eb9e693816df0d876f587aac9047ee888",
+      "use": "bounded same-reference main native spear .34/.38 Settle/current sampled wrist reference and real 32px native material model/raw(.70,.30,.5) shaft; no duplicate1.7 scale",
+      "excluded": "iron reference mesh/texture replacing seven native materials, claiming continuous secondary contact from late support, source mount layout/waist/complex/formal first-person/exact back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/mace-transitions/v01/exports/standard-mace-transitions.glb",
+      "sha256": "17b27d3dc30668f04dede3f02b2e813f4d47775be3fadd45b6de222fe8bd3337",
+      "use": "bounded main native mace back .34/.38 Settle/current wrist reference; art-third raw(.08,.08,.5), no change to old first-person .23/.35; actual runtime proof required",
+      "excluded": "reference meshes/textures/dock layout, continuous secondary contact claims, waist/complex/formal first-person/exact back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/crossbow-transitions/v01/exports/standard-crossbow-transitions.glb",
+      "sha256": "d0f2881ba28e19cfe7ec2ea0bb9a5cc4e2fc6eb9234d6475a28b84016a2ed230",
+      "use": "main native crossbow back .32 Settle/source main wrist .125/raw native(.90625,.09375,.5); source reference preserved, true .9 native display scale once; actual runtime verification required",
+      "excluded": "source reference mesh/texture/dock, added bow-crossbow Fuse host or nested projectile back sync, waist/complex/formal first-person/exact back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/trident-attacks/v01/exports/standard-trident-attacks.glb",
+      "sha256": "4c913712342a2b436ddb0ca63dca9653a1543eae40aa097248ecc4ab9aa41ee9",
+      "use": "ground main native trident light7 and native charge16/variable hold/release12 source segments; source reference sliding preserved, actual hand pole contacts y1.10..1.60; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/spear-attacks/v01/exports/standard-spear-attacks.glb",
+      "sha256": "d4ec15a415128630a363f0f3c605993b080539007ac0aed21fd59b89f9a53ba8",
+      "use": "ground main native spear light8 and native charge18/variable hold/release13 source segments; source reference sliding preserved, actual hand axial slide0..-.60/native32px1.7 display once; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/mace-attacks/v01/exports/standard-mace-attacks.glb",
+      "sha256": "b44dbe565d0fd0f126887d7c6ddb9fe366df0ba7a989a8f606c6325572bc832f",
+      "use": "ground main native mace light12 and native charge26/variable hold/release20 source segments; source reference sliding preserved, actual native16px(.08,.08,.5) third-person grip/display1 once; original airborne smash excluded; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/trident-air/v01/exports/standard-trident-air.glb",
+      "sha256": "52bdf2ea54d2e21ac9fb60c6808cff938e76365603c2d61fdb5bb238d64e0be6",
+      "use": "actual airborne main native trident light7 and native charge16/variable hold/release12 source segments; source reference sliding preserved, actual hand pole contacts y1.10..1.60; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/spear-air/v01/exports/standard-spear-air.glb",
+      "sha256": "55226be52bb22c1758844b9328774dace31a69710aacdbd8880e24aae0f98c24",
+      "use": "actual airborne main native spear light8 and native charge18/variable hold/release13 source segments; source reference sliding preserved, actual hand pole contacts source axis0..-.6/native32px1.7 once; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/mace-air/v01/exports/standard-mace-air.glb",
+      "sha256": "c63863f32324db45835f245b0c3925f5642b62dec37100a434cdb41f93fe09ff",
+      "use": "actual airborne main native mace light12 and native charge26/variable hold/release20 source segments; source reference sliding preserved, actual hand pole contacts native16px(.08,.08,.5)/.38 support; native smash excluded; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/jump-takeoff-landing/v01/exports/standard-jump-takeoff-landing.glb",
+      "sha256": "e51880e92ace498593316aa5bb1d57a4f7c5c07c8ac17a5fbb0993517b3303a2",
+      "use": "actual native takeoff-air-land observation only, 400Hz source samples preserve rapid grounded foot contact; existing 20-to-22 wrist derivation; actual default sword skin-native equipment GPU qualification required",
+      "excluded": "review cycle, previewLift, mesh/textures, input wait, root motion, physics/control/stamina/damage changes, HOP/unsupported/complex/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/bow-ground/v05",
+      "use": "derived rigid X-reflection and left/right palette pairing of approved LEFT draw/hold only; same source pullTimes, existing 22 symmetric skin binds; auxiliary bow reference mirrored physically rather than forced into asymmetric sword rest; RIGHT actual-use/native sprite-string and GPU must be verified; not a new original animation asset"
+    },
+    {
+      "source": "art/player-animation-v1/bow-air/v01",
+      "use": "derived rigid X-reflection and paired 22-bone symmetric skin of approved LEFT draw/hold only; source root/previewLift exclusion/pullTimes and native20tick/Focus clocks remain unchanged; actual RIGHT native sprite-string-GPU-arrow and Focus exits must be verified; not a new original animation asset"
+    },
+    {
+      "source": "art/player-animation-v1/climb-up/v02/exports/standard-climb-up.glb",
+      "sha256": "c3239b53ce4ed118b9b8d7a21989628bac56cb21e3a6d042470a5423d40eca2b"
+    },
+    {
+      "source": "art/player-animation-v1/locked-idle/v02/exports/standard-locked-idle.glb",
+      "sha256": "3e37bd85418abe4d9916ab0948d806422a0eb3a5bbe134f69733a6a38be2ea6f"
+    },
+    {
+      "source": "art/player-animation-v1/sword-regular/v02/exports/standard-regular-sword.glb",
+      "sha256": "2a10191521152a103aad7a4bc5e761791498f2f440b14c13f23be842c2405da8"
+    },
+    {
+      "source": "art/player-animation-v1/shield-guard/v01/exports/standard-shield-guard.glb",
+      "sha256": "77eccbaa5f73a3a440c437dc3cc01ba4475f7c7b94838bfe6019fec8574a9523"
+    },
+    {
+      "source": "art/player-animation-v1/climb-up/v02/exports/slim-climb-up.glb",
+      "sha256": "66d0291cfe9b78c0d7478882ff10aa9e5fda4c3725ac54f51cfbea055490a676"
+    },
+    {
+      "source": "art/player-animation-v1/climb-side/v01/exports/slim-climb-side.glb",
+      "sha256": "150a0e63b5a0b6bb799fd91fd22a45f1e1900c7fbadef9bcdfcb5472e158b378"
+    },
+    {
+      "source": "art/player-animation-v1/climb-idle/v01/exports/slim-climb-idle.glb",
+      "sha256": "a695efff1f1e4517e2426eb19036818c28d1285fa2a151396525b14734e575cd"
+    },
+    {
+      "source": "art/player-animation-v1/glide/v01/exports/slim-glide.glb",
+      "sha256": "65689477d78d2dbfaa4dafd0ffa13f11b9b8397c65068e10848f9c22566b634f"
+    },
+    {
+      "source": "art/player-animation-v1/glide-turn/v01/exports/slim-glide-turn.glb",
+      "sha256": "87dcf1e2e3c6fb6c657db7380c8f68ead34cbc0cd5a5faa0fd5fb919ba4825c5",
+      "use": "adopted live-bank/pivot/response contract; baked turn cycles are source qualification, not recurring gameplay inputs"
+    },
+    {
+      "source": "art/player-animation-v1/lock-forward/v01/exports/slim-lock-forward.glb",
+      "sha256": "9073451fcc5d37f80ce4a3b834802bb9d7e240b607d2422146dac16741f64695"
+    },
+    {
+      "source": "art/player-animation-v1/lock-backward/v01/exports/slim-lock-backward.glb",
+      "sha256": "811c9bc303636dcc50fcc633a4c6d2bbeb2357df7246f3d486ff0aaece7c3f95"
+    },
+    {
+      "source": "art/player-animation-v1/lock-left/v01/exports/slim-lock-left.glb",
+      "sha256": "29da778f8d5bfd5d2db053c1b1f5b74378302ab6d4a9e5943c3b2d49f0c6c964"
+    },
+    {
+      "source": "art/player-animation-v1/lock-right/v01/exports/slim-lock-right.glb",
+      "sha256": "4a55c1a68831eadb1dda2dc2970d989699a1be69c29259364b1b567892e6bde2"
+    },
+    {
+      "source": "art/player-animation-v1/sword-heavy/v01/exports/slim-sword-heavy.glb",
+      "sha256": "98f515d2df905618f29bb4714dffee4ef6ac7065d8c10fd906ba735ee70b6794"
+    },
+    {
+      "source": "art/player-animation-v1/axe-light/v02/exports/slim-axe-light.glb",
+      "sha256": "cf80827d3e54f34b05b891a913a3449ee1f60000e4af4ebf38ef0b6685adc809",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_axe_reference",
+        "right_sword_reference": "actual right_axe_reference"
+      }
+    },
+    {
+      "source": "art/player-animation-v1/axe-heavy/v01/exports/slim-axe-heavy.glb",
+      "sha256": "95053d5e81d154f3dbcb03225aaecda34c0cabce23abfac1741d83e44cfa7298",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_axe_reference",
+        "right_sword_reference": "actual right_axe_reference"
+      }
+    },
+    {
+      "source": "art/player-animation-v1/perfect-guard/v01/exports/slim-perfect-guard.glb",
+      "sha256": "4705ed07f776ed547f0491149050494abf117dd6a2973c43f0d4a9d558535110",
+      "use": "active shield arm delta only over current qualified guard body; preview cycle excluded"
+    },
+    {
+      "source": "art/player-animation-v1/back-hop/v01/exports/slim-back-hop.glb",
+      "sha256": "7fc4f9e2999135c01e39d7c7ce9e84f399c32a172fd4e948e526f431b2abd8f5",
+      "use": "actual six-world-tick hop; empty/carry only because native hop releases defense; no preview displacement/cycles/guard or forced planted feet"
+    },
+    {
+      "source": "art/player-animation-v1/side-hop/v01/exports/slim-side-hop.glb",
+      "sha256": "ce86b6909c7cbb59daf7c4af13b80d20fcf841d8017ff6ad8031266146445348",
+      "use": "actual six-world-tick hop; empty/carry only because native hop releases defense; no preview displacement/cycles/guard or forced planted feet"
+    },
+    {
+      "source": "art/player-animation-v1/perfect-dodge/v01/exports/slim-perfect-dodge.glb",
+      "sha256": "528023348085152b6faaa9f53cabef3cba5935d4feb30a839a93c5c979e5d82e",
+      "use": "actual native successful ReactionView serial; independent .24 effective-real-second upper-body delta only; preview normal/cycles/guard and root movement excluded"
+    },
+    {
+      "source": "art/player-animation-v1/shield-move/v01/exports/slim-shield-move.glb",
+      "sha256": "35366ad42cf8fdb5a28bd39a9f8e53dd095b1008ec696350f0b3ce87097cebc3",
+      "use": "actual offhand shield use and cardinal native displacement; original shield slowdown/block/wear remain authoritative"
+    },
+    {
+      "source": "art/player-animation-v1/bow-hold/v04/exports/slim-bow-hold.glb",
+      "sha256": "360fa3b81ed3622df662e318422f0e671ec5d8659bb289f66de3eafaae01e3e9",
+      "use": "grounded stationary actual mainhand bow idle only; no use/draw/air/first-person assets promoted",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      }
+    },
+    {
+      "source": "art/player-animation-v1/bow-ground/v05/exports/slim-bow-ground.glb",
+      "sha256": "32d53087271db6217e6e016523625398e79f5f9680a1609e351f164677f94d34",
+      "use": "left-grip actual-use draw/hold source; geometry pull curve and native20tick charge, original native bow sprite and fixed-length drawing-arm adaptation; runtime status in C6P-GROUND-BOW-VERIFICATION",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      },
+      "excluded": "reference bow mesh/morph tracks, preview cameras, source long release/cancel; source conversion alone is not gameplay proof"
+    },
+    {
+      "source": "art/player-animation-v1/bow-air/v01/exports/slim-bow-air.glb",
+      "sha256": "161eaa1ed4549626de0d6bb93c310682107ea9870b21bd3605f16b8627850b9d",
+      "use": "actual left used-arm airborne draw/hold source; native charge, physics and FocusTime unchanged; runtime status in C6Q-AIR-BOW-VERIFICATION",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      },
+      "excluded": "previewLift/root translation, reference bow meshes/morphs, preview cameras, long source release/cancel"
+    },
+    {
+      "source": "art/player-animation-v1/air-attack/v01/exports/slim-air-attack.glb",
+      "sha256": "679a6328c2d22c430b7aa121dac280b26c3a432f3999b1eff416c8151bd55033",
+      "use": "ordinary actual AIR_SWING sword/axe only; original recovery/world physics and native attack remain authoritative; runtime status in C6S verification",
+      "excluded": "preview lift, air idle/cycle, charged/drop and long weapons"
+    },
+    {
+      "source": "art/player-animation-v1/equipment-transitions/v01/exports/slim-equipment-transitions.glb",
+      "sha256": "3d443de4aec2dff2d875a146a6474002f6a69076295a0573f73bc5185853d4c7",
+      "use": "bounded same-reference native sword draw/stow at current instant hand/back ownership; existing .34/.38 actual-time Settle clock, default-back only; qualification is not runtime proof",
+      "excluded": "reference equipment meshes/textures, waist/other weapons/formal first person or exact anatomical hilt handoff"
+    },
+    {
+      "source": "art/player-animation-v1/hurt-reaction/v01/exports/slim-hurt-reaction.glb",
+      "sha256": "b2d206b6e72b9fe9104e66d3eb87194284cedacfae2c047a10e787c53129feb0",
+      "use": "ordinary actual hurt6/hurtYaw, stripped pelvis/body rigid upper delta over current native pose; source qualification is not runtime proof",
+      "excluded": "fixed source legs/pelvis buffering, head variants/new hit-region rules, reference equipment meshes/textures, heavy stagger/formal first person"
+    },
+    {
+      "source": "art/player-animation-v1/bow-transitions/v01/exports/slim-bow-transitions.glb",
+      "sha256": "be93f2449cb9232efb0dda375a803e8aa1a8c7273b8183835c5a736198630503",
+      "use": "bounded native same-reference bow back draw/stow, actual .32 Settle clock and native bow wood anchor/model; qualification alone is not runtime proof",
+      "referenceAliases": {
+        "left_sword_reference": "actual left_bow_reference",
+        "right_sword_reference": "actual right_bow_reference"
+      },
+      "excluded": "reference equipment meshes/textures, source alternative mount layout, waist/other ranged/formal first-person/exact hilt handoff"
+    },
+    {
+      "source": "art/player-animation-v1/shield-transitions/v01/exports/slim-shield-transitions.glb",
+      "sha256": "dd45982df87e8f2ffdb7523c8c6413fd681d8562286cf8b7be0cef068d718481",
+      "use": "bounded actual physical shield arm back gesture on same-reference native Settle owner1/2; both grip anchors use explicit authored .0625 wrist offset, no skin joint edits",
+      "excluded": "reference shield geometry/textures, source alternative dock layout, main-off direct transfer replay, waist/formal first-person/exact handle docking"
+    },
+    {
+      "source": "art/player-animation-v1/axe-transitions/v01/exports/slim-axe-transitions.glb",
+      "sha256": "a32703412ee220e8c06124c4dc2727c6f994fe879039c6d8a548a8c085b0883e",
+      "use": "bounded same-reference main native axe back draw/stow at original .34/.38 Settle, explicit .0625 auxiliary grip and actual axe_reference; source qualification is not gameplay proof",
+      "excluded": "reference meshes/textures/source dock layouts, waist grip with larger interpolation error, other weapons/complex/formal first-person/exact anatomical hilt handoff"
+    },
+    {
+      "source": "art/player-animation-v1/trident-transitions/v01/exports/slim-trident-transitions.glb",
+      "sha256": "bc2d7b41e1138d045e67c9314da6832ff9c2ab2faedd7498d0cea3c8d7c6b7e9",
+      "use": "bounded same-reference main native trident .34/.38 Settle, true raw pole1.10 and sampled wrist grip reference reanchor; actual runtime proof still required",
+      "excluded": "reference meshes/textures/source dock layout, claiming continuous secondary contact from a late support path, waist/complex/formal first-person/exact anatomical back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/spear-transitions/v01/exports/slim-spear-transitions.glb",
+      "sha256": "2504ee01336f1f643b21d8af414bf61db4b9e6d254203f70ad16ae276a7f77fb",
+      "use": "bounded same-reference main native spear .34/.38 Settle/current sampled wrist reference and real 32px native material model/raw(.70,.30,.5) shaft; no duplicate1.7 scale",
+      "excluded": "iron reference mesh/texture replacing seven native materials, claiming continuous secondary contact from late support, source mount layout/waist/complex/formal first-person/exact back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/mace-transitions/v01/exports/slim-mace-transitions.glb",
+      "sha256": "9165001c92651766fefaaa4ed1ffa6eff66792c66b983b30292b8aa2a60ddb68",
+      "use": "bounded main native mace back .34/.38 Settle/current wrist reference; art-third raw(.08,.08,.5), no change to old first-person .23/.35; actual runtime proof required",
+      "excluded": "reference meshes/textures/dock layout, continuous secondary contact claims, waist/complex/formal first-person/exact back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/crossbow-transitions/v01/exports/slim-crossbow-transitions.glb",
+      "sha256": "3592ae6c74090eb63c103b20b88c84918a571548fad841f1a449e5ded181963a",
+      "use": "main native crossbow back .32 Settle/source main wrist .125/raw native(.90625,.09375,.5); source reference preserved, true .9 native display scale once; actual runtime verification required",
+      "excluded": "source reference mesh/texture/dock, added bow-crossbow Fuse host or nested projectile back sync, waist/complex/formal first-person/exact back grasp"
+    },
+    {
+      "source": "art/player-animation-v1/trident-attacks/v01/exports/slim-trident-attacks.glb",
+      "sha256": "a5c2b13b8bf23a68c62c3f1c7cff8326976314e56ae5f5c5707f302534204430",
+      "use": "ground main native trident light7 and native charge16/variable hold/release12 source segments; source reference sliding preserved, actual hand pole contacts y1.10..1.60; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/spear-attacks/v01/exports/slim-spear-attacks.glb",
+      "sha256": "65bc3537cbe9ecf429f8fdbdee43f543c8d8072ea779c85bd00f6617bc2e1698",
+      "use": "ground main native spear light8 and native charge18/variable hold/release13 source segments; source reference sliding preserved, actual hand axial slide0..-.60/native32px1.7 display once; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/mace-attacks/v01/exports/slim-mace-attacks.glb",
+      "sha256": "858274693bba6f65dedb5725160e83d6b147a695b8f26a19b1b7fa15ab1f8216",
+      "use": "ground main native mace light12 and native charge26/variable hold/release20 source segments; source reference sliding preserved, actual native16px(.08,.08,.5) third-person grip/display1 once; original airborne smash excluded; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/trident-air/v01/exports/slim-trident-air.glb",
+      "sha256": "813a35159f8374e49062394e6214f6e8aa7a79e0093e193d66abc3edb82a3798",
+      "use": "actual airborne main native trident light7 and native charge16/variable hold/release12 source segments; source reference sliding preserved, actual hand pole contacts y1.10..1.60; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/spear-air/v01/exports/slim-spear-air.glb",
+      "sha256": "f8933bfa202ab9c969b447dfed59b7527443df23af36c4e20c8baaa772453779",
+      "use": "actual airborne main native spear light8 and native charge18/variable hold/release13 source segments; source reference sliding preserved, actual hand pole contacts source axis0..-.6/native32px1.7 once; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/mace-air/v01/exports/slim-mace-air.glb",
+      "sha256": "ea8b71ca6f3520d8c0fbe47e764888bff287b1871e68162efcd886ae5f6a435f",
+      "use": "actual airborne main native mace light12 and native charge26/variable hold/release20 source segments; source reference sliding preserved, actual hand pole contacts native16px(.08,.08,.5)/.38 support; native smash excluded; no fixed-wrist weapon reanchor or model scale change; actual runtime proof required",
+      "excluded": "source review damage/hold deadlines/extra hits, air integration and source animation hit events, source reference mesh/texture, complex/armor/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/jump-takeoff-landing/v01/exports/slim-jump-takeoff-landing.glb",
+      "sha256": "758f749221445c36f5f715b8ff3269affbfe4c3cbeffe2ddd403758d0a074b56",
+      "use": "actual native takeoff-air-land observation only, 400Hz source samples preserve rapid grounded foot contact; existing 20-to-22 wrist derivation; actual default sword skin-native equipment GPU qualification required",
+      "excluded": "review cycle, previewLift, mesh/textures, input wait, root motion, physics/control/stamina/damage changes, HOP/unsupported/complex/formal first-person"
+    },
+    {
+      "source": "art/player-animation-v1/bow-ground/v05",
+      "use": "derived rigid X-reflection and left/right palette pairing of approved LEFT draw/hold only; same source pullTimes, existing 22 symmetric skin binds; auxiliary bow reference mirrored physically rather than forced into asymmetric sword rest; RIGHT actual-use/native sprite-string and GPU must be verified; not a new original animation asset"
+    },
+    {
+      "source": "art/player-animation-v1/bow-air/v01",
+      "use": "derived rigid X-reflection and paired 22-bone symmetric skin of approved LEFT draw/hold only; source root/previewLift exclusion/pullTimes and native20tick/Focus clocks remain unchanged; actual RIGHT native sprite-string-GPU-arrow and Focus exits must be verified; not a new original animation asset"
+    },
+    {
+      "source": "art/player-animation-v1/climb-up/v02/exports/slim-climb-up.glb",
+      "sha256": "66d0291cfe9b78c0d7478882ff10aa9e5fda4c3725ac54f51cfbea055490a676"
+    },
+    {
+      "source": "art/player-animation-v1/locked-idle/v02/exports/slim-locked-idle.glb",
+      "sha256": "74569c21d8785c16f7653a91e19b53f7c5ac7de445df34c4e721d78ee0970ace"
+    },
+    {
+      "source": "art/player-animation-v1/sword-regular/v02/exports/slim-regular-sword.glb",
+      "sha256": "fd3e9c769d10c4491c6658f5b8f512a5e8b9b891ca3c657b565b68e61f0f2b93"
+    },
+    {
+      "source": "art/player-animation-v1/shield-guard/v01/exports/slim-shield-guard.glb",
+      "sha256": "de8b2ed1cf0a251f920212dcf625b1090103fc87652b1582dbc26544e6e24aa8"
+    },
+    {
+      "source": "art/player-animation-v1/link-time/v01/exports/focus-layer.json",
+      "sha256": "7e2ad394821848f4409e9240ac033d340a9acdefab4dca3eb21d571ab4d0ab86",
+      "use": "ten-bone layer config only over current qualified native airborne bow; no duplicate body clips, world-example rate/presentation parameters excluded; actual status in C6R-FOCUS-LEG-LAYER-VERIFICATION"
+    }
+  ],
+  "candidate": null,
+  "unresolved": [
+    "C6 overall incomplete",
+    "formal first-person art/pending13 excluded",
+    "other6 pending art excluded",
+    "armor-cape-complex compatibility uses previous paths",
+    "offhand/waist equipment source transitions not broadly verified",
+    "ordinary sword preview combo queue/rate NOT imported as gameplay",
+    "real controller and long human gameplay/balance still unverified"
+  ],
+  "extraSourcesNotAdoptedByThisReport": true,
+  "publicSourceSnapshot": {
+    "version": "0.1.0-dev.62-public",
+    "privateAnimationDataIncluded": false,
+    "nativePresentationFallback": true,
+    "localRuntimeScopesAreNotPublicGraphicsValidation": true
+  }
+}

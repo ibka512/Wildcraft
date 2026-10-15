@@ -25,9 +25,13 @@ public final class FusionItemRenderer implements SpecialModelRenderer<FusionItem
         var center=bounds.getCenter();var base=((FusionStateAccessor)out).wildcraft$layers()[0];var transform=(FusionLayerAccessor)base;
         out.appendModelIdentityElement(v);var added=out.newLayer();added.setItemTransform(transform.wildcraft$transform());added.setLocalTransform(new Matrix4f(transform.wildcraft$local()));added.setUsesBlockLight(true);
         boolean shield=host.is(Items.SHIELD),axe=host.is(net.minecraft.tags.ItemTags.AXES),arrow=host.is(Items.ARROW);
-        float scale=(float)((shield?.24:axe?.30:arrow?.20:.28)/size);
-        float x=shield?.25F:axe?.66F:arrow?.77F:.8F,y=shield?-.54F:axe?.70F:arrow?.77F:.82F;
-        float z=shield?-.125F:.53125F;float penetration=shield?.006F:.008F;
+        boolean trident=host.is(Items.TRIDENT),mace=host.is(Items.MACE),spear=dev.wildcraft.combat.MeleeWeapon.nativeSpear(host);
+        boolean spearHand=spear&&context!=ItemDisplayContext.GUI&&context!=ItemDisplayContext.GROUND&&context!=ItemDisplayContext.FIXED&&context!=ItemDisplayContext.ON_SHELF;
+        boolean tridentModel=trident&&transform.wildcraft$special() instanceof net.minecraft.client.renderer.special.TridentSpecialRenderer;
+        float scale=(float)((shield?.24:axe?.30:arrow?.20:trident?.22:spear?.22:mace?.26:.28)/size);
+        float x=shield?.25F:axe?.66F:arrow?.77F:tridentModel?0:spear?(spearHand?.10F:.87F):mace?.62F:.8F,y=shield?-.54F:axe?.70F:arrow?.77F:tridentModel?-.12F:spear?.90F:mace?.78F:.82F;
+        // Special trident mesh is centered at x=0; fork spans y=-4..2 pixels. Its copied local transform already flips Y/Z.
+        float z=shield?-.125F:tridentModel?.04F:.53125F;float penetration=shield?.006F:.008F;
         z+=(shield?-1:1)*(bounds.getZsize()*scale/2-penetration);
         var part=new Part(child,x,y,z,scale,(float)center.x,(float)center.y,(float)center.z);added.setupSpecialModel(INSTANCE,part);
         float hx=(float)bounds.getXsize()*scale/2,hy=(float)bounds.getYsize()*scale/2,hz=(float)bounds.getZsize()*scale/2;

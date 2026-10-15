@@ -1,0 +1,42 @@
+{
+  "allPassed": true,
+  "scope": "Static art geometry, upright flat-ground and reference passive-lift arithmetic. Not runtime fluid/terrain/physics verification.",
+  "floatMeshes": 15,
+  "candidateBodyMeshes": 71,
+  "wholePartScaleUnchanged": true,
+  "atlasUVUnchanged": true,
+  "localOffsetBlocks": [
+    0,
+    0,
+    -0.41
+  ],
+  "cavityBlocks": [
+    0.69,
+    0.45,
+    0.41
+  ],
+  "groundMinY": 0.009999999999999953,
+  "groundMaxY": 0.38999999999999996,
+  "bodyOverlapConservativePairs": 0,
+  "oldGroundMinY": -0.4,
+  "staticAcrossStateCases": 48,
+  "groundHeightCases": 81,
+  "unchangedOtherDirectionCases": 20,
+  "tiltedAirClearanceCases": 13,
+  "passiveRuleReferenceCases": 13,
+  "springCavityTooNarrow": true,
+  "knownUnsupportedGroundedRollMinY": -0.0036134513846009415,
+  "movingParts": 0,
+  "newPhysicsRules": false,
+  "gameIntegrated": false,
+  "actualWaterStateCanvasesIdentical": [
+    {
+      "canvas": "model",
+      "waterUnpoweredOverloadIdentical": true
+    },
+    {
+      "canvas": "section",
+      "waterUnpoweredOverloadIdentical": true
+    }
+  ]
+}

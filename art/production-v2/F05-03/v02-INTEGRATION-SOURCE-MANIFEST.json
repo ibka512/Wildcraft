@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "purpose": "Current adopted source snapshot; preserve original pre-adoption delivery manifest",
+  "delivery_manifest": "art/production-v2/F05-03/v02/docs/DELIVERY-MANIFEST.json",
+  "delivery_manifest_sha256": "7b3d6b71ae335f68ac1786fd146924f30f84930d282762570aae75f382064d5e",
+  "known_adoption_metadata_changes": [
+    {
+      "path": "README.md",
+      "delivery_sha256": "6dc35a015a2be3892ab17ca63c0eed6ddcfa7f55475d9d2f18192ada4c947d84",
+      "adopted_sha256": "8186eed844b0f9b208a06a81e7c360b7c7136c29db1bc7069665160a4326894b"
+    },
+    {
+      "path": "docs/APPROVAL.json",
+      "delivery_sha256": "f7f214a77f37f5d6bd0cad4bed62057fd5523359704adcb0bbb824b7763e7417",
+      "adopted_sha256": "86c9b6711c883d4a599dc6d6045a29166b1e2238f11718eacfbf9b1d3a3f887f"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "delivery_sha256": "485d6e7091d4270efe439cd1fedb1194e3f44a3d46939ac078c13488d3fd079c",
+      "adopted_sha256": "c9d33b5e05c893350c0e836bd0fbe8788b338671ac9d9aa1904f2e1203c1cc29"
+    },
+    {
+      "path": "preview.html",
+      "delivery_sha256": "5c0d56ae59aecc6ae2b950d2ac8b624198c2d7999a9d426a93d292d7113ff546",
+      "adopted_sha256": "fc196ffce78e0bef3ec7c29bdcc67302016e78942f7b1111a9d627acae371192"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "file": "art/production-v2/F05-03/v02/README.md",
+      "bytes": 2209,
+      "sha256": "8186eed844b0f9b208a06a81e7c360b7c7136c29db1bc7069665160a4326894b"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/docs/APPROVAL.json",
+      "bytes": 710,
+      "sha256": "86c9b6711c883d4a599dc6d6045a29166b1e2238f11718eacfbf9b1d3a3f887f"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/docs/BASELINE.json",
+      "bytes": 411332,
+      "sha256": "02d08140d4aba277765e9a9dad49a1cd3889a0e53f41f5b65ac7e75089a891a7"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/docs/HANDOFF.md",
+      "bytes": 1527,
+      "sha256": "c9d33b5e05c893350c0e836bd0fbe8788b338671ac9d9aa1904f2e1203c1cc29"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/docs/STRUCTURE-PROPOSAL.md",
+      "bytes": 3509,
+      "sha256": "9ff230b2ddb4c640d508aa5d82de6f0e9f3aa6d87a1a090ccff9a9ebe1cb457a"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/exports/chassis-fan-pocket-proposal.json",
+      "bytes": 213617,
+      "sha256": "e9e696fe8e5915911539e004f0beb5022edbb0752ceb996b9d58785ed08e67ef"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/exports/fan-bottom-proposal.json",
+      "bytes": 627506,
+      "sha256": "a5144da3707be35b38968a606af2466b67e575ce3bd538bdbd2e2e8053132d11"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/exports/fan-item-16.png",
+      "bytes": 449,
+      "sha256": "bdcb2aa8319d550b2133205b4b3ad13f1e2c6ab3c7bc7642ce4b00e05b524ad2"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/exports/fan-item-32.png",
+      "bytes": 737,
+      "sha256": "6bb96e6458c7eba9b35fe9d45c9a6911edb56685a4ac29d674db4e7c030feada"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/exports/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/preview.html",
+      "bytes": 8838,
+      "sha256": "fc196ffce78e0bef3ec7c29bdcc67302016e78942f7b1111a9d627acae371192"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/ADOPTED-ASSETS.json",
+      "bytes": 54860,
+      "sha256": "9a8879d36b498fff4d03dde44360b26bd20353c8320fe93c18c75e91f49f9513"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/MachineEntity.java",
+      "bytes": 19532,
+      "sha256": "b1b3fe63142beed15af3dcf9331d1f58731813441b34b0a5792748766ca64611"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/MachineRenderer.java",
+      "bytes": 5642,
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/buoyancy-bottom-proposal.json",
+      "bytes": 558549,
+      "sha256": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/fan-animation.json",
+      "bytes": 567,
+      "sha256": "f2452ac864e17d357cde4fa6227fe6199e47fc96c3e10f2c0320c2b8290c6b83"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/fan-geometry.json",
+      "bytes": 94361,
+      "sha256": "804d200a4f94a59a3bf00b7df475e70a0315c1f64394f12308eda9055fd87961"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/fan-item-16.aseprite",
+      "bytes": 738,
+      "sha256": "a04706431b7720ee76fa7b7b04a1cd4501283eb4ea394166d96278b6d39474dc"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/fan-item-16.png",
+      "bytes": 449,
+      "sha256": "bdcb2aa8319d550b2133205b4b3ad13f1e2c6ab3c7bc7642ce4b00e05b524ad2"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/fan-item-32.aseprite",
+      "bytes": 909,
+      "sha256": "f7fb4f5eb19e6c503b2b191bfdce47b4f58c058bd8c489e7a9841298daa98fad"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/fan-item-32.png",
+      "bytes": 737,
+      "sha256": "6bb96e6458c7eba9b35fe9d45c9a6911edb56685a4ac29d674db4e7c030feada"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/shared-machine-atlas-64.aseprite",
+      "bytes": 1389,
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/shared-machine-atlas-64.png",
+      "bytes": 1168,
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/spring-bottom-proposal.json",
+      "bytes": 850959,
+      "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/references/wing-bottom-proposal.json",
+      "bytes": 640141,
+      "sha256": "29f463c7990d796d0a4c040ee8888cab036ab825e657178adb366c5af8ae6674"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/blender-build.log",
+      "bytes": 1340,
+      "sha256": "a30fde8e256c3790aea55dc8e5ec6c6a28c7518c25f327954a9b058fbf74e0a9"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/blender-complete-body.png",
+      "bytes": 624642,
+      "sha256": "63e78b537d4f8cfd6ff8e12db6dfaf7cab42f52c6ac3729d1bb80ccad1451884"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/blender-pocket-cutaway.png",
+      "bytes": 533462,
+      "sha256": "68d1e8fb7b51bef6896e9f37f52dbd32f4351540d649d1d935f3bab26dfab2ce"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/blender-reopen.log",
+      "bytes": 295,
+      "sha256": "380c21e276bb2882cf53d7b26ed6fa926e3705411921ef76f8d8f294f0927c85"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/blender-running-cutaway.png",
+      "bytes": 532967,
+      "sha256": "b1343864d52acefc614279e14a9c53a6af118b5025b56e52b91c9748ee715f6a"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/blender-verification.json",
+      "bytes": 14029,
+      "sha256": "4c6099deba7404ff0fcbc7d16b49ce6b9c4f6c640a8d16f67f280847a7e5bbc2"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-complete-body.png",
+      "bytes": 47077,
+      "sha256": "cc2d5d745afe46373ff998faa139ac49cb21e0b047e12246deb7b726614c0f04"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-ghost-model.png",
+      "bytes": 45783,
+      "sha256": "4d040c281b0a51e31e64a17597187a7b76f016f057866fcefd117acc1177d45b"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-ghost-section.png",
+      "bytes": 46698,
+      "sha256": "dfbe297497a45c8332ba6587da2c6a8e24e9c87d4ca96a1d4fd59d0039164701"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-ground-model.png",
+      "bytes": 44349,
+      "sha256": "23716175ef2fb10b1f77f02153dfc31521a876510989257be85f0510ba419e34"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-ground-section.png",
+      "bytes": 46698,
+      "sha256": "dfbe297497a45c8332ba6587da2c6a8e24e9c87d4ca96a1d4fd59d0039164701"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-old-model.png",
+      "bytes": 41207,
+      "sha256": "c70451f0111ee62636c215465bea4b9f43f3ba3691cfef93992f4daa87974160"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-old-section.png",
+      "bytes": 40558,
+      "sha256": "19b7d99f05e73792b47e14c4b8e7a31072fede065b7e4d5f1995c3e21a111e4b"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-roll-model.png",
+      "bytes": 43576,
+      "sha256": "6bf765a962896b10016bb4d51175b765214cfc76bd172e25d1782e526a18abc4"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-roll-section.png",
+      "bytes": 47070,
+      "sha256": "cabcf1d1a18a60d5fae883faef6ab708b77707390e0399f5ee20f0e2dba583d3"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-root-model.png",
+      "bytes": 38948,
+      "sha256": "34e603a6baf66e3cc51d46cec22c5a1910db947127cc33ce02af444568e9fc1e"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-root-section.png",
+      "bytes": 46911,
+      "sha256": "4928a33502069db4ff25accf489eab95af7e608e4e324828367b4e29034a2a9f"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-running-model.png",
+      "bytes": 44259,
+      "sha256": "158cf05004deba9aaa76fb40db2fbc1dfe26489446a326f72c197e70d9913a4f"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-running-section.png",
+      "bytes": 46666,
+      "sha256": "18578011224204a64aaaad2607fdd0f840f39d6f064465b18f43fc5158b63a14"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-side-model.png",
+      "bytes": 52906,
+      "sha256": "d6296ffb6cf69f42886348315bcf4558f7feff843fd1759287e4d84f75cc0a03"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-side-section.png",
+      "bytes": 41485,
+      "sha256": "e205cd9395623cd61272d2753a71a35483f274b027e80b73ea95f398442b2e35"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-standalone-model.png",
+      "bytes": 20574,
+      "sha256": "9f79c84e48f8ed047ca3ae0d749cfa1c2c972d1713de67d86da4b24472d905a0"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-standalone-section.png",
+      "bytes": 46698,
+      "sha256": "dfbe297497a45c8332ba6587da2c6a8e24e9c87d4ca96a1d4fd59d0039164701"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-top-model.png",
+      "bytes": 45976,
+      "sha256": "302c6b0289828c017428f22791c727a5fd72f5bc66b282e41379fae6e7a1f912"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-top-section.png",
+      "bytes": 40847,
+      "sha256": "29ba7070dab781400fb7f1a85839cb437f573762c99d132c67d813b0fd3d05ea"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-underside-model.png",
+      "bytes": 61398,
+      "sha256": "bd78e031ec99d0578c27098b66c39c51516bc80aee89de217c8c5d541a99ea99"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-underside-section.png",
+      "bytes": 46698,
+      "sha256": "dfbe297497a45c8332ba6587da2c6a8e24e9c87d4ca96a1d4fd59d0039164701"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-unpowered-model.png",
+      "bytes": 44349,
+      "sha256": "23716175ef2fb10b1f77f02153dfc31521a876510989257be85f0510ba419e34"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-unpowered-section.png",
+      "bytes": 46698,
+      "sha256": "dfbe297497a45c8332ba6587da2c6a8e24e9c87d4ca96a1d4fd59d0039164701"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/browser-verification.json",
+      "bytes": 9882,
+      "sha256": "24972230f6823609f0fe5fdd7a664decd34acf79202d94fdb45d5afde01a451d"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/geometry-verification.json",
+      "bytes": 623,
+      "sha256": "7e63df9a1b7d30de71644cf77fc84bf662d925c8728a675164d445dcb0c66e37"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/review/visual-review.json",
+      "bytes": 851,
+      "sha256": "81eb9d6c12e592156f0335491338cc7f61e3d17c4fef87e769c39c963dfc3bd4"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/app.js",
+      "bytes": 3304,
+      "sha256": "0fe70e45d7d3d170d93284c44fe5e3e6c9bbeaf5395efc2205728498b2b4617e"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/build-proposal.py",
+      "bytes": 6541,
+      "sha256": "3d742a1c20c8ee0bc1327370f6f39dae599415ccfe51e8a2c2565e9e25c70398"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/chassis-fan-pocket-proposal.bbmodel",
+      "bytes": 253252,
+      "sha256": "7f5eb1c7cff5b9e0b32449cd0eecef76e9359ab08f47a65dba3d0a065d3a32d1"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/check-delivery.py",
+      "bytes": 4070,
+      "sha256": "b6411b11534d6abc8ecc750080f111863d219645c47bb2018bc3de1d920cdff9"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/create-blender.py",
+      "bytes": 4920,
+      "sha256": "cf620eb5ac54b9344589c7dec30be0074c3843eaa7204e711ac016b98dcf7bbe"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/fan-bottom-structure-v02.blend",
+      "bytes": 145341,
+      "sha256": "ebbb253cb59c782ff8337da8b4c221e0eaf29779aa8a7a19c6366793c291bd9c"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/fan-bottom-v02.bbmodel",
+      "bytes": 108931,
+      "sha256": "40c81fe210f0c411bef85784206a773ead788025b72bfeb99a9bc076ad10f50b"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/proposal-preview.js",
+      "bytes": 9784,
+      "sha256": "67eb9568a37acd237d5e3546a959d2f3294b7dcf374d1077addd60e58425fa2e"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/structure-geometry.json",
+      "bytes": 627506,
+      "sha256": "a5144da3707be35b38968a606af2466b67e575ce3bd538bdbd2e2e8053132d11"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/verify-blender.py",
+      "bytes": 3373,
+      "sha256": "1e41be3389a4d9a6a1259291a896da900ed01558a8b28588c3ced9806137f581"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/verify-browser.mjs",
+      "bytes": 3094,
+      "sha256": "f776225939ab7ecdf717d6974bca6816da63cb03566c3d3d0137eca0049fe9ed"
+    },
+    {
+      "file": "art/production-v2/F05-03/v02/source/verify-geometry.mjs",
+      "bytes": 3474,
+      "sha256": "50c418f13cb166b8e1453417f7041102c79b27561fd0973357dc2439a6b8c437"
+    }
+  ]
+}

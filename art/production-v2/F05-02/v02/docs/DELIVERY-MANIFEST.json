@@ -1,0 +1,372 @@
+{
+  "asset": "F05-02",
+  "version": "v02-bottom-structure-proposal",
+  "status": "adopted-structure-art-not-game-integrated",
+  "adopted": true,
+  "gameIntegrated": false,
+  "productionReady": false,
+  "previewURL": "http://127.0.0.1:8889/preview.html",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2405,
+      "sha256": "4e665a9403b71451442c3afdb910500c32a388a3586097d34b06245fad13e64e"
+    },
+    {
+      "path": "docs/APPROVAL.json",
+      "bytes": 882,
+      "sha256": "508dc98d85b1ed05f281b6c7078107a9659a69113c5c97bd55db5c7133960938"
+    },
+    {
+      "path": "docs/BASELINE.json",
+      "bytes": 411142,
+      "sha256": "20f2742c822a57aa50b41356cfc6a7c51c88f610c07dbfd759dfb12a7d0c4084"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "bytes": 1863,
+      "sha256": "b8204addf0d439f0ed15aa6d221d811d86d3c195522ac83b0122038882cc24f9"
+    },
+    {
+      "path": "docs/STRUCTURE-PROPOSAL.md",
+      "bytes": 4282,
+      "sha256": "8a6c09a41c04b1590a2bc8daa020100b9e73e7ed344b3f14a12e1ca2fb89e5b9"
+    },
+    {
+      "path": "exports/chassis-wing-pocket-proposal.json",
+      "bytes": 213170,
+      "sha256": "96468aa0a1ab7c0c90dc5b58326758428938ee423c00251d4781cdcaddbcebc1"
+    },
+    {
+      "path": "exports/wing-atlas-128x64.png",
+      "bytes": 8217,
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "exports/wing-bottom-proposal.json",
+      "bytes": 640141,
+      "sha256": "29f463c7990d796d0a4c040ee8888cab036ab825e657178adb366c5af8ae6674"
+    },
+    {
+      "path": "exports/wing-item-16.png",
+      "bytes": 409,
+      "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8"
+    },
+    {
+      "path": "exports/wing-item-32.png",
+      "bytes": 753,
+      "sha256": "2769f0a5cdad1faf99931e55307adddccdd6bf575f79201c967ac1d787a6e4b2"
+    },
+    {
+      "path": "preview.html",
+      "bytes": 10041,
+      "sha256": "465b95ec0dd4e9c27689dbdda016bb6b6639d74360c77c5121f986bf936100ac"
+    },
+    {
+      "path": "references/ADOPTED-ASSETS.json",
+      "bytes": 54860,
+      "sha256": "9a8879d36b498fff4d03dde44360b26bd20353c8320fe93c18c75e91f49f9513"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 19532,
+      "sha256": "b1b3fe63142beed15af3dcf9331d1f58731813441b34b0a5792748766ca64611"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 5642,
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "path": "references/WindRules.java",
+      "bytes": 1657,
+      "sha256": "7731f9b9943abca58ce525a0f2f02056f8ae96135b7504fbca3521d6bc44eefb"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/buoyancy-bottom-proposal.json",
+      "bytes": 558549,
+      "sha256": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e"
+    },
+    {
+      "path": "references/spring-bottom-proposal.json",
+      "bytes": 850959,
+      "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b"
+    },
+    {
+      "path": "references/wing-atlas-128x64.aseprite",
+      "bytes": 4505,
+      "sha256": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f"
+    },
+    {
+      "path": "references/wing-atlas-128x64.png",
+      "bytes": 8217,
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "references/wing-geometry.json",
+      "bytes": 101772,
+      "sha256": "4bc2d14cd09a3a5f658a9bf18c495c6c7f5f8140ed895475fd0ef4cc144d7ef2"
+    },
+    {
+      "path": "references/wing-item-16.aseprite",
+      "bytes": 729,
+      "sha256": "5ffa0bc8f60c36f1f6e39050f3e8a48ac8690346b3ff58848bf8bc0f09b9db0b"
+    },
+    {
+      "path": "references/wing-item-16.png",
+      "bytes": 409,
+      "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8"
+    },
+    {
+      "path": "references/wing-item-32.aseprite",
+      "bytes": 964,
+      "sha256": "6b6ca54024fae6e57cd1692cc6e07ffb29ae76e5899b3e9d19299f1ec7d1eb81"
+    },
+    {
+      "path": "references/wing-item-32.png",
+      "bytes": 753,
+      "sha256": "2769f0a5cdad1faf99931e55307adddccdd6bf575f79201c967ac1d787a6e4b2"
+    },
+    {
+      "path": "references/wing-mount-and-state.json",
+      "bytes": 2488,
+      "sha256": "e293123439f107569829cc5f027876aa0cee714ce97d6d6a76c13637ee8bbf6d"
+    },
+    {
+      "path": "review/adoption-verification.json",
+      "bytes": 1122,
+      "sha256": "c684984959558d2a4fe5d452e7d7da7d2f36e110bac2392d36d1efd485c9e5b7"
+    },
+    {
+      "path": "review/blender-build.log",
+      "bytes": 1177,
+      "sha256": "bdd8722bda33bde90e2f6f21100b3e432988f01853acfbbdbd04fff1fa2b4325"
+    },
+    {
+      "path": "review/blender-complete-body.png",
+      "bytes": 645962,
+      "sha256": "539bf5c7c0a6e56b33446f4356f0a7ba61727d9b2abc2b6989947b55820ea6ab"
+    },
+    {
+      "path": "review/blender-pocket-cutaway.png",
+      "bytes": 617034,
+      "sha256": "b8b80c2431484fe9b58fdafeffd75d0d6411e92eb6c2ced2626ef40ede2de210"
+    },
+    {
+      "path": "review/blender-reopen.log",
+      "bytes": 1115,
+      "sha256": "6a3650f669ddd5db492df69b65cbbd62c058febd5b58e6a52053e591dd04d9ff"
+    },
+    {
+      "path": "review/blender-verification.json",
+      "bytes": 1013,
+      "sha256": "25ddb2f17775dbc3724eb15231675d94295133017ec2832377909fa217e7608c"
+    },
+    {
+      "path": "review/browser-complete-body.png",
+      "bytes": 47003,
+      "sha256": "cc3a257bb2a4727141d75fe1692a041ff41872230763e9544b7206a60628809b"
+    },
+    {
+      "path": "review/browser-ghost-model.png",
+      "bytes": 52417,
+      "sha256": "1a83d4dc3fd4ef64722c55f6360e97e8746c7c31484ed8fbd952fe1463a8e1e3"
+    },
+    {
+      "path": "review/browser-glide-model.png",
+      "bytes": 84574,
+      "sha256": "ce21eb1a1207debb12b93d7611e15598af6b54366a7a3f7347fc2743ee8581d0"
+    },
+    {
+      "path": "review/browser-glide-section.png",
+      "bytes": 42865,
+      "sha256": "cd78125a2c270b062e15587120f25ebefaea9481b37a4dd59fe7de5cb4057788"
+    },
+    {
+      "path": "review/browser-ground-model.png",
+      "bytes": 84350,
+      "sha256": "c0186329140b1c5be8488b1b190ec48d01eb9bcf66e2c684e9c2de801b69c565"
+    },
+    {
+      "path": "review/browser-ground-section.png",
+      "bytes": 45322,
+      "sha256": "0dff6dbf7582a1be54cbcc9731c5cb403a13aa30561b44de2aa99040eba03d42"
+    },
+    {
+      "path": "review/browser-old-model.png",
+      "bytes": 75453,
+      "sha256": "0475f37928cd624be995f792309cfaec0aed5a1e6d8c7e551a21b1648f30c466"
+    },
+    {
+      "path": "review/browser-old-section.png",
+      "bytes": 41031,
+      "sha256": "347552da2c7cdbc3aaac941fd2f7f37e227a3ac4100a0031710b398804e5414a"
+    },
+    {
+      "path": "review/browser-roll-model.png",
+      "bytes": 77404,
+      "sha256": "4c47c387f0d8a8a1ee482c523e9c856b67d0171332db044e6582f74bd289a8a0"
+    },
+    {
+      "path": "review/browser-roll-section.png",
+      "bytes": 45746,
+      "sha256": "068dd4329b29c2f77579e4a5b0aac8ff0c9dceec0f5d399a192d45598d8733b7"
+    },
+    {
+      "path": "review/browser-root-model.png",
+      "bytes": 69875,
+      "sha256": "91a95357b079daef86ae8a101b2b9d3514b90409dd57fce8b6cefe83479024ba"
+    },
+    {
+      "path": "review/browser-root-section.png",
+      "bytes": 45923,
+      "sha256": "168b5582413a13dc9f7c2b22a050911398b40d978ff60812585cb6256ab6261d"
+    },
+    {
+      "path": "review/browser-side-model.png",
+      "bytes": 88711,
+      "sha256": "ddd2372657c0d27bc00fbeb0b3be6713c88c70849528f74071fbf25a2e2f0650"
+    },
+    {
+      "path": "review/browser-side-section.png",
+      "bytes": 40008,
+      "sha256": "90d0c9f4fead69637e0a065b6e656c065cec5cd3673ec059b7241f648eb606af"
+    },
+    {
+      "path": "review/browser-slow-model.png",
+      "bytes": 84574,
+      "sha256": "ce21eb1a1207debb12b93d7611e15598af6b54366a7a3f7347fc2743ee8581d0"
+    },
+    {
+      "path": "review/browser-slow-section.png",
+      "bytes": 42865,
+      "sha256": "cd78125a2c270b062e15587120f25ebefaea9481b37a4dd59fe7de5cb4057788"
+    },
+    {
+      "path": "review/browser-standalone-model.png",
+      "bytes": 79442,
+      "sha256": "c0d25ad1bdf9fc16f934c4eaf97883edbc961603084df9b66049ab5803f9cf84"
+    },
+    {
+      "path": "review/browser-standalone-section.png",
+      "bytes": 45322,
+      "sha256": "0dff6dbf7582a1be54cbcc9731c5cb403a13aa30561b44de2aa99040eba03d42"
+    },
+    {
+      "path": "review/browser-top-model.png",
+      "bytes": 66366,
+      "sha256": "408db8a3b69ed92c8da5e17df790560558586564200180e22c8febca793067ee"
+    },
+    {
+      "path": "review/browser-top-section.png",
+      "bytes": 38803,
+      "sha256": "4c92f1acfcddffad1dd6c5669e307f7030d3211c6fd461a11d65ea1ec344f8ce"
+    },
+    {
+      "path": "review/browser-underside-model.png",
+      "bytes": 73060,
+      "sha256": "e655896cf0f1c4aaa932539760760ea3e8fa8177e7f1f13528355812e553b0b5"
+    },
+    {
+      "path": "review/browser-underside-section.png",
+      "bytes": 45322,
+      "sha256": "0dff6dbf7582a1be54cbcc9731c5cb403a13aa30561b44de2aa99040eba03d42"
+    },
+    {
+      "path": "review/browser-unpowered-model.png",
+      "bytes": 84574,
+      "sha256": "ce21eb1a1207debb12b93d7611e15598af6b54366a7a3f7347fc2743ee8581d0"
+    },
+    {
+      "path": "review/browser-unpowered-section.png",
+      "bytes": 42865,
+      "sha256": "cd78125a2c270b062e15587120f25ebefaea9481b37a4dd59fe7de5cb4057788"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 13975,
+      "sha256": "fa04edf633dbbe44ba1edd0311af1a1c6fb0fab1378ed65040a919d34646f8f9"
+    },
+    {
+      "path": "review/geometry-verification.json",
+      "bytes": 517,
+      "sha256": "db77d34aace20ab46acf6fda2a5020917a78674bd8f19c424639b2b933a1dbb0"
+    },
+    {
+      "path": "review/visual-review.json",
+      "bytes": 1324,
+      "sha256": "24ea34f4b76adf26d4e790555751d5e3882f738e4a0f03ba7dd9334a36b2997a"
+    },
+    {
+      "path": "source/app.js",
+      "bytes": 3061,
+      "sha256": "0a256c58c2dff2fd467bce533947e56ce15853ef5f63647753455998f88fe7c1"
+    },
+    {
+      "path": "source/build-proposal.py",
+      "bytes": 6725,
+      "sha256": "f859c147ce56c3b864b773952dc656b18167b4bd70521dc9d0b71c41867e87a1"
+    },
+    {
+      "path": "source/chassis-wing-pocket-proposal.bbmodel",
+      "bytes": 262639,
+      "sha256": "e948f41c82acae7cdce5f89922e6d6b399bd63706a574680d155100997576b85"
+    },
+    {
+      "path": "source/check-delivery.py",
+      "bytes": 4091,
+      "sha256": "caf01c6dda7e659af691fa0827541e639b5d1c87b455639df00d90b4807bd196"
+    },
+    {
+      "path": "source/create-blender.py",
+      "bytes": 4532,
+      "sha256": "20f76ae8599a22cddd5c579455ce6d95ac2b9325ebc5fc28072553ceb5cd0c31"
+    },
+    {
+      "path": "source/proposal-preview.js",
+      "bytes": 9812,
+      "sha256": "c9a80b89b485b484753a824a53f841670192b7dc56d9d51494a0a0e232c79383"
+    },
+    {
+      "path": "source/structure-geometry.json",
+      "bytes": 640141,
+      "sha256": "29f463c7990d796d0a4c040ee8888cab036ab825e657178adb366c5af8ae6674"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 3093,
+      "sha256": "1faa18ab2e518763f2dd149662af638567bceaab26cbc82bef99c2404d46001f"
+    },
+    {
+      "path": "source/verify-browser.mjs",
+      "bytes": 3314,
+      "sha256": "43048635043a5dcaa157fcdc72b7cac593f8d98d5a429eb8c9186388df810542"
+    },
+    {
+      "path": "source/verify-geometry.mjs",
+      "bytes": 4316,
+      "sha256": "13bd38471da0703a7245a9ce45e10310403c182a3cfb4f433407664ad04d26e2"
+    },
+    {
+      "path": "source/wing-bottom-structure-v02.blend",
+      "bytes": 154311,
+      "sha256": "a9a8504c73150ad449adc6c88f8ef44bb12e73b152468d0ba380b378be50627c"
+    },
+    {
+      "path": "source/wing-bottom-v02.bbmodel",
+      "bytes": 125131,
+      "sha256": "cef1b327ebc5da0899b11ed41601a7866324b909a55be0eb892754831ede77a1"
+    }
+  ],
+  "checkedAt": "2026-10-11T03:53:45.079349+00:00"
+}

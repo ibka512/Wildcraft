@@ -1,0 +1,1736 @@
+{
+  "ok": true,
+  "operation": "exportFramePng",
+  "protocolVersion": "2.2",
+  "requestId": "c44f554a-bd2b-48f9-af04-e1fffbcd4f42",
+  "result": {
+    "afterRevisionToken": "rev1:b03c4c14f10731ff",
+    "beforeRevisionToken": "rev1:b03c4c14f10731ff",
+    "bytes": 1108,
+    "documentId": 136,
+    "frame": 0,
+    "path": "/home/web_user/aseprite-web/files/.codex-preview-fe2e0bb50cef43b58b2959a345d284b4.png"
+  },
+  "schemaVersion": 1,
+  "state": {
+    "active": {
+      "backgroundColor": "rgb{0,0,0,255}",
+      "celId": 149,
+      "documentId": 136,
+      "focus": 1,
+      "foregroundColor": "rgb{255,255,255,255}",
+      "frame": 0,
+      "layerId": 148,
+      "selectedFrames": [],
+      "selectedLayerIds": [],
+      "tool": "pencil"
+    },
+    "documents": [
+      {
+        "active": true,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 136,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 140,
+                "frame": 0,
+                "id": 138,
+                "imageId": 141,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 137,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:137",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 146,
+                "frame": 0,
+                "id": 145,
+                "imageId": 147,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 144,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:144",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 150,
+                "frame": 0,
+                "id": 149,
+                "imageId": 151,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 148,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:148",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "wind-weather-atlas.aseprite",
+        "objectVersion": 1,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:b03c4c14f10731ff",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": true,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "Codex Pixel Runs",
+          "redoSteps": 0,
+          "undoSteps": 6
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/1791646891601_wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 121,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 125,
+                "frame": 0,
+                "id": 123,
+                "imageId": 126,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 122,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:122",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 129,
+                "frame": 0,
+                "id": 128,
+                "imageId": 130,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 127,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:127",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 133,
+                "frame": 0,
+                "id": 132,
+                "imageId": 134,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 131,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:131",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "1791646891601_wind-weather-atlas.aseprite",
+        "objectVersion": 0,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:f914309fe09c0d7d",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": false,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "",
+          "redoSteps": 0,
+          "undoSteps": 0
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/1791646818983_wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 106,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 110,
+                "frame": 0,
+                "id": 108,
+                "imageId": 111,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 107,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:107",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 114,
+                "frame": 0,
+                "id": 113,
+                "imageId": 115,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 112,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:112",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 118,
+                "frame": 0,
+                "id": 117,
+                "imageId": 119,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 116,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:116",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "1791646818983_wind-weather-atlas.aseprite",
+        "objectVersion": 0,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:b317043b37c9a45c",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": false,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "",
+          "redoSteps": 0,
+          "undoSteps": 0
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/1791646818432_wind-weather-atlas.png",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 99,
+        "layerCount": 1,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 103,
+                "frame": 0,
+                "id": 101,
+                "imageId": 104,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 100,
+            "movable": true,
+            "name": "Layer",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:100",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "1791646818432_wind-weather-atlas.png",
+        "objectVersion": 0,
+        "palette": {
+          "colors": [
+            "#00000000",
+            "#243432ff",
+            "#63877fff",
+            "#47788fff",
+            "#9cbbb0ff",
+            "#80b7ccff",
+            "#e1e9d1ff",
+            "#d5e8eaff"
+          ],
+          "size": 8
+        },
+        "revisionToken": "rev1:753d5a88269056f7",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": false,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "",
+          "redoSteps": 0,
+          "undoSteps": 0
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/1791646817924_wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 84,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 88,
+                "frame": 0,
+                "id": 86,
+                "imageId": 89,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 85,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:85",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 92,
+                "frame": 0,
+                "id": 91,
+                "imageId": 93,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 90,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:90",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 96,
+                "frame": 0,
+                "id": 95,
+                "imageId": 97,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 94,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:94",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "1791646817924_wind-weather-atlas.aseprite",
+        "objectVersion": 0,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:589e45c7a6781696",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": false,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "",
+          "redoSteps": 0,
+          "undoSteps": 0
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 68,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 72,
+                "frame": 0,
+                "id": 70,
+                "imageId": 73,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 69,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:69",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 78,
+                "frame": 0,
+                "id": 77,
+                "imageId": 79,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 76,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:76",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 82,
+                "frame": 0,
+                "id": 81,
+                "imageId": 83,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 80,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:80",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "wind-weather-atlas.aseprite",
+        "objectVersion": 1,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:bd7e26935dc5db6b",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": true,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "Codex Pixel Runs",
+          "redoSteps": 0,
+          "undoSteps": 6
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/1791646748467_wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 53,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 57,
+                "frame": 0,
+                "id": 55,
+                "imageId": 58,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 54,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:54",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 61,
+                "frame": 0,
+                "id": 60,
+                "imageId": 62,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 59,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:59",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 65,
+                "frame": 0,
+                "id": 64,
+                "imageId": 66,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 63,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:63",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "1791646748467_wind-weather-atlas.aseprite",
+        "objectVersion": 0,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:aec6eaef288f6101",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": false,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "",
+          "redoSteps": 0,
+          "undoSteps": 0
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 37,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 41,
+                "frame": 0,
+                "id": 39,
+                "imageId": 42,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 38,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:38",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 47,
+                "frame": 0,
+                "id": 46,
+                "imageId": 48,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 45,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:45",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 51,
+                "frame": 0,
+                "id": 50,
+                "imageId": 52,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 49,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:49",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "wind-weather-atlas.aseprite",
+        "objectVersion": 1,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:38e903bb6a0f2800",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": true,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "Codex Pixel Runs",
+          "redoSteps": 0,
+          "undoSteps": 6
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/1791646691896_wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 22,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 26,
+                "frame": 0,
+                "id": 24,
+                "imageId": 27,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 23,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:23",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 30,
+                "frame": 0,
+                "id": 29,
+                "imageId": 31,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 28,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:28",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 34,
+                "frame": 0,
+                "id": 33,
+                "imageId": 35,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 32,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:32",
+            "type": "image",
+            "version": 0,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "1791646691896_wind-weather-atlas.aseprite",
+        "objectVersion": 0,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:4f691fe5db031780",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": false,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "",
+          "redoSteps": 0,
+          "undoSteps": 0
+        },
+        "width": 64
+      },
+      {
+        "active": false,
+        "activeFrame": 0,
+        "colorMode": "rgb",
+        "filename": "/home/web_user/aseprite-web/files/wind-weather-atlas.aseprite",
+        "frameCount": 1,
+        "frames": [
+          {
+            "durationMs": 100,
+            "index": 0
+          }
+        ],
+        "height": 64,
+        "id": 6,
+        "layerCount": 3,
+        "layers": [
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 10,
+                "frame": 0,
+                "id": 8,
+                "imageId": 11,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 7,
+            "movable": true,
+            "name": "01 · 轮廓",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:7",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 16,
+                "frame": 0,
+                "id": 15,
+                "imageId": 17,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 14,
+            "movable": true,
+            "name": "02 · 主色与暗部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:14",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          },
+          {
+            "background": false,
+            "blendMode": 0,
+            "cels": [
+              {
+                "bounds": {
+                  "h": 64,
+                  "w": 64,
+                  "x": 0,
+                  "y": 0
+                },
+                "dataId": 20,
+                "frame": 0,
+                "id": 19,
+                "imageId": 21,
+                "links": 0,
+                "opacity": 255,
+                "zIndex": 0
+              }
+            ],
+            "children": [],
+            "collapsed": false,
+            "editable": true,
+            "id": 18,
+            "movable": true,
+            "name": "03 · 亮部",
+            "opacity": 255,
+            "reference": false,
+            "stableId": "layer:18",
+            "type": "image",
+            "version": 1,
+            "visible": true
+          }
+        ],
+        "modified": false,
+        "name": "wind-weather-atlas.aseprite",
+        "objectVersion": 1,
+        "palette": {
+          "colors": [
+            "#000000ff",
+            "#222034ff",
+            "#45283cff",
+            "#663931ff",
+            "#8f563bff",
+            "#df7126ff",
+            "#d9a066ff",
+            "#eec39aff",
+            "#fbf236ff",
+            "#99e550ff",
+            "#6abe30ff",
+            "#37946eff",
+            "#4b692fff",
+            "#524b24ff",
+            "#323c39ff",
+            "#3f3f74ff",
+            "#306082ff",
+            "#5b6ee1ff",
+            "#639bffff",
+            "#5fcde4ff",
+            "#cbdbfcff",
+            "#ffffffff",
+            "#9badb7ff",
+            "#847e87ff",
+            "#696a6aff",
+            "#595652ff",
+            "#76428aff",
+            "#ac3232ff",
+            "#d95763ff",
+            "#d77bbaff",
+            "#8f974aff",
+            "#8a6f30ff"
+          ],
+          "size": 32
+        },
+        "revisionToken": "rev1:b45de4df03862edd",
+        "selection": {
+          "bounds": {
+            "h": 0,
+            "w": 0,
+            "x": 0,
+            "y": 0
+          },
+          "visible": false
+        },
+        "slices": [],
+        "tags": [],
+        "undo": {
+          "canRedo": false,
+          "canUndo": true,
+          "nextRedoLabel": "",
+          "nextUndoLabel": "Codex Pixel Runs",
+          "redoSteps": 0,
+          "undoSteps": 6
+        },
+        "width": 64
+      }
+    ],
+    "protocolVersion": "2.2",
+    "readOnly": true,
+    "ready": true,
+    "schemaVersion": 1,
+    "ui": {
+      "modal": false,
+      "topWindowId": "",
+      "topWindowTitle": "",
+      "visibleWindowCount": 2
+    }
+  },
+  "localFile": {
+    "path": "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F07/v01/review/latest-atlas.png",
+    "size": 1108,
+    "managedPath": "/home/web_user/aseprite-web/files/.codex-preview-fe2e0bb50cef43b58b2959a345d284b4.png"
+  }
+}

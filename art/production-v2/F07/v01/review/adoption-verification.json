@@ -1,0 +1,24 @@
+{
+  "allPassed": true,
+  "coreAssetHashesUnchanged": true,
+  "files": {
+    "source/wind-weather-atlas.aseprite": "8c873296c57f7a08b00b2a343f4846fe2d6ab0337379fdc5e33da7267f54f82d",
+    "exports/sheltered.png": "baccd7373ab2ff2217939ce1fb9e20679a6cd52c50521a5c383229d20342bd6c",
+    "exports/strength_light.png": "c9428dc356c59ff4004c6f77292f6374121e74ff581b1ee80601cf945805dca0",
+    "exports/strength_moderate.png": "2690b0aa6c1f826f60a3a5f3c83de80d53cbdcc59e2fe6608557d4e9304be0b3",
+    "exports/strength_strong.png": "88a9e8f63e586d2f24f1d6013cb5fb4f9674b16a45be979a6cfeb2217f93f056",
+    "exports/wet.png": "b164c94e4e7989282a394ccc38f4a0004267f31b9503218d19adba552bf2b3d8",
+    "exports/wind-weather-atlas.png": "186697d473fa7f4fcafab2dbb580933877962bb7cfc4c7d47d2472430b00f0ff",
+    "exports/wind_back_left.png": "3914f619f4df154320568ac3505e960ee7b285276c776278f0cba04a9baadba7",
+    "exports/wind_back_right.png": "c4ddbcb8525957218366138badb37f253e936b0799668da7a8857abc42ec2f3e",
+    "exports/wind_backward.png": "c8fdcd66faa183dcfd8b23976440692185e2c8963932e71aa93f0e193ef50573",
+    "exports/wind_forward.png": "9d0f84578f5bb53d51c2ef0b1a0dd461ec78f36dd9e3743d82efc01182d815bd",
+    "exports/wind_front_left.png": "49d6da48ee7de877d9a03ca67a202243842b2cb52e805bbc4042390957012737",
+    "exports/wind_front_right.png": "50c190fe5952aee0573cbb0c401fc6cf9693614d2b044a70d73536686bee8b68",
+    "exports/wind_left.png": "0d3117e0f3903398e9138121c3c8729d319b276f8e8ad563ba4d6227732c933e",
+    "exports/wind_right.png": "97d97f7d4887e784716cf1184bbf00f2bc734453387b2a3107063435ceab6f8c",
+    "exports/atlas-map.json": "a321c4cfedb1cce9d13e90428ba15520e116b734c1d0ccb668f52d4479662c36"
+  },
+  "adopted": true,
+  "gameIntegrated": false
+}

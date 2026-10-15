@@ -1,27 +1,25 @@
 {
   "schema_version": 1,
-  "date": "2026-10-06",
-  "game_version": "0.1.0-dev.18",
-  "game_tag": "v0.1.0-dev.18+mc26.3",
-  "game_commit": "d3a0033d1421871466ce6ccdefa70938272a994a",
-  "handoff_tag": "handoff-dev18-2026-10-06",
+  "date": "2026-10-15",
+  "game_version": "0.1.0-dev.62-public",
+  "game_tag": "handoff-dev62-public-2026-10-15",
+  "game_commit": null,
+  "handoff_tag": "handoff-dev62-public-2026-10-15",
   "counts": {
     "core_asset_ids": 14,
     "second_batch_asset_ids": 29,
     "second_batch_delivery_versions": 30,
-    "current_asset_ids": 43
+    "current_asset_ids": 45,
+    "wind_asset_ids": 2
   },
   "original_records_policy": "Original manifests/adoption files describe delivery-time state and remain byte-identical. This registry records current integration, not complete manual QA. Runtime hashes describe this handoff snapshot; update deliberately after later source edits.",
   "pending": [
     {
-      "id": "F07-01/F07-02",
-      "status": "not_produced_or_adopted",
-      "contract": "art/production-docs/B6-WIND-ART-BRIEF.md"
-    },
-    {
       "id": "mechanical_bottom_revision",
-      "status": "not_delivered_or_adopted",
-      "contract": "art/production-docs/P10.2-MECHANICAL-ART-REPAIR.md"
+      "status": "four_bottom_variants_integrated",
+      "contract": "art/production-docs/P10.2-MECHANICAL-ART-REPAIR.md",
+      "remaining": "电池、火箭、轮子、稳定器底部新稿待采用；四类复杂地形与人工长期验证仍待后续",
+      "integrationRecord": "docs/BOTTOM-ART-RUNTIME-VERIFICATION.md"
     }
   ],
   "assets": [
@@ -33,7 +31,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A01-精力HUD-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -56,7 +54,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A03-A04-展开滑翔伞-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -67,7 +65,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/render/ParagliderLayer.java",
-          "sha256": "9f08ab6bb02547e3c44284eb84a47b8db033e620256a44045a9e5752ee81a219"
+          "sha256": "2370495bc49f9966ebb0dfb312ee46cf59c3eed2775fc472d4c7289b4dbf058d"
         },
         {
           "path": "src/client/java/dev/wildcraft/client/render/ParagliderMesh.java",
@@ -83,7 +81,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A03-A04-展开滑翔伞-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -106,7 +104,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -129,7 +127,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A05-A06-滑翔伞图标与装备槽-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -152,7 +150,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A07-滑翔握持与姿态-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -167,7 +165,7 @@
         },
         {
           "path": "src/client/java/dev/wildcraft/client/render/GliderHands.java",
-          "sha256": "5d517ae0367408dcc2e5c27352070002f24dedae2b6b94f6c3c8b2f5b2bb3624"
+          "sha256": "cfcd530e46a13b884a19c6828d35b4f0884c431991558210582e5f866cf35582"
         }
       ]
     },
@@ -179,7 +177,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A08-攀爬动作-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -202,7 +200,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A09-背负装备挂点-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -213,7 +211,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
-          "sha256": "0161c985ebc6b2f73ccfdd246aca8ef75b1aef81aeb9638da81555c931784020"
+          "sha256": "cf0eb8358d3d97fb1b207ca6694749c37311f2fa219fd0f349a9beeba154ecbe"
         }
       ]
     },
@@ -225,7 +223,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A10-背负装备收取过渡-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -236,7 +234,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/render/BackTransitions.java",
-          "sha256": "42f60ba4132cea9a7f16e61b210df12538a66be327e0a41d1d07680f9bf273e8"
+          "sha256": "e57e6577e524e341f6487790e2308d6a9b145920b7101802f91c282a2ae46db9"
         }
       ]
     },
@@ -248,7 +246,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A11-林克时间画面-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -259,7 +257,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
-          "sha256": "205dadadde1130d5be1018ab321dfb7291ead24ca5b751950ead985ac61252dd"
+          "sha256": "406d2032d58957568824bcb8f6bfdd0c5e81dda75d2b2aa607285780ae4c2807"
         }
       ]
     },
@@ -271,7 +269,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A12-专注准星与低精力提示-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -282,7 +280,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
-          "sha256": "205dadadde1130d5be1018ab321dfb7291ead24ca5b751950ead985ac61252dd"
+          "sha256": "406d2032d58957568824bcb8f6bfdd0c5e81dda75d2b2aa607285780ae4c2807"
         }
       ]
     },
@@ -294,7 +292,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A13-专注进入退出音效-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -321,7 +319,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/brand-v2/A14/v02",
       "source_manifest": "art/brand-v2/A14/v02/manifest.json",
       "source_manifest_sha256": "bb0fb1445423649dd406aa1bc6a0b3c7385188d222416df3c67ae5521e5967c1",
@@ -340,7 +338,7 @@
         },
         {
           "path": "src/client/java/dev/wildcraft/client/focus/FocusSettingsScreen.java",
-          "sha256": "8cf6e39ac3a7bb657805c296765cebbf31df2cc43e0424a8a878445f98042293"
+          "sha256": "8979c1b96860ea5e1cdb7212b62249f4f696184e993d3627839d6fbe139d6263"
         }
       ]
     },
@@ -352,7 +350,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.7",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/approved-v1/A15-表现设置页-v1",
       "source_manifest": "art/approved-v1/SOURCE-MANIFEST.json",
       "source_manifest_sha256": "147f407a49c2e91216d2e21be968827ddedd98de830c117d75d48792620583bb",
@@ -363,7 +361,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/focus/FocusSettingsScreen.java",
-          "sha256": "8cf6e39ac3a7bb657805c296765cebbf31df2cc43e0424a8a878445f98042293"
+          "sha256": "8979c1b96860ea5e1cdb7212b62249f4f696184e993d3627839d6fbe139d6263"
         }
       ]
     },
@@ -375,7 +373,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/A07-A08-C/v01",
       "source_manifest": "art/production-v2/A07-A08-C/v01/manifest.json",
       "source_manifest_sha256": "776eb9a60eb48ed3db61cd97b83febc251ded9f2dcd1682fdd3fefe69cd21672",
@@ -398,7 +396,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/A09-C/v01",
       "source_manifest": "art/production-v2/A09-C/v01/manifest.json",
       "source_manifest_sha256": "7dd691c9f0431034cce656710524f9a81804511b90aa05e7f4c3c3439eb1321a",
@@ -409,7 +407,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/render/BackEquipmentLayer.java",
-          "sha256": "0161c985ebc6b2f73ccfdd246aca8ef75b1aef81aeb9638da81555c931784020"
+          "sha256": "cf0eb8358d3d97fb1b207ca6694749c37311f2fa219fd0f349a9beeba154ecbe"
         }
       ]
     },
@@ -421,7 +419,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/A13-C/v01",
       "source_manifest": "art/production-v2/A13-C/v01/manifest.json",
       "source_manifest_sha256": "334e3528343f63e27a8647e6569ea77bb96755b2b0a53e51992eb4fb8583411a",
@@ -432,7 +430,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/focus/FocusClient.java",
-          "sha256": "205dadadde1130d5be1018ab321dfb7291ead24ca5b751950ead985ac61252dd"
+          "sha256": "406d2032d58957568824bcb8f6bfdd0c5e81dda75d2b2aa607285780ae4c2807"
         }
       ]
     },
@@ -444,7 +442,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F01-01/v01",
       "source_manifest": "art/production-v2/F01-01/v01/manifest.json",
       "source_manifest_sha256": "da13bfbbb93e3f262cc614157429e8cdec6d7dd41859ea81ceaf302a4129a50e",
@@ -475,7 +473,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F01-02/v01",
       "source_manifest": "art/production-v2/F01-02/v01/manifest.json",
       "source_manifest_sha256": "dafef1055c4d990ee55f8391a7d55f27013c4b023afb04789ff126ff7ab4f73a",
@@ -514,7 +512,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F01-03/v01",
       "source_manifest": "art/production-v2/F01-03/v01/manifest.json",
       "source_manifest_sha256": "901ccff1c92981ef8f9743509d14ad91faec74d7db7095fb89db098c874030ec",
@@ -549,7 +547,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F01-04/v01",
       "source_manifest": "art/production-v2/F01-04/v01/manifest.json",
       "source_manifest_sha256": "ad0c608bbd74620ab75909440028f343c31a9613354b79aa575ae36869bf1867",
@@ -576,7 +574,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F02-01/v01",
       "source_manifest": "art/production-v2/F02-01/v01/manifest.json",
       "source_manifest_sha256": "d450f9c520f462eca9e60c4aefb708d7d77b7656c7e1caca59ad215818de73e0",
@@ -603,7 +601,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F03-01/v01",
       "source_manifest": "art/production-v2/F03-01/v01/manifest.json",
       "source_manifest_sha256": "ade1d6ef182ace5818366ed9208984acdabfca385f636a717a17aea7d53b486a",
@@ -618,11 +616,11 @@
         },
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionItemRenderer.java",
-          "sha256": "7c75668971b06b8a3e4c26916f8c5b382b8a2bf9c737b1d1a5de8eea9b2e6df8"
+          "sha256": "5dc27242be4af1e289ca3206d9b185a0940de5adf86726f28462efb42a7b758c"
         },
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
-          "sha256": "007c955bd715e681503f1f902c9ebb8b979e3bd522509752b644698510ebf2ea"
+          "sha256": "15320ecb62316428a5aa1483783cf5470239ea9cb697d7d5357b9af75017f02b"
         }
       ]
     },
@@ -634,7 +632,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F03-02/v01",
       "source_manifest": "art/production-v2/F03-02/v01/manifest.json",
       "source_manifest_sha256": "1983aed3f135f0c4b833ed0f617b03e8acee891978866216078c7f067fd0b4aa",
@@ -645,7 +643,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
-          "sha256": "007c955bd715e681503f1f902c9ebb8b979e3bd522509752b644698510ebf2ea"
+          "sha256": "15320ecb62316428a5aa1483783cf5470239ea9cb697d7d5357b9af75017f02b"
         },
         {
           "path": "src/client/java/dev/wildcraft/mixin/client/FusionSlotMarkMixin.java",
@@ -661,7 +659,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F03-03/v01",
       "source_manifest": "art/production-v2/F03-03/v01/manifest.json",
       "source_manifest_sha256": "96fe15b307884b6d05905f46f782eab2cdb3cc9393b055724070cf67bd809c56",
@@ -672,7 +670,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
-          "sha256": "007c955bd715e681503f1f902c9ebb8b979e3bd522509752b644698510ebf2ea"
+          "sha256": "15320ecb62316428a5aa1483783cf5470239ea9cb697d7d5357b9af75017f02b"
         },
         {
           "path": "src/main/resources/assets/wildcraft/textures/gui/fuse-status.png",
@@ -692,7 +690,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F03-04/v01",
       "source_manifest": "art/production-v2/F03-04/v01/manifest.json",
       "source_manifest_sha256": "f56bee5b9ca6900eb28eb10d6f5f0d8b166e039ed751264b14b296eb8481e2a4",
@@ -715,7 +713,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F04-01/v01",
       "source_manifest": "art/production-v2/F04-01/v01/manifest.json",
       "source_manifest_sha256": "514c6eba88770a6db3b26b9be77a7a31aea9aac565eeea79dd53431ae49728d6",
@@ -754,7 +752,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F04-02/v01",
       "source_manifest": "art/production-v2/F04-02/v01/manifest.json",
       "source_manifest_sha256": "878c136c70c56feb9d85a9dc41ca6fd13a990e8f47a0d2f4c3f30042cb370f1c",
@@ -785,7 +783,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F04-03/v01",
       "source_manifest": "art/production-v2/F04-03/v01/manifest.json",
       "source_manifest_sha256": "1c60c8bb782be3b61acc2b7ad2747cc881652e6361eda733b66512d3cc84bb39",
@@ -816,7 +814,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F04-04/v01",
       "source_manifest": "art/production-v2/F04-04/v01/manifest.json",
       "source_manifest_sha256": "9248dc2d66b7982dcbe3dfa59b2fa1e19b8aa076ddf25e72154442fe08f10e9b",
@@ -843,7 +841,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-01/v01",
       "source_manifest": "art/production-v2/F05-01/v01/manifest.json",
       "source_manifest_sha256": "40feccdd36a911340c489af0ae2db3918463de90f5fe4232b53f6fb45bd8a3a2",
@@ -854,7 +852,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/machine.json",
@@ -874,18 +872,18 @@
       "id": "F05-02",
       "name": "机械翼",
       "batch": "second-v2",
-      "current_version": "v01",
+      "current_version": "v01 + bottom-v02",
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-02/v01",
       "source_manifest": "art/production-v2/F05-02/v01/manifest.json",
       "source_manifest_sha256": "80d9890753ae4446249099f879a3555f677659a6f54563c07c928e5884bbe887",
       "integration_document": "docs/SECOND-ART-INTEGRATION.md",
       "verification_document": "docs/SECOND-ART-VERIFICATION.md",
       "use": "被动机械翼，128×64 布木图集",
-      "notes": "已接入；底部安装可能穿地，见P10.2机械修正合同",
+      "notes": "其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。",
       "runtime_files": [
         {
           "path": "src/main/resources/assets/wildcraft/geometry/wing.json",
@@ -898,6 +896,26 @@
         {
           "path": "src/main/resources/assets/wildcraft/textures/item/wing.png",
           "sha256": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/wing_bottom.json",
+          "sha256": "d65fcbe17bc9f985b33cf2e1a64a8837ba237860c12e2cce5796c7ff23105ea5"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/machine_bottom_wing.json",
+          "sha256": "c69d8a8dcefa99adc9ac24591e23ca145fb9b91fe8f4aca6fe57819a964788ca"
+        }
+      ],
+      "runtime_variants": [
+        {
+          "version": "bottom-v02",
+          "source_directory": "art/production-v2/F05-02/v02",
+          "source_manifest": "art/production-v2/F05-02/v02/docs/DELIVERY-MANIFEST.json",
+          "source_manifest_sha256": "18fb7523e82fb393a2316f7ede6f0801cc2f152118f30725c95e70872fa92ad8",
+          "approval": "art/production-v2/F05-02/v02/docs/APPROVAL.json",
+          "integration_document": "docs/BOTTOM-ART-RUNTIME-SPEC.md",
+          "verification_document": "docs/BOTTOM-ART-RUNTIME-VERIFICATION.md",
+          "scope": "node 1 only; matching body pocket and ghost; legacy geometry retained"
         }
       ]
     },
@@ -905,18 +923,18 @@
       "id": "F05-03",
       "name": "风扇",
       "batch": "second-v2",
-      "current_version": "v01",
+      "current_version": "v01 + bottom-v02",
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-03/v01",
       "source_manifest": "art/production-v2/F05-03/v01/manifest.json",
       "source_manifest_sha256": "6a50b911fb57d9b6e7a671ffa4a48940ee781cd7c9f58cabad5c68a3a061370a",
       "integration_document": "docs/SECOND-ART-INTEGRATION.md",
       "verification_document": "docs/SECOND-ART-VERIFICATION.md",
       "use": "风扇护框、轮毂和真实工作转动",
-      "notes": "",
+      "notes": "其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。",
       "runtime_files": [
         {
           "path": "src/main/resources/assets/wildcraft/geometry/fan.json",
@@ -925,6 +943,28 @@
         {
           "path": "src/main/resources/assets/wildcraft/textures/item/fan.png",
           "sha256": "bdcb2aa8319d550b2133205b4b3ad13f1e2c6ab3c7bc7642ce4b00e05b524ad2"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/fan_bottom.json",
+          "sha256": "ace433154f23766c92c4fe272981a6757578e3f9f2ffaecf69cc915f66f6b7de"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/machine_bottom_fan.json",
+          "sha256": "c60dd883db363e53b59b159a726a7ffc50b692fa9ac5c1d9a432adb43857fa96"
+        }
+      ],
+      "runtime_variants": [
+        {
+          "version": "bottom-v02",
+          "source_directory": "art/production-v2/F05-03/v02",
+          "source_manifest": "art/production-v2/F05-03/v02-INTEGRATION-SOURCE-MANIFEST.json",
+          "source_manifest_sha256": "e634b3009021435aff27d770192d9b6fafc92cb607075af49a6f3ce2a4ea181e",
+          "approval": "art/production-v2/F05-03/v02/docs/APPROVAL.json",
+          "integration_document": "docs/BOTTOM-ART-RUNTIME-SPEC.md",
+          "verification_document": "docs/BOTTOM-ART-RUNTIME-VERIFICATION.md",
+          "scope": "node 1 only; matching body pocket and ghost; legacy geometry retained",
+          "delivery_manifest": "art/production-v2/F05-03/v02/docs/DELIVERY-MANIFEST.json",
+          "notes": "Four adoption-document hashes advanced after delivery; geometry and other source hashes remain unchanged; preserve both records"
         }
       ]
     },
@@ -936,7 +976,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-04/v01",
       "source_manifest": "art/production-v2/F05-04/v01/manifest.json",
       "source_manifest_sha256": "509dd6d983fc7fd48dd99edeb669a822b0eda51eb4cc0cd6e12d7a03cc764030",
@@ -975,7 +1015,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-05/v01",
       "source_manifest": "art/production-v2/F05-05/v01/manifest.json",
       "source_manifest_sha256": "70bcda437b6d1575c322016cd848a7f3641f154c313e4bc4e5fbe64ed2922576",
@@ -986,7 +1026,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/battery.json",
@@ -998,18 +1038,18 @@
       "id": "F05-06",
       "name": "弹簧",
       "batch": "second-v2",
-      "current_version": "v01",
+      "current_version": "v01 + bottom-v02",
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-06/v01",
       "source_manifest": "art/production-v2/F05-06/v01/manifest.json",
       "source_manifest_sha256": "f97f02ee9196c40c6a61e4584ba2594321ac30ae3754de14759389f783ac42ea",
       "integration_document": "docs/SECOND-ART-INTEGRATION.md",
       "verification_document": "docs/SECOND-ART-VERIFICATION.md",
       "use": "弹簧压缩/伸展，由现有冷却状态驱动",
-      "notes": "dev.17修复弹簧与原版指南针配方冲突；底部穿地另行修订",
+      "notes": "其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。",
       "runtime_files": [
         {
           "path": "src/main/resources/assets/wildcraft/geometry/spring.json",
@@ -1018,6 +1058,26 @@
         {
           "path": "src/main/resources/assets/wildcraft/textures/item/spring.png",
           "sha256": "8718db8c3fb21c2ca4da5a91e88199dc93adceeafbcdb4a853d74905eec2fa58"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/spring_bottom.json",
+          "sha256": "101e01d7ab65ff961e53f6d9dfc7944e6e1777b44bee848066d6c698c4a7f8cd"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/machine_bottom_spring.json",
+          "sha256": "203959439e067bf99699373b98e74287127fab00951f28c2d7888d1fa4e8372f"
+        }
+      ],
+      "runtime_variants": [
+        {
+          "version": "bottom-v02",
+          "source_directory": "art/production-v2/F05-06/v02",
+          "source_manifest": "art/production-v2/F05-06/v02/docs/DELIVERY-MANIFEST.json",
+          "source_manifest_sha256": "168abe032594794e0a738dc86b049b5318b2b1fde88941b3526304fe68f8b32d",
+          "approval": "art/production-v2/F05-06/v02/docs/APPROVAL.json",
+          "integration_document": "docs/BOTTOM-ART-RUNTIME-SPEC.md",
+          "verification_document": "docs/BOTTOM-ART-RUNTIME-VERIFICATION.md",
+          "scope": "node 1 only; matching body pocket and ghost; legacy geometry retained"
         }
       ]
     },
@@ -1029,7 +1089,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-07/v01",
       "source_manifest": "art/production-v2/F05-07/v01/manifest.json",
       "source_manifest_sha256": "c471ba3cd940fef6fc6cf7d57fc9256a7bfedaf001dcb672c188fb385a6954cb",
@@ -1040,7 +1100,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/wheel.json",
@@ -1060,7 +1120,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-08/v01",
       "source_manifest": "art/production-v2/F05-08/v01/manifest.json",
       "source_manifest_sha256": "8235e6c2e2e4afd0a319691ad13e2c1b985432f34e13187e52ad473ebcbd1a83",
@@ -1083,18 +1143,18 @@
       "id": "F05-09",
       "name": "浮力装置",
       "batch": "second-v2",
-      "current_version": "v01",
+      "current_version": "v01 + bottom-v02",
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-09/v01",
       "source_manifest": "art/production-v2/F05-09/v01/manifest.json",
       "source_manifest_sha256": "90f54d6d130aa8fb3edb5162b6f4ea8c3a4d931e7f0c48cb9314f1e164817c37",
       "integration_document": "docs/SECOND-ART-INTEGRATION.md",
       "verification_document": "docs/SECOND-ART-VERIFICATION.md",
       "use": "浮力装置，复用布木图集和现有载重规则",
-      "notes": "已接入；底部安装可能穿地，见P10.2机械修正合同",
+      "notes": "其他5方向与原item资源保持v01；底部采用v02与对应主体凹舱，实际客户端验证；其余4类底部修订未完成。",
       "runtime_files": [
         {
           "path": "src/main/resources/assets/wildcraft/geometry/buoyancy.json",
@@ -1103,6 +1163,26 @@
         {
           "path": "src/main/resources/assets/wildcraft/textures/item/buoyancy.png",
           "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/buoyancy_bottom.json",
+          "sha256": "8646474ce7506705c98e2d4072312d3eeb3039bf65cd411854b43c60f864e862"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/geometry/machine_bottom_buoyancy.json",
+          "sha256": "ecc60df40cba4c6ab6c06d9dce834867204aef08b5f8e9944407a3ad1f3fb134"
+        }
+      ],
+      "runtime_variants": [
+        {
+          "version": "bottom-v02",
+          "source_directory": "art/production-v2/F05-09/v02",
+          "source_manifest": "art/production-v2/F05-09/v02/docs/DELIVERY-MANIFEST.json",
+          "source_manifest_sha256": "30fdc704a4812d095502435c6d9ce093418cdbcdbce67d2cdd3976c195c99654",
+          "approval": "art/production-v2/F05-09/v02/docs/APPROVAL.json",
+          "integration_document": "docs/BOTTOM-ART-RUNTIME-SPEC.md",
+          "verification_document": "docs/BOTTOM-ART-RUNTIME-VERIFICATION.md",
+          "scope": "node 1 only; matching body pocket and ghost; legacy geometry retained"
         }
       ]
     },
@@ -1114,7 +1194,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F05-10/v02",
       "source_manifest": "art/production-v2/F05-10/v02/manifest.json",
       "source_manifest_sha256": "3b71e0ec5d6dcbcc6fdff5f090aa7a3980ee3ea1728b5f390d26e706de19fbe5",
@@ -1125,11 +1205,11 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
-          "sha256": "029fd46409d297c7eecba0d479b42e108f0421b1e7fa162f07a532bee144d6af"
+          "sha256": "1d86dc22cd3b940d709af0fcfde3278365a8d2b2fdac2fdaec0e828fb7dbcad7"
         },
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
         }
       ]
     },
@@ -1141,7 +1221,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F06-01/v01",
       "source_manifest": "art/production-v2/F06-01/v01/manifest.json",
       "source_manifest_sha256": "33821a5c820f0a3be85a51781fc6a0282e4bd6a5a3fbe4001f3952c58400a316",
@@ -1172,7 +1252,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/F06-02/v01",
       "source_manifest": "art/production-v2/F06-02/v01/manifest.json",
       "source_manifest_sha256": "6208e22af073b6586ff08143aad666d70bc251762d9daedaaca32c957614eae4",
@@ -1199,7 +1279,7 @@
       "adopted": true,
       "integrated": true,
       "first_integrated_game_version": "0.1.0-dev.15",
-      "current_game_version": "0.1.0-dev.18",
+      "current_game_version": "0.1.0-dev.62",
       "source_directory": "art/production-v2/S01/v01",
       "source_manifest": "art/production-v2/S01/v01/manifest.json",
       "source_manifest_sha256": "9ad62e34b999b89e45b4ac10563ca9aebd934785deb09362ba629cd9ce1a3b94",
@@ -1265,7 +1345,78 @@
           "sha256": "23acc8f5735391458cdfc1f34fd21427a74a00cd3f6d43e6abd82635bdd93337"
         }
       ]
+    },
+    {
+      "id": "F07-01",
+      "name": "风向与强度HUD",
+      "batch": "wind-v1",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.28",
+      "current_game_version": "0.1.0-dev.62",
+      "source_directory": "art/production-v2/F07/v01",
+      "source_manifest": "art/production-v2/F07/v01/docs/DELIVERY-MANIFEST.json",
+      "source_manifest_sha256": "7ae16ec203449c34be7e649715fda30ba50fe92b052eec622e7caaa98ada989f",
+      "integration_document": "docs/F07-RUNTIME-SPEC.md",
+      "verification_document": "docs/F07-RUNTIME-VERIFICATION.md",
+      "use": "真实八方向/三强度/遮蔽，完整文字/紧凑图标/省略布局",
+      "notes": "美术原件与制作时状态不重写；不把布局模拟当实机验收",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/weather/WindHud.java",
+          "sha256": "9e8fbba575c606850ae9fae050311c024629e2fb9e168a0d1d8aabe1a79a561d"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/wind-weather-atlas.png",
+          "sha256": "186697d473fa7f4fcafab2dbb580933877962bb7cfc4c7d47d2472430b00f0ff"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/wind-art-provenance.json",
+          "sha256": "beaea2ed624447a7a395316b23ef15f293d3de5b8aa8df6db8a6b8e0de3d73eb"
+        }
+      ]
+    },
+    {
+      "id": "F07-02",
+      "name": "天气湿润提示",
+      "batch": "wind-v1",
+      "current_version": "v01",
+      "adopted": true,
+      "integrated": true,
+      "first_integrated_game_version": "0.1.0-dev.28",
+      "current_game_version": "0.1.0-dev.62",
+      "source_directory": "art/production-v2/F07/v01",
+      "source_manifest": "art/production-v2/F07/v01/docs/DELIVERY-MANIFEST.json",
+      "source_manifest_sha256": "7ae16ec203449c34be7e649715fda30ba50fe92b052eec622e7caaa98ada989f",
+      "integration_document": "docs/F07-RUNTIME-SPEC.md",
+      "verification_document": "docs/F07-RUNTIME-VERIFICATION.md",
+      "use": "真实有效降水水滴与文字；伞/翼和原版雨雪继续复用，无新粒子",
+      "notes": "美术原件与制作时状态不重写；不把布局模拟当实机验收",
+      "runtime_files": [
+        {
+          "path": "src/client/java/dev/wildcraft/client/weather/WindHud.java",
+          "sha256": "9e8fbba575c606850ae9fae050311c024629e2fb9e168a0d1d8aabe1a79a561d"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/textures/gui/wind-weather-atlas.png",
+          "sha256": "186697d473fa7f4fcafab2dbb580933877962bb7cfc4c7d47d2472430b00f0ff"
+        },
+        {
+          "path": "src/main/resources/assets/wildcraft/wind-art-provenance.json",
+          "sha256": "beaea2ed624447a7a395316b23ef15f293d3de5b8aa8df6db8a6b8e0de3d73eb"
+        }
+      ]
     }
   ],
-  "publication_status": "public handoff-dev18-2026-10-06; dev17 history preserved"
+  "publication_status": "public_source_snapshot_with_native_presentation_fallback",
+  "publication": {
+    "date": "2026-10-15",
+    "repository": "https://github.com/ibka512/Wildcraft",
+    "branch": "main",
+    "restricted_player_animation_resources_included": false,
+    "private_binary_packages_included": false,
+    "historical_public_packages_preserved": true
+  },
+  "source_local_checkpoint": "c554ed95bb8c0c137ab5f07bf710af9fb8861566"
 }

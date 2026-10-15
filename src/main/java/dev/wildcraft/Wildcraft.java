@@ -41,6 +41,12 @@ public final class Wildcraft implements ModInitializer {
         Gliding.initialize();
         PlayerStamina.initialize();
         dev.wildcraft.focus.FocusTime.initialize();
+        dev.wildcraft.combat.Combat.initialize();
+        dev.wildcraft.combat.MeleeActions.initialize();
+        dev.wildcraft.combat.ParryActions.initialize();
+        dev.wildcraft.combat.ThreatActions.initialize();
+        dev.wildcraft.combat.SkillPreferences.initialize();
+        dev.wildcraft.combat.ReactionTime.initialize();
         StaminaCommands.initialize();
         dev.wildcraft.temperature.EnvironmentTemperature.initialize();
         dev.wildcraft.temperature.TemperatureCommands.initialize();

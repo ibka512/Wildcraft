@@ -1,0 +1,25 @@
+{
+  "allPassed": true,
+  "checkedAt": "2026-10-10T15:52:11.010209+00:00",
+  "method": "Viewed actual preview screenshot and exported review board/canvas captures",
+  "images": [
+    "preview-page.png",
+    "wind-weather-review.png",
+    "rain-strong.png",
+    "snow-60hp-en-gui3.png",
+    "weather-response.png"
+  ],
+  "findings": [
+    "All eight arrow silhouettes readable, direction points toward flow",
+    "Intensity uses one/two/three wind strokes, roof icon distinct from blue wet droplet",
+    "Native and integer-scaled components shown on light/dark backgrounds",
+    "Current simulated HUD row lies below meal effects and avoids reticle",
+    "English GUI3 multi-heart scene intentionally hides wind if not fitting",
+    "Rain response uses diagram arrows for descent/drag; adopted models unchanged"
+  ],
+  "limitations": [
+    "Schematics and font approximation, no real game screenshot",
+    "Weather schematic uses representative outlines rather than new models"
+  ],
+  "userApproval": false
+}

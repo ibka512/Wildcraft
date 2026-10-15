@@ -1,0 +1,20 @@
+{
+  "allPassed": true,
+  "originalWingMeshes": 28,
+  "fixedAdapterMeshes": 2,
+  "bodyMeshes": 67,
+  "originalFacesPreserved": 168,
+  "rigidVertices": 224,
+  "originalUVsAndShapePreserved": true,
+  "uprightHeightCases": 81,
+  "groundRollCases": 13,
+  "otherMountCases": 20,
+  "staticStateCases": 48,
+  "referenceRuleCases": 10,
+  "positiveVolumeBodyOverlaps": 0,
+  "hangerContactChecked": true,
+  "groundMinimum": 0.13,
+  "oldBottomMinimum": -0.55,
+  "minimumAtSixDegreeRoll": 0.11569914617308057,
+  "artOnly": true
+}

@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,uuid,base64
+R=Path(__file__).resolve().parents[1];d=json.loads((R/'source/structure-geometry.json').read_text());parts=d['candidateBody'];es=[]
+for p in parts:
+ es.append({'name':p['name'],'uuid':str(uuid.uuid5(uuid.NAMESPACE_URL,'wildcraft/spring-v02-pocket/'+p['name'])),'type':'mesh','origin':[0,0,0],'vertices':{str(i):v for i,v in enumerate(p['vertices'])},'faces':{str(i):{'vertices':[str(j)for j in f['indices']],'uv':{str(j):[u*4,v*4]for j,(u,v)in zip(f['indices'],f['uvs'])},'texture':0}for i,f in enumerate(p['faces'])}})
+bb={'meta':{'format_version':'4.10','model_format':'free','box_uv':False},'name':'Wildcraft chassis bottom spring pocket proposal','resolution':{'width':64,'height':64},'elements':es,'outliner':[e['uuid']for e in es],'textures':[{'name':d['texture'],'id':'0','uuid':str(uuid.uuid5(uuid.NAMESPACE_URL,'wildcraft/shared64')),'width':64,'height':64,'uv_width':64,'uv_height':64,'source':'data:image/png;base64,'+base64.b64encode((R/'exports'/d['texture']).read_bytes()).decode(),'mode':'bitmap'}]}
+(R/'source/chassis-spring-pocket-proposal.bbmodel').write_text(json.dumps(bb,ensure_ascii=False,indent=2)+'\n');(R/'exports/chassis-spring-pocket-proposal.json').write_text(json.dumps({'asset':'F05-01','status':'supporting-art-proposal-only','gameIntegrated':False,'units':'1/16 block','useOnlyForBottomSpring':True,'parts':parts},ensure_ascii=False,indent=2)+'\n');print(len(parts),'editable pocket-body meshes')

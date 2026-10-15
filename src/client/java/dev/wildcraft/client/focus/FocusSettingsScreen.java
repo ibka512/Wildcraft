@@ -42,6 +42,7 @@ public final class FocusSettingsScreen extends Screen {
         }).size(contentWidth, 20).build();
         temperature.setTooltip(Tooltip.create(Component.translatable("temperature.wildcraft.help.tint")));
         content.addChild(temperature);
+        content.addChild(Button.builder(Component.translatable("combat.wildcraft.settings"), b -> minecraft.gui.setScreen(new dev.wildcraft.client.combat.CombatSettingsScreen(this))).size(contentWidth, 20).build());
         int top = panelY + (compact ? 46 : 66);
         int doneY = panelY + panelHeight - 30;
         var scroll = new ScrollableLayout(minecraft, content, Math.max(20, doneY - top - (compact ? 5 : height >= 270 ? 43 : 8)), ScrollableLayout.ReserveStrategy.RIGHT);

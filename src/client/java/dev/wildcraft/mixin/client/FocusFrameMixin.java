@@ -10,5 +10,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Minecraft.class)
 public abstract class FocusFrameMixin {
     @Inject(method = "runTick", at = @At("HEAD"))
-    private void wildcraft$focusFrame(CallbackInfo ci) { FocusClient.frame((Minecraft)(Object)this); }
+    private void wildcraft$focusFrame(CallbackInfo ci) {
+        var client = (Minecraft)(Object)this;
+        dev.wildcraft.client.input.ActionInput.frame(client);
+        dev.wildcraft.client.combat.SkillControls.frame(client);
+        FocusClient.frame(client);
+        dev.wildcraft.client.combat.CombatPresentation.frame(client);
+    }
 }

@@ -15,3 +15,14 @@ replay_*.log
 .env.local
 dist/
 src/main/generated/.cache/
+
+# Private animation sources and runtime data are not redistributable.
+art/player-animation-v1/
+art/player-rig-v1/
+art/animation-research/
+src/main/resources/assets/wildcraft/animation/
+src/gametest/resources/assets/wildcraft-test/animation/
+development-assets/local-only/
+development-assets/verification/dev*/
+__pycache__/
+*.pyc

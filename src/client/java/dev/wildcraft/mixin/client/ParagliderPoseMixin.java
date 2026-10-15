@@ -13,5 +13,9 @@ public abstract class ParagliderPoseMixin {
     @Inject(method = "setupAnim(Lnet/minecraft/client/renderer/entity/state/AvatarRenderState;)V", at = @At("TAIL"))
     private void wildcraft$holdCanopy(AvatarRenderState state, CallbackInfo info) {
         dev.wildcraft.client.render.CharacterPoses.apply((PlayerModel) (Object) this, state);
+        dev.wildcraft.client.animation.CombatPoses.apply((PlayerModel) (Object) this, state);
+        dev.wildcraft.client.animation.MeleePoses.apply((PlayerModel)(Object)this,state);
+        dev.wildcraft.client.animation.GuardPoses.applyShield((PlayerModel)(Object)this,state);
+            dev.wildcraft.client.render.BackTransitions.apply((PlayerModel)(Object)this,state);
     }
 }

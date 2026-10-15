@@ -20,6 +20,7 @@ public final class WildcraftClient implements ClientModInitializer {
         net.minecraft.client.renderer.blockentity.BlockEntityRenderers.register(dev.wildcraft.energy.EnergyContent.CHARGER_ENTITY,dev.wildcraft.client.art.ArtBlockRenderer::new);
         net.minecraft.client.renderer.blockentity.BlockEntityRenderers.register(dev.wildcraft.fabrication.FabricationContent.ENTITY,dev.wildcraft.client.art.ArtBlockRenderer::new);
         dev.wildcraft.client.art.ArtFeedbackClient.initialize();
+        dev.wildcraft.client.input.ActionInput.initialize();
         StaminaHud.initialize();
         dev.wildcraft.client.temperature.TemperatureHud.initialize();
         dev.wildcraft.client.cooking.MealHud.initialize();
@@ -30,6 +31,14 @@ public final class WildcraftClient implements ClientModInitializer {
         dev.wildcraft.client.focus.FocusClient.initialize();
         ClimbControls.initialize();
         GlideControls.initialize();
+        dev.wildcraft.client.combat.MeleeControls.initialize();
+        dev.wildcraft.client.combat.CombatControls.initialize();
+        dev.wildcraft.client.combat.CombatPresentation.initialize();
+        dev.wildcraft.client.combat.MeleePresentation.initialize();
+        dev.wildcraft.client.combat.GuardPresentation.initialize();
+        dev.wildcraft.client.combat.SkillControls.initialize();
+        dev.wildcraft.client.animation.CombatPoses.initialize();
+        dev.wildcraft.client.animation.rig.CombatRigLayer.initialize();
         ParagliderLayer.initialize();
         dev.wildcraft.client.render.BackEquipmentLayer.initialize();
         Wildcraft.LOGGER.info("Wildcraft second art client initialized; adopted models, menus, HUD, equipment poses and confirmed feedback registered.");

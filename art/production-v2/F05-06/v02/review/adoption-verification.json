@@ -1,0 +1,16 @@
+{
+  "allPassed": true,
+  "adopted": true,
+  "coreAssetsUnchanged": true,
+  "files": {
+    "exports/chassis-spring-pocket-proposal.json": "f6c7044fcfc05507b02b598fdda4bc16bf97c9fa3a70f90076ffecd3f52db21d",
+    "exports/shared-machine-atlas-64.png": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739",
+    "exports/spring-bottom-proposal.json": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b",
+    "source/spring-bottom-structure-v02.blend": "39f739ff059e131938a20300c98f78545fdee0e08efd96c569b23e83b84cfdf1",
+    "source/chassis-spring-pocket-proposal.bbmodel": "8bf00806b228bcea0042d8cb2421c567affdc915e85ed22458a202b829ce15e5",
+    "source/spring-bottom-extended.bbmodel": "26f2b8e3a527387db98638dbf88937e15766f6488d3c08590a177fa1dfdda363",
+    "source/spring-bottom-stowed.bbmodel": "c466ea1879362460153993969965c7d0aeab2e11a42fa9077efeabffcc2ca941"
+  },
+  "gameIntegrated": false,
+  "productionReady": false
+}

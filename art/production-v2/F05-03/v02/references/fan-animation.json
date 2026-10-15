@@ -1,0 +1,36 @@
+{
+  "asset": "F05-03",
+  "version": "v01",
+  "status": "user_approved",
+  "integrated": false,
+  "pivot": [
+    0,
+    0,
+    1.76
+  ],
+  "axis": [
+    0,
+    0,
+    1
+  ],
+  "movingGroup": "rotor",
+  "fixedGroup": "housing",
+  "worldTickRate": 0.7,
+  "angle": "active && !ghost ? ageInTicks * .7 : 0",
+  "stopRestAngle": 0,
+  "motionBlur": false,
+  "customFxAdded": false,
+  "exhaustLocal": [
+    0,
+    0,
+    1
+  ],
+  "thrustLocal": [
+    0,
+    0,
+    -1
+  ],
+  "adopted": true,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

@@ -1,0 +1,22 @@
+{
+  "allPassed": true,
+  "checkedFiles": 63,
+  "nativeIcons": 13,
+  "atlas": [
+    64,
+    64
+  ],
+  "editableLayers": 3,
+  "roundtripPixelComparisons": 3,
+  "layoutCases": 2592,
+  "directionCases": 40,
+  "strengthBoundaryCases": 6,
+  "actualUIChecks": 9,
+  "existingInputsUnchanged": true,
+  "productionAssetIds": 43,
+  "gameVersion": "0.1.0-dev.27",
+  "newProductionDependencies": false,
+  "userReviewPending": false,
+  "gameIntegrated": false,
+  "manifestSHA256": "7ae16ec203449c34be7e649715fda30ba50fe92b052eec622e7caaa98ada989f"
+}

@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-10-10T23:53:15.639273+00:00",
+  "files": [
+    {
+      "path": "art/production-v2/F05-09/v01/exports/buoyancy-geometry.json",
+      "copy": "references/buoyancy-geometry.json",
+      "sha256": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/exports/buoyancy-state.json",
+      "copy": "references/buoyancy-state.json",
+      "sha256": "85192f9e57f849a901eb020c66d6e196d3288aa2d48cf59e2c01b2922766f83f"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/references/approved-machine-geometry.json",
+      "copy": "references/approved-machine-geometry.json",
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/exports/shared-fabric-machine-atlas-128x64.png",
+      "copy": "references/shared-fabric-machine-atlas-128x64.png",
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/source/shared-fabric-machine-atlas-128x64.aseprite",
+      "copy": "references/shared-fabric-machine-atlas-128x64.aseprite",
+      "sha256": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/exports/buoyancy-item-16.png",
+      "copy": "references/buoyancy-item-16.png",
+      "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/exports/buoyancy-item-32.png",
+      "copy": "references/buoyancy-item-32.png",
+      "sha256": "79acb0b77a53928c20fcef443e503cec53593a9b4b9641c57d9a61b5683346e3"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/source/buoyancy-item-16.aseprite",
+      "copy": "references/buoyancy-item-16.aseprite",
+      "sha256": "afc157002343dc1538a79460de7dd6c5d6f4aed258531f16ee3a91a9ce577bfb"
+    },
+    {
+      "path": "art/production-v2/F05-09/v01/source/buoyancy-item-32.aseprite",
+      "copy": "references/buoyancy-item-32.aseprite",
+      "sha256": "a11dd08a075ea4a1e1471937b56ebdade0912261f6683f45f321dbb8b09bbb1d"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineNodes.java",
+      "copy": "references/MachineNodes.java",
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineEntity.java",
+      "copy": "references/MachineEntity.java",
+      "sha256": "b1b3fe63142beed15af3dcf9331d1f58731813441b34b0a5792748766ca64611"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "copy": "references/MachineRenderer.java",
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "path": "art/ADOPTED-ASSETS.json",
+      "copy": "references/ADOPTED-ASSETS.json",
+      "sha256": "9a8879d36b498fff4d03dde44360b26bd20353c8320fe93c18c75e91f49f9513"
+    },
+    {
+      "path": "art/production-v2/F05-06/v02/exports/spring-bottom-proposal.json",
+      "copy": "references/spring-bottom-proposal.json",
+      "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b"
+    }
+  ],
+  "originalPackageFiles": {
+    "README.md": "f4fba73810728998d6be3376c14d4186ae9b4fdaa3fa6a850b58bff7ac20e2c6",
+    "verification.md": "4c676507e1a593e8bce9343a305ebc153b3d9cc4dacd07ebba84faefd39ea849",
+    "manifest.json": "90f54d6d130aa8fb3edb5162b6f4ea8c3a4d931e7f0c48cb9314f1e164817c37",
+    "adoption.json": "da45eb1f7078e710e4f970b5e1407a15201405c5f9d96171359decfcc08b0f6c",
+    "brief.md": "7caf5c0c797963f1ffa2d1a5c4087d2b98554713592badeee3b6a1de4e2982a6",
+    "integration-map.md": "a8eff28288eae8c197b603ada5fa17e567bdf46a63f1a3a2bc1fe1fd99f6e196",
+    "references/MachineRenderer.java": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc",
+    "references/imagegen-prompt.txt": "e4824114d0ec1a96d232421f167c3e0a3736faf8eccd984b6d55bf8665432f74",
+    "references/provenance.json": "ada702bfee0a5b8c850d1a1400dfb3978ceaf9dd359807f9f3f32f628970b4a9",
+    "references/MachineEntity.java": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae",
+    "references/shared-fabric-machine-atlas-128x64.aseprite": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f",
+    "references/buoyancy-concept.png": "caa321c438fac25162801ab08d688371dff8da8fb222ecd138f4f4f6cb7ade12",
+    "references/approved-machine-geometry.json": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8",
+    "references/MachineNodes.java": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e",
+    "references/buoyancy.json": "8d36d2970d42a36647d0d0c77595fad8d2746e6763a089f67b71bdb033292167",
+    "references/code-baseline.json": "9120a4845ed1841ff5e7cf2c11f819c28f7d2eafc677e4d7fde0046cb7d30404",
+    "references/shared-fabric-machine-atlas-128x64.png": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35",
+    "references/uv-regions.json": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719",
+    "source/buoyancy-item-16.aseprite": "afc157002343dc1538a79460de7dd6c5d6f4aed258531f16ee3a91a9ce577bfb",
+    "source/buoyancy-v01.blend": "6a05f2b9471617f7bdb87dc6092031f561ba72a836f0d55bf2869e3836366bd4",
+    "source/build-model.py": "c72bc032a6a036efbf16a436a4bb86756a3b2eafa3b71918224397b6347d2c5c",
+    "source/render-model.py": "bf42d6e455a99774149be15f117081eb0251a14e4e5e1ac95b24c5e99135253b",
+    "source/build-preview.py": "949ace4ddfb00c4dd670a48ba7cf5211483b29f544a5d9f0b3a289f42b737d1f",
+    "source/shared-fabric-machine-atlas-128x64.aseprite": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f",
+    "source/verify-blender.py": "c9a93fd00ad5b3a733a450503f3696a8e78da2bf198a1c8e79449de3da698b63",
+    "source/verify-assets.py": "d52bfc518c355cd0267afb7aadef51f253cb1d1d6dc93249327109e4c8170cfe",
+    "source/buoyancy-v01.bbmodel": "204a7136d21f5548ec2aeac934944cd24e1ef6a17f0b3d49975dff945a5c773c",
+    "source/buoyancy-item-32.aseprite": "a11dd08a075ea4a1e1471937b56ebdade0912261f6683f45f321dbb8b09bbb1d",
+    "source/pixel-designs.json": "1c30543e7fe824a7f460f3bf5eaa1ab2fed550156d17343ec9f787f49c44b298",
+    "source/geometry-and-uv.json": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2",
+    "source/create-pixels.py": "28f5597b178b6846abfba0a63702c1bc5d5f9a5b0fb1fd08964d95be77badc73",
+    "source/review-snapshots.json": "4883489d4af3ca0dffa888132098ab4895f00f2916d3db053f42303be9949985",
+    "source/buoyancy-preview.js": "99035c948811c738fee90dcf79540030a5c1c7ddcd51ad20002aca244ab105b9",
+    "source/verify-contract.mjs": "a6f9afb39ce8181530bdf622829c5e0c262759bf1e2a2694a11ed5f3c64f968a",
+    "exports/buoyancy-geometry.json": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2",
+    "exports/buoyancy-item-32.png": "79acb0b77a53928c20fcef443e503cec53593a9b4b9641c57d9a61b5683346e3",
+    "exports/buoyancy-state.json": "85192f9e57f849a901eb020c66d6e196d3288aa2d48cf59e2c01b2922766f83f",
+    "exports/buoyancy-item-16.png": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3",
+    "exports/shared-fabric-machine-atlas-128x64.png": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35",
+    "review/buoyancy-back.png": "92624edcd1073f726f8014fc11f0cd0521e3ccbf9fb409415c52b5d87202a741",
+    "review/preview.html": "3f7373d345ac22ba3e30e8be28ccc2fa34fdda7705aff989b40b13ce1d628ca2",
+    "review/aseprite-start.json": "0cbbcb387af2a9c6eb6fb3499dde4fb2e9cd5ff2dd1cedfda433efba365bfb5c",
+    "review/buoyancy-waterline.png": "daa26c560f3b53607e2a1c60fc6284e92207a83b1d22ed24ab16308dcffaedeb",
+    "review/browser-checks.json": "c134a78bc69e9b60967f9ad93752ee4d9a80abd226d870d871ed79233e88aa85",
+    "review/package-checks.json": "441241945cac56e673947d33b4547e6617fb2fb2f9019bee3b23d1913bccd406",
+    "review/buoyancy-mounted-0.png": "2d030bc260dc2c2be780057ad16efcfbee2a87a24c6d0e9c7c73465053d70674",
+    "review/buoyancy-mounted-1.png": "10fe577cb73079b7313f526ee79c0419d7ae3a8062d89ae078a77695e55f19af",
+    "review/buoyancy-three-quarter.png": "3eb567379c702c5575285af36d3965b9f8e46d3da56fb7f1316891ad8889853d",
+    "review/buoyancy-mounted-3.png": "810496814a9fa10f8b968c6bffe63036428613012f160681c61432000c3ac48f",
+    "review/buoyancy-mounted-2.png": "d570717b9827fd70780fbfc8c25e9ca23da4a021306c14d96187c8cede2acdbb",
+    "review/buoyancy-front.png": "87464b4fd55b51f97fb05f23b125f87601955967df124cee4075e5c6e44bdfa0",
+    "review/buoyancy-mounted-5.png": "5718586969a36b7ab7c58afd41964e955f5c6f3486c5b9856d43bca5d440747f",
+    "review/buoyancy-submerged-reference.png": "acde5b5e34d5cfff390b2a66330d2fa9f0eeb9dd039b0a4685eeaf8d167ddda6",
+    "review/buoyancy-mounted-4.png": "48a95d7b94426896879cbb38816f1eb1244423db5122f02897bce8ccedbd5857",
+    "review/asset-checks.json": "73cd877b63aff61550adaf3eb14631f99d9e1e97d9b6f43b0c221707e176ef90",
+    "review/buoyancy-side.png": "37e25ec6ad29987b0d634e2a9dde2b1aeb22b7e5ee67127e200265ca091ec800",
+    "review/buoyancy-live-review.png": "694735c11f46a602ff9a8e6c519a6aac7abea8baf1bb1f28188ee9ec54bae140",
+    "review/blender-source-checks.json": "0f0a0f1fada6c8f27b71cb16996e2d946c2c2c10482ba54e1298cf3e532ee9b1",
+    "review/buoyancy-review.png": "5f37dcda329128e8098abd8b4786a983b39a883e656c44b5fda47935da9bd8fc",
+    "review/contract-checks.json": "e77c3a2c6e655d8184e89a55b8eb251cf6523d4618003e09b7c00ac131da8f84"
+  }
+}

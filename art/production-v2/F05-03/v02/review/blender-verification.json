@@ -1,0 +1,615 @@
+{
+  "allPassed": true,
+  "reopenedActualBlend": true,
+  "sourceSHA256": "ebbb253cb59c782ff8337da8b4c221e0eaf29779aa8a7a19c6366793c291bd9c",
+  "fanMeshes": 26,
+  "bodyMeshes": 67,
+  "rotorMeshes": 6,
+  "fixedMeshes": 20,
+  "shapeKeys": 0,
+  "packedPNGByteExact": true,
+  "nativeUVLoopsChecked": 2280,
+  "actualDriverCases": 60,
+  "states": [
+    {
+      "height": 0,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 10,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 45,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "worldMinY": 0.030000001192092896,
+      "maxVertexError": 2.8610229518832853e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 10,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 45,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 0,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "worldMinY": 0.22999998927116394,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": false,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": false,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": true,
+      "age": 10,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": true,
+      "age": 45,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": 6,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": false,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": false,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": false,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": false,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": false,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": false,
+      "age": 0,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": false,
+      "age": 1,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": false,
+      "age": 10,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": false,
+      "age": 45,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": false,
+      "age": 100,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": true,
+      "age": 0,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": true,
+      "age": 1,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": true,
+      "age": 10,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": true,
+      "age": 45,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    },
+    {
+      "height": 0.2,
+      "roll": -6,
+      "active": true,
+      "ghost": true,
+      "age": 100,
+      "worldMinY": 0.21145926415920258,
+      "maxVertexError": 6.677639774466115e-08,
+      "checkedVertices": 760
+    }
+  ]
+}

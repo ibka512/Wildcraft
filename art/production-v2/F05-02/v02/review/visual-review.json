@@ -1,0 +1,28 @@
+{
+  "allPassed": true,
+  "reviewedAtUTC": "2026-10-11T00:16:47.591802+00:00",
+  "observedActualFiles": [
+    "browser-ground-model.png",
+    "browser-root-model.png",
+    "browser-underside-model.png",
+    "browser-ground-section.png",
+    "browser-root-section.png",
+    "blender-pocket-cutaway.png",
+    "browser-standalone-model.png",
+    "browser-complete-body.png"
+  ],
+  "findings": [
+    "原双侧梯形布面与木架保持，单件视图可观察完整轮廓。",
+    "底部为真实开口，正常主体与剖开视图分开；没有用隐藏翼面冒充净空。",
+    "根部剖面显示原接口上表面、两件短座及槽顶连续接触。",
+    "地面/滑翔/关闭无电的网格固定，幽灵只做安装预览。",
+    "原图集材质与最近邻像素保持，新增槽面/固定座没有新纹理。"
+  ],
+  "limitations": [
+    "整页截图Page.captureScreenshot超时，未声称整页截图成功；已保存24张真实画布PNG和2张Blender实渲染。",
+    "小视窗内浏览器自动滚动点击复选框被details拦截；使用实际键盘Space验证输入事件。",
+    "本样片未在游戏中安装，未验证真实地形、组合、骑乘或完整风天气。",
+    "Blockbench文件结构及UV已核对，尚未在Blockbench应用重开。"
+  ],
+  "pendingUserReview": true
+}

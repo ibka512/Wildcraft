@@ -1,0 +1,337 @@
+{
+  "asset": "F05-09",
+  "version": "v02-structure-proposal",
+  "status": "adopted-structure-art-not-game-integrated",
+  "adopted": true,
+  "gameIntegrated": false,
+  "productionReady": false,
+  "previewURL": "http://127.0.0.1:8888/preview.html",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1500,
+      "sha256": "a836dbe17cd119e31bb9c9284f2dba807750feeb246f97b046b0990d33f45e26"
+    },
+    {
+      "path": "docs/APPROVAL.json",
+      "bytes": 692,
+      "sha256": "14eb012703b33933b205a08dd87f6d3547a094e99098ffad3104b1b80f97f612"
+    },
+    {
+      "path": "docs/BASELINE.json",
+      "bytes": 9501,
+      "sha256": "68a589520761bf5b7f2414f656a479f4c65d785e83d08f6b8891a1378c2325ae"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "bytes": 2235,
+      "sha256": "f15c092953401b970e051b50999abb89e2b016adddb2223b4fc1c416c6eea258"
+    },
+    {
+      "path": "docs/STRUCTURE-PROPOSAL.md",
+      "bytes": 7536,
+      "sha256": "aaf231708e290dae0f9cf4efdbf559c618b7097e6dac6a14c02d334c68325e83"
+    },
+    {
+      "path": "exports/buoyancy-bottom-proposal.json",
+      "bytes": 558549,
+      "sha256": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e"
+    },
+    {
+      "path": "exports/buoyancy-item-16.png",
+      "bytes": 397,
+      "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+    },
+    {
+      "path": "exports/buoyancy-item-32.png",
+      "bytes": 750,
+      "sha256": "79acb0b77a53928c20fcef443e503cec53593a9b4b9641c57d9a61b5683346e3"
+    },
+    {
+      "path": "exports/chassis-float-pocket-proposal.json",
+      "bytes": 225780,
+      "sha256": "156a470f41bdbed664768a5f4102da83e136df1fa90c548117a47347f0951b57"
+    },
+    {
+      "path": "exports/shared-fabric-machine-atlas-128x64.png",
+      "bytes": 8217,
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "preview.html",
+      "bytes": 9299,
+      "sha256": "385113b3ff68b5c438f46eac6479a8a2caaaa10465ca2612830efb48aa1ec2b5"
+    },
+    {
+      "path": "references/ADOPTED-ASSETS.json",
+      "bytes": 54860,
+      "sha256": "9a8879d36b498fff4d03dde44360b26bd20353c8320fe93c18c75e91f49f9513"
+    },
+    {
+      "path": "references/MachineEntity.java",
+      "bytes": 19532,
+      "sha256": "b1b3fe63142beed15af3dcf9331d1f58731813441b34b0a5792748766ca64611"
+    },
+    {
+      "path": "references/MachineNodes.java",
+      "bytes": 1763,
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "references/MachineRenderer.java",
+      "bytes": 5642,
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "path": "references/approved-machine-geometry.json",
+      "bytes": 122069,
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "references/buoyancy-geometry.json",
+      "bytes": 57541,
+      "sha256": "830a509c7fcc4bbe9c9564ed72a899cdc047eddc462676a74835a9795df244e2"
+    },
+    {
+      "path": "references/buoyancy-item-16.aseprite",
+      "bytes": 713,
+      "sha256": "afc157002343dc1538a79460de7dd6c5d6f4aed258531f16ee3a91a9ce577bfb"
+    },
+    {
+      "path": "references/buoyancy-item-16.png",
+      "bytes": 397,
+      "sha256": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3"
+    },
+    {
+      "path": "references/buoyancy-item-32.aseprite",
+      "bytes": 953,
+      "sha256": "a11dd08a075ea4a1e1471937b56ebdade0912261f6683f45f321dbb8b09bbb1d"
+    },
+    {
+      "path": "references/buoyancy-item-32.png",
+      "bytes": 750,
+      "sha256": "79acb0b77a53928c20fcef443e503cec53593a9b4b9641c57d9a61b5683346e3"
+    },
+    {
+      "path": "references/buoyancy-state.json",
+      "bytes": 1385,
+      "sha256": "85192f9e57f849a901eb020c66d6e196d3288aa2d48cf59e2c01b2922766f83f"
+    },
+    {
+      "path": "references/shared-fabric-machine-atlas-128x64.aseprite",
+      "bytes": 4505,
+      "sha256": "283be10ebec4fe746ef2418b9658daa5c4ff08334b81d35c50edfee58105b74f"
+    },
+    {
+      "path": "references/shared-fabric-machine-atlas-128x64.png",
+      "bytes": 8217,
+      "sha256": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35"
+    },
+    {
+      "path": "references/spring-bottom-proposal.json",
+      "bytes": 850959,
+      "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b"
+    },
+    {
+      "path": "review/adoption-verification.json",
+      "bytes": 1161,
+      "sha256": "7774017c4a79084f13ad02dec64717eb563eafe2141e8eaa77980b553d210bf2"
+    },
+    {
+      "path": "review/blender-build.log",
+      "bytes": 1187,
+      "sha256": "35f2621bdb67d41d54dd9ce89e07f1f6f4f8909273ee71d4293fcc814f57eab5"
+    },
+    {
+      "path": "review/blender-complete-body.png",
+      "bytes": 644739,
+      "sha256": "4504793320be4b70a1819665d9e883eb795e8ad8a892404659eae725c8c5a12e"
+    },
+    {
+      "path": "review/blender-pocket-cutaway.png",
+      "bytes": 563153,
+      "sha256": "eb22e56534a8a7dde19550d47838b378bb9a06fc6715b2d7526e6d27367ae05c"
+    },
+    {
+      "path": "review/blender-reopen.log",
+      "bytes": 1063,
+      "sha256": "c1d5bae76ac756f5e9edc3df54383b7084e8dea0316b87b56f3d26925cc09181"
+    },
+    {
+      "path": "review/blender-verification.json",
+      "bytes": 953,
+      "sha256": "150c3d3f1f0e8e342916200a7ef2420a8c4f1b18bdef83c08f38350726024c76"
+    },
+    {
+      "path": "review/browser-complete-body.png",
+      "bytes": 47079,
+      "sha256": "9a02f63787db6ed7ebb9a087fe4981024766403850c54b7e9092878d985b4794"
+    },
+    {
+      "path": "review/browser-ghost-model.png",
+      "bytes": 42670,
+      "sha256": "d6272d9962237630fca32acbf202457726f0f641486d21d16773e291077ad9ff"
+    },
+    {
+      "path": "review/browser-ground-model.png",
+      "bytes": 55415,
+      "sha256": "baa0a701b33cbb4f109aeaacd79329ebac2f7ebff28b30f1da5fa2af9e5c7d26"
+    },
+    {
+      "path": "review/browser-ground-section.png",
+      "bytes": 46142,
+      "sha256": "3ee7ef137d4aae12153098b19fa571d7091e2e0df89879ef2ba6e4203c3c2521"
+    },
+    {
+      "path": "review/browser-old-model.png",
+      "bytes": 53160,
+      "sha256": "1c9ab9156563ae457889e066ea496b0138a576ad8351dfcaeefd53b459a36d4b"
+    },
+    {
+      "path": "review/browser-old-section.png",
+      "bytes": 42546,
+      "sha256": "3d5a96aec98db7dc9ed3544bd279cc49a25108d2bad6dfdf0656d398b1be8acb"
+    },
+    {
+      "path": "review/browser-overload-model.png",
+      "bytes": 56859,
+      "sha256": "b55a92a3059728a7d842e2f8bd2fe06574cdb96e7103da510e2587254c378fae"
+    },
+    {
+      "path": "review/browser-overload-section.png",
+      "bytes": 46918,
+      "sha256": "41d962e49ef4330cecb86305b537e0ad32017e2d7b07479243872f2a13f984ae"
+    },
+    {
+      "path": "review/browser-roll-model.png",
+      "bytes": 56812,
+      "sha256": "ad0b9672612fb913a0396e36cdc533d84035f1d34556079c5f9dee244ccc0b29"
+    },
+    {
+      "path": "review/browser-roll-section.png",
+      "bytes": 46894,
+      "sha256": "e1688ac5792794357e4490266af095bc7de4962a20f704b8765e94e44e26c3c7"
+    },
+    {
+      "path": "review/browser-side-model.png",
+      "bytes": 65962,
+      "sha256": "32ff6cacb2e7a1dd72eb6854be1a3cfbdf22c5e08ce40aa396af43ff0c858992"
+    },
+    {
+      "path": "review/browser-side-section.png",
+      "bytes": 41469,
+      "sha256": "157eaca701b43a3b329395d6a2db1f2e7ba968501aef0df14d8df4e72bd0b192"
+    },
+    {
+      "path": "review/browser-top-model.png",
+      "bytes": 56129,
+      "sha256": "d9f2ef1bd1cca0bfae8203c5272b6858dc87e5ed6728fb6f8f7489712d12ca70"
+    },
+    {
+      "path": "review/browser-top-section.png",
+      "bytes": 40935,
+      "sha256": "f3c2693e50fe6136d73f536d13a74514edd494c0f39f09202107f2ee06fe61e7"
+    },
+    {
+      "path": "review/browser-underside-model.png",
+      "bytes": 58410,
+      "sha256": "be352f9ee27fdb8f8bb7f9a42f7399de5b3ef1add79efe1e612454b13775dfac"
+    },
+    {
+      "path": "review/browser-underside-section.png",
+      "bytes": 46142,
+      "sha256": "3ee7ef137d4aae12153098b19fa571d7091e2e0df89879ef2ba6e4203c3c2521"
+    },
+    {
+      "path": "review/browser-unpowered-model.png",
+      "bytes": 56859,
+      "sha256": "b55a92a3059728a7d842e2f8bd2fe06574cdb96e7103da510e2587254c378fae"
+    },
+    {
+      "path": "review/browser-unpowered-section.png",
+      "bytes": 46918,
+      "sha256": "41d962e49ef4330cecb86305b537e0ad32017e2d7b07479243872f2a13f984ae"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 13962,
+      "sha256": "e8b88eae672994fb742af33d3d1c8197ed54b2fd72ecfba5cc5b466bbc0dc55a"
+    },
+    {
+      "path": "review/browser-water-model.png",
+      "bytes": 56859,
+      "sha256": "b55a92a3059728a7d842e2f8bd2fe06574cdb96e7103da510e2587254c378fae"
+    },
+    {
+      "path": "review/browser-water-section.png",
+      "bytes": 46918,
+      "sha256": "41d962e49ef4330cecb86305b537e0ad32017e2d7b07479243872f2a13f984ae"
+    },
+    {
+      "path": "review/geometry-verification.json",
+      "bytes": 1074,
+      "sha256": "19ff818da8dc797274a89ba3b7062b92672c3ae32fb857cc545c73e86060cd47"
+    },
+    {
+      "path": "review/visual-review.json",
+      "bytes": 928,
+      "sha256": "9d9536dae919994e52d55c8246bd737583c5f3d327698c8942aee4c26e93cbcf"
+    },
+    {
+      "path": "source/app.js",
+      "bytes": 3745,
+      "sha256": "d18cd08a8333a944f5f4d5be152bdf56ba2fd2ba74d3643afafb8820837c8e0f"
+    },
+    {
+      "path": "source/build-proposal.py",
+      "bytes": 6270,
+      "sha256": "bc3ac5ea6aba3983bd1bd1ff1b4d8a27bd68f6b06ee0fdbe2c09d95262063d34"
+    },
+    {
+      "path": "source/buoyancy-bottom-structure-v02.blend",
+      "bytes": 148769,
+      "sha256": "2bf0cdef12ed61f1002ece934cdc50b195cd2847eca5416c32267b615a97e8eb"
+    },
+    {
+      "path": "source/buoyancy-bottom-v02.bbmodel",
+      "bytes": 72285,
+      "sha256": "9756db023cc87368c94f9cb3bd4391f832da223783b708488957ec637c018c6a"
+    },
+    {
+      "path": "source/chassis-float-pocket-proposal.bbmodel",
+      "bytes": 277482,
+      "sha256": "75f48803fdea27d562882f7a7b961a79fd4aa7f72b07435586ace8119e006ffd"
+    },
+    {
+      "path": "source/check-delivery.py",
+      "bytes": 4041,
+      "sha256": "da4f48283f8dac35251db85b15c96b65b09474ca10cbd068652a3b234ed1ac60"
+    },
+    {
+      "path": "source/create-blender.py",
+      "bytes": 4498,
+      "sha256": "a889c9c3825eb8c1c24e0b708cf5ca12dfeb9281318ff8cfc2e3d78e7d64df81"
+    },
+    {
+      "path": "source/proposal-preview.js",
+      "bytes": 9674,
+      "sha256": "2a0e4039e1b1a956285c372648a08aceeb5b1bdab492bff4c438ce82960bcbd0"
+    },
+    {
+      "path": "source/structure-geometry.json",
+      "bytes": 558549,
+      "sha256": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e"
+    },
+    {
+      "path": "source/verify-blender.py",
+      "bytes": 1960,
+      "sha256": "e61db88e05583d8efbc2f41ec8bcea52d302beb7c8c6b6370ab067fcf0651c65"
+    },
+    {
+      "path": "source/verify-geometry.mjs",
+      "bytes": 4714,
+      "sha256": "af5664b61bd2e4aef6245533680d7d7ce574320777efdbcb3605b3749a3832cb"
+    }
+  ],
+  "checkedAt": "2026-10-11T00:09:19.911312+00:00"
+}

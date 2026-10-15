@@ -31,7 +31,13 @@
       "dev.wildcraft.test.FusionIntegrationGameTests",
       "dev.wildcraft.test.SecondArtGameTests",
       "dev.wildcraft.test.WindGameTests",
-      "dev.wildcraft.test.SurvivalGameTests"
+      "dev.wildcraft.test.SurvivalGameTests",
+      "dev.wildcraft.test.CombatGameTests",
+      "dev.wildcraft.test.MeleeGameTests",
+      "dev.wildcraft.test.GuardGameTests",
+      "dev.wildcraft.test.ReactionGameTests",
+      "dev.wildcraft.test.WeaponGameTests",
+      "dev.wildcraft.test.SpearGameTests"
     ],
     "fabric-client-gametest": [
       "dev.wildcraft.test.WildcraftClientSmokeTest",
@@ -54,7 +60,16 @@
       "dev.wildcraft.test.SecondArtClientTest",
       "dev.wildcraft.test.WindClientTest",
       "dev.wildcraft.test.SurvivalClientTest",
-      "dev.wildcraft.test.PolishPresentationClientTest"
+      "dev.wildcraft.test.PolishPresentationClientTest",
+      "dev.wildcraft.test.InputClientTest",
+      "dev.wildcraft.test.research.combat.CombatFoundationClientProbe",
+      "dev.wildcraft.test.CombatClientTest",
+      "dev.wildcraft.test.MeleeClientTest",
+      "dev.wildcraft.test.GuardClientTest",
+      "dev.wildcraft.test.ReactionClientTest",
+      "dev.wildcraft.test.WeaponClientTest",
+      "dev.wildcraft.test.SpearClientTest",
+      "dev.wildcraft.test.GripClientTest"
     ]
   }
 }

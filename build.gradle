@@ -634,6 +634,1331 @@ tasks.register('runWindClientTest', net.fabricmc.loom.task.prod.ClientProduction
     runDir = layout.buildDirectory.dir('run/wind-client-test')
 }
 
+// F07 packages only the adopted atlas; visual tests use disposable native worlds.
+def windArtMetadataDirectory = layout.buildDirectory.dir('wind-art-test-metadata').get().asFile
+def windArtOnly = providers.gradleProperty('windArtOnly').map { it.toBoolean() }.getOrElse(false)
+def windArtMetadata = tasks.register('windArtTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('only', windArtOnly); outputs.dir(windArtMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = windArtOnly ? ['dev.wildcraft.test.WindArtClientTest'] : ['dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.WindClientTest', 'dev.wildcraft.test.PolishPresentationClientTest', 'dev.wildcraft.test.SecondArtClientTest', 'dev.wildcraft.test.SurvivalClientTest']
+        windArtMetadataDirectory.mkdirs()
+        new File(windArtMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def windArtTestJar = tasks.register('windArtTestJar', Jar) {
+    dependsOn windArtMetadata; archiveClassifier = 'wind-art-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(windArtMetadataDirectory)
+}
+tasks.register('runWindArtClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(windArtTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir(windArtOnly ? 'run/wind-art-only-test' : 'run/wind-art-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir(windArtOnly ? 'run/wind-art-only-test' : 'run/wind-art-client-test').get().asFile
+        directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Test-only continuous mesh qualification; the installed mod is unchanged until this passes.
+def skinProbeMetadataDirectory = layout.buildDirectory.dir('skin-probe-metadata').get().asFile
+def skinProbeMetadata = tasks.register('skinProbeMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(skinProbeMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.AnimationSkinClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        skinProbeMetadataDirectory.mkdirs()
+        new File(skinProbeMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def skinProbeTestJar = tasks.register('skinProbeTestJar', Jar) {
+    dependsOn skinProbeMetadata; archiveClassifier = 'skin-probe'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(skinProbeMetadataDirectory)
+}
+tasks.register('runSkinProbeClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(skinProbeTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/skin-probe-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/skin-probe-client-test').get().asFile;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Test-only continuous mesh qualification; the installed mod is unchanged until this passes.
+def climbSkinProbeMetadataDirectory = layout.buildDirectory.dir('climb-skin-probe-metadata').get().asFile
+def climbSkinProbeMetadata = tasks.register('climbSkinProbeMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(climbSkinProbeMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.ClimbSkinProbeClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        climbSkinProbeMetadataDirectory.mkdirs()
+        new File(climbSkinProbeMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def climbSkinProbeTestJar = tasks.register('climbSkinProbeTestJar', Jar) {
+    dependsOn climbSkinProbeMetadata; archiveClassifier = 'climb-skin-probe'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(climbSkinProbeMetadataDirectory)
+}
+tasks.register('runClimbSkinProbeClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(climbSkinProbeTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/climb-skin-probe-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/climb-skin-probe-client-test').get().asFile;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Test-only reproducible menu cancellation between native render extractions.
+def equipmentGuiMetadataDirectory = layout.buildDirectory.dir('equipment-gui-metadata').get().asFile
+def equipmentGuiMetadata = tasks.register('equipmentGuiMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(equipmentGuiMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.EquipmentGuiClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        equipmentGuiMetadataDirectory.mkdirs()
+        new File(equipmentGuiMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def equipmentGuiTestJar = tasks.register('equipmentGuiTestJar', Jar) {
+    dependsOn equipmentGuiMetadata; archiveClassifier = 'equipment-gui'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(equipmentGuiMetadataDirectory)
+}
+def equipmentGuiRunDirectory = layout.buildDirectory.dir('run/equipment-gui-client-test').get().asFile
+tasks.register('runEquipmentGuiClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(equipmentGuiTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/equipment-gui-client-test')
+    doFirst {
+        def directory = equipmentGuiRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Actual manual/disabled source lifecycle; optional coverage probe retains the original observation.
+def dodgeManualProbe = providers.gradleProperty('dodgeManualProbe').orElse('false').get().toBoolean()
+def dodgeManualMetadataDirectory = layout.buildDirectory.dir('dodge-manual-metadata').get().asFile
+def dodgeManualMetadata = tasks.register('dodgeManualMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('dodgeManualProbe',dodgeManualProbe); outputs.dir(dodgeManualMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = dodgeManualProbe ? ['dev.wildcraft.test.DodgeFeedbackManualProbe'] : ['dev.wildcraft.test.DodgeFeedbackModesClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        dodgeManualMetadataDirectory.mkdirs()
+        new File(dodgeManualMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def dodgeManualTestJar = tasks.register('dodgeManualTestJar', Jar) {
+    dependsOn dodgeManualMetadata; archiveClassifier = 'dodge-manual'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(dodgeManualMetadataDirectory)
+}
+def dodgeManualRunDirectory = layout.buildDirectory.dir('run/dodge-manual-client-test').get().asFile
+tasks.register('runDodgeManualClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(dodgeManualTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    jvmArgs.add('-Dwildcraft.test.dodgeModeCase=' + providers.gradleProperty('dodgeModeCase').orElse('all').get())
+    runDir = layout.buildDirectory.dir('run/dodge-manual-client-test')
+    doFirst {
+        def directory = dodgeManualRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Real action handover regression using the existing packaged runtime.
+def handoverMetadataDirectory = layout.buildDirectory.dir('handover-metadata').get().asFile
+def handoverMetadata = tasks.register('handoverMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(handoverMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.ActionHandoverClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        handoverMetadataDirectory.mkdirs()
+        new File(handoverMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def handoverTestJar = tasks.register('handoverTestJar', Jar) {
+    dependsOn handoverMetadata
+    archiveClassifier = 'handover'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(handoverMetadataDirectory)
+}
+def handoverRunDirectory = file(providers.gradleProperty('handoverRunDir').orElse(layout.buildDirectory.dir('run/handover-client-test').get().asFile.absolutePath).get())
+tasks.register('runActionHandoverClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(handoverTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true')
+    if (providers.gradleProperty('handoverChargeProbe').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.handoverChargeProbe=true')
+    useXVFB = false
+    runDir.set(handoverRunDirectory)
+    doFirst {
+        handoverRunDirectory.mkdirs()
+        new File(handoverRunDirectory, 'screenshots').deleteDir()
+        new File(handoverRunDirectory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Actual RIGHT ground-bow regression using the existing packaged runtime.
+def rightGroundBowMetadataDirectory = layout.buildDirectory.dir('rightGroundBow-metadata').get().asFile
+def rightGroundBowMetadata = tasks.register('rightGroundBowMetadata') {
+    inputs.file(coreArtMetadataSource)
+    inputs.property('rightGroundBowPair',providers.gradleProperty('rightGroundBowPair').orElse('false').get())
+    inputs.property('rightGroundBowFull',providers.gradleProperty('rightGroundBowFull').orElse('false').get())
+    if(providers.gradleProperty('rightGroundBowFull').orElse('false').get().toBoolean()) dependsOn('jumpMetadata')
+    inputs.property('rightGroundBowReachProbe',providers.gradleProperty('rightGroundBowReachProbe').orElse('false').get())
+    outputs.dir(rightGroundBowMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = providers.gradleProperty('rightGroundBowReachProbe').orElse('false').get().toBoolean() ? ['dev.wildcraft.test.RightBowReachProbe'] : ['dev.wildcraft.test.RightGroundBowRigClientTest']
+        if(providers.gradleProperty('rightGroundBowPair').orElse('false').get().toBoolean()) metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.RightGroundBowRigClientTest', 'dev.wildcraft.test.ActionHandoverClientTest']
+        if(providers.gradleProperty('rightGroundBowFull').orElse('false').get().toBoolean()) {
+            if(providers.gradleProperty('jumpOnly').orElse('false').get().toBoolean()) throw new GradleException('rightGroundBowFull requires the full existing jump regression')
+            def previous = new groovy.json.JsonSlurper().parse(layout.buildDirectory.file('jump-metadata/fabric.mod.json').get().asFile)
+            metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.RightGroundBowRigClientTest', 'dev.wildcraft.test.ActionHandoverClientTest', 'dev.wildcraft.test.TraversalHandoverClientTest'] + previous.entrypoints['fabric-client-gametest']
+        }
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        rightGroundBowMetadataDirectory.mkdirs()
+        new File(rightGroundBowMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def rightGroundBowTestJar = tasks.register('rightGroundBowTestJar', Jar) {
+    dependsOn rightGroundBowMetadata
+    archiveClassifier = 'rightGroundBow'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(rightGroundBowMetadataDirectory)
+}
+def rightGroundBowRunDirectory = file(providers.gradleProperty('rightGroundBowRunDir').orElse(layout.buildDirectory.dir('run/rightGroundBow-client-test').get().asFile.absolutePath).get())
+tasks.register('runRightGroundBowRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(rightGroundBowTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true')
+    if(providers.gradleProperty('rightGroundBowBoundaryOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.rightGroundBowBoundaryOnly=true')
+    if(providers.gradleProperty('handoverFirstOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.handoverFirstOnly=true')
+    useXVFB = false
+    runDir.set(rightGroundBowRunDirectory)
+    doFirst {
+        rightGroundBowRunDirectory.mkdirs()
+        new File(rightGroundBowRunDirectory, 'screenshots').deleteDir()
+        new File(rightGroundBowRunDirectory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Actual RIGHT airborne-bow regression using the existing packaged runtime.
+def rightAirBowMetadataDirectory = layout.buildDirectory.dir('rightAirBow-metadata').get().asFile
+def rightAirBowMetadata = tasks.register('rightAirBowMetadata') {
+    inputs.file(coreArtMetadataSource)
+    inputs.property('rightAirBowFull',providers.gradleProperty('rightAirBowFull').orElse('false').get())
+    if(providers.gradleProperty('rightAirBowFull').orElse('false').get().toBoolean()) dependsOn('rightGroundBowMetadata')
+    outputs.dir(rightAirBowMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.RightAirBowRigClientTest']
+        if(providers.gradleProperty('rightAirBowFull').orElse('false').get().toBoolean()) {
+            def previous = new groovy.json.JsonSlurper().parse(layout.buildDirectory.file('rightGroundBow-metadata/fabric.mod.json').get().asFile)
+            if(previous.entrypoints['fabric-client-gametest'].size()!=46) throw new GradleException('rightAirBowFull requires -PrightGroundBowFull=true with all46 existing regression classes')
+            metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.RightAirBowRigClientTest'] + previous.entrypoints['fabric-client-gametest']
+        }
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        rightAirBowMetadataDirectory.mkdirs()
+        new File(rightAirBowMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def rightAirBowTestJar = tasks.register('rightAirBowTestJar', Jar) {
+    dependsOn rightAirBowMetadata
+    archiveClassifier = 'rightAirBow'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(rightAirBowMetadataDirectory)
+}
+def rightAirBowRunDirectory = file(providers.gradleProperty('rightAirBowRunDir').orElse(layout.buildDirectory.dir('run/rightAirBow-client-test').get().asFile.absolutePath).get())
+tasks.register('runRightAirBowRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(rightAirBowTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true')
+    if(providers.gradleProperty('rightAirBoundaryOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.rightAirBoundaryOnly=true')
+    if(providers.gradleProperty('rightAirClockOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.rightAirClockOnly=true')
+    useXVFB = false
+    runDir.set(rightAirBowRunDirectory)
+    doFirst {
+        rightAirBowRunDirectory.mkdirs()
+        new File(rightAirBowRunDirectory, 'screenshots').deleteDir()
+        new File(rightAirBowRunDirectory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Real wall-to-glider traversalHandover regression using the existing packaged runtime.
+def traversalHandoverMetadataDirectory = layout.buildDirectory.dir('traversalHandover-metadata').get().asFile
+def traversalHandoverMetadata = tasks.register('traversalHandoverMetadata') {
+    inputs.file(coreArtMetadataSource)
+    outputs.dir(traversalHandoverMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.TraversalHandoverClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        traversalHandoverMetadataDirectory.mkdirs()
+        new File(traversalHandoverMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def traversalHandoverTestJar = tasks.register('traversalHandoverTestJar', Jar) {
+    dependsOn traversalHandoverMetadata
+    archiveClassifier = 'traversalHandover'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(traversalHandoverMetadataDirectory)
+}
+def traversalHandoverRunDirectory = file(providers.gradleProperty('traversalHandoverRunDir').orElse(layout.buildDirectory.dir('run/traversalHandover-client-test').get().asFile.absolutePath).get())
+tasks.register('runTraversalHandoverClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.from(traversalHandoverTestJar)
+    jvmArgs.add('-Dfabric.client.gametest')
+    jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true')
+    useXVFB = false
+    runDir.set(traversalHandoverRunDirectory)
+    doFirst {
+        traversalHandoverRunDirectory.mkdirs()
+        new File(traversalHandoverRunDirectory, 'screenshots').deleteDir()
+        new File(traversalHandoverRunDirectory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Adopted stationary bow idle only; real use/draw/shot remains native.
+def bowAirMappingOnly = providers.gradleProperty('bowAirMappingOnly').orElse('false').get().toBoolean()
+def bowAirMappingMetadataDirectory = layout.buildDirectory.dir('bow-air-mapping-metadata').get().asFile
+def bowAirMappingMetadata = tasks.register('bowAirMappingMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('bowAirMappingOnly',bowAirMappingOnly); outputs.dir(bowAirMappingMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.BowAirMappingSourceProbe']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        bowAirMappingMetadataDirectory.mkdirs()
+        new File(bowAirMappingMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def bowAirMappingTestJar = tasks.register('bowAirMappingTestJar', Jar) {
+    dependsOn bowAirMappingMetadata; archiveClassifier = 'bow-air-mapping'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(bowAirMappingMetadataDirectory)
+}
+def bowAirMappingRunDirectory = layout.buildDirectory.dir('run/bow-air-mapping-client-test').get().asFile
+tasks.register('runBowAirMappingSourceProbeClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(bowAirMappingTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/bow-air-mapping-client-test')
+    doFirst {
+        def directory = bowAirMappingRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+def bowGroundMappingOnly = providers.gradleProperty('bowGroundMappingOnly').orElse('false').get().toBoolean()
+def bowGroundMappingMetadataDirectory = layout.buildDirectory.dir('bow-ground-mapping-metadata').get().asFile
+def bowGroundMappingMetadata = tasks.register('bowGroundMappingMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('bowGroundMappingOnly',bowGroundMappingOnly); outputs.dir(bowGroundMappingMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.BowGroundMappingSourceProbe']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        bowGroundMappingMetadataDirectory.mkdirs()
+        new File(bowGroundMappingMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def bowGroundMappingTestJar = tasks.register('bowGroundMappingTestJar', Jar) {
+    dependsOn bowGroundMappingMetadata; archiveClassifier = 'bow-ground-mapping'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(bowGroundMappingMetadataDirectory)
+}
+def bowGroundMappingRunDirectory = layout.buildDirectory.dir('run/bow-ground-mapping-client-test').get().asFile
+tasks.register('runBowGroundMappingSourceProbeClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(bowGroundMappingTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/bow-ground-mapping-client-test')
+    doFirst {
+        def directory = bowGroundMappingRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Adopted stationary bow idle only; real use/draw/shot remains native.
+// Actual left used arm; native 20-tick bow shot stays authoritative.
+def jumpOnly = providers.gradleProperty('jumpOnly').orElse('false').get().toBoolean()
+def jumpMetadataDirectory = layout.buildDirectory.dir('jump-metadata').get().asFile
+def jumpMetadata = tasks.register('jumpMetadata') {
+    inputs.file(coreArtMetadataSource);inputs.property('jumpOnly',jumpOnly);inputs.property('rigRuntimeJumpProbe',providers.gradleProperty('rigRuntimeJumpProbe').orElse('false').get());outputs.dir(jumpMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = jumpOnly ? ['dev.wildcraft.test.JumpRigClientTest'] : ['dev.wildcraft.test.JumpRigClientTest', 'dev.wildcraft.test.AirMaceRigClientTest', 'dev.wildcraft.test.AirSpearRigClientTest', 'dev.wildcraft.test.AirTridentRigClientTest', 'dev.wildcraft.test.GroundMaceRigClientTest', 'dev.wildcraft.test.GroundSpearRigClientTest', 'dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        if(providers.gradleProperty('rigRuntimeJumpProbe').orElse('false').get().toBoolean())metadata.entrypoints['fabric-client-gametest']=['dev.wildcraft.test.RigRuntimeClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        jumpMetadataDirectory.mkdirs()
+        new File(jumpMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def jumpTestJar = tasks.register('jumpTestJar', Jar) {
+    dependsOn jumpMetadata; archiveClassifier = 'jump'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(jumpMetadataDirectory)
+}
+def jumpRunDirectory = file(providers.gradleProperty('jumpRunDir').orElse(layout.buildDirectory.dir('run/jump-client-test').get().asFile.absolutePath).get())
+tasks.register('runJumpRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(jumpTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('jumpSlotProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.jumpSlotProbe=true')
+    if(providers.gradleProperty('jumpBoundaryOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.jumpBoundaryOnly=true')
+    if(providers.gradleProperty('rigRuntimeJumpProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.rigRuntimeJumpProbe=true')
+    runDir.set(jumpRunDirectory)
+    doFirst {
+        def directory = jumpRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+
+def airMaceOnly = providers.gradleProperty('airMaceOnly').orElse('false').get().toBoolean()
+def airMaceMetadataDirectory = layout.buildDirectory.dir('air-mace-metadata').get().asFile
+def airMaceMetadata = tasks.register('airMaceMetadata') {
+    inputs.file(coreArtMetadataSource);inputs.property('airMaceOnly',airMaceOnly);outputs.dir(airMaceMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = airMaceOnly ? ['dev.wildcraft.test.AirMaceRigClientTest'] : ['dev.wildcraft.test.AirMaceRigClientTest', 'dev.wildcraft.test.AirSpearRigClientTest', 'dev.wildcraft.test.AirTridentRigClientTest', 'dev.wildcraft.test.GroundMaceRigClientTest', 'dev.wildcraft.test.GroundSpearRigClientTest', 'dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        airMaceMetadataDirectory.mkdirs()
+        new File(airMaceMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def airMaceTestJar = tasks.register('airMaceTestJar', Jar) {
+    dependsOn airMaceMetadata; archiveClassifier = 'air-mace'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(airMaceMetadataDirectory)
+}
+def airMaceRunDirectory = file(providers.gradleProperty('airMaceRunDir').orElse(layout.buildDirectory.dir('run/air-mace-client-test').get().asFile.absolutePath).get())
+tasks.register('runAirMaceRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(airMaceTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('groundPauseOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundPauseOnly=true')
+    if(providers.gradleProperty('airMaceStrongProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.airMaceStrongProbe=true')
+    runDir.set(airMaceRunDirectory)
+    doFirst {
+        def directory = airMaceRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def airSpearOnly = providers.gradleProperty('airSpearOnly').orElse('false').get().toBoolean()
+def airSpearMetadataDirectory = layout.buildDirectory.dir('air-spear-metadata').get().asFile
+def airSpearMetadata = tasks.register('airSpearMetadata') {
+    inputs.file(coreArtMetadataSource);inputs.property('airSpearOnly',airSpearOnly);outputs.dir(airSpearMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = airSpearOnly ? ['dev.wildcraft.test.AirSpearRigClientTest'] : ['dev.wildcraft.test.AirSpearRigClientTest', 'dev.wildcraft.test.AirTridentRigClientTest', 'dev.wildcraft.test.GroundMaceRigClientTest', 'dev.wildcraft.test.GroundSpearRigClientTest', 'dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        airSpearMetadataDirectory.mkdirs()
+        new File(airSpearMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def airSpearTestJar = tasks.register('airSpearTestJar', Jar) {
+    dependsOn airSpearMetadata; archiveClassifier = 'air-spear'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(airSpearMetadataDirectory)
+}
+def airSpearRunDirectory = file(providers.gradleProperty('airSpearRunDir').orElse(layout.buildDirectory.dir('run/air-spear-client-test').get().asFile.absolutePath).get())
+tasks.register('runAirSpearRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(airSpearTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('groundPauseOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundPauseOnly=true')
+    if(providers.gradleProperty('airSpearStrongProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.airSpearStrongProbe=true')
+    runDir.set(airSpearRunDirectory)
+    doFirst {
+        def directory = airSpearRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def airTridentOnly = providers.gradleProperty('airTridentOnly').orElse('false').get().toBoolean()
+def airTridentMetadataDirectory = layout.buildDirectory.dir('air-trident-metadata').get().asFile
+def airTridentMetadata = tasks.register('airTridentMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('airTridentOnly',airTridentOnly);inputs.property('groundTridentJumpProbe',providers.gradleProperty('groundTridentJumpProbe').orElse('false').get()); outputs.dir(airTridentMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = airTridentOnly ? ['dev.wildcraft.test.AirTridentRigClientTest'] : ['dev.wildcraft.test.AirTridentRigClientTest', 'dev.wildcraft.test.GroundMaceRigClientTest', 'dev.wildcraft.test.GroundSpearRigClientTest', 'dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        if(providers.gradleProperty('groundTridentJumpProbe').orElse('false').get().toBoolean())metadata.entrypoints['fabric-client-gametest']=['dev.wildcraft.test.GroundTridentRigClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        airTridentMetadataDirectory.mkdirs()
+        new File(airTridentMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def airTridentTestJar = tasks.register('airTridentTestJar', Jar) {
+    dependsOn airTridentMetadata; archiveClassifier = 'air-trident'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(airTridentMetadataDirectory)
+}
+def airTridentRunDirectory = file(providers.gradleProperty('airTridentRunDir').orElse(layout.buildDirectory.dir('run/air-trident-client-test').get().asFile.absolutePath).get())
+tasks.register('runAirTridentRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(airTridentTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('groundPauseOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundPauseOnly=true')
+    if(providers.gradleProperty('airTridentStrongProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.airTridentStrongProbe=true')
+    if(providers.gradleProperty('groundTridentJumpProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundTridentJumpProbe=true')
+    runDir.set(airTridentRunDirectory)
+    doFirst {
+        def directory = airTridentRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def groundMaceOnly = providers.gradleProperty('groundMaceOnly').orElse('false').get().toBoolean()
+def groundMaceMetadataDirectory = layout.buildDirectory.dir('ground-mace-metadata').get().asFile
+def groundMaceMetadata = tasks.register('groundMaceMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('groundMaceOnly',groundMaceOnly); outputs.dir(groundMaceMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = groundMaceOnly ? ['dev.wildcraft.test.GroundMaceRigClientTest'] : ['dev.wildcraft.test.GroundMaceRigClientTest', 'dev.wildcraft.test.GroundSpearRigClientTest', 'dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        groundMaceMetadataDirectory.mkdirs()
+        new File(groundMaceMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def groundMaceTestJar = tasks.register('groundMaceTestJar', Jar) {
+    dependsOn groundMaceMetadata; archiveClassifier = 'ground-mace'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(groundMaceMetadataDirectory)
+}
+def groundMaceRunDirectory = file(providers.gradleProperty('groundMaceRunDir').orElse(layout.buildDirectory.dir('run/ground-mace-client-test').get().asFile.absolutePath).get())
+tasks.register('runGroundMaceRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(groundMaceTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('groundPauseOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundPauseOnly=true')
+    runDir.set(groundMaceRunDirectory)
+    doFirst {
+        def directory = groundMaceRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def groundSpearOnly = providers.gradleProperty('groundSpearOnly').orElse('false').get().toBoolean()
+def groundSpearMetadataDirectory = layout.buildDirectory.dir('ground-spear-metadata').get().asFile
+def groundSpearMetadata = tasks.register('groundSpearMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('groundSpearOnly',groundSpearOnly); outputs.dir(groundSpearMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = groundSpearOnly ? ['dev.wildcraft.test.GroundSpearRigClientTest'] : ['dev.wildcraft.test.GroundSpearRigClientTest', 'dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        groundSpearMetadataDirectory.mkdirs()
+        new File(groundSpearMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def groundSpearTestJar = tasks.register('groundSpearTestJar', Jar) {
+    dependsOn groundSpearMetadata; archiveClassifier = 'ground-spear'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(groundSpearMetadataDirectory)
+}
+def groundSpearRunDirectory = layout.buildDirectory.dir('run/ground-spear-client-test').get().asFile
+tasks.register('runGroundSpearRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(groundSpearTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('groundPauseOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundPauseOnly=true')
+    if(providers.gradleProperty('groundSpearStrongProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundSpearStrongProbe=true')
+    if(providers.gradleProperty('groundSpearUseProbe').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundSpearUseProbe=true')
+    runDir = layout.buildDirectory.dir('run/ground-spear-client-test')
+    doFirst {
+        def directory = groundSpearRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def groundTridentOnly = providers.gradleProperty('groundTridentOnly').orElse('false').get().toBoolean()
+def groundTridentMetadataDirectory = layout.buildDirectory.dir('ground-trident-metadata').get().asFile
+def groundTridentMetadata = tasks.register('groundTridentMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('groundTridentOnly',groundTridentOnly); outputs.dir(groundTridentMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = groundTridentOnly ? ['dev.wildcraft.test.GroundTridentRigClientTest'] : ['dev.wildcraft.test.GroundTridentRigClientTest', 'dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        groundTridentMetadataDirectory.mkdirs()
+        new File(groundTridentMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def groundTridentTestJar = tasks.register('groundTridentTestJar', Jar) {
+    dependsOn groundTridentMetadata; archiveClassifier = 'ground-trident'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(groundTridentMetadataDirectory)
+}
+def groundTridentRunDirectory = layout.buildDirectory.dir('run/ground-trident-client-test').get().asFile
+tasks.register('runGroundTridentRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(groundTridentTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('groundPauseOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.groundPauseOnly=true')
+    runDir = layout.buildDirectory.dir('run/ground-trident-client-test')
+    doFirst {
+        def directory = groundTridentRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def crossbowTransitionOnly = providers.gradleProperty('crossbowTransitionOnly').orElse('false').get().toBoolean()
+def crossbowTransitionMetadataDirectory = layout.buildDirectory.dir('crossbow-transition-metadata').get().asFile
+def crossbowTransitionMetadata = tasks.register('crossbowTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('crossbowTransitionOnly',crossbowTransitionOnly); outputs.dir(crossbowTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = crossbowTransitionOnly ? ['dev.wildcraft.test.CrossbowTransitionRigClientTest'] : ['dev.wildcraft.test.CrossbowTransitionRigClientTest', 'dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        crossbowTransitionMetadataDirectory.mkdirs()
+        new File(crossbowTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def crossbowTransitionTestJar = tasks.register('crossbowTransitionTestJar', Jar) {
+    dependsOn crossbowTransitionMetadata; archiveClassifier = 'crossbow-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(crossbowTransitionMetadataDirectory)
+}
+def crossbowTransitionRunDirectory = layout.buildDirectory.dir('run/crossbow-transition-client-test').get().asFile
+tasks.register('runCrossbowTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(crossbowTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    if(providers.gradleProperty('crossbowFireOnly').orElse('false').get().toBoolean())jvmArgs.add('-Dwildcraft.test.crossbowFireOnly=true')
+    runDir = layout.buildDirectory.dir('run/crossbow-transition-client-test')
+    doFirst {
+        def directory = crossbowTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def maceTransitionOnly = providers.gradleProperty('maceTransitionOnly').orElse('false').get().toBoolean()
+def maceTransitionMetadataDirectory = layout.buildDirectory.dir('mace-transition-metadata').get().asFile
+def maceTransitionMetadata = tasks.register('maceTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('maceTransitionOnly',maceTransitionOnly); outputs.dir(maceTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = maceTransitionOnly ? ['dev.wildcraft.test.MaceTransitionRigClientTest'] : ['dev.wildcraft.test.MaceTransitionRigClientTest', 'dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        maceTransitionMetadataDirectory.mkdirs()
+        new File(maceTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def maceTransitionTestJar = tasks.register('maceTransitionTestJar', Jar) {
+    dependsOn maceTransitionMetadata; archiveClassifier = 'mace-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(maceTransitionMetadataDirectory)
+}
+def maceTransitionRunDirectory = layout.buildDirectory.dir('run/mace-transition-client-test').get().asFile
+tasks.register('runMaceTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(maceTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/mace-transition-client-test')
+    doFirst {
+        def directory = maceTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def spearTransitionOnly = providers.gradleProperty('spearTransitionOnly').orElse('false').get().toBoolean()
+def spearTransitionMetadataDirectory = layout.buildDirectory.dir('spear-transition-metadata').get().asFile
+def spearTransitionMetadata = tasks.register('spearTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('spearTransitionOnly',spearTransitionOnly); outputs.dir(spearTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = spearTransitionOnly ? ['dev.wildcraft.test.SpearTransitionRigClientTest'] : ['dev.wildcraft.test.SpearTransitionRigClientTest', 'dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        spearTransitionMetadataDirectory.mkdirs()
+        new File(spearTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def spearTransitionTestJar = tasks.register('spearTransitionTestJar', Jar) {
+    dependsOn spearTransitionMetadata; archiveClassifier = 'spear-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(spearTransitionMetadataDirectory)
+}
+def spearTransitionRunDirectory = layout.buildDirectory.dir('run/spear-transition-client-test').get().asFile
+tasks.register('runSpearTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(spearTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/spear-transition-client-test')
+    doFirst {
+        def directory = spearTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+
+def tridentTransitionOnly = providers.gradleProperty('tridentTransitionOnly').orElse('false').get().toBoolean()
+def tridentTransitionMetadataDirectory = layout.buildDirectory.dir('trident-transition-metadata').get().asFile
+def tridentTransitionMetadata = tasks.register('tridentTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('tridentTransitionOnly',tridentTransitionOnly); outputs.dir(tridentTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = tridentTransitionOnly ? ['dev.wildcraft.test.TridentTransitionRigClientTest'] : ['dev.wildcraft.test.TridentTransitionRigClientTest', 'dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        tridentTransitionMetadataDirectory.mkdirs()
+        new File(tridentTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def tridentTransitionTestJar = tasks.register('tridentTransitionTestJar', Jar) {
+    dependsOn tridentTransitionMetadata; archiveClassifier = 'trident-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(tridentTransitionMetadataDirectory)
+}
+def tridentTransitionRunDirectory = layout.buildDirectory.dir('run/trident-transition-client-test').get().asFile
+tasks.register('runTridentTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(tridentTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/trident-transition-client-test')
+    doFirst {
+        def directory = tridentTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+
+def axeTransitionOnly = providers.gradleProperty('axeTransitionOnly').orElse('false').get().toBoolean()
+def axeTransitionMetadataDirectory = layout.buildDirectory.dir('axe-transition-metadata').get().asFile
+def axeTransitionMetadata = tasks.register('axeTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('axeTransitionOnly',axeTransitionOnly); outputs.dir(axeTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = axeTransitionOnly ? ['dev.wildcraft.test.AxeTransitionRigClientTest'] : ['dev.wildcraft.test.AxeTransitionRigClientTest', 'dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        axeTransitionMetadataDirectory.mkdirs()
+        new File(axeTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def axeTransitionTestJar = tasks.register('axeTransitionTestJar', Jar) {
+    dependsOn axeTransitionMetadata; archiveClassifier = 'axe-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(axeTransitionMetadataDirectory)
+}
+def axeTransitionRunDirectory = layout.buildDirectory.dir('run/axe-transition-client-test').get().asFile
+tasks.register('runAxeTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(axeTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/axe-transition-client-test')
+    doFirst {
+        def directory = axeTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+
+def shieldTransitionOnly = providers.gradleProperty('shieldTransitionOnly').orElse('false').get().toBoolean()
+def shieldTransitionMetadataDirectory = layout.buildDirectory.dir('shield-transition-metadata').get().asFile
+def shieldTransitionMetadata = tasks.register('shieldTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('shieldTransitionOnly',shieldTransitionOnly); outputs.dir(shieldTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = shieldTransitionOnly ? ['dev.wildcraft.test.ShieldTransitionRigClientTest'] : ['dev.wildcraft.test.ShieldTransitionRigClientTest', 'dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        shieldTransitionMetadataDirectory.mkdirs()
+        new File(shieldTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def shieldTransitionTestJar = tasks.register('shieldTransitionTestJar', Jar) {
+    dependsOn shieldTransitionMetadata; archiveClassifier = 'shield-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(shieldTransitionMetadataDirectory)
+}
+def shieldTransitionRunDirectory = layout.buildDirectory.dir('run/shield-transition-client-test').get().asFile
+tasks.register('runShieldTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(shieldTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/shield-transition-client-test')
+    doFirst {
+        def directory = shieldTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def bowTransitionOnly = providers.gradleProperty('bowTransitionOnly').orElse('false').get().toBoolean()
+def bowTransitionMetadataDirectory = layout.buildDirectory.dir('bow-transition-metadata').get().asFile
+def bowTransitionMetadata = tasks.register('bowTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('bowTransitionOnly',bowTransitionOnly); outputs.dir(bowTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = bowTransitionOnly ? ['dev.wildcraft.test.BowTransitionRigClientTest'] : ['dev.wildcraft.test.BowTransitionRigClientTest', 'dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        bowTransitionMetadataDirectory.mkdirs()
+        new File(bowTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def bowTransitionTestJar = tasks.register('bowTransitionTestJar', Jar) {
+    dependsOn bowTransitionMetadata; archiveClassifier = 'bow-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(bowTransitionMetadataDirectory)
+}
+def bowTransitionRunDirectory = layout.buildDirectory.dir('run/bow-transition-client-test').get().asFile
+tasks.register('runBowTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(bowTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/bow-transition-client-test')
+    doFirst {
+        def directory = bowTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def hurtRigOnly = providers.gradleProperty('hurtRigOnly').orElse('false').get().toBoolean()
+def hurtRigMetadataDirectory = layout.buildDirectory.dir('hurt-rig-metadata').get().asFile
+def hurtRigMetadata = tasks.register('hurtRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('hurtRigOnly',hurtRigOnly); outputs.dir(hurtRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = hurtRigOnly ? ['dev.wildcraft.test.HurtRigClientTest'] : ['dev.wildcraft.test.HurtRigClientTest', 'dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        hurtRigMetadataDirectory.mkdirs()
+        new File(hurtRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def hurtRigTestJar = tasks.register('hurtRigTestJar', Jar) {
+    dependsOn hurtRigMetadata; archiveClassifier = 'hurt-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(hurtRigMetadataDirectory)
+}
+def hurtRigRunDirectory = layout.buildDirectory.dir('run/hurt-rig-client-test').get().asFile
+tasks.register('runHurtRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(hurtRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/hurt-rig-client-test')
+    doFirst {
+        def directory = hurtRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def swordTransitionOnly = providers.gradleProperty('swordTransitionOnly').orElse('false').get().toBoolean()
+def swordTransitionMetadataDirectory = layout.buildDirectory.dir('sword-transition-metadata').get().asFile
+def swordTransitionMetadata = tasks.register('swordTransitionMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('swordTransitionOnly',swordTransitionOnly); outputs.dir(swordTransitionMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = swordTransitionOnly ? ['dev.wildcraft.test.SwordTransitionRigClientTest'] : ['dev.wildcraft.test.SwordTransitionRigClientTest', 'dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        swordTransitionMetadataDirectory.mkdirs()
+        new File(swordTransitionMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def swordTransitionTestJar = tasks.register('swordTransitionTestJar', Jar) {
+    dependsOn swordTransitionMetadata; archiveClassifier = 'sword-transition'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(swordTransitionMetadataDirectory)
+}
+def swordTransitionRunDirectory = layout.buildDirectory.dir('run/sword-transition-client-test').get().asFile
+tasks.register('runSwordTransitionRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(swordTransitionTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/sword-transition-client-test')
+    doFirst {
+        def directory = swordTransitionRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def airMeleeOnly = providers.gradleProperty('airMeleeOnly').orElse('false').get().toBoolean()
+def airMeleeMetadataDirectory = layout.buildDirectory.dir('air-melee-metadata').get().asFile
+def airMeleeMetadata = tasks.register('airMeleeMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('airMeleeOnly',airMeleeOnly); outputs.dir(airMeleeMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = airMeleeOnly ? ['dev.wildcraft.test.AirMeleeRigClientTest'] : ['dev.wildcraft.test.AirMeleeRigClientTest', 'dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        airMeleeMetadataDirectory.mkdirs()
+        new File(airMeleeMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def airMeleeTestJar = tasks.register('airMeleeTestJar', Jar) {
+    dependsOn airMeleeMetadata; archiveClassifier = 'air-melee'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(airMeleeMetadataDirectory)
+}
+def airMeleeRunDirectory = layout.buildDirectory.dir('run/air-melee-client-test').get().asFile
+tasks.register('runAirMeleeRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(airMeleeTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/air-melee-client-test')
+    doFirst {
+        def directory = airMeleeRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def focusLegOnly = providers.gradleProperty('focusLegOnly').orElse('false').get().toBoolean()
+def focusLegMetadataDirectory = layout.buildDirectory.dir('focus-leg-metadata').get().asFile
+def focusLegMetadata = tasks.register('focusLegMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('focusLegOnly',focusLegOnly); outputs.dir(focusLegMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = focusLegOnly ? ['dev.wildcraft.test.FocusLegRigClientTest'] : ['dev.wildcraft.test.FocusLegRigClientTest', 'dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        focusLegMetadataDirectory.mkdirs()
+        new File(focusLegMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def focusLegTestJar = tasks.register('focusLegTestJar', Jar) {
+    dependsOn focusLegMetadata; archiveClassifier = 'focus-leg'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(focusLegMetadataDirectory)
+}
+def focusLegRunDirectory = layout.buildDirectory.dir('run/focus-leg-client-test').get().asFile
+tasks.register('runFocusLegRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(focusLegTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/focus-leg-client-test')
+    doFirst {
+        def directory = focusLegRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def airBowOnly = providers.gradleProperty('airBowOnly').orElse('false').get().toBoolean()
+def airBowMetadataDirectory = layout.buildDirectory.dir('air-bow-metadata').get().asFile
+def airBowMetadata = tasks.register('airBowMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('airBowOnly',airBowOnly); outputs.dir(airBowMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = airBowOnly ? ['dev.wildcraft.test.AirBowRigClientTest'] : ['dev.wildcraft.test.AirBowRigClientTest', 'dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        airBowMetadataDirectory.mkdirs()
+        new File(airBowMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def airBowTestJar = tasks.register('airBowTestJar', Jar) {
+    dependsOn airBowMetadata; archiveClassifier = 'air-bow'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(airBowMetadataDirectory)
+}
+def airBowRunDirectory = layout.buildDirectory.dir('run/air-bow-client-test').get().asFile
+tasks.register('runAirBowRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(airBowTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/air-bow-client-test')
+    doFirst {
+        def directory = airBowRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def groundBowOnly = providers.gradleProperty('groundBowOnly').orElse('false').get().toBoolean()
+def groundBowMetadataDirectory = layout.buildDirectory.dir('ground-bow-metadata').get().asFile
+def groundBowMetadata = tasks.register('groundBowMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('groundBowOnly',groundBowOnly); outputs.dir(groundBowMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = groundBowOnly ? ['dev.wildcraft.test.GroundBowRigClientTest'] : ['dev.wildcraft.test.GroundBowRigClientTest', 'dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        groundBowMetadataDirectory.mkdirs()
+        new File(groundBowMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def groundBowTestJar = tasks.register('groundBowTestJar', Jar) {
+    dependsOn groundBowMetadata; archiveClassifier = 'ground-bow'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(groundBowMetadataDirectory)
+}
+def groundBowRunDirectory = layout.buildDirectory.dir('run/ground-bow-client-test').get().asFile
+tasks.register('runGroundBowRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(groundBowTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/ground-bow-client-test')
+    doFirst {
+        def directory = groundBowRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+def bowIdleOnly = providers.gradleProperty('bowIdleOnly').orElse('false').get().toBoolean()
+def bowIdleMetadataDirectory = layout.buildDirectory.dir('bow-idle-metadata').get().asFile
+def bowIdleMetadata = tasks.register('bowIdleMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('bowIdleOnly',bowIdleOnly); outputs.dir(bowIdleMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = bowIdleOnly ? ['dev.wildcraft.test.BowIdleRigClientTest'] : ['dev.wildcraft.test.BowIdleRigClientTest', 'dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        bowIdleMetadataDirectory.mkdirs()
+        new File(bowIdleMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def bowIdleTestJar = tasks.register('bowIdleTestJar', Jar) {
+    dependsOn bowIdleMetadata; archiveClassifier = 'bow-idle'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(bowIdleMetadataDirectory)
+}
+def bowIdleRunDirectory = layout.buildDirectory.dir('run/bow-idle-client-test').get().asFile
+tasks.register('runBowIdleRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(bowIdleTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/bow-idle-client-test')
+    doFirst {
+        def directory = bowIdleRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Actual moving offhand defense retains vanilla movement/blocking; source only supplies presentation.
+def shieldWalkOnly = providers.gradleProperty('shieldWalkOnly').orElse('false').get().toBoolean()
+def shieldWalkMetadataDirectory = layout.buildDirectory.dir('shield-walk-metadata').get().asFile
+def shieldWalkMetadata = tasks.register('shieldWalkMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('shieldWalkOnly',shieldWalkOnly); outputs.dir(shieldWalkMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = shieldWalkOnly ? ['dev.wildcraft.test.ShieldWalkRigClientTest'] : ['dev.wildcraft.test.ShieldWalkRigClientTest', 'dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        shieldWalkMetadataDirectory.mkdirs()
+        new File(shieldWalkMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def shieldWalkTestJar = tasks.register('shieldWalkTestJar', Jar) {
+    dependsOn shieldWalkMetadata; archiveClassifier = 'shield-walk'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(shieldWalkMetadataDirectory)
+}
+def shieldWalkRunDirectory = layout.buildDirectory.dir('run/shield-walk-client-test').get().asFile
+tasks.register('runShieldWalkRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(shieldWalkTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/shield-walk-client-test')
+    doFirst {
+        def directory = shieldWalkRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Successful real native miss owns a short source body envelope; existing gameplay lease remains.
+def dodgeFeedbackOnly = providers.gradleProperty('dodgeFeedbackOnly').orElse('false').get().toBoolean()
+def dodgeFeedbackMetadataDirectory = layout.buildDirectory.dir('dodge-feedback-metadata').get().asFile
+def dodgeFeedbackMetadata = tasks.register('dodgeFeedbackMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('dodgeFeedbackOnly',dodgeFeedbackOnly); outputs.dir(dodgeFeedbackMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = dodgeFeedbackOnly ? ['dev.wildcraft.test.DodgeFeedbackClientTest'] : ['dev.wildcraft.test.DodgeFeedbackModesClientTest', 'dev.wildcraft.test.DodgeFeedbackClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        dodgeFeedbackMetadataDirectory.mkdirs()
+        new File(dodgeFeedbackMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def dodgeFeedbackTestJar = tasks.register('dodgeFeedbackTestJar', Jar) {
+    dependsOn dodgeFeedbackMetadata; archiveClassifier = 'dodge-feedback'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(dodgeFeedbackMetadataDirectory)
+}
+def dodgeFeedbackRunDirectory = layout.buildDirectory.dir('run/dodge-feedback-client-test').get().asFile
+tasks.register('runDodgeFeedbackClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(dodgeFeedbackTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/dodge-feedback-client-test')
+    doFirst {
+        def directory = dodgeFeedbackRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Adopted actual native hops; guard clips are not a new hopping defense rule.
+def hopRigOnly = providers.gradleProperty('hopRigOnly').orElse('false').get().toBoolean()
+def hopRigMetadataDirectory = layout.buildDirectory.dir('hop-rig-metadata').get().asFile
+def hopRigMetadata = tasks.register('hopRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('hopRigOnly',hopRigOnly); outputs.dir(hopRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = hopRigOnly ? ['dev.wildcraft.test.HopRigClientTest'] : ['dev.wildcraft.test.HopRigClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        hopRigMetadataDirectory.mkdirs()
+        new File(hopRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def hopRigTestJar = tasks.register('hopRigTestJar', Jar) {
+    dependsOn hopRigMetadata; archiveClassifier = 'hop-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(hopRigMetadataDirectory)
+}
+def hopRigRunDirectory = layout.buildDirectory.dir('run/hop-rig-client-test').get().asFile
+tasks.register('runHopRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(hopRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/hop-rig-client-test')
+    doFirst {
+        def directory = hopRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Authored successful guard arm over the current native body and actual guard-rule regression.
+def guardRigOnly = providers.gradleProperty('guardRigOnly').orElse('false').get().toBoolean()
+def guardRigMetadataDirectory = layout.buildDirectory.dir('guard-rig-metadata').get().asFile
+def guardRigMetadata = tasks.register('guardRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('guardRigOnly',guardRigOnly); outputs.dir(guardRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = guardRigOnly ? ['dev.wildcraft.test.GuardRigClientTest'] : ['dev.wildcraft.test.GuardRigClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentGuiClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        guardRigMetadataDirectory.mkdirs()
+        new File(guardRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def guardRigTestJar = tasks.register('guardRigTestJar', Jar) {
+    dependsOn guardRigMetadata; archiveClassifier = 'guard-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(guardRigMetadataDirectory)
+}
+def guardRigRunDirectory = layout.buildDirectory.dir('run/guard-rig-client-test').get().asFile
+tasks.register('runGuardRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(guardRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/guard-rig-client-test')
+    doFirst {
+        def directory = guardRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Adopted sword heavy and axe light/heavy with native rule regression.
+def heavyMeleeRigOnly = providers.gradleProperty('heavyMeleeRigOnly').orElse('false').get().toBoolean()
+def heavyMeleeRigMetadataDirectory = layout.buildDirectory.dir('heavy-melee-rig-metadata').get().asFile
+def heavyMeleeRigMetadata = tasks.register('heavyMeleeRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('heavyMeleeRigOnly',heavyMeleeRigOnly); outputs.dir(heavyMeleeRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = heavyMeleeRigOnly ? ['dev.wildcraft.test.HeavyMeleeRigClientTest'] : ['dev.wildcraft.test.HeavyMeleeRigClientTest', 'dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        heavyMeleeRigMetadataDirectory.mkdirs()
+        new File(heavyMeleeRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def heavyMeleeRigTestJar = tasks.register('heavyMeleeRigTestJar', Jar) {
+    dependsOn heavyMeleeRigMetadata; archiveClassifier = 'heavy-melee-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(heavyMeleeRigMetadataDirectory)
+}
+def heavyMeleeRigRunDirectory = layout.buildDirectory.dir('run/heavy-melee-rig-client-test').get().asFile
+tasks.register('runHeavyMeleeRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(heavyMeleeRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/heavy-melee-rig-client-test')
+    doFirst {
+        def directory = heavyMeleeRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Actual approved locked movement with retained traversal/combat regression.
+def lockedWalkRigOnly = providers.gradleProperty('lockedWalkRigOnly').orElse('false').get().toBoolean()
+def lockedWalkRigMetadataDirectory = layout.buildDirectory.dir('locked-walk-rig-metadata').get().asFile
+def lockedWalkRigMetadata = tasks.register('lockedWalkRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('lockedWalkRigOnly',lockedWalkRigOnly); outputs.dir(lockedWalkRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = lockedWalkRigOnly ? ['dev.wildcraft.test.LockedWalkRigClientTest'] : ['dev.wildcraft.test.LockedWalkRigClientTest', 'dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        lockedWalkRigMetadataDirectory.mkdirs()
+        new File(lockedWalkRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def lockedWalkRigTestJar = tasks.register('lockedWalkRigTestJar', Jar) {
+    dependsOn lockedWalkRigMetadata; archiveClassifier = 'locked-walk-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(lockedWalkRigMetadataDirectory)
+}
+def lockedWalkRigRunDirectory = layout.buildDirectory.dir('run/locked-walk-rig-client-test').get().asFile
+tasks.register('runLockedWalkRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(lockedWalkRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/locked-walk-rig-client-test')
+    doFirst {
+        def directory = lockedWalkRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Real adopted gliding skin, original canopy and first-person ownership in singleplayer.
+def glideRigOnly = providers.gradleProperty('glideRigOnly').orElse('false').get().toBoolean()
+def glideRigMetadataDirectory = layout.buildDirectory.dir('glide-rig-metadata').get().asFile
+def glideRigMetadata = tasks.register('glideRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('glideRigOnly',glideRigOnly); outputs.dir(glideRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = glideRigOnly ? ['dev.wildcraft.test.GlideRigClientTest'] : ['dev.wildcraft.test.GlideRigClientTest', 'dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        glideRigMetadataDirectory.mkdirs()
+        new File(glideRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def glideRigTestJar = tasks.register('glideRigTestJar', Jar) {
+    dependsOn glideRigMetadata; archiveClassifier = 'glide-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(glideRigMetadataDirectory)
+}
+def glideRigRunDirectory = layout.buildDirectory.dir('run/glide-rig-client-test').get().asFile
+tasks.register('runGlideRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(glideRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/glide-rig-client-test')
+    doFirst {
+        def directory = glideRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Real singleplayer climb selection, independent from the source-only forced-pose probe.
+def climbRigOnly = providers.gradleProperty('climbRigOnly').orElse('false').get().toBoolean()
+def climbRigMetadataDirectory = layout.buildDirectory.dir('climb-rig-metadata').get().asFile
+def climbRigMetadata = tasks.register('climbRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('climbRigOnly',climbRigOnly); outputs.dir(climbRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = climbRigOnly ? ['dev.wildcraft.test.ClimbRigClientTest'] : ['dev.wildcraft.test.ClimbRigClientTest', 'dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentClockClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.GlidingClientSmokeTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        climbRigMetadataDirectory.mkdirs()
+        new File(climbRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def climbRigTestJar = tasks.register('climbRigTestJar', Jar) {
+    dependsOn climbRigMetadata; archiveClassifier = 'climb-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(climbRigMetadataDirectory)
+}
+def climbRigRunDirectory = layout.buildDirectory.dir('run/climb-rig-client-test').get().asFile
+tasks.register('runClimbRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(climbRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/climb-rig-client-test')
+    doFirst {
+        def directory = climbRigRunDirectory;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Packaged production continuous-skin checks, with optional complete C6 regression.
+def rigRuntimeOnly = providers.gradleProperty('rigRuntimeOnly').orElse('false').get().toBoolean()
+def rigRuntimeMetadataDirectory = layout.buildDirectory.dir('rig-runtime-metadata').get().asFile
+def rigRuntimeMetadata = tasks.register('rigRuntimeMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('rigRuntimeOnly',rigRuntimeOnly); outputs.dir(rigRuntimeMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = rigRuntimeOnly ? ['dev.wildcraft.test.RigRuntimeClientTest'] : ['dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.GripClientTest', 'dev.wildcraft.test.SpearClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        rigRuntimeMetadataDirectory.mkdirs()
+        new File(rigRuntimeMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def rigRuntimeTestJar = tasks.register('rigRuntimeTestJar', Jar) {
+    dependsOn rigRuntimeMetadata; archiveClassifier = 'rig-runtime'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(rigRuntimeMetadataDirectory)
+}
+tasks.register('runRigRuntimeClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(rigRuntimeTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/rig-runtime-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/rig-runtime-client-test').get().asFile;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Packaged production bottom meshes, including retained singleplayer and art regression.
+def bottomArtOnly = providers.gradleProperty('bottomArtOnly').orElse('false').get().toBoolean()
+def bottomArtMetadataDirectory = layout.buildDirectory.dir('bottom-art-metadata').get().asFile
+def bottomArtMetadata = tasks.register('bottomArtMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('bottomArtOnly',bottomArtOnly); outputs.dir(bottomArtMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = bottomArtOnly ? ['dev.wildcraft.test.BottomArtClientTest'] : ['dev.wildcraft.test.BottomArtClientTest', 'dev.wildcraft.test.MechanicsClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.WindClientTest', 'dev.wildcraft.test.PolishPresentationClientTest', 'dev.wildcraft.test.SecondArtClientTest', 'dev.wildcraft.test.SurvivalClientTest']
+        bottomArtMetadataDirectory.mkdirs()
+        new File(bottomArtMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def bottomArtTestJar = tasks.register('bottomArtTestJar', Jar) {
+    dependsOn bottomArtMetadata; archiveClassifier = 'bottom-art'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(bottomArtMetadataDirectory)
+}
+tasks.register('runBottomArtClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(bottomArtTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/bottom-art-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/bottom-art-client-test').get().asFile;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Packaged production bottom meshes, including retained singleplayer and art regression.
+def shieldRigOnly = providers.gradleProperty('shieldRigOnly').orElse('false').get().toBoolean()
+def shieldRigMetadataDirectory = layout.buildDirectory.dir('shield-rig-metadata').get().asFile
+def shieldRigMetadata = tasks.register('shieldRigMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('shieldRigOnly',shieldRigOnly); outputs.dir(shieldRigMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = shieldRigOnly ? ['dev.wildcraft.test.ShieldRigClientTest'] : ['dev.wildcraft.test.ShieldRigClientTest', 'dev.wildcraft.test.RigRuntimeClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.GripClientTest', 'dev.wildcraft.test.MeleeClientTest']
+        shieldRigMetadataDirectory.mkdirs()
+        new File(shieldRigMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def shieldRigTestJar = tasks.register('shieldRigTestJar', Jar) {
+    dependsOn shieldRigMetadata; archiveClassifier = 'shield-rig'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(shieldRigMetadataDirectory)
+}
+tasks.register('runShieldRigClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(shieldRigTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/shield-rig-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/shield-rig-client-test').get().asFile;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+
+// Packaged production bottom meshes, including retained singleplayer and art regression.
+def equipmentClockOnly = providers.gradleProperty('equipmentClockOnly').orElse('false').get().toBoolean()
+def equipmentClockMetadataDirectory = layout.buildDirectory.dir('equipment-clock-metadata').get().asFile
+def equipmentClockMetadata = tasks.register('equipmentClockMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('equipmentClockOnly',equipmentClockOnly); outputs.dir(equipmentClockMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.EquipmentClockClientTest']
+        equipmentClockMetadataDirectory.mkdirs()
+        new File(equipmentClockMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def equipmentClockTestJar = tasks.register('equipmentClockTestJar', Jar) {
+    dependsOn equipmentClockMetadata; archiveClassifier = 'equipment-clock'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(equipmentClockMetadataDirectory)
+}
+tasks.register('runEquipmentClockClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(equipmentClockTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/equipment-clock-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/equipment-clock-client-test').get().asFile;directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
 
 // Native singleplayer survival loop, with raw-material fixtures.
 def survivalMetadataDirectory = layout.buildDirectory.dir('survival-test-metadata').get().asFile
@@ -674,4 +1999,356 @@ def polishPresentationTestJar = tasks.register('polishPresentationTestJar', Jar)
 tasks.register('runPolishPresentationClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
     outputs.upToDateWhen { false }; mods.from(polishPresentationTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
     runDir = layout.buildDirectory.dir('run/polishPresentation-client-test')
+}
+
+// Shared input rules run without a graphical Minecraft client or another dependency.
+def verifyInputRules = tasks.register('verifyInputRules', JavaExec) {
+    dependsOn tasks.named('rulesTestClasses')
+    classpath = sourceSets.rulesTest.runtimeClasspath
+    mainClass = 'dev.wildcraft.test.InputRulesCheck'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(25) }
+}
+tasks.named('check') { dependsOn verifyInputRules }
+
+// C0/C1 probes remain in the test mod. The formal jar has no research controls or controller dependency.
+def inputMetadataDirectory = layout.buildDirectory.dir('input-test-metadata').get().asFile
+def inputMetadata = tasks.register('inputTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(inputMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.research.combat.CombatFoundationClientProbe', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest']
+        def destination = new File(inputMetadataDirectory, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def inputTestJar = tasks.register('inputTestJar', Jar) {
+    dependsOn inputMetadata; archiveClassifier = 'input-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(inputMetadataDirectory)
+}
+tasks.register('runInputClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(inputTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/input-client-test')
+}
+// Optional, lab-only jars supplied by path; never added to productionRuntimeMods or distributed.
+tasks.register('runControllerInputProbe', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(inputTestJar)
+    mods.from(fileTree(new File(wildcraftCacheHome, 'labs/c0-controller')) { include 'controlify-*.jar', 'yet_another_config_lib_v3-*.jar' })
+    jvmArgs.addAll('-Dfabric.client.gametest', '-Dwildcraft.c0.controller=true'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/controller-input-probe')
+}
+
+// The C0 scheduling probe uses a copy of an existing disposable research world.
+tasks.register('runInputNativeProbe', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(gameTestJar)
+    jvmArgs.add('-Dwildcraft.c0.native=true'); programArgs.addAll('--quickPlaySingleplayer', 'C0InputRealtime'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/c0-input-native')
+    doFirst {
+        def source = layout.buildDirectory.dir('run/input-client-test/saves/New World').get().asFile.toPath()
+        def directory = layout.buildDirectory.dir('run/c0-input-native').get().asFile.toPath()
+        def target = directory.resolve('saves/C0InputRealtime')
+        if (!java.nio.file.Files.exists(target.resolve('level.dat'))) {
+            if (!java.nio.file.Files.exists(source.resolve('level.dat'))) throw new GradleException('Disposable input-client-test New World fixture required; do not use a personal world.')
+            java.nio.file.Files.walk(source).withCloseable { paths -> paths.forEach { input ->
+                def name = input.fileName.toString()
+                if (!name.startsWith('._') && name != 'session.lock' && name != '.DS_Store') {
+                    def output = target.resolve(source.relativize(input))
+                    if (java.nio.file.Files.isDirectory(input)) java.nio.file.Files.createDirectories(output)
+                    else java.nio.file.Files.copy(input, output, java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+                }
+            } }
+        }
+        java.nio.file.Files.writeString(directory.resolve('options.txt'), 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n')
+    }
+}
+
+
+// C2 production-input and native shield/target regression, isolated from historical test selections.
+def combatMetadataDir = layout.buildDirectory.dir('combat-test-metadata').get().asFile
+def combatMetadata = tasks.register('combatTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(combatMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(combatMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def combatTestJar = tasks.register('combatTestJar', Jar) {
+    dependsOn combatMetadata; archiveClassifier = 'combat-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(combatMetadataDir)
+}
+tasks.register('runCombatClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(combatTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/combat-client-test')
+}
+
+// C3 uses the packaged production mod and disposable singleplayer worlds.
+def meleeVisualOnly = providers.gradleProperty('meleeVisualOnly').map { it.toBoolean() }.getOrElse(false)
+def meleeMetadataDir = layout.buildDirectory.dir('melee-test-metadata').get().asFile
+def meleeMetadata = tasks.register('meleeTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('visualOnly', meleeVisualOnly); outputs.dir(meleeMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = meleeVisualOnly ? ['dev.wildcraft.test.MeleeClientTest'] : ['dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(meleeMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def meleeTestJar = tasks.register('meleeTestJar', Jar) {
+    dependsOn meleeMetadata; archiveClassifier = 'melee-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(meleeMetadataDir)
+}
+tasks.register('runMeleeClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(meleeTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir(meleeVisualOnly ? 'run/melee-visual-test' : 'run/melee-client-test')
+}
+
+// C4 native AI, independent defense and real arrow flight plus existing C3/C2/survival regressions.
+def guardMetadataDir = layout.buildDirectory.dir('guard-test-metadata').get().asFile
+def guardMetadata = tasks.register('guardTestMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(guardMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(guardMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))
+    }
+}
+def guardTestJar = tasks.register('guardTestJar', Jar) {
+    dependsOn guardMetadata; archiveClassifier = 'guard-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(guardMetadataDir)
+}
+tasks.register('runGuardClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(guardTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/guard-client-test')
+}
+
+// C5 uses the production jar; each selection is isolated from prior phase evidence.
+def reactionMetadataDir = layout.buildDirectory.dir('reaction-test-metadata').get().asFile
+def reactionOnly = providers.gradleProperty('reactionOnly').map { it.toBoolean() }.getOrElse(false)
+def reactionMetadata = tasks.register('reactionTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('reactionOnly', reactionOnly); outputs.dir(reactionMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = reactionOnly ? ['dev.wildcraft.test.ReactionClientTest'] : ['dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(reactionMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def reactionTestJar = tasks.register('reactionTestJar', Jar) {
+    dependsOn reactionMetadata; archiveClassifier = 'reaction-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(reactionMetadataDir)
+}
+tasks.register('runReactionClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(reactionTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/reaction-client-test')
+}
+
+// C6A uses the packaged production mod; native weapon input plus all nine previous regressions.
+def weaponMetadataDir = layout.buildDirectory.dir('weapon-test-metadata').get().asFile
+def weaponOnly = providers.gradleProperty('weaponOnly').map { it.toBoolean() }.getOrElse(false)
+def weaponMetadata = tasks.register('weaponTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('weaponOnly', weaponOnly); outputs.dir(weaponMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = weaponOnly ? ['dev.wildcraft.test.WeaponClientTest'] : ['dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(weaponMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def weaponTestJar = tasks.register('weaponTestJar', Jar) {
+    dependsOn weaponMetadata; archiveClassifier = 'weapon-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(weaponMetadataDir)
+}
+tasks.register('runWeaponClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(weaponTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/weapon-client-test')
+}
+
+// C6B uses the packaged production mod; native spear input plus all ten previous regressions.
+def spearMetadataDir = layout.buildDirectory.dir('spear-test-metadata').get().asFile
+def spearOnly = providers.gradleProperty('spearOnly').map { it.toBoolean() }.getOrElse(false)
+def spearMetadata = tasks.register('spearTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('spearOnly', spearOnly); outputs.dir(spearMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = spearOnly ? ['dev.wildcraft.test.SpearClientTest'] : ['dev.wildcraft.test.SpearClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(spearMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def spearTestJar = tasks.register('spearTestJar', Jar) {
+    dependsOn spearMetadata; archiveClassifier = 'spear-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(spearMetadataDir)
+}
+tasks.register('runSpearClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(spearTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/spear-client-test')
+}
+
+// C6C uses the packaged production mod; native skin grip plus all eleven previous regressions.
+def gripMetadataDir = layout.buildDirectory.dir('grip-test-metadata').get().asFile
+def gripOnly = providers.gradleProperty('gripOnly').map { it.toBoolean() }.getOrElse(false)
+def gripMetadata = tasks.register('gripTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('gripOnly', gripOnly); outputs.dir(gripMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = gripOnly ? ['dev.wildcraft.test.GripClientTest'] : ['dev.wildcraft.test.GripClientTest', 'dev.wildcraft.test.SpearClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(gripMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def gripTestJar = tasks.register('gripTestJar', Jar) {
+    dependsOn gripMetadata; archiveClassifier = 'grip-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(gripMetadataDir)
+}
+tasks.register('runGripClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(gripTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/grip-client-test')
+}
+
+// C6D uses the packaged production mod; equipment draw/return plus all twelve previous regressions.
+def equipmentMetadataDir = layout.buildDirectory.dir('equipment-test-metadata').get().asFile
+def equipmentOnly = providers.gradleProperty('equipmentOnly').map { it.toBoolean() }.getOrElse(false)
+def equipmentMetadata = tasks.register('equipmentTestMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('equipmentOnly', equipmentOnly); outputs.dir(equipmentMetadataDir)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = equipmentOnly ? ['dev.wildcraft.test.EquipmentClientTest'] : ['dev.wildcraft.test.EquipmentClientTest', 'dev.wildcraft.test.GripClientTest', 'dev.wildcraft.test.SpearClientTest', 'dev.wildcraft.test.WeaponClientTest', 'dev.wildcraft.test.ReactionClientTest', 'dev.wildcraft.test.GuardClientTest', 'dev.wildcraft.test.MeleeClientTest', 'dev.wildcraft.test.CombatClientTest', 'dev.wildcraft.test.InputClientTest', 'dev.wildcraft.test.SurvivalClientTest', 'dev.wildcraft.test.FocusClientSmokeTest', 'dev.wildcraft.test.CoreArtClientSmokeTest', 'dev.wildcraft.test.BackEquipmentClientSmokeTest']
+        def destination = new File(equipmentMetadataDir, 'fabric.mod.json'); destination.parentFile.mkdirs()
+        destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+    }
+}
+def equipmentTestJar = tasks.register('equipmentTestJar', Jar) {
+    dependsOn equipmentMetadata; archiveClassifier = 'equipment-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(equipmentMetadataDir)
+}
+tasks.register('runEquipmentClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(equipmentTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
+    runDir = layout.buildDirectory.dir('run/equipment-client-test')
+    doFirst {
+        def directory = layout.buildDirectory.dir('run/equipment-client-test').get().asFile
+        directory.mkdirs()
+        new File(directory, 'screenshots').deleteDir()
+        new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Native occupied-hand fallback contract. Observers remain gametest-only.
+def usedHandFallbackMetadataDirectory = layout.buildDirectory.dir('usedHandFallback-metadata').get().asFile
+def usedHandFallbackMetadata = tasks.register('usedHandFallbackMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('usedHandFallbackFull',providers.gradleProperty('usedHandFallbackFull').orElse('false').get()); outputs.dir(usedHandFallbackMetadataDirectory)
+    if(providers.gradleProperty('usedHandFallbackFull').orElse('false').get().toBoolean()) dependsOn('rightAirBowMetadata')
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = ['dev.wildcraft.test.UsedHandFallbackClientTest']
+        if(providers.gradleProperty('usedHandFallbackFull').orElse('false').get().toBoolean()) {
+            def previous=new groovy.json.JsonSlurper().parse(layout.buildDirectory.file('rightAirBow-metadata/fabric.mod.json').get().asFile)
+            if(previous.entrypoints['fabric-client-gametest'].size()!=47) throw new GradleException('usedHandFallbackFull requires -PrightAirBowFull=true -PrightGroundBowFull=true and all47 previous classes')
+            metadata.entrypoints['fabric-client-gametest'] += previous.entrypoints['fabric-client-gametest']
+        }
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        usedHandFallbackMetadataDirectory.mkdirs()
+        new File(usedHandFallbackMetadataDirectory,'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))+'\n'
+    }
+}
+def usedHandFallbackTestJar = tasks.register('usedHandFallbackTestJar',Jar) {
+    dependsOn usedHandFallbackMetadata
+    archiveClassifier = 'usedHandFallback'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(usedHandFallbackMetadataDirectory)
+}
+def usedHandFallbackRunDirectory = file(providers.gradleProperty('usedHandFallbackRunDir').orElse(layout.buildDirectory.dir('run/usedHandFallback-client-test').get().asFile.absolutePath).get())
+tasks.register('runUsedHandFallbackClientTest',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    if(providers.gradleProperty('usedHandElytraOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.usedHandElytraOnly=true')
+    if(providers.gradleProperty('usedHandArmorOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.usedHandArmorOnly=true')
+    if(providers.gradleProperty('usedHandLateOnly').orElse('false').get().toBoolean()) jvmArgs.add('-Dwildcraft.test.usedHandLateOnly=true')
+    outputs.upToDateWhen { false }; mods.from(usedHandFallbackTestJar)
+    jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir.set(usedHandFallbackRunDirectory)
+    doFirst {
+        usedHandFallbackRunDirectory.mkdirs()
+        new File(usedHandFallbackRunDirectory,'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Controlled singleplayer persistent-kit native lifecycle fixture.
+def kitPersistentOnly = providers.gradleProperty('kitPersistentOnly').orElse('false').get().toBoolean()
+def kitMachineOnly = providers.gradleProperty('kitMachineOnly').orElse('false').get().toBoolean()
+def kitTraversalOnly = providers.gradleProperty('kitTraversalOnly').orElse('false').get().toBoolean()
+if ([kitPersistentOnly, kitMachineOnly, kitTraversalOnly].count { it } > 1) throw new GradleException('Choose at most one kit scope; omit flags for all three native tests')
+def kitLifecycleMetadataDirectory = layout.buildDirectory.dir('kitLifecycle-metadata').get().asFile
+def kitLifecycleMetadata = tasks.register('kitLifecycleMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('traversalOnly', kitTraversalOnly); inputs.property('machineOnly', kitMachineOnly); inputs.property('persistentOnly', kitPersistentOnly); outputs.dir(kitLifecycleMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = kitPersistentOnly ? ['dev.wildcraft.test.SingleplayerKitLifecycleClientTest'] : kitMachineOnly ? ['dev.wildcraft.test.MachineKitLifecycleClientTest'] : kitTraversalOnly ? ['dev.wildcraft.test.TraversalKitLifecycleClientTest'] : ['dev.wildcraft.test.SingleplayerKitLifecycleClientTest', 'dev.wildcraft.test.TraversalKitLifecycleClientTest', 'dev.wildcraft.test.MachineKitLifecycleClientTest']
+        metadata.entrypoints.client += ['dev.wildcraft.test.research.animation.AnimationResearchClient']
+        kitLifecycleMetadataDirectory.mkdirs()
+        new File(kitLifecycleMetadataDirectory,'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))+'\n'
+    }
+}
+def kitLifecycleTestJar = tasks.register('kitLifecycleTestJar',Jar) {
+    dependsOn kitLifecycleMetadata
+    archiveClassifier = 'kitLifecycle'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(kitLifecycleMetadataDirectory)
+}
+def kitLifecycleRunDirectory = file(providers.gradleProperty('kitLifecycleRunDir').orElse(layout.buildDirectory.dir('run/kitLifecycle-client-test').get().asFile.absolutePath).get())
+tasks.register('runKitLifecycleClientTest',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; mods.from(kitLifecycleTestJar)
+    jvmArgs.add('-Dfabric.client.gametest'); jvmArgs.add('-Dwildcraft.test.singleplayerOnly=true'); useXVFB = false
+    runDir.set(kitLifecycleRunDirectory)
+    doFirst {
+        kitLifecycleRunDirectory.mkdirs()
+        new File(kitLifecycleRunDirectory,'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// Isolated ordinary client: no client-gametest flag and no shared research observers.
+def c7PerformanceMetadataDirectory = layout.buildDirectory.dir('c7-performance-metadata').get().asFile
+def c7PerformanceMetadata = tasks.register('c7PerformanceMetadata') {
+    inputs.file(coreArtMetadataSource); outputs.dir(c7PerformanceMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.id = 'wildcraft-c7-performance'
+        metadata.name = 'Wildcraft local native render baseline'
+        metadata.environment = 'client'
+        metadata.entrypoints = [main: ['dev.wildcraft.test.performance.C7RegistryCompatibility'], client: ['dev.wildcraft.test.performance.C7RegistryCompatibility']]
+        metadata.mixins = ['wildcraft-c7-performance.mixins.json']
+        c7PerformanceMetadataDirectory.mkdirs()
+        new File(c7PerformanceMetadataDirectory,'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))+'\n'
+    }
+}
+def c7PerformanceTestJar = tasks.register('c7PerformanceTestJar',Jar) {
+    dependsOn c7PerformanceMetadata; archiveClassifier = 'c7-performance'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }
+    from(c7PerformanceMetadataDirectory)
+}
+def c7PerformanceRunDirectory = file(providers.gradleProperty('c7PerformanceRunDir').orElse(layout.buildDirectory.dir('run/c7-native-baseline').get().asFile.absolutePath).get())
+def c7PerformanceFixturePath = providers.gradleProperty('c7PerformanceFixture').orElse('').get()
+def c7PerformanceMainJar = file('development-assets/local-only/dev62/final/wildcraft-0.1.0-dev.62+mc26.3.jar')
+tasks.register('runC7NativeRenderBaseline',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }; dependsOn c7PerformanceTestJar
+    mods.setFrom(c7PerformanceMainJar,c7PerformanceTestJar,configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Xmx2G','-Dwildcraft.c7.renderBaseline=true')
+    programArgs.addAll('--quickPlaySingleplayer','C7NativeBaseline','--width','1280','--height','960')
+    useXVFB = false; runDir.set(c7PerformanceRunDirectory)
+    doFirst {
+        if(c7PerformanceFixturePath.isEmpty()) throw new GradleException('Provide an existing generated disposable test world; never use a personal save')
+        def source = java.nio.file.Path.of(c7PerformanceFixturePath)
+        def target = c7PerformanceRunDirectory.toPath().resolve('saves/C7NativeBaseline')
+        if(!java.nio.file.Files.exists(source.resolve('level.dat')) || java.nio.file.Files.exists(target)) throw new GradleException('Require a valid generated test fixture and fresh destination; no existing world is overwritten')
+        java.nio.file.Files.walk(source).withCloseable { paths ->
+            paths.forEach { path ->
+                def name = path.fileName.toString()
+                if(!name.startsWith('._') && name != 'session.lock' && name != '.DS_Store') {
+                    def out = target.resolve(source.relativize(path))
+                    if(java.nio.file.Files.isDirectory(path)) java.nio.file.Files.createDirectories(out)
+                    else java.nio.file.Files.copy(path,out)
+                }
+            }
+        }
+        java.nio.file.Files.writeString(c7PerformanceRunDirectory.toPath().resolve('options.txt'),'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nguiScale:2\nlang:zh_cn\n')
+    }
 }

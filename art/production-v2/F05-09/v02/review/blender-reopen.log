@@ -1,0 +1,5 @@
+00:00.272  blend            | Read blend: "/Volumes/仕事/Wildcraft/开发环境/project/art/production-v2/F05-09/v02/source/buoyancy-bottom-structure-v02.blend"
+BLENDER_REOPEN_VERIFY_PASSED {"allPassed": true, "reopenedActualBlend": true, "sourceSHA256": "2bf0cdef12ed61f1002ece934cdc50b195cd2847eca5416c32267b615a97e8eb", "checkedFloatMeshes": 15, "checkedBodyMeshes": 71, "shapeKeys": 0, "packedSharedAtlas": true, "manualHeightAndRollArtOnly": true, "states": [{"state": "ground-static", "worldMinY": 0.009999999776482582, "maxVertexError": 1.4305114759416426e-08, "checkedVertices": 128}, {"state": "raised-static", "worldMinY": 0.21000000834465027, "maxVertexError": 2.622604367008563e-08, "checkedVertices": 128}, {"state": "air-roll-positive", "worldMinY": 0.19638654589653015, "maxVertexError": 4.370659234531615e-08, "checkedVertices": 128}, {"state": "air-roll-negative", "worldMinY": 0.19638654589653015, "maxVertexError": 4.370659234531615e-08, "checkedVertices": 128}]}
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:31:22)
+
+Blender quit

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "scope": "public-source-snapshot",
+  "version": "0.1.0-dev.62-public",
+  "sourceLocalCheckpoint": "c554ed95bb8c0c137ab5f07bf710af9fb8861566",
+  "publicParent": "81e1aa0b07ba426e35d664b23720fa6a16b91300",
+  "tag": "handoff-dev62-public-2026-10-15",
+  "privateAnimationDataIncluded": false,
+  "privateBinaryPackagesIncluded": false,
+  "nativePresentationFallback": true,
+  "next": "docs/C7-NATIVE-RENDER-BASELINE.md",
+  "C6Complete": false,
+  "C7ManualSurvivalComplete": false,
+  "historicalLocalValidation": {
+    "serverTests": 125,
+    "C6ANClientClasses": 48,
+    "C6ANScreenshots": 2021,
+    "C7CombinationClasses": 3,
+    "C7CombinationScreenshots": 22
+  },
+  "publicValidation": "docs/PUBLIC-SNAPSHOT-2026-10-15.md"
+}

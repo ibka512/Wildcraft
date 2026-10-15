@@ -1,0 +1,78 @@
+[
+  {
+    "source": "art/production-v2/F05-06/v02/exports/spring-bottom-proposal.json",
+    "sha256": "2970478a986113f7b3a77e1e686e96c13fcf421fbb797e110e2ccd1af939568b",
+    "approval": "art/production-v2/F05-06/v02/docs/APPROVAL.json",
+    "outputs": [
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/spring_bottom.json",
+        "sha256": "101e01d7ab65ff961e53f6d9dfc7944e6e1777b44bee848066d6c698c4a7f8cd",
+        "parts": 44,
+        "quads": 264
+      },
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/machine_bottom_spring.json",
+        "sha256": "203959439e067bf99699373b98e74287127fab00951f28c2d7888d1fa4e8372f",
+        "parts": 71,
+        "quads": 426
+      }
+    ]
+  },
+  {
+    "source": "art/production-v2/F05-09/v02/exports/buoyancy-bottom-proposal.json",
+    "sha256": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e",
+    "approval": "art/production-v2/F05-09/v02/docs/APPROVAL.json",
+    "outputs": [
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/buoyancy_bottom.json",
+        "sha256": "8646474ce7506705c98e2d4072312d3eeb3039bf65cd411854b43c60f864e862",
+        "parts": 15,
+        "quads": 104
+      },
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/machine_bottom_buoyancy.json",
+        "sha256": "ecc60df40cba4c6ab6c06d9dce834867204aef08b5f8e9944407a3ad1f3fb134",
+        "parts": 71,
+        "quads": 426
+      }
+    ]
+  },
+  {
+    "source": "art/production-v2/F05-02/v02/exports/wing-bottom-proposal.json",
+    "sha256": "29f463c7990d796d0a4c040ee8888cab036ab825e657178adb366c5af8ae6674",
+    "approval": "art/production-v2/F05-02/v02/docs/APPROVAL.json",
+    "outputs": [
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/wing_bottom.json",
+        "sha256": "d65fcbe17bc9f985b33cf2e1a64a8837ba237860c12e2cce5796c7ff23105ea5",
+        "parts": 30,
+        "quads": 180
+      },
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/machine_bottom_wing.json",
+        "sha256": "c69d8a8dcefa99adc9ac24591e23ca145fb9b91fe8f4aca6fe57819a964788ca",
+        "parts": 67,
+        "quads": 402
+      }
+    ]
+  },
+  {
+    "source": "art/production-v2/F05-03/v02/exports/fan-bottom-proposal.json",
+    "sha256": "a5144da3707be35b38968a606af2466b67e575ce3bd538bdbd2e2e8053132d11",
+    "approval": "art/production-v2/F05-03/v02/docs/APPROVAL.json",
+    "outputs": [
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/fan_bottom.json",
+        "sha256": "ace433154f23766c92c4fe272981a6757578e3f9f2ffaecf69cc915f66f6b7de",
+        "parts": 26,
+        "quads": 188
+      },
+      {
+        "target": "src/main/resources/assets/wildcraft/geometry/machine_bottom_fan.json",
+        "sha256": "c60dd883db363e53b59b159a726a7ffc50b692fa9ac5c1d9a432adb43857fa96",
+        "parts": 67,
+        "quads": 402
+      }
+    ]
+  }
+]

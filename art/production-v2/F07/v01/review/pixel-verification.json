@@ -1,0 +1,20 @@
+{
+  "allPassed": true,
+  "comparedPixels": 4096,
+  "roundtripComparisons": 3,
+  "nativeSize": 16,
+  "iconCount": 13,
+  "atlas": [
+    64,
+    64
+  ],
+  "visibleColors": 7,
+  "alphaValues": [
+    0,
+    255
+  ],
+  "editableLayers": 3,
+  "savedSourceAndPNGReopenedInAseprite": true,
+  "atlasEqualsAuthoredPixelSpec": true,
+  "exportRecovery": "Used fresh typed preview export after state inspection and verified every pixel. Earlier named export returned stale file or failed."
+}

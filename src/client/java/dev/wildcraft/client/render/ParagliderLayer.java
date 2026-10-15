@@ -19,7 +19,11 @@ public final class ParagliderLayer extends RenderLayer<AvatarRenderState, Player
         });
     }
     @Override public void submit(PoseStack poses, SubmitNodeCollector collector, int light, AvatarRenderState state, float yaw, float pitch) {
-        if (state.getDataOrDefault(OPEN, false) && !state.isInvisible && !state.isSpectator)
+        if (state.getDataOrDefault(OPEN, false) && !state.isInvisible && !state.isSpectator) {
+            var canopy=state.getData(dev.wildcraft.client.animation.rig.GlideRig.CANOPY);
+            poses.pushPose();if(canopy!=null)poses.mulPose(canopy.matrix());
             ParagliderMesh.submit(poses, collector, light, false);
+            poses.popPose();
+        }
     }
 }

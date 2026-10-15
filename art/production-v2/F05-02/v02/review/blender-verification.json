@@ -1,0 +1,38 @@
+{
+  "allPassed": true,
+  "reopenedActualBlend": true,
+  "sourceSHA256": "a9a8504c73150ad449adc6c88f8ef44bb12e73b152468d0ba380b378be50627c",
+  "checkedWingMeshes": 30,
+  "checkedBodyMeshes": 67,
+  "shapeKeys": 0,
+  "packedSharedAtlas": true,
+  "packedPNGByteExact": true,
+  "nativeUVLoopsChecked": 2328,
+  "manualHeightAndRollArtOnly": true,
+  "states": [
+    {
+      "state": "ground-static",
+      "worldMinY": 0.12999999523162842,
+      "maxVertexError": 2.9001466561595635e-08,
+      "checkedVertices": 776
+    },
+    {
+      "state": "raised-static",
+      "worldMinY": 0.32999998331069946,
+      "maxVertexError": 3.576278695405222e-08,
+      "checkedVertices": 776
+    },
+    {
+      "state": "air-roll-positive",
+      "worldMinY": 0.31569913029670715,
+      "maxVertexError": 9.413458890161763e-08,
+      "checkedVertices": 776
+    },
+    {
+      "state": "air-roll-negative",
+      "worldMinY": 0.31569913029670715,
+      "maxVertexError": 9.413458890161763e-08,
+      "checkedVertices": 776
+    }
+  ]
+}

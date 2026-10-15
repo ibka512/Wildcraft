@@ -1,11 +1,9 @@
 package dev.wildcraft.client.mechanics;
 
-import com.mojang.blaze3d.platform.InputConstants;
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.energy.*;
 import dev.wildcraft.mechanics.*;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
 import net.minecraft.client.*;
@@ -13,9 +11,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.phys.EntityHitResult;
 
 public final class MachinePresentation {
-    public static final KeyMapping TOGGLE = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-            "key.wildcraft.machine_toggle", InputConstants.Type.KEYBOARD, InputConstants.KEY_R,
-            KeyMapping.Category.register(Wildcraft.id("mechanics"))));
+    public static final KeyMapping TOGGLE = dev.wildcraft.client.input.WildcraftBindings.MACHINE_TOGGLE;
     private MachinePresentation() { }
     public static int selectedNode(MachineEntity body) {
         var c = Minecraft.getInstance();
@@ -32,8 +28,10 @@ public final class MachinePresentation {
     }
     public static void initialize() {
         ClientTickEvents.START_CLIENT_TICK.register(c -> {
-            while (TOGGLE.consumeClick()) if (c.player != null && c.player.getVehicle() instanceof MachineEntity
-                    && c.gui.screen() == null && ClientPlayNetworking.canSend(MachineToggle.TYPE)) ClientPlayNetworking.send(new MachineToggle());
+            var input = dev.wildcraft.client.input.ActionInput.tickFrame();
+            for (int i=0;i<input.clicks(dev.wildcraft.input.Action.MACHINE_TOGGLE);i++)
+                if (input.context()==dev.wildcraft.input.InputContext.MECHANISM && ClientPlayNetworking.canSend(MachineToggle.TYPE))
+                    ClientPlayNetworking.send(new MachineToggle());
         });
         HudElementRegistry.attachElementAfter(Wildcraft.id("meals"), Wildcraft.id("machine"), (g, t) -> {
             var c = Minecraft.getInstance(); var p = c.player;

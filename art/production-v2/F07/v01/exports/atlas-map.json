@@ -1,0 +1,134 @@
+{
+  "assetIds": [
+    "F07-01",
+    "F07-02"
+  ],
+  "nativeIconSize": 16,
+  "atlasSize": [
+    64,
+    64
+  ],
+  "entries": [
+    {
+      "id": "wind_forward",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_front_right",
+      "x": 16,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_right",
+      "x": 32,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_back_right",
+      "x": 48,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_backward",
+      "x": 0,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_back_left",
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_left",
+      "x": 32,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wind_front_left",
+      "x": 48,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "strength_light",
+      "x": 0,
+      "y": 32,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "strength_moderate",
+      "x": 16,
+      "y": 32,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "strength_strong",
+      "x": 32,
+      "y": 32,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "sheltered",
+      "x": 48,
+      "y": 32,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "wet",
+      "x": 0,
+      "y": 48,
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "directionOrderClockwise": [
+    "forward",
+    "front_right",
+    "right",
+    "back_right",
+    "backward",
+    "back_left",
+    "left",
+    "front_left"
+  ],
+  "directionMeaning": "Wind flows toward arrow, relative to player view; not wind source",
+  "strengthThresholdsBlocksPerTick": [
+    0.012,
+    0.024
+  ],
+  "wetThreshold": 0.2,
+  "shelterReplacesDirectionAndStrength": true,
+  "wetMayCoexist": true,
+  "unusedCells": 3,
+  "filter": "nearest",
+  "mipmaps": false,
+  "palette": {
+    "outline": "#243432ff",
+    "shade": "#63877fff",
+    "body": "#9cbbb0ff",
+    "light": "#e1e9d1ff",
+    "blueShade": "#47788fff",
+    "blue": "#80b7ccff",
+    "blueLight": "#d5e8eaff"
+  }
+}

@@ -32,6 +32,7 @@ public final class FocusTime {
     private static final AttachmentType<ItemStack> BLOCKED_USE = AttachmentRegistry.create(Wildcraft.id("focus_blocked_use"));
     private static final Map<MinecraftServer, Session> SESSIONS = new IdentityHashMap<>();
     private static long nextSession;
+    private static final AttachmentType<ItemStack> MANUAL_USE=AttachmentRegistry.create(Wildcraft.id("focus_manual_use"));
     private FocusTime() { }
     private static final class Session {
         final ServerPlayer player;
@@ -84,8 +85,8 @@ public final class FocusTime {
     }
     public static boolean tryBegin(ServerPlayer p) {
         var server = p.level().getServer();
-        if (!p.isUsingItem()) p.removeAttached(BLOCKED_USE);
-        if (SESSIONS.containsKey(server) || !allowedServer(server) || paused(server) || !eligible(p)
+        if (!p.isUsingItem()) {p.removeAttached(BLOCKED_USE);p.removeAttached(MANUAL_USE);}
+        if (dev.wildcraft.combat.SkillPreferences.bow(p)==2||dev.wildcraft.combat.SkillPreferences.bow(p)==1&&p.getAttached(MANUAL_USE)!=p.getUseItem()||dev.wildcraft.combat.ReactionTime.active(server)||SESSIONS.containsKey(server) || !allowedServer(server) || paused(server) || !eligible(p)
                 || PlayerStamina.get(p).stamina() <= 0 || p.getAttached(BLOCKED_USE) == p.getUseItem()) return false;
         TimeLease lease = TimeLease.acquire(server, WORLD_RATE);
         if (lease == null) return false;
@@ -129,10 +130,11 @@ public final class FocusTime {
     public static void stopped(LivingEntity entity) {
         if (entity instanceof ServerPlayer p) {
             close(p.level().getServer(), true, false);
-            p.removeAttached(BLOCKED_USE);
+            p.removeAttached(BLOCKED_USE);p.removeAttached(MANUAL_USE);
         }
     }
-    public static void interrupt(ServerPlayer p) { close(p.level().getServer(), true, true); }
+    public static void confirm(ServerPlayer p){if(dev.wildcraft.combat.SkillPreferences.bow(p)!=1||!eligible(p))return;p.setAttached(MANUAL_USE,p.getUseItem());tryBegin(p);}
+    public static void interrupt(ServerPlayer p) { p.removeAttached(MANUAL_USE);close(p.level().getServer(), true, true); }
     public static void close(MinecraftServer server, boolean billLastInterval, boolean blockCurrentUse) {
         Session s = SESSIONS.remove(server);
         if (s == null) return;

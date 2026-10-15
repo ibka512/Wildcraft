@@ -1,6 +1,5 @@
 package dev.wildcraft.client.focus;
 
-import com.mojang.blaze3d.platform.InputConstants;
 import dev.wildcraft.Wildcraft;
 import dev.wildcraft.focus.ActivePlayClock;
 import dev.wildcraft.focus.FocusTime;
@@ -9,7 +8,6 @@ import dev.wildcraft.player.PlayerStamina;
 import java.util.ArrayList;
 import java.util.List;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
-import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.VanillaHudElements;
@@ -22,9 +20,7 @@ import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.world.item.BowItem;
 
 public final class FocusClient {
-    public static final KeyMapping SETTINGS = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-            "key.wildcraft.focus_settings", InputConstants.Type.KEYBOARD, InputConstants.KEY_F8,
-            KeyMapping.Category.register(Wildcraft.id("focus_settings"))));
+    public static final KeyMapping SETTINGS = dev.wildcraft.client.input.WildcraftBindings.SETTINGS;
     private static ActivePlayClock clock = new ActivePlayClock();
     private static FocusView previous = FocusView.OFF;
     private static double bowSeconds;
@@ -34,7 +30,7 @@ public final class FocusClient {
     public static void initialize() {
         FocusOptions.load();
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            while (SETTINGS.consumeClick()) if (client.gui.screen() == null) client.gui.setScreen(new FocusSettingsScreen(null));
+            if (dev.wildcraft.client.input.ActionInput.tickFrame().clicks(dev.wildcraft.input.Action.SETTINGS)>0 && client.gui.screen()==null) client.gui.setScreen(new FocusSettingsScreen(null));
         });
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> reset());
         HudElementRegistry.attachElementAfter(VanillaHudElements.CROSSHAIR, Wildcraft.id("focus_reticle"), (g, tracker) -> {
@@ -56,7 +52,7 @@ public final class FocusClient {
     }
     public static boolean visible() {
         var c = Minecraft.getInstance();
-        return c.player != null && c.gui.screen() == null && !c.isPaused() && FocusTime.active(c.player) && FocusTime.eligible(c.player);
+        return c.player != null && c.gui.screen() == null && !c.isPaused() && (FocusTime.active(c.player) && FocusTime.eligible(c.player)||dev.wildcraft.combat.ReactionTime.active(c.player)&&dev.wildcraft.combat.MeleeActions.eligible(c.player));
     }
     public static boolean lowStamina() {
         var p = Minecraft.getInstance().player; var v = p == null ? null : p.getAttached(PlayerStamina.VIEW);
@@ -76,7 +72,7 @@ public final class FocusClient {
         }
         previous = view;
         boolean active = visible();
-        boolean audible = view.active();
+        boolean audible = view.active()||dev.wildcraft.combat.ReactionTime.active(c.player);
         if (audible != audibleActive) {
             if (currentSound != null) c.getSoundManager().stop(currentSound);
             currentSound = null;
@@ -86,9 +82,9 @@ public final class FocusClient {
             }
             audibleActive = audible;
         }
-        if (active && c.player.isUsingItem() && c.player.getUseItem().getItem() instanceof BowItem) {
+        if (active && view.active() && c.player.isUsingItem() && c.player.getUseItem().getItem() instanceof BowItem) {
             FocusTime.compensate(c.player, bowSeconds);
-            if (c.gameMode != null && !c.options.keyUse.isDown()) c.gameMode.releaseUsingItem(c.player);
+            if (c.gameMode != null && !dev.wildcraft.client.input.ActionInput.down(dev.wildcraft.input.Action.USE)) c.gameMode.releaseUsingItem(c.player);
         }
     }
     public static Identifier effect() {

@@ -1,0 +1,137 @@
+{
+  "asset": "F05-02",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "model": "source/wing-v01.blend",
+  "freeModel": "source/wing-v01.bbmodel",
+  "geometry": "exports/wing-geometry.json",
+  "unitsPerBlock": 16,
+  "scale": 1,
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "localOutwardAxis": [
+    0,
+    0,
+    1
+  ],
+  "localWingPlane": "X/Z",
+  "nodes": [
+    {
+      "id": 0,
+      "name": "顶",
+      "point": [
+        0,
+        10.4,
+        0
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": 1,
+      "name": "底",
+      "point": [
+        0,
+        0,
+        0
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "name": "后",
+      "point": [
+        0,
+        5.2,
+        -11.2
+      ],
+      "normal": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "前",
+      "point": [
+        0,
+        5.2,
+        11.2
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "name": "左",
+      "point": [
+        -11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": 5,
+      "name": "右",
+      "point": [
+        11.2,
+        5.2,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "localBasis": [
+    "(x,z,-y)",
+    "(x,-z,y)",
+    "(-x,y,-z)",
+    "(x,y,z)",
+    "(-z,y,x)",
+    "(z,y,-x)"
+  ],
+  "allPartsFixed": true,
+  "energyCost": 0,
+  "activeSource": "MachineEntity.active(node), kind==3",
+  "enabledRequiredForPassiveEffect": false,
+  "workingFlagDoesNotDescribeWing": "working=paid || rocketBurning; a passive active wing can have working=false",
+  "runtimeRule": "wings>0 && velocity.y<0 && velocity.horizontalDistanceSqr()>.12*.12",
+  "runtimeDescentLimit": "Math.max(velocity.y,-.12*mass/wings)",
+  "animation": "none",
+  "particles": "none added",
+  "glow": "none",
+  "ghost": "same exact geometry/basis/scale; F05-10 final B3 review pending",
+  "topBottomWingPlane": "vertical, existing shared node rotations",
+  "collision": "existing body collision, no new wing collider",
+  "requiresInGameChecks": [
+    "bottom mounted ground clearance",
+    "all eight parts combination and ghost occlusion",
+    "real node active flag and HUD labels"
+  ],
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一项"
+}

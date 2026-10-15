@@ -12,7 +12,6 @@ import net.minecraft.world.item.ItemStack;
 /** A fresh airborne jump press toggles; a held ground jump never opens the canopy. */
 public final class GlideControls {
     private static LocalPlayer observedPlayer;
-    private static boolean jumpWasDown;
     private static boolean requested;
     private static boolean acknowledged;
     private static GlideInput lastSent;
@@ -30,19 +29,17 @@ public final class GlideControls {
             lastSent = null;
             requested = false;
             acknowledged = false;
-            jumpWasDown = false;
         });
     }
 
     private static void tick(Minecraft client) {
         LocalPlayer player = client.player;
-        boolean jump = client.options.keyJump.isDown();
+        var frame = ActionInput.tickFrame();
         if (player == null || !ClientPlayNetworking.canSend(GlideInput.TYPE)) {
             observedPlayer = null;
             lastSent = null;
             requested = false;
             acknowledged = false;
-            jumpWasDown = jump;
             return;
         }
         if (player != observedPlayer) {
@@ -50,21 +47,20 @@ public final class GlideControls {
             requested = false;
             acknowledged = false;
             lastSent = null;
-            jumpWasDown = jump;
         }
         var view = player.getAttached(Gliding.VIEW);
         if (view != null && view.active()) {
             acknowledged = true;
         }
-        boolean available = client.gui.screen() == null && client.gui.overlay() == null;
+        boolean available = frame.gameplay();
         boolean takingItem = requested && (player.getInventory().getSelectedSlot() != selectedSlot
                 || !ItemStack.matches(player.getMainHandItem(), mainHand) || !ItemStack.matches(player.getOffhandItem(), offHand)
-                || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
-                || client.options.keySwapOffhand.isDown() || client.options.keyDrop.isDown());
+                || frame.triggered(dev.wildcraft.input.Action.USE) || frame.triggered(dev.wildcraft.input.Action.ATTACK)
+                || frame.triggered(dev.wildcraft.input.Action.DEFEND) || frame.triggered(dev.wildcraft.input.Action.SWAP_HAND) || frame.triggered(dev.wildcraft.input.Action.DROP));
         if (!available || takingItem || !Gliding.eligible(player) || view != null && (view.blocked() || acknowledged && !view.active())) {
             requested = false;
         }
-        if (available && !takingItem && jump && !jumpWasDown && Gliding.eligible(player) && (view == null || !view.blocked())) {
+        if (available && !takingItem && frame.fresh(dev.wildcraft.input.Action.JUMP) && Gliding.eligible(player) && (view == null || !view.blocked())) {
             requested = !requested;
             acknowledged = false;
             if (requested) {
@@ -73,7 +69,6 @@ public final class GlideControls {
                 offHand = player.getOffhandItem().copy();
             }
         }
-        jumpWasDown = jump;
         GlideInput input = requested ? GlideInput.OPEN : GlideInput.CLOSED;
         player.setAttached(Gliding.INTENT, input);
         if (!input.equals(lastSent) || requested && player.tickCount % 5 == 0

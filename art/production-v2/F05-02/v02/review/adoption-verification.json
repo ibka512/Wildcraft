@@ -1,0 +1,18 @@
+{
+  "allPassed": true,
+  "adopted": true,
+  "coreAssetsUnchanged": true,
+  "files": {
+    "exports/wing-item-32.png": "2769f0a5cdad1faf99931e55307adddccdd6bf575f79201c967ac1d787a6e4b2",
+    "exports/chassis-wing-pocket-proposal.json": "96468aa0a1ab7c0c90dc5b58326758428938ee423c00251d4781cdcaddbcebc1",
+    "exports/wing-atlas-128x64.png": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35",
+    "exports/wing-item-16.png": "4bbe216587f4bbb7ba42dafef76710068c255bbb07323e0d0dcfc9a41108f7d8",
+    "exports/wing-bottom-proposal.json": "29f463c7990d796d0a4c040ee8888cab036ab825e657178adb366c5af8ae6674",
+    "source/chassis-wing-pocket-proposal.bbmodel": "e948f41c82acae7cdce5f89922e6d6b399bd63706a574680d155100997576b85",
+    "source/wing-bottom-v02.bbmodel": "cef1b327ebc5da0899b11ed41601a7866324b909a55be0eb892754831ede77a1",
+    "source/wing-bottom-structure-v02.blend": "a9a8504c73150ad449adc6c88f8ef44bb12e73b152468d0ba380b378be50627c",
+    "source/structure-geometry.json": "29f463c7990d796d0a4c040ee8888cab036ab825e657178adb366c5af8ae6674"
+  },
+  "gameIntegrated": false,
+  "productionReady": false
+}

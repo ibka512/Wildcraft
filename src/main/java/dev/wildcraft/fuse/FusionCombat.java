@@ -16,12 +16,18 @@ public final class FusionCombat{
     private FusionCombat(){}
     public static void initialize(){
         ServerLivingEntityEvents.AFTER_DAMAGE.register((target,source,base,taken,blocked) -> {
-            if(taken>0&&source.is(DamageTypes.PLAYER_ATTACK)&&source.getDirectEntity() instanceof Player p&&source.getEntity()==p){var host=p.getMainHandItem();if(!host.is(Items.SHIELD)&&!FusionRules.arrow(host))hit(host,target,source);}
+            if(taken>0&&meleeSource(source)&&source.getDirectEntity() instanceof Player p&&source.getEntity()==p){var host=meleeWeapon(p,source);if(!host.is(Items.SHIELD)&&!FusionRules.arrow(host))hit(host,target,source);}
         });
         ServerEntityEvents.ENTITY_LOAD.register((entity,level) -> {if(entity instanceof AbstractArrow arrow){var v=arrow.getPickupItemStackOrigin().get(FusionContent.VIEW);if(v!=null)arrow.setAttached(ARROW_VIEW,v);}});
     }
+    public static boolean meleeSource(DamageSource source){return source.is(DamageTypes.PLAYER_ATTACK)||source.is(DamageTypes.SPEAR)&&source.getDirectEntity() instanceof Player spearPlayer&&dev.wildcraft.combat.MeleeWeapon.of(meleeWeapon(spearPlayer,source))==dev.wildcraft.combat.MeleeWeapon.SPEAR||source.is(DamageTypes.MACE_SMASH)&&source.getDirectEntity() instanceof Player p&&p.getMainHandItem().is(Items.MACE);}
+    /** Native kinetic spears may be used from either hand; effects follow the actual used stack. */
+    public static ItemStack meleeWeapon(Player p,DamageSource source){
+        if(source.is(DamageTypes.SPEAR)&&p.isUsingItem()&&dev.wildcraft.combat.MeleeWeapon.of(p.getUseItem())==dev.wildcraft.combat.MeleeWeapon.SPEAR)return p.getUseItem();
+        return p.getMainHandItem();
+    }
     public static java.util.Optional<ItemStack> material(ItemStack host,ServerLevel level){var d=host.get(FusionContent.DATA);return d==null?java.util.Optional.empty():d.material(level.registryAccess());}
-    public static float bonus(ItemStack host,ServerLevel level){if(!host.is(net.minecraft.tags.ItemTags.SWORDS)&&!host.is(net.minecraft.tags.ItemTags.AXES))return 0;return material(host,level).map(m -> (float)FusionRules.bonus(FusionRules.kind(m))).orElse(0f);}
+    public static float bonus(ItemStack host,ServerLevel level){if(!dev.wildcraft.combat.MeleeActions.weapon(host))return 0;return material(host,level).map(m -> (float)FusionRules.bonus(FusionRules.kind(m))).orElse(0f);}
     public static void hit(ItemStack host,LivingEntity target,DamageSource source){
         if(!(target.level() instanceof ServerLevel level))return;var m=material(host,level);if(m.isEmpty())return;effect(FusionRules.kind(m.get()),target,source);use(host,level);
     }

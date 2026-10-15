@@ -1,0 +1,7 @@
+[
+  {
+    "source": "art/production-v2/F07/v01/exports/wind-weather-atlas.png",
+    "target": "src/main/resources/assets/wildcraft/textures/gui/wind-weather-atlas.png",
+    "sha256": "186697d473fa7f4fcafab2dbb580933877962bb7cfc4c7d47d2472430b00f0ff"
+  }
+]

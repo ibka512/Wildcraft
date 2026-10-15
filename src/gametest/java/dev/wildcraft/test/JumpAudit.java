@@ -1,0 +1,27 @@
+package dev.wildcraft.test;
+import dev.wildcraft.client.animation.rig.*;
+import java.util.*;
+import net.minecraft.client.renderer.entity.state.AvatarRenderState;
+import net.minecraft.world.entity.HumanoidArm;
+import org.joml.*;
+/** Test-owned actual submitted skin, source contact and native sword generated-quads audit. */
+public final class JumpAudit {
+ private static final Map<net.minecraft.world.entity.player.PlayerModelType,net.minecraft.client.model.player.PlayerModel> MODELS=new EnumMap<>(net.minecraft.world.entity.player.PlayerModelType.class);
+ public static boolean enabled,submittingExpectedItem;public static int frames,takeoff,air,land,quads;public static float maxLandTime;
+ public static net.minecraft.client.renderer.item.ItemStackRenderState expectedItem;private static Vector3f grip,axis;
+ public static void begin(){enabled=true;frames=takeoff=air=land=quads=0;maxLandTime=0;expectedItem=null;}
+ public static void observe(AvatarRenderState state){
+  var f=state.getData(CombatRigLayer.FRAME);if(!enabled||f==null||!f.clip().startsWith("jump_"))return;frames++;if(f.clip().startsWith("jump_takeoff_"))takeoff++;if(f.clip().startsWith("jump_air_"))air++;if(f.clip().startsWith("jump_land_")){land++;maxLandTime=java.lang.Math.max(maxLandTime,f.time());}
+  var names=Arrays.asList(f.data().bones());var source=CombatRig.sample(f.data().variant(),f.clip(),f.time());boolean landing=f.clip().startsWith("jump_land_");
+  for(int i=0;i<source.length;i++){String b=names.get(i);if(b.equals("head")||f.clip().contains("_guard_")||landing&&f.time()<.37F&&!b.contains("thigh")&&!b.contains("shin")&&!b.contains("foot")&&!b.contains("knee")&&!b.contains("ankle")&&!b.equals("root")&&!b.equals("pelvis"))continue;if(!source[i].equals(f.global()[i],2e-5F))throw new AssertionError("Actual jump source joint mismatch "+b);}
+  if(!f.global()[names.indexOf("root")].equals(CombatRig.matrix(f.data().bindWorld()[names.indexOf("root")]),2e-5F))throw new AssertionError("Jump source added root displacement");
+  String side=state.mainArm==HumanoidArm.RIGHT?"right":"left";var gripLocal=new Matrix4f(f.global()[names.indexOf(side+"_forearm")]).invert().transformPosition(f.global()[names.indexOf(side+"_sword_reference")].getTranslation(new Vector3f()));float width=state.skin.model()==net.minecraft.world.entity.player.PlayerModelType.SLIM?.09375F:.125F;if(gripLocal.y<-.385F||gripLocal.y>-.24F||java.lang.Math.abs(gripLocal.x)>width+.01F||java.lang.Math.abs(gripLocal.z)>.135F)throw new AssertionError("True sword hilt lies outside physical distal skin hand "+gripLocal);
+  var model=MODELS.computeIfAbsent(state.skin.model(),type->{boolean slim=type==net.minecraft.world.entity.player.PlayerModelType.SLIM;return new net.minecraft.client.model.player.PlayerModel(net.minecraft.client.model.geom.builders.LayerDefinition.create(net.minecraft.client.model.player.PlayerModel.createMesh(net.minecraft.client.model.geom.builders.CubeDeformation.NONE,slim),64,64).bakeRoot(),slim);});model.setupAnim(state);var pose=new com.mojang.blaze3d.vertex.PoseStack();model.head.translateAndRotate(pose);var nativeAim=new Matrix4f(CombatRigLayer.BASIS).mul(pose.last().pose()).mul(CombatRigLayer.BASIS).getUnnormalizedRotation(new Quaternionf()).normalize();if(java.lang.Math.abs(nativeAim.dot(f.global()[names.indexOf("head")].getUnnormalizedRotation(new Quaternionf()).normalize()))<.99999F)throw new AssertionError("Jump source changed independent native head aim");
+  if(landing){if(f.time()<.06F/.3F)throw new AssertionError("Native landing sampled airborne source feet");for(String foot:new String[]{"left_foot","right_foot"})if(java.lang.Math.abs(f.global()[names.indexOf(foot)].getTranslation(new Vector3f()).y-.125F)>1e-4F)throw new AssertionError("Actual landed jump foot has source hover");
+   var transforms=new Matrix4f[f.data().skinBones()];var normals=new Matrix3f[transforms.length];for(int i=0;i<transforms.length;i++){transforms[i]=new Matrix4f(f.global()[i]).mul(new Matrix4f().set(f.data().inverseBind()[i]));normals[i]=transforms[i].normal(new Matrix3f());}
+   for(var mesh:f.data().meshes())if(!mesh.outer()&&mesh.part().endsWith("leg")){float[] vertices=CombatRig.deform(mesh,transforms,normals);float low=Float.MAX_VALUE;for(int i=1;i<vertices.length;i+=8)low=java.lang.Math.min(low,vertices[i]);if(low<-.006F||low>.012F)throw new AssertionError("Actual deformed landed foot sole left floor "+low);}
+  }
+ }
+ public static void handRoot(AvatarRenderState state,net.minecraft.client.renderer.item.ItemStackRenderState item,HumanoidArm arm,com.mojang.blaze3d.vertex.PoseStack parent){expectedItem=null;var f=state.getData(CombatRigLayer.FRAME);if(!enabled||f==null||!f.clip().startsWith("jump_")||arm!=state.mainArm)return;String side=arm==HumanoidArm.RIGHT?"right":"left";int ref=Arrays.asList(f.data().bones()).indexOf(side+"_sword_reference");var expected=new Matrix4f(parent.last().pose()).mul(CombatRigLayer.BASIS).mul(f.global()[ref]);grip=expected.getTranslation(new Vector3f());axis=expected.transformDirection(new Vector3f(0,1,0)).normalize();expectedItem=item;}
+ public static void nativeQuads(com.mojang.blaze3d.vertex.PoseStack poses){if(!enabled||!submittingExpectedItem)return;var actual=poses.last().pose();var a=actual.transformPosition(new Vector3f(.23F,.23F,.5F));var b=actual.transformPosition(new Vector3f(.9F,.9F,.5F)).sub(a).normalize();if(a.distance(grip)>2e-5F||b.dot(axis)<.99999F)throw new AssertionError("Actual native sword quads lost jump source grip/axis");quads++;}
+}

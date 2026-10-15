@@ -66,8 +66,8 @@ public final class BackEquipment {
 
     public static void initialize() {
         ServerLivingEntityEvents.AFTER_DAMAGE.register((target, source, base, taken, blocked) -> {
-            if (taken > 0 && source.is(net.minecraft.world.damagesource.DamageTypes.PLAYER_ATTACK) && source.getDirectEntity() instanceof ServerPlayer p && source.getEntity() == p
-                    && category(p.getMainHandItem()) == MELEE) register(p, p.getMainHandItem());
+            if (taken > 0 && dev.wildcraft.fuse.FusionCombat.meleeSource(source) && source.getDirectEntity() instanceof ServerPlayer p && source.getEntity() == p
+                    && category(dev.wildcraft.fuse.FusionCombat.meleeWeapon(p, source)) == MELEE) register(p, dev.wildcraft.fuse.FusionCombat.meleeWeapon(p, source));
         });
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
             if (entity instanceof ServerPlayer p && !p.level().getGameRules().get(GameRules.KEEP_INVENTORY)) clear(p);
@@ -81,7 +81,7 @@ public final class BackEquipment {
     }
     public static int category(ItemStack stack) {
         if (stack.isEmpty()) return -1;
-        if (stack.is(ItemTags.SWORDS) || stack.is(ItemTags.AXES)) return MELEE;
+        if (dev.wildcraft.combat.MeleeActions.weapon(stack)) return MELEE;
         if (stack.is(Items.SHIELD)) return SHIELD;
         if (stack.is(Items.BOW) || stack.is(Items.CROSSBOW)) return RANGED;
         return -1;

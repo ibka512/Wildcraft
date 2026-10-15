@@ -1,0 +1,11 @@
+package dev.wildcraft.test.performance;
+import dev.wildcraft.test.research.ResearchFixtures;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.NoopRenderer;
+/** Restores only original test registry IDs in a cloned generated world, without old research timers/commands/observers. */
+public final class C7RegistryCompatibility implements ModInitializer,ClientModInitializer {
+    @Override public void onInitialize(){if(ResearchFixtures.MACHINE==null)throw new AssertionError("Original fixture registry missing");}
+    @Override public void onInitializeClient(){EntityRenderers.register(ResearchFixtures.MACHINE,NoopRenderer::new);}
+}

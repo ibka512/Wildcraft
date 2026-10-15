@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-10T22:36:26.555525+00:00",
+  "files": [
+    {
+      "path": "art/production-v2/F05-06/v01/exports/spring-geometry.json",
+      "copy": "references/spring-geometry.json",
+      "sha256": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b"
+    },
+    {
+      "path": "art/production-v2/F05-06/v01/references/approved-machine-geometry.json",
+      "copy": "references/approved-machine-geometry.json",
+      "sha256": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8"
+    },
+    {
+      "path": "art/production-v2/F05-06/v01/exports/shared-machine-atlas-64.png",
+      "copy": "references/shared-machine-atlas-64.png",
+      "sha256": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739"
+    },
+    {
+      "path": "art/production-v2/F05-06/v01/source/shared-machine-atlas-64.aseprite",
+      "copy": "references/shared-machine-atlas-64.aseprite",
+      "sha256": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395"
+    },
+    {
+      "path": "art/production-v2/F05-06/v01/references/uv-regions.json",
+      "copy": "references/uv-regions.json",
+      "sha256": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineNodes.java",
+      "copy": "references/MachineNodes.java",
+      "sha256": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/MachineEntity.java",
+      "copy": "references/MachineEntity.java",
+      "sha256": "b1b3fe63142beed15af3dcf9331d1f58731813441b34b0a5792748766ca64611"
+    },
+    {
+      "path": "src/main/java/dev/wildcraft/mechanics/SpringData.java",
+      "copy": "references/SpringData.java",
+      "sha256": "f12df3690d77bd11a7ac51aab900c161dc4f968d4d44fb70a3839e5fa04489bb"
+    },
+    {
+      "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
+      "copy": "references/MachineRenderer.java",
+      "sha256": "3ee20aeec8565a620b28bbf6332da16da542930dd994b787b094f1f6753fba84"
+    },
+    {
+      "path": "art/ADOPTED-ASSETS.json",
+      "copy": "references/ADOPTED-ASSETS.json",
+      "sha256": "9a8879d36b498fff4d03dde44360b26bd20353c8320fe93c18c75e91f49f9513"
+    }
+  ],
+  "originalPackageFiles": {
+    "README.md": "1c29dda8849cf0537db66f17e89f728ba9bd7628f3004f767fdd5f8af64ecec6",
+    "verification.md": "78ae8a709479e2e5797cb1fc7887133f9ec80fe0fe6f1934f27af72124466fe0",
+    "manifest.json": "f97f02ee9196c40c6a61e4584ba2594321ac30ae3754de14759389f783ac42ea",
+    "adoption.json": "9b462e436eb5d6e6e8c7e9a992cef3f89ebc754a486cb9092a68f51ed50c24ca",
+    "brief.md": "5b06ee8898f6c2f707c5bdecc66d5e7c0a9a02ec117ac72d57c88b5d81dd73d7",
+    "integration-map.md": "d41e767612dfac93448ee44894344fd2d4389f8f9c6d1a3bad6c82bd88ba7950",
+    "references/rocket-preview.js": "a1e45e1094f239cc11558092a4649da6040dffe1035bf21e291962854dcb373b",
+    "references/MachineRenderer.java": "e3797f7b32760c3b960d18febe6a415631e74c46f8ab52406af7d0d2692236cc",
+    "references/imagegen-prompt.txt": "f482b76757cceda2db05c605d91cc596c97ff22d1ad22cfd41a3fc9f2af14a51",
+    "references/provenance.json": "e6e7b03d558542a03f751b3a57348128c50a72e678fba31df5e843401c936293",
+    "references/MachineEntity.java": "bc0f22252fccf7e799c4225537d1272cab33e3b9eb2a2f4b1df5aa5b7d1ad1ae",
+    "references/shared-machine-atlas-64.aseprite": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395",
+    "references/approved-machine-geometry.json": "6882a6e8a777382e042e1ac183c96cb22fa7a4e0622009785c86f7a0a073c1b8",
+    "references/shared-machine-atlas-64.png": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739",
+    "references/MachineNodes.java": "55ba4a56aef27fb923b12738b57847b899570924352cee44d8dd2ddbba43083e",
+    "references/fan-preview.js": "3b281d26d21b2597c5ad34a8064a1eea4d81c102c36bf63437499b5e66388eb2",
+    "references/SpringData.java": "f12df3690d77bd11a7ac51aab900c161dc4f968d4d44fb70a3839e5fa04489bb",
+    "references/spring-concept.png": "90b96e56e533b24b826a3813179075a088367935c00cfbed33da311038ec4513",
+    "references/code-baseline.json": "aeb3244d2853a7a746e7968aa9d3c3f1d16c2db9f7e02dab38951f040fe23260",
+    "references/uv-regions.json": "917ed06e3f7948c23bbab7a69fb7030846c98054282ea584996b6ac50b9f9719",
+    "source/spring-item-32.aseprite": "baffe71afe78691c14f87d14f8306b519e80698049c91a3fc4dafcae398b6664",
+    "source/spring-v01.blend": "5bce45a2753d0925c8a550cb18a56180096ae748a0ba0a49c306efb1cee83d30",
+    "source/build-model.py": "db48ff15b2147d2be22ac45f85591c8571879b68473a81f25c8416743277eab4",
+    "source/render-model.py": "6a26a56ac906c204a2151b9f0e20e19983d956e8ff7fbc6358396bedbb1b3a87",
+    "source/spring-item-16.aseprite": "a7d1899c5fdeae5099925048e27047d362a9d49e51ae1518e7fe7d652df68c8a",
+    "source/build-preview.py": "e848fd044ff88c2694cb290b6a1bcd91f834b44a7b0a2043186e160311d07f10",
+    "source/verify-blender.py": "9f90400f35f6b11fb1c5831931bf7d3197eb5864dfec01401ab91d6b62222212",
+    "source/shared-machine-atlas-64.aseprite": "3a90c36301169c458d45b34cefff96850165960a3c9095f90a405c7bed9b1395",
+    "source/verify-assets.py": "2f1859922aacda6b56e9a1ecfd544eb0386561f87a346904ec45864b0d82e238",
+    "source/spring-compressed-v01.bbmodel": "bb05c564f5a970bb2899f85c2a2b0796ccc051832c64872a92c3ef7feb332ddc",
+    "source/spring-extended-v01.bbmodel": "bf5b01ec81aac304e94d7a347bba7de3ab56cab74ae1a81921315f207669cf4a",
+    "source/pixel-designs.json": "c331e55acecd710af6732adcad8330330b0d6568e07541943c24e6ac783fa677",
+    "source/geometry-and-uv.json": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b",
+    "source/create-pixels.py": "e0b0073e34318142ee92828854851812186f35ced8d00527e92d08959322482a",
+    "source/review-snapshots.json": "abb75921c1b5ce4fa27a6018aee3b0dc2f1b4265b24503f0ecc0eb423e9dd239",
+    "source/verify-contract.mjs": "37ebb7166118921984d3f0071400a0c5680c67961c05ad86ae7fbd304e08394e",
+    "source/spring-preview.js": "b7851bbf9b068f1ebede80173015141d7cfd24aed038e171ac1710fc24c70157",
+    "exports/spring-item-16.png": "8718db8c3fb21c2ca4da5a91e88199dc93adceeafbcdb4a853d74905eec2fa58",
+    "exports/shared-machine-atlas-64.png": "34b65b19abc7d08fe789fd33c2c95d6f882887aed55f4fd7244d66e9a8539739",
+    "exports/spring-geometry.json": "9c5b0b4dd0d4b096dfae578593d1f14aab5368269a6bf9720bd7bf0aa4c22b8b",
+    "exports/spring-state-and-motion.json": "b38b92d64ab40412bc6915653c5b27d9f25e8e0b48291111a6fbf6e5bb824f00",
+    "exports/spring-item-32.png": "95e473e7e2ede05d7ac08fcd7af0281b81dd032abc33f4b37481b6ef74b4ad74",
+    "review/spring-live-review.png": "842753154c878bbb48b403ebd8950063fd2cbb3b993357b9de5a90023925bc61",
+    "review/preview.html": "078751b365bc750029b801980665f3d702face2c9ea61da2f9f3b364b7c9930d",
+    "review/aseprite-start.json": "62fee38e43e738dae76965077d3c26392e8d2029d3a5ed19931c0199ef0011d1",
+    "review/browser-checks.json": "2e369fae1625c87ace19f841267d601452b71d5591bef3d79625d12c6c61a27a",
+    "review/package-checks.json": "bfb27c9989856dfbb3b6250159a9e4b6c80901133cb2d56b8baf16204968510b",
+    "review/spring-extended-front.png": "14d966ed695e1b7e38f89cb93e8114d885328902784c8d5120a3dc2796b2dec8",
+    "review/asset-checks.json": "1888d2b08da812b891002517a8cfa4f5de6abcd4ad44fc16234a8fc09d425d01",
+    "review/spring-extended-mounted-4.png": "6a3e0687e0782b802b6ecc9beb430f513a6a6f3f57911c0a4a1daa44cd54aa46",
+    "review/spring-compressed-three-quarter.png": "45489cd94cfb4251dce62b1bd5f1c94972f2fa77164ed373a0d824f5af0b5fa7",
+    "review/spring-extended-mounted-5.png": "164a732674911b67ba1eeafc249b53f0295f14f38b74e69be73b4b7d7d724c25",
+    "review/spring-extended-side.png": "21020d97af9e7a0b249583b98708724fbf63352f206d9262fe773067cc7aff7f",
+    "review/spring-extended-three-quarter.png": "435573ea1a96df92263fd66a14ac780de10496a53bcc41d3cc0a58ba205f11b0",
+    "review/spring-compressed-mounted-5.png": "4b071fc95908effc177676733100648a1755c152d116bd62e993d87c990368e8",
+    "review/spring-compressed-mounted-4.png": "873eb7aa20c61475980ea721a68eda4b3eb87a59d819a33b3326c03a950d4cc8",
+    "review/blender-source-checks.json": "955ac83730ba9d77b70dc24437c1339f72c96d261b5d5847e802204cc5f70fd4",
+    "review/spring-compressed-mounted-0.png": "1441e310307728fe3113c965e77338224345180e2e0014f983323d073f1fd1f8",
+    "review/spring-extended-mounted-2.png": "ad0ec02dc9861bcc3d08a6598182f397dddbf4fe57c5ea80b05b3da36cd48245",
+    "review/spring-extended-mounted-3.png": "e665ea5836e592587b3fc2d55187b12e93a701ce7c7a6370c5197430a9a5bb6b",
+    "review/spring-compressed-mounted-1.png": "22f2c1fd822449283e9fa34728110351580a7375dbeed75ee5c314a2cca3c919",
+    "review/spring-compressed-mounted-3.png": "b2d3fc81be5292a293909b20ce9fc752365ee26ea8a52ef3fcf5b9dc09530965",
+    "review/spring-compressed-side.png": "8db72777b31e87174ee0bd5f67772f799c7383b1febc8aefa3849f5a72b37760",
+    "review/spring-extended-mounted-1.png": "aaa23d13450d5f30bd035a106888ca4d57beff92e5d72f31445d3dbf34462be7",
+    "review/spring-compressed-front.png": "bbfd7b3db2369e747e199e99b6a7dffb99177429ce487e826f78300717ac64f6",
+    "review/contract-checks.json": "17b067c296c6c071e98ce85a9a56ffb660ba0dcccb7d10676bb646431ddf4aef",
+    "review/spring-extended-mounted-0.png": "66c68b6402d54e7706fdcbc650f7f272c7ffeaa6f00ad8626fb0e72d779febad",
+    "review/spring-compressed-mounted-2.png": "0b3926ca85c9c375ca2a4da22a44ba65615ac579e3932ce54be4e612b0434f2a",
+    "review/spring-root.png": "d8f1d563dd571193d321b7a7d65a14949f81219cc7f8d514ab97dbca40069ccc",
+    "review/spring-review.png": "55876599142119333b7eb82146e2a70b83d916dedac5d99fcb7cb9f46af6c936"
+  }
+}

@@ -23,6 +23,8 @@ jobs:
         with:
           distribution: temurin
           java-version: '25'
+      - name: Verify public snapshot scope
+        run: python3 tools/verify-public-snapshot.py
       - name: Verify adopted asset provenance
         run: python3 tools/verify-adopted-assets.py
       - name: Generate resources
@@ -32,6 +34,8 @@ jobs:
           git diff --exit-code -- src/main/generated
       - name: Build
         run: ./gradlew build gameTestJar
+      - name: Verify public artifacts
+        run: python3 tools/verify-public-snapshot.py --artifacts
       - uses: actions/upload-artifact@v7
         with:
           name: wildcraft-mc26.3

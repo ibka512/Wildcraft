@@ -1,0 +1,23 @@
+{
+  "allPassed": true,
+  "originalMeshes": 24,
+  "fixedOriginalMeshes": 18,
+  "rotorMeshes": 6,
+  "adapterMeshes": 2,
+  "bodyMeshes": 67,
+  "originalUVAndShapePreserved": true,
+  "translatedVertices": 208,
+  "rotorSweepCases": 361,
+  "positiveVolumeBodyOverlaps": 0,
+  "minimumRadialGapBlocks": 0.014891519206849946,
+  "uprightHeightCases": 81,
+  "otherMountCases": 20,
+  "activeGhostAgeCases": 20,
+  "fixedHousingUnchanged": true,
+  "pivotTranslatedWithFan": true,
+  "spacerContactChecked": true,
+  "groundMinimum": 0.03,
+  "oldMinimum": -0.2,
+  "knownArtificialGroundRoll6MinY": 0.011459256864197617,
+  "artOnly": true
+}

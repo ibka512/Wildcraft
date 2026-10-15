@@ -1,0 +1,43 @@
+{
+  "asset": "F05-09",
+  "version": "v01",
+  "status": "user_approved",
+  "adopted": true,
+  "integrated": false,
+  "kind": 8,
+  "modelStatic": true,
+  "consumesEnergy": false,
+  "capacityPerDevice": 1.75,
+  "workingIndication": "existing mechanical HUD; no lamp or texture switch",
+  "activeSource": "authoritative per-node active bit",
+  "passiveEvenWhenDisabled": true,
+  "conditions": "floats>0 && machine WATER height>0 && total mass<=1.75*floats",
+  "massFormula": "1 + .1*installedPartCount + .25*passengerCount",
+  "liftDelta": "0.07*floats/mass*min(1,waterHeight/0.4)",
+  "supportedVerticalCap": 0.15,
+  "noLiftIn": [
+    "air",
+    "lava",
+    "overload",
+    "ghost"
+  ],
+  "fluidSource": "machine entity; not volume/intersection of decorative float",
+  "collision": "existing machine bounding box unchanged; visual float has no independent collider",
+  "ghost": {
+    "color": "#5DD7B7",
+    "alpha": 0.5333333333333333,
+    "depthTest": true,
+    "depthWrite": false,
+    "providesLift": false
+  },
+  "waterline": {
+    "reviewOnly": true,
+    "notEquilibriumPrediction": true,
+    "notInProductionModel": true
+  },
+  "newFx": 0,
+  "newTexturePixels": 0,
+  "adopted_date": "2026-10-05",
+  "evidence": "用户：采用，开始下一步",
+  "scope": "浮力装置模型、独立32/16源图、六向安装及水线参考；实际游戏水下/载重/碰撞待接入验证"
+}

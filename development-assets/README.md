@@ -1,3 +1,5 @@
+> 2026-10-15：本目录保留早期已公开的历史交付，不新增本机受限JAR、验证图集或源ZIP。最新可公开代码与资产在仓库src/art/docs；版本0.1.0-dev.62-public，说明见根README与docs/PUBLIC-SNAPSHOT-2026-10-15.md。
+
 # 全部开发资产与历史证据
 
 > 2026-10-06当前公开交接：dev.18 / handoff-dev18-2026-10-06。下方按时间记录各阶段，当时“未上传/公开dev.7”仅描述历史。本次纳入dev.8–dev.18源码、包、原稿与证据，下载见[ASSET-DOWNLOADS](../docs/ASSET-DOWNLOADS.md)。当前全仓库文件校验见[PUBLIC-ASSET-MANIFEST-dev18](PUBLIC-ASSET-MANIFEST-dev18.json)和[SHA256SUMS](PUBLIC-ASSET-SHA256SUMS-dev18.txt)，以交接标签复核。旧PUBLIC-ASSET-MANIFEST及阶段清单不覆写。

@@ -1,0 +1,23 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import './proposal-preview.js';const r=new URL('../',import.meta.url),read=p=>JSON.parse(fs.readFileSync(new URL(p,r))),d=read('exports/buoyancy-bottom-proposal.json'),api=globalThis.FloatBottomProposal;
+const base={node:1,variant:'candidate',fluid:'air',height:0,roll:0,ghost:false,groundY:0,waterY:.25,waterHeight:0,floatCount:1,installedParts:3,passengers:1,enabled:true,energy:500};
+const bounds=parts=>({min:[0,1,2].map(i=>Math.min(...parts.flatMap(p=>p.vertices.map(v=>v[i])))),max:[0,1,2].map(i=>Math.max(...parts.flatMap(p=>p.vertices.map(v=>v[i]))))});const overlaps=(a,b)=>[0,1,2].every(i=>a.min[i]<b.max[i]-1e-10&&a.max[i]>b.min[i]+1e-10);
+assert.equal(d.parts.length,15);for(let k=0;k<15;k++){const p=d.parts[k],old=d.originalFloat[k];assert.deepEqual(p.faces,old.faces);assert.equal(p.vertices.length,old.vertices.length);for(let i=0;i<p.vertices.length;i++)assert.ok(p.vertices[i].every((v,j)=>Math.abs(v-old.vertices[i][j]-(j===2?-6.56:0))<1e-10));}
+let zero=api.geometry(d,base);assert.ok(Math.abs(zero.minY-.01)<1e-10);assert.ok(Math.abs(zero.maxY-.39)<1e-10);
+let overlap=0;for(const a of zero.float)for(const b of zero.body)overlap+=overlaps(bounds([a]),bounds([b]))?1:0;assert.equal(overlap,0);
+// A negative test demonstrates why transplanting the spring pocket would fail.
+const spring=read('references/spring-bottom-proposal.json'),springPocketHalf=spring.pocket.halfWidth/16;assert.ok(springPocketHalf<.32);
+let otherDirections=0;for(const node of [0,2,3,4,5])for(const ghost of [false,true])for(const fluid of ['air','water']){const a=api.geometry(d,{...base,node,ghost,fluid}),b=api.geometry(d,{...base,node,ghost,fluid,variant:'old'});assert.deepEqual(a.float,b.float);assert.deepEqual(a.body,b.body);assert.ok(a.minY>=0);otherDirections++;}
+let staticCases=0;for(const fluid of ['air','water','lava'])for(const enabled of [false,true])for(const energy of [0,500])for(const ghost of [false,true])for(const installedParts of [3,6]){const g=api.geometry(d,{...base,fluid,enabled,energy,ghost,installedParts,waterHeight:.25});assert.deepEqual(g.float,zero.float);assert.deepEqual(g.body,zero.body);staticCases++;}
+let groundCases=0;for(let i=0;i<=80;i++){const g=api.geometry(d,{...base,height:i*.005});assert.ok(g.groundClearance>=0);groundCases++;}
+let tiltedCases=0;for(let angle=-6;angle<=6;angle++){const g=api.geometry(d,{...base,height:.2,roll:angle,groundY:-.65});assert.ok(g.groundClearance>0);let overlapsTilt=0;for(const a of g.float)for(const b of g.body)overlapsTilt+=overlaps(bounds([a]),bounds([b]))?1:0; // rotated AABBs may overlap even when separated; do not claim this proxy measures rotated mesh intersection.
+ tiltedCases++;}
+let ruleCases=0;
+for(const enabled of [false,true])for(const energy of [0,500]){const r=api.referenceLift({...base,fluid:'water',waterHeight:.25,enabled,energy});assert.equal(r.supported,true);assert.ok(Math.abs(r.lift-.07/1.55*.625)<1e-12);ruleCases++;}
+for(const fluid of ['air','lava']){assert.equal(api.referenceLift({...base,fluid,waterHeight:.5}).lift,0);ruleCases++;}
+assert.equal(api.referenceLift({...base,fluid:'water',waterHeight:0}).lift,0);ruleCases++;
+assert.equal(api.referenceLift({...base,fluid:'water',waterHeight:.5,installedParts:6}).lift,0);ruleCases++;
+assert.equal(api.referenceLift({...base,fluid:'water',waterHeight:.5,installedParts:5}).supported,true);ruleCases++;
+assert.equal(api.referenceLift({...base,fluid:'water',waterHeight:.5,ghost:true}).lift,0);ruleCases++;
+for(const h of [.39,.4,.41]){const r=api.referenceLift({...base,fluid:'water',waterHeight:h});assert.ok(Math.abs(r.lift-.07/1.55*Math.min(1,h/.4))<1e-12);ruleCases++;}
+let old=api.geometry(d,{...base,variant:'old'});assert.ok(Math.abs(old.minY+.4)<1e-10);const unsafe=api.geometry(d,{...base,roll:6});assert.ok(unsafe.groundClearance<0);
+const report={allPassed:true,scope:'Static art geometry, upright flat-ground and reference passive-lift arithmetic. Not runtime fluid/terrain/physics verification.',floatMeshes:15,candidateBodyMeshes:71,wholePartScaleUnchanged:true,atlasUVUnchanged:true,localOffsetBlocks:[0,0,-.41],cavityBlocks:[.69,.45,.41],groundMinY:zero.minY,groundMaxY:zero.maxY,bodyOverlapConservativePairs:overlap,oldGroundMinY:old.minY,staticAcrossStateCases:staticCases,groundHeightCases:groundCases,unchangedOtherDirectionCases:otherDirections,tiltedAirClearanceCases:tiltedCases,passiveRuleReferenceCases:ruleCases,springCavityTooNarrow:true,knownUnsupportedGroundedRollMinY:unsafe.minY,movingParts:0,newPhysicsRules:false,gameIntegrated:false};fs.writeFileSync(new URL('review/geometry-verification.json',r),JSON.stringify(report,null,2)+'\n');console.log(report);

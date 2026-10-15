@@ -1,0 +1,21 @@
+{
+  "allPassed": true,
+  "checkedFiles": 57,
+  "oldPackageFilesUnchanged": 70,
+  "gameInputsAndRegistryUnchanged": true,
+  "springMeshes": 44,
+  "candidateChassisMeshes": 71,
+  "coilShapeKeys": 24,
+  "nativeAtlasCopiedUnchanged": true,
+  "editableFreeMeshFiles": 3,
+  "reopenedBlendChecked": true,
+  "clearanceCases": 648,
+  "actualUIChecks": 10,
+  "finalSectionViews": 6,
+  "artOnly": true,
+  "newProductionDependencies": false,
+  "productionAssetIds": 43,
+  "gameVersion": "0.1.0-dev.27",
+  "pendingUserReview": false,
+  "gameIntegrated": false
+}

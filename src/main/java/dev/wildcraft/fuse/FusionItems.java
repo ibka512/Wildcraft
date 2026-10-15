@@ -8,7 +8,7 @@ import net.minecraft.world.item.*;
 /** Validates completely before changing either actual owned stack. */
 public final class FusionItems {
     private FusionItems(){}
-    public static boolean host(ItemStack s){return s.is(ItemTags.SWORDS)||s.is(ItemTags.AXES)||s.is(Items.SHIELD)||s.is(Items.ARROW)||s.is(Items.TIPPED_ARROW)||s.is(Items.SPECTRAL_ARROW);}
+    public static boolean host(ItemStack s){return dev.wildcraft.combat.MeleeActions.weapon(s)||s.is(Items.SHIELD)||s.is(Items.ARROW)||s.is(Items.TIPPED_ARROW)||s.is(Items.SPECTRAL_ARROW);}
     public static boolean attach(ItemStack host,ItemStack material,HolderLookup.Provider registries){
         if(host==material||host.isEmpty()||host.getCount()!=1||!host(host)||host.has(FusionContent.DATA)||host.has(FusionContent.VIEW)||material.isEmpty()||material.has(FusionContent.DATA)||material.has(FusionContent.VIEW))return false;
         var capture=FusionData.capture(material,registries);if(capture.error().isPresent()||capture.result().isEmpty())return false;

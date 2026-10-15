@@ -1,0 +1,16 @@
+{
+  "assetIds": [
+    "F05-09"
+  ],
+  "supportingAsset": "F05-01 bottom float pocket visual variant proposal",
+  "version": "v02-structure-proposal",
+  "adopted": true,
+  "status": "adopted-structure-art-not-game-integrated",
+  "gameIntegrated": false,
+  "productionRegistered": false,
+  "productionReady": false,
+  "scope": "原尺寸静态浮力装置、主体凹舱配套、地面/水中同一外形、水线/载重/其他方向及幽灵预览；无新增伸缩或浮力规则。",
+  "nextCandidate": "按用户后续授权逐项复查F05-02机械翼底部安装，再复查F05-03风扇",
+  "userMessage": "采用，开始下一项",
+  "adoptedAtUTC": "2026-10-11T00:09:19.742893+00:00"
+}

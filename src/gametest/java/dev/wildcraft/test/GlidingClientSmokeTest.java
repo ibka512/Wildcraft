@@ -255,6 +255,12 @@ public final class GlidingClientSmokeTest implements FabricClientGameTest {
             check(!c.computeOnClient(client -> Gliding.active(client.player)), "World reload keeps gear and discards open state");
         }
         language(c, "en_us");
+        if (Boolean.getBoolean("wildcraft.test.singleplayerOnly")) {
+            release(c);
+            c.runOnClient(client -> client.options.setCameraType(CameraType.FIRST_PERSON));
+            System.out.println("WILDCRAFT P3 singleplayer real equipment/jump/glide/holster/item takeover/GUI/stamina/death/save reload checks passed; dedicated/TCP section deliberately deferred");
+            return;
+        }
         try (TestDedicatedServerContext server = c.worldBuilder().createServer(properties())) {
             server.runOnServer(instance -> arena(instance.overworld()));
             try (TestDedicatedServerConnection connection = server.connect()) {

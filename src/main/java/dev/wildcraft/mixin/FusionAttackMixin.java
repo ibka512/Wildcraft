@@ -8,6 +8,8 @@ import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Player.class)
 public abstract class FusionAttackMixin{
+    @ModifyExpressionValue(method="stabAttack",at=@At(value="INVOKE",target="Lnet/minecraft/world/entity/player/Player;getEnchantedDamage(Lnet/minecraft/world/entity/Entity;FLnet/minecraft/world/damagesource/DamageSource;)F"))
+    private float wildcraft$spearMaterial(float value){var p=(Player)(Object)this;return !p.isUsingItem()&&dev.wildcraft.combat.MeleeWeapon.of(p.getWeaponItem())==dev.wildcraft.combat.MeleeWeapon.SPEAR&&p.level() instanceof ServerLevel level?value+FusionCombat.bonus(p.getWeaponItem(),level):value;}
     @Unique private float wildcraft$fusionScale;
     @Inject(method="attack",at=@At("HEAD")) private void wildcraft$attackScale(net.minecraft.world.entity.Entity target,CallbackInfo ci){var p=(Player)(Object)this;float s=p.getAttackStrengthScale(.5f);wildcraft$fusionScale=.2f+.8f*s*s;}
     // Native critical, armor, enchantments, damage gating and durability remain downstream.

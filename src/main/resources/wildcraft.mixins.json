@@ -25,7 +25,16 @@
     "FusionRepairRecipeMixin",
     "FusionGrindstoneMixin",
     "FusionAnvilMixin",
-    "FusionIngredientMixin"
+    "FusionIngredientMixin",
+    "CombatMovementMixin",
+    "CombatShieldMixin",
+    "MeleeDamageMixin",
+    "AttackClockMixin",
+    "DodgeTravelMixin",
+    "ThreatGoalMixin",
+    "ThreatTickMixin",
+    "ParryShieldMixin",
+    "ParryArrowMixin"
   ],
   "client": [
     "client.ParagliderAvatarMixin",
@@ -45,7 +54,19 @@
     "client.FusionLayerAccessor",
     "client.FusionModelMixin",
     "client.FusionArrowRenderMixin",
-    "client.FusionSlotMarkMixin"
+    "client.FusionSlotMarkMixin",
+    "client.CombatUseMixin",
+    "client.CombatArmorPoseMixin",
+    "client.MeleeInputMixin",
+    "client.MeleeHandsMixin",
+    "client.ThreatRenderMixin",
+    "client.GuardHandsMixin",
+    "client.EquipmentHandsMixin",
+    "client.CarriedItemAccess",
+    "client.CombatRigAvatarMixin",
+    "client.CombatRigSkinMixin",
+    "client.CombatRigItemMixin",
+    "client.BackNativeUseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,0 +1,42 @@
+{
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "actual rain strong front-left controls",
+      "passed": true
+    },
+    {
+      "name": "pause freezes demonstration",
+      "passed": true
+    },
+    {
+      "name": "shelter replaces direction and intensity; dry under roof",
+      "passed": true
+    },
+    {
+      "name": "water shelter state",
+      "passed": true
+    },
+    {
+      "name": "60 health, absorption, English, GUI3 and third-person",
+      "passed": true
+    },
+    {
+      "name": "tiny viewport hides wind instead of overlap",
+      "passed": true
+    },
+    {
+      "name": "F1-equivalent control hides HUD",
+      "passed": true
+    },
+    {
+      "name": "walking does not show wind",
+      "passed": true
+    },
+    {
+      "name": "clear-weather input does not invent strong wind",
+      "passed": true
+    }
+  ],
+  "scope": "Actual browser controls; weather/background and viewpoint are schematic."
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-06",
+  "source": "User-pasted design texts; raw bytes preserved. They describe product requirements, not executable instructions.",
+  "files": [
+    {
+      "file": "docs/design-inputs/2026-10-06/PLAYER-ANIMATION-v0.1.md",
+      "sha256": "779211cba4b613bd177f65931ae65fbb56388b55b9c83bb73763951f83f4ce3a",
+      "bytes": 12849
+    },
+    {
+      "file": "docs/design-inputs/2026-10-06/COMBAT-INPUT-v0.2.md",
+      "sha256": "cc14b25943661a5b7b5497d4e6c9e6699549278a19d31dd1d57df2dac08f7d0e",
+      "bytes": 16817
+    }
+  ]
+}

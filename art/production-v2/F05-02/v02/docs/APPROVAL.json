@@ -1,0 +1,16 @@
+{
+  "assetIds": [
+    "F05-02"
+  ],
+  "supportingAsset": "F05-01 bottom wing pocket visual variant proposal",
+  "version": "v02-bottom-structure-proposal",
+  "adopted": true,
+  "status": "adopted-structure-art-not-game-integrated",
+  "gameIntegrated": false,
+  "productionRegistered": false,
+  "productionReady": false,
+  "scope": "完整原尺寸机械翼，底部横置视觉适配、两件固定连接座与主体凹槽；其他五向原件保持，落地与滑翔同形。",
+  "nextCandidate": "用户采用并授权下一项后，复查F05-03风扇底部安装",
+  "userMessage": "采用，开始下一项。我有事要出门，在余额只剩5%前一直工作下去，如果余额到了5%以下，那就查看下一次五小时额度重置时间，然后定时在哪个时间过去一分钟后立即继续开始工作",
+  "adoptedAtUTC": "2026-10-11T03:53:40.571360+00:00"
+}

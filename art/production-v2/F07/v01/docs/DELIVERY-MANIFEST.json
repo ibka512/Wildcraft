@@ -1,0 +1,329 @@
+{
+  "assetIds": [
+    "F07-01",
+    "F07-02"
+  ],
+  "version": "v01",
+  "status": "adopted-art-not-game-integrated",
+  "adopted": true,
+  "gameIntegrated": false,
+  "previewURL": "http://127.0.0.1:8886/preview.html",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5149,
+      "sha256": "392e918cda78f25fcd8078e56e0e04af97037ae938564f2793f690efbeeac028"
+    },
+    {
+      "path": "docs/APPROVAL.json",
+      "bytes": 614,
+      "sha256": "0d3edf0919778a8fb3a510c2874b81e9692c39ace5596a8930251930c6aa4ff0"
+    },
+    {
+      "path": "docs/DEPENDENCIES.json",
+      "bytes": 2183,
+      "sha256": "fe60efbf202d04c5c95c07eadd0d74a633983a331c087abf4e49f007aa13d998"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "bytes": 1524,
+      "sha256": "226bb4a6b0fe16c61d22ae5351c2210fc815270efbbac03d8f658d034e0fc50b"
+    },
+    {
+      "path": "docs/SOURCE.md",
+      "bytes": 840,
+      "sha256": "a22ccd8fa84f4b9e237d4d4e61f6a9b13acab2529dc1ebde1c930af126baea5d"
+    },
+    {
+      "path": "docs/STATE-CONTRACT.json",
+      "bytes": 699,
+      "sha256": "e83ad82086830cfa030f8fa2393ddc86d9f16d66987b0d63ac201ed37244f5ca"
+    },
+    {
+      "path": "exports/atlas-map.json",
+      "bytes": 2232,
+      "sha256": "a321c4cfedb1cce9d13e90428ba15520e116b734c1d0ccb668f52d4479662c36"
+    },
+    {
+      "path": "exports/sheltered.png",
+      "bytes": 192,
+      "sha256": "baccd7373ab2ff2217939ce1fb9e20679a6cd52c50521a5c383229d20342bd6c"
+    },
+    {
+      "path": "exports/strength_light.png",
+      "bytes": 138,
+      "sha256": "c9428dc356c59ff4004c6f77292f6374121e74ff581b1ee80601cf945805dca0"
+    },
+    {
+      "path": "exports/strength_moderate.png",
+      "bytes": 173,
+      "sha256": "2690b0aa6c1f826f60a3a5f3c83de80d53cbdcc59e2fe6608557d4e9304be0b3"
+    },
+    {
+      "path": "exports/strength_strong.png",
+      "bytes": 187,
+      "sha256": "88a9e8f63e586d2f24f1d6013cb5fb4f9674b16a45be979a6cfeb2217f93f056"
+    },
+    {
+      "path": "exports/wet.png",
+      "bytes": 199,
+      "sha256": "b164c94e4e7989282a394ccc38f4a0004267f31b9503218d19adba552bf2b3d8"
+    },
+    {
+      "path": "exports/wind-weather-atlas.png",
+      "bytes": 1108,
+      "sha256": "186697d473fa7f4fcafab2dbb580933877962bb7cfc4c7d47d2472430b00f0ff"
+    },
+    {
+      "path": "exports/wind_back_left.png",
+      "bytes": 188,
+      "sha256": "3914f619f4df154320568ac3505e960ee7b285276c776278f0cba04a9baadba7"
+    },
+    {
+      "path": "exports/wind_back_right.png",
+      "bytes": 191,
+      "sha256": "c4ddbcb8525957218366138badb37f253e936b0799668da7a8857abc42ec2f3e"
+    },
+    {
+      "path": "exports/wind_backward.png",
+      "bytes": 200,
+      "sha256": "c8fdcd66faa183dcfd8b23976440692185e2c8963932e71aa93f0e193ef50573"
+    },
+    {
+      "path": "exports/wind_forward.png",
+      "bytes": 190,
+      "sha256": "9d0f84578f5bb53d51c2ef0b1a0dd461ec78f36dd9e3743d82efc01182d815bd"
+    },
+    {
+      "path": "exports/wind_front_left.png",
+      "bytes": 201,
+      "sha256": "49d6da48ee7de877d9a03ca67a202243842b2cb52e805bbc4042390957012737"
+    },
+    {
+      "path": "exports/wind_front_right.png",
+      "bytes": 198,
+      "sha256": "50c190fe5952aee0573cbb0c401fc6cf9693614d2b044a70d73536686bee8b68"
+    },
+    {
+      "path": "exports/wind_left.png",
+      "bytes": 190,
+      "sha256": "0d3117e0f3903398e9138121c3c8729d319b276f8e8ad563ba4d6227732c933e"
+    },
+    {
+      "path": "exports/wind_right.png",
+      "bytes": 193,
+      "sha256": "97d97f7d4887e784716cf1184bbf00f2bc734453387b2a3107063435ceab6f8c"
+    },
+    {
+      "path": "preview.html",
+      "bytes": 6550,
+      "sha256": "c0f5bab116918f166e882fa15c07da13120cf6ef81799d1533bec66bb30ca71d"
+    },
+    {
+      "path": "preview.js",
+      "bytes": 10538,
+      "sha256": "de61d3c8960122e785b5db01b246d1be2a25f50fb45fe6888549f834e245fea5"
+    },
+    {
+      "path": "references/cooling.png",
+      "bytes": 274,
+      "sha256": "5678be8a456eec09bcdb6a736749b5e82dcfa5bb1fab023bce79de9e9207e44a"
+    },
+    {
+      "path": "references/recovery.png",
+      "bytes": 241,
+      "sha256": "14191800720c78f05b88e946da351bb1cc3728e5a07c11207c63398950edbd93"
+    },
+    {
+      "path": "references/stamina.png",
+      "bytes": 256,
+      "sha256": "50713b9af2f997ff68b135b67fe3176e7128182fcd02dcefc28565822499b8c3"
+    },
+    {
+      "path": "references/temperature.png",
+      "bytes": 218,
+      "sha256": "5586acb51dd6c19823181141c6ee7fee5e63413aad184401f204895412337ee2"
+    },
+    {
+      "path": "references/warmth.png",
+      "bytes": 282,
+      "sha256": "1d256f03450e93c9b1fa49cb50981b81ba35b8e5f25c7fa4217ac6a8dd4be78e"
+    },
+    {
+      "path": "review/adoption-verification.json",
+      "bytes": 1743,
+      "sha256": "b99bdf00c29fd4bb3899b99a4a7027594b6f28b4b043efca8b52046fd175ff8e"
+    },
+    {
+      "path": "review/aseprite-final-state.json",
+      "bytes": 64901,
+      "sha256": "72a6dbeda3ea516628b5b56d0c97ee0c3703517d76df9c3ecd6b6a26df0b4c0d"
+    },
+    {
+      "path": "review/aseprite-pixels.json",
+      "bytes": 69876,
+      "sha256": "731998c429aecb6f2b03df80b5499a178de320df6e98df6bec443251ecf54826"
+    },
+    {
+      "path": "review/aseprite-starting-state.json",
+      "bytes": 50387,
+      "sha256": "52e4121d6fba2a4c949225758258ddb04241de5f9e63a0c9213bb54ba30d0a51"
+    },
+    {
+      "path": "review/browser-verification.json",
+      "bytes": 353,
+      "sha256": "c8b3621418225e63ec7f6af97ade3d3c91e8c979c632e2b95d0e7a6ba520c89b"
+    },
+    {
+      "path": "review/build-icons-final.log",
+      "bytes": 90,
+      "sha256": "eea3a2c8c4d977b578f0adca4e996ea1de23439ad1b505a84bbd3d262cde449e"
+    },
+    {
+      "path": "review/build-icons.log",
+      "bytes": 1540,
+      "sha256": "cf795d4b00db2f8b7509baedc7fb95bf7eb1c6f0364f31729d5cb02b24be996d"
+    },
+    {
+      "path": "review/default.png",
+      "bytes": 20167,
+      "sha256": "b5613aa8bf1a5237c48a8cb6c5e1a94955b3b771859eb8c9cf0ac00416d256fe"
+    },
+    {
+      "path": "review/editor-diagnostic.json",
+      "bytes": 8897,
+      "sha256": "7e5bc5e6f70cc9fcb980dbf639226b75cc838a9795680fc94283d47f0f01f149"
+    },
+    {
+      "path": "review/export-diagnostic.json",
+      "bytes": 44081,
+      "sha256": "b632b5a8117dc21d5fc8459fdf4954cd8b0715ac97d45e370ace0e2b2de75201"
+    },
+    {
+      "path": "review/hud-hidden.png",
+      "bytes": 9567,
+      "sha256": "63d86fd5b81c797874aeedb3c71c0c3dfe13c8e07c7760b162ac51eeb8d13c28"
+    },
+    {
+      "path": "review/latest-atlas.png",
+      "bytes": 1108,
+      "sha256": "186697d473fa7f4fcafab2dbb580933877962bb7cfc4c7d47d2472430b00f0ff"
+    },
+    {
+      "path": "review/pixel-verification.json",
+      "bytes": 478,
+      "sha256": "16f2456dd7333c192142d8062bc545ce66ea7b7b6a20e534ecfcd89f0a569e1e"
+    },
+    {
+      "path": "review/preview-page.png",
+      "bytes": 75748,
+      "sha256": "3716d0f7f68a43914942aa7371925b54dafab4a3ec110706974cf9c5befc8c70"
+    },
+    {
+      "path": "review/quota-check.json",
+      "bytes": 333,
+      "sha256": "7a72a71353a5be18a1046e7e872ccf12981a208295505c32f19bfcc6f20abcbb"
+    },
+    {
+      "path": "review/rain-strong.png",
+      "bytes": 22354,
+      "sha256": "a49771cdaae262073e054c66445484ce6b7ce2d4653b6ad1e7cf829c04ec0949"
+    },
+    {
+      "path": "review/reopened-png-pixels.json",
+      "bytes": 69876,
+      "sha256": "ce46682f010272424a5eeaf2c440dfda148b8d5a2f516e8a558c812d4c536f0f"
+    },
+    {
+      "path": "review/reopened-source-pixels.json",
+      "bytes": 69876,
+      "sha256": "bd4dedaf6c8d853cd535919840fa6aa8a997430dc2d2b4f71fbd24dfd3e22015"
+    },
+    {
+      "path": "review/reopened-source.png",
+      "bytes": 1124,
+      "sha256": "dd19782b0931c303d13e40e1eca345b89045cadd5db6769271d6aca86e6c8480"
+    },
+    {
+      "path": "review/roof.png",
+      "bytes": 21411,
+      "sha256": "663385aa91ef8d0b67731515b08fb8104b6dd020a036e02bcacb750ddf558156"
+    },
+    {
+      "path": "review/snow-60hp-en-gui3.png",
+      "bytes": 14903,
+      "sha256": "50149a793f17ca9d18cee23ad4d07551b7829fda4682ecfd9a0cbe9f0edb4a0d"
+    },
+    {
+      "path": "review/tiny.png",
+      "bytes": 5328,
+      "sha256": "aca1f24e8914e07123830d3a8af689c94cd19362ef14bb9f2e57d4249a5aa0b8"
+    },
+    {
+      "path": "review/ui-verification.json",
+      "bytes": 937,
+      "sha256": "6be009bd13d6969066a4531616374204abf4c7f06600847d330e005ef774188d"
+    },
+    {
+      "path": "review/visual-review.json",
+      "bytes": 1008,
+      "sha256": "b70075a7eda37d63f3aaa9a2a1f34480225995296be1aece7f8aab4345c485bb"
+    },
+    {
+      "path": "review/water.png",
+      "bytes": 18401,
+      "sha256": "89c2aa5f7005fd7b469946f1929f7069cd26f1b502d195ee42581a55c53fc1e9"
+    },
+    {
+      "path": "review/weather-response.png",
+      "bytes": 18856,
+      "sha256": "4192d83cd6d84ca46f64f45d81aa816b36fde892f289e9e1be3aaf4748892edb"
+    },
+    {
+      "path": "review/wind-weather-review.png",
+      "bytes": 130218,
+      "sha256": "7de3bd038d9d3ee8390e2cf6d414c3ed2a85b7282b03022c287dbbed788e6dcb"
+    },
+    {
+      "path": "review/wing-rain.png",
+      "bytes": 22922,
+      "sha256": "163092ab5070a280764bc30470f50cbe75a6ec78e9053cd7dabdf8dabdd7ddad"
+    },
+    {
+      "path": "source/browser-check.mjs",
+      "bytes": 8012,
+      "sha256": "589b0afb719c30a931428daf9a6d6a483afd84ab0a9aa2070af9efd35868f9fb"
+    },
+    {
+      "path": "source/build-icons.py",
+      "bytes": 5892,
+      "sha256": "c0bc1c8fc40d92d1179f71a87439d5c798c3afe6adde81a27e536f2e4db9e204"
+    },
+    {
+      "path": "source/check-delivery.py",
+      "bytes": 2595,
+      "sha256": "c1e423fa546f46676f92e1beeedaa25c18280ebac876e40e009ba6a9c2797e2a"
+    },
+    {
+      "path": "source/hud-layout.js",
+      "bytes": 2331,
+      "sha256": "f51cfa498ab4dd19e601d669d67cfc3010e65c8c08feffbab6932227973437f5"
+    },
+    {
+      "path": "source/pixel-spec.json",
+      "bytes": 169686,
+      "sha256": "ffba0747a4c0a84fa0ef0161305eea8c67d3114be1510c7043c8fb645d174d15"
+    },
+    {
+      "path": "source/verify-pixels.py",
+      "bytes": 1424,
+      "sha256": "5d916b607f3ac250c0eed37159d3a42acb7d7b72534c83795e8097ff13ccd22b"
+    },
+    {
+      "path": "source/wind-weather-atlas.aseprite",
+      "bytes": 1608,
+      "sha256": "8c873296c57f7a08b00b2a343f4846fe2d6ab0337379fdc5e33da7267f54f82d"
+    }
+  ],
+  "checkedAt": "2026-10-10T22:45:46.264199+00:00"
+}

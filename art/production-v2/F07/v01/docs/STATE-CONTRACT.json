@@ -1,0 +1,32 @@
+{
+  "visibility": [
+    "gliding",
+    "riding_machine_with_wing"
+  ],
+  "direction": "flow toward arrow, relative player view",
+  "strengthThresholds": [
+    0.012,
+    0.024
+  ],
+  "wetThreshold": 0.2,
+  "shelterPriority": true,
+  "runtimeShelterPrecipitation": 0,
+  "candidateRowHeight": 20,
+  "currentFontRowHeight": 12,
+  "reticleSafeSize": [
+    20,
+    20
+  ],
+  "bottomReserve": 46,
+  "position": "after temperature and visible meal rows",
+  "layoutFallback": [
+    "full",
+    "icons-only",
+    "hidden"
+  ],
+  "pause": "preview demonstration freezes; art state remains visible",
+  "newShader": false,
+  "newRuntimeParticles": 0,
+  "newModelDeformation": false,
+  "gameIntegrated": false
+}

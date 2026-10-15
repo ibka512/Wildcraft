@@ -1,0 +1,26 @@
+{
+  "allPassed": true,
+  "reviewedAt": "2026-10-10T22:45:46.138773+00:00",
+  "actualBrowserCanvasesViewed": [
+    "browser-stow-model.png",
+    "browser-work-model.png",
+    "browser-work-section.png",
+    "browser-old-section.png",
+    "browser-side-model.png",
+    "browser-side-section.png",
+    "browser-top-model.png",
+    "browser-stowed-section.png"
+  ],
+  "checks": [
+    "原图集像素与铜销/钢板/螺旋材质可见，剖开面UV插值保留",
+    "收起与伸展螺旋连续，固定/活动组可区分",
+    "剖面按真实网格切取，前侧改为x=0纵剖",
+    "文字与结构上缘留出空间",
+    "旧版穿地显示红色最低点",
+    "顶部伸展模型已调整相机取景余量，推板完整",
+    "局部源稿尺寸保持，未以缩小或整件隐藏通过审阅"
+  ],
+  "scope": "结构美术与浏览器画布查看，未游戏物理验收",
+  "wholePageScreenshotAvailable": false,
+  "gameIntegrated": false
+}

@@ -1,0 +1,18 @@
+{
+  "allPassed": true,
+  "adopted": true,
+  "coreAssetsUnchanged": true,
+  "files": {
+    "exports/buoyancy-bottom-proposal.json": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e",
+    "exports/buoyancy-item-32.png": "79acb0b77a53928c20fcef443e503cec53593a9b4b9641c57d9a61b5683346e3",
+    "exports/buoyancy-item-16.png": "59d587108a9c90e62693c548a3e28a31770897937a577c357b05b7bbd5b300f3",
+    "exports/chassis-float-pocket-proposal.json": "156a470f41bdbed664768a5f4102da83e136df1fa90c548117a47347f0951b57",
+    "exports/shared-fabric-machine-atlas-128x64.png": "84ffc07b944baec4e044780d4db8a0b5cd2fe00f3b7f3bcfec609f55baef8b35",
+    "source/chassis-float-pocket-proposal.bbmodel": "75f48803fdea27d562882f7a7b961a79fd4aa7f72b07435586ace8119e006ffd",
+    "source/buoyancy-bottom-v02.bbmodel": "9756db023cc87368c94f9cb3bd4391f832da223783b708488957ec637c018c6a",
+    "source/buoyancy-bottom-structure-v02.blend": "2bf0cdef12ed61f1002ece934cdc50b195cd2847eca5416c32267b615a97e8eb",
+    "source/structure-geometry.json": "e884fdd25f5c7cb23d4b12ea2e3fe69996be404bd18a58e958bc0d85a61aaf2e"
+  },
+  "gameIntegrated": false,
+  "productionReady": false
+}

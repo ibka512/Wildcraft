@@ -1,0 +1,21 @@
+{
+  "allPassed": true,
+  "reviewedAtUTC": "2026-10-11T04:01:52.295735+00:00",
+  "observedActualFiles": [
+    "browser-underside-model.png",
+    "browser-root-section.png",
+    "browser-running-model.png"
+  ],
+  "findings": [
+    "完整护框、叶轮和轴帽在底部开口可见，未隐藏整件。",
+    "铜接点、固定短座和凹舱顶形成连续接触，实际网格剖面反映真实位置。",
+    "叶轮角度变化、housing固定与ghost停转均由实际网页和Blender驱动核实。",
+    "原64图集最近邻材质保持，无新增专用材质。"
+  ],
+  "limitations": [
+    "未执行真实游戏安装、台阶、组合碰撞、骑乘或供电判定。",
+    "Blockbench源稿结构和UV核对，尚未在应用打开。",
+    "画布PNG实际保存；没有声称整页截图成功。"
+  ],
+  "pendingUserReview": true
+}

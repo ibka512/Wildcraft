@@ -1,0 +1,15 @@
+{
+  "assetIds": [
+    "F07-01",
+    "F07-02"
+  ],
+  "asset": "Wildcraft 风与天气提示 v01",
+  "adopted": true,
+  "status": "adopted-art-not-game-integrated",
+  "gameIntegrated": false,
+  "productionRegistered": false,
+  "scope": "13个原生16×16组件、64×64图集、三图层Aseprite源稿；八向/三档/遮蔽/湿润；HUD排布与雨雪伞翼说明稿。环境、字体及第一第三人称为模拟，未游戏验收。",
+  "nextCandidate": "弹簧F05-06底部安装修订方案，随后浮力F05-09",
+  "userMessage": "采用，开始下一项",
+  "adoptedAt": "2026-10-10T22:35:35.393346+00:00"
+}

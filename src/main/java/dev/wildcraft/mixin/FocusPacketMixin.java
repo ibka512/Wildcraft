@@ -15,13 +15,14 @@ public abstract class FocusPacketMixin {
     @Inject(method = "waitForTasks", at = @At("HEAD"))
     private void wildcraft$focusPackets(CallbackInfo ci) {
         var server = (MinecraftServer)(Object)this;
-        if (waitingForNextTick && FocusTime.active(server)) {
+        if (waitingForNextTick && (FocusTime.active(server)||dev.wildcraft.combat.ReactionTime.active(server))) {
             FocusTime.pulse(server);
-            if (FocusTime.active(server)) server.packetProcessor().processQueuedPackets();
+            dev.wildcraft.combat.ReactionTime.pulse(server);
+            if (FocusTime.active(server)||dev.wildcraft.combat.ReactionTime.active(server)) server.packetProcessor().processQueuedPackets();
         }
     }
     @ModifyArg(method = "waitForTasks", at = @At(value = "INVOKE", target = "Ljava/util/concurrent/locks/LockSupport;parkNanos(Ljava/lang/Object;J)V"), index = 1)
     private long wildcraft$focusWait(long nanos) {
-        return waitingForNextTick && FocusTime.active((MinecraftServer)(Object)this) ? Math.min(nanos, 25_000_000L) : nanos;
+        return waitingForNextTick && (FocusTime.active((MinecraftServer)(Object)this)||dev.wildcraft.combat.ReactionTime.active((MinecraftServer)(Object)this)) ? Math.min(nanos, 25_000_000L) : nanos;
     }
 }

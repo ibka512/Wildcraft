@@ -1,0 +1,27 @@
+{
+  "allPassed": true,
+  "reviewedAt": "2026-10-11T00:02:26.874801+00:00",
+  "actualCanvasesViewed": [
+    "browser-ground-model.png",
+    "browser-ground-section.png",
+    "browser-water-model.png",
+    "browser-water-section.png",
+    "browser-old-section.png",
+    "browser-ghost-model.png",
+    "browser-top-model.png",
+    "browser-side-model.png",
+    "browser-underside-model.png"
+  ],
+  "actualBlenderRenderViewed": "blender-pocket-cutaway.png",
+  "checks": [
+    "浅色浮体、铜带、钢扣和原图集细节可见",
+    "凹舱完整，未将浮体设为隐藏",
+    "剖面地面/水线/最低点标签清晰",
+    "原件穿地红色最低点显示",
+    "水中与无电/超载保持相同网格和画布",
+    "安装幽灵色与水面呈半透明",
+    "顶装、侧装和底部仰视均完整入画"
+  ],
+  "scope": "Art review only, not real client water or mechanical physics",
+  "gameIntegrated": false
+}

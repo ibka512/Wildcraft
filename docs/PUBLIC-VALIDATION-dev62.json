@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-15",
+  "version": "0.1.0-dev.62-public",
+  "datagen": {
+    "clean": true,
+    "generatedFiles": 68,
+    "exactMatchWithSourceCheckpoint": true
+  },
+  "build": {
+    "clean": true,
+    "requiredServerTests": 125,
+    "passedServerTests": 125,
+    "ordinaryTestTask": "NO-SOURCE, not claimed as a test pass"
+  },
+  "separateServerRun": {
+    "clean": true,
+    "duration": "9s"
+  },
+  "publicGraphicalSmoke": {
+    "task": "runCoreArtClientTest",
+    "clean": true,
+    "duration": "16s",
+    "actualScreenshots": 4,
+    "restrictedAssetsAbsent": true,
+    "nativeFallbackObservedFor": [
+      "standard",
+      "slim"
+    ],
+    "screenshots": [
+      {
+        "path": "0002_art-settings-normal.png",
+        "sha256": "383aa960aef1016e156ca6c6ca4f1a4353641de8694f9ee8ec5753dd6188ae37"
+      },
+      {
+        "path": "0003_art-settings-compact-layout.png",
+        "sha256": "d85bd755e1ef40e94b9c2ee1c80733733b1eba64c86d5aa263803d4f47a2e1d3"
+      },
+      {
+        "path": "0000_art-glider-first-person-grips.png",
+        "sha256": "33bc6beb10a44f45efb52340c01bd2258d1d3972561ca53ee6f44d48020b03e6"
+      },
+      {
+        "path": "0001_art-glider-third-person-front.png",
+        "sha256": "5d2afeac3dc8e39a63d532c5536bfe74017139189bc9d59a30162867701700e6"
+      }
+    ]
+  },
+  "artifactCRCAndPrivateEntryCheck": true,
+  "artifacts": [
+    {
+      "file": "wildcraft-0.1.0-dev.62-public-gametest.jar",
+      "bytes": 1335477,
+      "sha256": "eb2c55b561a9f91429ce81f9f072d217ba977d111e15208d52619e5170a708f7"
+    },
+    {
+      "file": "wildcraft-0.1.0-dev.62-public-sources.jar",
+      "bytes": 608236,
+      "sha256": "34b34d4ffa0d2a23f97c7760129aa870b5d76f1f645fa43940e6091398dacc30"
+    },
+    {
+      "file": "wildcraft-0.1.0-dev.62-public.jar",
+      "bytes": 1075047,
+      "sha256": "3dcb8754095d6405da943c37d4aa1599d287613f06c96b7f04825d35a15a5de0"
+    }
+  ],
+  "notVerified": [
+    "complete private animation suite against public package",
+    "long-term survival",
+    "manual balance",
+    "multi-platform graphics",
+    "long-term performance"
+  ],
+  "remoteCI": "pending first push"
+}

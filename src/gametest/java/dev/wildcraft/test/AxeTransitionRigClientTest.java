@@ -1,0 +1,70 @@
+package dev.wildcraft.test;
+import dev.wildcraft.client.animation.rig.*;
+import dev.wildcraft.client.combat.CombatOptions;
+import dev.wildcraft.client.input.ActionInput;
+import dev.wildcraft.client.render.BackTransitions;
+import dev.wildcraft.combat.*;
+import dev.wildcraft.equipment.*;
+import dev.wildcraft.fuse.*;
+import dev.wildcraft.network.MeleeView;
+import dev.wildcraft.player.PlayerStamina;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
+import net.fabricmc.fabric.api.client.gametest.v1.*;
+import net.fabricmc.fabric.api.client.gametest.v1.context.*;
+import net.minecraft.client.*;
+import net.minecraft.client.gui.screens.PauseScreen;
+import net.minecraft.client.gui.screens.inventory.InventoryScreen;
+import net.minecraft.client.renderer.entity.state.AvatarRenderState;
+import net.minecraft.client.resources.DefaultPlayerSkin;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.Vec3;
+
+/** Actual used axe, native slot changes and instant real owner; source preview cannot satisfy this test. */
+public final class AxeTransitionRigClientTest implements FabricClientGameTest {
+    private static void check(boolean ok,String message){if(!ok)throw new AssertionError(message);}
+    private static AvatarRenderState state(Minecraft c){return (AvatarRenderState)c.getEntityRenderDispatcher().getRenderer(c.player).createRenderState(c.player,1);}
+    private static boolean active(Minecraft c){var f=state(c).getData(CombatRigLayer.FRAME);return f!=null&&f.clip().startsWith("axe_equipment_");}
+    private static float progress(Minecraft c){var s=BackTransitions.forArm(state(c),c.player.getMainArm());return s==null?1:s.progress();}
+    private static PlayerSkin skin(PlayerModelType type){for(int i=0;i<100;i++){var s=DefaultPlayerSkin.get(new UUID(0,i));if(s.model()==type)return s;}throw new AssertionError("Native skin");}
+    private static void select(ClientGameTestContext c,int slot,Item item){c.getInput().pressKey(v->v.keyHotbarSlots[slot]);c.waitFor(v->v.player.getInventory().getSelectedSlot()==slot&&(item==Items.AIR?v.player.getMainHandItem().isEmpty():v.player.getMainHandItem().is(item)));}
+    private static void prepare(ClientGameTestContext c,TestSingleplayerContext w,int target,PlayerModelType type,HumanoidArm arm,boolean carry){
+        c.getInput().releaseKey(v->v.keyAttack);c.getInput().releaseKey(v->v.keyUse);c.setScreen(()->null);
+        w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();p.getInventory().clearContent();p.getInventory().setSelectedSlot(0);p.setMainArm(arm);var sword=new ItemStack(Items.IRON_AXE);check(FusionItems.attach(sword,new ItemStack(Items.COBBLESTONE),s.registryAccess()),"Actual Fuse fixture");p.getInventory().setItem(0,sword);p.getInventory().setItem(8,new ItemStack(Items.TORCH));p.setItemInHand(InteractionHand.OFF_HAND,carry?new ItemStack(Items.SHIELD):ItemStack.EMPTY);p.teleportTo(p.level(),.5,120,.5,Set.of(),0,0,true);p.setHealth(20);p.setInvulnerableTime(0);PlayerStamina.fill(p);p.inventoryMenu.broadcastChanges();var mob=(LivingEntity)s.overworld().getEntity(target);mob.setPos(.5,120,2.7);mob.setHealth(200);mob.setInvulnerableTime(0);mob.setDeltaMovement(Vec3.ZERO);CounterAttackAudit.begin(p);});
+        select(c,0,Items.IRON_AXE);c.waitFor(v->v.player.onGround()&&v.player.getMainArm()==arm);
+        c.runOnClient(v->{v.player.setYRot(0);v.player.setXRot(0);v.options.setCameraType(CameraType.THIRD_PERSON_BACK);RigAudit.fixture=skin(type);RigAudit.enabled=true;AxeTransitionAudit.enabled=false;});c.waitFor(v->ActionInput.tickFrame().gameplay());c.waitTicks(25);
+        c.runOnClient(v->{v.options.keyAttack.setDown(true);ActionInput.frame(v);v.options.keyAttack.setDown(false);ActionInput.frame(v);});c.waitFor(v->v.player.getMainHandItem().getDamageValue()==2&&v.player.getAttached(BackEquipment.VISUAL)!=null&&v.player.getAttached(BackEquipment.VISUAL).melee().owner()==1);c.waitFor(v->MeleeActions.view(v.player).phase()==MeleeView.IDLE);c.waitTicks(8);
+        w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();check(CounterAttackAudit.calls==1&&p.getMainHandItem().get(FusionContent.DATA).remaining()==31,"Real use registers original axe once");});
+        c.runOnClient(v->{RigAudit.begin();AxeTransitionAudit.begin();});
+    }
+    private static void done(ClientGameTestContext c){c.waitFor(v->v.player.getAttached(BackEquipment.VISUAL)!=null&&v.player.getAttached(BackEquipment.VISUAL).melee().owner()==(v.player.getMainHandItem().is(Items.IRON_AXE)?1:3)&&progress(v)==1);check(c.computeOnClient(v->!active(v)),"Finished original settle relinquishes source body");}
+    @Override public void runTest(ClientGameTestContext c){var id=new AtomicInteger();var options=CombatOptions.get();int oldFollow=options.follow;
+        try(TestSingleplayerContext w=c.worldBuilder().create()){
+            w.getConnection().waitForChunksRender();w.getServer().runCommand("gamemode survival @p");w.getServer().runCommand("time set day");
+            w.getServer().runOnServer(s->{for(int x=-8;x<=8;x++)for(int z=-8;z<=12;z++)s.overworld().setBlockAndUpdate(new BlockPos(x,119,z),Blocks.STONE.defaultBlockState());s.getPlayerList().getPlayers().getFirst().teleportTo(.5,120,.5);var mob=EntityTypes.HUSK.create(s.overworld(),EntitySpawnReason.COMMAND);mob.setPos(.5,120,2.7);mob.setNoAi(true);mob.setNoGravity(true);mob.getAttribute(Attributes.MAX_HEALTH).setBaseValue(200);mob.setHealth(200);s.overworld().addFreshEntity(mob);id.set(mob.getId());});c.waitFor(v->v.level.getEntity(id.get())!=null);c.getInput().resizeWindow(1280,960);c.runOnClient(v->{options.follow=0;v.options.guiScale().set(2);});
+            for(var type:new PlayerModelType[]{PlayerModelType.WIDE,PlayerModelType.SLIM})for(var arm:HumanoidArm.values())for(boolean carry:new boolean[]{false,true}){
+                prepare(c,w,id.get(),type,arm,carry);String suffix=(carry?"shield":"empty")+"_"+(arm==HumanoidArm.RIGHT?"R":"L");select(c,7,Items.AIR);c.waitFor(v->AxeTransitionAudit.full>0&&AxeTransitionAudit.clip.equals("axe_equipment_stow_back_"+suffix)&&AxeTransitionAudit.backGpu>0);c.takeScreenshot("axe-source-stow-"+type+"-"+suffix);done(c);
+                c.runOnClient(v->{RigAudit.begin();AxeTransitionAudit.begin();});select(c,0,Items.IRON_AXE);c.waitFor(v->AxeTransitionAudit.full>0&&AxeTransitionAudit.clip.equals("axe_equipment_draw_back_"+suffix)&&RigAudit.hands>RigAudit.shields&&(!carry||RigAudit.shields>0));check(c.computeOnClient(v->RigAudit.texture.equals(RigAudit.fixture.body().texturePath().toString())),"Actual native source skin GPU");c.takeScreenshot("axe-source-draw-"+type+"-"+suffix);done(c);
+                w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();check(CounterAttackAudit.calls==1&&p.getInventory().getItem(0).getCount()==1&&p.getMainHandItem().getDamageValue()==2&&p.getMainHandItem().get(FusionContent.DATA).remaining()==31,"Draw/stow no new attacks, duplicate inventory, wear or Fuse");check(PlayerStamina.get(p).stamina()==100&&p.getOffhandItem().getDamageValue()==0,"Source gestures do not invent costs or shield use");});
+            }
+            prepare(c,w,id.get(),PlayerModelType.SLIM,HumanoidArm.LEFT,true);select(c,7,Items.AIR);done(c);c.runOnClient(v->{v.options.framerateLimit().set(10);AxeTransitionAudit.begin();});select(c,0,Items.IRON_AXE);c.waitFor(v->AxeTransitionAudit.full>0);c.takeScreenshot("axe-source-10fps");done(c);c.runOnClient(v->v.options.framerateLimit().set(120));
+            select(c,7,Items.AIR);done(c);c.runOnClient(v->AxeTransitionAudit.begin());select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));c.setScreen(()->new PauseScreen(true));c.waitFor(Minecraft::isPaused);float frozen=c.computeOnClient(AxeTransitionRigClientTest::progress);check(frozen<1,"Actual pause retains a live same-reference draw");long until=System.nanoTime()+350_000_000L;c.waitFor(v->System.nanoTime()>until);check(c.computeOnClient(v->Math.abs(progress(v)-frozen)<.001F&&active(v)),"Paused original settle and source freeze together");c.takeScreenshot("axe-source-pause");c.setScreen(()->null);done(c);
+            select(c,7,Items.AIR);done(c);select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));c.setScreen(()->new InventoryScreen(Minecraft.getInstance().player));check(c.computeOnClient(v->!active(v)),"Actual GUI owns hands immediately");c.takeScreenshot("axe-source-gui");c.setScreen(()->null);c.waitTicks(4);check(c.computeOnClient(v->!active(v)),"Closed menu cannot replay consumed ownership");
+            select(c,7,Items.AIR);done(c);select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));select(c,8,Items.TORCH);check(c.computeOnClient(v->!active(v)),"Actual new torch cannot be carried towards source back");c.takeScreenshot("axe-source-new-torch");
+            select(c,7,Items.AIR);done(c);w.getServer().runCommand("tick rate 5");c.runOnClient(v->AxeTransitionAudit.begin());long started=System.nanoTime();select(c,0,Items.IRON_AXE);c.waitFor(v->AxeTransitionAudit.full>0);c.takeScreenshot("axe-source-actual-5tps");done(c);check(System.nanoTime()-started<1_200_000_000L,"Actual .34s draw is not stretched by slow world ticks");w.getServer().runCommand("tick rate 20");
+            select(c,7,Items.AIR);done(c);select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));c.runOnClient(v->{v.player.setXRot(18);v.player.setYRot(25);});c.waitTicks(1);check(c.computeOnClient(v->active(v)&&v.player.getXRot()==18&&v.player.getYRot()==25),"Current native look stays independent during gesture");c.takeScreenshot("axe-source-independent-look");done(c);c.runOnClient(v->{v.player.setXRot(0);v.player.setYRot(0);});
+            select(c,7,Items.AIR);done(c);select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));c.runOnClient(v->{v.options.keyAttack.setDown(true);ActionInput.frame(v);v.options.keyAttack.setDown(false);ActionInput.frame(v);});c.waitFor(v->MeleeActions.view(v.player).phase()==MeleeView.SWING);check(c.computeOnClient(v->!active(v)),"Real attack immediately owns hands, no visual delay");c.takeScreenshot("axe-source-real-attack-exit");c.waitFor(v->MeleeActions.view(v.player).phase()==MeleeView.IDLE&&v.player.getMainHandItem().getDamageValue()==4);w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();check(CounterAttackAudit.calls==2&&p.getMainHandItem().get(FusionContent.DATA).remaining()==30,"Interrupted draw still yields exactly the native new hit/wear/Fuse");});
+            select(c,7,Items.AIR);done(c);select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));c.getInput().holdKey(v->v.keyUse);c.waitFor(v->v.player.isUsingItem()&&v.player.getUsedItemHand()==InteractionHand.OFF_HAND);check(c.computeOnClient(v->!active(v)),"Actual native shield use wins over bounded draw");c.takeScreenshot("axe-source-real-shield-use-exit");c.getInput().releaseKey(v->v.keyUse);c.waitFor(v->!v.player.isUsingItem());
+            select(c,7,Items.AIR);done(c);select(c,0,Items.IRON_AXE);c.waitFor(v->active(v));w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();p.hurtServer(s.overworld(),p.damageSources().generic(),1);});c.waitFor(v->v.player.getHealth()<20&&v.player.hurtTime>0);check(c.computeOnClient(v->!active(v)),"Actual damage owns hurt presentation without immunity");c.takeScreenshot("axe-source-real-hurt");c.waitTicks(12);
+            select(c,7,Items.AIR);done(c);w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();p.getInventory().setItem(1,p.getInventory().getItem(0).copy());p.inventoryMenu.broadcastChanges();});select(c,1,Items.IRON_AXE);c.waitTicks(2);check(c.computeOnClient(v->!active(v)&&!BackEquipment.view(v.player).melee().isEmpty()),"An identical-looking spare cannot pretend to draw the actual recorded sword");c.takeScreenshot("axe-source-native-spare");
+            select(c,7,Items.AIR);done(c);w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();p.setItemSlot(EquipmentSlot.CHEST,new ItemStack(Items.ELYTRA));p.inventoryMenu.broadcastChanges();});c.waitFor(v->v.player.getItemBySlot(EquipmentSlot.CHEST).is(Items.ELYTRA));select(c,0,Items.IRON_AXE);c.waitTicks(1);check(c.computeOnClient(v->!active(v)&&state(v).getDataOrDefault(BackTransitions.WAIST,false)),"Actual elytra waist layout retains prior native armor/gesture path");c.takeScreenshot("axe-source-native-waist");
+            System.out.println("C6X actual used axe/native same-reference back draw-stow16 source combinations, new instant native hand/back sole owner/GPU, original .34/.38 clock/pause/10FPS/GUI/new item/5TPS/look/real attack-shield-use-hurt/spare/waist/no extra costs-damage-wear-Fuse PASS; complex/other weapons/formal first-person pending");
+        }finally{c.getInput().releaseKey(v->v.keyAttack);c.getInput().releaseKey(v->v.keyUse);c.runOnClient(v->{AxeTransitionAudit.enabled=false;RigAudit.enabled=false;RigAudit.fixture=null;options.follow=oldFollow;v.options.framerateLimit().set(120);v.options.setCameraType(CameraType.FIRST_PERSON);});}
+    }
+}

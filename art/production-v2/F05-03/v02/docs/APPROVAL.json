@@ -1,0 +1,18 @@
+{
+  "assetIds": [
+    "F05-03"
+  ],
+  "supportingAsset": "F05-01 bottom fan pocket visual variant proposal",
+  "version": "v02-bottom-structure-proposal",
+  "adopted": true,
+  "status": "adopted-art-not-game-integrated",
+  "gameIntegrated": false,
+  "productionRegistered": false,
+  "productionReady": false,
+  "scope": "原尺寸风扇底部内嵌、两件固定接点座、主体凹舱与准确同步轴心；六件叶轮按原节点active驱动。",
+  "continuousWorkAuthorized": true,
+  "nextCandidate": "本批已全部采用；游戏接入按后续明确范围执行",
+  "userMessage": "全部采用",
+  "adoptedAtUTC": "2026-10-11T09:40:52.936271+00:00",
+  "approvalBatch": "wildcraft-art-2026-10-11"
+}

@@ -1,0 +1,17 @@
+{
+  "startRemainingPercent": {
+    "fiveHour": 98,
+    "weekly": 55
+  },
+  "afterIconsRemainingPercent": {
+    "fiveHour": 91,
+    "weekly": 54
+  },
+  "stopBelowPercent": 5,
+  "resetCreditsConsumed": false,
+  "deliveryRemainingPercent": {
+    "fiveHour": 86,
+    "weekly": 53
+  },
+  "checkedAt": "2026-10-10T15:53:27.718318+00:00"
+}

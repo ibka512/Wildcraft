@@ -1,0 +1,16 @@
+{
+  "assetIds": [
+    "F05-06"
+  ],
+  "supportingAsset": "F05-01 bottom pocket visual variant proposal",
+  "version": "v02-structure-proposal",
+  "adopted": true,
+  "status": "adopted-structure-art-not-game-integrated",
+  "gameIntegrated": false,
+  "productionRegistered": false,
+  "productionReady": false,
+  "scope": "原尺寸底部弹簧、主体凹舱配套方案、平地收起/离地伸展/显示限位示意、其他方向原件对照。无游戏行为修改。",
+  "nextCandidate": "用户审阅后再按授权推进；后续队列为F05-09浮力装置底部安装方案",
+  "userMessage": "采用，开始下一项",
+  "adoptedAt": "2026-10-10T23:52:29.454379+00:00"
+}

@@ -14,7 +14,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 /** Adopted second-batch geometry; gameplay and node collision remain server-owned. */
 public final class MachineRenderer extends EntityRenderer<MachineEntity, MachineRenderer.State> {
     public static final class State extends EntityRenderState {
-        public float yaw, roll; public int fans, battery, energy, kinds, active; public long fuel, cooldown; public boolean working; public int preview = -1, ghost, ghostEnergy;
+        public float yaw, roll, bottomSpring; public int fans, battery, energy, kinds, active; public long fuel, cooldown; public boolean working; public int preview = -1, ghost, ghostEnergy;
     }
     public MachineRenderer(EntityRendererProvider.Context context) { super(context); shadowRadius = .7F; }
     @Override public State createRenderState() { return new State(); }
@@ -28,11 +28,13 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
         state.preview = MachinePresentation.selectedNode(body);
         state.ghost = MachinePresentation.canPreview(body, state.preview)
                 ? MechanicsContent.kind(net.minecraft.client.Minecraft.getInstance().player.getMainHandItem()) : 0;
+        state.bottomSpring=body.kind(1)==5?BottomArt.spring(body,partial,state.roll,body.springCooldown(1)>30):0;
         state.ghostEnergy = state.ghost == 2 ? dev.wildcraft.energy.Batteries.energy(net.minecraft.client.Minecraft.getInstance().player.getMainHandItem()) : 0;
     }
     @Override public void submit(State state, PoseStack poses, SubmitNodeCollector collector, CameraRenderState camera) {
         poses.pushPose(); poses.rotate(Axis.YP, (float)Math.toRadians(-state.yaw));poses.rotate(Axis.ZP,(float)Math.toRadians(state.roll));
-        dev.wildcraft.client.art.ArtMesh.get("machine").submit(poses,collector,state.lightCoords,false,0,false,false,0);
+        int bottomKind=state.preview==1&&state.ghost>0?state.ghost:state.kinds>>>4&15;
+        dev.wildcraft.client.art.ArtMesh.get(BottomArt.body(bottomKind)).submit(poses,collector,state.lightCoords,false,0,false,false,0);
         for(int n=0;n<MachineNodes.COUNT;n++){
             int kind=state.kinds >>> (n*4)&15;
             boolean ghost=n==state.preview&&state.ghost>0;
@@ -41,7 +43,8 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
             String mesh=switch(kind){case 1->"fan";case 2->"battery";case 3->"wing";case 4->!ghost&&fuel==0?"spent_rocket":"rocket";case 5->"spring";case 6->"wheel";case 7->"stabilizer";default->"buoyancy";};
             poses.pushPose();poses.translate(partPoint(n,kind));orient(poses,n);
             float angle=active?(kind==1?state.ageInTicks*.7F:kind==6?state.ageInTicks*.4F:0):0;
-            dev.wildcraft.client.art.ArtMesh.get(mesh).submit(poses,collector,state.lightCoords,ghost,angle,!ghost&&cooldown>30,active,ghost?state.ghostEnergy:state.energy);
+            float extension=ghost?0:n==1&&kind==5?state.bottomSpring:cooldown>30?1:0;
+            dev.wildcraft.client.art.ArtMesh.get(BottomArt.part(kind,n,mesh)).submit(poses,collector,state.lightCoords,ghost,angle,extension,active,ghost?state.ghostEnergy:state.energy);
             if(kind==4&&active&&fuel>0)box(poses,collector,state.lightCoords,-.08F,-.08F,.5F,.08F,.08F,.86F,0xDDFFD58B);
             poses.popPose();
         }
