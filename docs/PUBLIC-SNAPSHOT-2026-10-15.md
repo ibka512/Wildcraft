@@ -31,3 +31,7 @@
 C6全部源动作/复杂装备/正式第一人称、人工从零采集与长期单人生存/平衡、长期性能仍未完成，多人暂缓。C7普通客户端的0/4/16停机空主体采样是真实20TPS，但实际render16及末30FPS尚需排除inactivity限帧，不能定为16主体性能回归。下一按C7-NATIVE-RENDER-BASELINE做隔离设置对照，再按SINGLEPLAYER-PLAYTEST记录真实体验。
 
 历史报告内的本机路径、未公开包和私有源链接保持证据性质，公开克隆可能无法取得。接手从README、AGENTS、AI-HANDOFF和本页开始；不要把旧“本机未上传”误当本次公开状态，也不要为补全旧链接上传受限文件。
+
+## GitHub Linux 检查回执
+
+源码提交28ad7d0c52311703bad90fb8a7ddc359147da048的[GitHub Actions](https://github.com/ibka512/Wildcraft/actions/runs/38678846380)已经实际success：公开范围、45项来源、datagen生成一致性、编译/规则/125服务端测试、公共JAR检查与上传全部通过。实际日志确认All125 required tests passed。Linux无图形检查不替代macOS四张专项画面，也不代表长期或多平台图形验收。后续仅此回执/README文档更新，游戏源码和资源与该提交相同。

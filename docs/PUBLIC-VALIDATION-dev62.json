@@ -70,5 +70,13 @@
     "multi-platform graphics",
     "long-term performance"
   ],
-  "remoteCI": "pending first push"
+  "remoteCI": {
+    "status": "success",
+    "sourceCommit": "28ad7d0c52311703bad90fb8a7ddc359147da048",
+    "run": "https://github.com/ibka512/Wildcraft/actions/runs/38678846380",
+    "serverTests": 125,
+    "runner": "ubuntu-24.04",
+    "java": 25,
+    "graphicalValidation": false
+  }
 }
