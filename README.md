@@ -8,7 +8,7 @@ Wildcraft 是 Minecraft Java Edition 的 Fabric Mod，在原版世界中加入�
 
 **当前公开源码：`0.1.0-dev.76-public`，2026-10-19 更新。** 基于本机dev76与C7测试工具检查点，仍是开发预览。公开构建不包含许可受限玩家动画数据；找不到资源时沿原生表现回退。本机每体型401个第三人称/4个第一人称剪辑及含数据包没有公开，不能把本机画面验收直接视为公开图形验收。
 
-[开发接手说明](docs/AI-HANDOFF.md) · [本次公开范围与验证](docs/PUBLIC-SNAPSHOT-2026-10-19.md) · [最新美术状态](art/RUNTIME-STATUS-2026-10-19.md) · [采用资产台账](art/ADOPTED-ASSETS.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
+[Linux 构建通过（125项服务端测试）](https://github.com/ibka512/Wildcraft/actions/runs/39268843470) · [开发接手说明](docs/AI-HANDOFF.md) · [本次公开范围与验证](docs/PUBLIC-SNAPSHOT-2026-10-19.md) · [最新美术状态](art/RUNTIME-STATUS-2026-10-19.md) · [采用资产台账](art/ADOPTED-ASSETS.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
 
 ## 玩法与当前范围
 

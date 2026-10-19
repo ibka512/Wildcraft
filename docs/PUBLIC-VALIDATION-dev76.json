@@ -5,7 +5,7 @@
   "publicParent": "c0bf3f7cd8edf5330d3a8adbcd71cf97829cd635",
   "privateAnimationDataIncluded": false,
   "localHistoricalAnimationResultsAreNotPublicValidation": true,
-  "status": "macOS-public-validation-passed",
+  "status": "macOS-and-Linux-public-validation-passed",
   "checks": {
     "datagen": {
       "result": "passed",
@@ -84,6 +84,60 @@
     "Existing battery_3d missing-texture warning for wildcraft:entity/battery is also present in the previous dev62-public log; not resolved or visually qualified by this sync."
   ],
   "remoteCI": {
-    "status": "not-started"
+    "conclusion": "success",
+    "headSha": "f0c50fcf73782194b4f88db90e01406a1a875027",
+    "status": "completed",
+    "url": "https://github.com/ibka512/Wildcraft/actions/runs/39268843470",
+    "artifacts": [
+      {
+        "file": "wildcraft-0.1.0-dev.76-public-gametest.jar",
+        "bytes": 1688334,
+        "sha256": "3a9a830da793829f792db973182c4af31c90659e5e96629d20500dc41c4cfbe7",
+        "crcVerified": true,
+        "privateAnimationDataIncluded": false
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.76-public-sources.jar",
+        "bytes": 615120,
+        "sha256": "8057a68675e8c21c02366034427ffc77905f0154e4e0a9149f77c8269aede3fc",
+        "crcVerified": true,
+        "privateAnimationDataIncluded": false
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.76-public.jar",
+        "bytes": 1093044,
+        "sha256": "e91e685ffa50647299497a72ff8fa6c96276cd7e0744622415cb098a7d1f2300",
+        "crcVerified": true,
+        "privateAnimationDataIncluded": false
+      }
+    ],
+    "serverRequiredTests": 125,
+    "macOSComparison": [
+      {
+        "file": "wildcraft-0.1.0-dev.76-public-gametest.jar",
+        "allCodeAndResourcesEqualMacOS": true,
+        "differentMembers": []
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.76-public-sources.jar",
+        "allCodeAndResourcesEqualMacOS": true,
+        "differentMembers": []
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.76-public.jar",
+        "allCodeAndResourcesEqualMacOS": true,
+        "differentMembers": [
+          "META-INF/MANIFEST.MF"
+        ]
+      }
+    ]
+  },
+  "sourceCommit": "f0c50fcf73782194b4f88db90e01406a1a875027",
+  "remoteReadback": {
+    "sourceCommit": "f0c50fcf73782194b4f88db90e01406a1a875027",
+    "anonymousFilesMatched": 6,
+    "remoteTreeEntries": 4577,
+    "all155ChangedFilesMatched": true,
+    "restrictedPathsAbsent": true
   }
 }

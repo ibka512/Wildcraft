@@ -25,3 +25,11 @@ README → AGENTS → AI-HANDOFF → ACTIVE-CHECKPOINT → RUNTIME-STATUS。普�
 - 日志仍有既存battery_3d的wildcraft:entity/battery缺贴图警告；旧dev62-public同样存在。本次没有修复或完成该模型专项视觉验收，不能据整体测试绿声称所有材质无警告。
 
 各产物独立SHA/图片SHA见PUBLIC-VALIDATION-dev76.json。尚未创建Release或上传本机JAR；远程Linux运行结果在推送后单独补记。
+
+## 远端核实与Linux回执
+
+公开源码提交[f0c50fc](https://github.com/ibka512/Wildcraft/commit/f0c50fcf73782194b4f88db90e01406a1a875027)已推送main；[Linux Actions](https://github.com/ibka512/Wildcraft/actions/runs/39268843470)实际success，日志确认125项必需服务端通过。公开范围、采用来源、datagen无差异、构建和公共JAR检查全部通过。远端4577 tree条目无受限目录，全部155个变更blob与本地提交一致；README/AGENTS/AI交接/ACTIVE/美术状态及翼Mixin六文件匿名逐字节读取匹配。
+
+三个Linux产物已下载并CRC/受限目录检查；与macOS逐解压比较，所有class/资源/源码一致。主JAR仅MANIFEST中client-only条目排序不同、条目集合及其他属性一致，其他两JAR成员一致；不同平台归档SHA分别登记，不能混用。核验脚本首次误把外置卷AppleDouble当JAR读取，筛掉非实际产物的._元数据后完成三份检查，未修改构建物。
+
+当前回执提交只更新文档/机器回执，源码仍为上述快照；之后Actions结果以对应实际提交为准。不创建Release、不推私有tag、本机素材/安装包不公开。
