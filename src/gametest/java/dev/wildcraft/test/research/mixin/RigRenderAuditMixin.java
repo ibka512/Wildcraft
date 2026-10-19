@@ -11,6 +11,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class RigRenderAuditMixin {
     @Inject(method="submit(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;ILnet/minecraft/client/renderer/entity/state/AvatarRenderState;FF)V",at=@At("RETURN"))
     private void wildcraft$audit(PoseStack poses,SubmitNodeCollector collector,int light,AvatarRenderState state,float yaw,float pitch,CallbackInfo ci){
+        dev.wildcraft.test.HopPauseAudit.observe(state);
+        dev.wildcraft.test.CombatClockAudit.observe(state);
         dev.wildcraft.test.JumpAudit.observe(state);dev.wildcraft.test.AirMeleeAudit.observe(state);
         dev.wildcraft.test.SwordTransitionAudit.observe(state);
         dev.wildcraft.test.HurtAudit.gpu(state);

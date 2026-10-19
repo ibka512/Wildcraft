@@ -8,15 +8,17 @@ import net.minecraft.world.item.Items;
 public final class ShieldTransitionAudit {
     private static final java.util.Map<net.minecraft.world.entity.player.PlayerModelType,net.minecraft.client.model.player.PlayerModel> MODELS=new java.util.EnumMap<>(net.minecraft.world.entity.player.PlayerModelType.class);
     public static boolean enabled;
+    private static int expectedOwner=1;
     public static int frames,full,backGpu,handOwner;
     public static String clip;
     public static float latestTime;
-    public static void begin(){enabled=true;frames=full=backGpu=0;clip=null;latestTime=0;handOwner=0;}
+    public static void begin(){expectedOwner=1;enabled=true;frames=full=backGpu=0;clip=null;latestTime=0;handOwner=0;}
+    public static void beginOffhand(){begin();expectedOwner=2;}
     public static void observe(AvatarRenderState state){
         var f=state.getData(CombatRigLayer.FRAME);if(!enabled||f==null||!f.clip().startsWith("shield_equipment_"))return;
         var events=state.getData(BackTransitions.SETTLES);var settle=events==null?null:events[1];if(settle==null||settle.handOwner()!=1&&settle.handOwner()!=2)throw new AssertionError("Source shield needs actual original owner1/2 event");
         var arm=settle.handOwner()==1?state.mainArm:state.mainArm.getOpposite();if(BackTransitions.forArm(state,arm)!=settle)throw new AssertionError("Shield source arm differs from actual ownership");
-        handOwner=settle.handOwner();if(handOwner!=1)throw new AssertionError("Unverified offhand source must retain original path");frames++;clip=f.clip();latestTime=f.time();if(Math.abs(f.time()-settle.progress())>1e-6F)throw new AssertionError("Source take/return invented another clock");
+        handOwner=settle.handOwner();if(handOwner!=expectedOwner)throw new AssertionError("Shield source differs from actual requested owner scope");frames++;clip=f.clip();latestTime=f.time();if(Math.abs(f.time()-settle.progress())>1e-6F)throw new AssertionError("Source take/return invented another clock");
         var main=BackTransitions.held(state,arm);var items=state.getData(BackEquipmentLayer.ITEMS);
         if(items==null||(settle.draw()? !main.is(Items.SHIELD)||!items[1].isEmpty():!main.isEmpty()||items[1].isEmpty()))throw new AssertionError("Real shield must have exactly its new hand/back owner, with no outgoing proxy");
         if(f.weight()<.999999F)return;full++;

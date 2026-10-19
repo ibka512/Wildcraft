@@ -10,7 +10,8 @@
     "NativeCounterAuditMixin",
     "NativeSpearAuditMixin",
     "NativeStabAuditMixin",
-    "NativeSpearPacketAuditMixin"
+    "NativeSpearPacketAuditMixin",
+    "MeleeLifecycleAuditMixin"
   ],
   "client": [
     "IntegratedTimeResearchMixin",
@@ -46,7 +47,13 @@
     "NativeFallbackBackItemMixin",
     "RenderTypeStateAccessor",
     "RenderSetupTexturesAccessor",
-    "TextureBindingLocationAccessor"
+    "TextureBindingLocationAccessor",
+    "FirstPersonSwordAuditMixin",
+    "FirstPersonSwordQuadsMixin",
+    "SwordWaistCapeAuditMixin",
+    "SwordWaistItemAuditMixin",
+    "WingsWaistScopeMixin",
+    "WingsWaistPoseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

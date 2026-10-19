@@ -35,7 +35,8 @@ public final class JumpRig {
   m.grounded=ground;
  }
  static boolean extract(Player p,AvatarRenderState s,float partial){
-  var m=MOTION.get(p);if(m==null||!m.active||!supported(p,s))return false;var c=Minecraft.getInstance();boolean paused=c.isPaused()||c.gui.screen()!=null&&c.gui.screen().isPauseScreen();float frac=paused?0:partial;
+  var m=MOTION.get(p);if(m==null||!m.active||!supported(p,s))return false;// Native rendering already freezes partial; clearing it rewinds takeoff, air and landing.
+  float frac=partial;
   boolean guard=p.isUsingItem();String equip=guard?"guard":p.getOffhandItem().isEmpty()?"empty":"carry",side=p.getMainArm()==HumanoidArm.RIGHT?"R":"L",variant=s.skin.model()==PlayerModelType.SLIM?"slim":"standard";
   float age=(p.tickCount-m.start+frac)/20F;String phase;float time;
   if(m.land>=0){float landAge=(p.tickCount-m.land+frac)/20F;if(!p.onGround()||landAge>=.24F){m.active=false;return false;}phase="land";time=(.06F+landAge)/.3F;}

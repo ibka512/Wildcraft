@@ -1,3 +1,5 @@
+> 当前公开更新为dev76-public（2026-10-19），详见[README](../README.md)及公开交接。以下阶段日期/旧下载为历史，私有动画/安装包没有公开。
+
 > 2026-10-15本机dev62：C6AM实际RIGHT空中弓mainRIGHT/offbow-mainLEFT两皮肤，原native20三档弦/木握点-nock/固定段长/头/skin-item GPU，原Focus自动-手动-关闭费用与一次箭-ammo-wear/退出通过；实际完整47类47m 29s/1893PNG，21专项/125服务端/datagen/build/资产通过。337私有clips旧335几何绑定逐值保持；RIGHT为已采用LEFT运行派生不称作者新RIGHT或正式FP。JumpAudit1ULP门槛仅测试修正，真实脚底/物理保持。源码01707b8468f84ce511658b575e37c8957dda5c34标签v0.1.0-dev.62+mc26.3，所有包源仅本机，C6整体/复杂/正式FP未完；下一C6AN占手原生归属，草稿未验，无上传。
 
 > 2026-10-15本机dev61：C6AL真正RIGHT地面弓mainRIGHT/offbow-mainLEFT两皮肤、原20刻/三档弦/固定段长/头/真skin-item GPU/一次arrow-ammo-wear及退出通过；完整46类46m 46s/1872真实PNG，20专项/125服务端/datagen/build/资产通过。335私有clips/旧333几何绑定逐值保持；RIGHT为已采用LEFT运行派生，不称新正式RIGHT/第一人称资产。C6AJ短跳验active enter/hold，原server接地合法关闭；高处hold保留。源码c4e06774，标签v0.1.0-dev.61+mc26.3；包只本机，C6整体/RIGHT空中/复杂/正式FP未完，下一C6AM只源资格/规格，无上传。

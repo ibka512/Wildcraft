@@ -64,9 +64,11 @@
     "client.EquipmentHandsMixin",
     "client.CarriedItemAccess",
     "client.CombatRigAvatarMixin",
+    "client.CombatRigCapeMixin",
     "client.CombatRigSkinMixin",
     "client.CombatRigItemMixin",
-    "client.BackNativeUseMixin"
+    "client.BackNativeUseMixin",
+    "client.CombatRigWingsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

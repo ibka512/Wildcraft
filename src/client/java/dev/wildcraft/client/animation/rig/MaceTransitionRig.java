@@ -24,10 +24,11 @@ public final class MaceTransitionRig {
         if(!Combat.compatible(p)||!p.onGround()||p.getPose()!=Pose.STANDING||p.isCrouching()||p.isInvisible()||p.isCurrentlyGlowing()
             ||state.scale!=1||p.isUsingItem()||p.getDeltaMovement().horizontalDistanceSqr()>=.0004
             ||view.phase()!=MeleeView.IDLE||view.hurt()!=0||p.hurtTime>0||ParryActions.view(p).remaining()!=0
-            ||state.showCape&&state.skin.cape()!=null||state.getDataOrDefault(BackTransitions.WAIST,false)
             ||!p.getOffhandItem().isEmpty()&&!p.getOffhandItem().is(Items.SHIELD)
             ||p==c.player&&c.gui.screen()!=null&&!c.gui.screen().isPauseScreen())return false;
-        for(var slot:new EquipmentSlot[]{EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET})if(!p.getItemBySlot(slot).isEmpty())return false;
+        for(var slot:new EquipmentSlot[]{EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET})if(!p.getItemBySlot(slot).isEmpty()&&!(slot==EquipmentSlot.CHEST&&p.getItemBySlot(slot).is(Items.ELYTRA)))return false;
+        boolean waist=state.getDataOrDefault(BackTransitions.WAIST,false);
+        if(waist&&!(state.showCape&&state.skin.cape()!=null)&&!p.getItemBySlot(EquipmentSlot.CHEST).is(Items.ELYTRA))return false;
         var settles=state.getData(BackTransitions.SETTLES);if(settles==null)return false;
         for(int i=1;i<settles.length;i++)if(settles[i]!=null)return false;
         var settle=BackTransitions.forArm(state,p.getMainArm());if(settle==null||settle.category()!=BackEquipment.MELEE||settle.handOwner()!=1)return false;
@@ -35,7 +36,7 @@ public final class MaceTransitionRig {
         var mace=settle.draw()?p.getMainHandItem():BackEquipment.view(p).melee();
         if(MeleeWeapon.of(mace)!=MeleeWeapon.MACE||settle.draw()&&settle.owner()!=1||!settle.draw()&&!p.getMainHandItem().isEmpty())return false;
         String variant=state.skin.model()==PlayerModelType.SLIM?"slim":"standard";
-        String name="mace_equipment_"+(settle.draw()?"draw":"stow")+"_back_"+(p.getOffhandItem().isEmpty()?"empty":"shield")+"_"+(p.getMainArm()==HumanoidArm.RIGHT?"R":"L");
+        String name="mace_equipment_"+(settle.draw()?"draw":"stow")+"_"+(waist?"waist":"back")+"_"+(p.getOffhandItem().isEmpty()?"empty":"shield")+"_"+(p.getMainArm()==HumanoidArm.RIGHT?"R":"L");
         var data=CombatRig.asset(variant);if(data==null||!data.clips().containsKey(name))return false;
         float time=settle.progress(),weight=BackTransitions.smooth(Math.clamp(Math.min(time/.12F,(1-time)/.12F),0,1));
         var global=CombatRig.sample(variant,name,time);

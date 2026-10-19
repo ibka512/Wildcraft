@@ -43,7 +43,7 @@ public final class TridentTransitionAudit {
     }
     public static void back(AvatarRenderState state){var f=state.getData(CombatRigLayer.FRAME);var items=state.getData(BackEquipmentLayer.ITEMS);if(enabled&&f!=null&&f.clip().startsWith("trident_equipment_stow_")&&items!=null&&!items[0].isEmpty())backGpu++;}
     public static void handRoot(AvatarRenderState state,net.minecraft.client.renderer.item.ItemStackRenderState item,net.minecraft.world.entity.HumanoidArm arm,com.mojang.blaze3d.vertex.PoseStack parent){
-        expectedItem=null;var f=state.getData(CombatRigLayer.FRAME);if(!enabled||f==null||!f.clip().startsWith("trident_equipment_draw_")||f.weight()<.999999F||arm!=state.mainArm)return;
+        expectedItem=null;var f=state.getData(CombatRigLayer.FRAME);if(!enabled||f==null||!f.clip().startsWith("trident_equipment_draw_")||arm!=state.mainArm)return;
         var ref=new org.joml.Matrix4f(parent.last().pose()).mul(CombatRigLayer.BASIS).mul(f.global()[Arrays.asList(f.data().bones()).indexOf((arm==net.minecraft.world.entity.HumanoidArm.RIGHT?"right":"left")+"_sword_reference")]);expectedItem=item;expectedGrip=ref.getTranslation(new org.joml.Vector3f());expectedTip=ref.transformDirection(new org.joml.Vector3f(0,1,0)).normalize();
     }
     public static void nativeModel(com.mojang.blaze3d.vertex.PoseStack poses){

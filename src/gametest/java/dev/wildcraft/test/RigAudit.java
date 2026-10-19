@@ -6,6 +6,7 @@ public final class RigAudit {
     public static boolean enabled;
     public static PlayerSkin fixture;
     public static Float bodyYaw;
+    public static Boolean cape;
     public static boolean sleeves=true;
     public static int bodies,hands,shields;
     public static CombatRigLayer.Frame last;

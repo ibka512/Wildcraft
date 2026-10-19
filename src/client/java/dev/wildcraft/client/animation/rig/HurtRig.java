@@ -35,7 +35,8 @@ public final class HurtRig {
         for(var hand:HumanoidArm.values()){
             boolean main=hand==p.getMainArm();if(!main&&!shield)continue;String bone=(hand==HumanoidArm.RIGHT?"right":"left")+(main?"_sword_reference":"_shield_mount");global[names.indexOf(bone)]=CombatRig.nativeFeedbackReference(model,state,hand,!main);
         }
-        boolean paused=c.isPaused()||c.gui.screen()!=null&&c.gui.screen().isPauseScreen();float time=Math.clamp((6-v.hurt()+(paused?0:partial))/6F,0,1);
+        // Native rendering already freezes partial; clearing it rewinds the live hurt envelope.
+        float time=Math.clamp((6-v.hurt()+partial)/6F,0,1);
         int pelvis=names.indexOf("pelvis"),body=names.indexOf("body");var start=CombatRig.sample(variant,a,0);
         var delta=CombatRig.blend(delta(variant,a,time,pelvis,body),delta(variant,b,time,pelvis,body),mix);
         // Source recoil directions are global head-forward, not its side-facing idle pelvis rotation.

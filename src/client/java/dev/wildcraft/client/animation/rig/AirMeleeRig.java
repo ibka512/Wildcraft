@@ -33,8 +33,8 @@ public final class AirMeleeRig {
         String variant=state.skin.model()==PlayerModelType.SLIM?"slim":"standard";
         String name=(weapon==MeleeWeapon.SWORD?"sword":"axe")+"_air_attack_"+(p.getOffhandItem().isEmpty()?"empty":"carry")+"_"+(p.getMainArm()==HumanoidArm.RIGHT?"R":"L");
         var data=CombatRig.asset(variant);if(data==null||!data.clips().containsKey(name))return false;
-        boolean paused=client.isPaused()||client.gui.screen()!=null&&client.gui.screen().isPauseScreen();
-        float age=view.age()+(paused?0:partial),time=Math.clamp(age/Math.max(1,view.duration()),0,1);
+        // Native rendering already freezes partial; clearing it rewinds the paused source pose.
+        float age=view.age()+partial,time=Math.clamp(age/Math.max(1,view.duration()),0,1);
         var global=CombatRig.sample(variant,name,time);var reference=CombatRigLayer.reference(state.skin.model());reference.setupAnim(state);
         // One world tick of entry, with no separate clock, stale pose, displacement or delayed damage.
         float weight=Math.clamp(age,0,1);weight=weight*weight*(3-2*weight);

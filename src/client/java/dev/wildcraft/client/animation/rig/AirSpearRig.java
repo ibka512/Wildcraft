@@ -34,8 +34,8 @@ public final class AirSpearRig {
         boolean charging=view.phase()==MeleeView.CHARGE;
         String name=(charging||view.charged()?"spear_attack_air_heavy_":"spear_attack_air_light_")+(p.getOffhandItem().isEmpty()?"empty":"shield")+"_"+(p.getMainArm()==HumanoidArm.RIGHT?"R":"L");
         var data=CombatRig.asset(variant);if(data==null||!data.clips().containsKey(name))return false;
-        boolean paused=client.isPaused()||client.gui.screen()!=null&&client.gui.screen().isPauseScreen();
-        float age=view.age()+(paused?0:partial),progress=Math.clamp(age/Math.max(1,view.duration()),0,1);
+        // Native rendering already freezes partial; clearing it rewinds the paused source pose.
+        float age=view.age()+partial,progress=Math.clamp(age/Math.max(1,view.duration()),0,1);
         // Authored .9 prepare / review .2 hold / .65 release map to native18/variable hold/13, never a source release deadline.
         float time=charging?(float)(.9/1.75)*progress:view.charged()?(float)(1.1/1.75)+(float)(.65/1.75)*progress:progress;
         var global=CombatRig.sample(variant,name,time);var names=Arrays.asList(data.bones());for(String side:new String[]{"left","right"})global[names.indexOf(side+"_palm_grip")].setTranslation(global[names.indexOf(side+"_wrist")].transformPosition(new Vector3f(0,.0625F,0)));if(p.getOffhandItem().is(Items.SHIELD))global[names.indexOf((p.getMainArm()==HumanoidArm.RIGHT?"left":"right")+"_shield_mount")].translate(0,.125F,0);var reference=CombatRigLayer.reference(state.skin.model());reference.setupAnim(state);

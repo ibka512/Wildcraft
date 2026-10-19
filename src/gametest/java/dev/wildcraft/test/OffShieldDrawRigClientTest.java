@@ -1,0 +1,69 @@
+package dev.wildcraft.test;
+
+import dev.wildcraft.client.input.ActionInput;
+import dev.wildcraft.equipment.BackEquipment;
+import dev.wildcraft.fuse.*;
+import dev.wildcraft.player.*;
+import dev.wildcraft.registry.WildcraftItems;
+import dev.wildcraft.traversal.Gliding;
+import java.util.*;
+import net.fabricmc.fabric.api.client.gametest.v1.*;
+import net.fabricmc.fabric.api.client.gametest.v1.context.*;
+import net.minecraft.client.*;
+import net.minecraft.client.resources.DefaultPlayerSkin;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.player.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
+
+/** Genuine off-shield use, real glider holstering and natural collision landing; observation only. */
+public final class OffShieldDrawRigClientTest implements FabricClientGameTest {
+    private static void check(boolean value,String message){if(!value)throw new AssertionError(message);}
+    private static PlayerSkin skin(PlayerModelType type){for(int i=0;i<100;i++){var value=DefaultPlayerSkin.get(new UUID(0,i));if(value.model()==type)return value;}throw new AssertionError("Skin fixture");}
+    private static void await(ClientGameTestContext c,String phase,java.util.function.Predicate<Minecraft> predicate){
+        try{c.waitFor(v->predicate.test(v));}catch(AssertionError error){c.runOnClient(v->{OffShieldLandingAudit.save("FAILED-"+phase);System.out.println("PROBE_FAILURE offshield phase="+phase+" y="+v.player.getY()+" ground="+v.player.onGround()+" active="+Gliding.active(v.player)+" intent="+Gliding.intent(v.player)+" view="+v.player.getAttached(Gliding.VIEW)+" owner="+v.player.getAttached(BackEquipment.VISUAL)+" selected="+v.player.getInventory().getSelectedSlot()+" slot0="+v.player.getInventory().getItem(0)+" camera="+v.options.getCameraType()+" rows="+OffShieldLandingAudit.rowCount());});throw error;}
+    }
+    private static net.minecraft.client.renderer.entity.state.AvatarRenderState state(Minecraft v){return (net.minecraft.client.renderer.entity.state.AvatarRenderState)v.getEntityRenderDispatcher().getRenderer(v.player).createRenderState(v.player,1);}
+    private static boolean active(Minecraft v){var f=state(v).getData(dev.wildcraft.client.animation.rig.CombatRigLayer.FRAME);return f!=null&&f.clip().startsWith("shield_equipment_");}
+    private static float progress(Minecraft v){var a=state(v).getData(dev.wildcraft.client.render.BackTransitions.SETTLES);return a==null||a[BackEquipment.SHIELD]==null?1:a[BackEquipment.SHIELD].progress();}
+    @Override public void runTest(ClientGameTestContext c){
+        try(TestSingleplayerContext w=c.worldBuilder().create()){
+            w.getConnection().waitForChunksRender();w.getServer().runCommand("gamemode survival @p");w.getServer().runCommand("time set day");w.getServer().runCommand("weather clear");
+            w.getServer().runOnServer(s->{for(int x=-12;x<=12;x++)for(int z=-12;z<=12;z++)s.overworld().setBlockAndUpdate(new BlockPos(x,119,z),Blocks.STONE.defaultBlockState());});c.getInput().resizeWindow(1280,960);
+            for(String mode:new String[]{"base","pause","gui","use","item","first-person","hurt","no-break","helmet","cape","elytra"})for(var type:PlayerModelType.values())for(var arm:HumanoidArm.values()){
+                if(!mode.equals("base")&&(type!=PlayerModelType.WIDE||arm!=HumanoidArm.RIGHT))continue;
+                c.runOnClient(v->OffShieldLandingAudit.enabled=false);c.getInput().releaseKey(v->v.keyJump);c.getInput().releaseKey(v->v.keyUse);
+                w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();Gliding.reset(p,false);p.getInventory().clearContent();p.getInventory().setSelectedSlot(0);for(var slot:new EquipmentSlot[]{EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET})p.setItemSlot(slot,ItemStack.EMPTY);p.setMainArm(arm);p.teleportTo(p.level(),.5,120,.5,Set.of(),0,0,true);p.setDeltaMovement(net.minecraft.world.phys.Vec3.ZERO);p.setHealth(20);PlayerStamina.fill(p);var shield=new ItemStack(Items.SHIELD);check(FusionItems.attach(shield,new ItemStack(Items.COBBLESTONE),s.registryAccess()),"Real shield Fuse fixture");p.setItemInHand(InteractionHand.OFF_HAND,shield);p.inventoryMenu.broadcastChanges();});
+                c.getInput().pressKey(v->v.keyHotbarSlots[0]);await(c,"native-selected-zero",v->v.player.getInventory().getSelectedSlot()==0);
+                c.waitFor(v->v.player.onGround()&&v.player.getOffhandItem().is(Items.SHIELD)&&v.player.getMainHandItem().isEmpty()&&v.player.getMainArm()==arm);c.runOnClient(v->{v.player.setYRot(0);v.player.setXRot(0);RigAudit.fixture=skin(type);RigAudit.cape=false;RigAudit.enabled=true;RigAudit.bodyYaw=null;RigAudit.sleeves=true;v.options.setCameraType(CameraType.THIRD_PERSON_FRONT);});c.waitFor(v->ActionInput.tickFrame().gameplay());c.waitTicks(4);
+                c.getInput().holdKey(v->v.keyUse);c.waitFor(v->v.player.isUsingItem()&&v.player.getUsedItemHand()==InteractionHand.OFF_HAND&&v.player.getTicksUsingItem()>=8);
+                w.getServer().runOnServer(s->{var p=s.getPlayerList().getPlayers().getFirst();var mob=EntityTypes.HUSK.create(s.overworld(),EntitySpawnReason.COMMAND);mob.setPos(.5,120,7.5);mob.setNoAi(true);mob.setNoGravity(true);s.overworld().addFreshEntity(mob);float health=p.getHealth();p.hurtServer(s.overworld(),p.damageSources().mobAttack(mob),6);check(p.getHealth()==health&&p.getOffhandItem().getDamageValue()==7&&p.getOffhandItem().get(FusionContent.DATA).remaining()==31,"Native offhand shield block once/wear/Fuse");mob.discard();});c.getInput().releaseKey(v->v.keyUse);c.waitFor(v->!v.player.isUsingItem()&&v.player.getAttached(BackEquipment.VISUAL)!=null&&v.player.getAttached(BackEquipment.VISUAL).shield().owner()==2&&v.player.getOffhandItem().getDamageValue()==7);c.waitTicks(4);
+                c.runOnClient(v->{OffShieldLandingAudit.begin("bow-break-source-"+mode);ShieldTransitionAudit.beginOffhand();RigAudit.begin();});
+                w.getServer().runOnServer(server->{var p=server.getPlayerList().getPlayers().getFirst();var bow=new ItemStack(Items.BOW);bow.setDamageValue(mode.equals("no-break")?0:bow.getMaxDamage()-1);p.getInventory().setItem(8,new ItemStack(Items.TORCH));if(Set.of("helmet","cape","elytra").contains(mode))p.setItemSlot(EquipmentSlot.HEAD,new ItemStack(Items.IRON_HELMET));if(mode.equals("elytra"))p.setItemSlot(EquipmentSlot.CHEST,new ItemStack(Items.ELYTRA));p.getInventory().setItem(0,bow);p.getInventory().setItem(10,new ItemStack(Items.ARROW,32));p.inventoryMenu.broadcastChanges();});
+                await(c,"bow-ready",v->v.player.onGround()&&v.player.getMainHandItem().is(Items.BOW)&&v.player.getMainHandItem().getDamageValue()==(mode.equals("no-break")?0:v.player.getMainHandItem().getMaxDamage()-1)&&v.player.getAttached(BackEquipment.VISUAL).shield().owner()==2);
+                c.waitTicks(3);check(c.computeOnClient(v->OffShieldLandingAudit.groundDrawFrames==0),"Preparing actual held bow does not manufacture a shield back event");
+                int arrowsBefore=w.getServer().computeOnServer(server->{var p=server.getPlayerList().getPlayers().getFirst();return server.overworld().getEntitiesOfClass(net.minecraft.world.entity.projectile.arrow.Arrow.class,p.getBoundingBox().inflate(256)).stream().filter(e->e.getOwner()==p).toList().size();});
+                if(Set.of("helmet","cape","elytra").contains(mode))await(c,"actual-unsupported-helmet",v->v.player.getItemBySlot(EquipmentSlot.HEAD).is(Items.IRON_HELMET));
+                if(mode.equals("helmet")||mode.equals("elytra"))await(c,"real-armor",v->mode.equals("helmet")?v.player.getItemBySlot(EquipmentSlot.HEAD).is(Items.IRON_HELMET):v.player.getItemBySlot(EquipmentSlot.CHEST).is(Items.ELYTRA));
+                if(mode.equals("cape"))c.runOnClient(v->{var sk=RigAudit.fixture;RigAudit.fixture=new PlayerSkin(sk.body(),sk.body(),null,sk.model(),false);RigAudit.cape=true;});
+                c.getInput().holdKey(v->v.keyUse);await(c,"native-bow-holster",v->v.player.isUsingItem()&&v.player.getUsedItemHand()==InteractionHand.MAIN_HAND&&v.player.getTicksUsingItem()>=20&&OffShieldLandingAudit.nativeUseBackFrames>0);
+                c.takeScreenshot("offshield-source-bow-use-"+mode+"-"+type+"-"+arm);c.runOnClient(v->{ShieldTransitionAudit.beginOffhand();RigAudit.begin();});c.getInput().releaseKey(v->v.keyUse);
+                boolean supported=!Set.of("no-break","helmet","cape","elytra").contains(mode);
+                if(supported){String clip="shield_equipment_draw_back_empty_"+(arm.getOpposite()==HumanoidArm.RIGHT?"R":"L");await(c,"actual-source",v->ShieldTransitionAudit.full>0&&ShieldTransitionAudit.handOwner==2&&clip.equals(ShieldTransitionAudit.clip)&&RigAudit.shields>0&&RigAudit.texture.equals(RigAudit.fixture.body().texturePath().toString()));c.takeScreenshot("offshield-source-real-owner2-"+mode+"-"+type+"-"+arm);
+                    if(mode.equals("pause")){c.setScreen(()->new net.minecraft.client.gui.screens.PauseScreen(true));c.waitFor(Minecraft::isPaused);float frozen=c.computeOnClient(OffShieldDrawRigClientTest::progress);check(frozen<1,"Actual live offhand settle before pause");long until=System.nanoTime()+300_000_000L;c.waitFor(v->System.nanoTime()>until);check(c.computeOnClient(v->active(v)&&Math.abs(progress(v)-frozen)<.001F),"Real .32 offhand draw freezes with native pause");c.takeScreenshot("offshield-source-paused");c.setScreen(()->null);}
+                    if(mode.equals("gui")){c.setScreen(()->new net.minecraft.client.gui.screens.inventory.InventoryScreen(Minecraft.getInstance().player));check(c.computeOnClient(v->!active(v)),"Inventory immediately consumes offhand source");c.takeScreenshot("offshield-source-gui");c.setScreen(()->null);c.waitTicks(4);check(c.computeOnClient(v->!active(v)),"Closing inventory does not replay source");}
+                    if(mode.equals("use")){c.getInput().holdKey(v->v.keyUse);await(c,"offshield-native-use",v->v.player.isUsingItem()&&v.player.getUsedItemHand()==InteractionHand.OFF_HAND);check(c.computeOnClient(v->!active(v)),"Native offshield use takes over immediately");c.takeScreenshot("offshield-source-native-use");c.getInput().releaseKey(v->v.keyUse);}
+                    if(mode.equals("item")){c.getInput().pressKey(v->v.keyHotbarSlots[8]);await(c,"actual-torch",v->v.player.getMainHandItem().is(Items.TORCH));check(c.computeOnClient(v->!active(v)),"Taking actual main torch exits offhand source");c.takeScreenshot("offshield-source-torch");}
+                    if(mode.equals("hurt")){w.getServer().runOnServer(server->{var p=server.getPlayerList().getPlayers().getFirst();p.hurtServer(server.overworld(),p.damageSources().generic(),1);});await(c,"actual-hurt",v->v.player.hurtTime>0&&v.player.getHealth()==19);check(c.computeOnClient(v->!active(v)),"Original actual hurt immediately exits offhand source without immunity");c.takeScreenshot("offshield-source-native-hurt");}
+                    if(mode.equals("first-person")){c.runOnClient(v->v.options.setCameraType(CameraType.FIRST_PERSON));c.waitTicks(1);check(c.computeOnClient(v->v.player.getMainHandItem().isEmpty()&&v.player.getOffhandItem().is(Items.SHIELD)),"First-person keeps actual empty main and real shield");c.takeScreenshot("offshield-source-native-first-person");}
+                }
+                await(c,"native-bow-broke",v->!v.player.isUsingItem()&&(mode.equals("no-break")?v.player.getMainHandItem().is(Items.BOW):mode.equals("item")?v.player.getMainHandItem().is(Items.TORCH):v.player.getMainHandItem().isEmpty())&&v.player.getInventory().getItem(10).getCount()==31&&v.player.getAttached(BackEquipment.VISUAL).shield().owner()==2);c.waitTicks(10);
+                c.runOnClient(v->OffShieldLandingAudit.save("source-"+mode+"-"+type+"-"+arm));if(!supported)check(c.computeOnClient(v->ShieldTransitionAudit.frames==0),"Unsupported held bow or real helmet/cape-plus-helmet/wings-plus-helmet remains native");else check(c.computeOnClient(v->!active(v)),"Original settle completion relinquishes source without a new clock");c.takeScreenshot("offshield-source-result-"+mode+"-"+type+"-"+arm);
+                w.getServer().runOnServer(server->{var p=server.getPlayerList().getPlayers().getFirst();int arrows=server.overworld().getEntitiesOfClass(net.minecraft.world.entity.projectile.arrow.Arrow.class,p.getBoundingBox().inflate(256)).stream().filter(e->e.getOwner()==p).toList().size();check(arrows==arrowsBefore+1&&(mode.equals("no-break")?p.getMainHandItem().is(Items.BOW)&&p.getMainHandItem().getDamageValue()==1:mode.equals("item")?p.getMainHandItem().is(Items.TORCH):p.getMainHandItem().isEmpty())&&p.getInventory().getItem(10).getCount()==31&&p.getOffhandItem().is(Items.SHIELD)&&p.getOffhandItem().getDamageValue()==7&&p.getOffhandItem().get(FusionContent.DATA).remaining()==31,"Actual once native arrow/ammo/normal bow break restores original shield without inventory swap or extra wear/Fuse");});
+                System.out.println("C6BA actual owner2 source mode="+mode+" "+type+" main="+arm+" groundDrawFrames="+OffShieldLandingAudit.groundDrawFrames+" eligibleFrames="+OffShieldLandingAudit.eligibleFrames+" minEligibleProgress="+OffShieldLandingAudit.minEligibleProgress+"; full="+ShieldTransitionAudit.full+" sourceHand="+ShieldTransitionAudit.handOwner+" nativeShieldGPU="+RigAudit.shields+"");
+            }
+        }finally{c.getInput().releaseKey(v->v.keyJump);c.getInput().releaseKey(v->v.keyUse);c.runOnClient(v->{OffShieldLandingAudit.enabled=false;ShieldTransitionAudit.enabled=false;RigAudit.enabled=false;RigAudit.fixture=null;RigAudit.cape=null;RigAudit.bodyYaw=null;v.options.setCameraType(CameraType.FIRST_PERSON);});}
+    }
+}

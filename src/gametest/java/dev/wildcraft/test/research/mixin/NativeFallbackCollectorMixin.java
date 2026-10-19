@@ -21,6 +21,8 @@ public abstract class NativeFallbackCollectorMixin {
  private void item(PoseStack poses,ItemDisplayContext display,int light,int overlay,int outline,int[] tints,ItemQuads quads,ItemStackRenderState.FoilType foil,CallbackInfo ci){if(!NativeFallbackAudit.enabled)return;if(NativeFallbackAudit.kind==1)NativeFallbackAudit.bowQuads++;else if(NativeFallbackAudit.kind==2)NativeFallbackAudit.otherQuads++;}
  @Inject(method="submitModel",at=@At("HEAD"))
  private <S>void model(Model<? super S> model,S state,PoseStack poses,RenderType type,int light,int overlay,int color,UvMapping uv,int outline,CallbackInfo ci){
+  dev.wildcraft.test.SwordWaistAudit.capeSubmitted(model,state,type);
+  dev.wildcraft.test.WingsWaistAudit.submit(model,state,poses,type);
   if(!NativeFallbackAudit.enabled)return;
   var binding=((RenderSetupTexturesAccessor)(Object)((RenderTypeStateAccessor)(Object)type).wildcraft$setup()).wildcraft$textures().get("Sampler0");var texture=binding==null?null:((TextureBindingLocationAccessor)binding).wildcraft$location();
   if(model instanceof PlayerModel&&state instanceof AvatarRenderState a&&a.getData(CombatRigLayer.FRAME)==null&&!a.isInvisible&&!a.isSpectator&&texture!=null&&texture.equals(a.skin.body().texturePath())){if(((PlayerModelShapeAccessor)model).wildcraft$isSlim()!=(a.skin.model()==net.minecraft.world.entity.player.PlayerModelType.SLIM))throw new AssertionError("Native fallback model geometry differs from actual selected skin");NativeFallbackAudit.bodies++;NativeFallbackAudit.skin=texture.toString();}

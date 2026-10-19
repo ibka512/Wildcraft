@@ -1,3 +1,5 @@
+> 2026-10-19：最新运行接入状态见[RUNTIME-STATUS](RUNTIME-STATUS-2026-10-19.md)及同名JSON。本台账45用途/4底部变体的原件与采用编号不变；受限玩家动画数据未公开，状态计数不是新增可公开模型数。
+
 > 2026-10-15公开快照：当前45个运行用途ID和4类底部变体已核对。玩家源动画与含数据包仍只本机；本文件内旧“未发布/本机dev62”是阶段记录，公开范围以根README和docs/PUBLIC-SNAPSHOT-2026-10-15.md为准。
 
 > 2026-10-15本机dev62：C6AM实际RIGHT空中弓mainRIGHT/offbow-mainLEFT两皮肤，原native20三档弦/木握点-nock/固定段长/头/skin-item GPU，原Focus自动-手动-关闭费用与一次箭-ammo-wear/退出通过；实际完整47类47m 29s/1893PNG，21专项/125服务端/datagen/build/资产通过。337私有clips旧335几何绑定逐值保持；RIGHT为已采用LEFT运行派生不称作者新RIGHT或正式FP。JumpAudit1ULP门槛仅测试修正，真实脚底/物理保持。源码01707b8468f84ce511658b575e37c8957dda5c34标签v0.1.0-dev.62+mc26.3，所有包源仅本机，C6整体/复杂/正式FP未完；下一C6AN占手原生归属，草稿未验，无上传。

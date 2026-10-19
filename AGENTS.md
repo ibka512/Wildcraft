@@ -1,6 +1,6 @@
 # Wildcraft 公开仓库接手规则
 
-当前入口为 README → docs/AI-HANDOFF.md → docs/PUBLIC-SNAPSHOT-2026-10-15.md。本仓库是 dev62 后的公开源码快照，版本 0.1.0-dev.62-public；本机私有分支/标签/二进制不在本次公开历史中，不能直接合并或推送本机分支代替快照。
+当前入口为 README → docs/AI-HANDOFF.md → docs/PUBLIC-SNAPSHOT-2026-10-19.md。本仓库是 dev76 的公开源码快照，版本 0.1.0-dev.76-public；本机私有分支/标签/二进制不在本次公开历史中，不能直接合并或推送本机分支代替快照。
 
 ## 已确定的产品与工程边界
 

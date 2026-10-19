@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.wildcraft.test.research.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "OffShieldLandingAuditMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

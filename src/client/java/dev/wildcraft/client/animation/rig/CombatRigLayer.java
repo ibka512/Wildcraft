@@ -41,7 +41,7 @@ public final class CombatRigLayer extends RenderLayer<AvatarRenderState,PlayerMo
         DodgeFeedbackRig.initialize();
         // Load optional local data before gameplay: first parsing during a .32s settle
         // can consume its entire real-time window, especially for a first main-hand shield.
-        ClientPlayConnectionEvents.JOIN.register((handler,sender,client)->{CombatRig.asset("standard");CombatRig.asset("slim");});
+        ClientPlayConnectionEvents.JOIN.register((handler,sender,client)->{CombatRig.asset("standard");CombatRig.asset("slim");FirstPersonSword.asset("standard");FirstPersonSword.asset("slim");});
         ClientPlayConnectionEvents.DISCONNECT.register((h,c)->{MOTION.clear();JumpRig.clear();ClimbRig.clear();GlideRig.clear();LockedWalkRig.clear();HeavyMeleeRig.clear();BowIdleRig.clear();GroundBowRig.clear();AirBowRig.clear();});
         LivingEntityRenderLayerRegistrationCallback.EVENT.register((type,renderer,helper,context)->{if(renderer instanceof AvatarRenderer<?> avatar)helper.register(new CombatRigLayer(avatar));});
     }
@@ -106,7 +106,8 @@ public final class CombatRigLayer extends RenderLayer<AvatarRenderState,PlayerMo
             m.join+=dt;
             // Art previews contain idle intro/outro and proposed combos; only the single strike/recovery window is used.
             float duration=data.clips().get(m.clip).duration();
-            m.sample=swing?(float)(.65+1.4*Math.clamp((v.age()+(client.isPaused()?0:partial))/Math.max(1,v.duration()),0,1))/duration
+            // Native rendering already freezes partial when paused; zeroing it rewinds the pose.
+            m.sample=swing?(float)(.65+1.4*Math.clamp((v.age()+partial)/Math.max(1,v.duration()),0,1))/duration
                 :lowering?Math.clamp(m.lowerAge/duration,0,1):defending&&m.defenseAge<.18F?Math.clamp(m.defenseAge/duration,0,1):m.elapsed%duration/duration;
         }
         if(m.clip==null)return;

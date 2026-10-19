@@ -11,6 +11,12 @@ public abstract class RigFixtureMixin {
     @Inject(method="extractRenderState(Lnet/minecraft/world/entity/Avatar;Lnet/minecraft/client/renderer/entity/state/AvatarRenderState;F)V",at=@At("RETURN"),order=1400)
     private void wildcraft$skin(Avatar entity,AvatarRenderState state,float partial,CallbackInfo ci){
         if(RigAudit.enabled&&RigAudit.bodyYaw!=null){state.bodyRot=RigAudit.bodyYaw;}
+
+    }
+    // A real skin fixture must be present before production chooses the actual cape/waist layout.
+    @Inject(method="extractRenderState(Lnet/minecraft/world/entity/Avatar;Lnet/minecraft/client/renderer/entity/state/AvatarRenderState;F)V",at=@At("RETURN"),order=900)
+    private void wildcraft$earlySkin(Avatar entity,AvatarRenderState state,float partial,CallbackInfo ci){
         if(RigAudit.enabled&&RigAudit.fixture!=null){state.skin=RigAudit.fixture;state.showLeftSleeve=state.showRightSleeve=RigAudit.sleeves;}
+        if(RigAudit.enabled&&RigAudit.cape!=null)state.showCape=RigAudit.cape;
     }
 }

@@ -24,23 +24,24 @@ public final class ShieldTransitionRig {
         if(!Combat.compatible(p)||!p.onGround()||p.getPose()!=Pose.STANDING||p.isCrouching()||p.isInvisible()||p.isCurrentlyGlowing()
             ||state.scale!=1||p.isUsingItem()||p.getDeltaMovement().horizontalDistanceSqr()>=.0004
             ||view.phase()!=MeleeView.IDLE||view.hurt()!=0||p.hurtTime>0||ParryActions.view(p).remaining()!=0
-            ||state.showCape&&state.skin.cape()!=null||state.getDataOrDefault(BackTransitions.WAIST,false)
             ||p==c.player&&c.gui.screen()!=null&&!c.gui.screen().isPauseScreen())return false;
-        for(var slot:new EquipmentSlot[]{EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET})if(!p.getItemBySlot(slot).isEmpty())return false;
+        for(var slot:new EquipmentSlot[]{EquipmentSlot.HEAD,EquipmentSlot.CHEST,EquipmentSlot.LEGS,EquipmentSlot.FEET})if(!p.getItemBySlot(slot).isEmpty()&&!(slot==EquipmentSlot.CHEST&&p.getItemBySlot(slot).is(Items.ELYTRA)))return false;
+        boolean waist=state.getDataOrDefault(BackTransitions.WAIST,false);
+        if(waist&&!(state.showCape&&state.skin.cape()!=null)&&!p.getItemBySlot(EquipmentSlot.CHEST).is(Items.ELYTRA))return false;
         var settles=state.getData(BackTransitions.SETTLES);if(settles==null)return false;
         for(int i=0;i<settles.length;i++)if(i!=BackEquipment.SHIELD&&settles[i]!=null)return false;
-        // Ordinary offhand routes are transfer/use/GUI cancellations or publish an intermediate main owner.
-        // Keep them native until a legal owner2 source event is actually verified.
-        var event=settles[BackEquipment.SHIELD];if(event==null||event.handOwner()!=1)return false;
+        // A genuine main-empty ground draw also uses the qualified cape/native-wing waist source.
+        // Native bow break supplies this event; transfer, use, GUI and offhand stow stay native.
+        var event=settles[BackEquipment.SHIELD];if(event==null||event.handOwner()!=1&&!(event.handOwner()==2&&event.draw()))return false;
         var arm=event.handOwner()==1?p.getMainArm():p.getMainArm().getOpposite();
         var settle=BackTransitions.forArm(state,arm);if(settle!=event)return false;
         var hand=BackTransitions.held(state,arm);var other=BackTransitions.held(state,arm.getOpposite());
-        if(!other.isEmpty()&&MeleeWeapon.of(other)!=MeleeWeapon.SWORD)return false;
+        if(event.handOwner()==2&&!other.isEmpty()||!other.isEmpty()&&MeleeWeapon.of(other)!=MeleeWeapon.SWORD)return false;
         var visual=p.getAttached(BackEquipment.VISUAL);if(visual==null||visual.shield().reference()==0||visual.shield().owner()!=settle.owner())return false;
         var shieldStack=settle.draw()?hand:BackEquipment.view(p).shield();
         if(!shieldStack.is(Items.SHIELD)||settle.draw()&&settle.owner()!=settle.handOwner()||!settle.draw()&&!hand.isEmpty())return false;
         String variant=state.skin.model()==PlayerModelType.SLIM?"slim":"standard";
-        String name="shield_equipment_"+(settle.draw()?"draw":"stow")+"_back_"+(other.isEmpty()?"empty":"sword")+"_"+(arm==HumanoidArm.RIGHT?"R":"L");
+        String name="shield_equipment_"+(settle.draw()?"draw":"stow")+"_"+(waist?"waist":"back")+"_"+(other.isEmpty()?"empty":"sword")+"_"+(arm==HumanoidArm.RIGHT?"R":"L");
         var data=CombatRig.asset(variant);if(data==null||!data.clips().containsKey(name))return false;
         float time=settle.progress(),weight=BackTransitions.smooth(Math.clamp(Math.min(time/.12F,(1-time)/.12F),0,1));
         var global=CombatRig.sample(variant,name,time);

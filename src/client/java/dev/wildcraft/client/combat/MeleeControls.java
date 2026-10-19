@@ -30,7 +30,13 @@ public final class MeleeControls {
         if(!c.options.keyAttack.isDown())blocked=false;
         if(!f.down(Action.JUMP))jumpOwned=false;
         boolean available=f.gameplay()&&MeleeActions.eligible(p);
-        if(!available&&MeleeActions.blocksHands(p)){
+        // A closed-to-LAN integrated pause can receive a client tick before isPaused latches.
+        // Already released attacks have settled their native hit; retain their paused recovery.
+        // Preparation, inventory screens and non-pausing servers keep the ordinary cancellation.
+        boolean pausedAttack=c.getSingleplayerServer()!=null&&!c.getSingleplayerServer().isPublished()
+                &&c.gui.screen()!=null&&c.gui.screen().isPauseScreen()&&!owned
+                &&(view.phase()==MeleeView.SWING||view.phase()==MeleeView.AIR_SWING||view.phase()==MeleeView.DROP_SWING);
+        if(!available&&MeleeActions.blocksHands(p)&&!pausedAttack){
             send(MeleeIntent.CANCEL,(byte)0);p.setAttached(MeleeActions.VIEW,MeleeView.OFF);
             p.setDeltaMovement(0,p.getDeltaMovement().y,0);
         }

@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-19",
+  "version": "0.1.0-dev.76-public",
+  "localSourceCheckpoint": "1a14a9c5",
+  "publicParent": "c0bf3f7cd8edf5330d3a8adbcd71cf97829cd635",
+  "privateAnimationDataIncluded": false,
+  "localHistoricalAnimationResultsAreNotPublicValidation": true,
+  "status": "macOS-public-validation-passed",
+  "checks": {
+    "datagen": {
+      "result": "passed",
+      "duration": "15s",
+      "logSHA256": "f0cf321a89b4dd422406ec12b7a1efd4e897fce6bdc307847d8bf1fea5101a2f"
+    },
+    "build": {
+      "result": "passed",
+      "duration": "11s",
+      "logSHA256": "bc413a0b3476bb64303109974cfe662d035ba241e12604a6406818f98377749f"
+    },
+    "core-art": {
+      "result": "passed",
+      "duration": "18s",
+      "logSHA256": "68577642e9a295a2c1ca41766ed89d559f5983149464d094b5aaa5af310c13e8"
+    },
+    "first-person-fallback": {
+      "result": "passed",
+      "duration": "17s",
+      "logSHA256": "9b99d028843f8da17ba7c7c373fb4bf61c7c6d463cce96e2498b5aa053a0a5e6"
+    },
+    "publicScope": "passed",
+    "adoptedAssets": "45 current purposes/30 versions/2107 source records/57 copies/4 bottom variants passed",
+    "generatedFiles": 68,
+    "generatedDiff": "none",
+    "serverRequiredTests": 125,
+    "coreArtPNG": 4,
+    "absentFirstPersonNativeFallbackPNG": 1
+  },
+  "artifacts": [
+    {
+      "file": "wildcraft-0.1.0-dev.76-public.jar",
+      "bytes": 1093015,
+      "sha256": "3ea8a1465b6eb0f5c01b672a4556e6049b6d615bea1a82141dc0ba56fb898199",
+      "crcVerified": true,
+      "privateAnimationDataIncluded": false
+    },
+    {
+      "file": "wildcraft-0.1.0-dev.76-public-sources.jar",
+      "bytes": 615120,
+      "sha256": "5a270f4f77a5121a4aa9eb5f101af24f4325ede95d04ebb1a8ff7d94bf5dd3ca",
+      "crcVerified": true,
+      "privateAnimationDataIncluded": false
+    },
+    {
+      "file": "wildcraft-0.1.0-dev.76-public-gametest.jar",
+      "bytes": 1688334,
+      "sha256": "3a9a830da793829f792db973182c4af31c90659e5e96629d20500dc41c4cfbe7",
+      "crcVerified": true,
+      "privateAnimationDataIncluded": false
+    }
+  ],
+  "images": [
+    {
+      "file": "development-assets/verification/dev76-public/0002_art-settings-normal.png",
+      "sha256": "7b5933dc64d474025389b68b61fbdd4c2f03d5aa5318a96b043c35cbedd48a3d"
+    },
+    {
+      "file": "development-assets/verification/dev76-public/0003_art-settings-compact-layout.png",
+      "sha256": "0a40dc71e2f09c6e0430818329654b7e5095054779be33dbc59ed5e406991701"
+    },
+    {
+      "file": "development-assets/verification/dev76-public/0000_art-glider-first-person-grips.png",
+      "sha256": "b3b5972a725cadc93afd2f20987a24e6dc2923a5b320bad467d32922f5585aac"
+    },
+    {
+      "file": "development-assets/verification/dev76-public/0001_art-glider-third-person-front.png",
+      "sha256": "248067ac5eb5555d773617dcc91671c5e72b5bb96dc16d0b0cfbfe032b226885"
+    },
+    {
+      "file": "development-assets/verification/dev76-public/0000_first-person-sword-absent-native-grip-fallback.png",
+      "sha256": "33772274dd08f90466bea9fbf18dd34dc914a4cdb9d3172a62461b25418fb3ee"
+    }
+  ],
+  "knownWarnings": [
+    "Existing battery_3d missing-texture warning for wildcraft:entity/battery is also present in the previous dev62-public log; not resolved or visually qualified by this sync."
+  ],
+  "remoteCI": {
+    "status": "not-started"
+  }
+}

@@ -49,7 +49,8 @@ public final class HeavyMeleeRig {
         else if(m.cancel>=0)m.cancel+=dt;
         m.lastPhase=view.phase();
         String family=weapon==MeleeWeapon.SWORD?"sword_heavy":swing&&!view.charged()?"axe_light":"axe_heavy";
-        float age=view.age()+(client.isPaused()?0:partial);
+        // Keep the same native frozen fraction as the first-person and ordinary sword paths.
+        float age=view.age()+partial;
         String phase=charging?(age<view.duration()?"charge":"hold"):swing?(view.charged()?"release":"attack"):"cancel";
         String name=family+"_"+phase+"_"+(p.getOffhandItem().isEmpty()?"empty":"carry")+"_"+(p.getMainArm()==net.minecraft.world.entity.HumanoidArm.RIGHT?"R":"L");
         var clip=data.clips().get(name);if(clip==null)return reject(p);

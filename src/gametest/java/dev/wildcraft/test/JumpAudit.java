@@ -9,8 +9,11 @@ public final class JumpAudit {
  private static final Map<net.minecraft.world.entity.player.PlayerModelType,net.minecraft.client.model.player.PlayerModel> MODELS=new EnumMap<>(net.minecraft.world.entity.player.PlayerModelType.class);
  public static boolean enabled,submittingExpectedItem;public static int frames,takeoff,air,land,quads;public static float maxLandTime;
  public static net.minecraft.client.renderer.item.ItemStackRenderState expectedItem;private static Vector3f grip,axis;
- public static void begin(){enabled=true;frames=takeoff=air=land=quads=0;maxLandTime=0;expectedItem=null;}
+ public record ClockSample(CombatRigLayer.Frame frame,int tick,int start,int land,float partial){}
+ public static boolean clockEnabled;public static ClockSample clockLast;private static boolean clockGround;private static int clockStart,clockLand;
+ public static void begin(){enabled=true;frames=takeoff=air=land=quads=0;maxLandTime=0;expectedItem=null;clockLast=null;clockStart=clockLand=-1;var p=net.minecraft.client.Minecraft.getInstance().player;clockGround=p!=null&&p.onGround();}
  public static void observe(AvatarRenderState state){
+  if(enabled&&clockEnabled){var p=net.minecraft.client.Minecraft.getInstance().player;boolean ground=p.onGround();if(clockGround&&!ground&&p.getDeltaMovement().y>0){clockStart=p.tickCount;clockLand=-1;}if(!clockGround&&ground&&clockStart>=0)clockLand=p.tickCount;clockGround=ground;var f=state.getData(CombatRigLayer.FRAME);if(f!=null&&f.clip().startsWith("jump_"))clockLast=new ClockSample(f,p.tickCount,clockStart,clockLand,state.getDataOrDefault(dev.wildcraft.client.animation.MeleePoses.PARTIAL,0F));}
   var f=state.getData(CombatRigLayer.FRAME);if(!enabled||f==null||!f.clip().startsWith("jump_"))return;frames++;if(f.clip().startsWith("jump_takeoff_"))takeoff++;if(f.clip().startsWith("jump_air_"))air++;if(f.clip().startsWith("jump_land_")){land++;maxLandTime=java.lang.Math.max(maxLandTime,f.time());}
   var names=Arrays.asList(f.data().bones());var source=CombatRig.sample(f.data().variant(),f.clip(),f.time());boolean landing=f.clip().startsWith("jump_land_");
   for(int i=0;i<source.length;i++){String b=names.get(i);if(b.equals("head")||f.clip().contains("_guard_")||landing&&f.time()<.37F&&!b.contains("thigh")&&!b.contains("shin")&&!b.contains("foot")&&!b.contains("knee")&&!b.contains("ankle")&&!b.equals("root")&&!b.equals("pelvis"))continue;if(!source[i].equals(f.global()[i],2e-5F))throw new AssertionError("Actual jump source joint mismatch "+b);}

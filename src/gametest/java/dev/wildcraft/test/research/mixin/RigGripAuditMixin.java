@@ -12,6 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class RigGripAuditMixin {
     @Inject(method="heldPose",at=@At("RETURN"))
     private static void wildcraft$grip(CombatRigLayer.Frame frame,ItemStackRenderState item,HumanoidArm arm,boolean shield,CallbackInfoReturnable<Matrix4f> ci){
+        dev.wildcraft.test.SwordWaistAudit.grip(frame,item,arm,shield,ci.getReturnValue());
         if(RigAudit.enabled&&!dev.wildcraft.test.DodgeFeedbackAudit.checkingNativeItem){if(!ci.getReturnValue().isFinite())throw new AssertionError("Nonfinite native grip");RigAudit.hands++;if(shield)RigAudit.shields++;}
     }
 }

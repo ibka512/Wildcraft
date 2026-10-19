@@ -1,12 +1,12 @@
 # Wildcraft 开发接手说明
 
-更新：2026-10-15。当前公开代码版本 **0.1.0-dev.62-public**，从本机 `c554ed95bb8c0c137ab5f07bf710af9fb8861566` 选择可公开源码、资源和技术文档，基于原公开main `81e1aa0b07ba426e35d664b23720fa6a16b91300` 提交。两个编号分别描述本机来源与公开父提交，不能据此向公开仓库索取整条私有分支。
+更新2026-10-19。公开代码版本0.1.0-dev.76-public，来源本机停线1a14a9c5/正式dev76 fc24678e；独立基于公开main c0bf3f7c筛选提交，没有合并私有分支/标签。公开提交SHA以GitHub main与PUBLIC-VALIDATION-dev76.json为准。
 
-## 先理解版本区别
+## 当前状态与公开区别
 
-本机dev62使用337个许可受限剪辑/335选取，曾执行完整动画验证；这些资源及含数据安装包只本机。公开源码保留相关运行时代码，但不带这些动画数据，CombatRig在找不到资源时回退到既有原生表现。公开构建标识追加-public，不能冒充同名私有JAR的字节或画面结果。
+本机dev63补普通剑击第一人称，dev64–67修复暂停采样并限定验证，dev68–72补披风腰侧，dev73–74补原生鞘翅，dev75–76补空主手副盾DRAW。八类主装备是剑、斧、三叉戟、重锤、七材质原生长矛、主盾、弓、弩；站立静止、其他盔甲空等资格仍有范围限制。
 
-本次公开更新包含C1–C6战斗/输入/握持代码、F07风天气显示、四类底部资源修订及C6AN/C7测试代码。完整C6、正式第一人称源、复杂装备蒙皮、人工长期生存与平衡、长期性能仍未完成，多人暂缓。
+公开包含运行时代码、测试与转换工具，但不带本机每体型401个第三人称/4个第一人称剪辑、七份JSON、原源或含数据JAR。CombatRig与FirstPersonSword资源缺失时回到既有原生路径。公开包后缀-public，不与本机私有包混用名称/哈希/视觉结论。副盾仅真实main Bow正常损坏后同reference恢复到空主手副盾，不能以库存交换、F键或GUI迟到重播制造事件。off STOW/占用main/复杂盔甲/其他正式FP仍未开放。
 
 ## 已确认行为
 
@@ -35,36 +35,29 @@
 
 ## 构建与复现
 
+使用锁定JDK25与Wrapper，顺序执行：
+
 ```sh
-./gradlew runDatagen
-./gradlew build gameTestJar
+python3 tools/verify-public-snapshot.py
 python3 tools/verify-adopted-assets.py
+./gradlew runDatagen
+git diff --exit-code -- src/main/generated
+./gradlew build gameTestJar
 python3 tools/verify-public-snapshot.py --artifacts
 ```
 
-macOS可改用./dev.sh，或设置JAVA_HOME/WILDCRAFT_JAVA_HOME指向JDK25。不要复制原开发机磁盘映像或硬编码其缓存目录。IntelliJ按Gradle项目导入；无新生产依赖，无数据迁移。
+macOS可用dev.sh；个人配置与缓存路径无需复制原开发机。build包含125项服务端测试，test NO-SOURCE不算通过。独立runGameTest需操作者自行接受EULA后显式传acceptMinecraftEula。图形检查可运行runCoreArtClientTest，以及runFirstPersonSwordClientTest -PfirstPersonSwordFallback=true检查缺资源回退。普通实例只安装主JAR与已有Fabric API，不能安装测试/源码JAR。
 
-build执行现有规则检查；独立服务端runGameTest需操作者接受Minecraft EULA后显式提供-PacceptMinecraftEula=true。客户端需可用桌面。C6源动画GPU专项、C7真实攀爬/滑翔等会依赖私有源或本机正式JAR，公开缺素材不能声称复现通过；可以执行不依赖私有资源的原生回退与服务端行为检查。
+需要私有动画的Rig专项无法在纯公开克隆复现，属于缺必要资源而非已通过。先取得具体素材与许可，再按当前转换工具和规格配置；不能用空JSON、虚拟姿态或复制旧图冒充。runC7NativeRenderBaseline默认指向本机历史dev62冻结包，不适合裸公开克隆直接运行；可通过c7PerformanceMainJar指定自己构建的主JAR、c7PerformanceFixture提供自动生成的可弃世界、c7PerformanceRunDir指定全新隔离目录，严禁传个人世界。普通客户端探针没有fabric.client.gametest，提供原料不代表人工生存。
 
-C7普通客户端runC7NativeRenderBaseline还要求显式提供已生成的可丢弃测试世界和本机冻结JAR，禁止使用真实存档。它没有fabric.client.gametest标志，专用metadata/Mixin不启旧研究时钟；与加速客户端GameTest的帧率统计不同。
+## 验证事实与下一步
 
-## 已执行的历史验证与当前未完成项
+[当前公开验证](PUBLIC-SNAPSHOT-2026-10-19.md)与[机器回执](PUBLIC-VALIDATION-dev76.json)记录本次真正执行内容；本机530图/125与历史full48分开。普通客户端短测、120/10FPS有限驾驶和逐帧窗口检查见C7-DEV76两份验收；其中新guard低FPS未跑，长期性能/自然地形/人工平衡未完成。
 
-| 范围 | 本机已执行事实 | 不代表什么 |
-| --- | --- | --- |
-| dev62/C6AM | 125服务端；完整47类47m29s/1893PNG；21专项；datagen/build/资产检查通过 | 不是全部动画、正式FP或公开资源版重新图形验收 |
-| C6AN | 实际占手/原生回退64case/128图；完整48类51m6s/2021图 | 不是把盔甲/鞘翅重新适配到源骨架 |
-| C7组合 | 固定源码三类59s/22图：保存重开、死亡、XP/伞/料理/Fuse/背负、动作取消、两电池分离、回收和制造领取 | 不是从零采集、人工手感或长期性能 |
-| C7 native基线 | 普通客户端82s；0/4/16停机空主体各15s，约20TPS，实际像素2560×1564/render16 | 16主体末FPS30尚未排除闲置限帧，不能定为性能回归或验收通过 |
+下一开发从C7驾驶窗口低FPS验证、受控地形/转向与单人生存试玩开始；此公开同步任务本身不授权新增玩法、生产依赖、数据迁移或未来公开发布。先读实际任务及AGENTS，不把旧阶段全路线当本轮执行指令。原生伤害/库存/物理/费用/use/block/wear/Fuse和技能时长保留，不为动画改结算；不擅自开放复杂盔甲/副盾STOW或采用待审13FP/另6项。
 
-本次公开快照的独立执行结果只登记在PUBLIC-SNAPSHOT-2026-10-15.md，不把上表历史数字重新贴成此次CI结果。
+## 美术与许可
 
-下一步先读取C7-NATIVE-RENDER-BASELINE.md，复核隔离客户端实际renderDistance、inactivityFpsLimit及ThrottleReason，保留原始基线后做最小对照。之后按SINGLEPLAYER-PLAYTEST记录正常资源获取、自然地形、战斗/续航手感和长期性能，再定向修复与平衡。不要无变化重复full48，不凭理论扩大电池或改变成长。
+可公开用途台账仍见art/ADOPTED-ASSETS；[最新目录状态](../art/RUNTIME-STATUS-2026-10-19.md)和JSON登记96目录条目、90有限运行用途与6参考条目。它们不是96模型，也不保证全部剪辑启用。项目原LICENSE/NOTICE保持，没有擅自改MIT/CC0；公开源码不授权受限动画再分发。
 
-## 资产、许可与历史资料
-
-可公开45个用途ID、四类底部变体、30份第二批交付版本；verify-adopted-assets核对2107原件记录/57运行副本。原台账和交付清单保留原始哈希，不把待审第一人称13组或另6项自动采用。
-
-本机受限源、派生动画、截图/完整验证包、含数据JAR及新私有Git历史未上传；旧dev18及更早公开下载仍有效。阶段报告中本机相对链接或绝对路径是历史证据位置，不保证公开克隆可取得。PUBLIC-ASSET-SNAPSHOT.json说明当前公开范围；LICENSE/NOTICE保持现有所有权利保留条款。
-
-用户的新任务优先于历史说明。当前公开更新不授权以后新增依赖、迁移真实数据或公开发行受限素材；交接文档本身也不授权自动完成整张路线。
+公开更新继续从干净公开父提交选择性同步，不推送本机整条历史/标签。不要提交真实世界、凭据、缓存、游戏文件、AppleDouble或含私有数据产物。历史规格中的本机包/原源/证据路径只用于解释旧结果，不是公开下载，不为补链接上传受限文件。
