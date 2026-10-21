@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.wildcraft.test.cleanboot.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["NativeCleanBootMixin"],
+  "injectors": {"defaultRequire": 1}
+}

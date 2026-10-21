@@ -16,6 +16,7 @@ import org.spongepowered.asm.mixin.injection.*;
 public abstract class MeleeHandsMixin {
     @Inject(method="submitArmWithItem",at=@At("HEAD"),cancellable=true,order=900)
     private void wildcraft$adoptedSword(PlayerRenderState player,FirstPersonHandsAndItemsRenderState hands,float partial,float pitch,InteractionHand hand,float swing,ItemStack stack,float height,PoseStack poses,SubmitNodeCollector collector,int light,org.spongepowered.asm.mixin.injection.callback.CallbackInfo ci){
+        if(dev.wildcraft.client.animation.rig.FirstPersonHeavy.submit(player.avatarRenderState,hands,hand,poses,collector,light)){ci.cancel();return;}
         if(dev.wildcraft.client.animation.rig.FirstPersonSword.submit(player.avatarRenderState,hands,hand,poses,collector,light))ci.cancel();
     }
 

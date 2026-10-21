@@ -102,8 +102,20 @@ public final class GlidingGameTests {
         Gliding.reset(p, false);
         Gliding.receive(p, GlideInput.OPEN);
         p.setOnGround(true);
+        double airborneStamina = PlayerStamina.get(p).stamina();
         Gliding.tick(p);
-        h.assertFalse(Gliding.active(p), "Landing closes automatically");
+        h.assertTrue(p.onGround() && Gliding.active(p), "Unsupported stale flag does not change native ground or end an authorized glide");
+        h.assertTrue(Math.abs(PlayerStamina.get(p).stamina() - (airborneStamina - Gliding.COST)) < 1e-6,
+                "Continued airborne tick retains the original single fee");
+        BlockPos support = BlockPos.containing(p.getX(), p.getY() - 1, p.getZ());
+        h.assertTrue(h.getLevel().getBlockState(support).isAir(), "Landing fixture begins with actual air under the player");
+        h.getLevel().setBlockAndUpdate(support, net.minecraft.world.level.block.Blocks.STONE.defaultBlockState());
+        h.assertFalse(h.getLevel().noCollision(p, p.getBoundingBox().move(0, -0.01, 0)), "Real block supports the current feet");
+        double landedStamina = PlayerStamina.get(p).stamina();
+        Gliding.tick(p);
+        h.assertFalse(Gliding.active(p), "Actual supported landing closes automatically");
+        h.assertValueEqual(PlayerStamina.get(p).stamina(), landedStamina, "Landed tick charges no glide fee");
+        h.getLevel().removeBlock(support, false);
         p.setOnGround(false);
         p.getAbilities().mayfly = true;
         h.assertFalse(Gliding.eligible(p), "Creative flight keeps its own input");

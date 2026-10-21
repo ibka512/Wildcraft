@@ -14,7 +14,15 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 /** Adopted second-batch geometry; gameplay and node collision remain server-owned. */
 public final class MachineRenderer extends EntityRenderer<MachineEntity, MachineRenderer.State> {
     public static final class State extends EntityRenderState {
-        public float yaw, roll, bottomSpring; public int fans, battery, energy, kinds, active; public long fuel, cooldown; public boolean working; public int preview = -1, ghost, ghostEnergy;
+        public float yaw, roll, bottomSpring, bottomWheelAngle; public int fans, battery, energy, kinds, active; public long fuel, cooldown; public boolean working; public int preview = -1, ghost, ghostEnergy;
+    }
+    private record WheelSample(net.minecraft.world.phys.Vec3 position,float angle){}
+    private final java.util.Map<MachineEntity,WheelSample> wheels=new java.util.WeakHashMap<>();
+    /** Client-only phase from signed rendered displacement; standing still/pause never advances it. */
+    private float wheelAngle(MachineEntity body,float partial){
+        var position=body.getPosition(partial);var previous=wheels.get(body);float angle=previous==null?0:previous.angle;
+        if(previous!=null){var delta=position.subtract(previous.position);if(delta.lengthSqr()<4)angle+=(float)(MachineNodes.rotate(delta,-body.getYRot()).z/.25);}
+        angle=(float)Math.IEEEremainder(angle,Math.PI*2);wheels.put(body,new WheelSample(position,angle));return angle;
     }
     public MachineRenderer(EntityRendererProvider.Context context) { super(context); shadowRadius = .7F; }
     @Override public State createRenderState() { return new State(); }
@@ -24,6 +32,7 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
         for(int n=0;n<6;n++){state.fuel|=(long)body.rocketFuel(n)<<(7*n);state.cooldown|=(long)body.springCooldown(n)<<(6*n);if(body.kind(n)==7&&body.active(n))stabilized=true;}
         state.roll=stabilized||body.onGround()?0:(float)Math.clamp(MachineNodes.rotate(body.getDeltaMovement(),-body.getYRot()).x*18,-6,6);
         state.kinds = body.kinds(); state.yaw = body.getYRot(); state.fans = body.fanMask(); state.battery = body.batteryNode();
+        state.bottomWheelAngle=body.kind(1)==6?wheelAngle(body,partial):0;
         state.energy = body.energy(); state.working = body.working();
         state.preview = MachinePresentation.selectedNode(body);
         state.ghost = MachinePresentation.canPreview(body, state.preview)
@@ -43,9 +52,11 @@ public final class MachineRenderer extends EntityRenderer<MachineEntity, Machine
             String mesh=switch(kind){case 1->"fan";case 2->"battery";case 3->"wing";case 4->!ghost&&fuel==0?"spent_rocket":"rocket";case 5->"spring";case 6->"wheel";case 7->"stabilizer";default->"buoyancy";};
             poses.pushPose();poses.translate(partPoint(n,kind));orient(poses,n);
             float angle=active?(kind==1?state.ageInTicks*.7F:kind==6?state.ageInTicks*.4F:0):0;
+            if(n==1&&kind==6)angle=ghost?0:state.bottomWheelAngle;
             float extension=ghost?0:n==1&&kind==5?state.bottomSpring:cooldown>30?1:0;
-            dev.wildcraft.client.art.ArtMesh.get(BottomArt.part(kind,n,mesh)).submit(poses,collector,state.lightCoords,ghost,angle,extension,active,ghost?state.ghostEnergy:state.energy);
-            if(kind==4&&active&&fuel>0)box(poses,collector,state.lightCoords,-.08F,-.08F,.5F,.08F,.08F,.86F,0xDDFFD58B);
+            var model=dev.wildcraft.client.art.ArtMesh.get(BottomArt.part(kind,n,mesh));
+            model.submit(poses,collector,state.lightCoords,ghost,angle,extension,active,ghost?state.ghostEnergy:state.energy);
+            if(kind==4&&active&&fuel>0){var flame=model.flameBounds();if(flame==null)flame=new float[]{-.08F,-.08F,.5F,.08F,.08F,.86F};box(poses,collector,state.lightCoords,flame[0],flame[1],flame[2],flame[3],flame[4],flame[5],0xDDFFD58B);}
             poses.popPose();
         }
         poses.popPose(); super.submit(state, poses, collector, camera);

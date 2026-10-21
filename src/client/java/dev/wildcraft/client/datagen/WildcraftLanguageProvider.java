@@ -82,6 +82,7 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add("item.wildcraft.stabilizer",chinese?"稳定器":"Stabilizer");
         translations.add("item.wildcraft.buoyancy",chinese?"浮力装置":"Buoyancy device");
         translations.add("machine.wildcraft.fuel",chinese?"燃料 %s / %s 世界刻":"Fuel %s / %s world ticks");
+        translations.add("machine.wildcraft.rocket_burning",chinese?"火箭仍在燃烧":"Rocket still burning");
         translations.add("machine.wildcraft.cooldown",chinese?"复位冷却 %s 世界刻":"Rearm cooldown %s world ticks");
         translations.add("machine.wildcraft.help.wing",chinese?"被动滑翔，需要水平速度；载重越大下降越快":"Passive glide requires speed; greater load descends faster");
         translations.add("machine.wildcraft.help.wheel",chinese?"接地供电驱动；乘坐时W/S前后、A/D转向":"Powered ground drive; ride with W/S and steer with A/D");
@@ -108,8 +109,10 @@ public final class WildcraftLanguageProvider extends FabricLanguageProvider {
         translations.add("machine.wildcraft.body_recovered", chinese ? "空机械主体已回收" : "Empty body recovered");
         translations.add("machine.wildcraft.body_failed", chinese ? "停机、拆空、离开座位，并留出库存空间" : "Switch off, remove parts, leave the seat and make inventory room");
         translations.add("machine.wildcraft.status", chinese ? "机械 · 电量 %s / 1000 · %s" : "Machine \u00b7 charge %s / 1000 \u00b7 %s");
+        translations.add("machine.wildcraft.obstructed", chinese ? "行驶受阻，仍在耗电" : "Blocked; still drawing charge");
+        translations.add("machine.wildcraft.buoyancy_low", chinese ? "浮力不足" : "Insufficient buoyancy");
         translations.add("machine.wildcraft.running", chinese ? "运行中" : "Running");
-        translations.add("machine.wildcraft.waiting", chinese ? "开启 · 无动力" : "On \u00b7 no power");
+        translations.add("machine.wildcraft.waiting", chinese ? "开启 · 待机" : "On \u00b7 idle");
         translations.add("machine.wildcraft.drive_hint", chinese ? "W/S前后 · A/D转向 · %s启停 · 蹲下离开" : "W/S drive · A/D steer · %s toggle · sneak to dismount");
         translations.add("machine.wildcraft.install_hint", chinese ? "右键安装 · 仅创建者可操作" : "Right-click to install \u00b7 creator only");
         translations.add("machine.wildcraft.ground_hint", chinese ? "空手右键乘坐 · 蹲下右键装拆/控制板启停 · 拆空后蹲下攻击回收" : "Empty hand: right-click to ride \u00b7 sneak-click node/panel to remove/toggle \u00b7 sneak-attack empty body to recover");

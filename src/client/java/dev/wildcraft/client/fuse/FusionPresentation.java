@@ -20,7 +20,11 @@ public final class FusionPresentation{
         return out.isEmpty()||!Double.isFinite(size)||size<.001||size>100?FusionFallback.model():out;
     }
     public static void initialize(){
-        ClientTickEvents.START_CLIENT_TICK.register(c -> {var input=dev.wildcraft.client.input.ActionInput.tickFrame();for(int i=0;i<input.clicks(dev.wildcraft.input.Action.FUSE);i++)if(input.gameplay()&&c.player!=null&&ClientPlayNetworking.canSend(FusionIntent.TYPE))ClientPlayNetworking.send(new FusionIntent(input.down(dev.wildcraft.input.Action.SNEAK)));});
+        ClientTickEvents.START_CLIENT_TICK.register(c -> {var input=dev.wildcraft.client.input.ActionInput.tickFrame();for(int i=0;i<input.clicks(dev.wildcraft.input.Action.FUSE);i++)if(input.gameplay()&&c.player!=null&&c.gameMode!=null&&ClientPlayNetworking.canSend(FusionIntent.TYPE)){
+            // Preserve native carried-index packet order before this custom held-item operation.
+            ((dev.wildcraft.mixin.client.CarriedItemAccess)c.gameMode).wildcraft$syncCarriedItem();
+            ClientPlayNetworking.send(new FusionIntent(input.down(dev.wildcraft.input.Action.SNEAK)));
+        }});
         ItemTooltipCallback.EVENT.register((stack,context,flag,lines) -> {var v=stack.get(FusionContent.VIEW);if(v!=null){lines.add(Component.translatable("fuse.wildcraft.tooltip",display(v).getHoverName(),v.uses()).withStyle(v.uses()<=4?net.minecraft.ChatFormatting.GOLD:net.minecraft.ChatFormatting.GRAY));lines.add(Component.translatable("fuse.wildcraft.kind."+v.kind()));if(v.kind()==FusionRules.INACTIVE)lines.add(Component.literal(v.material().toString()));lines.add(Component.translatable("fuse.wildcraft.controls",FUSE.getTranslatedKeyMessage()));}else if(stack.has(FusionContent.WEAR))lines.add(Component.translatable("fuse.wildcraft.material_uses",stack.get(FusionContent.WEAR)).withStyle(stack.get(FusionContent.WEAR)<=4?net.minecraft.ChatFormatting.GOLD:net.minecraft.ChatFormatting.GRAY));else if(FusionItems.host(stack))lines.add(Component.translatable("fuse.wildcraft.controls",FUSE.getTranslatedKeyMessage()));});
     }
 }

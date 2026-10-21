@@ -16,7 +16,7 @@ import java.util.*;
 public final class ArtMesh {
     public record Part(String name,String group,float[][] quads,float[][] extendedQuads){}
     public record Window(int index,float[] from,float[] to){}
-    private record Export(String texture,float[] pivot,Part[] parts,Window[] windows){}
+    private record Export(String texture,float[] pivot,Part[] parts,Window[] windows,float[] rotationAxis,String windowTexture,float[] windowUv,float[] flameBounds){}
     private static final Map<String,ArtMesh> MESHES=new java.util.concurrent.ConcurrentHashMap<>();
     private static final RenderPipeline GHOST_PIPELINE=RenderPipeline.builder(RenderPipelines.ENTITY_SNIPPET).withLocation(Wildcraft.id("pipeline/install_preview"))
         .withShaderDefine("PER_FACE_LIGHTING").withBindGroupLayout(net.minecraft.client.renderer.BindGroupLayouts.SAMPLER1).withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
@@ -35,6 +35,8 @@ public final class ArtMesh {
             return new ArtMesh(new Gson().fromJson(new InputStreamReader(in,StandardCharsets.UTF_8),Export.class));
         }catch(IOException ex){throw new UncheckedIOException(ex);}
     });}
+    /** Optional authored flame envelope in the same local coordinates as the mounted mesh. */
+    public float[] flameBounds(){return data.flameBounds==null?null:data.flameBounds.clone();}
     public int quadCount(){return Arrays.stream(data.parts).mapToInt(p->p.quads.length).sum();}
     /** Bounds of the actual deforming geometry, after a caller's world transform. */
     public net.minecraft.world.phys.AABB movingBounds(org.joml.Matrix4f transform,float extension){
@@ -52,7 +54,7 @@ public final class ArtMesh {
     public void submit(PoseStack poses,SubmitNodeCollector collector,int light,boolean ghost,float angle,float extension,boolean active,int energy){
         for(var part:data.parts){
             poses.pushPose();
-            if(angle!=0&&(part.group.equals("rotor")||part.group.equals("rotating"))){poses.translate(data.pivot[0],data.pivot[1],data.pivot[2]);poses.rotate(com.mojang.math.Axis.ZP,angle);poses.translate(-data.pivot[0],-data.pivot[1],-data.pivot[2]);}
+            if(angle!=0&&(part.group.equals("rotor")||part.group.equals("rotating"))){poses.translate(data.pivot[0],data.pivot[1],data.pivot[2]);if(data.rotationAxis!=null&&data.rotationAxis[0]==1)poses.rotate(com.mojang.math.Axis.XP,angle);else poses.rotate(com.mojang.math.Axis.ZP,angle);poses.translate(-data.pivot[0],-data.pivot[1],-data.pivot[2]);}
             int color=ghost?0x885DD7B7:part.group.equals("indicator")?(active?0xFF8DD5B7:0xFF607775):0xFFFFFFFF;
             var texture=Wildcraft.id("textures/entity/"+(part.group.equals("indicator")?"machine":data.texture)+".png");
             var type=ghost?ghost(part.group.equals("indicator")?"machine":data.texture):RenderTypes.entityCutout(texture);
@@ -66,9 +68,11 @@ public final class ArtMesh {
         if(data.windows!=null)for(var w:data.windows){
             float fraction=(float)Math.clamp(energy/1000.0*3-w.index,0,1);if(fraction<=0)continue;
             float x0=w.from[0],y0=w.from[1],z=w.from[2],x1=w.to[0],y1=y0+(w.to[1]-y0)*fraction;
-            float v0=.75f-.25f*fraction;
-            float[][] q={{x0,y0,z,.375f,.75f,x1,y0,z,.75f,.75f,x1,y1,z,.75f,v0,x0,y1,z,.375f,v0}};
-            geometry(poses,collector,ghost?ghost("battery"):RenderTypes.entityCutout(Wildcraft.id("textures/entity/battery.png")),light,ghost?0x885DD7B7:-1,q,false);
+            float[] uv=data.windowUv==null?new float[]{.375F,.5F,.75F,.75F}:data.windowUv;
+            float v0=uv[3]-(uv[3]-uv[1])*fraction;
+            float[][] q={{x0,y0,z,uv[0],uv[3],x1,y0,z,uv[2],uv[3],x1,y1,z,uv[2],v0,x0,y1,z,uv[0],v0}};
+            String texture=data.windowTexture==null?"battery":data.windowTexture;
+            geometry(poses,collector,ghost?ghost(texture):RenderTypes.entityCutout(Wildcraft.id("textures/entity/"+texture+".png")),light,ghost?0x885DD7B7:-1,q,false);
         }
     }
     private static Vector3f normal(float[] q){var n=new Vector3f(q[5]-q[0],q[6]-q[1],q[7]-q[2]).cross(new Vector3f(q[10]-q[0],q[11]-q[1],q[12]-q[2]));return n.lengthSquared()<1e-12F?n:n.normalize();}

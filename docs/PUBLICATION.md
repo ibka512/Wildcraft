@@ -1,3 +1,5 @@
+> 当前公开快照为dev87-public（2026-10-21），本机正式86/候选87分开。最新范围见[README](../README.md)与[公开交接](../docs/PUBLIC-SNAPSHOT-2026-10-21.md)；下文旧日期/包为历史。
+
 > 2026-10-19公开main已同步dev76-public源码快照f0c50fc，Linux/125服务端通过，macOS公开图形4+1通过；本次没有Release或私有数据上传。详细见[当前交接](PUBLIC-SNAPSHOT-2026-10-19.md)。
 
 > 当前公开更新为dev76-public（2026-10-19），详见[README](../README.md)及公开交接。以下阶段日期/旧下载为历史，私有动画/安装包没有公开。

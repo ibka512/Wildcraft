@@ -6,9 +6,9 @@ import org.joml.Matrix4f;
 /** Approved geometry selection and conservative visual ground clearance; no simulation writes. */
 public final class BottomArt {
     private BottomArt(){}
-    public static String name(int kind){return switch(kind){case 1->"fan";case 3->"wing";case 5->"spring";case 8->"buoyancy";default->null;};}
+    public static String name(int kind){String name=switch(kind){case 1->"fan";case 2->"battery";case 3->"wing";case 4->"rocket";case 5->"spring";case 6->"wheel";case 7->"stabilizer";case 8->"buoyancy";default->null;};return name!=null&&BottomArt.class.getResource("/assets/wildcraft/geometry/"+name+"_bottom.json")!=null&&BottomArt.class.getResource("/assets/wildcraft/geometry/machine_bottom_"+name+".json")!=null?name:null;}
     public static String body(int kind){var name=name(kind);return name==null?"machine":"machine_bottom_"+name;}
-    public static String part(int kind,int node,String legacy){return node==1&&name(kind)!=null?name(kind)+"_bottom":legacy;}
+    public static String part(int kind,int node,String legacy){return node==1&&name(kind)!=null?(kind==4&&legacy.equals("spent_rocket")?"spent_rocket_bottom":name(kind)+"_bottom"):legacy;}
     public static float spring(MachineEntity body,float partial,float roll,boolean requested){
         if(!requested)return 0;
         var position=body.getPosition(partial);var transform=new Matrix4f().rotateY((float)Math.toRadians(-body.getYRot())).rotateZ((float)Math.toRadians(roll)).rotateX((float)Math.PI/2);

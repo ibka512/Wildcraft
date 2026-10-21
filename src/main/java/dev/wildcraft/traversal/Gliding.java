@@ -76,7 +76,11 @@ public final class Gliding {
     }
 
     public static boolean eligible(Player player) {
-        if (!Climbing.eligible(player) || player.onGround() || player.getAbilities().mayfly
+        return eligible(player, player.onGround());
+    }
+
+    private static boolean eligible(Player player, boolean grounded) {
+        if (!Climbing.eligible(player) || grounded || player.getAbilities().mayfly
                 || player.isAutoSpinAttack() || player.hasEffect(MobEffects.LEVITATION)) {
             return false;
         }
@@ -126,7 +130,7 @@ public final class Gliding {
     public static void tick(ServerPlayer player) {
         Session state = session(player);
         if (state.active && (player.level().getGameTime() - state.lastInput > INPUT_TIMEOUT
-                || !intent(player).open() || !eligible(player) || handsChanged(player, state))) {
+                || !intent(player).open() || !eligible(player, supportedGround(player)) || handsChanged(player, state))) {
             state.active = false;
             state.blocked = true;
         }
@@ -139,6 +143,12 @@ public final class Gliding {
             }
         }
         publish(player, state);
+    }
+
+    /** Native server prediction can restore position while leaving its temporary floor-contact flag set. */
+    private static boolean supportedGround(ServerPlayer player) {
+        return player.onGround() && !player.level().noCollision(player,
+                player.getBoundingBox().move(0, -0.01, 0));
     }
 
     public static boolean canPredict(Player player) {

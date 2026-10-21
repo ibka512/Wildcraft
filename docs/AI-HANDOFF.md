@@ -1,12 +1,18 @@
 # Wildcraft 开发接手说明
 
-更新2026-10-19。公开代码版本0.1.0-dev.76-public，来源本机停线1a14a9c5/正式dev76 fc24678e；独立基于公开main c0bf3f7c筛选提交，没有合并私有分支/标签。公开提交SHA以GitHub main与PUBLIC-VALIDATION-dev76.json为准。
+更新2026-10-21。公开源码版本0.1.0-dev.87-public，来源本机b0e0a07a（候选实现10c655d6）；独立基于公开main 48847f62筛选提交，不推送本机历史/标签。本机正式仍dev86/ac3c95c9，候选87未完成最终构建/125与正式归档。公开版本单独验证，不能因此改变本机状态。
 
-## 当前状态与公开区别
+## 当前进度
 
-本机dev63补普通剑击第一人称，dev64–67修复暂停采样并限定验证，dev68–72补披风腰侧，dev73–74补原生鞘翅，dev75–76补空主手副盾DRAW。八类主装备是剑、斧、三叉戟、重锤、七材质原生长矛、主盾、弓、弩；站立静止、其他盔甲空等资格仍有范围限制。
+dev77–82补电池图集、重复居中、浮力不足和受阻提示、火箭80世界刻/弹簧40刻反馈及待机文案；dev83修V融合真实快捷槽同步，84修开伞后迟到DAMAGE同步误收伞，85修原生临时触地标记残留导致过早收伞；86接入四项机械底部本机美术。87候选补第一人称重剑和斧真实皮肤/原生握点及支撑，按原剑12/斧20刻准备、原恢复期采样，不改变12/18精力和原生一次hit/wear/Fuse。
 
-公开包含运行时代码、测试与转换工具，但不带本机每体型401个第三人称/4个第一人称剪辑、七份JSON、原源或含数据JAR。CombatRig与FirstPersonSword资源缺失时回到既有原生路径。公开包后缀-public，不与本机私有包混用名称/哈希/视觉结论。副盾仅真实main Bow正常损坏后同reference恢复到空主手副盾，不能以库存交换、F键或GUI迟到重播制造事件。off STOW/占用main/复杂盔甲/其他正式FP仍未开放。
+本机86九个不同客户端类/241PNG及125、datagen/build通过；候选87八个不同客户端类/288有效PNG，最终datagen/build125尚未执行。失败七类任务和后来观察器修复分开记录，详见FP-HEAVY-AXE-PROGRESS。源资格、实际玩法、人工手感不可互代。
+
+## 公开资源与复现差异
+
+公开保留45用途ID、4底部变体的既有可公开资产与全部最新相关源码。玩家源/派生动画、四项新机械底部源/9份派生几何均未公开。CombatRig、FirstPersonSword和FirstPersonHeavy缺资源时回到已有表现；公开专用BottomArt.name仅在部件与主体凹舱资源都存在时启用对应底部变体，否则沿旧主体/部件。该防崩回退是公开副本的唯一生产Java适配，本机原工程保持。不得把公开构建或截图当作本机源动画验收。
+
+要复现私有画面，先取得各资源与使用许可：旧动画转换入口在tools/import-player-combat-art.py和tools/import-first-person-sword.py；候选新动作见tools/import-first-person-heavy-axe.py（标准库），机械见tools/import-bottom-additions.py。两份本机采用补充记录在art/reviews/2026-10-21，仅含范围/路径/哈希，不含源数据或新分发许可。其余11组FP和2反手弓未采用。不能用空JSON、参考装备或程序姿态冒称正式资产。公开隐私检查故意拒绝这些私有目录；需要本机复现时使用隔离私有工作副本。
 
 ## 已确认行为
 
@@ -35,7 +41,7 @@
 
 ## 构建与复现
 
-使用锁定JDK25与Wrapper，顺序执行：
+锁定Minecraft26.3、JDK25、Loader0.19.5、API0.161.0+26.3、Loom1.18.2、Gradle9.7.1。按以下顺序，数据生成与build分开执行：
 
 ```sh
 python3 tools/verify-public-snapshot.py
@@ -46,18 +52,16 @@ git diff --exit-code -- src/main/generated
 python3 tools/verify-public-snapshot.py --artifacts
 ```
 
-macOS可用dev.sh；个人配置与缓存路径无需复制原开发机。build包含125项服务端测试，test NO-SOURCE不算通过。独立runGameTest需操作者自行接受EULA后显式传acceptMinecraftEula。图形检查可运行runCoreArtClientTest，以及runFirstPersonSwordClientTest -PfirstPersonSwordFallback=true检查缺资源回退。普通实例只安装主JAR与已有Fabric API，不能安装测试/源码JAR。
+macOS可用dev.sh，设置自己的JDK/APFS缓存即可，不必复制原开发机环境。build执行125服务端检查；test NO-SOURCE不是测试通过。需要EULA的操作者自行接受后显式传-PacceptMinecraftEula=true，旧操作者授权不适用于其他人。
 
-需要私有动画的Rig专项无法在纯公开克隆复现，属于缺必要资源而非已通过。先取得具体素材与许可，再按当前转换工具和规格配置；不能用空JSON、虚拟姿态或复制旧图冒充。runC7NativeRenderBaseline默认指向本机历史dev62冻结包，不适合裸公开克隆直接运行；可通过c7PerformanceMainJar指定自己构建的主JAR、c7PerformanceFixture提供自动生成的可弃世界、c7PerformanceRunDir指定全新隔离目录，严禁传个人世界。普通客户端探针没有fabric.client.gametest，提供原料不代表人工生存。
+公开图形专项可运行runCoreArtClientTest及runFirstPersonSwordClientTest -PfirstPersonSwordFallback=true。新增公开专用回退专项同时检查无heavy/axe动画时仍有原生持物臂，以及四项缺失底部资源下的真实节点预览、安装、回收。其他需要私有源的Rig专项不能在纯公开克隆直接声称通过。
 
-## 验证事实与下一步
+普通客户端探针runC7NativeRenderBaseline/runC7NativeIndustryBaseline等默认可能指向原开发机的冻结JAR/自动生成世界。使用前读build.gradle和相应规格，通过c7PerformanceMainJar等参数明确传自己构建的包、全新隔离目录与可弃测试世界；严禁传真实存档。脚本提供原料不代表人工从零生存。
 
-[当前公开验证](PUBLIC-SNAPSHOT-2026-10-19.md)与[机器回执](PUBLIC-VALIDATION-dev76.json)记录本次真正执行内容；本机530图/125与历史full48分开。普通客户端短测、120/10FPS有限驾驶和逐帧窗口检查见C7-DEV76两份验收；其中新guard低FPS未跑，长期性能/自然地形/人工平衡未完成。
+## 接续与验收边界
 
-下一开发从C7驾驶窗口低FPS验证、受控地形/转向与单人生存试玩开始；此公开同步任务本身不授权新增玩法、生产依赖、数据迁移或未来公开发布。先读实际任务及AGENTS，不把旧阶段全路线当本轮执行指令。原生伤害/库存/物理/费用/use/block/wear/Fuse和技能时长保留，不为动画改结算；不擅自开放复杂盔甲/副盾STOW或采用待审13FP/另6项。
+[公开执行记录](PUBLIC-SNAPSHOT-2026-10-21.md)与[机器回执](PUBLIC-VALIDATION-dev87.json)只记录本次实际执行；历史本机报告开头注明身份。旧前台六场性能资格已因锁屏SDL反例撤回，没有解锁正例，不得继续引用为前台/长期性能通过。人工生存表仍空，不填写虚构体验。
 
-## 美术与许可
+下一开发先补候选87最终datagen/build125/源码与包核对，再正式本机归档；稳定客户端结果无变化不重跑。更多材质/袖子/FOV、复杂中断、11FP、2反手弓、副盾STOW/复杂盔甲和C6整体、自然生存/长期性能未完。当前自动任务暂停，本次GitHub同步不自行恢复开发或调度。
 
-可公开用途台账仍见art/ADOPTED-ASSETS；[最新目录状态](../art/RUNTIME-STATUS-2026-10-19.md)和JSON登记96目录条目、90有限运行用途与6参考条目。它们不是96模型，也不保证全部剪辑启用。项目原LICENSE/NOTICE保持，没有擅自改MIT/CC0；公开源码不授权受限动画再分发。
-
-公开更新继续从干净公开父提交选择性同步，不推送本机整条历史/标签。不要提交真实世界、凭据、缓存、游戏文件、AppleDouble或含私有数据产物。历史规格中的本机包/原源/证据路径只用于解释旧结果，不是公开下载，不为补链接上传受限文件。
+公开更新使用干净公开父提交选择性同步，不能推送私有分支历史或标签。保留原生物理/库存/伤害/费用/计时/use/block/wear/Fuse；新生产依赖、真实数据迁移、发布等仍需要对应明确授权。LICENSE/NOTICE保持原有权利边界，公开源码不自动许可私有美术再分发。

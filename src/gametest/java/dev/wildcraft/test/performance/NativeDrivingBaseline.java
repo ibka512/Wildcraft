@@ -22,11 +22,16 @@ import net.minecraft.world.phys.*;
 /** Normal 20 TPS, provided assemblies, actual client riding/toggle/forward/dismount inputs. No manual balance claim. */
 public final class NativeDrivingBaseline {
     private record State(boolean riding, boolean enabled, boolean working, int energy, long ticks, boolean forward, double z) { }
-    private static final List<Map<String,Object>> RESULTS=new ArrayList<>();
+    private static final boolean NATURAL=Boolean.getBoolean("wildcraft.c7.naturalDriving");
+    private static final List<Map<String,Object>> RESULTS=new ArrayList<>(),TERRAIN_ROWS=new ArrayList<>();
     private static final List<Long> FRAME_INTERVALS=new ArrayList<>();
     private static final Map<String,Integer> VIEWPORT_FRAMES=new LinkedHashMap<>();
     private static String requiredViewport;
-    private static boolean resizeProbeTriggered;
+    private static boolean resizeProbeTriggered,obstructionShot;
+    private static volatile int obstructedFrames;
+    private static final StringBuilder HUD_RED=new StringBuilder();
+    /** Actual styled font fragments from the mounted machine HUD, never a text helper assertion. */
+    public static void hudLine(net.minecraft.util.FormattedCharSequence text){if(!NATURAL||phase!=5)return;var c=Minecraft.getInstance();if(c.player==null||body==null||!(c.player.getVehicle() instanceof MachineEntity m)||m.getId()!=body.getId())return;text.accept((at,style,point)->{if(net.minecraft.network.chat.TextColor.RED.equals(style.getColor()))HUD_RED.appendCodePoint(point);return true;});}
     private static CompletableFuture<State> pending;
     private static MachineEntity body;
     private static int phase,index,releaseTick,paidTicks,lastEnergy,paidEnergy;
@@ -51,14 +56,16 @@ public final class NativeDrivingBaseline {
         check(debit==0||debit==cost,"Each ordinary machine tick pays its original exact cost, never a test refill: "+debit);
         if(debit>0){paidEnergy+=debit;DEBITS.merge(debit,1,Integer::sum);if(paidTicks++==0){firstPaidAt=now;firstPaidTick=s.overworld().getGameTime();}lastPaidAt=now;lastPaidTick=s.overworld().getGameTime();pathAtLastPaid=path;}
         lastEnergy=energy;
+        if(NATURAL){var row=new LinkedHashMap<String,Object>();row.put("tick",s.overworld().getGameTime());row.put("x",body.getX());row.put("y",body.getY());row.put("z",body.getZ());row.put("ground",body.onGround());row.put("collision",body.horizontalCollision);row.put("energy",energy);row.put("debit",debit);row.put("activeCost",cost);row.put("supportBlock",net.minecraft.core.registries.BuiltInRegistries.BLOCK.getKey(s.overworld().getBlockState(body.blockPosition().below()).getBlock()).toString());TERRAIN_ROWS.add(row);}
         if(firstPaidAt!=0&&path>=50&&at50==null)at50=milestone(now);
         if(firstPaidAt!=0&&path>=100&&at100==null)at100=milestone(now);
     }
     private static void key(KeyMapping binding){binding.setDown(true);KeyMapping.click(InputConstants.getKey(binding.saveString()));}
     private static void shot(Minecraft c,String suffix){Screenshot.grab(c.gameDirectory,"c7-native-drive-"+index+"-"+suffix+".png",c.gameRenderer.mainRenderTarget(),1,m->System.out.println(m.getString()));}
-    private static void write(Minecraft c,String status,String message){try{Files.writeString(c.gameDirectory.toPath().resolve("c7-native-driving-baseline.json"),new GsonBuilder().setPrettyPrinting().create().toJson(Map.of("status",status,"message",message,"acceleratedGameTest",false,"providedAssemblyFixture",true,"manualBalanceVerified",false,"scenes",RESULTS,"requiredViewport",String.valueOf(requiredViewport),"viewportFrames",new LinkedHashMap<>(VIEWPORT_FRAMES)))+"\n");}catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}}
+    private static void write(Minecraft c,String status,String message){try{Files.writeString(c.gameDirectory.toPath().resolve("c7-native-driving-baseline.json"),new GsonBuilder().setPrettyPrinting().create().toJson(Map.of("status",status,"message",message,"acceleratedGameTest",false,"providedAssemblyFixture",true,"normalGeneratedTerrain",NATURAL,"terrainChangedByProbe",!NATURAL,"manualBalanceVerified",false,"scenes",RESULTS,"requiredViewport",String.valueOf(requiredViewport),"viewportFrames",new LinkedHashMap<>(VIEWPORT_FRAMES)))+"\n");}catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}}
     public static void frame(Minecraft c){
         if(!Boolean.getBoolean("wildcraft.c7.driveBaseline"))return;
+        String warning=net.minecraft.network.chat.Component.translatable("machine.wildcraft.obstructed").getString().replaceAll("\\s","");if(HUD_RED.toString().replaceAll("\\s","").contains(warning))obstructedFrames++;HUD_RED.setLength(0);
         long now=System.nanoTime();if(boot==0)boot=now;
         c.options.pauseOnLostFocus=false;
         try{
@@ -72,15 +79,16 @@ public final class NativeDrivingBaseline {
                 pending=submit(server,()->{
                     check(server.tickRateManager().tickrate()==20&&!server.isPaused(),"Original normal 20 TPS");
                     var p=server.getPlayerList().getPlayers().getFirst();p.stopRiding();if(body!=null)body.discard();body=null;
-                    if(index==0)for(int x=-4;x<=4;x++)for(int z=-5;z<=265;z++)server.overworld().setBlockAndUpdate(new BlockPos(x,119,z),Blocks.STONE.defaultBlockState());
-                    p.setGameMode(GameType.SURVIVAL);p.getInventory().clearContent();p.teleportTo(server.overworld(),.5,120,.5,Set.of(),0,0,true);p.setDeltaMovement(Vec3.ZERO);
+                    if(index==0&&!NATURAL)for(int x=-4;x<=4;x++)for(int z=-5;z<=265;z++)server.overworld().setBlockAndUpdate(new BlockPos(x,119,z),Blocks.STONE.defaultBlockState());
+                    if(NATURAL){check(server.overworld().getSeed()==1&&!server.overworld().getChunkSource().getGenerator().getClass().getSimpleName().contains("Flat"),"Use only known generated acquisition fixture");check(server.overworld().getBlockState(new BlockPos(164,70,158)).isAir()&&server.overworld().getBlockState(new BlockPos(166,70,158)).is(Blocks.CRAFTING_TABLE),"Actual previously acquired tree/table fixture remains");}
+                    p.setGameMode(GameType.SURVIVAL);p.getInventory().clearContent();p.teleportTo(server.overworld(),NATURAL?164.5:.5,NATURAL?70:120,NATURAL?156.7:.5,Set.of(),0,0,true);p.setDeltaMovement(Vec3.ZERO);
                     var carried=new ItemStack(EnergyContent.BATTERY);Batteries.charge(carried,617);p.getInventory().setItem(9,carried);
-                    body=MechanicsContent.MACHINE.create(server.overworld(),EntitySpawnReason.COMMAND);check(body!=null,"Body created");body.setPos(.5,120,2.5);body.setYRot(0);body.setOwner(p.getUUID());server.overworld().addFreshEntity(body);
+                    body=MechanicsContent.MACHINE.create(server.overworld(),EntitySpawnReason.COMMAND);check(body!=null,"Body created");body.setPos(NATURAL?164.5:.5,NATURAL?70:120,NATURAL?158.5:2.5);body.setYRot(0);body.setOwner(p.getUUID());server.overworld().addFreshEntity(body);
                     var battery=new ItemStack(EnergyContent.BATTERY);Batteries.charge(battery,1000);p.setItemInHand(InteractionHand.MAIN_HAND,battery);check(body.install(p,0,InteractionHand.MAIN_HAND),"Provided full battery transferred once");
                     for(int node:new int[]{4,5}){p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.WHEEL));check(body.install(p,node,InteractionHand.MAIN_HAND),"Provided real wheel installed");}
                     if(index==1){p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.FAN));check(body.install(p,2,InteractionHand.MAIN_HAND),"Provided fan");p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(MechanicsContent.STABILIZER));check(body.install(p,1,InteractionHand.MAIN_HAND),"Provided stabilizer");}
                     p.setItemInHand(InteractionHand.MAIN_HAND,ItemStack.EMPTY);p.inventoryMenu.broadcastChanges();
-                    paidTicks=paidEnergy=0;DEBITS.clear();lastEnergy=1000;path=pathAtLastPaid=0;firstPaidAt=lastPaidAt=0;at50=at100=null;origin=previousPosition=body.position();return state(server);
+                    obstructedFrames=0;obstructionShot=false;paidTicks=paidEnergy=0;DEBITS.clear();TERRAIN_ROWS.clear();lastEnergy=1000;path=pathAtLastPaid=0;firstPaidAt=lastPaidAt=0;at50=at100=null;origin=previousPosition=body.position();return state(server);
                 });phase=1;
             }else if(phase==1&&pending.isDone()){
                 pending.join();deadline=now+5_000_000_000L;phase=2;
@@ -99,6 +107,7 @@ public final class NativeDrivingBaseline {
                 VIEWPORT_FRAMES.merge(c.getWindow().getWidth()+"x"+c.getWindow().getHeight(),1,Integer::sum);
                 check(VIEWPORT_FRAMES.keySet().equals(Set.of(requiredViewport)),"Viewport changed during native driving; incomparable FPS: required="+requiredViewport+", observed="+VIEWPORT_FRAMES);
                 if(Boolean.getBoolean("wildcraft.c7.viewportChangeProbe")&&!resizeProbeTriggered&&now-driveStarted>1_000_000_000L){resizeProbeTriggered=true;c.getWindow().setWindowed(900,600);}
+                if(!obstructionShot&&obstructedFrames>2){obstructionShot=true;shot(c,"native-obstructed");}
                 FRAME_INTERVALS.add(now-lastFrame);lastFrame=now;if(c.player.tickCount>=releaseTick)MachinePresentation.TOGGLE.setDown(false);
                 check(c.getFramerateLimitTracker().getThrottleReason().name().equals("NONE"),"Driving sampling is never AFK/window-throttled");
                 // Only a completed server snapshot determines depletion.
@@ -109,7 +118,7 @@ public final class NativeDrivingBaseline {
                     int cost=index==0?2:5;check(paidTicks>0&&paidEnergy==1000-body.energy()&&body.energy()<cost&&!body.working(),"Original finite battery conserves every actual debit, including a possible sub-cost remainder");
                     if(index==0)check(paidTicks==500&&body.energy()==0,"Uninterrupted two-wheel input pays exactly500 native two-energy ticks");
                     var p=server.getPlayerList().getPlayers().getFirst();check(p.getVehicle()==body&&Batteries.energy(p.getInventory().getItem(9))==617,"Native rider and untouched separate carried battery");
-                    var r=new LinkedHashMap<String,Object>();r.put("assembly",index==0?"two wheels + battery":"two wheels + fan + stabilizer + battery");r.put("steadyForwardCostPerWorldTick",cost);r.put("actualDebitDistribution",new LinkedHashMap<>(DEBITS));r.put("paidEnergy",paidEnergy);r.put("paidWorldTicks",paidTicks);r.put("firstToLastPaidWorldTicks",lastPaidTick-firstPaidTick);r.put("firstToLastPaidSeconds",(lastPaidAt-firstPaidAt)/1e9);r.put("measuredPaidWorldTPS",(lastPaidTick-firstPaidTick)/((lastPaidAt-firstPaidAt)/1e9));r.put("pathBlocksAtLastPaidTick",pathAtLastPaid);r.put("pathBlocksAtDepletionObservation",path);r.put("unpoweredCoastBlocksBeforeObservation",path-pathAtLastPaid);r.put("straightBlocksAtDepletion",Math.sqrt(body.position().subtract(origin).horizontalDistanceSqr()));r.put("energyAtDepletion",body.energy());r.put("carriedBattery",617);r.put("at50Blocks",at50==null?Map.of("reached",false):at50);r.put("at100Blocks",at100==null?Map.of("reached",false):at100);RESULTS.add(r);return state(server);
+                    var r=new LinkedHashMap<String,Object>();if(NATURAL){r.put("naturalTerrainRows",new ArrayList<>(TERRAIN_ROWS));r.put("renderedObstructionFrames",obstructedFrames);if(Boolean.getBoolean("wildcraft.c7.drivingUIRequired")){check(TERRAIN_ROWS.stream().filter(q->Boolean.TRUE.equals(q.get("collision"))).count()>20,"Real generated terrain obstruction observed");check(obstructedFrames>2,"Actual obstructed machine HUD lacks rendered charge warning");}}r.put("assembly",index==0?"two wheels + battery":"two wheels + fan + stabilizer + battery");r.put("steadyForwardCostPerWorldTick",cost);r.put("actualDebitDistribution",new LinkedHashMap<>(DEBITS));r.put("paidEnergy",paidEnergy);r.put("paidWorldTicks",paidTicks);r.put("firstToLastPaidWorldTicks",lastPaidTick-firstPaidTick);r.put("firstToLastPaidSeconds",(lastPaidAt-firstPaidAt)/1e9);r.put("measuredPaidWorldTPS",(lastPaidTick-firstPaidTick)/((lastPaidAt-firstPaidAt)/1e9));r.put("pathBlocksAtLastPaidTick",pathAtLastPaid);r.put("pathBlocksAtDepletionObservation",path);r.put("unpoweredCoastBlocksBeforeObservation",path-pathAtLastPaid);r.put("straightBlocksAtDepletion",Math.sqrt(body.position().subtract(origin).horizontalDistanceSqr()));r.put("energyAtDepletion",body.energy());r.put("carriedBattery",617);r.put("at50Blocks",at50==null?Map.of("reached",false):at50);r.put("at100Blocks",at100==null?Map.of("reached",false):at100);RESULTS.add(r);return state(server);
                 });phase=6;}else pending=submit(server,()->state(server));}
             }else if(phase==6&&pending.isDone()){
                 var s=pending.join();var sorted=FRAME_INTERVALS.stream().mapToLong(Long::longValue).sorted().toArray();var r=RESULTS.getLast();check(VIEWPORT_FRAMES.values().stream().mapToInt(Integer::intValue).sum()==FRAME_INTERVALS.size(),"Every driving sample has a true viewport observation");r.put("viewportFrames",new LinkedHashMap<>(VIEWPORT_FRAMES));r.put("measuredFrames",FRAME_INTERVALS.size());r.put("cycleMedianMs",sorted[sorted.length/2]/1e6);r.put("cycleP95Ms",sorted[(int)((sorted.length-1)*.95)]/1e6);r.put("reportedFPSAtDepletion",c.getFps());r.put("configuredFrameLimit",c.options.framerateLimit().get());r.put("actualRenderDistance",c.options.renderDistance().get());r.put("pixelWidth",c.getWindow().getWidth());r.put("pixelHeight",c.getWindow().getHeight());shot(c,"finite-depleted");
@@ -118,8 +127,8 @@ public final class NativeDrivingBaseline {
             }else if(phase==8&&c.player.tickCount>=releaseTick){c.options.keyShift.setDown(false);if(c.player.getVehicle()!=null)return;
                 pending=submit(server,()->{check(!body.enabled()&&!body.working(),"Actual native R disables depleted assembly");check(Batteries.energy(server.getPlayerList().getPlayers().getFirst().getInventory().getItem(9))==617,"Stop/dismount cannot debit carried battery");return state(server);});phase=9;
             }else if(phase==9&&pending.isDone()){
-                pending.join();System.out.println("C7 NATIVE DRIVE "+RESULTS.getLast());shot(c,"native-stopped-dismounted");
-                if(++index==2){write(c,"complete","Two native real-time finite-assembly runs; API-provided installations, not manual survival or long-term performance");phase=10;c.stop();}else phase=0;
+                pending.join();System.out.println("C7 NATIVE DRIVE scene="+index+" result="+(NATURAL?RESULTS.getLast().entrySet().stream().filter(e->!e.getKey().equals("naturalTerrainRows")).toList():RESULTS.getLast()));shot(c,"native-stopped-dismounted");
+                if(++index==2){write(c,"complete",NATURAL?"Normal generated terrain finite driving; provided machines, not manual acquisition or all terrain qualification":"Two native real-time finite-assembly runs; API-provided installations, not manual survival or long-term performance");phase=10;c.stop();}else phase=0;
             }
         }catch(RuntimeException|AssertionError e){c.options.keyUp.setDown(false);c.options.keyUse.setDown(false);c.options.keyShift.setDown(false);MachinePresentation.TOGGLE.setDown(false);shot(c,"failure-phase-"+phase);write(c,"failed",e.toString());throw e;}
     }

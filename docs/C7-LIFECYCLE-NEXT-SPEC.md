@@ -1,3 +1,5 @@
+> 本机阶段记录；截图、世界、源稿和含私有数据包未公开。本文是历史结果，不是本次公开克隆的执行回执。
+
 # C7 单人数据与退出的组合验证准备
 
 2026-10-15。前置为C6AN共享观察器full48真实clean完成；当前只是准备，不认定C7完成。已验收正式本机版本dev62保持。现有PlayerStamina/GliderEquipment/CookingEffects/Fuse/Battery及BackEquipment的原生保存、死亡、维度专项已存在，不重复建立镜像codec测试；下一补同一玩家组合对象与短暂操作状态同时变化时的守恒。

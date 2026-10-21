@@ -1,19 +1,30 @@
 {
-  "date": "2026-10-19",
-  "publicVersion": "0.1.0-dev.76-public",
-  "localSourceCheckpoint": "1a14a9c5",
-  "localFormalVersion": "0.1.0-dev.76",
-  "localFormalSource": "fc24678e",
-  "privateAnimationDataIncluded": false,
-  "publicVerification": "docs/PUBLIC-VALIDATION-dev76.json",
-  "handoff": "docs/AI-HANDOFF.md",
-  "assetStatus": "art/RUNTIME-STATUS-2026-10-19.json",
-  "nextDevelopment": "C7 viewport lowFPS/controlled terrain-turning/manual survival; preserve native mechanics",
-  "uncompleted": [
-    "offshield STOW and occupied-main source",
-    "complex armor",
-    "other formal first-person",
-    "C6 entire scope",
-    "C7 natural acquisition/balance/long-term performance"
+  "updatedAtLocal": "2026-10-21",
+  "publicVersion": "0.1.0-dev.87-public",
+  "publicBase": "48847f62df6339a4604d73919154b267e9a6f08d",
+  "sourceCheckpoint": "b0e0a07aa3d073afe190fd4aa285e05cb29e5e1f",
+  "localFormal": {
+    "version": "0.1.0-dev.86",
+    "source": "ac3c95c92909fb2a765c85a1a947e2cc225df7c7",
+    "localOnly": true
+  },
+  "localCandidate": {
+    "version": "0.1.0-dev.87",
+    "implementation": "10c655d6",
+    "clientClasses": 8,
+    "usablePNGs": 288,
+    "finalBuild125Pending": true
+  },
+  "privateDataIncluded": false,
+  "publicOnlyProductionAdapter": "BottomArt.name missing geometry fallback",
+  "verification": "docs/PUBLIC-VALIDATION-dev87.json",
+  "assetStatus": "art/RUNTIME-STATUS-2026-10-21.json",
+  "automation": "PAUSED",
+  "next": "Finish local candidate87 datagen/build125/archive after separate development resume",
+  "incomplete": [
+    "C6 whole scope",
+    "11 FP and 2 opposite-hand bows",
+    "manual survival",
+    "foreground/long-term performance"
   ]
 }

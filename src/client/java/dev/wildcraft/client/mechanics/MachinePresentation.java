@@ -45,8 +45,23 @@ public final class MachinePresentation {
             Component label = Component.translatable("machine.wildcraft.status", body.batteryNode()<0?"—":Integer.toString(body.energy()), body.enabled()
                     ? Component.translatable(body.working() ? "machine.wildcraft.running" : "machine.wildcraft.waiting")
                     : Component.translatable("machine.wildcraft.off"));
-            if(node>=0 && body.kind(node)==4) label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.fuel",body.rocketFuel(node),RocketData.DURATION));
-            if(node>=0 && body.kind(node)==5) label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.cooldown",body.springCooldown(node)));
+            int floats=0;for(int n=0;n<6;n++)if(body.kind(n)==8)floats++;
+            if(floats>0&&body.mass()>MachineEntity.BUOYANCY_PER_FLOAT*floats)
+                label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.buoyancy_low").withColor(net.minecraft.network.chat.TextColor.RED));
+            if(body.obstructed())label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.obstructed").withColor(net.minecraft.network.chat.TextColor.RED));
+            if(p.getVehicle()==body){
+                int fuel=0,rockets=0,cooldown=0;boolean burning=false;
+                for(int n=0;n<MachineNodes.COUNT;n++){
+                    if(body.kind(n)==4){rockets++;fuel+=body.rocketFuel(n);burning|=body.active(n)&&body.rocketFuel(n)>0;}
+                    if(body.kind(n)==5)cooldown=Math.max(cooldown,body.springCooldown(n));
+                }
+                if(rockets>0)label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.fuel",fuel,RocketData.DURATION*rockets));
+                if(!body.enabled()&&burning)label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.rocket_burning").withColor(net.minecraft.network.chat.TextColor.RED));
+                if(cooldown>0)label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.cooldown",cooldown));
+            }else{
+                if(node>=0 && body.kind(node)==4)label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.fuel",body.rocketFuel(node),RocketData.DURATION));
+                if(node>=0 && body.kind(node)==5)label=label.copy().append(" · ").append(Component.translatable("machine.wildcraft.cooldown",body.springCooldown(node)));
+            }
             Component hint = Component.translatable("machine.wildcraft." + help, TOGGLE.getTranslatedKeyMessage());
             if (node >= 0) hint = Component.translatable("machine.wildcraft.node_hint", Component.translatable("machine.wildcraft.node." + node), hint);
             Component part=node<0||body.kind(node)==0?Component.translatable("machine.wildcraft.empty_node"):Component.translatable("item.wildcraft."+switch(body.kind(node)){case 1->"fan";case 2->"battery";case 3->"wing";case 4->body.rocketFuel(node)==0?"spent_rocket":"rocket";case 5->"spring";case 6->"wheel";case 7->"stabilizer";case 8->"buoyancy";default->"machine_body";});

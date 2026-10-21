@@ -1,3 +1,5 @@
+> 当前公开快照为dev87-public（2026-10-21），本机正式86/候选87分开。最新范围见[README](../README.md)与[公开交接](../docs/PUBLIC-SNAPSHOT-2026-10-21.md)；下文旧日期/包为历史。
+
 > 2026-10-15：main源码已整理到0.1.0-dev.62-public，可公开资产为45个用途ID、4底部变体。下文dev18及更早Release均为保留的历史下载。当前源码可通过仓库Code下载，构建产物见Actions；私有dev62含动画安装包没有上传。最新状态见[README](../README.md)和[公开快照](PUBLIC-SNAPSHOT-2026-10-15.md)。
 
 # 游戏资产与完整交接下载

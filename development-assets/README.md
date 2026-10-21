@@ -1,3 +1,5 @@
+> 当前公开快照为dev87-public（2026-10-21），本机正式86/候选87分开。最新范围见[README](../README.md)与[公开交接](../docs/PUBLIC-SNAPSHOT-2026-10-21.md)；下文旧日期/包为历史。
+
 > 当前公开更新为dev76-public（2026-10-19），详见[README](../README.md)及公开交接。以下阶段日期/旧下载为历史，私有动画/安装包没有公开。
 
 > 2026-10-15：本目录保留早期已公开的历史交付，不新增本机受限JAR、验证图集或源ZIP。最新可公开代码与资产在仓库src/art/docs；版本0.1.0-dev.62-public，说明见根README与docs/PUBLIC-SNAPSHOT-2026-10-15.md。

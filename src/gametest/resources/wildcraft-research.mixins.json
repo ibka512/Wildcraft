@@ -53,7 +53,10 @@
     "SwordWaistCapeAuditMixin",
     "SwordWaistItemAuditMixin",
     "WingsWaistScopeMixin",
-    "WingsWaistPoseMixin"
+    "WingsWaistPoseMixin",
+    "BatteryPoseAuditMixin",
+    "BatteryPoseGeometryMixin",
+    "FirstPersonHeavyAuditMixin"
   ],
   "injectors": {
     "defaultRequire": 1

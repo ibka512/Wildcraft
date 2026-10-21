@@ -620,7 +620,7 @@
         },
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
-          "sha256": "15320ecb62316428a5aa1483783cf5470239ea9cb697d7d5357b9af75017f02b"
+          "sha256": "98c479c820536c00b209fe42a0cf8a0054192f2f8197d15c019228a4dd93ec96"
         }
       ]
     },
@@ -643,7 +643,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
-          "sha256": "15320ecb62316428a5aa1483783cf5470239ea9cb697d7d5357b9af75017f02b"
+          "sha256": "98c479c820536c00b209fe42a0cf8a0054192f2f8197d15c019228a4dd93ec96"
         },
         {
           "path": "src/client/java/dev/wildcraft/mixin/client/FusionSlotMarkMixin.java",
@@ -670,7 +670,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/fuse/FusionPresentation.java",
-          "sha256": "15320ecb62316428a5aa1483783cf5470239ea9cb697d7d5357b9af75017f02b"
+          "sha256": "98c479c820536c00b209fe42a0cf8a0054192f2f8197d15c019228a4dd93ec96"
         },
         {
           "path": "src/main/resources/assets/wildcraft/textures/gui/fuse-status.png",
@@ -724,7 +724,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/art/BatteryItemRenderer.java",
-          "sha256": "84b9f000fdd2ab1d7a7248b74e8338170c36e2fed64b0e0a1d50afc4a0bc40ab"
+          "sha256": "61e6b517fa991ad3fbf3401d3e4a8951cba07e0c19097193b5523153aa9a0475"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/battery_item.json",
@@ -852,7 +852,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
+          "sha256": "dccb867377ec99026a25533f25be51e92ab1efc76c45cd6a60e3d98bbfc056ec"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/machine.json",
@@ -1026,7 +1026,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
+          "sha256": "dccb867377ec99026a25533f25be51e92ab1efc76c45cd6a60e3d98bbfc056ec"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/battery.json",
@@ -1100,7 +1100,7 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
+          "sha256": "dccb867377ec99026a25533f25be51e92ab1efc76c45cd6a60e3d98bbfc056ec"
         },
         {
           "path": "src/main/resources/assets/wildcraft/geometry/wheel.json",
@@ -1205,11 +1205,11 @@
       "runtime_files": [
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachinePresentation.java",
-          "sha256": "1d86dc22cd3b940d709af0fcfde3278365a8d2b2fdac2fdaec0e828fb7dbcad7"
+          "sha256": "1bf016a0dbbf8d4d6bde4d110234f69a20ca20baee864751e3e26493edb0969b"
         },
         {
           "path": "src/client/java/dev/wildcraft/client/mechanics/MachineRenderer.java",
-          "sha256": "0594c5f032b5133100259e235ec74edb9a14dfd12da5727150d5a671c856ebac"
+          "sha256": "dccb867377ec99026a25533f25be51e92ab1efc76c45cd6a60e3d98bbfc056ec"
         }
       ]
     },

@@ -62,7 +62,7 @@ public final class FirstPersonSwordClientTest implements FabricClientGameTest {
             }
             // Occupied unrelated hand and strong attacks retain the previous presentation.
             equip(w,target.get(),Items.TORCH,HumanoidArm.RIGHT);c.waitTicks(35);c.runOnClient(v->FirstPersonSwordAudit.begin());tap(c);c.waitTicks(8);check(c.computeOnClient(v->FirstPersonSwordAudit.arms==0&&v.player.getOffhandItem().is(Items.TORCH)),"Torch ownership/fallback");
-            equip(w,target.get(),null,HumanoidArm.RIGHT);c.waitTicks(35);c.runOnClient(v->FirstPersonSwordAudit.begin());c.getInput().holdKey(v->v.keyAttack);c.waitFor(v->MeleeActions.view(v.player).phase()==MeleeView.CHARGE&&MeleeActions.view(v.player).age()>=12);c.getInput().releaseKey(v->v.keyAttack);c.waitTicks(13);check(c.computeOnClient(v->FirstPersonSwordAudit.arms==0),"Charged sword retains old path");
+            equip(w,target.get(),null,HumanoidArm.RIGHT);c.waitTicks(35);c.runOnClient(v->FirstPersonSwordAudit.begin());c.getInput().holdKey(v->v.keyAttack);c.waitFor(v->MeleeActions.view(v.player).phase()==MeleeView.CHARGE&&MeleeActions.view(v.player).age()>=12);c.getInput().releaseKey(v->v.keyAttack);c.waitTicks(13);check(c.computeOnClient(v->FirstPersonSwordAudit.arms>0&&FirstPersonSwordAudit.clip.startsWith("release_")),"Charged sword now uses locally adopted heavy release; ordinary A remains independent");
             }
             // Slow native ticks give a reproducible pause/GUI exit while the actual swing remains active.
             equip(w,target.get(),null,HumanoidArm.RIGHT);c.waitTicks(35);w.getServer().runCommand("tick rate 5");c.runOnClient(v->{v.options.framerateLimit().set(10);FirstPersonSwordAudit.begin();});tap(c);c.waitFor(v->FirstPersonSwordAudit.arms>0,60);

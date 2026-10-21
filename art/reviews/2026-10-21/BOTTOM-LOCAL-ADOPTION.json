@@ -1,0 +1,31 @@
+{
+  "status": "authorized-local-integration",
+  "date": "2026-10-21",
+  "scope": [
+    "battery",
+    "rocket",
+    "wheel",
+    "stabilizer"
+  ],
+  "authorization": "用户在19项审阅与先机械后第一人称建议之后回复“继续吧”；本机接入这四项，不改变公开许可。",
+  "originalApprovalPreserved": true,
+  "publicDistribution": false,
+  "sources": [
+    {
+      "path": "art/review-batches/2026-10-11-机械补齐与反手弓/mechanical/exports/battery-bottom-proposal.json",
+      "sha256": "e8749094e0976324667157fdf4d753258c7015cd1be90922a52314cf3f24f09d"
+    },
+    {
+      "path": "art/review-batches/2026-10-11-机械补齐与反手弓/mechanical/exports/rocket-bottom-proposal.json",
+      "sha256": "9ab7c6d8af9b0990a7338ebfccdbe2aed736ceb8090b6c6f6c56638409a74041"
+    },
+    {
+      "path": "art/review-batches/2026-10-11-机械补齐与反手弓/mechanical/exports/stabilizer-bottom-proposal.json",
+      "sha256": "6a9e4b946d680fb53afc1e8570eeea62ee8b10af9c21b2f7df85d6e8e154dcec"
+    },
+    {
+      "path": "art/review-batches/2026-10-11-机械补齐与反手弓/mechanical/exports/wheel-bottom-proposal.json",
+      "sha256": "425201c717bfec3458ec7ccad7dea5cfe78eb0d192173c2aeabe3db0eadc6e28"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "authorized-local-integration",
+  "authorization": "用户明确同意下一批第一人称剑蓄力与斧动作并回复“好，开始吧”",
+  "scope": [
+    {
+      "asset": "heavy-sword",
+      "path": "art/player-animation-v1/first-person-heavy-sword/v01/exports/first-person-data.json",
+      "sha256": "e86cf1bd2668b153a1daeef9040a1e32ce628dcefa465ebe5b45223d2c2f67ce"
+    },
+    {
+      "asset": "axe",
+      "path": "art/player-animation-v1/first-person-axe/v01/exports/first-person-data.json",
+      "sha256": "942c42cda893e1ced1edc59f28601186b7fa2482aaa3bfdfb8a4f410864e92ba"
+    }
+  ],
+  "publicDistributionRightsChanged": false,
+  "originalApprovalsPreserved": true
+}

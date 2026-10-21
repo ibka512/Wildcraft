@@ -1,3 +1,5 @@
+> 本机阶段记录；截图、世界、源稿和含私有数据包未公开。本文是历史结果，不是本次公开克隆的执行回执。
+
 # C7 组合持久对象首个夹具验收
 
 2026-10-15。仅新增gametest和可重复任务，不改正式dev62生产代码/数据格式/物理库存规则。本机独立原型22秒5图、repository任务26秒5图真实通过；source/module/frame资格不算此项证据。
@@ -6,7 +8,7 @@
 
 材料和物品直接提供，是持久组合状态夹具；没有从零采矿/正常配方制作/料理/Fuse或长时间人工平衡、真实旧存档迁移证据，不能认定C7整体完成。既有125和SurvivalClient真实工序另有已验证记录；本项补组合保存和死亡同时发生的边界，未用mod copy/mark强造迁移。
 
-证据仅本机/Volumes/仕事/Wildcraft/开发接续记录/2026-10-15-C7/verification/kit-repository-v1，逐PNG SHA；全量C6AN共享observer已实际48类51分6秒2021图clean归档，正式mod62/337资源不变。后续按C7-LIFECYCLE-NEXT-SPEC补料理有效秒/Fuse/技能退出组合及人工试玩；不发布/上传、不新依赖、不采用待审13或另6。
+证据仅本机[原开发机外置卷]/Wildcraft/开发接续记录/2026-10-15-C7/verification/kit-repository-v1，逐PNG SHA；全量C6AN共享observer已实际48类51分6秒2021图clean归档，正式mod62/337资源不变。后续按C7-LIFECYCLE-NEXT-SPEC补料理有效秒/Fuse/技能退出组合及人工试玩；不发布/上传、不新依赖、不采用待审13或另6。
 
 ## 组合扩展：真实料理、Fuse与活动中退出
 
@@ -18,7 +20,7 @@
 
 剑/伞/617电池留在同一库存组合，用实际快捷栏取弓、自然高空下落并native use，真正Focus/5TPS存在时关闭世界，再原生重开，第二次活动中转入Nether。两条路径必须自动恢复20TPS、停止use、八支箭数量与弓wear0保持，最终普通死亡箭仍恰好八支。没有冻结物理或调用TimeLease/FocusTime.tryBegin伪造成功；材料、平台与高空起点是夹具，不能称正常攀爬/滑翔接入或人工手感完成。
 
-本机证据：/Volumes/仕事/Wildcraft/开发接续记录/2026-10-15-C7/verification/combination-v1（失败）、combination-v2、combination-v3。RESULT.json逐截图/日志SHA，旧kit-repository-v1证据仍保留。正式dev62及337私有clips/生产代码保持，不新建dev63包或标签。本项只扩展一个独立gametest，无共享运行观察器改动，不重复消耗已无变化通过的full48。
+本机证据：[原开发机外置卷]/Wildcraft/开发接续记录/2026-10-15-C7/verification/combination-v1（失败）、combination-v2、combination-v3。RESULT.json逐截图/日志SHA，旧kit-repository-v1证据仍保留。正式dev62及337私有clips/生产代码保持，不新建dev63包或标签。本项只扩展一个独立gametest，无共享运行观察器改动，不重复消耗已无变化通过的full48。
 
 ## 攀爬、滑翔、举盾、蓄力期间关闭及重开
 

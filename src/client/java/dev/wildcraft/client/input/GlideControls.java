@@ -32,6 +32,17 @@ public final class GlideControls {
         });
     }
 
+    /** Native durability synchronization changes state of the held item, not which item was taken out. */
+    private static boolean sameCarriedItem(ItemStack current, ItemStack opened) {
+        if (ItemStack.matches(current, opened)) return true;
+        if (current.getCount() != opened.getCount() || !ItemStack.isSameItem(current, opened)) return false;
+        var a = current.copy();
+        var b = opened.copy();
+        a.remove(net.minecraft.core.component.DataComponents.DAMAGE);
+        b.remove(net.minecraft.core.component.DataComponents.DAMAGE);
+        return ItemStack.matches(a, b);
+    }
+
     private static void tick(Minecraft client) {
         LocalPlayer player = client.player;
         var frame = ActionInput.tickFrame();
@@ -54,7 +65,7 @@ public final class GlideControls {
         }
         boolean available = frame.gameplay();
         boolean takingItem = requested && (player.getInventory().getSelectedSlot() != selectedSlot
-                || !ItemStack.matches(player.getMainHandItem(), mainHand) || !ItemStack.matches(player.getOffhandItem(), offHand)
+                || !sameCarriedItem(player.getMainHandItem(), mainHand) || !sameCarriedItem(player.getOffhandItem(), offHand)
                 || frame.triggered(dev.wildcraft.input.Action.USE) || frame.triggered(dev.wildcraft.input.Action.ATTACK)
                 || frame.triggered(dev.wildcraft.input.Action.DEFEND) || frame.triggered(dev.wildcraft.input.Action.SWAP_HAND) || frame.triggered(dev.wildcraft.input.Action.DROP));
         if (!available || takingItem || !Gliding.eligible(player) || view != null && (view.blocked() || acknowledged && !view.active())) {

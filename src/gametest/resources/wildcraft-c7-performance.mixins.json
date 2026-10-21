@@ -1,1 +1,13 @@
-{"required":true,"package":"dev.wildcraft.test.performance.mixin","compatibilityLevel":"JAVA_25","client":["NativeRenderBaselineMixin"],"injectors":{"defaultRequire":1}}
+{
+  "required": true,
+  "package": "dev.wildcraft.test.performance.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "NativeRenderBaselineMixin",
+    "NativeWaterHudAuditMixin",
+    "NativeDrivingHudAuditMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

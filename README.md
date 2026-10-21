@@ -1,14 +1,12 @@
-> **当前公开快照：dev76-public（2026-10-19）**。源码来自本机dev76及之后的测试工具检查点；公开仓库不包含许可受限玩家动画数据，资源缺失时回退原生表现。当前接入范围见[美术状态](art/RUNTIME-STATUS-2026-10-19.md)，复现与限制见[AI交接](docs/AI-HANDOFF.md)。没有新建Release或上传本机试玩包。
-
 # Wildcraft
 
 <img src="art/brand-v2/A14/v02/exports/wildcraft-brand-detailed-512.png" width="260" alt="Wildcraft：滑翔伞与原版世界探索" />
 
 Wildcraft 是 Minecraft Java Edition 的 Fabric Mod，在原版世界中加入精力成长、攀爬、装备式滑翔伞、料理、Fuse、有限能源机械和单人战斗系统。
 
-**当前公开源码：`0.1.0-dev.76-public`，2026-10-19 更新。** 基于本机dev76与C7测试工具检查点，仍是开发预览。公开构建不包含许可受限玩家动画数据；找不到资源时沿原生表现回退。本机每体型401个第三人称/4个第一人称剪辑及含数据包没有公开，不能把本机画面验收直接视为公开图形验收。
+**当前公开源码：`0.1.0-dev.87-public`，2026-10-21 更新，开发快照。** 本机正式检查点仍为dev86，dev87第一人称剑蓄力/斧动作属于候选。本仓库同步最新代码和工具，但省略受限动画及四项只获本机采用的机械底部几何，缺资源时使用既有表现。公开构建通过也不等于本机候选87完成正式归档。
 
-[Linux 构建通过（125项服务端测试）](https://github.com/ibka512/Wildcraft/actions/runs/39268843470) · [开发接手说明](docs/AI-HANDOFF.md) · [本次公开范围与验证](docs/PUBLIC-SNAPSHOT-2026-10-19.md) · [最新美术状态](art/RUNTIME-STATUS-2026-10-19.md) · [采用资产台账](art/ADOPTED-ASSETS.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
+[开发接手](docs/AI-HANDOFF.md) · [本次公开范围与验证](docs/PUBLIC-SNAPSHOT-2026-10-21.md) · [最新美术状态](art/RUNTIME-STATUS-2026-10-21.md) · [采用资产台账](art/ADOPTED-ASSETS.md) · [构建记录](https://github.com/ibka512/Wildcraft/actions/workflows/build.yml)
 
 ## 玩法与当前范围
 
@@ -48,7 +46,7 @@ macOS 可使用 `./dev.sh` 代替 `./gradlew`，脚本会选择 JDK 25 和 APFS 
 
 `build` 包含编译与现有规则检查，`test NO-SOURCE` 不代表游戏测试通过。独立服务端测试使用 `runGameTest`；操作者自行接受 Minecraft EULA 后，可显式传入 `-PacceptMinecraftEula=true`。图形客户端专项需要可用桌面，部分动画专项还需要本机私有资源，详见接手说明。
 
-通常产物在 `build/libs/`；macOS 使用脚本时缓存路径由项目位置计算，`build` 会把正式安装 JAR 复制到 `dist/`。把 `wildcraft-0.1.0-dev.76-public.jar` 与对应 Fabric API 放入 Minecraft 26.3 Fabric 实例的 `mods/`，使用独立测试世界。源码 JAR、测试 JAR不用于普通游玩实例。
+通常产物在 `build/libs/`；macOS 使用脚本时缓存路径由项目位置计算，`build` 会把正式安装 JAR 复制到 `dist/`。把 `wildcraft-0.1.0-dev.87-public.jar` 与对应 Fabric API 放入 Minecraft 26.3 Fabric 实例的 `mods/`，使用独立测试世界。源码 JAR、测试 JAR不用于普通游玩实例。
 
 本次更新公开源码与文档，不把本机受限安装包作为 GitHub 下载提供。GitHub Actions 的产物与检查状态以实际运行结果为准。此前 [dev18 Release](https://github.com/ibka512/Wildcraft/releases/tag/handoff-dev18-2026-10-06) 继续保留，它是历史版本，不能代表本次最新玩法。
 
@@ -73,18 +71,20 @@ macOS 可使用 `./dev.sh` 代替 `./gradlew`，脚本会选择 JDK 25 和 APFS 
 - `src/main/`：服务端权威玩法、数据、注册、网络和公共资源，不能引用客户端类。
 - `src/client/`：输入、HUD、屏幕、渲染及本机资源缺失时的原生回退。
 - `src/gametest/`、`src/rulesTest/`：独立验证与隔离研究，不作为生产功能自动启用。
-- `art/`：可公开的原稿、来源和采用记录；当前 45 个运行用途编号、4 类已接入底部变体、30 份第二批交付版本。
+- `art/`：可公开的原稿、来源和采用记录；当前 45 个运行用途编号、4 类可公开底部变体、30 份第二批交付版本。
 - `docs/`、`tools/`：阶段规格、验证记录、接手说明和转换/只读检查工具。
 
-`python3 tools/verify-adopted-assets.py` 核对 45 个编号、2,107 条原件记录、57 份运行副本和 4 个底部变体。玩家动画的许可受限源、派生 JSON/GLB、截图证据包、含数据 JAR 与完整本机 Git 分支均未随此次公开。旧公开资产和历史下载保持可追溯，见[资产下载说明](docs/ASSET-DOWNLOADS.md)。
+`python3 tools/verify-adopted-assets.py` 核对 45 个编号、2,107 条原件记录、57 份运行副本和 4 个底部变体。玩家动画的许可受限源、派生 JSON/GLB、四项本机机械底部原源/派生几何、私有截图证据包、含数据 JAR 与完整本机 Git 分支均未随此次公开。旧公开资产和历史下载保持可追溯，见[资产下载说明](docs/ASSET-DOWNLOADS.md)。
 
 ## 验证与接下来做什么
 
-本机dev76：24项副盾披风/鞘翅专项、4项低帧率/慢刻率、12类相关回归共14不同客户端类/530张验收图，125项服务端与资源生成/构建通过。这是含私有数据的本机结果。公开构建检查单独登记在[本次公开交接](docs/PUBLIC-SNAPSHOT-2026-10-19.md)，不能用本机动画结果代替公开验证。
+本次新增源码覆盖dev77–86的电池物品图集和摆放、有限机械反馈、Fuse快捷槽同步、开伞后迟到耐久同步及原生临时触地收伞修复；另包含dev87候选第一人称剑蓄力与斧动作和转换/观察工具。料理原料到领取、食用返碗、断热存读及暂停/离线计时也补有普通客户端验证记录。详情见[公开交接](docs/PUBLIC-SNAPSHOT-2026-10-21.md)。
 
-dev76普通客户端已完成固定尺寸的16/4/0停机空主体短测、120与10帧平路有限机械驾驶，以及逐帧窗口变尺寸拒绝/正常对照。此前闲置30FPS已经查明是原生闲置限帧，旧报告保留。短时空主体和平路提供部件，不代表人工从零获取、自然地形、手感、平衡或长期性能通过。新驾驶逐帧尺寸检查的低帧率运行仍未完成。
+本机dev86：9个不同客户端类、10次执行/241PNG以及125服务端、datagen与build通过。本机候选87：8个不同客户端类/288有效PNG；相关七类任务曾因旧观察器计数失败，测试观察点补齐后剩余六类通过，该失败身份保留。候选最终datagen/build125尚待执行。公开版另已实际通过macOS数据生成、构建与125项服务端检查、基础美术4图及缺资源回退17图；Linux结果见本次公开回执与Actions，不套用私有资源结果。
 
-下一开发是隔离验证低帧率驾驶尺寸、地形/转向与正常单人生存准备，保留现有物理和费用。复杂盔甲、副盾收回/其他占用主手、其他正式第一人称及C6/C7整体未完，多人暂缓。本次仅同步仓库，没有接着实现上述功能。
+旧前台六场性能资格因锁屏时引擎焦点缓存误报已撤回；没有解锁正例，不能作为长期性能通过。人工生存表尚空，自动布景、提供原料与短时驾驶不代表人工从零体验完成。多人、复杂机械物理、C6复杂状态、其他11组正式第一人称与2反手弓仍待后续。
+
+下一开发先完成候选87最后构建与本机归档，再按接入资格推进其余动作和单人试玩。本次仅公开同步，自动任务保持暂停。
 
 ## 许可
 

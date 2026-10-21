@@ -26,3 +26,17 @@ development-assets/local-only/
 development-assets/verification/dev*/
 __pycache__/
 *.pyc
+
+# Locally adopted art without public distribution permission.
+art/review-batches/
+art/production-v2/mechanical-bottom-additions/
+src/main/resources/assets/wildcraft/bottom-additions-provenance.json
+src/main/resources/assets/wildcraft/geometry/battery_bottom.json
+src/main/resources/assets/wildcraft/geometry/machine_bottom_battery.json
+src/main/resources/assets/wildcraft/geometry/machine_bottom_rocket.json
+src/main/resources/assets/wildcraft/geometry/machine_bottom_stabilizer.json
+src/main/resources/assets/wildcraft/geometry/machine_bottom_wheel.json
+src/main/resources/assets/wildcraft/geometry/rocket_bottom.json
+src/main/resources/assets/wildcraft/geometry/spent_rocket_bottom.json
+src/main/resources/assets/wildcraft/geometry/stabilizer_bottom.json
+src/main/resources/assets/wildcraft/geometry/wheel_bottom.json

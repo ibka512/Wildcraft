@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "dev.wildcraft.test.industry.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "NativeIndustryConnectionAccess",
+    "NativeFuseIntentMixin",
+    "NativeSnowEffectMixin",
+    "NativeGroundMovementMixin",
+    "NativeGroundWriterMixin"
+  ],
+  "client": [
+    "NativeIndustryMixin",
+    "NativeTraversalHandsMixin",
+    "NativeAirFocusControlsMixin",
+    "NativeAirFocusReleaseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-21",
+  "publicVersion": "0.1.0-dev.87-public",
+  "base": "48847f62df6339a4604d73919154b267e9a6f08d",
+  "sourceCheckpoint": "b0e0a07aa3d073afe190fd4aa285e05cb29e5e1f",
+  "localFormalVersion": "0.1.0-dev.86",
+  "localCandidate87FinalBuildPending": true,
+  "publicOnlyProductionAdaptation": "BottomArt resource availability fallback; original project unchanged",
+  "macOS": {
+    "datagen": {
+      "passed": true,
+      "seconds": 20,
+      "files": 68,
+      "firstCacheWrites": 68,
+      "selectedSourceContentUnchanged": true
+    },
+    "build": {
+      "passed": true,
+      "seconds": 11,
+      "requiredServerTestsPassed": 125,
+      "gameTestJarCompiled": true
+    },
+    "coreArt": {
+      "passed": true,
+      "seconds": 17,
+      "screenshots": 4
+    },
+    "absentResourceFallback": {
+      "passed": true,
+      "seconds": 36,
+      "classes": 2,
+      "screenshots": 17,
+      "swordAndAxeChargeRelease": true,
+      "fourBottomLegacyGhostInstallRecover": true
+    },
+    "assetProvenance": {
+      "passed": true,
+      "purposeIDs": 45,
+      "deliveryVersions": 30,
+      "sourceRecords": 2107,
+      "runtimeCopies": 57,
+      "publicBottomVariants": 4
+    },
+    "artifacts": [
+      {
+        "file": "wildcraft-0.1.0-dev.87-public-sources.jar",
+        "sha256": "a18ae1f2caf9624f941ad7589f1b5681180b071ce657e50d02c7cd946d5ce827",
+        "bytes": 620950,
+        "CRCAndPrivatePathCheck": true
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.87-public-gametest.jar",
+        "sha256": "2df10a9d42f72b9dd8239903c5de7fde43a6d4a2bb836ec2e05193fb4013cb21",
+        "bytes": 1940677,
+        "CRCAndPrivatePathCheck": true
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.87-public.jar",
+        "sha256": "5fd3abdeebf98ddc252daaf6b212b88fc491cd79e21a950d7bfff6c8f19ae035",
+        "bytes": 1108326,
+        "CRCAndPrivatePathCheck": true
+      }
+    ]
+  },
+  "linuxCI": {
+    "status": "pending-after-push"
+  },
+  "privateAnimationAndLocalOnlyBottomDataIncluded": false,
+  "privateHistoryIncluded": false,
+  "screenshots": [
+    {
+      "path": "docs/verification/dev87-public/core-art/0000_art-glider-first-person-grips.png",
+      "sha256": "3f72162801594bd4b10f273da75d00defd95352501eadf83906edf94bf59b09d",
+      "bytes": 196378
+    },
+    {
+      "path": "docs/verification/dev87-public/core-art/0001_art-glider-third-person-front.png",
+      "sha256": "6d5756df9ee0540d5b9664ae23add5775399b774f867a4e4f45b648923bd5cb5",
+      "bytes": 235911
+    },
+    {
+      "path": "docs/verification/dev87-public/core-art/0002_art-settings-normal.png",
+      "sha256": "95c4734bad35de4007a8255ff7dce83524738524e0975632e21c51f6df4ea8cc",
+      "bytes": 143883
+    },
+    {
+      "path": "docs/verification/dev87-public/core-art/0003_art-settings-compact-layout.png",
+      "sha256": "88258b6589f98418646c9051097b15a18bfee3b53bf233cb69f1416d1100ba3a",
+      "bytes": 208659
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0000_first-person-sword-absent-native-grip-fallback.png",
+      "sha256": "84e548e35c7fbaab40f12d54f886334bd7a8878d6990316b4949e3af4ab23434",
+      "bytes": 245785
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0001_public-sword-charge-native-fallback.png",
+      "sha256": "d6df1e3afe3d63fda31b2efdb65eef8cdaea2acdf716993eede17b2f16dc72de",
+      "bytes": 220519
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0002_public-sword-release-native-fallback.png",
+      "sha256": "20c9bf78bbb2fa337a6d8d174a0a25275c93f6d6cc99a60ea186c42618650771",
+      "bytes": 215235
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0003_public-axe-charge-native-fallback.png",
+      "sha256": "1b97eccb7b32f95dafa9ea144ce3b48c8cc5b860a583e5e9daf791df314a3300",
+      "bytes": 185144
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0004_public-axe-release-native-fallback.png",
+      "sha256": "f10ec225e88df842cfa394a34cb3e69ba37b306448dd4882c9f4d6369de9d004",
+      "bytes": 181781
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0005_public-bottom-battery-legacy-ghost.png",
+      "sha256": "91d9bea4a44885dae89763b634e4986d0babf801e02fe9b4f698ea0f1ca5a563",
+      "bytes": 150989
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0006_public-bottom-battery-legacy-installed.png",
+      "sha256": "433e30addb51bbf6dc15b50a0d2c1dc74332b3f73ec0bab71a7692b93716a4ef",
+      "bytes": 147466
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0007_public-bottom-battery-legacy-recovered.png",
+      "sha256": "c5d23bb62c376eb2359192a685cdf837117e405735f28b6f2de398d8de0c3723",
+      "bytes": 140209
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0008_public-bottom-rocket-legacy-ghost.png",
+      "sha256": "7508456ee90b8262ed7ac14c921c8f4eff0c82289121984fc28d4b01255fadbe",
+      "bytes": 129901
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0009_public-bottom-rocket-legacy-installed.png",
+      "sha256": "69765a56acbe80ab8e581d5c3124a61fdd2d26a2fd55bf1229bb0502c5965876",
+      "bytes": 124172
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0010_public-bottom-rocket-legacy-recovered.png",
+      "sha256": "dcfa02038156cb76502168ca82e7ac4602bc35cca3b167f1008ec18fddf66d2b",
+      "bytes": 119617
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0011_public-bottom-wheel-legacy-ghost.png",
+      "sha256": "65c7617e65b59e0777e7d4d8c7b458ad0f663e12c427d29eb7ca8dc7d686b860",
+      "bytes": 108968
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0012_public-bottom-wheel-legacy-installed.png",
+      "sha256": "d0b7093bc7507ceff460801adf4b81c1dc40f0c7468895380a737ae3665d652a",
+      "bytes": 104463
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0013_public-bottom-wheel-legacy-recovered.png",
+      "sha256": "e36f1cb8ba30ba9c3a69deb7f66b050e981d85c80eed95bcd314f6b77e8a9c8a",
+      "bytes": 101696
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0014_public-bottom-stabilizer-legacy-ghost.png",
+      "sha256": "e5c16514da621e8d14d6bbf961690585a1e260576ddb5c76fe37c21deb1f325f",
+      "bytes": 93127
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0015_public-bottom-stabilizer-legacy-installed.png",
+      "sha256": "6d9795ce93dcfa7ed281d44b929b961414311e609a0c9ed2bad0557469214b23",
+      "bytes": 93329
+    },
+    {
+      "path": "docs/verification/dev87-public/fallback/0016_public-bottom-stabilizer-legacy-recovered.png",
+      "sha256": "e67d2b8258f8224188037dfc973c4b1b7046957efbeb353dcdafe2ce14b25b76",
+      "bytes": 91023
+    }
+  ],
+  "limitations": [
+    "No private source animation visual qualification in public build",
+    "Local dev87 final datagen/build125/archive still pending",
+    "No manual survival/balance or long-term performance qualification",
+    "Old foreground six-scene qualification withdrawn",
+    "11 FP source groups and 2 opposite-hand bows not adopted"
+  ]
+}

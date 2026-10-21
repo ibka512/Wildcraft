@@ -1894,12 +1894,14 @@ tasks.register('runRigRuntimeClientTest', net.fabricmc.loom.task.prod.ClientProd
 
 // Packaged production bottom meshes, including retained singleplayer and art regression.
 def bottomArtOnly = providers.gradleProperty('bottomArtOnly').orElse('false').get().toBoolean()
+def bottomAdditionsOnly = providers.gradleProperty('bottomAdditionsOnly').orElse('false').get().toBoolean()
+def bottomArtRunDirectory = providers.gradleProperty('bottomArtRunDir').isPresent() ? file(providers.gradleProperty('bottomArtRunDir').get()) : layout.buildDirectory.dir('run/bottom-art-client-test').get().asFile
 def bottomArtMetadataDirectory = layout.buildDirectory.dir('bottom-art-metadata').get().asFile
 def bottomArtMetadata = tasks.register('bottomArtMetadata') {
-    inputs.file(coreArtMetadataSource); inputs.property('bottomArtOnly',bottomArtOnly); outputs.dir(bottomArtMetadataDirectory)
+    inputs.file(coreArtMetadataSource); inputs.property('bottomArtOnly',bottomArtOnly); inputs.property('bottomAdditionsOnly',bottomAdditionsOnly); outputs.dir(bottomArtMetadataDirectory)
     doLast {
         def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
-        metadata.entrypoints['fabric-client-gametest'] = bottomArtOnly ? ['dev.wildcraft.test.BottomArtClientTest'] : ['dev.wildcraft.test.BottomArtClientTest', 'dev.wildcraft.test.MechanicsClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.WindClientTest', 'dev.wildcraft.test.PolishPresentationClientTest', 'dev.wildcraft.test.SecondArtClientTest', 'dev.wildcraft.test.SurvivalClientTest']
+        metadata.entrypoints['fabric-client-gametest'] = bottomAdditionsOnly ? ['dev.wildcraft.test.BottomAdditionsClientTest'] : bottomArtOnly ? ['dev.wildcraft.test.BottomArtClientTest'] : ['dev.wildcraft.test.BottomAdditionsClientTest', 'dev.wildcraft.test.BottomArtClientTest', 'dev.wildcraft.test.MechanicsClientSmokeTest', 'dev.wildcraft.test.WindArtClientTest', 'dev.wildcraft.test.WindClientTest', 'dev.wildcraft.test.PolishPresentationClientTest', 'dev.wildcraft.test.SecondArtClientTest', 'dev.wildcraft.test.SurvivalClientTest']
         bottomArtMetadataDirectory.mkdirs()
         new File(bottomArtMetadataDirectory, 'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
     }
@@ -1910,9 +1912,9 @@ def bottomArtTestJar = tasks.register('bottomArtTestJar', Jar) {
 }
 tasks.register('runBottomArtClientTest', net.fabricmc.loom.task.prod.ClientProductionRunTask) {
     outputs.upToDateWhen { false }; mods.from(bottomArtTestJar); jvmArgs.add('-Dfabric.client.gametest'); useXVFB = false
-    runDir = layout.buildDirectory.dir('run/bottom-art-client-test')
+    runDir = bottomArtRunDirectory
     doFirst {
-        def directory = layout.buildDirectory.dir('run/bottom-art-client-test').get().asFile;directory.mkdirs()
+        def directory = bottomArtRunDirectory;directory.mkdirs()
         new File(directory, 'screenshots').deleteDir()
         new File(directory, 'options.txt').text = 'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
     }
@@ -2343,14 +2345,26 @@ def c7PerformanceFixturePath = providers.gradleProperty('c7PerformanceFixture').
 def c7PerformanceSampleSeconds = providers.gradleProperty('c7PerformanceSampleSeconds').orElse('15').get()
 def c7PerformanceRounds = providers.gradleProperty('c7PerformanceRounds').orElse('1').get()
 def c7PerformanceControlledOnly = providers.gradleProperty('c7PerformanceControlledOnly').orElse('false').get()
+def c7PerformanceLanguage = providers.gradleProperty('c7PerformanceLanguage').orElse('zh_cn').get()
+def c7PerformanceWater = providers.gradleProperty('c7PerformanceWater').orElse('false').get().toBoolean()
+def c7PerformanceParts = providers.gradleProperty('c7PerformanceParts').orElse('false').get().toBoolean()
+def c7PerformancePartsMode = providers.gradleProperty('c7PerformancePartsMode').orElse('rocket').get()
+def c7PerformanceTerrain = providers.gradleProperty('c7PerformanceTerrain').orElse('false').get().toBoolean()
+def c7PerformanceDriving = providers.gradleProperty('c7PerformanceDriving').orElse('false').get().toBoolean()
 def c7PerformanceMainJar = file(providers.gradleProperty('c7PerformanceMainJar').orElse('development-assets/local-only/dev62/final/wildcraft-0.1.0-dev.62+mc26.3.jar').get())
 tasks.register('runC7NativeRenderBaseline',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
     outputs.upToDateWhen { false }; dependsOn c7PerformanceTestJar
     mods.setFrom(c7PerformanceMainJar,c7PerformanceTestJar,configurations.productionRuntimeMods)
-    jvmArgs.addAll('-Xmx2G','-Dwildcraft.c7.renderBaseline=true', '-Dwildcraft.c7.driveBaseline='+providers.gradleProperty('c7PerformanceDriving').orElse('false').get(), '-Dwildcraft.c7.renderDistance='+providers.gradleProperty('c7PerformanceRenderDistance').orElse('16').get(), '-Dwildcraft.c7.frameLimit='+providers.gradleProperty('c7PerformanceFrameLimit').orElse('120').get(), '-Dwildcraft.c7.sampleSeconds='+c7PerformanceSampleSeconds, '-Dwildcraft.c7.rounds='+c7PerformanceRounds, '-Dwildcraft.c7.controlledOnly='+c7PerformanceControlledOnly, '-Dwildcraft.c7.viewportChangeProbe='+providers.gradleProperty('c7PerformanceViewportChangeProbe').orElse('false').get())
-    programArgs.addAll('--quickPlaySingleplayer','C7NativeBaseline','--width','1280','--height','960')
+    jvmArgs.add('-Dwildcraft.c7.nativeFocusAudit='+providers.gradleProperty('c7PerformanceNativeFocusAudit').orElse('false').get())
+    jvmArgs.addAll('-Dwildcraft.c7.partsBaseline='+c7PerformanceParts,'-Dwildcraft.c7.partsMode='+c7PerformancePartsMode)
+    jvmArgs.add('-Dwildcraft.c7.partsUIRequired='+providers.gradleProperty('c7PerformancePartsUIRequired').orElse('false').get())
+    jvmArgs.addAll('-Xmx2G','-Dwildcraft.c7.renderBaseline=true', '-Dwildcraft.c7.requireFocus='+providers.gradleProperty('c7PerformanceRequireFocus').orElse('false').get(), '-Dwildcraft.c7.focusLossProbe='+providers.gradleProperty('c7PerformanceFocusLossProbe').orElse('false').get(), '-Dwildcraft.c7.driveBaseline='+providers.gradleProperty('c7PerformanceDriving').orElse('false').get(), '-Dwildcraft.c7.naturalDriving='+providers.gradleProperty('c7PerformanceNaturalDriving').orElse('false').get(), '-Dwildcraft.c7.drivingUIRequired='+providers.gradleProperty('c7DrivingUIRequired').orElse('false').get(), '-Dwildcraft.c7.terrainBaseline='+providers.gradleProperty('c7PerformanceTerrain').orElse('false').get(), '-Dwildcraft.c7.waterBaseline='+c7PerformanceWater, '-Dwildcraft.c7.waterUIRequired='+providers.gradleProperty('c7WaterUIRequired').orElse('false').get(), '-Dwildcraft.c7.renderDistance='+providers.gradleProperty('c7PerformanceRenderDistance').orElse('16').get(), '-Dwildcraft.c7.frameLimit='+providers.gradleProperty('c7PerformanceFrameLimit').orElse('120').get(), '-Dwildcraft.c7.sampleSeconds='+c7PerformanceSampleSeconds, '-Dwildcraft.c7.rounds='+c7PerformanceRounds, '-Dwildcraft.c7.controlledOnly='+c7PerformanceControlledOnly, '-Dwildcraft.c7.viewportChangeProbe='+providers.gradleProperty('c7PerformanceViewportChangeProbe').orElse('false').get())
+    programArgs.addAll('--quickPlaySingleplayer','C7NativeBaseline','--width',providers.gradleProperty('c7PerformanceWindowWidth').orElse('1280').get(),'--height',providers.gradleProperty('c7PerformanceWindowHeight').orElse('960').get())
+    if(c7PerformanceParts)programArgs.addAll('--username',providers.gradleProperty('c7PerformanceUsername').orElse('C7NativeParts').get())
     useXVFB = false; runDir.set(c7PerformanceRunDirectory)
     doFirst {
+        if((c7PerformanceTerrain ? 1:0)+(c7PerformanceDriving ? 1:0)+(c7PerformanceWater ? 1:0)+(c7PerformanceParts ? 1:0)>1) throw new GradleException('Choose only one of water, terrain, driving or parts')
+        if(c7PerformanceParts && !['rocket','rocket-reopen','spring','spring-reopen'].contains(c7PerformancePartsMode)) throw new GradleException('Choose an explicit native parts lifecycle mode')
         def seconds = Integer.parseInt(c7PerformanceSampleSeconds)
         def rounds = Integer.parseInt(c7PerformanceRounds)
         def cases = c7PerformanceControlledOnly.toBoolean() ? 3 : 6
@@ -2369,19 +2383,143 @@ tasks.register('runC7NativeRenderBaseline',net.fabricmc.loom.task.prod.ClientPro
                 }
             }
         }
-        java.nio.file.Files.writeString(c7PerformanceRunDirectory.toPath().resolve('options.txt'),'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nguiScale:2\nlang:zh_cn\n')
+        java.nio.file.Files.writeString(c7PerformanceRunDirectory.toPath().resolve('options.txt'),'version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nguiScale:2\nlang:'+c7PerformanceLanguage+'\n')
+    }
+}
+
+// Tiny normal-menu flow: no shared test metadata, research registry or world fixture.
+def c7CleanBootMetadataDirectory=layout.buildDirectory.dir('c7-clean-boot-metadata').get().asFile
+def c7CleanBootMetadata=tasks.register('c7CleanBootMetadata') {
+    outputs.dir(c7CleanBootMetadataDirectory)
+    doLast {
+        c7CleanBootMetadataDirectory.mkdirs()
+        new File(c7CleanBootMetadataDirectory,'fabric.mod.json').text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([schemaVersion:1,id:'wildcraft-c7-clean-boot',version:'1.0.0',name:'Wildcraft local ordinary-menu observer',environment:'client',mixins:['wildcraft-c7-clean-boot.mixins.json'],depends:[wildcraft:'*']]))+'\n'
+    }
+}
+def c7CleanBootTestJar=tasks.register('c7CleanBootTestJar',Jar) {
+    dependsOn c7CleanBootMetadata;archiveClassifier='c7-clean-boot'
+    from(sourceSets.gametest.output) { include 'dev/wildcraft/test/cleanboot/**','wildcraft-c7-clean-boot.mixins.json' }
+    from(c7CleanBootMetadataDirectory)
+}
+def c7CleanBootRunDirectory=file(providers.gradleProperty('c7CleanBootRunDir').orElse(layout.buildDirectory.dir('run/c7-clean-boot').get().asFile.absolutePath).get())
+def c7CleanBootMainJar=file(providers.gradleProperty('c7CleanBootMainJar').orElse('development-assets/local-only/dev81/final/wildcraft-0.1.0-dev.81+mc26.3.jar').get())
+def c7BareApiName='fabric-api-'+providers.gradleProperty('fabric_api_version').get()+'.jar'
+def c7BareApiJar=configurations.productionRuntimeMods.filter { it.name==c7BareApiName }
+tasks.register('runC7CleanBoot',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false };dependsOn c7CleanBootTestJar
+    mods.setFrom(c7CleanBootMainJar,c7CleanBootTestJar,c7BareApiJar)
+    jvmArgs.add('-Xmx2G');programArgs.addAll('--username','C7CleanBoot','--width','1280','--height','960')
+    useXVFB=false;runDir.set(c7CleanBootRunDirectory)
+    doFirst {
+        if(new File(c7CleanBootRunDirectory,'saves').exists())throw new GradleException('Use a fresh isolated directory, no real or preexisting saves')
+        c7CleanBootRunDirectory.mkdirs()
+        new File(c7CleanBootRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:en_us\n'
+    }
+}
+
+// Actual two-mod startup: no observer JAR. The host bounds/stops only this disposable client.
+def c7BareRunDirectory=file(providers.gradleProperty('c7BareRunDir').orElse(layout.buildDirectory.dir('run/c7-bare').get().asFile.absolutePath).get())
+def c7BareFixturePath=providers.gradleProperty('c7BareFixture').orElse('').get()
+tasks.register('runC7BareClient',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    mods.setFrom(c7CleanBootMainJar,c7BareApiJar)
+    jvmArgs.add('-Xmx2G');programArgs.addAll('--username','C7CleanBoot','--quickPlaySingleplayer','C7CleanBoot','--width','1280','--height','960')
+    useXVFB=false;runDir.set(c7BareRunDirectory)
+    doFirst {
+        if(c7BareApiJar.files.size()!=1)throw new GradleException('Require exactly the existing Fabric API aggregate JAR from the local package')
+        if(c7BareFixturePath.isEmpty())throw new GradleException('Provide a generated disposable clean-world fixture')
+        def source=java.nio.file.Path.of(c7BareFixturePath);def target=c7BareRunDirectory.toPath().resolve('saves/C7CleanBoot')
+        if(!java.nio.file.Files.isRegularFile(source.resolve('level.dat'))||java.nio.file.Files.exists(target))throw new GradleException('Require a generated disposable clean world and fresh destination; no personal saves')
+        java.nio.file.Files.walk(source).withCloseable { paths -> paths.forEach { path ->
+            def name=path.fileName.toString()
+            if(!name.startsWith('._')&&name!='session.lock'&&name!='.DS_Store'){
+                def out=target.resolve(source.relativize(path))
+                if(java.nio.file.Files.isDirectory(path))java.nio.file.Files.createDirectories(out)
+                else java.nio.file.Files.copy(path,out)
+            }
+        } }
+        new File(c7BareRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:en_us\n'
+    }
+}
+
+// Native system observers, with no research registration or accelerated scheduler.
+def c7IndustryMetadataDirectory=layout.buildDirectory.dir('c7-industry-metadata').get().asFile
+def c7IndustryMetadata=tasks.register('c7IndustryMetadata') {
+    outputs.dir(c7IndustryMetadataDirectory)
+    doLast {
+        c7IndustryMetadataDirectory.mkdirs()
+        new File(c7IndustryMetadataDirectory,'fabric.mod.json').text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([schemaVersion:1,id:'wildcraft-c7-industry',version:'1.0.0',name:'Wildcraft native industry observer',environment:'client',entrypoints:[main:['dev.wildcraft.test.industry.NativeIndustryBaseline']],mixins:['wildcraft-c7-industry.mixins.json'],depends:[wildcraft:'*']]))+'\n'
+    }
+}
+def c7IndustryTestJar=tasks.register('c7IndustryTestJar',Jar) {
+    dependsOn c7IndustryMetadata;archiveClassifier='c7-industry'
+    from(sourceSets.gametest.output) { include 'dev/wildcraft/test/industry/**','wildcraft-c7-industry.mixins.json' }
+    from(c7IndustryMetadataDirectory)
+}
+def c7IndustryRunDirectory=file(providers.gradleProperty('c7IndustryRunDir').orElse(layout.buildDirectory.dir('run/c7-industry').get().asFile.absolutePath).get())
+def c7IndustryFixturePath=providers.gradleProperty('c7IndustryFixture').orElse('').get()
+def c7IndustryResume=providers.gradleProperty('c7IndustryResume').orElse('false').get().toBoolean()
+def c7IndustryCheckpoint=providers.gradleProperty('c7IndustryCheckpoint').orElse('').get()
+def c7IndustryFrameLimit=providers.gradleProperty('c7IndustryFrameLimit').orElse('120').get()
+def c7IndustryMealPause=providers.gradleProperty('c7IndustryMealPause').orElse('false').get().toBoolean()
+def c7IndustryRawCooking=providers.gradleProperty('c7IndustryRawCooking').orElse('false').get().toBoolean()
+def c7IndustryBoundary=providers.gradleProperty('c7IndustryBoundary').orElse('false').get().toBoolean()
+def c7IndustryTraversal=providers.gradleProperty('c7IndustryTraversal').orElse('false').get().toBoolean()
+def c7IndustryFuse=providers.gradleProperty('c7IndustryFuse').orElse('false').get().toBoolean()
+tasks.register('runC7NativeIndustry',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false };dependsOn c7IndustryTestJar
+    mods.setFrom(c7CleanBootMainJar,c7BareApiJar,c7IndustryTestJar)
+    jvmArgs.addAll('-Xmx2G','-Dwildcraft.c7.industryResume='+c7IndustryResume,'-Dwildcraft.c7.industryCheckpoint='+c7IndustryCheckpoint)
+    jvmArgs.addAll('-Dwildcraft.c7.industryMealPause='+c7IndustryMealPause,'-Dwildcraft.c7.industryRawCooking='+c7IndustryRawCooking)
+    jvmArgs.add('-Dwildcraft.c7.industryBoundary='+c7IndustryBoundary)
+    jvmArgs.add('-Dwildcraft.c7.industryFuse='+c7IndustryFuse)
+    jvmArgs.add('-Dwildcraft.c7.fuseCodecAudit='+providers.gradleProperty('c7FuseCodecAudit').orElse('false').get())
+    jvmArgs.addAll('-Dwildcraft.c7.industryTraversal='+c7IndustryTraversal,'-Dwildcraft.c7.traversalHolding='+providers.gradleProperty('c7TraversalHolding').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.industryHeatInterrupt='+providers.gradleProperty('c7IndustryHeatInterrupt').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.industryHeatSave='+providers.gradleProperty('c7IndustryHeatSave').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.industryRecipe='+providers.gradleProperty('c7IndustryRecipe').orElse('cooling1').get())
+    jvmArgs.add('-Dwildcraft.c7.industryRecovery='+providers.gradleProperty('c7IndustryRecovery').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.traversalGlideOnly='+providers.gradleProperty('c7TraversalGlideOnly').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.glideLandingSurface='+providers.gradleProperty('c7GlideLandingSurface').orElse('stone').get())
+    jvmArgs.add('-Dwildcraft.c7.glideManualClose='+providers.gradleProperty('c7GlideManualClose').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.groundAudit='+providers.gradleProperty('c7GroundAudit').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.airFocusPause='+providers.gradleProperty('c7AirFocusPause').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.airFocusMode='+providers.gradleProperty('c7AirFocusMode').orElse('0').get())
+    jvmArgs.add('-Dwildcraft.c7.traversalAirFocus='+providers.gradleProperty('c7TraversalAirFocus').orElse('false').get())
+    jvmArgs.add('-Dwildcraft.c7.industrySnow='+providers.gradleProperty('c7IndustrySnow').orElse('false').get())
+    programArgs.addAll('--username','C7CleanBoot','--quickPlaySingleplayer','C7Industry','--width','1280','--height','960')
+    useXVFB=false;runDir.set(c7IndustryRunDirectory)
+    doFirst {
+        if(c7IndustryFixturePath.isEmpty())throw new GradleException('Provide a generated disposable industry-world fixture')
+        if([c7IndustryMealPause,c7IndustryRawCooking,c7IndustryBoundary,c7IndustryTraversal,c7IndustryFuse].count{it}>1)throw new GradleException('Choose only one native system observer')
+        if(Integer.parseInt(c7IndustryFrameLimit)<10||Integer.parseInt(c7IndustryFrameLimit)>240)throw new GradleException('Native industry frame limit must be10..240')
+        def source=java.nio.file.Path.of(c7IndustryFixturePath);def target=c7IndustryRunDirectory.toPath().resolve('saves/C7Industry')
+        if(!java.nio.file.Files.isRegularFile(source.resolve('level.dat'))||java.nio.file.Files.exists(target))throw new GradleException('Require a generated disposable world and fresh destination; no personal saves')
+        if(c7IndustryResume&&(c7IndustryCheckpoint.isEmpty()||!java.nio.file.Files.isRegularFile(java.nio.file.Path.of(c7IndustryCheckpoint))))throw new GradleException('Native resume requires its actual SERVER_STOPPING checkpoint')
+        java.nio.file.Files.walk(source).withCloseable { paths -> paths.forEach { path ->
+            def name=path.fileName.toString()
+            if(!name.startsWith('._')&&name!='session.lock'&&name!='.DS_Store'){
+                def out=target.resolve(source.relativize(path))
+                if(java.nio.file.Files.isDirectory(path))java.nio.file.Files.createDirectories(out)
+                else java.nio.file.Files.copy(path,out)
+            }
+        } }
+        new File(c7IndustryRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:'+c7IndustryFrameLimit+'\nrenderDistance:4\nlang:zh_cn\n'
     }
 }
 
 // C6AO adopted independent first-person arms; external isolated test world, no real saves.
+def firstPersonHeavyRelated = providers.gradleProperty('firstPersonHeavyRelated').orElse('false').get().toBoolean()
+def firstPersonHeavyOnly = providers.gradleProperty('firstPersonHeavyOnly').orElse('false').get().toBoolean()
 def firstPersonSwordRegression = providers.gradleProperty('firstPersonSwordRegression').orElse('false').get().toBoolean()
 def firstPersonSwordFallback = providers.gradleProperty('firstPersonSwordFallback').orElse('false').get().toBoolean()
 def firstPersonSwordMetadataDirectory = layout.buildDirectory.dir('first-person-sword-test-metadata').get().asFile
 def firstPersonSwordMetadata = tasks.register('firstPersonSwordTestMetadata') {
-    inputs.file(coreArtMetadataSource); inputs.property('regression', firstPersonSwordRegression); inputs.property('fallback', firstPersonSwordFallback); outputs.dir(firstPersonSwordMetadataDirectory)
+    inputs.file(coreArtMetadataSource); inputs.property('heavyOnly',firstPersonHeavyOnly); inputs.property('heavyRelated',firstPersonHeavyRelated); inputs.property('regression', firstPersonSwordRegression); inputs.property('fallback', firstPersonSwordFallback); outputs.dir(firstPersonSwordMetadataDirectory)
     doLast {
         def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
-        metadata.entrypoints['fabric-client-gametest'] = firstPersonSwordFallback ? ['dev.wildcraft.test.FirstPersonSwordFallbackClientTest'] : firstPersonSwordRegression ? ['dev.wildcraft.test.FirstPersonSwordClientTest','dev.wildcraft.test.GripClientTest','dev.wildcraft.test.EquipmentClientTest','dev.wildcraft.test.GuardClientTest','dev.wildcraft.test.GlideRigClientTest','dev.wildcraft.test.CoreArtClientSmokeTest','dev.wildcraft.test.BackEquipmentClientSmokeTest'] : ['dev.wildcraft.test.FirstPersonSwordClientTest']
+        metadata.entrypoints['fabric-client-gametest'] = firstPersonHeavyOnly ? ['dev.wildcraft.test.FirstPersonHeavyClientTest'] : firstPersonSwordFallback ? ['dev.wildcraft.test.FirstPersonSwordFallbackClientTest','dev.wildcraft.test.PublicBottomFallbackClientTest'] : firstPersonSwordRegression ? ['dev.wildcraft.test.FirstPersonSwordClientTest','dev.wildcraft.test.GripClientTest','dev.wildcraft.test.EquipmentClientTest','dev.wildcraft.test.GuardClientTest','dev.wildcraft.test.GlideRigClientTest','dev.wildcraft.test.CoreArtClientSmokeTest','dev.wildcraft.test.BackEquipmentClientSmokeTest'] : ['dev.wildcraft.test.FirstPersonSwordClientTest']
+        if(firstPersonHeavyRelated)metadata.entrypoints['fabric-client-gametest']=['dev.wildcraft.test.GripClientTest','dev.wildcraft.test.EquipmentClientTest','dev.wildcraft.test.GuardClientTest','dev.wildcraft.test.GlideRigClientTest','dev.wildcraft.test.CoreArtClientSmokeTest','dev.wildcraft.test.BackEquipmentClientSmokeTest']
         def destination = new File(firstPersonSwordMetadataDirectory,'fabric.mod.json'); destination.parentFile.mkdirs()
         destination.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))+'\n'
     }
@@ -2683,4 +2821,82 @@ tasks.register('runOffShieldLandingClientProbe',net.fabricmc.loom.task.prod.Clie
         offShieldLandingRunDirectory.mkdirs()
         new File(offShieldLandingRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
     }
+}
+
+// C7 native item-atlas regression, with optional frozen production artifact.
+def batteryAtlasPose = providers.gradleProperty('batteryAtlasPose').orElse('false').get().toBoolean()
+def batteryAtlasVisual = providers.gradleProperty('batteryAtlasVisual').orElse('false').get().toBoolean()
+def batteryAtlasRelated = providers.gradleProperty('batteryAtlasRelated').orElse('false').get().toBoolean()
+def batteryAtlasMetadataDirectory = layout.buildDirectory.dir('battery-atlas-metadata').get().asFile
+def batteryAtlasMetadata = tasks.register('batteryAtlasMetadata') {
+    inputs.file(coreArtMetadataSource); inputs.property('related',batteryAtlasRelated); inputs.property('visual',batteryAtlasVisual); inputs.property('pose',batteryAtlasPose); outputs.dir(batteryAtlasMetadataDirectory)
+    doLast {
+        def metadata = new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest'] = batteryAtlasPose ? ['dev.wildcraft.test.BatteryPlacementClientTest'] : batteryAtlasVisual ? ['dev.wildcraft.test.BatteryViewClientProbe'] : batteryAtlasRelated ? ['dev.wildcraft.test.SecondArtClientTest','dev.wildcraft.test.EnergyClientSmokeTest','dev.wildcraft.test.MechanicsClientSmokeTest'] : ['dev.wildcraft.test.BatteryAtlasClientTest']
+        batteryAtlasMetadataDirectory.mkdirs()
+        new File(batteryAtlasMetadataDirectory,'fabric.mod.json').text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))+'\n'
+    }
+}
+def batteryAtlasTestJar = tasks.register('batteryAtlasTestJar',Jar) {
+    dependsOn batteryAtlasMetadata; archiveClassifier='battery-atlas-test'
+    from(sourceSets.gametest.output) { exclude 'fabric.mod.json' }; from(batteryAtlasMetadataDirectory)
+}
+def batteryAtlasRunDirectory = file(providers.gradleProperty('batteryAtlasRunDir').orElse(layout.buildDirectory.dir('run/battery-atlas').get().asFile.absolutePath).get())
+def batteryAtlasFixedJarPath = providers.gradleProperty('batteryAtlasMainJar').orElse('').get()
+tasks.register('runBatteryAtlasClientTest',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen { false }
+    if(batteryAtlasFixedJarPath.isEmpty()) mods.from(batteryAtlasTestJar)
+    else mods.setFrom(file(batteryAtlasFixedJarPath),batteryAtlasTestJar,configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Dfabric.client.gametest','-Dwildcraft.test.singleplayerOnly=true');useXVFB=false;runDir.set(batteryAtlasRunDirectory)
+    doFirst {
+        batteryAtlasRunDirectory.mkdirs()
+        new File(batteryAtlasRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// C7 actual normal-world materials and native container inputs; fixed production artifact, no supplied items.
+def earlyAcquisitionMetadataDirectory=layout.buildDirectory.dir('early-acquisition-metadata').get().asFile
+def earlyAcquisitionMetadata=tasks.register('earlyAcquisitionMetadata') {
+    inputs.file(coreArtMetadataSource);outputs.dir(earlyAcquisitionMetadataDirectory)
+    doLast {
+        def metadata=new groovy.json.JsonSlurper().parse(coreArtMetadataSource)
+        metadata.entrypoints['fabric-client-gametest']=['dev.wildcraft.test.EarlyAcquisitionClientTest']
+        earlyAcquisitionMetadataDirectory.mkdirs()
+        new File(earlyAcquisitionMetadataDirectory,'fabric.mod.json').text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata))+'\n'
+    }
+}
+def earlyAcquisitionTestJar=tasks.register('earlyAcquisitionTestJar',Jar) {
+    dependsOn earlyAcquisitionMetadata;archiveClassifier='early-acquisition-test'
+    from(sourceSets.gametest.output){exclude 'fabric.mod.json'};from(earlyAcquisitionMetadataDirectory)
+}
+def earlyAcquisitionRunDirectory=file(providers.gradleProperty('earlyAcquisitionRunDir').orElse(layout.buildDirectory.dir('run/early-acquisition').get().asFile.absolutePath).get())
+def earlyAcquisitionMainJar=file(providers.gradleProperty('earlyAcquisitionMainJar').orElse('development-assets/local-only/dev79/final/wildcraft-0.1.0-dev.79+mc26.3.jar').get())
+tasks.register('runEarlyAcquisitionClientTest',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen{false};dependsOn earlyAcquisitionTestJar
+    mods.setFrom(earlyAcquisitionMainJar,earlyAcquisitionTestJar,configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Dfabric.client.gametest','-Dwildcraft.test.singleplayerOnly=true','-Dwildcraft.test.earlyAcquisitionAxe='+providers.gradleProperty('earlyAcquisitionAxe').orElse('false').get());useXVFB=false;runDir.set(earlyAcquisitionRunDirectory)
+    doFirst {
+        if(new File(earlyAcquisitionRunDirectory,'saves').exists())throw new GradleException('Use a fresh disposable acquisition test directory; never overwrite an existing save')
+        earlyAcquisitionRunDirectory.mkdirs()
+        new File(earlyAcquisitionRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'
+    }
+}
+
+// C7 actual reverse/toggle/idle feedback lifecycle, fixed local production JAR.
+def obstructionLifecycleMetadataDirectory=layout.buildDirectory.dir('obstruction-lifecycle-metadata').get().asFile
+def obstructionLifecycleMetadata=tasks.register('obstructionLifecycleMetadata') {
+    inputs.file(coreArtMetadataSource);outputs.dir(obstructionLifecycleMetadataDirectory)
+    doLast {def m=new groovy.json.JsonSlurper().parse(coreArtMetadataSource);m.entrypoints['fabric-client-gametest']=['dev.wildcraft.test.ObstructionLifecycleClientTest'];obstructionLifecycleMetadataDirectory.mkdirs();new File(obstructionLifecycleMetadataDirectory,'fabric.mod.json').text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(m))+'\n'}
+}
+def obstructionLifecycleTestJar=tasks.register('obstructionLifecycleTestJar',Jar) {
+    dependsOn obstructionLifecycleMetadata;archiveClassifier='obstruction-lifecycle-test'
+    from(sourceSets.gametest.output){exclude 'fabric.mod.json'};from(obstructionLifecycleMetadataDirectory)
+}
+def obstructionLifecycleRunDirectory=file(providers.gradleProperty('obstructionLifecycleRunDir').orElse(layout.buildDirectory.dir('run/obstruction-lifecycle').get().asFile.absolutePath).get())
+def obstructionLifecycleMainJar=file(providers.gradleProperty('obstructionLifecycleMainJar').orElse('development-assets/local-only/dev80/final/wildcraft-0.1.0-dev.80+mc26.3.jar').get())
+tasks.register('runObstructionLifecycleClientTest',net.fabricmc.loom.task.prod.ClientProductionRunTask) {
+    outputs.upToDateWhen{false};dependsOn obstructionLifecycleTestJar
+    mods.setFrom(obstructionLifecycleMainJar,obstructionLifecycleTestJar,configurations.productionRuntimeMods)
+    jvmArgs.addAll('-Dfabric.client.gametest','-Dwildcraft.test.singleplayerOnly=true');useXVFB=false;runDir.set(obstructionLifecycleRunDirectory)
+    doFirst {if(new File(obstructionLifecycleRunDirectory,'saves').exists())throw new GradleException('Fresh disposable lifecycle world required');obstructionLifecycleRunDirectory.mkdirs();new File(obstructionLifecycleRunDirectory,'options.txt').text='version:5023\nonboardAccessibility:false\npauseOnLostFocus:false\nenableVsync:false\nmaxFps:120\nrenderDistance:4\nlang:zh_cn\n'}
 }

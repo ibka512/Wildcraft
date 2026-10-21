@@ -20,6 +20,8 @@ import net.minecraft.world.phys.Vec3;
 
 /** Server owns movement and full stacks; tracking exposes bounded visual state only. */
 public final class MachineEntity extends Entity {
+    /** Existing mass supported by one float; shared with its load feedback. */
+    public static final double BUOYANCY_PER_FLOAT = 1.75;
     private static final EntityDataAccessor<Integer> FANS = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Integer> BATTERY = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.INT);
     private static final EntityDataAccessor<Integer> CHARGE = SynchedEntityData.defineId(MachineEntity.class, EntityDataSerializers.INT);
@@ -29,13 +31,14 @@ public final class MachineEntity extends Entity {
     private static final EntityDataAccessor<Integer> ACTIVE = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.INT);
     private static final EntityDataAccessor<Long> FUELS = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.LONG);
     private static final EntityDataAccessor<Long> COOLDOWNS = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.LONG);
+    private static final EntityDataAccessor<Boolean> OBSTRUCTED = SynchedEntityData.defineId(MachineEntity.class,EntityDataSerializers.BOOLEAN);
     private final NonNullList<ItemStack> parts = NonNullList.withSize(MachineNodes.COUNT, ItemStack.EMPTY);
     private UUID owner;
     private long lastAction = Long.MIN_VALUE;
 
     public MachineEntity(EntityType<? extends MachineEntity> type, Level level) { super(type, level); }
     @Override protected void defineSynchedData(SynchedEntityData.Builder b) {
-        b.define(ACTIVE,0);b.define(FUELS,0L);b.define(COOLDOWNS,0L); b.define(KINDS, 0); b.define(FANS, 0); b.define(BATTERY, -1); b.define(CHARGE, 0); b.define(ENABLED, false); b.define(WORKING, false);
+        b.define(ACTIVE,0);b.define(FUELS,0L);b.define(COOLDOWNS,0L); b.define(KINDS, 0); b.define(FANS, 0); b.define(BATTERY, -1); b.define(CHARGE, 0); b.define(ENABLED, false); b.define(WORKING, false);b.define(OBSTRUCTED,false);
     }
     public void setOwner(UUID value) { if (owner == null) owner = value; }
     public UUID owner() { return owner; }
@@ -44,6 +47,8 @@ public final class MachineEntity extends Entity {
     public int energy() { return entityData.get(CHARGE); }
     public boolean enabled() { return entityData.get(ENABLED); }
     public boolean working() { return entityData.get(WORKING); }
+    /** Actual paid horizontal collision, tracked for feedback only; never persisted or used by physics. */
+    public boolean obstructed() { return enabled() && working() && entityData.get(OBSTRUCTED); }
     public boolean active(int node) { return MachineNodes.valid(node) && (entityData.get(ACTIVE) & 1 << node)!=0; }
     public int activeMask() { return entityData.get(ACTIVE); }
     public int rocketFuel(int node) { return MachineNodes.valid(node)?(int)(entityData.get(FUELS) >>> (7*node) & 127):0; }
@@ -196,7 +201,7 @@ public final class MachineEntity extends Entity {
         if(wings>0 && velocity.y<0 && velocity.subtract(wind.x(),0,wind.z()).horizontalDistanceSqr()>.12*.12){velocity=new Vec3(velocity.x,Math.max(velocity.y,-.12*mass/wings-dev.wildcraft.weather.WindRules.descentPenalty(wind.precipitation())),velocity.z);for(int n=0;n<6;n++)if(kind(n)==3)active|=1<<n;}
         double wetDrag=1-.01*wind.precipitation();velocity=velocity.multiply(wetDrag,1,wetDrag);
         double water=getFluidHeight(net.minecraft.tags.FluidTags.WATER);
-        if(floats>0 && water>0 && mass<=1.75*floats){velocity=velocity.add(0,.07*floats/mass*Math.min(1,water/.4),0);velocity=new Vec3(velocity.x,Math.min(.15,velocity.y),velocity.z);for(int n=0;n<6;n++)if(kind(n)==8)active|=1<<n;}
+        if(floats>0 && water>0 && mass<=BUOYANCY_PER_FLOAT*floats){velocity=velocity.add(0,.07*floats/mass*Math.min(1,water/.4),0);velocity=new Vec3(velocity.x,Math.min(.15,velocity.y),velocity.z);for(int n=0;n<6;n++)if(kind(n)==8)active|=1<<n;}
         double horizontal=Math.sqrt(velocity.horizontalDistanceSqr());
         if(horizontal>.4)velocity=new Vec3(velocity.x*.4/horizontal,velocity.y,velocity.z*.4/horizontal);
         velocity=new Vec3(velocity.x,Math.clamp(velocity.y,-.8,rocketBurning||springFired||countKind(5)>0?.6:.3),velocity.z);
@@ -211,6 +216,7 @@ public final class MachineEntity extends Entity {
         }
         entityData.set(WORKING,paid || rocketBurning);entityData.set(ACTIVE,active);
         move(MoverType.SELF,velocity);
+        entityData.set(OBSTRUCTED,paid && horizontalCollision);
         setDeltaMovement(new Vec3(horizontalCollision?0:velocity.x*(onGround()?.8:wings>0?.98:.94),verticalCollision?0:velocity.y*.98,horizontalCollision?0:velocity.z*(onGround()?.8:wings>0?.98:.94)));
         syncParts();audioWork();
     }

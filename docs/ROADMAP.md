@@ -1,3 +1,5 @@
+> 当前公开快照为dev87-public（2026-10-21），本机正式86/候选87分开。最新范围见[README](../README.md)与[公开交接](../docs/PUBLIC-SNAPSHOT-2026-10-21.md)；下文旧日期/包为历史。
+
 > 当前公开更新为dev76-public（2026-10-19），详见[README](../README.md)及公开交接。以下阶段日期/旧下载为历史，私有动画/安装包没有公开。
 
 > 2026-10-15本机dev62：C6AM实际RIGHT空中弓mainRIGHT/offbow-mainLEFT两皮肤，原native20三档弦/木握点-nock/固定段长/头/skin-item GPU，原Focus自动-手动-关闭费用与一次箭-ammo-wear/退出通过；实际完整47类47m 29s/1893PNG，21专项/125服务端/datagen/build/资产通过。337私有clips旧335几何绑定逐值保持；RIGHT为已采用LEFT运行派生不称作者新RIGHT或正式FP。JumpAudit1ULP门槛仅测试修正，真实脚底/物理保持。源码01707b8468f84ce511658b575e37c8957dda5c34标签v0.1.0-dev.62+mc26.3，所有包源仅本机，C6整体/复杂/正式FP未完；下一C6AN占手原生归属，草稿未验，无上传。
