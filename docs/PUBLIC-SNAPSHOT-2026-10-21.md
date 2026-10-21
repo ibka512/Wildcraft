@@ -20,7 +20,7 @@
 - 基础美术17秒/4PNG；缺动画剑斧轻/蓄力释放及四类缺底部网格的真实预览/安装/唯一回收36秒/2类/17PNG。合计21图见docs/verification/dev87-public；只代表所测公开路径。
 - 主/源码/测试三个JAR的CRC与受限目录/9派生几何排除检查通过，主JAR无测试class；哈希在PUBLIC-VALIDATION-dev87.json。
 
-Linux Actions仍待推送后的真实结果；历史CI不代替本次CI。本机完整日志与选择/审查记录另存，不上传真实测试世界、缓存或大证据包。
+Linux源码提交627617d6的[Actions 39597915186](https://github.com/ibka512/Wildcraft/actions/runs/39597915186)实际success，125服务端、生成一致性与隐私检查通过。下载三个产物并验CRC/私有目录通过；所有class/资源/源码/测试内容与macOS相同，主Manifest仅client-only条目排序不同。此为指定源码提交的结果，后续文档回执不改变游戏代码。本机完整日志与选择/审查记录另存，不上传真实测试世界、缓存或大证据包。
 
 ## 下一步
 

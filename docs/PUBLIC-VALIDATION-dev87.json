@@ -63,7 +63,38 @@
     ]
   },
   "linuxCI": {
-    "status": "pending-after-push"
+    "status": "success",
+    "sourceCommit": "627617d61c94480040686e33d875925754af28a8",
+    "runId": 39597915186,
+    "url": "https://github.com/ibka512/Wildcraft/actions/runs/39597915186",
+    "requiredServerTestsPassed": 125,
+    "privacyGatePassed": true,
+    "artifacts": [
+      {
+        "file": "wildcraft-0.1.0-dev.87-public-gametest.jar",
+        "bytes": 1940677,
+        "sha256": "2df10a9d42f72b9dd8239903c5de7fde43a6d4a2bb836ec2e05193fb4013cb21",
+        "CRCAndPrivatePaths": true,
+        "localComparisonDifferences": []
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.87-public-sources.jar",
+        "bytes": 620950,
+        "sha256": "a18ae1f2caf9624f941ad7589f1b5681180b071ce657e50d02c7cd946d5ce827",
+        "CRCAndPrivatePaths": true,
+        "localComparisonDifferences": []
+      },
+      {
+        "file": "wildcraft-0.1.0-dev.87-public.jar",
+        "bytes": 1108354,
+        "sha256": "6fdd05ad948c9cb377e29185bab2bbdfb5c8de345ce04e193299ad6cca6dba41",
+        "CRCAndPrivatePaths": true,
+        "localComparisonDifferences": [
+          "META-INF/MANIFEST.MF"
+        ]
+      }
+    ],
+    "payloadComparison": "All classes/resources/source and test payloads match macOS; main manifest differs only in client-only entry order."
   },
   "privateAnimationAndLocalOnlyBottomDataIncluded": false,
   "privateHistoryIncluded": false,
